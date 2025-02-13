@@ -34,19 +34,21 @@
             // CaescuWhoAns
             // 
             this.CaescuWhoAns.AutoSize = true;
-            this.CaescuWhoAns.Location = new System.Drawing.Point(312, 153);
+            this.CaescuWhoAns.Location = new System.Drawing.Point(469, 262);
+            this.CaescuWhoAns.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.CaescuWhoAns.Name = "CaescuWhoAns";
-            this.CaescuWhoAns.Size = new System.Drawing.Size(55, 13);
+            this.CaescuWhoAns.Size = new System.Drawing.Size(137, 32);
             this.CaescuWhoAns.TabIndex = 0;
             this.CaescuWhoAns.Text = "ANSWER";
             // 
             // WhoCeascu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2000, 1125);
+            this.ClientSize = new System.Drawing.Size(1254, 638);
             this.ControlBox = false;
             this.Controls.Add(this.CaescuWhoAns);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "WhoCeascu";
             this.Text = "WhoCeascu";
             this.Click += new System.EventHandler(this.WhoCeascu_Click);

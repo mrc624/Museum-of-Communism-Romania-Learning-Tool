@@ -138,6 +138,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="WhoCeascu.resx">
       <DependentUpon>WhoCeascu.cs</DependentUpon>
@@ -170,6 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="2023-12-04_10-38-21_0.jpg" />
+    <Content Include="Communist_Flag_Romania.png" />
+    <None Include="Resources\Communist_Flag_Romania.png" />
+    <None Include="Resources\2023-12-04_10-38-21_0.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
