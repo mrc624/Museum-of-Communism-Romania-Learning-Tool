@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IQP_Tester.exe" size="14272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IQP_Tester.exe" size="276928">
       <assemblyIdentity name="IQP_Tester" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qU02CDowZsjaQ/WmKcPGsZ4AltNDIMhqsVQPLSppGNQ=</dsig:DigestValue>
+        <dsig:DigestValue>p085phwkUSI3Apf/97ocNPb+51KrYUGONAwoowyGwI0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -69,6 +69,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Romanian_Flag.png" size="289286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EtLzeWB1iePerWPF8l5nxPMORoIXK3Clo+dEGn+UIsY=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -170,6 +170,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="2023-12-04_10-38-21_0.jpg" />
+    <Content Include="Romanian_Flag.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
