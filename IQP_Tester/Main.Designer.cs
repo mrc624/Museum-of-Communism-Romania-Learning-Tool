@@ -49,8 +49,11 @@
             // 
             this.tabMainControl.Controls.Add(this.tabHistory);
             this.tabMainControl.Controls.Add(this.tabKidsLife);
+            this.tabMainControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabMainControl.ItemSize = new System.Drawing.Size(500, 50);
             this.tabMainControl.Location = new System.Drawing.Point(12, 82);
             this.tabMainControl.Name = "tabMainControl";
+            this.tabMainControl.Padding = new System.Drawing.Point(3, 3);
             this.tabMainControl.SelectedIndex = 0;
             this.tabMainControl.Size = new System.Drawing.Size(1880, 866);
             this.tabMainControl.TabIndex = 0;
@@ -59,10 +62,10 @@
             // 
             this.tabHistory.Controls.Add(this.pictureBoxRomaniaFlag);
             this.tabHistory.Controls.Add(this.historyCeasecu);
-            this.tabHistory.Location = new System.Drawing.Point(4, 22);
+            this.tabHistory.Location = new System.Drawing.Point(4, 54);
             this.tabHistory.Name = "tabHistory";
             this.tabHistory.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabHistory.Size = new System.Drawing.Size(1872, 840);
+            this.tabHistory.Size = new System.Drawing.Size(1872, 808);
             this.tabHistory.TabIndex = 0;
             this.tabHistory.Text = "History";
             this.tabHistory.UseVisualStyleBackColor = true;
@@ -96,7 +99,7 @@
             this.tabKidsLife.Location = new System.Drawing.Point(4, 22);
             this.tabKidsLife.Name = "tabKidsLife";
             this.tabKidsLife.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabKidsLife.Size = new System.Drawing.Size(748, 485);
+            this.tabKidsLife.Size = new System.Drawing.Size(1872, 840);
             this.tabKidsLife.TabIndex = 1;
             this.tabKidsLife.Text = "Kid\'s Life";
             this.tabKidsLife.UseVisualStyleBackColor = true;

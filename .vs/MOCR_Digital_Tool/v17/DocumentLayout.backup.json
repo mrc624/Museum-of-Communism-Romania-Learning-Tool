@@ -62,9 +62,9 @@
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\mrclo\\OneDrive\\Desktop\\Projects\\MOCR_Digital_Tool\\IQP_Tester\\Main.cs",
               "RelativeDocumentMoniker": "IQP_Tester\\Main.cs",
-              "ToolTip": "C:\\Users\\mrclo\\OneDrive\\Desktop\\Projects\\MOCR_Digital_Tool\\IQP_Tester\\Main.cs",
-              "RelativeToolTip": "IQP_Tester\\Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\mrclo\\OneDrive\\Desktop\\Projects\\MOCR_Digital_Tool\\IQP_Tester\\Main.cs*",
+              "RelativeToolTip": "IQP_Tester\\Main.cs*",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwG4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T22:41:35.091Z",
               "IsPinned": true,
@@ -76,12 +76,20 @@
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mrclo\\OneDrive\\Desktop\\Projects\\MOCR_Digital_Tool\\IQP_Tester\\Main.cs",
               "RelativeDocumentMoniker": "IQP_Tester\\Main.cs",
-              "ToolTip": "C:\\Users\\mrclo\\OneDrive\\Desktop\\Projects\\MOCR_Digital_Tool\\IQP_Tester\\Main.cs [Design]",
-              "RelativeToolTip": "IQP_Tester\\Main.cs [Design]",
+              "ToolTip": "C:\\Users\\mrclo\\OneDrive\\Desktop\\Projects\\MOCR_Digital_Tool\\IQP_Tester\\Main.cs [Design]*",
+              "RelativeToolTip": "IQP_Tester\\Main.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T22:42:20.352Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
