@@ -1,9 +1,11 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
@@ -189,11 +191,50 @@ namespace IQP_Tester
             // History
             historyCeasecu.Text = whoCeausecuLang[(uint)language];
 
+            //resize with the new lenghts
+            Main_Resize(this, new EventArgs());
+
         }
 
         // LANGUAGE MANAGEMENT END
 
+        // HANDLING RESIZE BEGIN
 
+        // sizing before any resize constants
+
+        // tab control
+        static int tabXOffset = 20;
+        static int tabYOffsetTop = 150;
+        static int tabYOffsetBottom = tabXOffset;
+
+        // language button
+        static int btnLanguageOffset = tabXOffset;
+
+
+
+
+        private void Main_Resize(object sender, EventArgs e)
+        {
+            label1.Text = this.Width + " " + this.Height;
+
+            lblMainTitle.Location = new Point((this.Width / 2) - (lblMainTitle.Width / 2), lblMainTitle.Location.Y);
+
+            btnLanguage.Location = new Point(this.Width - btnLanguage.Width - btnLanguageOffset, this.Height - btnLanguage.Height - btnLanguageOffset);
+            
+            tabMainControl.Width = this.Width - tabXOffset * 2; //two times offset since it is offset once on the left already
+            tabMainControl.Height = btnLanguage.Location.Y - tabMainControl.Location.Y - tabYOffsetBottom;
+        }
+
+
+
+
+
+
+
+
+
+
+        // HANDLING RESIZE END
 
 
 

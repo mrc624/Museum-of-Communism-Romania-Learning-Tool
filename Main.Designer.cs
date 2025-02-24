@@ -39,6 +39,7 @@
             this.lblUptime = new System.Windows.Forms.Label();
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblMainTitle = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabMainControl.SuspendLayout();
             this.tabHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRomaniaFlag)).BeginInit();
@@ -51,12 +52,12 @@
             this.tabMainControl.Controls.Add(this.tabKidsLife);
             this.tabMainControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabMainControl.ItemSize = new System.Drawing.Size(500, 50);
-            this.tabMainControl.Location = new System.Drawing.Point(32, 196);
+            this.tabMainControl.Location = new System.Drawing.Point(20, 150);
             this.tabMainControl.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tabMainControl.Name = "tabMainControl";
             this.tabMainControl.Padding = new System.Drawing.Point(3, 3);
             this.tabMainControl.SelectedIndex = 0;
-            this.tabMainControl.Size = new System.Drawing.Size(2728, 1360);
+            this.tabMainControl.Size = new System.Drawing.Size(2785, 1360);
             this.tabMainControl.TabIndex = 0;
             // 
             // tabHistory
@@ -67,7 +68,7 @@
             this.tabHistory.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tabHistory.Name = "tabHistory";
             this.tabHistory.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.tabHistory.Size = new System.Drawing.Size(2708, 1290);
+            this.tabHistory.Size = new System.Drawing.Size(2765, 1290);
             this.tabHistory.TabIndex = 0;
             this.tabHistory.Text = "History";
             this.tabHistory.UseVisualStyleBackColor = true;
@@ -75,7 +76,7 @@
             // pictureBoxRomaniaFlag
             // 
             this.pictureBoxRomaniaFlag.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxRomaniaFlag.Image")));
-            this.pictureBoxRomaniaFlag.Location = new System.Drawing.Point(1155, 682);
+            this.pictureBoxRomaniaFlag.Location = new System.Drawing.Point(1040, 495);
             this.pictureBoxRomaniaFlag.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxRomaniaFlag.Name = "pictureBoxRomaniaFlag";
             this.pictureBoxRomaniaFlag.Size = new System.Drawing.Size(891, 491);
@@ -144,12 +145,13 @@
             // 
             // btnLanguage
             // 
+            this.btnLanguage.AutoSize = true;
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(2298, 1560);
+            this.btnLanguage.Location = new System.Drawing.Point(2353, 1554);
             this.btnLanguage.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(462, 109);
+            this.btnLanguage.Size = new System.Drawing.Size(450, 120);
             this.btnLanguage.TabIndex = 2;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -166,12 +168,22 @@
             this.lblMainTitle.TabIndex = 4;
             this.lblMainTitle.Text = "Answering Youth Questions About Romanian Communism";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1702, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 32);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "label1";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(2823, 1669);
+            this.ClientSize = new System.Drawing.Size(2823, 1696);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMainTitle);
             this.Controls.Add(this.btnLanguage);
             this.Controls.Add(this.lblUptime);
@@ -180,6 +192,7 @@
             this.Name = "Main";
             this.ShowIcon = false;
             this.Text = "Educating Romanian Children";
+            this.Resize += new System.EventHandler(this.Main_Resize);
             this.tabMainControl.ResumeLayout(false);
             this.tabHistory.ResumeLayout(false);
             this.tabHistory.PerformLayout();
@@ -203,6 +216,7 @@
         private System.Windows.Forms.PictureBox pictureBoxRomaniaFlag;
         private System.Windows.Forms.Button btnLanguage;
         private System.Windows.Forms.Label lblMainTitle;
+        private System.Windows.Forms.Label label1;
     }
 }
 
