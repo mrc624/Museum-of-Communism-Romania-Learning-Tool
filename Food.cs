@@ -12,6 +12,7 @@ namespace IQP_Tester
 {
     public partial class Food : Form
     {
+
         public Food()
         {
             InitializeComponent();
@@ -20,6 +21,17 @@ namespace IQP_Tester
         private void Food_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        string[] foodAnsLang = { "Answer", "Answer ROM", "ERROR" };
+
+        private void Food_Shown(object sender, EventArgs e)
+        {
+            label1.Text = foodAnsLang[(int)Main.language];
+
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            this.Bounds = Screen.PrimaryScreen.Bounds;
         }
     }
 }

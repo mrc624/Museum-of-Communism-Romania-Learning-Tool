@@ -17,18 +17,20 @@ namespace IQP_Tester
     {
         delegate void VoidDelegate();
 
-        enum Language
+        public enum Language
         {
             English,
             Romanian,
             num_supported_languages
         }
 
-        static Language default_language = Language.English;
+        public static Language default_language = Language.English;
 
-        string[] language_to_string = { "English", "Romanian", "ERROR" };
+        public string[] language_to_string = { "English", "Romanian", "ERROR" };
 
-        Language language = default_language;
+        public static Language language = default_language;
+        
+        
 
         KidsToys kidsToys;
         Food food;
@@ -70,28 +72,6 @@ namespace IQP_Tester
         private void Second_Trigger()
         {
             lblUptime.Text = seconds.ToString();
-        }
-
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
-        {
-            if (keyData == Keys.Escape)
-            {
-                this.FormBorderStyle = FormBorderStyle.Sizable;
-                this.WindowState = FormWindowState.Normal;
-                this.Bounds = Screen.PrimaryScreen.WorkingArea;
-                return true;
-            }
-            else if (keyData == Keys.F11)
-            {
-                this.FormBorderStyle = FormBorderStyle.None;
-                this.WindowState = FormWindowState.Maximized;
-                this.Bounds = Screen.PrimaryScreen.Bounds;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
         }
 
         // MAIN PAGE BEGIN (NOT TAB CONTROL)
@@ -215,8 +195,6 @@ namespace IQP_Tester
 
         private void Main_Resize(object sender, EventArgs e)
         {
-            label1.Text = this.Width + " " + this.Height;
-
             lblMainTitle.Location = new Point((this.Width / 2) - (lblMainTitle.Width / 2), lblMainTitle.Location.Y);
 
             btnLanguage.Location = new Point(this.Width - btnLanguage.Width - btnLanguageOffset, this.Height - btnLanguage.Height - btnLanguageOffset);
@@ -225,7 +203,27 @@ namespace IQP_Tester
             tabMainControl.Height = btnLanguage.Location.Y - tabMainControl.Location.Y - tabYOffsetBottom;
         }
 
-
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Escape)
+            {
+                this.FormBorderStyle = FormBorderStyle.Sizable;
+                this.WindowState = FormWindowState.Normal;
+                this.Bounds = Screen.PrimaryScreen.WorkingArea;
+                return true;
+            }
+            else if (keyData == Keys.F11)
+            {
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.WindowState = FormWindowState.Maximized;
+                this.Bounds = Screen.PrimaryScreen.Bounds;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
 
