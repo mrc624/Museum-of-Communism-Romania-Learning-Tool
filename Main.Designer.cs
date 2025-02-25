@@ -90,9 +90,9 @@
             this.historyCeasecu.Location = new System.Drawing.Point(34, 174);
             this.historyCeasecu.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.historyCeasecu.Name = "historyCeasecu";
-            this.historyCeasecu.Size = new System.Drawing.Size(1186, 101);
+            this.historyCeasecu.Size = new System.Drawing.Size(1235, 101);
             this.historyCeasecu.TabIndex = 0;
-            this.historyCeasecu.Text = "Who was Nicolae Ceașescu?";
+            this.historyCeasecu.Text = "Who was Nicolae Ceaușescu?";
             this.historyCeasecu.Click += new System.EventHandler(this.HistoryCeasecu_Click);
             // 
             // tabKidsLife

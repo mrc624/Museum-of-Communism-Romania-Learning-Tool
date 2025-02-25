@@ -199,7 +199,7 @@ namespace IQP_Tester
 
             btnLanguage.Location = new Point(this.Width - btnLanguage.Width - btnLanguageOffset, this.Height - btnLanguage.Height - btnLanguageOffset);
             
-            tabMainControl.Width = this.Width - tabXOffset * 2; //two times offset since it is offset once on the left already
+            tabMainControl.Width = this.Width - tabXOffset;
             tabMainControl.Height = btnLanguage.Location.Y - tabMainControl.Location.Y - tabYOffsetBottom;
         }
 
