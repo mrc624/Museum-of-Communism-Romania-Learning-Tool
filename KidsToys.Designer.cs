@@ -34,21 +34,24 @@
             // KidsToysAns
             // 
             this.KidsToysAns.AutoSize = true;
-            this.KidsToysAns.Location = new System.Drawing.Point(195, 121);
+            this.KidsToysAns.Location = new System.Drawing.Point(520, 289);
+            this.KidsToysAns.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.KidsToysAns.Name = "KidsToysAns";
-            this.KidsToysAns.Size = new System.Drawing.Size(55, 13);
+            this.KidsToysAns.Size = new System.Drawing.Size(137, 32);
             this.KidsToysAns.TabIndex = 0;
             this.KidsToysAns.Text = "ANSWER";
             // 
             // KidsToys
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(2133, 1073);
             this.ControlBox = false;
             this.Controls.Add(this.KidsToysAns);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "KidsToys";
             this.Text = "KidsToys";
+            this.Shown += new System.EventHandler(this.KidsToys_Shown);
             this.Click += new System.EventHandler(this.KidsToys_Click);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.tabMainControl = new System.Windows.Forms.TabControl();
             this.tabHistory = new System.Windows.Forms.TabPage();
+            this.historyRevLength = new System.Windows.Forms.Label();
             this.pictureBoxRomaniaFlag = new System.Windows.Forms.PictureBox();
             this.historyCeasecu = new System.Windows.Forms.Label();
             this.tabKidsLife = new System.Windows.Forms.TabPage();
@@ -61,6 +62,7 @@
             // 
             // tabHistory
             // 
+            this.tabHistory.Controls.Add(this.historyRevLength);
             this.tabHistory.Controls.Add(this.pictureBoxRomaniaFlag);
             this.tabHistory.Controls.Add(this.historyCeasecu);
             this.tabHistory.Location = new System.Drawing.Point(10, 60);
@@ -72,10 +74,21 @@
             this.tabHistory.Text = "History";
             this.tabHistory.UseVisualStyleBackColor = true;
             // 
+            // historyRevLength
+            // 
+            this.historyRevLength.AutoSize = true;
+            this.historyRevLength.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.historyRevLength.Location = new System.Drawing.Point(1565, 126);
+            this.historyRevLength.Name = "historyRevLength";
+            this.historyRevLength.Size = new System.Drawing.Size(1172, 98);
+            this.historyRevLength.TabIndex = 2;
+            this.historyRevLength.Text = "How long was the revolution?";
+            this.historyRevLength.Click += new System.EventHandler(this.historyRevLong_Click);
+            // 
             // pictureBoxRomaniaFlag
             // 
             this.pictureBoxRomaniaFlag.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxRomaniaFlag.Image")));
-            this.pictureBoxRomaniaFlag.Location = new System.Drawing.Point(1017, 377);
+            this.pictureBoxRomaniaFlag.Location = new System.Drawing.Point(994, 383);
             this.pictureBoxRomaniaFlag.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxRomaniaFlag.Name = "pictureBoxRomaniaFlag";
             this.pictureBoxRomaniaFlag.Size = new System.Drawing.Size(891, 491);
@@ -86,11 +99,11 @@
             // historyCeasecu
             // 
             this.historyCeasecu.AutoSize = true;
-            this.historyCeasecu.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.historyCeasecu.Location = new System.Drawing.Point(34, 174);
+            this.historyCeasecu.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.historyCeasecu.Location = new System.Drawing.Point(34, 55);
             this.historyCeasecu.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.historyCeasecu.Name = "historyCeasecu";
-            this.historyCeasecu.Size = new System.Drawing.Size(1235, 101);
+            this.historyCeasecu.Size = new System.Drawing.Size(1218, 98);
             this.historyCeasecu.TabIndex = 0;
             this.historyCeasecu.Text = "Who was Nicolae Ceaușescu?";
             this.historyCeasecu.Click += new System.EventHandler(this.HistoryCeasecu_Click);
@@ -135,7 +148,7 @@
             // lblUptime
             // 
             this.lblUptime.AutoSize = true;
-            this.lblUptime.Location = new System.Drawing.Point(35, 2423);
+            this.lblUptime.Location = new System.Drawing.Point(124, 1517);
             this.lblUptime.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblUptime.Name = "lblUptime";
             this.lblUptime.Size = new System.Drawing.Size(207, 32);
@@ -205,6 +218,7 @@
         private System.Windows.Forms.PictureBox pictureBoxRomaniaFlag;
         private System.Windows.Forms.Button btnLanguage;
         private System.Windows.Forms.Label lblMainTitle;
+        private System.Windows.Forms.Label historyRevLength;
     }
 }
 

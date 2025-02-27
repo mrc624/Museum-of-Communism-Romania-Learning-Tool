@@ -1,6 +1,6 @@
 ﻿namespace IQP_Tester
 {
-    partial class WhoCeascu
+    partial class RevLength
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CaescuWhoAns = new System.Windows.Forms.Label();
+            this.revLengthAns = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // CaescuWhoAns
+            // revLengthAns
             // 
-            this.CaescuWhoAns.AutoSize = true;
-            this.CaescuWhoAns.Location = new System.Drawing.Point(832, 365);
-            this.CaescuWhoAns.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.CaescuWhoAns.Name = "CaescuWhoAns";
-            this.CaescuWhoAns.Size = new System.Drawing.Size(137, 32);
-            this.CaescuWhoAns.TabIndex = 0;
-            this.CaescuWhoAns.Text = "ANSWER";
+            this.revLengthAns.AutoSize = true;
+            this.revLengthAns.Location = new System.Drawing.Point(582, 210);
+            this.revLengthAns.Name = "revLengthAns";
+            this.revLengthAns.Size = new System.Drawing.Size(108, 32);
+            this.revLengthAns.TabIndex = 0;
+            this.revLengthAns.Text = "Answer";
             // 
-            // WhoCeascu
+            // RevLength
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(3844, 2348);
+            this.ClientSize = new System.Drawing.Size(1936, 1029);
             this.ControlBox = false;
-            this.Controls.Add(this.CaescuWhoAns);
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.Name = "WhoCeascu";
-            this.Text = "WhoCeascu";
-            this.Shown += new System.EventHandler(this.WhoCeascu_Shown);
-            this.Click += new System.EventHandler(this.WhoCeascu_Click);
+            this.Controls.Add(this.revLengthAns);
+            this.Name = "RevLength";
+            this.Text = "RevLength";
+            this.Shown += new System.EventHandler(this.RevLength_Shown);
+            this.Click += new System.EventHandler(this.RevLength_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -60,6 +58,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label CaescuWhoAns;
+        private System.Windows.Forms.Label revLengthAns;
     }
 }

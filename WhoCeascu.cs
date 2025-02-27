@@ -21,5 +21,16 @@ namespace IQP_Tester
         {
             this.Close();
         }
+
+        string [] CaescuWhoAnsLang = { "Answer", "Answer ROM", "ERROR" };
+
+        private void WhoCeascu_Shown(object sender, EventArgs e)
+        {
+            CaescuWhoAns.Text = CaescuWhoAnsLang[(int)Main.language];
+
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            this.Bounds = Screen.PrimaryScreen.Bounds;
+        }
     }
 }
