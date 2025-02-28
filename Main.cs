@@ -38,10 +38,12 @@ namespace IQP_Tester
         WhoCeascu whoCeascu;
         RevLength revLength;
 
+        History history;
+
         private System.Timers.Timer Timer;
-        static uint tabTimeout = 1000; //in milliseconds
+        static uint tabTimeout = 10; //in seconds
         uint lastOpenTime = 0;
-        public static uint millis = 0;
+        public static uint seconds = 0;
 
         public Main()
         {
@@ -51,7 +53,7 @@ namespace IQP_Tester
 
         private void SetTimer()
         {
-            Timer = new System.Timers.Timer(1); //tick every millisecond
+            Timer = new System.Timers.Timer(1000); //tick every second
             Timer.Elapsed += OnTimedEvent;
             Timer.AutoReset = true;
             Timer.Enabled = true;
@@ -59,17 +61,17 @@ namespace IQP_Tester
 
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
-            millis++;
-            Invoke(new VoidDelegate(Millis_Trigger));
-            if (millis == lastOpenTime + tabTimeout)
+            seconds++;
+            Invoke(new VoidDelegate(Seconds_Trigger));
+            if (seconds == lastOpenTime + tabTimeout)
             {
-                 Invoke(new VoidDelegate(CloseAllTabs));
+                 Invoke(new VoidDelegate(CloseAllForms));
             }
         }
 
-        private void Millis_Trigger()
+        private void Seconds_Trigger()
         {
-            lblUptime.Text = millis.ToString();
+            lblUptime.Text = seconds.ToString();
         }
 
         // MAIN PAGE BEGIN (NOT TAB CONTROL)
@@ -82,25 +84,13 @@ namespace IQP_Tester
 
         string[] tabHistoryLang = { "History", "History Rom" };
 
-        string[] whoCeausecuLang = { "Who was Nicolae Ceau\u0219escu?", "Who was Nicolae Ceau\u0219escu? Rom" };
 
-        private void HistoryCeasecu_Click(object sender, EventArgs e)
+        private void panelHistory_Click(object sender, EventArgs e)
         {
-            CloseAllTabs();
-            lastOpenTime = millis;
-            whoCeascu = new WhoCeascu();
-            FadeIn(whoCeascu);
-
-        }
-
-        string[] revLengthLang = { "How long was the revolution?", "How long was the revolution Rom" };
-
-        private void historyRevLong_Click(object sender, EventArgs e)
-        {
-            CloseAllTabs();
-            lastOpenTime = millis;
-            revLength = new RevLength();
-            FadeIn(revLength);
+            CloseAllForms();
+            lastOpenTime = seconds;
+            history = new History();
+            FadeIn(history);
         }
 
         // HISTORY TAB END
@@ -110,21 +100,6 @@ namespace IQP_Tester
 
         string[] tabKidsLifeLang = { "Kid's Life", "Kid's Life Rom" };
 
-        private void KidsLifeToys_Click(object sender, EventArgs e)
-        {
-            CloseAllTabs();
-            lastOpenTime = millis;
-            kidsToys = new KidsToys();
-            FadeIn(kidsToys);
-        }
-
-        private void KidsLifeFood_Click(object sender, EventArgs e)
-        {
-            CloseAllTabs();
-            lastOpenTime =  millis;
-            food = new Food();
-            FadeIn(food);
-        }
 
         // KIDS LIFE TAB END
 
@@ -150,27 +125,13 @@ namespace IQP_Tester
 
         // TAB MANAGEMENT BEGIN
 
-        private void CloseAllTabs()
+        private void CloseAllForms()
         {
-            if (kidsToys != null)
+            if (history != null)
             {
-                kidsToys.Close();
-            }
-            
-            if (food != null)
-            {
-                food.Close();
+                history.Close();
             }
 
-            if (whoCeascu != null)
-            {
-                whoCeascu.Close();
-            }
-
-            if (revLength != null)
-            {
-                revLength.Close();
-            }
         }
 
         // TAB MANAGEMENT END
@@ -194,14 +155,8 @@ namespace IQP_Tester
             // update main page (non tab)
             lblMainTitle.Text = lblMainTitleLang[(uint)language];
 
-            // update tabs
-            tabHistory.Text = tabHistoryLang[(uint)language];
-            tabKidsLife.Text = tabKidsLifeLang[(uint)language];
-
             // update questions
             // History
-            historyCeasecu.Text = whoCeausecuLang[(uint)language];
-            historyRevLength.Text = revLengthLang[(uint)language];
 
             //resize with the new lenghts
             Main_Resize(this, new EventArgs());
@@ -220,7 +175,8 @@ namespace IQP_Tester
         static int tabYOffsetBottom = tabXOffset;
 
         // language button
-        static int btnLanguageOffset = tabXOffset;
+        static int btnLanguageOffsetx = tabXOffset;
+        static int btnLanguageOffsety = btnLanguageOffsetx;
 
 
 
@@ -229,12 +185,28 @@ namespace IQP_Tester
         {
             lblMainTitle.Location = new Point((this.Width / 2) - (lblMainTitle.Width / 2), lblMainTitle.Location.Y);
 
-            btnLanguage.Location = new Point(this.Width - btnLanguage.Width - btnLanguageOffset, this.Height - btnLanguage.Height - btnLanguageOffset);
-            
-            tabMainControl.Width = this.Width - tabXOffset;
-            tabMainControl.Height = btnLanguage.Location.Y - tabMainControl.Location.Y - tabYOffsetBottom;
+            btnLanguage.Location = new Point((this.Width - btnLanguage.Size.Width - btnLanguageOffsetx), (this.Height - btnLanguage.Size.Height - btnLanguageOffsety*2));
 
-            Resize__Text();
+            Resize_Panels();
+        }
+
+        // panel
+        static int panelxoffset = 10;
+        static int num_panels = 4;
+
+        private void Resize_Panels()
+        {
+            int newWidth = (this.Width / num_panels) - (panelxoffset * 2);
+
+            panelHistory.Width = newWidth;
+            panelLife.Width = newWidth;
+            panelPropoganda.Width = newWidth;
+            panelPost1989.Width = newWidth;
+
+            panelHistory.Location = new Point(panelxoffset, 150);
+            panelLife.Location = new Point(newWidth + panelxoffset, 150);
+            panelPropoganda.Location = new Point (newWidth * 2 + panelxoffset, 150);
+            panelPost1989.Location = new Point (newWidth * 3 + panelxoffset, 150);
         }
 
         // font size ratios, ratios are font size / width
@@ -250,12 +222,8 @@ namespace IQP_Tester
             }
 
             //history
-            historyCeasecu.Font = new Font(historyCeasecu.Font.FontFamily, newFontSize);
-            historyRevLength.Font = new Font(historyRevLength.Font.FontFamily, newFontSize);
 
             //kidslife
-            KidsLifeFood.Font = new Font(KidsLifeFood.Font.FontFamily, newFontSize);
-            KidsLifeToys.Font = new Font(KidsLifeToys.Font.FontFamily, newFontSize);
 
         }
 
