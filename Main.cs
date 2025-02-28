@@ -74,16 +74,15 @@ namespace IQP_Tester
             lblUptime.Text = seconds.ToString();
         }
 
-        // MAIN PAGE BEGIN (NOT TAB CONTROL)
+        // MAIN PAGE BEGIN (NOT PANELS)
         string[] lblMainTitleLang = {"Answering Youth Questions About Romanian Communism", "Answering Youth Questions About Romanian Communism Rom"};
 
 
-        // MAIN PAGE END   (NOT TAB CONTROL)
+        // MAIN PAGE END   (NOT PANELS)
 
-        // HISTORY TAB BEGIN
+        // HISTORY PANEL BEGIN
 
-        string[] tabHistoryLang = { "History", "History Rom" };
-
+        string[] panelHistoryTitleLang = { "History", "History Rom" };
 
         private void panelHistory_Click(object sender, EventArgs e)
         {
@@ -93,15 +92,27 @@ namespace IQP_Tester
             FadeIn(history);
         }
 
-        // HISTORY TAB END
+        // HISTORY PANEL END
 
 
-        // KIDS LIFE TAB BEGIN
+        // LIFE PANEL BEGIN
 
-        string[] tabKidsLifeLang = { "Kid's Life", "Kid's Life Rom" };
+        string[] panelLifeTitleLang = { "Life", "Life Rom" };
 
 
-        // KIDS LIFE TAB END
+        // LIFE PANEL END
+
+        // PROPOGANDA PANEL BEGIN
+
+        string[] panelPropogandaTitleLang = { "Propoganda", "Propoganda Rom" };
+
+        // PROPOGANDA PANEL END
+
+        // PRESENT DAY PANEL BEGIN
+
+        string[] panelPresentDayTitleLang = { "Present Day", "Present Day Rom" };
+
+        // PRESENT DAY PANEL END
 
         // MISC FORM FUNCTIONS BEGIN
 
@@ -174,6 +185,10 @@ namespace IQP_Tester
         static int tabYOffsetTop = 150;
         static int tabYOffsetBottom = tabXOffset;
 
+        // panel
+        static int panelxoffset = 10;
+        static int num_panels = 4;
+
         // language button
         static int btnLanguageOffsetx = tabXOffset;
         static int btnLanguageOffsety = btnLanguageOffsetx;
@@ -188,15 +203,13 @@ namespace IQP_Tester
             btnLanguage.Location = new Point((this.Width - btnLanguage.Size.Width - btnLanguageOffsetx), (this.Height - btnLanguage.Size.Height - btnLanguageOffsety*2));
 
             Resize_Panels();
-        }
 
-        // panel
-        static int panelxoffset = 10;
-        static int num_panels = 4;
+            Center_Text();
+        }
 
         private void Resize_Panels()
         {
-            int newWidth = (this.Width / num_panels) - (panelxoffset * 2);
+            int newWidth = (this.Width / num_panels) - panelxoffset;
 
             panelHistory.Width = newWidth;
             panelLife.Width = newWidth;
@@ -212,7 +225,7 @@ namespace IQP_Tester
         // font size ratios, ratios are font size / width
         static float fontRatio = (1f) / (75);
 
-        private void Resize__Text()
+        private void Resize_Text()
         {
             float newFontSize = (float)(fontRatio * this.Width);
 
@@ -225,6 +238,16 @@ namespace IQP_Tester
 
             //kidslife
 
+        }
+
+        private void Center_Text()
+        {
+            int halfPanelWidth = panelHistory.Width / 2;
+
+            lblHistory.Location = new Point (halfPanelWidth - (lblHistory.Width / 2), lblHistory.Location.Y);
+            lblKidsLife.Location = new Point(halfPanelWidth - (lblKidsLife.Width / 2), lblKidsLife.Location.Y);
+            lblPropoganda.Location = new Point(halfPanelWidth - (lblPropoganda.Width / 2), lblPropoganda.Location.Y);
+            lblPresentDay.Location = new Point(halfPanelWidth - (lblPresentDay.Width / 2), lblPresentDay.Location.Y);
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)

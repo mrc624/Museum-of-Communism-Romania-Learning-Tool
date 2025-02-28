@@ -42,26 +42,17 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IQP_Tester.exe" size="19904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IQP_Tester.exe" size="326080">
       <assemblyIdentity name="IQP_Tester" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>020giBtYHMkT2hGjSpNxCnhUw1yMZDHZENs2fw/Tzmw=</dsig:DigestValue>
+        <dsig:DigestValue>50Cd2R2glBhsj06IZhY5xYDGqAdVB0aWrpu3CZlwDbg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="2023-12-04_10-38-21_0.jpg" size="260684">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>dnT+3Rj3Br880Xmk4C+LZ/dnsN5312JY436d6/LAXYQ=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="IQP_Tester.exe.config" size="189">
     <hash>
       <dsig:Transforms>
@@ -71,13 +62,22 @@
       <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Romanian_Flag.png" size="289286">
+  <file name="Nicolae_Ceasescu.png" size="90766">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>EtLzeWB1iePerWPF8l5nxPMORoIXK3Clo+dEGn+UIsY=</dsig:DigestValue>
+      <dsig:DigestValue>iiOKHZoVocMcMDq+xrpd7XVCPazCu6eeb8yOQ2rhzRw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Romanian_Revolution.jpg" size="211078">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HUmOT6U+1jqr23tdOXh67Woxf68Pb//FUmwUPpvYYQ4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

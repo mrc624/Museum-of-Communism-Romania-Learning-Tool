@@ -153,6 +153,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RevLength.resx">
       <DependentUpon>RevLength.cs</DependentUpon>
@@ -187,8 +188,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="2023-12-04_10-38-21_0.jpg" />
-    <Content Include="Romanian_Flag.png" />
+    <Content Include="Nicolae_Ceasescu.png" />
+    <Content Include="Romanian_Revolution.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
