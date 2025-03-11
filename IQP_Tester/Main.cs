@@ -234,22 +234,13 @@ namespace IQP_Tester
             panelPost1989.Location = new Point (newWidth * 3 + panelxoffset, 150);
         }
 
-
-        static double pbCeasescu_width_ratio = 0.5;
-        static double pbRevolution_width_ratio = 0.5;
-
         private void Resize_History_Panel_Objects()
         {
             Resize_PB(pbCeasescu, panelHistory);
-            Resize_PB(pbRevolution, panelHistory);
-        }
+            Resize_PB(pbRevolution, panelHistory, 0.75);
 
-        private void Resize_PB(PictureBox pb, Panel parent, double parent_width_ratio = 0.5)
-        {
-            double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
-
-            pb.Width = (int)(parent.Width * parent_width_ratio);
-            pb.Height = (int)((1 / aspect_ratio) * pb.Width);
+            Resize_Font(lblCeausecu);
+            Resize_Font(lblRevolution);
         }
 
         private void Center_History_Panel_Objects()
@@ -293,28 +284,7 @@ namespace IQP_Tester
             lblPresentDay.Location = new Point(halfPanelWidth - (lblPresentDay.Width / 2), lblPresentDay.Location.Y);
         }
 
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
-        {
-            if (keyData == Keys.Escape)
-            {
-                this.FormBorderStyle = FormBorderStyle.Sizable;
-                this.WindowState = FormWindowState.Normal;
-                this.Bounds = Screen.PrimaryScreen.WorkingArea;
-                return true;
-            }
-            else if (keyData == Keys.F11)
-            {
-                this.FormBorderStyle = FormBorderStyle.None;
-                this.WindowState = FormWindowState.Maximized;
-                this.Bounds = Screen.PrimaryScreen.Bounds;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
+        // Resizing helpers
 
         private void center_x(Control control, int width, double percent = 0.5)
         {
@@ -336,9 +306,49 @@ namespace IQP_Tester
             control.Location = new Point(location_x, location_y);
         }
 
+        private void Resize_PB(PictureBox pb, Panel parent, double parent_width_ratio = 0.5)
+        {
+            double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
+
+            pb.Width = (int)(parent.Width * parent_width_ratio);
+            pb.Height = (int)((1 / aspect_ratio) * pb.Width);
+        }
 
 
+        const float default_title_font_size = 27.9f;
+        const float default_standard_font_size = 15.75f;
+        const int default_width = 1920;
 
+        private void Resize_Font(Control control, float originalFont = default_standard_font_size, int originalWidth = default_width)
+        {
+            float newFontSize = originalFont * ((float)(this.Width) / (float)(originalWidth));
+
+            control.Font = new Font(control.Font.FontFamily, (float)(newFontSize));
+        }
+
+        // key overides
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Escape)
+            {
+                this.FormBorderStyle = FormBorderStyle.Sizable;
+                this.WindowState = FormWindowState.Normal;
+                this.Bounds = Screen.PrimaryScreen.WorkingArea;
+                return true;
+            }
+            else if (keyData == Keys.F11)
+            {
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.WindowState = FormWindowState.Maximized;
+                this.Bounds = Screen.PrimaryScreen.Bounds;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
         // HANDLING RESIZE END
 

@@ -32,9 +32,10 @@
             // 
             // History
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "History";
             this.Text = "History";
             this.Shown += new System.EventHandler(this.History_Shown);

@@ -32,6 +32,8 @@
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblMainTitle = new System.Windows.Forms.Label();
             this.panelHistory = new System.Windows.Forms.Panel();
+            this.lblRevolution = new System.Windows.Forms.Label();
+            this.lblCeausecu = new System.Windows.Forms.Label();
             this.pbRevolution = new System.Windows.Forms.PictureBox();
             this.pbCeasescu = new System.Windows.Forms.PictureBox();
             this.lblHistory = new System.Windows.Forms.Label();
@@ -41,8 +43,6 @@
             this.lblPropoganda = new System.Windows.Forms.Label();
             this.panelPost1989 = new System.Windows.Forms.Panel();
             this.lblPresentDay = new System.Windows.Forms.Label();
-            this.lblCeausecu = new System.Windows.Forms.Label();
-            this.lblRevolution = new System.Windows.Forms.Label();
             this.panelHistory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
@@ -98,22 +98,40 @@
             this.panelHistory.TabIndex = 5;
             this.panelHistory.Click += new System.EventHandler(this.panelHistory_Click);
             // 
+            // lblRevolution
+            // 
+            this.lblRevolution.AutoSize = true;
+            this.lblRevolution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRevolution.Location = new System.Drawing.Point(229, 701);
+            this.lblRevolution.Name = "lblRevolution";
+            this.lblRevolution.Size = new System.Drawing.Size(114, 25);
+            this.lblRevolution.TabIndex = 4;
+            this.lblRevolution.Text = "Revolution";
+            // 
+            // lblCeausecu
+            // 
+            this.lblCeausecu.AutoSize = true;
+            this.lblCeausecu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCeausecu.Location = new System.Drawing.Point(100, 320);
+            this.lblCeausecu.Name = "lblCeausecu";
+            this.lblCeausecu.Size = new System.Drawing.Size(221, 25);
+            this.lblCeausecu.TabIndex = 3;
+            this.lblCeausecu.Text = "Nicolae Ceauseșescu";
+            // 
             // pbRevolution
             // 
-            this.pbRevolution.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
             this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.Location = new System.Drawing.Point(167, 477);
+            this.pbRevolution.Location = new System.Drawing.Point(116, 435);
             this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
             this.pbRevolution.Name = "pbRevolution";
-            this.pbRevolution.Size = new System.Drawing.Size(266, 208);
+            this.pbRevolution.Size = new System.Drawing.Size(342, 265);
             this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbRevolution.TabIndex = 2;
             this.pbRevolution.TabStop = false;
             // 
             // pbCeasescu
             // 
-            this.pbCeasescu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
             this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
             this.pbCeasescu.Location = new System.Drawing.Point(86, 66);
@@ -197,26 +215,6 @@
             this.lblPresentDay.Size = new System.Drawing.Size(227, 44);
             this.lblPresentDay.TabIndex = 0;
             this.lblPresentDay.Text = "Present Day";
-            // 
-            // lblCeausecu
-            // 
-            this.lblCeausecu.AutoSize = true;
-            this.lblCeausecu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCeausecu.Location = new System.Drawing.Point(100, 320);
-            this.lblCeausecu.Name = "lblCeausecu";
-            this.lblCeausecu.Size = new System.Drawing.Size(221, 25);
-            this.lblCeausecu.TabIndex = 3;
-            this.lblCeausecu.Text = "Nicolae Ceauseșescu";
-            // 
-            // lblRevolution
-            // 
-            this.lblRevolution.AutoSize = true;
-            this.lblRevolution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRevolution.Location = new System.Drawing.Point(250, 686);
-            this.lblRevolution.Name = "lblRevolution";
-            this.lblRevolution.Size = new System.Drawing.Size(114, 25);
-            this.lblRevolution.TabIndex = 4;
-            this.lblRevolution.Text = "Revolution";
             // 
             // Main
             // 
