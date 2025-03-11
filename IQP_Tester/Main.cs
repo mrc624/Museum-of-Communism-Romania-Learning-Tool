@@ -188,6 +188,7 @@ namespace IQP_Tester
         // panel
         static int panelxoffset = 10;
         static int num_panels = 4;
+        static int panel_start_height = 150;
 
         // language button
         static int btnLanguageOffsetx = tabXOffset;
@@ -200,7 +201,7 @@ namespace IQP_Tester
         {
             lblMainTitle.Location = new Point((this.Width / 2) - (lblMainTitle.Width / 2), lblMainTitle.Location.Y);
 
-            btnLanguage.Location = new Point((this.Width - btnLanguage.Size.Width - btnLanguageOffsetx), (this.Height - btnLanguage.Size.Height - btnLanguageOffsety*2));
+            btnLanguage.Location = new Point((this.Width - btnLanguage.Size.Width - btnLanguageOffsetx), (this.Height - btnLanguage.Size.Height - btnLanguageOffsety));
 
             Resize_Panels();
 
@@ -210,11 +211,17 @@ namespace IQP_Tester
         private void Resize_Panels()
         {
             int newWidth = (this.Width / num_panels) - panelxoffset;
+            int newHeight = this.Height - panel_start_height - btnLanguage.Height - btnLanguageOffsety * 2;
 
             panelHistory.Width = newWidth;
             panelLife.Width = newWidth;
             panelPropoganda.Width = newWidth;
             panelPost1989.Width = newWidth;
+
+            panelHistory.Height = newHeight;
+            panelLife.Height = newHeight;
+            panelPropoganda.Height = newHeight;
+            panelPost1989.Height = newHeight;
 
             panelHistory.Location = new Point(panelxoffset, 150);
             panelLife.Location = new Point(newWidth + panelxoffset, 150);

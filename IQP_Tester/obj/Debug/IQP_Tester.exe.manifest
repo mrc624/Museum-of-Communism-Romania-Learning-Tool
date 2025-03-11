@@ -49,17 +49,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tv+nI3XV2LCgoFYd24aRbi8UAtBM8gMK1LrXIT05FO8=</dsig:DigestValue>
+        <dsig:DigestValue>re4oOATgPXIQXICSwp7rE2WNiO8GNi6W2MUr/4pbAnY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="IQP_Tester.exe.config" size="189">
+  <file name="IQP_Tester.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+      <dsig:DigestValue>X+GtgC9o18R9u9jmAWK6iKuu0WLaXTgchdPkk1MRli4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Nicolae_Ceasescu.png" size="90766">
