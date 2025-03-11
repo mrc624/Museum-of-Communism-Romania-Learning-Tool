@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
@@ -205,6 +206,10 @@ namespace IQP_Tester
 
             Resize_Panels();
 
+
+            Resize_History_Panel_Objects();
+            Center_History_Panel_Objects();
+
             Center_Text();
         }
 
@@ -229,6 +234,38 @@ namespace IQP_Tester
             panelPost1989.Location = new Point (newWidth * 3 + panelxoffset, 150);
         }
 
+
+        static double pbCeasescu_width_ratio = 0.5;
+        static double pbRevolution_width_ratio = 0.5;
+
+        private void Resize_History_Panel_Objects()
+        {
+            Resize_PB(pbCeasescu, panelHistory);
+            Resize_PB(pbRevolution, panelHistory);
+        }
+
+        private void Resize_PB(PictureBox pb, Panel parent, double parent_width_ratio = 0.5)
+        {
+            double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
+
+            pb.Width = (int)(parent.Width * parent_width_ratio);
+            pb.Height = (int)((1 / aspect_ratio) * pb.Width);
+        }
+
+        private void Center_History_Panel_Objects()
+        {
+            int width = panelHistory.Width;
+            int height = panelHistory.Height;
+
+            center_x(lblHistory, width);
+
+            center_x(pbCeasescu, width);
+            center_label_to_pb(lblCeausecu, pbCeasescu);
+
+            center_x(pbRevolution, width, 0.8);
+            center_label_to_pb(lblRevolution, pbRevolution);
+        }
+
         // font size ratios, ratios are font size / width
         static float fontRatio = (1f) / (75);
 
@@ -251,7 +288,6 @@ namespace IQP_Tester
         {
             int halfPanelWidth = panelHistory.Width / 2;
 
-            lblHistory.Location = new Point (halfPanelWidth - (lblHistory.Width / 2), lblHistory.Location.Y);
             lblKidsLife.Location = new Point(halfPanelWidth - (lblKidsLife.Width / 2), lblKidsLife.Location.Y);
             lblPropoganda.Location = new Point(halfPanelWidth - (lblPropoganda.Width / 2), lblPropoganda.Location.Y);
             lblPresentDay.Location = new Point(halfPanelWidth - (lblPresentDay.Width / 2), lblPresentDay.Location.Y);
@@ -280,7 +316,25 @@ namespace IQP_Tester
         }
 
 
+        private void center_x(Control control, int width, double percent = 0.5)
+        {
+            int center = (int)(width * percent);
+            int center_control = (int)(control.Width * percent);
+            int center_x = center - center_control;
 
+            control.Location = new Point(center_x, control.Location.Y);
+        }
+
+        private void center_label_to_pb(Control control, Control pb, int height_offset = 0, double percent = 0.5)
+        {
+            int center = (int)(pb.Width * percent);
+            int center_control = (int)(control.Width * percent);
+            int location_x = center - center_control + pb.Location.X;
+
+            int location_y = pb.Location.Y + pb.Height + height_offset;
+
+            control.Location = new Point(location_x, location_y);
+        }
 
 
 

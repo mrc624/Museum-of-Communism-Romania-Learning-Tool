@@ -32,7 +32,7 @@
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblMainTitle = new System.Windows.Forms.Label();
             this.panelHistory = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbRevolution = new System.Windows.Forms.PictureBox();
             this.pbCeasescu = new System.Windows.Forms.PictureBox();
             this.lblHistory = new System.Windows.Forms.Label();
             this.panelLife = new System.Windows.Forms.Panel();
@@ -41,8 +41,10 @@
             this.lblPropoganda = new System.Windows.Forms.Label();
             this.panelPost1989 = new System.Windows.Forms.Panel();
             this.lblPresentDay = new System.Windows.Forms.Label();
+            this.lblCeausecu = new System.Windows.Forms.Label();
+            this.lblRevolution = new System.Windows.Forms.Label();
             this.panelHistory.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
             this.panelLife.SuspendLayout();
             this.panelPropoganda.SuspendLayout();
@@ -84,7 +86,9 @@
             // panelHistory
             // 
             this.panelHistory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelHistory.Controls.Add(this.pictureBox1);
+            this.panelHistory.Controls.Add(this.lblRevolution);
+            this.panelHistory.Controls.Add(this.lblCeausecu);
+            this.panelHistory.Controls.Add(this.pbRevolution);
             this.panelHistory.Controls.Add(this.pbCeasescu);
             this.panelHistory.Controls.Add(this.lblHistory);
             this.panelHistory.Location = new System.Drawing.Point(4, 96);
@@ -94,26 +98,28 @@
             this.panelHistory.TabIndex = 5;
             this.panelHistory.Click += new System.EventHandler(this.panelHistory_Click);
             // 
-            // pictureBox1
+            // pbRevolution
             // 
-            this.pictureBox1.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pictureBox1.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 274);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(217, 187);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pbRevolution.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRevolution.Location = new System.Drawing.Point(167, 477);
+            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
+            this.pbRevolution.Name = "pbRevolution";
+            this.pbRevolution.Size = new System.Drawing.Size(266, 208);
+            this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRevolution.TabIndex = 2;
+            this.pbRevolution.TabStop = false;
             // 
             // pbCeasescu
             // 
+            this.pbCeasescu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
             this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbCeasescu.Location = new System.Drawing.Point(5, 55);
+            this.pbCeasescu.Location = new System.Drawing.Point(86, 66);
             this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
             this.pbCeasescu.Name = "pbCeasescu";
-            this.pbCeasescu.Size = new System.Drawing.Size(150, 168);
+            this.pbCeasescu.Size = new System.Drawing.Size(257, 253);
             this.pbCeasescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCeasescu.TabIndex = 1;
             this.pbCeasescu.TabStop = false;
@@ -192,6 +198,26 @@
             this.lblPresentDay.TabIndex = 0;
             this.lblPresentDay.Text = "Present Day";
             // 
+            // lblCeausecu
+            // 
+            this.lblCeausecu.AutoSize = true;
+            this.lblCeausecu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCeausecu.Location = new System.Drawing.Point(100, 320);
+            this.lblCeausecu.Name = "lblCeausecu";
+            this.lblCeausecu.Size = new System.Drawing.Size(221, 25);
+            this.lblCeausecu.TabIndex = 3;
+            this.lblCeausecu.Text = "Nicolae Ceauseșescu";
+            // 
+            // lblRevolution
+            // 
+            this.lblRevolution.AutoSize = true;
+            this.lblRevolution.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRevolution.Location = new System.Drawing.Point(250, 686);
+            this.lblRevolution.Name = "lblRevolution";
+            this.lblRevolution.Size = new System.Drawing.Size(114, 25);
+            this.lblRevolution.TabIndex = 4;
+            this.lblRevolution.Text = "Revolution";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,7 +238,7 @@
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.panelHistory.ResumeLayout(false);
             this.panelHistory.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).EndInit();
             this.panelLife.ResumeLayout(false);
             this.panelLife.PerformLayout();
@@ -238,7 +264,9 @@
         private System.Windows.Forms.Panel panelPost1989;
         private System.Windows.Forms.Label lblPresentDay;
         private System.Windows.Forms.PictureBox pbCeasescu;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbRevolution;
+        private System.Windows.Forms.Label lblCeausecu;
+        private System.Windows.Forms.Label lblRevolution;
     }
 }
 
