@@ -231,7 +231,6 @@
             this.Controls.Add(this.lblUptime);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Main";
-            this.ShowIcon = false;
             this.Text = "Educating Romanian Children";
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.panelHistory.ResumeLayout(false);

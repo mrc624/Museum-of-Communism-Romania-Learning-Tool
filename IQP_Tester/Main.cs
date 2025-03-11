@@ -26,7 +26,7 @@ namespace IQP_Tester
             num_supported_languages
         }
 
-        public static Language default_language = Language.English;
+        public const Language default_language = Language.English;
 
         public string[] language_to_string = { "English", "Romanian", "ERROR" };
 
@@ -42,7 +42,7 @@ namespace IQP_Tester
         History history;
 
         private System.Timers.Timer Timer;
-        static uint tabTimeout = 10; //in seconds
+        public const uint tabTimeout = 10; //in seconds
         uint lastOpenTime = 0;
         public static uint seconds = 0;
 
@@ -182,35 +182,38 @@ namespace IQP_Tester
         // sizing before any resize constants
 
         // tab control
-        static int tabXOffset = 20;
-        static int tabYOffsetTop = 150;
-        static int tabYOffsetBottom = tabXOffset;
+        const int tabXOffset = 20;
+        const int tabYOffsetTop = 150;
+        const int tabYOffsetBottom = tabXOffset;
 
         // panel
-        static int panelxoffset = 10;
-        static int num_panels = 4;
-        static int panel_start_height = 150;
+        const int panelxoffset = 10;
+        const int num_panels = 4;
+        const int panel_start_height = 150;
 
         // language button
-        static int btnLanguageOffsetx = tabXOffset;
-        static int btnLanguageOffsety = btnLanguageOffsetx;
-
-
+        const int btnLanguageOffsetx = tabXOffset;
+        const int btnLanguageOffsety = btnLanguageOffsetx;
 
 
         private void Main_Resize(object sender, EventArgs e)
         {
-            lblMainTitle.Location = new Point((this.Width / 2) - (lblMainTitle.Width / 2), lblMainTitle.Location.Y);
-
-            btnLanguage.Location = new Point((this.Width - btnLanguage.Size.Width - btnLanguageOffsetx), (this.Height - btnLanguage.Size.Height - btnLanguageOffsety));
+            Handle_Non_Panel_Resize();
 
             Resize_Panels();
 
-
             Resize_History_Panel_Objects();
             Center_History_Panel_Objects();
-
+            
             Center_Text();
+        }
+
+        private void Handle_Non_Panel_Resize()
+        {
+            Resize_Font(lblMainTitle, default_title_font_size);
+            center_x(lblMainTitle, this.Width);
+
+            btnLanguage.Location = new Point((this.Width - btnLanguage.Size.Width - btnLanguageOffsetx), (this.Height - btnLanguage.Size.Height - btnLanguageOffsety));
         }
 
         private void Resize_Panels()
@@ -236,7 +239,7 @@ namespace IQP_Tester
 
         private void Resize_History_Panel_Objects()
         {
-            Resize_PB(pbCeasescu, panelHistory);
+            Resize_PB(pbCeasescu, panelHistory,0.5, false);
             Resize_PB(pbRevolution, panelHistory, 0.75);
 
             Resize_Font(lblCeausecu);
@@ -255,24 +258,6 @@ namespace IQP_Tester
 
             center_x(pbRevolution, width, 0.8);
             center_label_to_pb(lblRevolution, pbRevolution);
-        }
-
-        // font size ratios, ratios are font size / width
-        static float fontRatio = (1f) / (75);
-
-        private void Resize_Text()
-        {
-            float newFontSize = (float)(fontRatio * this.Width);
-
-            if (newFontSize < 1)
-            {
-                newFontSize = 1;
-            }
-
-            //history
-
-            //kidslife
-
         }
 
         private void Center_Text()
@@ -306,17 +291,26 @@ namespace IQP_Tester
             control.Location = new Point(location_x, location_y);
         }
 
-        private void Resize_PB(PictureBox pb, Panel parent, double parent_width_ratio = 0.5)
+        // if the PB is the first PB in the panel then moveDown should be false
+        private void Resize_PB(PictureBox pb, Panel parent, double parent_width_ratio = 0.5, bool moveDown = true)
         {
             double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
 
+            int heightPrev = pb.Height;
+
             pb.Width = (int)(parent.Width * parent_width_ratio);
             pb.Height = (int)((1 / aspect_ratio) * pb.Width);
+
+            if (moveDown)
+            {
+                pb.Location = new Point(pb.Location.X, pb.Location.Y - (heightPrev - pb.Height));
+            }
         }
 
 
         const float default_title_font_size = 27.9f;
         const float default_standard_font_size = 15.75f;
+        const float default_subtitle_font_size = 23f;
         const int default_width = 1920;
 
         private void Resize_Font(Control control, float originalFont = default_standard_font_size, int originalWidth = default_width)

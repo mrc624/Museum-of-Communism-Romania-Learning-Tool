@@ -28,22 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblWhoCeausecu = new System.Windows.Forms.Label();
+            this.pbCeasescu = new System.Windows.Forms.PictureBox();
+            this.panelWhoCeausescu = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
+            this.panelWhoCeausescu.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // lblWhoCeausecu
+            // 
+            this.lblWhoCeausecu.AutoSize = true;
+            this.lblWhoCeausecu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWhoCeausecu.Location = new System.Drawing.Point(16, 241);
+            this.lblWhoCeausecu.Name = "lblWhoCeausecu";
+            this.lblWhoCeausecu.Size = new System.Drawing.Size(327, 25);
+            this.lblWhoCeausecu.TabIndex = 4;
+            this.lblWhoCeausecu.Text = "Who was Nicolae Ceauseșescu?";
+            // 
+            // pbCeasescu
+            // 
+            this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
+            this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
+            this.pbCeasescu.Location = new System.Drawing.Point(80, 33);
+            this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
+            this.pbCeasescu.Name = "pbCeasescu";
+            this.pbCeasescu.Size = new System.Drawing.Size(209, 207);
+            this.pbCeasescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCeasescu.TabIndex = 5;
+            this.pbCeasescu.TabStop = false;
+            // 
+            // panelWhoCeausescu
+            // 
+            this.panelWhoCeausescu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelWhoCeausescu.Controls.Add(this.pbCeasescu);
+            this.panelWhoCeausescu.Controls.Add(this.lblWhoCeausecu);
+            this.panelWhoCeausescu.Location = new System.Drawing.Point(12, 12);
+            this.panelWhoCeausescu.Name = "panelWhoCeausescu";
+            this.panelWhoCeausescu.Size = new System.Drawing.Size(653, 373);
+            this.panelWhoCeausescu.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(766, 317);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "label1";
             // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panelWhoCeausescu);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "History";
             this.Text = "History";
             this.Shown += new System.EventHandler(this.History_Shown);
             this.Click += new System.EventHandler(this.History_Click);
+            this.Resize += new System.EventHandler(this.History_Resize);
+            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).EndInit();
+            this.panelWhoCeausescu.ResumeLayout(false);
+            this.panelWhoCeausescu.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblWhoCeausecu;
+        private System.Windows.Forms.PictureBox pbCeasescu;
+        private System.Windows.Forms.Panel panelWhoCeausescu;
+        private System.Windows.Forms.Label label1;
     }
 }
