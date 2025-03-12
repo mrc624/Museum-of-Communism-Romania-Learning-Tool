@@ -64,7 +64,7 @@
             this.panelWhoCeausescu.Controls.Add(this.lblWhoCeausecu);
             this.panelWhoCeausescu.Location = new System.Drawing.Point(12, 12);
             this.panelWhoCeausescu.Name = "panelWhoCeausescu";
-            this.panelWhoCeausescu.Size = new System.Drawing.Size(653, 373);
+            this.panelWhoCeausescu.Size = new System.Drawing.Size(604, 424);
             this.panelWhoCeausescu.TabIndex = 6;
             // 
             // History

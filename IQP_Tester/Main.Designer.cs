@@ -77,7 +77,7 @@
             // 
             this.lblMainTitle.AutoSize = true;
             this.lblMainTitle.Font = new System.Drawing.Font("Cooper Black", 26.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMainTitle.Location = new System.Drawing.Point(24, 9);
+            this.lblMainTitle.Location = new System.Drawing.Point(417, 9);
             this.lblMainTitle.Name = "lblMainTitle";
             this.lblMainTitle.Size = new System.Drawing.Size(1063, 40);
             this.lblMainTitle.TabIndex = 4;
@@ -94,7 +94,7 @@
             this.panelHistory.Location = new System.Drawing.Point(4, 96);
             this.panelHistory.Margin = new System.Windows.Forms.Padding(1);
             this.panelHistory.Name = "panelHistory";
-            this.panelHistory.Size = new System.Drawing.Size(470, 879);
+            this.panelHistory.Size = new System.Drawing.Size(470, 880);
             this.panelHistory.TabIndex = 5;
             this.panelHistory.Click += new System.EventHandler(this.panelHistory_Click);
             // 
@@ -146,7 +146,7 @@
             // 
             this.lblHistory.AutoSize = true;
             this.lblHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHistory.Location = new System.Drawing.Point(51, 0);
+            this.lblHistory.Location = new System.Drawing.Point(144, -2);
             this.lblHistory.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblHistory.Name = "lblHistory";
             this.lblHistory.Size = new System.Drawing.Size(138, 44);
@@ -157,17 +157,17 @@
             // 
             this.panelLife.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLife.Controls.Add(this.lblKidsLife);
-            this.panelLife.Location = new System.Drawing.Point(476, 97);
+            this.panelLife.Location = new System.Drawing.Point(476, 96);
             this.panelLife.Margin = new System.Windows.Forms.Padding(1);
             this.panelLife.Name = "panelLife";
-            this.panelLife.Size = new System.Drawing.Size(470, 878);
+            this.panelLife.Size = new System.Drawing.Size(470, 880);
             this.panelLife.TabIndex = 6;
             // 
             // lblKidsLife
             // 
             this.lblKidsLife.AutoSize = true;
             this.lblKidsLife.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKidsLife.Location = new System.Drawing.Point(53, 0);
+            this.lblKidsLife.Location = new System.Drawing.Point(129, 0);
             this.lblKidsLife.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblKidsLife.Name = "lblKidsLife";
             this.lblKidsLife.Size = new System.Drawing.Size(172, 44);
@@ -181,14 +181,14 @@
             this.panelPropoganda.Location = new System.Drawing.Point(952, 96);
             this.panelPropoganda.Margin = new System.Windows.Forms.Padding(1);
             this.panelPropoganda.Name = "panelPropoganda";
-            this.panelPropoganda.Size = new System.Drawing.Size(470, 879);
+            this.panelPropoganda.Size = new System.Drawing.Size(470, 880);
             this.panelPropoganda.TabIndex = 7;
             // 
             // lblPropoganda
             // 
             this.lblPropoganda.AutoSize = true;
             this.lblPropoganda.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPropoganda.Location = new System.Drawing.Point(28, 0);
+            this.lblPropoganda.Location = new System.Drawing.Point(105, 1);
             this.lblPropoganda.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPropoganda.Name = "lblPropoganda";
             this.lblPropoganda.Size = new System.Drawing.Size(225, 44);
@@ -199,7 +199,7 @@
             // 
             this.panelPost1989.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelPost1989.Controls.Add(this.lblPresentDay);
-            this.panelPost1989.Location = new System.Drawing.Point(1424, 95);
+            this.panelPost1989.Location = new System.Drawing.Point(1424, 96);
             this.panelPost1989.Margin = new System.Windows.Forms.Padding(1);
             this.panelPost1989.Name = "panelPost1989";
             this.panelPost1989.Size = new System.Drawing.Size(470, 880);
@@ -209,7 +209,7 @@
             // 
             this.lblPresentDay.AutoSize = true;
             this.lblPresentDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPresentDay.Location = new System.Drawing.Point(27, 0);
+            this.lblPresentDay.Location = new System.Drawing.Point(123, -1);
             this.lblPresentDay.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPresentDay.Name = "lblPresentDay";
             this.lblPresentDay.Size = new System.Drawing.Size(227, 44);
@@ -232,6 +232,7 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Main";
             this.Text = "Educating Romanian Children";
+            this.Shown += new System.EventHandler(this.Main_Shown);
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.panelHistory.ResumeLayout(false);
             this.panelHistory.PerformLayout();

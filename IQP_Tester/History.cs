@@ -81,7 +81,7 @@ namespace IQP_Tester
         {
             for (int i = 0; i < parent.Controls.Count; i++)
             {
-                place_ratios_in_dictionary(parent.Controls[i]);
+                Place_Ratios_in_Dictionary(parent.Controls[i]);
 
                 if (parent.Controls[i].HasChildren)
                 {
@@ -90,7 +90,7 @@ namespace IQP_Tester
             }
         }
 
-        private void place_ratios_in_dictionary(Control control)
+        private void Place_Ratios_in_Dictionary(Control control)
         {
             if (control.Font != null)
             {

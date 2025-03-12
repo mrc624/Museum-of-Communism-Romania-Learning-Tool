@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace IQP_Tester
 {
@@ -50,6 +51,11 @@ namespace IQP_Tester
         {
             InitializeComponent();
             SetTimer();
+        }
+
+        private void Main_Shown(object sender, EventArgs e)
+        {
+            CaptureAspectRatios(this);
         }
 
         private void SetTimer()
@@ -195,81 +201,121 @@ namespace IQP_Tester
         const int btnLanguageOffsetx = tabXOffset;
         const int btnLanguageOffsety = btnLanguageOffsetx;
 
+        private Dictionary<Control, (double width_ratio, double height_ratio, double percent_right, double percent_down, float fontRatio)> ratios = new Dictionary<Control, (double width_ratio, double height_ratio, double percent_right, double percent_down, float fontRatio)>();
+
+        private void CaptureAspectRatios(Control parent)
+        {
+            for (int i = 0; i < parent.Controls.Count; i++)
+            {
+                Place_Ratios_in_Dictionary(parent.Controls[i]);
+
+                if (parent.Controls[i].HasChildren)
+                {
+                    CaptureAspectRatios(parent.Controls[i]);
+                }
+            }
+        }
+
+        private void Place_Ratios_in_Dictionary(Control control)
+        {
+            if (control.Font != null)
+            {
+                ratios[control] = (
+                    (double)control.Width / control.Parent.Width,
+                    (double)control.Height / control.Parent.Height,
+                    (double)control.Location.X / control.Parent.Width,
+                    (double)control.Location.Y / control.Parent.Height,
+                    control.Font.Size / (float)control.Parent.Width
+                );
+            }
+            else
+            {
+                ratios[control] = (
+                    (double)control.Width / control.Parent.Width,
+                    (double)control.Height / control.Parent.Height,
+                    (double)control.Location.X / control.Parent.Width,
+                    (double)control.Location.Y / control.Parent.Height,
+                    0
+                );
+            }
+        }
 
         private void Main_Resize(object sender, EventArgs e)
         {
-            Handle_Non_Panel_Resize();
+            Handle_Resize(this);
 
-            Resize_Panels();
+            Reposition(panelHistory);
+            Reposition(panelLife);
+            Reposition(panelPropoganda);
+            Reposition(panelPost1989);
 
-            Resize_History_Panel_Objects();
-            Center_History_Panel_Objects();
-            
-            Center_Text();
+            Reposition(lblHistory);
+            Reposition(lblKidsLife);
+            Reposition(lblPropoganda);
+            Reposition(lblPresentDay);
+
+            Reposition(lblMainTitle);
+
+            Reposition(pbCeasescu);
+            Reposition(pbRevolution);
+            Center_to_Other_Control(lblCeausecu, pbCeasescu);
+            Center_to_Other_Control(lblRevolution, pbRevolution);
+
+            Reposition(btnLanguage);
+        }
+
+        private void Handle_Resize(Control control)
+        {
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                Control curr = control.Controls[i];
+                if (curr is Panel)
+                {
+                    Resize_Panel((Panel)curr);
+                }
+                else if (curr is PictureBox)
+                {
+                    Resize_PB((PictureBox)curr);
+                }
+                else
+                {
+                    if (curr.Font != null)
+                    {
+                        Resize_Font(curr);
+                    }
+                }
+
+                if (curr.HasChildren)
+                {
+                    Handle_Resize(curr);
+                }
+            }
         }
 
         private void Handle_Non_Panel_Resize()
         {
-            Resize_Font(lblMainTitle, default_title_font_size);
+            //Resize_Font(lblMainTitle, default_title_font_size);
             center_x(lblMainTitle, this.Width);
 
             btnLanguage.Location = new Point((this.Width - btnLanguage.Size.Width - btnLanguageOffsetx), (this.Height - btnLanguage.Size.Height - btnLanguageOffsety));
         }
 
-        private void Resize_Panels()
+        private void Resize_Panel(Panel panel)
         {
-            int newWidth = (this.Width / num_panels) - panelxoffset;
-            int newHeight = this.Height - panel_start_height - btnLanguage.Height - btnLanguageOffsety * 2;
+            var items = ratios[panel];
+            double width_ratio = items.width_ratio;
+            double height_ratio = items.height_ratio;
 
-            panelHistory.Width = newWidth;
-            panelLife.Width = newWidth;
-            panelPropoganda.Width = newWidth;
-            panelPost1989.Width = newWidth;
-
-            panelHistory.Height = newHeight;
-            panelLife.Height = newHeight;
-            panelPropoganda.Height = newHeight;
-            panelPost1989.Height = newHeight;
-
-            panelHistory.Location = new Point(panelxoffset, 150);
-            panelLife.Location = new Point(newWidth + panelxoffset, 150);
-            panelPropoganda.Location = new Point (newWidth * 2 + panelxoffset, 150);
-            panelPost1989.Location = new Point (newWidth * 3 + panelxoffset, 150);
+            panel.Height = (int)(height_ratio * this.Height);
+            panel.Width = (int)(width_ratio * this.Width);
         }
 
-        private void Resize_History_Panel_Objects()
+        private void Reposition(Control control)
         {
-            Resize_PB(pbCeasescu, panelHistory,0.5, false);
-            Resize_PB(pbRevolution, panelHistory, 0.75);
+            var items = ratios[control];
 
-            Resize_Font(lblCeausecu);
-            Resize_Font(lblRevolution);
+            control.Location = new Point((int)(items.percent_right * control.Parent.Width), (int)(items.percent_down * control.Parent.Height));
         }
-
-        private void Center_History_Panel_Objects()
-        {
-            int width = panelHistory.Width;
-            int height = panelHistory.Height;
-
-            center_x(lblHistory, width);
-
-            center_x(pbCeasescu, width);
-            center_label_to_pb(lblCeausecu, pbCeasescu);
-
-            center_x(pbRevolution, width, 0.8);
-            center_label_to_pb(lblRevolution, pbRevolution);
-        }
-
-        private void Center_Text()
-        {
-            int halfPanelWidth = panelHistory.Width / 2;
-
-            lblKidsLife.Location = new Point(halfPanelWidth - (lblKidsLife.Width / 2), lblKidsLife.Location.Y);
-            lblPropoganda.Location = new Point(halfPanelWidth - (lblPropoganda.Width / 2), lblPropoganda.Location.Y);
-            lblPresentDay.Location = new Point(halfPanelWidth - (lblPresentDay.Width / 2), lblPresentDay.Location.Y);
-        }
-
-        // Resizing helpers
 
         private void center_x(Control control, int width, double percent = 0.5)
         {
@@ -280,45 +326,38 @@ namespace IQP_Tester
             control.Location = new Point(center_x, control.Location.Y);
         }
 
-        private void center_label_to_pb(Control control, Control pb, int height_offset = 0, double percent = 0.5)
+        private void Center_to_Other_Control(Control control, Control other, int height_offset = 0, double percent = 0.5)
         {
-            int center = (int)(pb.Width * percent);
+            int center = (int)(other.Width * percent);
             int center_control = (int)(control.Width * percent);
-            int location_x = center - center_control + pb.Location.X;
+            int location_x = center - center_control + other.Location.X;
 
-            int location_y = pb.Location.Y + pb.Height + height_offset;
+            int location_y = other.Location.Y + other.Height + height_offset;
 
             control.Location = new Point(location_x, location_y);
         }
 
-        // if the PB is the first PB in the panel then moveDown should be false
-        private void Resize_PB(PictureBox pb, Panel parent, double parent_width_ratio = 0.5, bool moveDown = true)
+        private void Resize_PB(PictureBox pb)
         {
             double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
 
-            int heightPrev = pb.Height;
+            var items = ratios[pb];
+            double width_ratio = items.width_ratio;
 
-            pb.Width = (int)(parent.Width * parent_width_ratio);
+            pb.Width = (int)(pb.Parent.Width * width_ratio);
             pb.Height = (int)((1 / aspect_ratio) * pb.Width);
-
-            if (moveDown)
-            {
-                pb.Location = new Point(pb.Location.X, pb.Location.Y - (heightPrev - pb.Height));
-            }
         }
 
-
-        const float default_title_font_size = 27.9f;
-        const float default_standard_font_size = 15.75f;
-        const float default_subtitle_font_size = 23f;
-        const int default_width = 1920;
-
-        private void Resize_Font(Control control, float originalFont = default_standard_font_size, int originalWidth = default_width)
+        private void Resize_Font(Control control)
         {
-            float newFontSize = originalFont * ((float)(this.Width) / (float)(originalWidth));
+            var items = ratios[control];
+            float font_ratio = items.fontRatio;
+
+            float newFontSize = (float)control.Parent.Width * font_ratio;
 
             control.Font = new Font(control.Font.FontFamily, (float)(newFontSize));
         }
+
 
         // key overides
 
