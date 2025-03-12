@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IQP_Tester.exe" size="330176">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IQP_Tester.exe" size="330688">
       <assemblyIdentity name="IQP_Tester" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>b4d0lrnS019IQ8A9T1mdlP5Zl8ckK1W4zrvZmuNbRXw=</dsig:DigestValue>
+        <dsig:DigestValue>u7G32b//XmtWOYvQ4W7Ax2LYHae1h4gKw3FTGD7o5YM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

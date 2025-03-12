@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace IQP_Tester
 {
@@ -20,7 +21,7 @@ namespace IQP_Tester
 
         private void History_Shown(object sender, EventArgs e)
         {
-            CaptureRatios();
+            CaptureAspectRatios(this);
             //this.FormBorderStyle = FormBorderStyle.None;
             //this.WindowState = FormWindowState.Maximized;
             //this.Bounds = Screen.PrimaryScreen.Bounds;
@@ -30,8 +31,6 @@ namespace IQP_Tester
         {
             this.Close();
         }
-
-
 
         // Resize
 
@@ -43,20 +42,52 @@ namespace IQP_Tester
 
         private void History_Resize(object sender, EventArgs e)
         {
-            Resize_Panel(panelWhoCeausescu);
+            Handle_Resize(this);
 
-            Resize_PB(pbCeasescu);
-            center_label_to_pb(lblWhoCeausecu, pbCeasescu);
-
-            Resize_Font(lblWhoCeausecu);
             Reposition(pbCeasescu);
+
+            Center_to_Other_Control(lblWhoCeausecu, pbCeasescu);
         }
 
-        private void CaptureRatios()
+        private void Handle_Resize(Control control)
         {
-            place_ratios_in_dictionary(panelWhoCeausescu);
-            place_ratios_in_dictionary(pbCeasescu);
-            place_ratios_in_dictionary(lblWhoCeausecu);
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                Control curr = control.Controls[i];
+                if (curr is Panel)
+                {
+                    Resize_Panel((Panel)curr);
+                }
+                else if (curr is PictureBox)
+                {
+                    Resize_PB((PictureBox)curr);
+                }
+                else
+                {
+                    if (curr.Font != null)
+                    {
+                        Resize_Font(curr);
+                    }
+                }
+
+                if (curr.HasChildren)
+                {
+                    Handle_Resize(curr);
+                }
+            }
+        }
+
+        private void CaptureAspectRatios(Control parent)
+        {
+            for (int i = 0; i < parent.Controls.Count; i++)
+            {
+                place_ratios_in_dictionary(parent.Controls[i]);
+
+                if (parent.Controls[i].HasChildren)
+                {
+                    CaptureAspectRatios(parent.Controls[i]);
+                }
+            }
         }
 
         private void place_ratios_in_dictionary(Control control)
@@ -104,13 +135,13 @@ namespace IQP_Tester
             pb.Height = (int)((1 / aspect_ratio) * pb.Width);
         }
 
-        private void center_label_to_pb(Control control, Control pb, int height_offset = 0, double percent = 0.5)
+        private void Center_to_Other_Control(Control control, Control other, int height_offset = 0, double percent = 0.5)
         {
-            int center = (int)(pb.Width * percent);
+            int center = (int)(other.Width * percent);
             int center_control = (int)(control.Width * percent);
-            int location_x = center - center_control + pb.Location.X;
+            int location_x = center - center_control + other.Location.X;
 
-            int location_y = pb.Location.Y + pb.Height + height_offset;
+            int location_y = other.Location.Y + other.Height + height_offset;
 
             control.Location = new Point(location_x, location_y);
         }
