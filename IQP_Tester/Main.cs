@@ -261,7 +261,12 @@ namespace IQP_Tester
             Center_to_Other_Control(lblCeausecu, pbCeasescu);
             Center_to_Other_Control(lblRevolution, pbRevolution);
 
-            Reposition(btnLanguage);
+            Glue_to_Corner(btnLanguage, Corner.bottom_right);
+
+            Expand_to_Top_of_Other(panelHistory, btnLanguage);
+            Expand_to_Top_of_Other(panelLife, btnLanguage);
+            Expand_to_Top_of_Other(panelPropoganda, btnLanguage);
+            Expand_to_Top_of_Other(panelPost1989, btnLanguage);
         }
 
         private void Handle_Resize(Control control)
@@ -282,6 +287,11 @@ namespace IQP_Tester
                     if (curr.Font != null)
                     {
                         Resize_Font(curr);
+                    }
+
+                    if (curr is Button)
+                    {
+                        Resize_Control(curr);
                     }
                 }
 
@@ -358,6 +368,55 @@ namespace IQP_Tester
             control.Font = new Font(control.Font.FontFamily, (float)(newFontSize));
         }
 
+
+        private void Resize_Control(Control control)
+        {
+            var items = ratios[control];
+            double width_ratio = items.width_ratio;
+            double height_ratio = items.height_ratio;
+
+            control.Width = (int)(control.Parent.Width * width_ratio);
+            control.Height = (int)(control.Parent.Height * height_ratio);
+
+        }
+
+        public enum Corner
+        {
+            top_left,
+            top_right,
+            bottom_left,
+            bottom_right,
+            num_corners
+        }
+
+        private void Glue_to_Corner(Control control, Corner corner, int margin = 10)
+        {
+            int parent_width = control.Parent.Width;
+            int parent_height = control.Parent.Height;
+
+            switch (corner)
+            {
+                case Corner.top_left:
+
+                    break;
+                case Corner.top_right:
+
+                    break;
+                case Corner.bottom_left:
+
+                    break;
+                case Corner.bottom_right:
+                    control.Location = new Point(parent_width - control.Width - margin, parent_height - control.Height - margin);
+                    break;
+            }
+        }
+
+        private void Expand_to_Top_of_Other(Control control, Control other, int margin = 10) // control must be above other
+        {
+            int height = other.Location.Y - control.Location.Y - margin;
+
+            control.Height = height;
+        }
 
         // key overides
 

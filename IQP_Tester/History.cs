@@ -68,6 +68,11 @@ namespace IQP_Tester
                     {
                         Resize_Font(curr);
                     }
+
+                    if (curr is Button)
+                    {
+                        Resize_Control(curr);
+                    }
                 }
 
                 if (curr.HasChildren)
@@ -76,6 +81,7 @@ namespace IQP_Tester
                 }
             }
         }
+
 
         private void CaptureAspectRatios(Control parent)
         {
@@ -155,7 +161,18 @@ namespace IQP_Tester
 
             control.Font = new Font(control.Font.FontFamily, (float)(newFontSize));
         }
-        
+
+        private void Resize_Control(Control control)
+        {
+            var items = ratios[control];
+            double width_ratio = items.width_ratio;
+            double height_ratio = items.height_ratio;
+
+            control.Width = (int)(control.Parent.Width * width_ratio);
+            control.Height = (int)(control.Parent.Height * height_ratio);
+
+        }
+
         private void Reposition(Control control)
         {
             var items = ratios[control];

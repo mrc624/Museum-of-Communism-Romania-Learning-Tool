@@ -54,7 +54,7 @@
             // lblUptime
             // 
             this.lblUptime.AutoSize = true;
-            this.lblUptime.Location = new System.Drawing.Point(1609, 993);
+            this.lblUptime.Location = new System.Drawing.Point(1553, 47);
             this.lblUptime.Name = "lblUptime";
             this.lblUptime.Size = new System.Drawing.Size(80, 13);
             this.lblUptime.TabIndex = 1;
@@ -62,12 +62,11 @@
             // 
             // btnLanguage
             // 
-            this.btnLanguage.AutoSize = true;
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(1723, 979);
+            this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(169, 50);
+            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
             this.btnLanguage.TabIndex = 2;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -94,7 +93,7 @@
             this.panelHistory.Location = new System.Drawing.Point(4, 96);
             this.panelHistory.Margin = new System.Windows.Forms.Padding(1);
             this.panelHistory.Name = "panelHistory";
-            this.panelHistory.Size = new System.Drawing.Size(470, 880);
+            this.panelHistory.Size = new System.Drawing.Size(470, 935);
             this.panelHistory.TabIndex = 5;
             this.panelHistory.Click += new System.EventHandler(this.panelHistory_Click);
             // 
@@ -160,7 +159,7 @@
             this.panelLife.Location = new System.Drawing.Point(476, 96);
             this.panelLife.Margin = new System.Windows.Forms.Padding(1);
             this.panelLife.Name = "panelLife";
-            this.panelLife.Size = new System.Drawing.Size(470, 880);
+            this.panelLife.Size = new System.Drawing.Size(470, 935);
             this.panelLife.TabIndex = 6;
             // 
             // lblKidsLife
@@ -181,7 +180,7 @@
             this.panelPropoganda.Location = new System.Drawing.Point(952, 96);
             this.panelPropoganda.Margin = new System.Windows.Forms.Padding(1);
             this.panelPropoganda.Name = "panelPropoganda";
-            this.panelPropoganda.Size = new System.Drawing.Size(470, 880);
+            this.panelPropoganda.Size = new System.Drawing.Size(470, 935);
             this.panelPropoganda.TabIndex = 7;
             // 
             // lblPropoganda
@@ -202,7 +201,7 @@
             this.panelPost1989.Location = new System.Drawing.Point(1424, 96);
             this.panelPost1989.Margin = new System.Windows.Forms.Padding(1);
             this.panelPost1989.Name = "panelPost1989";
-            this.panelPost1989.Size = new System.Drawing.Size(470, 880);
+            this.panelPost1989.Size = new System.Drawing.Size(470, 935);
             this.panelPost1989.TabIndex = 8;
             // 
             // lblPresentDay
