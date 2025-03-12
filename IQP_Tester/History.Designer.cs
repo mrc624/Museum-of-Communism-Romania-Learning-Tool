@@ -50,7 +50,7 @@
             // 
             this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
             this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbCeasescu.Location = new System.Drawing.Point(80, 33);
+            this.pbCeasescu.Location = new System.Drawing.Point(77, 33);
             this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
             this.pbCeasescu.Name = "pbCeasescu";
             this.pbCeasescu.Size = new System.Drawing.Size(209, 207);

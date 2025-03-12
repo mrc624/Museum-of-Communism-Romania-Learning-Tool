@@ -66,7 +66,7 @@ namespace IQP_Tester
             Invoke(new VoidDelegate(Seconds_Trigger));
             if (seconds == lastOpenTime + tabTimeout)
             {
-                 Invoke(new VoidDelegate(CloseAllForms));
+                 //Invoke(new VoidDelegate(CloseAllForms));
             }
         }
 
