@@ -27,7 +27,7 @@ namespace IQP_Tester
 
         private void KidsToys_Shown(object sender, EventArgs e)
         {
-            KidsToysAns.Text = kidsToysAnsLang[(int)Main.language];
+            //KidsToysAns.Text = kidsToysAnsLang[(int)Main.language];
 
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;

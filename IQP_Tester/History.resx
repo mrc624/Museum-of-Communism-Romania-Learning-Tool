@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lbllWhoCeausesescuAns.Text" xml:space="preserve">
+    <value>Nicolae Ceauseșescu was the leader of the communist regime of Romania.
+He committed many attrocities against the people of his country to the
+point that Gorbachev disapproved of Romania. Nicolae mirrored many actions
+of North Korea, as he wanted to be treated as Kim Il Sung was.
+</value>
+  </data>
 </root>

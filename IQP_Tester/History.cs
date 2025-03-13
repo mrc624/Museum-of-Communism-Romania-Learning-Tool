@@ -14,9 +14,13 @@ namespace IQP_Tester
 {
     public partial class History : Form
     {
-        public History()
+        TranslationManager translationManager;
+
+        public History(TranslationManager translationMan)
         {
+            translationManager = translationMan;
             InitializeComponent();
+            translationManager.Update_One_Form(this);
         }
 
         private void History_Shown(object sender, EventArgs e)
@@ -47,6 +51,8 @@ namespace IQP_Tester
             Reposition(pbCeasescu);
 
             Center_to_Other_Control(lblWhoCeausecu, pbCeasescu);
+
+            Center_to_Other_Control(lbllWhoCeausesescuAns, lblWhoCeausecu);
         }
 
         private void Handle_Resize(Control control)

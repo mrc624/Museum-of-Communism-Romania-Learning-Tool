@@ -251,7 +251,6 @@
         #endregion
         private System.Windows.Forms.Label lblUptime;
         private System.Windows.Forms.Button btnLanguage;
-        private System.Windows.Forms.Label lblMainTitle;
         private System.Windows.Forms.Panel panelHistory;
         private System.Windows.Forms.Label lblHistory;
         private System.Windows.Forms.Panel panelLife;
@@ -264,6 +263,7 @@
         private System.Windows.Forms.PictureBox pbRevolution;
         private System.Windows.Forms.Label lblCeausecu;
         private System.Windows.Forms.Label lblRevolution;
+        private System.Windows.Forms.Label lblMainTitle;
     }
 }
 

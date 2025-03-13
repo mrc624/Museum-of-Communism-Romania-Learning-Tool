@@ -14,26 +14,16 @@ using System.Timers;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
+
 namespace IQP_Tester
 {
     public partial class Main : Form
     {
         delegate void VoidDelegate();
 
-        public enum Language
-        {
-            English,
-            Romanian,
-            num_supported_languages
-        }
+        TranslationManager translationManager = new TranslationManager();
 
-        public const Language default_language = Language.English;
-
-        public string[] language_to_string = { "English", "Romanian", "ERROR" };
-
-        public static Language language = default_language;
-        
-        
+        public static List<Form> Forms = new List<Form>();
 
         KidsToys kidsToys;
         Food food;
@@ -50,7 +40,18 @@ namespace IQP_Tester
         public Main()
         {
             InitializeComponent();
+            Add_Forms();
+            translationManager.Generate_Translation_JSON(TranslationManager.translation_file_name);
+            translationManager.Update_One_Form(this);
             SetTimer();
+        }
+
+        private void Add_Forms()
+        {
+            Forms.Add(this);
+
+            history = new History(translationManager);
+            Forms.Add(history);
         }
 
         private void Main_Shown(object sender, EventArgs e)
@@ -95,7 +96,7 @@ namespace IQP_Tester
         {
             CloseAllForms();
             lastOpenTime = seconds;
-            history = new History();
+            history = new History(translationManager);
             FadeIn(history);
         }
 
@@ -158,27 +159,7 @@ namespace IQP_Tester
 
         private void btnLanguage_Click(object sender, EventArgs e)
         {
-            language = language + 1; // go to the next language
-            if (language == Language.num_supported_languages)
-            {
-                language = Language.English; // if we went past last supported language go back to english
-            }
-
-            btnLanguage.Text = language_to_string[(uint)language]; // update language on button
-            update_languages_on_main();
-        }
-
-        private void update_languages_on_main()
-        {
-            // update main page (non tab)
-            lblMainTitle.Text = lblMainTitleLang[(uint)language];
-
-            // update questions
-            // History
-
-            //resize with the new lenghts
-            Main_Resize(this, new EventArgs());
-
+            translationManager.Increment_Language(this);
         }
 
         // LANGUAGE MANAGEMENT END
@@ -250,11 +231,16 @@ namespace IQP_Tester
             Reposition(panelPost1989);
 
             Reposition(lblHistory);
+            Center_X(lblHistory);
             Reposition(lblKidsLife);
+            Center_X(lblKidsLife);
             Reposition(lblPropoganda);
+            Center_X(lblPropoganda);
             Reposition(lblPresentDay);
+            Center_X(lblPresentDay);
 
             Reposition(lblMainTitle);
+            Center_X(lblMainTitle);
 
             Reposition(pbCeasescu);
             Reposition(pbRevolution);
@@ -302,14 +288,6 @@ namespace IQP_Tester
             }
         }
 
-        private void Handle_Non_Panel_Resize()
-        {
-            //Resize_Font(lblMainTitle, default_title_font_size);
-            center_x(lblMainTitle, this.Width);
-
-            btnLanguage.Location = new Point((this.Width - btnLanguage.Size.Width - btnLanguageOffsetx), (this.Height - btnLanguage.Size.Height - btnLanguageOffsety));
-        }
-
         private void Resize_Panel(Panel panel)
         {
             var items = ratios[panel];
@@ -327,9 +305,9 @@ namespace IQP_Tester
             control.Location = new Point((int)(items.percent_right * control.Parent.Width), (int)(items.percent_down * control.Parent.Height));
         }
 
-        private void center_x(Control control, int width, double percent = 0.5)
+        private void Center_X(Control control, double percent = 0.5)
         {
-            int center = (int)(width * percent);
+            int center = (int)(control.Parent.Width * percent);
             int center_control = (int)(control.Width * percent);
             int center_x = center - center_control;
 

@@ -27,7 +27,7 @@ namespace IQP_Tester
 
         private void Food_Shown(object sender, EventArgs e)
         {
-            label1.Text = foodAnsLang[(int)Main.language];
+            //label1.Text = foodAnsLang[(int)Main.language];
 
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;

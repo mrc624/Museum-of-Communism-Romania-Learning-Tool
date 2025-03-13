@@ -26,7 +26,7 @@ namespace IQP_Tester
 
         private void WhoCeascu_Shown(object sender, EventArgs e)
         {
-            CaescuWhoAns.Text = CaescuWhoAnsLang[(int)Main.language];
+            //CaescuWhoAns.Text = CaescuWhoAnsLang[(int)Main.language];
 
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;

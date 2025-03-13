@@ -30,7 +30,7 @@ namespace IQP_Tester
 
         private void RevLength_Shown(object sender, EventArgs e)
         {
-            revLengthAns.Text = revLengthAnsLang[(int)Main.language];
+            //revLengthAns.Text = revLengthAnsLang[(int)Main.language];
 
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;

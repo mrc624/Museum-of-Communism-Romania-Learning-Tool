@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History));
             this.lblWhoCeausecu = new System.Windows.Forms.Label();
             this.pbCeasescu = new System.Windows.Forms.PictureBox();
             this.panelWhoCeausescu = new System.Windows.Forms.Panel();
+            this.lbllWhoCeausesescuAns = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
             this.panelWhoCeausescu.SuspendLayout();
             this.SuspendLayout();
@@ -39,7 +41,7 @@
             // 
             this.lblWhoCeausecu.AutoSize = true;
             this.lblWhoCeausecu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhoCeausecu.Location = new System.Drawing.Point(16, 241);
+            this.lblWhoCeausecu.Location = new System.Drawing.Point(51, 220);
             this.lblWhoCeausecu.Name = "lblWhoCeausecu";
             this.lblWhoCeausecu.Size = new System.Drawing.Size(327, 25);
             this.lblWhoCeausecu.TabIndex = 4;
@@ -49,7 +51,7 @@
             // 
             this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
             this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbCeasescu.Location = new System.Drawing.Point(77, 33);
+            this.pbCeasescu.Location = new System.Drawing.Point(101, 12);
             this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
             this.pbCeasescu.Name = "pbCeasescu";
             this.pbCeasescu.Size = new System.Drawing.Size(209, 207);
@@ -60,12 +62,23 @@
             // panelWhoCeausescu
             // 
             this.panelWhoCeausescu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelWhoCeausescu.Controls.Add(this.lbllWhoCeausesescuAns);
             this.panelWhoCeausescu.Controls.Add(this.pbCeasescu);
             this.panelWhoCeausescu.Controls.Add(this.lblWhoCeausecu);
             this.panelWhoCeausescu.Location = new System.Drawing.Point(12, 12);
             this.panelWhoCeausescu.Name = "panelWhoCeausescu";
-            this.panelWhoCeausescu.Size = new System.Drawing.Size(604, 424);
+            this.panelWhoCeausescu.Size = new System.Drawing.Size(413, 321);
             this.panelWhoCeausescu.TabIndex = 6;
+            // 
+            // lbllWhoCeausesescuAns
+            // 
+            this.lbllWhoCeausesescuAns.AutoSize = true;
+            this.lbllWhoCeausesescuAns.Location = new System.Drawing.Point(24, 245);
+            this.lbllWhoCeausesescuAns.Name = "lbllWhoCeausesescuAns";
+            this.lbllWhoCeausesescuAns.Size = new System.Drawing.Size(372, 52);
+            this.lbllWhoCeausesescuAns.TabIndex = 6;
+            this.lbllWhoCeausesescuAns.Text = resources.GetString("lbllWhoCeausesescuAns.Text");
+            this.lbllWhoCeausesescuAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // History
             // 
@@ -91,5 +104,6 @@
         private System.Windows.Forms.Label lblWhoCeausecu;
         private System.Windows.Forms.PictureBox pbCeasescu;
         private System.Windows.Forms.Panel panelWhoCeausescu;
+        private System.Windows.Forms.Label lbllWhoCeausesescuAns;
     }
 }
