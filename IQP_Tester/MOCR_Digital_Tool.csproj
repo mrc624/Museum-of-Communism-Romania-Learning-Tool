@@ -224,6 +224,7 @@
   <ItemGroup>
     <Content Include="Nicolae_Ceasescu.png" />
     <Content Include="Romanian_Revolution.jpg" />
+    <Content Include="Rumanian_Revolution_Tank.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -109,6 +109,21 @@ namespace IQP_Tester
             control.Location = new Point(center_x, control.Location.Y);
         }
 
+        public void Center_Y(Control control, double percent = 0.5)
+        {
+            int center = (int)(control.Parent.Height * percent);
+            int center_control = (int)(control.Height * percent);
+            int center_y = center - center_control;
+
+            control.Location = new Point(control.Location.X, center_y);
+        }
+
+        public void Center_X_Y(Control control, double percent_x = 0.5, double percent_y = 0.5)
+        {
+            Center_X(control, percent_x);
+            Center_Y(control, percent_y);
+        }
+
         public void Center_to_Other_Control(Control control, Control other, int height_offset = 0, double percent = 0.5)
         {
             int center = (int)(other.Width * percent);

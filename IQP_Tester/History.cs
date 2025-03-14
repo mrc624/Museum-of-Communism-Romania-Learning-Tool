@@ -16,7 +16,7 @@ namespace IQP_Tester
     {
         TranslationManager translationManager;
         Resize_Helper resize = new Resize_Helper();
-
+        
         public History(TranslationManager translationMan)
         {
             translationManager = translationMan;
@@ -46,11 +46,15 @@ namespace IQP_Tester
         {
             resize.Handle_Resize(this);
 
+            resize.Reposition(panelWhoCeausescu);
             resize.Reposition(pbCeasescu);
+            resize.Center_to_Other_Control(lblWhoCeausecuQ, pbCeasescu);
+            resize.Center_to_Other_Control(lblWhoCeausesescuAns, lblWhoCeausecuQ);
 
-            resize.Center_to_Other_Control(lblWhoCeausecu, pbCeasescu);
-
-            resize.Center_to_Other_Control(lbllWhoCeausesescuAns, lblWhoCeausecu);
+            resize.Reposition(panelRevolutionQuestions);
+            resize.Reposition(pbRevolutionTank);
+            resize.Center_to_Other_Control(lblRevolutionQ, pbRevolutionTank);
+            resize.Center_to_Other_Control(lblRevolutionAns, lblRevolutionQ);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }

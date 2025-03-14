@@ -29,24 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History));
-            this.lblWhoCeausecu = new System.Windows.Forms.Label();
+            this.lblWhoCeausecuQ = new System.Windows.Forms.Label();
             this.pbCeasescu = new System.Windows.Forms.PictureBox();
             this.panelWhoCeausescu = new System.Windows.Forms.Panel();
-            this.lbllWhoCeausesescuAns = new System.Windows.Forms.Label();
+            this.lblWhoCeausesescuAns = new System.Windows.Forms.Label();
             this.btnLanguage = new System.Windows.Forms.Button();
+            this.panelRevolutionQuestions = new System.Windows.Forms.Panel();
+            this.pbRevolutionTank = new System.Windows.Forms.PictureBox();
+            this.lblRevolutionQ = new System.Windows.Forms.Label();
+            this.lblRevolutionAns = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
             this.panelWhoCeausescu.SuspendLayout();
+            this.panelRevolutionQuestions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRevolutionTank)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblWhoCeausecu
+            // lblWhoCeausecuQ
             // 
-            this.lblWhoCeausecu.AutoSize = true;
-            this.lblWhoCeausecu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhoCeausecu.Location = new System.Drawing.Point(51, 220);
-            this.lblWhoCeausecu.Name = "lblWhoCeausecu";
-            this.lblWhoCeausecu.Size = new System.Drawing.Size(327, 25);
-            this.lblWhoCeausecu.TabIndex = 4;
-            this.lblWhoCeausecu.Text = "Who was Nicolae Ceauseșescu?";
+            this.lblWhoCeausecuQ.AutoSize = true;
+            this.lblWhoCeausecuQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWhoCeausecuQ.Location = new System.Drawing.Point(51, 220);
+            this.lblWhoCeausecuQ.Name = "lblWhoCeausecuQ";
+            this.lblWhoCeausecuQ.Size = new System.Drawing.Size(327, 25);
+            this.lblWhoCeausecuQ.TabIndex = 4;
+            this.lblWhoCeausecuQ.Text = "Who was Nicolae Ceauseșescu?";
             // 
             // pbCeasescu
             // 
@@ -63,23 +69,23 @@
             // panelWhoCeausescu
             // 
             this.panelWhoCeausescu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelWhoCeausescu.Controls.Add(this.lbllWhoCeausesescuAns);
+            this.panelWhoCeausescu.Controls.Add(this.lblWhoCeausesescuAns);
             this.panelWhoCeausescu.Controls.Add(this.pbCeasescu);
-            this.panelWhoCeausescu.Controls.Add(this.lblWhoCeausecu);
+            this.panelWhoCeausescu.Controls.Add(this.lblWhoCeausecuQ);
             this.panelWhoCeausescu.Location = new System.Drawing.Point(12, 12);
             this.panelWhoCeausescu.Name = "panelWhoCeausescu";
             this.panelWhoCeausescu.Size = new System.Drawing.Size(413, 321);
             this.panelWhoCeausescu.TabIndex = 6;
             // 
-            // lbllWhoCeausesescuAns
+            // lblWhoCeausesescuAns
             // 
-            this.lbllWhoCeausesescuAns.AutoSize = true;
-            this.lbllWhoCeausesescuAns.Location = new System.Drawing.Point(24, 245);
-            this.lbllWhoCeausesescuAns.Name = "lbllWhoCeausesescuAns";
-            this.lbllWhoCeausesescuAns.Size = new System.Drawing.Size(372, 52);
-            this.lbllWhoCeausesescuAns.TabIndex = 6;
-            this.lbllWhoCeausesescuAns.Text = resources.GetString("lbllWhoCeausesescuAns.Text");
-            this.lbllWhoCeausesescuAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblWhoCeausesescuAns.AutoSize = true;
+            this.lblWhoCeausesescuAns.Location = new System.Drawing.Point(24, 245);
+            this.lblWhoCeausesescuAns.Name = "lblWhoCeausesescuAns";
+            this.lblWhoCeausesescuAns.Size = new System.Drawing.Size(372, 52);
+            this.lblWhoCeausesescuAns.TabIndex = 6;
+            this.lblWhoCeausesescuAns.Text = resources.GetString("lblWhoCeausesescuAns.Text");
+            this.lblWhoCeausesescuAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnLanguage
             // 
@@ -93,11 +99,54 @@
             this.btnLanguage.UseVisualStyleBackColor = false;
             this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
             // 
+            // panelRevolutionQuestions
+            // 
+            this.panelRevolutionQuestions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelRevolutionQuestions.Controls.Add(this.lblRevolutionAns);
+            this.panelRevolutionQuestions.Controls.Add(this.lblRevolutionQ);
+            this.panelRevolutionQuestions.Controls.Add(this.pbRevolutionTank);
+            this.panelRevolutionQuestions.Location = new System.Drawing.Point(990, 88);
+            this.panelRevolutionQuestions.Name = "panelRevolutionQuestions";
+            this.panelRevolutionQuestions.Size = new System.Drawing.Size(507, 384);
+            this.panelRevolutionQuestions.TabIndex = 8;
+            // 
+            // pbRevolutionTank
+            // 
+            this.pbRevolutionTank.Image = ((System.Drawing.Image)(resources.GetObject("pbRevolutionTank.Image")));
+            this.pbRevolutionTank.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbRevolutionTank.InitialImage")));
+            this.pbRevolutionTank.Location = new System.Drawing.Point(60, 14);
+            this.pbRevolutionTank.Name = "pbRevolutionTank";
+            this.pbRevolutionTank.Size = new System.Drawing.Size(354, 245);
+            this.pbRevolutionTank.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRevolutionTank.TabIndex = 0;
+            this.pbRevolutionTank.TabStop = false;
+            // 
+            // lblRevolutionQ
+            // 
+            this.lblRevolutionQ.AutoSize = true;
+            this.lblRevolutionQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRevolutionQ.Location = new System.Drawing.Point(78, 262);
+            this.lblRevolutionQ.Name = "lblRevolutionQ";
+            this.lblRevolutionQ.Size = new System.Drawing.Size(327, 25);
+            this.lblRevolutionQ.TabIndex = 5;
+            this.lblRevolutionQ.Text = "Who was Nicolae Ceauseșescu?";
+            // 
+            // lblRevolutionAns
+            // 
+            this.lblRevolutionAns.AutoSize = true;
+            this.lblRevolutionAns.Location = new System.Drawing.Point(106, 287);
+            this.lblRevolutionAns.Name = "lblRevolutionAns";
+            this.lblRevolutionAns.Size = new System.Drawing.Size(273, 78);
+            this.lblRevolutionAns.TabIndex = 7;
+            this.lblRevolutionAns.Text = resources.GetString("lblRevolutionAns.Text");
+            this.lblRevolutionAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.panelRevolutionQuestions);
             this.Controls.Add(this.btnLanguage);
             this.Controls.Add(this.panelWhoCeausescu);
             this.Margin = new System.Windows.Forms.Padding(1);
@@ -109,16 +158,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).EndInit();
             this.panelWhoCeausescu.ResumeLayout(false);
             this.panelWhoCeausescu.PerformLayout();
+            this.panelRevolutionQuestions.ResumeLayout(false);
+            this.panelRevolutionQuestions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRevolutionTank)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblWhoCeausecu;
+        private System.Windows.Forms.Label lblWhoCeausecuQ;
         private System.Windows.Forms.PictureBox pbCeasescu;
         private System.Windows.Forms.Panel panelWhoCeausescu;
-        private System.Windows.Forms.Label lbllWhoCeausesescuAns;
+        private System.Windows.Forms.Label lblWhoCeausesescuAns;
         private System.Windows.Forms.Button btnLanguage;
+        private System.Windows.Forms.Panel panelRevolutionQuestions;
+        private System.Windows.Forms.Label lblRevolutionQ;
+        private System.Windows.Forms.PictureBox pbRevolutionTank;
+        private System.Windows.Forms.Label lblRevolutionAns;
     }
 }
