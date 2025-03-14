@@ -33,6 +33,7 @@
             this.pbCeasescu = new System.Windows.Forms.PictureBox();
             this.panelWhoCeausescu = new System.Windows.Forms.Panel();
             this.lbllWhoCeausesescuAns = new System.Windows.Forms.Label();
+            this.btnLanguage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
             this.panelWhoCeausescu.SuspendLayout();
             this.SuspendLayout();
@@ -80,11 +81,24 @@
             this.lbllWhoCeausesescuAns.Text = resources.GetString("lbllWhoCeausesescuAns.Text");
             this.lbllWhoCeausesescuAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // btnLanguage
+            // 
+            this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
+            this.btnLanguage.Name = "btnLanguage";
+            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
+            this.btnLanguage.TabIndex = 7;
+            this.btnLanguage.Text = "English";
+            this.btnLanguage.UseVisualStyleBackColor = false;
+            this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
+            // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.btnLanguage);
             this.Controls.Add(this.panelWhoCeausescu);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "History";
@@ -105,5 +119,6 @@
         private System.Windows.Forms.PictureBox pbCeasescu;
         private System.Windows.Forms.Panel panelWhoCeausescu;
         private System.Windows.Forms.Label lbllWhoCeausesescuAns;
+        private System.Windows.Forms.Button btnLanguage;
     }
 }

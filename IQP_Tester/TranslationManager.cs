@@ -29,6 +29,8 @@ namespace IQP_Tester
 
         public const string translation_file_name = "translations.json";
 
+        public bool JSON_Generated_or_Updated = false;
+
         public void Generate_Translation_JSON(string file_name)
         {
             Dictionary<string, Dictionary<string, string>> translations;
@@ -46,6 +48,8 @@ namespace IQP_Tester
                     { language_to_string[(int)Language.Romanian], new Dictionary<string, string>() }
                 };
             }
+
+            JSON_Generated_or_Updated = true;
 
             for (int i = 0; i < Forms.Count; i++)
             {
@@ -88,6 +92,7 @@ namespace IQP_Tester
             }
         }
 
+        // the forms resize function must be called after incremementing the language
         public void Increment_Language(Form form)
         {
             language = language + 1; // go to the next language
@@ -123,17 +128,14 @@ namespace IQP_Tester
 
         public void Update_One_Form(Form form)
         {
-            Dictionary<string, Dictionary<string, string>> translations = new Dictionary<string, Dictionary<string, string>>();
-
-            if (File.Exists(translation_file_name))
+            if (File.Exists(translation_file_name) && JSON_Generated_or_Updated)
             {
+                Dictionary<string, Dictionary<string, string>> translations = new Dictionary<string, Dictionary<string, string>>();
                 string json = File.ReadAllText(translation_file_name);
                 translations = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                Dictionary<string, string> translated = translations[language_to_string[(int)language]];
+                Translate_Form(form, translated);
             }
-
-            Dictionary<string, string> translated = translations[language_to_string[(int)language]];
-
-            Translate_Form(form, translated);
         }
 
 

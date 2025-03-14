@@ -231,7 +231,6 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Main";
             this.Text = "Educating Romanian Children";
-            this.Shown += new System.EventHandler(this.Main_Shown);
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.panelHistory.ResumeLayout(false);
             this.panelHistory.PerformLayout();

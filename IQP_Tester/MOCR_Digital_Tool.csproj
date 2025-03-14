@@ -152,6 +152,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resize_Helper.cs" />
     <Compile Include="RevLength.cs">
       <SubType>Form</SubType>
     </Compile>
