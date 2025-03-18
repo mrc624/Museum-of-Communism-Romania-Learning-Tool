@@ -1,0 +1,1 @@
+add translation button to polaroid zoom form

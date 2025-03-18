@@ -32,26 +32,26 @@
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblMainTitle = new System.Windows.Forms.Label();
             this.panelRegimeFall = new System.Windows.Forms.Panel();
+            this.lblWhatHappenedInTimisoara = new System.Windows.Forms.Label();
+            this.pbTimosaura = new System.Windows.Forms.PictureBox();
             this.lblWhatWasTheRevolution = new System.Windows.Forms.Label();
+            this.pbRevolution = new System.Windows.Forms.PictureBox();
             this.lblHowDidTheRegimeFall = new System.Windows.Forms.Label();
             this.panelCeausescu = new System.Windows.Forms.Panel();
             this.lblWhoWasCeausescu = new System.Windows.Forms.Label();
+            this.pbCeasescu = new System.Windows.Forms.PictureBox();
             this.panelLifeUnder = new System.Windows.Forms.Panel();
             this.lblHowWasLifeUnderRegime = new System.Windows.Forms.Label();
             this.panelPresentDay = new System.Windows.Forms.Panel();
             this.lblWhatWasEducationLike = new System.Windows.Forms.Label();
             this.btnCredits = new System.Windows.Forms.Button();
-            this.pbCeasescu = new System.Windows.Forms.PictureBox();
-            this.pbTimosaura = new System.Windows.Forms.PictureBox();
-            this.pbRevolution = new System.Windows.Forms.PictureBox();
-            this.lblWhatHappenedInTimisoara = new System.Windows.Forms.Label();
             this.panelRegimeFall.SuspendLayout();
-            this.panelCeausescu.SuspendLayout();
-            this.panelLifeUnder.SuspendLayout();
-            this.panelPresentDay.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTimosaura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).BeginInit();
+            this.panelCeausescu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
+            this.panelLifeUnder.SuspendLayout();
+            this.panelPresentDay.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblUptime
@@ -99,6 +99,26 @@
             this.panelRegimeFall.TabIndex = 5;
             this.panelRegimeFall.Click += new System.EventHandler(this.panelHistory_Click);
             // 
+            // lblWhatHappenedInTimisoara
+            // 
+            this.lblWhatHappenedInTimisoara.AutoSize = true;
+            this.lblWhatHappenedInTimisoara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWhatHappenedInTimisoara.Location = new System.Drawing.Point(248, 348);
+            this.lblWhatHappenedInTimisoara.Name = "lblWhatHappenedInTimisoara";
+            this.lblWhatHappenedInTimisoara.Size = new System.Drawing.Size(220, 20);
+            this.lblWhatHappenedInTimisoara.TabIndex = 6;
+            this.lblWhatHappenedInTimisoara.Text = "What happened in Timisoara?";
+            // 
+            // pbTimosaura
+            // 
+            this.pbTimosaura.Image = global::IQP_Tester.Properties.Resources.Timisoara_Uprising;
+            this.pbTimosaura.Location = new System.Drawing.Point(252, 214);
+            this.pbTimosaura.Name = "pbTimosaura";
+            this.pbTimosaura.Size = new System.Drawing.Size(204, 131);
+            this.pbTimosaura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbTimosaura.TabIndex = 5;
+            this.pbTimosaura.TabStop = false;
+            // 
             // lblWhatWasTheRevolution
             // 
             this.lblWhatWasTheRevolution.AutoSize = true;
@@ -108,6 +128,18 @@
             this.lblWhatWasTheRevolution.Size = new System.Drawing.Size(187, 20);
             this.lblWhatWasTheRevolution.TabIndex = 4;
             this.lblWhatWasTheRevolution.Text = "What was the revolution?";
+            // 
+            // pbRevolution
+            // 
+            this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRevolution.Location = new System.Drawing.Point(27, 46);
+            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
+            this.pbRevolution.Name = "pbRevolution";
+            this.pbRevolution.Size = new System.Drawing.Size(172, 136);
+            this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRevolution.TabIndex = 2;
+            this.pbRevolution.TabStop = false;
             // 
             // lblHowDidTheRegimeFall
             // 
@@ -140,6 +172,18 @@
             this.lblWhoWasCeausescu.Size = new System.Drawing.Size(382, 31);
             this.lblWhoWasCeausescu.TabIndex = 0;
             this.lblWhoWasCeausescu.Text = "Who was Nicolae Ceaușescu?";
+            // 
+            // pbCeasescu
+            // 
+            this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
+            this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
+            this.pbCeasescu.Location = new System.Drawing.Point(27, 39);
+            this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
+            this.pbCeasescu.Name = "pbCeasescu";
+            this.pbCeasescu.Size = new System.Drawing.Size(124, 129);
+            this.pbCeasescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCeasescu.TabIndex = 1;
+            this.pbCeasescu.TabStop = false;
             // 
             // panelLifeUnder
             // 
@@ -193,50 +237,6 @@
             this.btnCredits.UseVisualStyleBackColor = false;
             this.btnCredits.Click += new System.EventHandler(this.btnCredits_Click);
             // 
-            // pbCeasescu
-            // 
-            this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbCeasescu.Location = new System.Drawing.Point(27, 39);
-            this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
-            this.pbCeasescu.Name = "pbCeasescu";
-            this.pbCeasescu.Size = new System.Drawing.Size(124, 129);
-            this.pbCeasescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCeasescu.TabIndex = 1;
-            this.pbCeasescu.TabStop = false;
-            // 
-            // pbTimosaura
-            // 
-            this.pbTimosaura.Image = global::IQP_Tester.Properties.Resources.Timisoara_Uprising;
-            this.pbTimosaura.Location = new System.Drawing.Point(245, 183);
-            this.pbTimosaura.Name = "pbTimosaura";
-            this.pbTimosaura.Size = new System.Drawing.Size(204, 131);
-            this.pbTimosaura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbTimosaura.TabIndex = 5;
-            this.pbTimosaura.TabStop = false;
-            // 
-            // pbRevolution
-            // 
-            this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.Location = new System.Drawing.Point(27, 46);
-            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
-            this.pbRevolution.Name = "pbRevolution";
-            this.pbRevolution.Size = new System.Drawing.Size(172, 136);
-            this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbRevolution.TabIndex = 2;
-            this.pbRevolution.TabStop = false;
-            // 
-            // lblWhatHappenedInTimisoara
-            // 
-            this.lblWhatHappenedInTimisoara.AutoSize = true;
-            this.lblWhatHappenedInTimisoara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhatHappenedInTimisoara.Location = new System.Drawing.Point(241, 317);
-            this.lblWhatHappenedInTimisoara.Name = "lblWhatHappenedInTimisoara";
-            this.lblWhatHappenedInTimisoara.Size = new System.Drawing.Size(220, 20);
-            this.lblWhatHappenedInTimisoara.TabIndex = 6;
-            this.lblWhatHappenedInTimisoara.Text = "What happened in Timisoara?";
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,15 +257,15 @@
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.panelRegimeFall.ResumeLayout(false);
             this.panelRegimeFall.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTimosaura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
             this.panelCeausescu.ResumeLayout(false);
             this.panelCeausescu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).EndInit();
             this.panelLifeUnder.ResumeLayout(false);
             this.panelLifeUnder.PerformLayout();
             this.panelPresentDay.ResumeLayout(false);
             this.panelPresentDay.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTimosaura)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

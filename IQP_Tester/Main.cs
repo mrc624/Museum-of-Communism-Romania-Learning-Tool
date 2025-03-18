@@ -93,7 +93,7 @@ namespace IQP_Tester
             CloseAllForms();
             lastOpenTime = seconds;
             history = new RegimeFall(translationManager);
-            FadeIn(history);
+            resize.FadeIn(history);
         }
 
         // HISTORY PANEL END
@@ -116,26 +116,6 @@ namespace IQP_Tester
 
 
         // PRESENT DAY PANEL END
-
-        // MISC FORM FUNCTIONS BEGIN
-
-        public static void FadeIn(Form form, int interval = 10, double increment = 0.05)
-        {
-            form.Opacity = 0; // Start fully transparent
-            form.Show();
-            System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
-            fadeTimer.Interval = interval; // Time in milliseconds between opacity updates
-            fadeTimer.Tick += (s, e) =>
-            {
-                if (form.Opacity < 1.0)
-                    form.Opacity += increment; // Increase opacity gradually
-                else
-                    fadeTimer.Stop(); // Stop when fully visible
-            };
-            fadeTimer.Start();
-        }
-
-        // MISC FORM FUNCTIONS END
 
         // TAB MANAGEMENT BEGIN
 
@@ -171,7 +151,7 @@ namespace IQP_Tester
         {
             CloseAllForms();
             credits = new Credits();
-            FadeIn(credits);
+            resize.FadeIn(credits);
         }
 
         // CREDITS MANAGEMENT END
@@ -205,11 +185,6 @@ namespace IQP_Tester
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
             resize.Center_to_Other_Control(btnCredits, btnLanguage, Resize_Helper.Centering_Options.to_left);
-
-            resize.Expand_to_Top_of_Other(panelRegimeFall, btnLanguage);
-            resize.Expand_to_Top_of_Other(panelCeausescu, btnLanguage);
-            resize.Expand_to_Top_of_Other(panelLifeUnder, btnLanguage);
-            resize.Expand_to_Top_of_Other(panelPresentDay, btnLanguage);
         }
 
         // key overides

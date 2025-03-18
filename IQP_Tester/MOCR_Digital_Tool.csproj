@@ -137,6 +137,12 @@
     <Compile Include="Food.Designer.cs">
       <DependentUpon>Food.cs</DependentUpon>
     </Compile>
+    <Compile Include="Polaroid_Zoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polaroid_Zoom.Designer.cs">
+      <DependentUpon>Polaroid_Zoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegimeFall.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Food.resx">
       <DependentUpon>Food.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polaroid_Zoom.resx">
+      <DependentUpon>Polaroid_Zoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegimeFall.resx">
       <DependentUpon>RegimeFall.cs</DependentUpon>
@@ -230,7 +239,18 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Kneeling_With_Rifle.jpg" />
     <Content Include="Nicolae_Ceasescu.png" />
+    <Content Include="Painting_on_Wall.jpg" />
+    <Content Include="People_Gathering.jpg" />
+    <Content Include="People_in_Square.jpg" />
+    <Content Include="People_in_Square2.jpg" />
+    <Content Include="People_in_Square3.jpg" />
+    <Content Include="People_in_Square_Climbing_Trees.jpg" />
+    <Content Include="People_Marching_Hole_in_Flag.jpg" />
+    <Content Include="People_Marching_Many_Flags_And_Sign.jpg" />
+    <Content Include="People_Reading_From_Balcony.jpg" />
+    <Content Include="Police_Against_Wall_With_Grafitti.jpg" />
     <Content Include="Romanian_Revolution.jpg" />
     <Content Include="Rumanian_Revolution_Tank.jpg" />
   </ItemGroup>

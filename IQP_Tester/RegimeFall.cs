@@ -29,9 +29,7 @@ namespace IQP_Tester
 
         private void History_Shown(object sender, EventArgs e)
         {
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
-            this.Bounds = Screen.PrimaryScreen.Bounds;
+            resize.Fullscreen_Form(this);
         }
 
         private void History_Click(object sender, EventArgs e)
@@ -49,13 +47,6 @@ namespace IQP_Tester
 
             resize.Reposition_Panels_With_PB_lblQ_lblAns();
 
-            /*
-            resize.Reposition(panelWhatWasRevolution);
-            resize.Reposition(pbWhatWasRevolution);
-            resize.Center_to_Other_Control(lblWhatWasRevolutionQ, pbWhatWasRevolution);
-            resize.Center_to_Other_Control(lblWhatWasRevolutionAns, lblWhatWasRevolutionQ);
-            */
-
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
 
@@ -63,6 +54,12 @@ namespace IQP_Tester
         {
             translationManager.Increment_Language(this);
             History_Resize(this, new EventArgs());
+        }
+
+        private void pbWhatWasRevolution_Click(object sender, EventArgs e)
+        {
+            Polaroid_Zoom polaroid_Zoom = new Polaroid_Zoom(pbWhatWasRevolution, lblWhatWasRevolutionQ, lblWhatWasRevolutionAns);
+            polaroid_Zoom.Show();
         }
     }
 }

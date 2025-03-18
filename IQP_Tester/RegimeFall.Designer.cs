@@ -115,12 +115,13 @@
             // 
             this.pbWhatWasRevolution.Image = ((System.Drawing.Image)(resources.GetObject("pbWhatWasRevolution.Image")));
             this.pbWhatWasRevolution.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhatWasRevolution.InitialImage")));
-            this.pbWhatWasRevolution.Location = new System.Drawing.Point(12, 14);
+            this.pbWhatWasRevolution.Location = new System.Drawing.Point(23, 14);
             this.pbWhatWasRevolution.Name = "pbWhatWasRevolution";
-            this.pbWhatWasRevolution.Size = new System.Drawing.Size(302, 190);
+            this.pbWhatWasRevolution.Size = new System.Drawing.Size(283, 190);
             this.pbWhatWasRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbWhatWasRevolution.TabIndex = 0;
             this.pbWhatWasRevolution.TabStop = false;
+            this.pbWhatWasRevolution.Click += new System.EventHandler(this.pbWhatWasRevolution_Click);
             // 
             // panelWhyRevolt
             // 
@@ -277,7 +278,7 @@
             this.lblWhereCeausescuQ.Name = "lblWhereCeausescuQ";
             this.lblWhereCeausescuQ.Size = new System.Drawing.Size(245, 25);
             this.lblWhereCeausescuQ.TabIndex = 5;
-            this.lblWhereCeausescuQ.Text = "Where was Ceausescu?";
+            this.lblWhereCeausescuQ.Text = "Where was Ceaușescu?";
             // 
             // pbWhereCeausescu
             // 
