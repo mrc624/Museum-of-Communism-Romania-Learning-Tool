@@ -31,7 +31,9 @@ namespace IQP_Tester
         WhoCeascu whoCeascu;
         RevLength revLength;
 
-        History history;
+        RegimeFall history;
+
+        Credits credits;
 
         private System.Timers.Timer Timer;
         public const uint tabTimeout = 10; //in seconds
@@ -42,9 +44,9 @@ namespace IQP_Tester
         {
             InitializeComponent();
             Add_Forms();
+            resize.CaptureAspectRatios(this);
             translationManager.Generate_Translation_JSON(TranslationManager.translation_file_name);
             translationManager.Update_One_Form(this);
-            resize.CaptureAspectRatios(this);
             Main_Resize(this, new EventArgs());
             SetTimer();
         }
@@ -53,7 +55,7 @@ namespace IQP_Tester
         {
             Forms.Add(this);
 
-            history = new History(translationManager);
+            history = new RegimeFall(translationManager);
             Forms.Add(history);
         }
 
@@ -90,7 +92,7 @@ namespace IQP_Tester
         {
             CloseAllForms();
             lastOpenTime = seconds;
-            history = new History(translationManager);
+            history = new RegimeFall(translationManager);
             FadeIn(history);
         }
 
@@ -144,6 +146,11 @@ namespace IQP_Tester
                 history.Close();
             }
 
+            if (credits != null)
+            {
+                credits.Close();
+            }
+
         }
 
         // TAB MANAGEMENT END
@@ -158,40 +165,51 @@ namespace IQP_Tester
 
         // LANGUAGE MANAGEMENT END
 
+        // CREDITS MANAGEMENT BEGIN
+
+        private void btnCredits_Click(object sender, EventArgs e)
+        {
+            CloseAllForms();
+            credits = new Credits();
+            FadeIn(credits);
+        }
+
+        // CREDITS MANAGEMENT END
+
         // HANDLING RESIZE BEGIN
 
         private void Main_Resize(object sender, EventArgs e)
         {
             resize.Handle_Resize(this);
 
-            resize.Reposition(panelHistory);
-            resize.Reposition(panelLife);
-            resize.Reposition(panelPropoganda);
-            resize.Reposition(panelPost1989);
+            resize.Reposition(panelRegimeFall);
+            resize.Reposition(panelCeausescu);
+            resize.Reposition(panelLifeUnder);
+            resize.Reposition(panelPresentDay);
 
-            resize.Reposition(lblHistory);
-            resize.Center_X(lblHistory);
-            resize.Reposition(lblKidsLife);
-            resize.Center_X(lblKidsLife);
-            resize.Reposition(lblPropoganda);
-            resize.Center_X(lblPropoganda);
-            resize.Reposition(lblPresentDay);
-            resize.Center_X(lblPresentDay);
+            resize.Reposition(lblHowDidTheRegimeFall);
+            resize.Center_X(lblHowDidTheRegimeFall);
+            resize.Reposition(lblWhoWasCeausescu);
+            resize.Center_X(lblWhoWasCeausescu);
+            resize.Reposition(lblHowWasLifeUnderRegime);
+            resize.Center_X(lblHowWasLifeUnderRegime);
+            resize.Reposition(lblWhatWasEducationLike);
+            resize.Center_X(lblWhatWasEducationLike);
 
             resize.Reposition(lblMainTitle);
             resize.Center_X(lblMainTitle);
 
             resize.Reposition(pbCeasescu);
             resize.Reposition(pbRevolution);
-            resize.Center_to_Other_Control(lblCeausecu, pbCeasescu);
-            resize.Center_to_Other_Control(lblRevolution, pbRevolution);
+            resize.Center_to_Other_Control(lblWhatWasTheRevolution, pbRevolution);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
+            resize.Center_to_Other_Control(btnCredits, btnLanguage, Resize_Helper.Centering_Options.to_left);
 
-            resize.Expand_to_Top_of_Other(panelHistory, btnLanguage);
-            resize.Expand_to_Top_of_Other(panelLife, btnLanguage);
-            resize.Expand_to_Top_of_Other(panelPropoganda, btnLanguage);
-            resize.Expand_to_Top_of_Other(panelPost1989, btnLanguage);
+            resize.Expand_to_Top_of_Other(panelRegimeFall, btnLanguage);
+            resize.Expand_to_Top_of_Other(panelCeausescu, btnLanguage);
+            resize.Expand_to_Top_of_Other(panelLifeUnder, btnLanguage);
+            resize.Expand_to_Top_of_Other(panelPresentDay, btnLanguage);
         }
 
         // key overides

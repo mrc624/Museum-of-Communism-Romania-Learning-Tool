@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\mrclo\Downloads\</PublishUrl>
+    <PublishUrl>D:\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,8 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -126,17 +125,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credits.Designer.cs">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </Compile>
     <Compile Include="Food.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Food.Designer.cs">
       <DependentUpon>Food.cs</DependentUpon>
     </Compile>
-    <Compile Include="History.cs">
+    <Compile Include="RegimeFall.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="History.Designer.cs">
-      <DependentUpon>History.cs</DependentUpon>
+    <Compile Include="RegimeFall.Designer.cs">
+      <DependentUpon>RegimeFall.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -166,11 +171,14 @@
     <Compile Include="WhoCeascu.Designer.cs">
       <DependentUpon>WhoCeascu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Credits.resx">
+      <DependentUpon>Credits.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Food.resx">
       <DependentUpon>Food.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="History.resx">
-      <DependentUpon>History.cs</DependentUpon>
+    <EmbeddedResource Include="RegimeFall.resx">
+      <DependentUpon>RegimeFall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

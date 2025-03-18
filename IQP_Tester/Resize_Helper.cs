@@ -13,6 +13,8 @@ namespace IQP_Tester
 
         private Dictionary<Control, (double width_ratio, double height_ratio, double percent_right, double percent_down, float fontRatio)> ratios = new Dictionary<Control, (double width_ratio, double height_ratio, double percent_right, double percent_down, float fontRatio)>();
 
+        bool Dictionary_Updated = false;
+
         public void CaptureAspectRatios(Control parent)
         {
             for (int i = 0; i < parent.Controls.Count; i++)
@@ -24,6 +26,8 @@ namespace IQP_Tester
                     CaptureAspectRatios(parent.Controls[i]);
                 }
             }
+
+            Dictionary_Updated = true;
         }
 
         private void Place_Ratios_in_Dictionary(Control control)
@@ -52,33 +56,36 @@ namespace IQP_Tester
 
         public void Handle_Resize(Control control)
         {
-            for (int i = 0; i < control.Controls.Count; i++)
+            if (Dictionary_Updated)
             {
-                Control curr = control.Controls[i];
-                if (curr is Panel)
+                for (int i = 0; i < control.Controls.Count; i++)
                 {
-                    Resize_Panel((Panel)curr);
-                }
-                else if (curr is PictureBox)
-                {
-                    Resize_PB((PictureBox)curr);
-                }
-                else
-                {
-                    if (curr.Font != null)
+                    Control curr = control.Controls[i];
+                    if (curr is Panel)
                     {
-                        Resize_Font(curr);
+                        Resize_Panel((Panel)curr);
+                    }
+                    else if (curr is PictureBox)
+                    {
+                        Resize_PB((PictureBox)curr);
+                    }
+                    else
+                    {
+                        if (curr.Font != null)
+                        {
+                            Resize_Font(curr);
+                        }
+
+                        if (curr is Button)
+                        {
+                            Resize_Control(curr);
+                        }
                     }
 
-                    if (curr is Button)
+                    if (curr.HasChildren)
                     {
-                        Resize_Control(curr);
+                        Handle_Resize(curr);
                     }
-                }
-
-                if (curr.HasChildren)
-                {
-                    Handle_Resize(curr);
                 }
             }
         }
@@ -95,9 +102,11 @@ namespace IQP_Tester
 
         public void Reposition(Control control)
         {
-            var items = ratios[control];
-
-            control.Location = new Point((int)(items.percent_right * control.Parent.Width), (int)(items.percent_down * control.Parent.Height));
+            if (Dictionary_Updated)
+            {
+                var items = ratios[control];
+                control.Location = new Point((int)(items.percent_right * control.Parent.Width), (int)(items.percent_down * control.Parent.Height));
+            }
         }
 
         public void Center_X(Control control, double percent = 0.5)
@@ -124,48 +133,100 @@ namespace IQP_Tester
             Center_Y(control, percent_y);
         }
 
-        public void Center_to_Other_Control(Control control, Control other, int height_offset = 0, double percent = 0.5)
+        public enum Centering_Options
         {
-            int center = (int)(other.Width * percent);
-            int center_control = (int)(control.Width * percent);
-            int location_x = center - center_control + other.Location.X;
+            to_left,
+            to_bottom,
+            to_right,
+            to_top,
+            num_centering_options
+        }
 
-            int location_y = other.Location.Y + other.Height + height_offset;
+        public void Center_to_Other_Control(Control control, Control other, Centering_Options option = Centering_Options.to_bottom, int offset = 0, double percent = 0.5)
+        {
+            int control_centering = 0;
+            int other_centering = 0;
+
+            if (option == Centering_Options.to_bottom || option == Centering_Options.to_top)
+            {
+                control_centering = control.Width;
+                other_centering = other.Width;
+            }
+            else if (option == Centering_Options.to_left || option == Centering_Options.to_right)
+            {
+                control_centering = control.Height;
+                other_centering = other.Height;
+            }
+
+            int center_control = (int)(control_centering * percent);
+            int other_center = (int)(other_centering * percent);
+
+            int location_x = 0;
+            int location_y = 0;
+
+            if (option == Centering_Options.to_bottom)
+            {
+                location_x = other_center - center_control + other.Location.X;
+                location_y = other.Location.Y + other.Height + offset;
+            }
+            else if (option == Centering_Options.to_top)
+            {
+                location_x = other_center - center_control + other.Location.X;
+                location_y = other.Location.Y + offset;
+            }
+            else if (option == Centering_Options.to_left)
+            {
+                location_x = other.Location.X - offset - control.Width;
+                location_y = other_center - center_control + other.Location.Y;
+            }
+            else if (option == Centering_Options.to_right)
+            {
+                location_x = other.Location.X - offset + control.Width + other.Width;
+                location_y = other_center - center_control + other.Location.Y;
+            }
 
             control.Location = new Point(location_x, location_y);
         }
 
         private void Resize_PB(PictureBox pb)
         {
-            double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
+            if (Dictionary_Updated)
+            {
+                double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
 
-            var items = ratios[pb];
-            double width_ratio = items.width_ratio;
+                var items = ratios[pb];
+                double width_ratio = items.width_ratio;
 
-            pb.Width = (int)(pb.Parent.Width * width_ratio);
-            pb.Height = (int)((1 / aspect_ratio) * pb.Width);
+                pb.Width = (int)(pb.Parent.Width * width_ratio);
+                pb.Height = (int)((1 / aspect_ratio) * pb.Width);
+            }
         }
 
         private void Resize_Font(Control control)
         {
-            var items = ratios[control];
-            float font_ratio = items.fontRatio;
+            if (Dictionary_Updated)
+            {
+                var items = ratios[control];
+                float font_ratio = items.fontRatio;
 
-            float newFontSize = (float)control.Parent.Width * font_ratio;
+                float newFontSize = (float)control.Parent.Width * font_ratio;
 
-            control.Font = new Font(control.Font.FontFamily, (float)(newFontSize));
+                control.Font = new Font(control.Font.FontFamily, (float)(newFontSize));
+            }
         }
 
 
         private void Resize_Control(Control control)
         {
-            var items = ratios[control];
-            double width_ratio = items.width_ratio;
-            double height_ratio = items.height_ratio;
+            if (Dictionary_Updated)
+            {
+                var items = ratios[control];
+                double width_ratio = items.width_ratio;
+                double height_ratio = items.height_ratio;
 
-            control.Width = (int)(control.Parent.Width * width_ratio);
-            control.Height = (int)(control.Parent.Height * height_ratio);
-
+                control.Width = (int)(control.Parent.Width * width_ratio);
+                control.Height = (int)(control.Parent.Height * height_ratio);
+            }
         }
 
         public enum Corner

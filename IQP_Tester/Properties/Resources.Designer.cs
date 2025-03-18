@@ -79,5 +79,15 @@ namespace IQP_Tester.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Timisoara_Uprising {
+            get {
+                object obj = ResourceManager.GetObject("Timisoara_Uprising", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
