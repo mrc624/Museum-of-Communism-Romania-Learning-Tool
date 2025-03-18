@@ -23,6 +23,7 @@ namespace IQP_Tester
             InitializeComponent();
             translationManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
+            resize.Find_Panels_With_PB_lblQ_lblAns(this);
             History_Resize(this, new EventArgs());
         }
 
@@ -46,10 +47,14 @@ namespace IQP_Tester
         {
             resize.Handle_Resize(this);
 
+            resize.Reposition_Panels_With_PB_lblQ_lblAns();
+
+            /*
             resize.Reposition(panelWhatWasRevolution);
             resize.Reposition(pbWhatWasRevolution);
             resize.Center_to_Other_Control(lblWhatWasRevolutionQ, pbWhatWasRevolution);
             resize.Center_to_Other_Control(lblWhatWasRevolutionAns, lblWhatWasRevolutionQ);
+            */
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }

@@ -170,7 +170,7 @@
             this.panelWhyFlee.Controls.Add(this.lblWhyFleeAns);
             this.panelWhyFlee.Controls.Add(this.lblWhyFleeQ);
             this.panelWhyFlee.Controls.Add(this.pbWhyFlee);
-            this.panelWhyFlee.Location = new System.Drawing.Point(573, 492);
+            this.panelWhyFlee.Location = new System.Drawing.Point(573, 305);
             this.panelWhyFlee.Name = "panelWhyFlee";
             this.panelWhyFlee.Size = new System.Drawing.Size(333, 339);
             this.panelWhyFlee.TabIndex = 10;
@@ -212,7 +212,7 @@
             this.panelRevolutionExpectations.Controls.Add(this.lblRevolutionExpectationsAns);
             this.panelRevolutionExpectations.Controls.Add(this.lblRevolutionExpectationsQ);
             this.panelRevolutionExpectations.Controls.Add(this.pbRevolutionExpectations);
-            this.panelRevolutionExpectations.Location = new System.Drawing.Point(1002, 675);
+            this.panelRevolutionExpectations.Location = new System.Drawing.Point(1114, 600);
             this.panelRevolutionExpectations.Name = "panelRevolutionExpectations";
             this.panelRevolutionExpectations.Size = new System.Drawing.Size(333, 339);
             this.panelRevolutionExpectations.TabIndex = 11;
@@ -254,7 +254,7 @@
             this.panelWhereCeausescu.Controls.Add(this.lblWhereCeausescuAns);
             this.panelWhereCeausescu.Controls.Add(this.lblWhereCeausescuQ);
             this.panelWhereCeausescu.Controls.Add(this.pbWhereCeausescu);
-            this.panelWhereCeausescu.Location = new System.Drawing.Point(1104, 68);
+            this.panelWhereCeausescu.Location = new System.Drawing.Point(1502, 204);
             this.panelWhereCeausescu.Name = "panelWhereCeausescu";
             this.panelWhereCeausescu.Size = new System.Drawing.Size(333, 339);
             this.panelWhereCeausescu.TabIndex = 12;
@@ -296,7 +296,7 @@
             this.panelTimisoara.Controls.Add(this.lblTimisoaraAns);
             this.panelTimisoara.Controls.Add(this.lblTimisoaraQ);
             this.panelTimisoara.Controls.Add(this.pbTimisoara);
-            this.panelTimisoara.Location = new System.Drawing.Point(658, 28);
+            this.panelTimisoara.Location = new System.Drawing.Point(1026, 28);
             this.panelTimisoara.Name = "panelTimisoara";
             this.panelTimisoara.Size = new System.Drawing.Size(333, 339);
             this.panelTimisoara.TabIndex = 13;
