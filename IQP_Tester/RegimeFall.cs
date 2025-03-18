@@ -46,10 +46,10 @@ namespace IQP_Tester
         {
             resize.Handle_Resize(this);
 
-            resize.Reposition(panelRevolutionQuestions);
-            resize.Reposition(pbRevolutionTank);
-            resize.Center_to_Other_Control(lblRevolutionQ, pbRevolutionTank);
-            resize.Center_to_Other_Control(lblRevolutionAns, lblRevolutionQ);
+            resize.Reposition(panelWhatWasRevolution);
+            resize.Reposition(pbWhatWasRevolution);
+            resize.Center_to_Other_Control(lblWhatWasRevolutionQ, pbWhatWasRevolution);
+            resize.Center_to_Other_Control(lblWhatWasRevolutionAns, lblWhatWasRevolutionQ);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
