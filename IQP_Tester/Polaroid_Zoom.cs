@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,12 +21,30 @@ namespace IQP_Tester
         Label lblQ;
         Label lblAns;
 
-        public Polaroid_Zoom(PictureBox pb, Label lblQ, Label lblAns, TranslationManager translationMan)
+        public Polaroid_Zoom(Panel panel, TranslationManager translationMan)
         {
             InitializeComponent();
-            this.pb = pb;
-            this.lblQ = lblQ;
-            this.lblAns = lblAns;
+ 
+            if (resize.Panel_Has_PB_lblQ_lblAns(panel))
+            { 
+                for (int i = 0; i < panel.Controls.Count; i++)
+                {
+                    string control_name = panel.Controls[i].Name;
+
+                    if (panel.Controls[i] is PictureBox)
+                    {
+                        pb = (PictureBox)panel.Controls[i];
+                    }
+                    else if (control_name.EndsWith(Resize_Helper.END_QUESTION_FLAG) && panel.Controls[i] is Label)
+                    {
+                        lblQ = (Label)panel.Controls[i];
+                    }
+                    else if (control_name.EndsWith(Resize_Helper.END_ANSWER_FLAG) && panel.Controls[i] is Label)
+                    {
+                        lblAns = (Label)panel.Controls[i];
+                    }
+                }
+            }
             translationManager = translationMan;
             Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
             resize.CaptureAspectRatios(this);

@@ -57,8 +57,8 @@ namespace IQP_Tester
 
         private void pbWhatWasRevolution_Click(object sender, EventArgs e)
         {
-            Polaroid_Zoom polaroid_Zoom = new Polaroid_Zoom(pbWhatWasRevolution, lblWhatWasRevolutionQ, lblWhatWasRevolutionAns, translationManager);
-            polaroid_Zoom.Show();
+            Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(panelWhatWasRevolution, translationManager);
+            resize.FadeIn(polaroid_zoom);
         }
 
         private void btnLanguage_TextChanged(object sender, EventArgs e)

@@ -293,8 +293,8 @@ namespace IQP_Tester
 
         private const int NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS = 3;
         private const string BEGIN_PICTUREBOX_FLAG = "pb";
-        private const string END_ANSWER_FLAG = "Ans";
-        private const string END_QUESTION_FLAG = "Q";
+        public const string END_ANSWER_FLAG = "Ans";
+        public const string END_QUESTION_FLAG = "Q";
 
         List<Panel> Panels_With_PB_lblQ_lblAns = new List<Panel>();
 
@@ -322,7 +322,7 @@ namespace IQP_Tester
             }
         }
 
-        private bool Panel_Has_PB_lblQ_lblAns(Control panel)
+        public bool Panel_Has_PB_lblQ_lblAns(Control panel)
         {
             if (panel is Panel && panel.Controls.Count == NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS)
             {
