@@ -101,7 +101,7 @@ namespace IQP_Tester
                 language = Language.English; // if we went past last supported language go back to english
             }
 
-            Update_One_Form(form);
+            Update_All_Forms();
         }
 
         public void Update_Translations()
@@ -123,6 +123,14 @@ namespace IQP_Tester
                     Translate_Form(Forms[i], translated);
                 }
 
+            }
+        }
+
+        public void Update_All_Forms()
+        {
+            for (int i = 0; i < Application.OpenForms.Count; i++)
+            {
+                Update_One_Form(Application.OpenForms[i]);         
             }
         }
 
@@ -155,8 +163,34 @@ namespace IQP_Tester
             }
         }
 
+        public string Get_Translation(Control control, Dictionary<string, string> translated)
+        {
+            if (control.Text != null)
+            {
+                return translated[control.Name];
+            }
+            else
+            {
+                return null;
+            }
+        }
 
-        private void Translate_Control(Control control, Dictionary<string, string> translated)
+        public Dictionary<string, string> Get_Translated_Dictionary()
+        {
+            if (File.Exists(translation_file_name) && JSON_Generated_or_Updated)
+            {
+                Dictionary<string, Dictionary<string, string>> translations = new Dictionary<string, Dictionary<string, string>>();
+                string json = File.ReadAllText(translation_file_name);
+                translations = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                return translations[language_to_string[(int)language]];
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public void Translate_Control(Control control, Dictionary<string, string> translated)
         {
             for (int i = 0; i < control.Controls.Count; i++)
             {

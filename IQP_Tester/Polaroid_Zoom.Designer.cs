@@ -32,6 +32,7 @@
             this.lblQuestion = new System.Windows.Forms.Label();
             this.lblAnswer = new System.Windows.Forms.Label();
             this.pbPicture = new System.Windows.Forms.PictureBox();
+            this.btnLanguage = new System.Windows.Forms.Button();
             this.tableLayoutPanelQuestionAndAnswer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +72,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAnswer.AutoSize = true;
             this.lblAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnswer.Location = new System.Drawing.Point(3, 94);
+            this.lblAnswer.Location = new System.Drawing.Point(3, 93);
             this.lblAnswer.Name = "lblAnswer";
             this.lblAnswer.Size = new System.Drawing.Size(917, 31);
             this.lblAnswer.TabIndex = 1;
@@ -89,16 +90,30 @@
             this.pbPicture.TabStop = false;
             this.pbPicture.Click += new System.EventHandler(this.pbPicture_Click);
             // 
+            // btnLanguage
+            // 
+            this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
+            this.btnLanguage.Name = "btnLanguage";
+            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
+            this.btnLanguage.TabIndex = 8;
+            this.btnLanguage.Text = "English";
+            this.btnLanguage.UseVisualStyleBackColor = false;
+            this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
+            // 
             // Polaroid_Zoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.btnLanguage);
             this.Controls.Add(this.tableLayoutPanelQuestionAndAnswer);
             this.Controls.Add(this.pbPicture);
             this.Name = "Polaroid_Zoom";
             this.Text = "Polaroid_Zoom";
             this.Click += new System.EventHandler(this.Polaroid_Zoom_Click);
+            this.Resize += new System.EventHandler(this.Polaroid_Zoom_Resize);
             this.tableLayoutPanelQuestionAndAnswer.ResumeLayout(false);
             this.tableLayoutPanelQuestionAndAnswer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
@@ -112,5 +127,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelQuestionAndAnswer;
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label lblAnswer;
+        private System.Windows.Forms.Button btnLanguage;
     }
 }

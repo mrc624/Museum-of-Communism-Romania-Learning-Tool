@@ -31,7 +31,7 @@ namespace IQP_Tester
         WhoCeascu whoCeascu;
         RevLength revLength;
 
-        RegimeFall history;
+        RegimeFall regimeFall;
 
         Credits credits;
 
@@ -55,8 +55,8 @@ namespace IQP_Tester
         {
             Forms.Add(this);
 
-            history = new RegimeFall(translationManager);
-            Forms.Add(history);
+            regimeFall = new RegimeFall(translationManager);
+            Forms.Add(regimeFall);
         }
 
         private void SetTimer()
@@ -92,8 +92,8 @@ namespace IQP_Tester
         {
             CloseAllForms();
             lastOpenTime = seconds;
-            history = new RegimeFall(translationManager);
-            resize.FadeIn(history);
+            regimeFall = new RegimeFall(translationManager);
+            resize.FadeIn(regimeFall);
         }
 
         // HISTORY PANEL END
@@ -121,9 +121,9 @@ namespace IQP_Tester
 
         private void CloseAllForms()
         {
-            if (history != null)
+            if (regimeFall != null)
             {
-                history.Close();
+                regimeFall.Close();
             }
 
             if (credits != null)

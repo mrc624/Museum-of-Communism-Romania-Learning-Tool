@@ -14,11 +14,21 @@ namespace IQP_Tester
     {
 
         Resize_Helper resize = new Resize_Helper();
+        TranslationManager translationManager;
 
-        public Polaroid_Zoom(PictureBox pb, Label lblQ, Label lblAns)
+        PictureBox pb;
+        Label lblQ;
+        Label lblAns;
+
+        public Polaroid_Zoom(PictureBox pb, Label lblQ, Label lblAns, TranslationManager translationMan)
         {
             InitializeComponent();
+            this.pb = pb;
+            this.lblQ = lblQ;
+            this.lblAns = lblAns;
+            translationManager = translationMan;
             Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
+            resize.CaptureAspectRatios(this);
             resize.Fullscreen_Form(this);
         }
 
@@ -32,6 +42,32 @@ namespace IQP_Tester
         private void Polaroid_Zoom_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Polaroid_Zoom_Resize(object sender, EventArgs e)
+        {
+            resize.Handle_Resize(this);
+
+            resize.Reposition(pbPicture);
+            resize.Reposition(lblQuestion);
+            resize.Reposition(lblAnswer);
+
+            resize.Center_Y(pbPicture);
+
+            resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
+        }
+
+        private void btnLanguage_Click(object sender, EventArgs e)
+        {
+            translationManager.Increment_Language(this);
+            Polaroid_Zoom_Resize(this, new EventArgs());
+            Translate_Polaroid();
+        }
+
+        private void Translate_Polaroid()
+        {
+            lblQuestion.Text = translationManager.Get_Translation(lblQ, translationManager.Get_Translated_Dictionary());
+            lblAnswer.Text = translationManager.Get_Translation(lblAns, translationManager.Get_Translated_Dictionary());
         }
 
         private void pbPicture_Click(object sender, EventArgs e)
