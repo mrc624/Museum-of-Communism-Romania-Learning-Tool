@@ -24,9 +24,9 @@ namespace IQP_Tester
         public Polaroid_Zoom(Panel panel, TranslationManager translationMan)
         {
             InitializeComponent();
- 
+
             if (resize.Panel_Has_PB_lblQ_lblAns(panel))
-            { 
+            {
                 for (int i = 0; i < panel.Controls.Count; i++)
                 {
                     string control_name = panel.Controls[i].Name;
@@ -44,11 +44,11 @@ namespace IQP_Tester
                         lblAns = (Label)panel.Controls[i];
                     }
                 }
+                translationManager = translationMan;
+                Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
+                resize.CaptureAspectRatios(this);
+                resize.Fullscreen_Form(this);
             }
-            translationManager = translationMan;
-            Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
-            resize.CaptureAspectRatios(this);
-            resize.Fullscreen_Form(this);
         }
 
         private void Update_Controls(Image image, string question, string answer)

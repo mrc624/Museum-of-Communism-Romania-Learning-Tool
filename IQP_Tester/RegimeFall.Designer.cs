@@ -122,7 +122,6 @@
             this.pbWhatWasRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbWhatWasRevolution.TabIndex = 0;
             this.pbWhatWasRevolution.TabStop = false;
-            this.pbWhatWasRevolution.Click += new System.EventHandler(this.pbWhatWasRevolution_Click);
             // 
             // panelWhyRevolt
             // 

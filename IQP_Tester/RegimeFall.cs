@@ -16,7 +16,9 @@ namespace IQP_Tester
     {
         TranslationManager translationManager;
         Resize_Helper resize = new Resize_Helper();
-        
+        Polaroid_Zoom_Helper polaroid_Zoom_Helper = new Polaroid_Zoom_Helper();
+
+
         public RegimeFall(TranslationManager translationMan)
         {
             translationManager = translationMan;
@@ -25,6 +27,8 @@ namespace IQP_Tester
             resize.CaptureAspectRatios(this);
             resize.Find_Panels_With_PB_lblQ_lblAns(this);
             History_Resize(this, new EventArgs());
+
+            polaroid_Zoom_Helper.Assign_Click_Handler_To_Valid(this, translationMan);
         }
 
         private void History_Shown(object sender, EventArgs e)
@@ -53,12 +57,6 @@ namespace IQP_Tester
         private void btnLanguage_Click(object sender, EventArgs e)
         {
             translationManager.Increment_Language(this);
-        }
-
-        private void pbWhatWasRevolution_Click(object sender, EventArgs e)
-        {
-            Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(panelWhatWasRevolution, translationManager);
-            resize.FadeIn(polaroid_zoom);
         }
 
         private void btnLanguage_TextChanged(object sender, EventArgs e)
