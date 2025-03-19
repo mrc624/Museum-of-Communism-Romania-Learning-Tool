@@ -78,6 +78,7 @@
             this.btnLanguage.TabIndex = 7;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
+            this.btnLanguage.TextChanged += new System.EventHandler(this.btnLanguage_TextChanged);
             this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
             // 
             // panelWhatWasRevolution

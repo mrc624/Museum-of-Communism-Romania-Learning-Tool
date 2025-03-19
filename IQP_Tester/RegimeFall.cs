@@ -53,13 +53,17 @@ namespace IQP_Tester
         private void btnLanguage_Click(object sender, EventArgs e)
         {
             translationManager.Increment_Language(this);
-            History_Resize(this, new EventArgs());
         }
 
         private void pbWhatWasRevolution_Click(object sender, EventArgs e)
         {
             Polaroid_Zoom polaroid_Zoom = new Polaroid_Zoom(pbWhatWasRevolution, lblWhatWasRevolutionQ, lblWhatWasRevolutionAns, translationManager);
             polaroid_Zoom.Show();
+        }
+
+        private void btnLanguage_TextChanged(object sender, EventArgs e)
+        {
+            History_Resize(this, new EventArgs());
         }
     }
 }

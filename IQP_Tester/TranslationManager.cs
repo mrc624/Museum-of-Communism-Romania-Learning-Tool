@@ -130,7 +130,7 @@ namespace IQP_Tester
         {
             for (int i = 0; i < Application.OpenForms.Count; i++)
             {
-                Update_One_Form(Application.OpenForms[i]);         
+                Update_One_Form(Application.OpenForms[i]);      
             }
         }
 
