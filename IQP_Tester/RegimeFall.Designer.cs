@@ -234,9 +234,9 @@
             this.lblRevolutionExpectationsQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRevolutionExpectationsQ.Location = new System.Drawing.Point(39, 207);
             this.lblRevolutionExpectationsQ.Name = "lblRevolutionExpectationsQ";
-            this.lblRevolutionExpectationsQ.Size = new System.Drawing.Size(232, 25);
+            this.lblRevolutionExpectationsQ.Size = new System.Drawing.Size(250, 25);
             this.lblRevolutionExpectationsQ.TabIndex = 5;
-            this.lblRevolutionExpectationsQ.Text = "Why did people revolt?";
+            this.lblRevolutionExpectationsQ.Text = "What did people expect?";
             // 
             // pbRevolutionExpectations
             // 

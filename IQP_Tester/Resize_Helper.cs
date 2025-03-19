@@ -173,7 +173,7 @@ namespace IQP_Tester
             else if (option == Centering_Options.to_top)
             {
                 location_x = other_center - center_control + other.Location.X;
-                location_y = other.Location.Y + offset;
+                location_y = other.Location.Y - offset - control.Height;
             }
             else if (option == Centering_Options.to_left)
             {
@@ -182,7 +182,7 @@ namespace IQP_Tester
             }
             else if (option == Centering_Options.to_right)
             {
-                location_x = other.Location.X - offset + control.Width + other.Width;
+                location_x = other.Location.X + offset + control.Width + other.Width;
                 location_y = other_center - center_control + other.Location.Y;
             }
 

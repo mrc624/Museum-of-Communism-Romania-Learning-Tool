@@ -181,7 +181,7 @@ namespace IQP_Tester
 
             resize.Reposition(pbCeasescu);
             resize.Reposition(pbRevolution);
-            resize.Center_to_Other_Control(lblWhatWasTheRevolution, pbRevolution);
+            resize.Center_to_Other_Control(lblHowDidTheRegimeFall, pbRevolution, Resize_Helper.Centering_Options.to_top);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
             resize.Center_to_Other_Control(btnCredits, btnLanguage, Resize_Helper.Centering_Options.to_left);

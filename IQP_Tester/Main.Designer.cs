@@ -32,9 +32,6 @@
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblMainTitle = new System.Windows.Forms.Label();
             this.panelRegimeFall = new System.Windows.Forms.Panel();
-            this.lblWhatHappenedInTimisoara = new System.Windows.Forms.Label();
-            this.pbTimosaura = new System.Windows.Forms.PictureBox();
-            this.lblWhatWasTheRevolution = new System.Windows.Forms.Label();
             this.pbRevolution = new System.Windows.Forms.PictureBox();
             this.lblHowDidTheRegimeFall = new System.Windows.Forms.Label();
             this.panelCeausescu = new System.Windows.Forms.Panel();
@@ -46,7 +43,6 @@
             this.lblWhatWasEducationLike = new System.Windows.Forms.Label();
             this.btnCredits = new System.Windows.Forms.Button();
             this.panelRegimeFall.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTimosaura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).BeginInit();
             this.panelCeausescu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
@@ -87,56 +83,23 @@
             // 
             // panelRegimeFall
             // 
-            this.panelRegimeFall.Controls.Add(this.lblWhatHappenedInTimisoara);
-            this.panelRegimeFall.Controls.Add(this.pbTimosaura);
-            this.panelRegimeFall.Controls.Add(this.lblWhatWasTheRevolution);
             this.panelRegimeFall.Controls.Add(this.pbRevolution);
             this.panelRegimeFall.Controls.Add(this.lblHowDidTheRegimeFall);
-            this.panelRegimeFall.Location = new System.Drawing.Point(10, 47);
+            this.panelRegimeFall.Location = new System.Drawing.Point(125, 68);
             this.panelRegimeFall.Margin = new System.Windows.Forms.Padding(1);
             this.panelRegimeFall.Name = "panelRegimeFall";
-            this.panelRegimeFall.Size = new System.Drawing.Size(470, 382);
+            this.panelRegimeFall.Size = new System.Drawing.Size(351, 314);
             this.panelRegimeFall.TabIndex = 5;
             this.panelRegimeFall.Click += new System.EventHandler(this.panelHistory_Click);
-            // 
-            // lblWhatHappenedInTimisoara
-            // 
-            this.lblWhatHappenedInTimisoara.AutoSize = true;
-            this.lblWhatHappenedInTimisoara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhatHappenedInTimisoara.Location = new System.Drawing.Point(248, 348);
-            this.lblWhatHappenedInTimisoara.Name = "lblWhatHappenedInTimisoara";
-            this.lblWhatHappenedInTimisoara.Size = new System.Drawing.Size(220, 20);
-            this.lblWhatHappenedInTimisoara.TabIndex = 6;
-            this.lblWhatHappenedInTimisoara.Text = "What happened in Timisoara?";
-            // 
-            // pbTimosaura
-            // 
-            this.pbTimosaura.Image = global::IQP_Tester.Properties.Resources.Timisoara_Uprising;
-            this.pbTimosaura.Location = new System.Drawing.Point(252, 214);
-            this.pbTimosaura.Name = "pbTimosaura";
-            this.pbTimosaura.Size = new System.Drawing.Size(204, 131);
-            this.pbTimosaura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbTimosaura.TabIndex = 5;
-            this.pbTimosaura.TabStop = false;
-            // 
-            // lblWhatWasTheRevolution
-            // 
-            this.lblWhatWasTheRevolution.AutoSize = true;
-            this.lblWhatWasTheRevolution.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhatWasTheRevolution.Location = new System.Drawing.Point(23, 183);
-            this.lblWhatWasTheRevolution.Name = "lblWhatWasTheRevolution";
-            this.lblWhatWasTheRevolution.Size = new System.Drawing.Size(187, 20);
-            this.lblWhatWasTheRevolution.TabIndex = 4;
-            this.lblWhatWasTheRevolution.Text = "What was the revolution?";
             // 
             // pbRevolution
             // 
             this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
             this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.Location = new System.Drawing.Point(27, 46);
+            this.pbRevolution.Location = new System.Drawing.Point(6, 34);
             this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
             this.pbRevolution.Name = "pbRevolution";
-            this.pbRevolution.Size = new System.Drawing.Size(172, 136);
+            this.pbRevolution.Size = new System.Drawing.Size(337, 261);
             this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbRevolution.TabIndex = 2;
             this.pbRevolution.TabStop = false;
@@ -145,7 +108,7 @@
             // 
             this.lblHowDidTheRegimeFall.AutoSize = true;
             this.lblHowDidTheRegimeFall.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHowDidTheRegimeFall.Location = new System.Drawing.Point(59, 0);
+            this.lblHowDidTheRegimeFall.Location = new System.Drawing.Point(15, 0);
             this.lblHowDidTheRegimeFall.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblHowDidTheRegimeFall.Name = "lblHowDidTheRegimeFall";
             this.lblHowDidTheRegimeFall.Size = new System.Drawing.Size(328, 31);
@@ -156,17 +119,17 @@
             // 
             this.panelCeausescu.Controls.Add(this.lblWhoWasCeausescu);
             this.panelCeausescu.Controls.Add(this.pbCeasescu);
-            this.panelCeausescu.Location = new System.Drawing.Point(283, 467);
+            this.panelCeausescu.Location = new System.Drawing.Point(108, 460);
             this.panelCeausescu.Margin = new System.Windows.Forms.Padding(1);
             this.panelCeausescu.Name = "panelCeausescu";
-            this.panelCeausescu.Size = new System.Drawing.Size(470, 287);
+            this.panelCeausescu.Size = new System.Drawing.Size(422, 290);
             this.panelCeausescu.TabIndex = 6;
             // 
             // lblWhoWasCeausescu
             // 
             this.lblWhoWasCeausescu.AutoSize = true;
             this.lblWhoWasCeausescu.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhoWasCeausescu.Location = new System.Drawing.Point(43, 0);
+            this.lblWhoWasCeausescu.Location = new System.Drawing.Point(17, 0);
             this.lblWhoWasCeausescu.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblWhoWasCeausescu.Name = "lblWhoWasCeausescu";
             this.lblWhoWasCeausescu.Size = new System.Drawing.Size(382, 31);
@@ -177,10 +140,10 @@
             // 
             this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
             this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbCeasescu.Location = new System.Drawing.Point(27, 39);
+            this.pbCeasescu.Location = new System.Drawing.Point(72, 32);
             this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
             this.pbCeasescu.Name = "pbCeasescu";
-            this.pbCeasescu.Size = new System.Drawing.Size(124, 129);
+            this.pbCeasescu.Size = new System.Drawing.Size(247, 247);
             this.pbCeasescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCeasescu.TabIndex = 1;
             this.pbCeasescu.TabStop = false;
@@ -198,12 +161,12 @@
             // 
             this.lblHowWasLifeUnderRegime.AutoSize = true;
             this.lblHowWasLifeUnderRegime.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHowWasLifeUnderRegime.Location = new System.Drawing.Point(24, 0);
+            this.lblHowWasLifeUnderRegime.Location = new System.Drawing.Point(11, 0);
             this.lblHowWasLifeUnderRegime.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblHowWasLifeUnderRegime.Name = "lblHowWasLifeUnderRegime";
-            this.lblHowWasLifeUnderRegime.Size = new System.Drawing.Size(422, 31);
+            this.lblHowWasLifeUnderRegime.Size = new System.Drawing.Size(448, 31);
             this.lblHowWasLifeUnderRegime.TabIndex = 0;
-            this.lblHowWasLifeUnderRegime.Text = "How Was Life Under the Regime?";
+            this.lblHowWasLifeUnderRegime.Text = "What was life like under the regime?\r\n";
             // 
             // panelPresentDay
             // 
@@ -257,7 +220,6 @@
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.panelRegimeFall.ResumeLayout(false);
             this.panelRegimeFall.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTimosaura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
             this.panelCeausescu.ResumeLayout(false);
             this.panelCeausescu.PerformLayout();
@@ -282,13 +244,10 @@
         private System.Windows.Forms.Label lblHowWasLifeUnderRegime;
         private System.Windows.Forms.Panel panelPresentDay;
         private System.Windows.Forms.Label lblWhatWasEducationLike;
-        private System.Windows.Forms.Label lblWhatWasTheRevolution;
         private System.Windows.Forms.Label lblMainTitle;
         private System.Windows.Forms.Button btnCredits;
         private System.Windows.Forms.PictureBox pbRevolution;
         private System.Windows.Forms.PictureBox pbCeasescu;
-        private System.Windows.Forms.PictureBox pbTimosaura;
-        private System.Windows.Forms.Label lblWhatHappenedInTimisoara;
     }
 }
 

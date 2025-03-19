@@ -1,1 +1,1 @@
-add translation button to polaroid zoom form
+make translation button UK flag and Romanian flag
