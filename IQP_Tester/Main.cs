@@ -23,6 +23,7 @@ namespace IQP_Tester
 
         TranslationManager translationManager = new TranslationManager();
         Resize_Helper resize = new Resize_Helper();
+        Open_Close_Helper openClose = new Open_Close_Helper();
 
         public static List<Form> Forms = new List<Form>();
 
@@ -93,7 +94,7 @@ namespace IQP_Tester
             CloseAllForms();
             lastOpenTime = seconds;
             regimeFall = new RegimeFall(translationManager);
-            resize.FadeIn(regimeFall);
+            openClose.FadeIn(regimeFall);
         }
 
         // HISTORY PANEL END
@@ -112,7 +113,7 @@ namespace IQP_Tester
         // PROPOGANDA PANEL END
 
         // PRESENT DAY PANEL BEGIN
-
+        
 
 
         // PRESENT DAY PANEL END
@@ -121,16 +122,13 @@ namespace IQP_Tester
 
         private void CloseAllForms()
         {
-            if (regimeFall != null)
+            for (int i = 0; i < Application.OpenForms.Count; i++)
             {
-                regimeFall.Close();
+                if (Application.OpenForms[i] != this)
+                {
+                    openClose.Close(Application.OpenForms[i]);
+                }
             }
-
-            if (credits != null)
-            {
-                credits.Close();
-            }
-
         }
 
         // TAB MANAGEMENT END
@@ -151,7 +149,7 @@ namespace IQP_Tester
         {
             CloseAllForms();
             credits = new Credits();
-            resize.FadeIn(credits);
+            openClose.FadeIn(credits);
         }
 
         // CREDITS MANAGEMENT END

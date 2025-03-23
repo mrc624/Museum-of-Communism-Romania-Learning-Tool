@@ -16,6 +16,7 @@ namespace IQP_Tester
 
         Resize_Helper resize = new Resize_Helper();
         TranslationManager translationManager;
+        Open_Close_Helper openClose = new Open_Close_Helper();
 
         PictureBox pb;
         Label lblQ;
@@ -48,6 +49,8 @@ namespace IQP_Tester
                 Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
                 resize.CaptureAspectRatios(this);
                 resize.Fullscreen_Form(this);
+
+                Polaroid_Zoom_Resize(this, new EventArgs());
             }
         }
 
@@ -60,7 +63,7 @@ namespace IQP_Tester
 
         private void Polaroid_Zoom_Click(object sender, EventArgs e)
         {
-            this.Close();
+            openClose.Close(this);
         }
 
         private void Polaroid_Zoom_Resize(object sender, EventArgs e)
@@ -68,6 +71,7 @@ namespace IQP_Tester
             resize.Handle_Resize(this);
 
             resize.Reposition(pbPicture);
+            resize.Reposition(tableLayoutPanelQuestionAndAnswer);
             resize.Reposition(lblQuestion);
             resize.Reposition(lblAnswer);
 

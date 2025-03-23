@@ -275,22 +275,6 @@ namespace IQP_Tester
             form.Bounds = Screen.PrimaryScreen.Bounds;
         }
 
-        public void FadeIn(Form form, int interval = 10, double increment = 0.05)
-        {
-            form.Opacity = 0; // Start fully transparent
-            form.Show();
-            System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
-            fadeTimer.Interval = interval; // Time in milliseconds between opacity updates
-            fadeTimer.Tick += (s, e) =>
-            {
-                if (form.Opacity < 1.0)
-                    form.Opacity += increment; // Increase opacity gradually
-                else
-                    fadeTimer.Stop(); // Stop when fully visible
-            };
-            fadeTimer.Start();
-        }
-
         private const int NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS = 3;
         private const string BEGIN_PICTUREBOX_FLAG = "pb";
         public const string END_ANSWER_FLAG = "Ans";

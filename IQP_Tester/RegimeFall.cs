@@ -17,6 +17,7 @@ namespace IQP_Tester
         TranslationManager translationManager;
         Resize_Helper resize = new Resize_Helper();
         Polaroid_Zoom_Helper polaroid_Zoom_Helper = new Polaroid_Zoom_Helper();
+        Open_Close_Helper openClose = new Open_Close_Helper();
 
 
         public RegimeFall(TranslationManager translationMan)
@@ -38,7 +39,7 @@ namespace IQP_Tester
 
         private void History_Click(object sender, EventArgs e)
         {
-            this.Close();
+            openClose.Close(this);
         }
 
         // Resize

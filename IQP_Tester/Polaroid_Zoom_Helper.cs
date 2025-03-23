@@ -11,6 +11,7 @@ namespace IQP_Tester
     internal class Polaroid_Zoom_Helper
     {
         Resize_Helper resize = new Resize_Helper();
+        Open_Close_Helper openClose = new Open_Close_Helper();
 
         TranslationManager translationManager;
 
@@ -32,7 +33,7 @@ namespace IQP_Tester
             }
 
             Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(panel, translationManager);
-            resize.FadeIn(polaroid_zoom);
+            openClose.FadeIn(polaroid_zoom);
         }
 
         public const int num_controls = 3;

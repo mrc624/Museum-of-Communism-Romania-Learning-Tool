@@ -137,6 +137,7 @@
     <Compile Include="Food.Designer.cs">
       <DependentUpon>Food.cs</DependentUpon>
     </Compile>
+    <Compile Include="Open_Close_Helper.cs" />
     <Compile Include="Polaroid_Zoom.cs">
       <SubType>Form</SubType>
     </Compile>
