@@ -88,7 +88,7 @@
             this.panelRegimeFall.Location = new System.Drawing.Point(125, 68);
             this.panelRegimeFall.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.panelRegimeFall.Name = "panelRegimeFall";
-            this.panelRegimeFall.Size = new System.Drawing.Size(351, 361);
+            this.panelRegimeFall.Size = new System.Drawing.Size(351, 314);
             this.panelRegimeFall.TabIndex = 5;
             this.panelRegimeFall.Click += new System.EventHandler(this.panelRegimeFall_Click);
             // 
