@@ -324,7 +324,7 @@
             // 
             // pbTimisoara
             // 
-            this.pbTimisoara.Image = ((System.Drawing.Image)(resources.GetObject("pbTimisoara.Image")));
+            this.pbTimisoara.Image = global::IQP_Tester.Properties.Resources.Timisoara_Uprising1;
             this.pbTimisoara.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbTimisoara.InitialImage")));
             this.pbTimisoara.Location = new System.Drawing.Point(23, 14);
             this.pbTimisoara.Name = "pbTimisoara";

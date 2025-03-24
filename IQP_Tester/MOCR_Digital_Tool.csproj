@@ -257,6 +257,7 @@
     <Content Include="Romanian_Revolution.jpg" />
     <Content Include="Romania_Flag.png" />
     <Content Include="Rumanian_Revolution_Tank.jpg" />
+    <None Include="Timisoara_Uprising.jpg" />
     <Content Include="UK_Flag.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
