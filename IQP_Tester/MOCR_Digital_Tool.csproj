@@ -125,6 +125,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Click_Helper.cs" />
     <Compile Include="Credits.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,7 +255,9 @@
     <Content Include="People_Reading_From_Balcony.jpg" />
     <Content Include="Police_Against_Wall_With_Grafitti.jpg" />
     <Content Include="Romanian_Revolution.jpg" />
+    <Content Include="Romania_Flag.png" />
     <Content Include="Rumanian_Revolution_Tank.jpg" />
+    <Content Include="UK_Flag.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,6 +24,7 @@ namespace IQP_Tester
         TranslationManager translationManager = new TranslationManager();
         Resize_Helper resize = new Resize_Helper();
         Open_Close_Helper openClose = new Open_Close_Helper();
+        Click_Helper click_helper = new Click_Helper();
 
         public static List<Form> Forms = new List<Form>();
 
@@ -48,8 +49,14 @@ namespace IQP_Tester
             resize.CaptureAspectRatios(this);
             translationManager.Generate_Translation_JSON(TranslationManager.translation_file_name);
             translationManager.Update_One_Form(this);
+            Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());
             SetTimer();
+        }
+
+        private void Set_Panel_Clicks()
+        {
+            click_helper.Assign_All_Children_To_Same_Click(panelRegimeFall, panelRegimeFall_Click);
         }
 
         private void Add_Forms()
@@ -89,7 +96,7 @@ namespace IQP_Tester
 
         // HISTORY PANEL BEGIN
 
-        private void panelHistory_Click(object sender, EventArgs e)
+        private void panelRegimeFall_Click(object sender, EventArgs e)
         {
             CloseAllForms();
             lastOpenTime = seconds;

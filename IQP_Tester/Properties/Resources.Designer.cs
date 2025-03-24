@@ -73,6 +73,16 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Romania_Flag {
+            get {
+                object obj = ResourceManager.GetObject("Romania_Flag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Romanian_Revolution {
             get {
                 object obj = ResourceManager.GetObject("Romanian_Revolution", resourceCulture);

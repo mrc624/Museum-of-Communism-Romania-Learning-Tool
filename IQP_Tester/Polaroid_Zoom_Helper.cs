@@ -12,8 +12,14 @@ namespace IQP_Tester
     {
         Resize_Helper resize = new Resize_Helper();
         Open_Close_Helper openClose = new Open_Close_Helper();
+        Click_Helper click_helper = new Click_Helper();
 
         TranslationManager translationManager;
+
+        public Polaroid_Zoom_Helper()
+        {
+
+        }
 
         public void Polaroid_Zoom_Click_Handler(object sender, EventArgs e)
         {
@@ -48,24 +54,7 @@ namespace IQP_Tester
                     Panel panel = (Panel)form.Controls[i];
                     if (resize.Panel_Has_PB_lblQ_lblAns(panel))
                     {
-                        panel.Click += Polaroid_Zoom_Click_Handler;
-
-                        for (int j = 0; j < panel.Controls.Count; j++)
-                        {
-                            string control_name = panel.Controls[j].Name;
-                            if (panel.Controls[j] is PictureBox)
-                            {
-                                panel.Controls[j].Click += Polaroid_Zoom_Click_Handler;
-                            }
-                            else if (control_name.EndsWith(Resize_Helper.END_QUESTION_FLAG) && panel.Controls[j] is Label)
-                            {
-                                panel.Controls[j].Click += Polaroid_Zoom_Click_Handler;
-                            }
-                            else if (control_name.EndsWith(Resize_Helper.END_ANSWER_FLAG) && panel.Controls[j] is Label)
-                            {
-                                panel.Controls[j].Click += Polaroid_Zoom_Click_Handler;
-                            }
-                        }
+                        click_helper.Assign_All_Children_To_Same_Click(panel, Polaroid_Zoom_Click_Handler);
                     }
                 }
             }
