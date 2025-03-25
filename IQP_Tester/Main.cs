@@ -139,9 +139,6 @@ namespace IQP_Tester
             resize.Reposition(lblWhatWasEducationLike);
             resize.Center_X(lblWhatWasEducationLike);
 
-            resize.Reposition(lblMainTitle);
-            resize.Center_X(lblMainTitle);
-
             resize.Reposition(pbCeasescu);
             resize.Reposition(pbRevolution);
             resize.Center_to_Other_Control(lblHowDidTheRegimeFall, pbRevolution, Resize_Helper.Centering_Options.to_top);

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.lblMainTitle = new System.Windows.Forms.Label();
             this.panelRegimeFall = new System.Windows.Forms.Panel();
             this.pbRevolution = new System.Windows.Forms.PictureBox();
             this.lblHowDidTheRegimeFall = new System.Windows.Forms.Label();
@@ -61,16 +60,6 @@
             this.btnLanguage.UseVisualStyleBackColor = false;
             this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
             // 
-            // lblMainTitle
-            // 
-            this.lblMainTitle.AutoSize = true;
-            this.lblMainTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMainTitle.Location = new System.Drawing.Point(469, 9);
-            this.lblMainTitle.Name = "lblMainTitle";
-            this.lblMainTitle.Size = new System.Drawing.Size(917, 39);
-            this.lblMainTitle.TabIndex = 4;
-            this.lblMainTitle.Text = "Answering Youth Questions About Romanian Communism";
-            // 
             // panelRegimeFall
             // 
             this.panelRegimeFall.Controls.Add(this.pbRevolution);
@@ -101,9 +90,9 @@
             this.lblHowDidTheRegimeFall.Location = new System.Drawing.Point(15, 0);
             this.lblHowDidTheRegimeFall.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblHowDidTheRegimeFall.Name = "lblHowDidTheRegimeFall";
-            this.lblHowDidTheRegimeFall.Size = new System.Drawing.Size(328, 31);
+            this.lblHowDidTheRegimeFall.Size = new System.Drawing.Size(303, 31);
             this.lblHowDidTheRegimeFall.TabIndex = 0;
-            this.lblHowDidTheRegimeFall.Text = "How Did the Regime Fall?";
+            this.lblHowDidTheRegimeFall.Text = "How did the regime fall?";
             // 
             // panelCeausescu
             // 
@@ -201,7 +190,6 @@
             this.Controls.Add(this.panelLifeUnder);
             this.Controls.Add(this.panelCeausescu);
             this.Controls.Add(this.panelRegimeFall);
-            this.Controls.Add(this.lblMainTitle);
             this.Controls.Add(this.btnLanguage);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Main";
@@ -218,7 +206,6 @@
             this.panelPresentDay.ResumeLayout(false);
             this.panelPresentDay.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -232,7 +219,6 @@
         private System.Windows.Forms.Label lblHowWasLifeUnderRegime;
         private System.Windows.Forms.Panel panelPresentDay;
         private System.Windows.Forms.Label lblWhatWasEducationLike;
-        private System.Windows.Forms.Label lblMainTitle;
         private System.Windows.Forms.Button btnCredits;
         private System.Windows.Forms.PictureBox pbRevolution;
         private System.Windows.Forms.PictureBox pbCeasescu;
