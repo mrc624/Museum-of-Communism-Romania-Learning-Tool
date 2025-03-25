@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
@@ -20,16 +21,17 @@ namespace IQP_Tester
         Open_Close_Helper openClose = new Open_Close_Helper();
 
 
-        public RegimeFall(TranslationManager translationMan)
+        public RegimeFall(TranslationManager translationMan, Open_Close_Helper open_close)
         {
-            translationManager = translationMan;
             InitializeComponent();
+            openClose = open_close;
+            translationManager = translationMan;
             translationManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             resize.Find_Panels_With_PB_lblQ_lblAns(this);
             History_Resize(this, new EventArgs());
 
-            polaroid_Zoom_Helper.Assign_Click_Handler_To_Valid(this, translationMan);
+            polaroid_Zoom_Helper.Assign_Click_Handler_To_Valid(this, translationMan, openClose);
         }
 
         private void History_Shown(object sender, EventArgs e)
@@ -43,8 +45,6 @@ namespace IQP_Tester
         }
 
         // Resize
-
-        private Dictionary<Control, (double width_ratio, double height_ratio, double percent_right, double percent_down, float fontRatio)> ratios = new Dictionary<Control, (double width_ratio, double height_ratio, double percent_right, double percent_down, float fontRatio)>();
         
         private void History_Resize(object sender, EventArgs e)
         {

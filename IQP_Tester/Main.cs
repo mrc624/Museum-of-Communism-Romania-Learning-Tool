@@ -9,6 +9,7 @@ using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
@@ -32,11 +33,6 @@ namespace IQP_Tester
 
         Credits credits;
 
-        private System.Timers.Timer Timer;
-        public const uint tabTimeout = 10; //in seconds
-        uint lastOpenTime = 0;
-        public static uint seconds = 0;
-
         public Main()
         {
             InitializeComponent();
@@ -46,7 +42,8 @@ namespace IQP_Tester
             translationManager.Update_One_Form(this);
             Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());
-            SetTimer();
+            openClose.Start_Timer();
+            openClose.Set_Main(this);
         }
 
         private void Set_Panel_Clicks()
@@ -57,32 +54,8 @@ namespace IQP_Tester
         private void Add_Forms()
         {
             Forms.Add(this);
-
-            regimeFall = new RegimeFall(translationManager);
+            regimeFall = new RegimeFall(translationManager, openClose);
             Forms.Add(regimeFall);
-        }
-
-        private void SetTimer()
-        {
-            Timer = new System.Timers.Timer(1000); //tick every second
-            Timer.Elapsed += OnTimedEvent;
-            Timer.AutoReset = true;
-            Timer.Enabled = true;
-        }
-
-        private void OnTimedEvent(Object source, ElapsedEventArgs e)
-        {
-            seconds++;
-            Invoke(new VoidDelegate(Seconds_Trigger));
-            if (seconds == lastOpenTime + tabTimeout)
-            {
-                 //Invoke(new VoidDelegate(CloseAllForms));
-            }
-        }
-
-        private void Seconds_Trigger()
-        {
-            lblUptime.Text = seconds.ToString();
         }
 
         // MAIN PAGE BEGIN (NOT PANELS)
@@ -93,9 +66,8 @@ namespace IQP_Tester
 
         private void panelRegimeFall_Click(object sender, EventArgs e)
         {
-            CloseAllForms();
-            lastOpenTime = seconds;
-            regimeFall = new RegimeFall(translationManager);
+            openClose.CloseAllForms();
+            regimeFall = new RegimeFall(translationManager, openClose);
             openClose.FadeIn(regimeFall);
         }
 
@@ -122,16 +94,7 @@ namespace IQP_Tester
 
         // TAB MANAGEMENT BEGIN
 
-        private void CloseAllForms()
-        {
-            for (int i = 0; i < Application.OpenForms.Count; i++)
-            {
-                if (Application.OpenForms[i] != this)
-                {
-                    openClose.Close(Application.OpenForms[i]);
-                }
-            }
-        }
+
 
         // TAB MANAGEMENT END
 
@@ -149,7 +112,7 @@ namespace IQP_Tester
 
         private void btnCredits_Click(object sender, EventArgs e)
         {
-            CloseAllForms();
+            openClose.CloseAllForms();
             credits = new Credits();
             openClose.FadeIn(credits);
         }

@@ -16,13 +16,13 @@ namespace IQP_Tester
 
         Resize_Helper resize = new Resize_Helper();
         TranslationManager translationManager;
-        Open_Close_Helper openClose = new Open_Close_Helper();
+        Open_Close_Helper openClose;
 
         PictureBox pb;
         Label lblQ;
         Label lblAns;
 
-        public Polaroid_Zoom(Panel panel, TranslationManager translationMan)
+        public Polaroid_Zoom(Panel panel, TranslationManager translationMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
 
@@ -46,9 +46,12 @@ namespace IQP_Tester
                     }
                 }
                 translationManager = translationMan;
+                openClose = open_close;
                 Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
                 resize.CaptureAspectRatios(this);
                 resize.Fullscreen_Form(this);
+
+                Translate_Polaroid();
 
                 Polaroid_Zoom_Resize(this, new EventArgs());
             }
@@ -91,6 +94,7 @@ namespace IQP_Tester
         {
             lblQuestion.Text = translationManager.Get_Translation(lblQ, translationManager.Get_Translated_Dictionary());
             lblAnswer.Text = translationManager.Get_Translation(lblAns, translationManager.Get_Translated_Dictionary());
+            btnLanguage.Text = translationManager.Get_Translation(btnLanguage, translationManager.Get_Translated_Dictionary());
         }
 
         private void pbPicture_Click(object sender, EventArgs e)

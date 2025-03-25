@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblUptime = new System.Windows.Forms.Label();
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblMainTitle = new System.Windows.Forms.Label();
             this.panelRegimeFall = new System.Windows.Forms.Panel();
@@ -49,15 +48,6 @@
             this.panelLifeUnder.SuspendLayout();
             this.panelPresentDay.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblUptime
-            // 
-            this.lblUptime.AutoSize = true;
-            this.lblUptime.Location = new System.Drawing.Point(1553, 47);
-            this.lblUptime.Name = "lblUptime";
-            this.lblUptime.Size = new System.Drawing.Size(80, 13);
-            this.lblUptime.TabIndex = 1;
-            this.lblUptime.Text = "UNAVAILABLE";
             // 
             // btnLanguage
             // 
@@ -86,7 +76,7 @@
             this.panelRegimeFall.Controls.Add(this.pbRevolution);
             this.panelRegimeFall.Controls.Add(this.lblHowDidTheRegimeFall);
             this.panelRegimeFall.Location = new System.Drawing.Point(125, 68);
-            this.panelRegimeFall.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panelRegimeFall.Margin = new System.Windows.Forms.Padding(1);
             this.panelRegimeFall.Name = "panelRegimeFall";
             this.panelRegimeFall.Size = new System.Drawing.Size(351, 314);
             this.panelRegimeFall.TabIndex = 5;
@@ -97,7 +87,7 @@
             this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
             this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
             this.pbRevolution.Location = new System.Drawing.Point(6, 34);
-            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
             this.pbRevolution.Name = "pbRevolution";
             this.pbRevolution.Size = new System.Drawing.Size(337, 261);
             this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -120,7 +110,7 @@
             this.panelCeausescu.Controls.Add(this.lblWhoWasCeausescu);
             this.panelCeausescu.Controls.Add(this.pbCeasescu);
             this.panelCeausescu.Location = new System.Drawing.Point(108, 460);
-            this.panelCeausescu.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panelCeausescu.Margin = new System.Windows.Forms.Padding(1);
             this.panelCeausescu.Name = "panelCeausescu";
             this.panelCeausescu.Size = new System.Drawing.Size(422, 290);
             this.panelCeausescu.TabIndex = 6;
@@ -141,7 +131,7 @@
             this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
             this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
             this.pbCeasescu.Location = new System.Drawing.Point(72, 32);
-            this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
             this.pbCeasescu.Name = "pbCeasescu";
             this.pbCeasescu.Size = new System.Drawing.Size(247, 247);
             this.pbCeasescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +142,7 @@
             // 
             this.panelLifeUnder.Controls.Add(this.lblHowWasLifeUnderRegime);
             this.panelLifeUnder.Location = new System.Drawing.Point(741, 102);
-            this.panelLifeUnder.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panelLifeUnder.Margin = new System.Windows.Forms.Padding(1);
             this.panelLifeUnder.Name = "panelLifeUnder";
             this.panelLifeUnder.Size = new System.Drawing.Size(470, 327);
             this.panelLifeUnder.TabIndex = 7;
@@ -172,7 +162,7 @@
             // 
             this.panelPresentDay.Controls.Add(this.lblWhatWasEducationLike);
             this.panelPresentDay.Location = new System.Drawing.Point(1293, 351);
-            this.panelPresentDay.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panelPresentDay.Margin = new System.Windows.Forms.Padding(1);
             this.panelPresentDay.Name = "panelPresentDay";
             this.panelPresentDay.Size = new System.Drawing.Size(470, 284);
             this.panelPresentDay.TabIndex = 8;
@@ -213,8 +203,7 @@
             this.Controls.Add(this.panelRegimeFall);
             this.Controls.Add(this.lblMainTitle);
             this.Controls.Add(this.btnLanguage);
-            this.Controls.Add(this.lblUptime);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Main";
             this.Text = "Educating Romanian Children";
             this.Resize += new System.EventHandler(this.Main_Resize);
@@ -234,7 +223,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblUptime;
         private System.Windows.Forms.Button btnLanguage;
         private System.Windows.Forms.Panel panelRegimeFall;
         private System.Windows.Forms.Label lblHowDidTheRegimeFall;

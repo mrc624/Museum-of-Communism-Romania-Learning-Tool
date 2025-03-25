@@ -11,7 +11,7 @@ namespace IQP_Tester
     internal class Polaroid_Zoom_Helper
     {
         Resize_Helper resize = new Resize_Helper();
-        Open_Close_Helper openClose = new Open_Close_Helper();
+        Open_Close_Helper openClose;
         Click_Helper click_helper = new Click_Helper();
 
         TranslationManager translationManager;
@@ -38,15 +38,16 @@ namespace IQP_Tester
                 panel = (Panel)((PictureBox)sender).Parent;
             }
 
-            Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(panel, translationManager);
+            Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(panel, translationManager, openClose);
             openClose.FadeIn(polaroid_zoom);
         }
 
         public const int num_controls = 3;
 
-        public void Assign_Click_Handler_To_Valid(Form form, TranslationManager translationMan)
+        public void Assign_Click_Handler_To_Valid(Form form, TranslationManager translationMan, Open_Close_Helper open_close)
         {
             translationManager = translationMan;
+            openClose = open_close;
             for (int i = 0; i < form.Controls.Count; i++)
             {
                 if (form.Controls[i] is Panel && form.Controls[i].Controls.Count == num_controls)
