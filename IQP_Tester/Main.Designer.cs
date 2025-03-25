@@ -32,22 +32,22 @@
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblMainTitle = new System.Windows.Forms.Label();
             this.panelRegimeFall = new System.Windows.Forms.Panel();
+            this.pbRevolution = new System.Windows.Forms.PictureBox();
             this.lblHowDidTheRegimeFall = new System.Windows.Forms.Label();
             this.panelCeausescu = new System.Windows.Forms.Panel();
             this.lblWhoWasCeausescu = new System.Windows.Forms.Label();
+            this.pbCeasescu = new System.Windows.Forms.PictureBox();
             this.panelLifeUnder = new System.Windows.Forms.Panel();
             this.lblHowWasLifeUnderRegime = new System.Windows.Forms.Label();
             this.panelPresentDay = new System.Windows.Forms.Panel();
             this.lblWhatWasEducationLike = new System.Windows.Forms.Label();
             this.btnCredits = new System.Windows.Forms.Button();
-            this.pbCeasescu = new System.Windows.Forms.PictureBox();
-            this.pbRevolution = new System.Windows.Forms.PictureBox();
             this.panelRegimeFall.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).BeginInit();
             this.panelCeausescu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
             this.panelLifeUnder.SuspendLayout();
             this.panelPresentDay.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUptime
@@ -92,6 +92,18 @@
             this.panelRegimeFall.TabIndex = 5;
             this.panelRegimeFall.Click += new System.EventHandler(this.panelRegimeFall_Click);
             // 
+            // pbRevolution
+            // 
+            this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRevolution.Location = new System.Drawing.Point(6, 34);
+            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pbRevolution.Name = "pbRevolution";
+            this.pbRevolution.Size = new System.Drawing.Size(337, 261);
+            this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRevolution.TabIndex = 2;
+            this.pbRevolution.TabStop = false;
+            // 
             // lblHowDidTheRegimeFall
             // 
             this.lblHowDidTheRegimeFall.AutoSize = true;
@@ -123,6 +135,18 @@
             this.lblWhoWasCeausescu.Size = new System.Drawing.Size(382, 31);
             this.lblWhoWasCeausescu.TabIndex = 0;
             this.lblWhoWasCeausescu.Text = "Who was Nicolae Ceaușescu?";
+            // 
+            // pbCeasescu
+            // 
+            this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
+            this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
+            this.pbCeasescu.Location = new System.Drawing.Point(72, 32);
+            this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pbCeasescu.Name = "pbCeasescu";
+            this.pbCeasescu.Size = new System.Drawing.Size(247, 247);
+            this.pbCeasescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCeasescu.TabIndex = 1;
+            this.pbCeasescu.TabStop = false;
             // 
             // panelLifeUnder
             // 
@@ -176,30 +200,6 @@
             this.btnCredits.UseVisualStyleBackColor = false;
             this.btnCredits.Click += new System.EventHandler(this.btnCredits_Click);
             // 
-            // pbCeasescu
-            // 
-            this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbCeasescu.Location = new System.Drawing.Point(72, 32);
-            this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
-            this.pbCeasescu.Name = "pbCeasescu";
-            this.pbCeasescu.Size = new System.Drawing.Size(247, 247);
-            this.pbCeasescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCeasescu.TabIndex = 1;
-            this.pbCeasescu.TabStop = false;
-            // 
-            // pbRevolution
-            // 
-            this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.Location = new System.Drawing.Point(6, 34);
-            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
-            this.pbRevolution.Name = "pbRevolution";
-            this.pbRevolution.Size = new System.Drawing.Size(337, 261);
-            this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbRevolution.TabIndex = 2;
-            this.pbRevolution.TabStop = false;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,14 +220,14 @@
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.panelRegimeFall.ResumeLayout(false);
             this.panelRegimeFall.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
             this.panelCeausescu.ResumeLayout(false);
             this.panelCeausescu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).EndInit();
             this.panelLifeUnder.ResumeLayout(false);
             this.panelLifeUnder.PerformLayout();
             this.panelPresentDay.ResumeLayout(false);
             this.panelPresentDay.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

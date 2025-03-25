@@ -28,11 +28,6 @@ namespace IQP_Tester
 
         public static List<Form> Forms = new List<Form>();
 
-        KidsToys kidsToys;
-        Food food;
-        WhoCeascu whoCeascu;
-        RevLength revLength;
-
         RegimeFall regimeFall;
 
         Credits credits;
