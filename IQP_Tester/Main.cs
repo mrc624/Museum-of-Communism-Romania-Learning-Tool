@@ -115,7 +115,7 @@ namespace IQP_Tester
         private void btnCredits_Click(object sender, EventArgs e)
         {
             openClose.CloseAllForms();
-            credits = new Credits();
+            credits = new Credits(citation_Helper);
             openClose.FadeIn(credits);
         }
 

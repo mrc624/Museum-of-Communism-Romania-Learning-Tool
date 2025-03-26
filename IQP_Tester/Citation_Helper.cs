@@ -47,7 +47,7 @@ namespace IQP_Tester
         public const uint INIT_INSTITUTE_NUM = 2;
         public const uint INIT_TEXT_NUM = 20;
 
-        public string[] Get_Citaion_Shortened =
+        public string[] Get_Citation_Shortened =
         {
             "Member",
             "Collab",
@@ -132,52 +132,62 @@ namespace IQP_Tester
             }
         }
 
-        public void Init_Team_Mem()
+        private void Init_Team_Mem()
         { 
-            for (int i = 1; i <= INIT_MEM_NUM; i++)
+            for (int i = 0; i < INIT_MEM_NUM; i++)
             {
-                Citations[Citations_to_String[(int)Citation_Type.Team_Members]][Get_Citaion_Shortened[(int)Citation_Type.Team_Members] + i.ToString()] = "NEED";
+                Citations[Citations_to_String[(int)Citation_Type.Team_Members]][Get_Citation_Shortened[(int)Citation_Type.Team_Members] + i.ToString()] = "NEED";
             }
         }
 
-        public void Init_Collab()
+        private void Init_Collab()
         {
-            for (int i = 1; i <= INIT_COLLAB_NUM; i++)
+            for (int i = 0; i < INIT_COLLAB_NUM; i++)
             {
-                Citations[Citations_to_String[(int)Citation_Type.Collaborators]][Get_Citaion_Shortened[(int)Citation_Type.Collaborators] + i.ToString()] = "NEED";
+                Citations[Citations_to_String[(int)Citation_Type.Collaborators]][Get_Citation_Shortened[(int)Citation_Type.Collaborators] + i.ToString()] = "NEED";
             }
         }
 
-        public void Init_Prof()
+        private void Init_Prof()
         {
-            for (int i = 1; i <= INIT_PROF_NUM; i++)
+            for (int i = 0; i < INIT_PROF_NUM; i++)
             {
-                Citations[Citations_to_String[(int)Citation_Type.Proffesors]][Get_Citaion_Shortened[(int)Citation_Type.Proffesors] + i.ToString()] = "NEED";
+                Citations[Citations_to_String[(int)Citation_Type.Proffesors]][Get_Citation_Shortened[(int)Citation_Type.Proffesors] + i.ToString()] = "NEED";
             }
         }
 
-        public void Init_Interviewee()
+        private void Init_Interviewee()
         {
-            for (int i = 1; i <= INIT_INTERVIEWEE_NUM; i++)
+            for (int i = 0; i < INIT_INTERVIEWEE_NUM; i++)
             {
-                Citations[Citations_to_String[(int)Citation_Type.Interviewees]][Get_Citaion_Shortened[(int)Citation_Type.Interviewees] + i.ToString()] = "NEED";
+                Citations[Citations_to_String[(int)Citation_Type.Interviewees]][Get_Citation_Shortened[(int)Citation_Type.Interviewees] + i.ToString()] = "NEED";
             }
         }
 
-        public void Init_Institute()
+        private void Init_Institute()
         {
-            for (int i = 1; i <= INIT_INSTITUTE_NUM; i++)
+            for (int i = 0; i < INIT_INSTITUTE_NUM; i++)
             {
-                Citations[Citations_to_String[(int)Citation_Type.Institutions]][Get_Citaion_Shortened[(int)Citation_Type.Institutions] + i.ToString()] = "NEED";
+                Citations[Citations_to_String[(int)Citation_Type.Institutions]][Get_Citation_Shortened[(int)Citation_Type.Institutions] + i.ToString()] = "NEED";
             }
         }
 
-        public void Init_Text()
+        private void Init_Text()
         {
-            for (int i = 1; i <= INIT_TEXT_NUM; i++)
+            for (int i = 0; i < INIT_TEXT_NUM; i++)
             {
-                Citations[Citations_to_String[(int)Citation_Type.Informative_Texts]][Get_Citaion_Shortened[(int)Citation_Type.Informative_Texts] + i.ToString()] = "NEED";
+                Citations[Citations_to_String[(int)Citation_Type.Informative_Texts]][Get_Citation_Shortened[(int)Citation_Type.Informative_Texts] + i.ToString()] = "NEED";
             }
+        }
+
+        public List<string> Get_Team_Members()
+        {
+            List<string> Names = new List<string>();
+            for (int i = 0; i < Citations[Citations_to_String[(int)Citation_Type.Team_Members]].Count; i++)
+            {
+                Names.Add(Citations[Citations_to_String[(int)Citation_Type.Team_Members]][Get_Citation_Shortened[(int)Citation_Type.Team_Members] + i.ToString()]);
+            }
+            return Names;
         }
     }
 }
