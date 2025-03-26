@@ -189,5 +189,15 @@ namespace IQP_Tester
             }
             return Names;
         }
+
+        public List<string> Get_Proffessors()
+        {
+            List<string> Profs = new List<string>();
+            for (int i = 0; i < Citations[Citations_to_String[(int)Citation_Type.Proffesors]].Count; i++)
+            {
+                Profs.Add(Citations[Citations_to_String[(int)Citation_Type.Proffesors]][Get_Citation_Shortened[(int)Citation_Type.Proffesors] + i.ToString()]);
+            }
+            return Profs;
+        }
     }
 }

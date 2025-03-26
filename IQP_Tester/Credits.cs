@@ -32,6 +32,7 @@ namespace IQP_Tester
         private void Credits_Load(object sender, EventArgs e)
         {
             Load_Members();
+            Load_Proffessors();
             Set_Row_Heights();
         }
         
@@ -50,7 +51,7 @@ namespace IQP_Tester
             CreditsTableLayoutPanel.RowCount++;
             CreditsTableLayoutPanel.Controls.Add(labelTitle, 0, CreditsTableLayoutPanel.RowCount);
 
-            Members = citation_Helper.Get_Team_Members();
+            List<string> Members = citation_Helper.Get_Team_Members();
 
             for (int i = 0; i < Members.Count; i++)
             {
@@ -66,6 +67,40 @@ namespace IQP_Tester
                 labelMem.TextAlign = ContentAlignment.MiddleCenter;
                 CreditsTableLayoutPanel.RowCount++;
                 CreditsTableLayoutPanel.Controls.Add(labelMem, 0, CreditsTableLayoutPanel.RowCount);
+            }
+        }
+
+        private void Load_Proffessors()
+        {
+            System.Windows.Forms.Label labelTitle = new System.Windows.Forms.Label();
+
+            labelTitle.AutoSize = true;
+            labelTitle.Location = new System.Drawing.Point(4, 1);
+            labelTitle.Name = "ProfTitle";
+            labelTitle.Size = new System.Drawing.Size(92, 32);
+            labelTitle.TabIndex = 1;
+            labelTitle.Text = "Project Proffessors:\n";
+            labelTitle.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+            labelTitle.Font = new Font(labelTitle.Font.FontFamily, TITLE_FONT_SIZE);
+            CreditsTableLayoutPanel.RowCount++;
+            CreditsTableLayoutPanel.Controls.Add(labelTitle, 0, CreditsTableLayoutPanel.RowCount);
+
+            List<string> Profs = citation_Helper.Get_Proffessors();
+
+            for (int i = 0; i < Profs.Count; i++)
+            {
+                System.Windows.Forms.Label labelProf = new System.Windows.Forms.Label();
+
+                labelProf.AutoSize = true;
+                labelProf.Location = new System.Drawing.Point(4, 1);
+                labelProf.Name = "Prof" + i.ToString();
+                labelProf.Size = new System.Drawing.Size(92, 32);
+                labelProf.TabIndex = 1;
+                labelProf.Text = Profs[i].ToString();
+                labelProf.Anchor = AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Left;
+                labelProf.TextAlign = ContentAlignment.MiddleCenter;
+                CreditsTableLayoutPanel.RowCount++;
+                CreditsTableLayoutPanel.Controls.Add(labelProf, 0, CreditsTableLayoutPanel.RowCount);
             }
         }
 
