@@ -6,7 +6,6 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using static IQP_Tester.Main;
 using System.Windows.Forms;
-using System.Text.Json;
 using System.IO;
 
 namespace IQP_Tester

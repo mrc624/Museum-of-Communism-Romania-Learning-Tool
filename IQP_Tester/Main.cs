@@ -26,6 +26,7 @@ namespace IQP_Tester
         Resize_Helper resize = new Resize_Helper();
         Open_Close_Helper openClose = new Open_Close_Helper();
         Click_Helper click_helper = new Click_Helper();
+        Citation_Helper citation_Helper = new Citation_Helper();
 
         public static List<Form> Forms = new List<Form>();
 
@@ -39,6 +40,7 @@ namespace IQP_Tester
             Add_Forms();
             resize.CaptureAspectRatios(this);
             translationManager.Generate_Translation_JSON(TranslationManager.translation_file_name);
+            citation_Helper.Generate_Citation_JSON(Citation_Helper.CITATION_FILE_NAME);
             translationManager.Update_One_Form(this);
             Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());

@@ -125,6 +125,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Citation_Helper.cs" />
     <Compile Include="Click_Helper.cs" />
     <Compile Include="Credits.cs">
       <SubType>Form</SubType>
