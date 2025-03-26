@@ -21,6 +21,35 @@ namespace IQP_Tester
 
         private void Credits_Load(object sender, EventArgs e)
         {
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // The following code puts in images into the table:
+        /* 
             CreditsTableLayoutPanel.RowCount = 10;
             
             for (int i = 0;  i < CreditsTableLayoutPanel.RowCount; i++)
@@ -55,12 +84,6 @@ namespace IQP_Tester
                 RowStyle rowStyle = CreditsTableLayoutPanel.RowStyles[i];
                 rowStyle.SizeType = SizeType.AutoSize;
             }
-        }
-
-
-        private void Cite_Images()
-        {
-
-        }
+         */
     }
 }
