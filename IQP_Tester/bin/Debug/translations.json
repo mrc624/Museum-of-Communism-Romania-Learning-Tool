@@ -1,0 +1,42 @@
+﻿{
+  "English": {
+    "btnCredits": "Credits",
+    "lblWhatWasEducationLike": "What Was Education Like?",
+    "lblHowWasLifeUnderRegime": "What was life like under the regime?\r\n",
+    "lblWhoWasCeausescu": "Who was Nicolae Ceau\u0219escu?",
+    "lblHowDidTheRegimeFall": "How did the regime fall?",
+    "btnLanguage": "English",
+    "lblTimisoaraAns": "NEED\r\n\r\n",
+    "lblTimisoaraQ": "What happened in Timi\u0219oara?",
+    "lblWhereCeausescuAns": "NEED\r\n\r\n",
+    "lblWhereCeausescuQ": "Where was Ceau\u0219escu?",
+    "lblRevolutionExpectationsAns": "NEED\r\n\r\n",
+    "lblRevolutionExpectationsQ": "What did people expect?",
+    "lblWhyFleeAns": "NEED\r\n\r\n",
+    "lblWhyFleeQ": "Why did people flee?",
+    "lblWhyRevoltAns": "NEED\r\n\r\n",
+    "lblWhyRevoltQ": "Why did people revolt?",
+    "lblWhatWasRevolutionAns": "The Romanian Revolution was very quick and filled\nwith confusion, and it only lasted for seven days. Most\nof the country did not even know a revolution was \nhappening until after it was over. The revolution occured\nin 1989 and many Romanians continue to feel nostalgic\ntowards communism.\n",
+    "lblWhatWasRevolutionQ": "What was the revolution?"
+  },
+  "Romanian": {
+    "btnCredits": "TRANSLATION NEEDED",
+    "lblWhatWasEducationLike": "TRANSLATION NEEDED",
+    "lblHowWasLifeUnderRegime": "TRANSLATION NEEDED",
+    "lblWhoWasCeausescu": "TRANSLATION NEEDED",
+    "lblHowDidTheRegimeFall": "TRANSLATION NEEDED",
+    "btnLanguage": "TRANSLATION NEEDED",
+    "lblTimisoaraAns": "TRANSLATION NEEDED",
+    "lblTimisoaraQ": "TRANSLATION NEEDED",
+    "lblWhereCeausescuAns": "TRANSLATION NEEDED",
+    "lblWhereCeausescuQ": "TRANSLATION NEEDED",
+    "lblRevolutionExpectationsAns": "TRANSLATION NEEDED",
+    "lblRevolutionExpectationsQ": "TRANSLATION NEEDED",
+    "lblWhyFleeAns": "TRANSLATION NEEDED",
+    "lblWhyFleeQ": "TRANSLATION NEEDED",
+    "lblWhyRevoltAns": "TRANSLATION NEEDED",
+    "lblWhyRevoltQ": "TRANSLATION NEEDED",
+    "lblWhatWasRevolutionAns": "TRANSLATION NEEDED",
+    "lblWhatWasRevolutionQ": "TRANSLATION NEEDED"
+  }
+}

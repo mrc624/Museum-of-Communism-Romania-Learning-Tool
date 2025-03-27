@@ -1,0 +1,74 @@
+﻿{
+  "Team Members": {
+    "Member0": "Matthew Cloutier",
+    "Member1": "Jaden Gitlow",
+    "Member2": "Sophia Kouznetsov",
+    "Member3": "Abigail Poole"
+  },
+  "Collaborators": {
+    "Collab0": "Alexandru Groza",
+    "Collab1": "Irins Hasnas Hubbard"
+  },
+  "Proffesors": {
+    "Prof0": "Althea Danielski",
+    "Prof1": "Beth Eddy"
+  },
+  "Interviewees": {
+    "Interviewee0": "NEED",
+    "Interviewee1": "NEED",
+    "Interviewee2": "NEED",
+    "Interviewee3": "NEED",
+    "Interviewee4": "NEED",
+    "Interviewee5": "NEED",
+    "Interviewee6": "NEED",
+    "Interviewee7": "NEED",
+    "Interviewee8": "NEED",
+    "Interviewee9": "NEED",
+    "Interviewee10": "NEED",
+    "Interviewee11": "NEED",
+    "Interviewee12": "NEED",
+    "Interviewee13": "NEED",
+    "Interviewee14": "NEED",
+    "Interviewee15": "NEED",
+    "Interviewee16": "NEED",
+    "Interviewee17": "NEED",
+    "Interviewee18": "NEED",
+    "Interviewee19": "NEED"
+  },
+  "Institutions": {
+    "Institute0": "Worcester Polytechnic Institute",
+    "Institute1": "MOCR"
+  },
+  "Informative Texts": {
+    "Text0": "NEED",
+    "Text1": "NEED",
+    "Text2": "NEED",
+    "Text3": "NEED",
+    "Text4": "NEED",
+    "Text5": "NEED",
+    "Text6": "NEED",
+    "Text7": "NEED",
+    "Text8": "NEED",
+    "Text9": "NEED",
+    "Text10": "NEED",
+    "Text11": "NEED",
+    "Text12": "NEED",
+    "Text13": "NEED",
+    "Text14": "NEED",
+    "Text15": "NEED",
+    "Text16": "NEED",
+    "Text17": "NEED",
+    "Text18": "NEED",
+    "Text19": "NEED"
+  },
+  "Pictures": {
+    "pbCeasescu": "pbCeasescu",
+    "pbRevolution": "pbRevolution",
+    "pbTimisoara": "pbTimisoara",
+    "pbWhereCeausescu": "pbWhereCeausescu",
+    "pbRevolutionExpectations": "pbRevolutionExpectations",
+    "pbWhyFlee": "pbWhyFlee",
+    "pbWhyRevolt": "pbWhyRevolt",
+    "pbWhatWasRevolution": "pbWhatWasRevolution"
+  }
+}
