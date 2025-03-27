@@ -44,13 +44,13 @@
             this.btnLanguage.TextChanged += new System.EventHandler(this.btnLanguage_TextChanged);
             this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
             // 
-            // ThenAndNow
+            // Stories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btnLanguage);
-            this.Name = "ThenAndNow";
+            this.Name = "Stories";
             this.Text = "Then_And_Now";
             this.Shown += new System.EventHandler(this.ThenAndNow_Shown);
             this.Click += new System.EventHandler(this.ThenAndNow_Click);
