@@ -32,6 +32,10 @@ namespace IQP_Tester
 
         RegimeFall regimeFall;
         ThenAndNow thenAndNow;
+        Oppression oppression;
+        Stories stories;
+        LifeUnder lifeUnder;
+        Timeline timeline;
 
         Credits credits;
 
@@ -53,6 +57,10 @@ namespace IQP_Tester
         {
             click_helper.Assign_All_Children_To_Same_Click(panelRegimeFall, panelRegimeFall_Click);
             click_helper.Assign_All_Children_To_Same_Click(panelThenAndNow, panelThenAndNow_Click);
+            click_helper.Assign_All_Children_To_Same_Click(panelOppression, panelOppression_Click);
+            click_helper.Assign_All_Children_To_Same_Click(panelStories, panelStories_Click);
+            click_helper.Assign_All_Children_To_Same_Click(panelLifeUnder, panelLifeUnder_Click);
+            click_helper.Assign_All_Children_To_Same_Click(panelTimeline, panelTimeline_Click);
         }
 
         private void Add_Forms()
@@ -62,6 +70,15 @@ namespace IQP_Tester
             Forms.Add(regimeFall);
             thenAndNow = new ThenAndNow(translationManager, openClose);
             Forms.Add(thenAndNow);
+            oppression = new Oppression(translationManager, openClose);
+            Forms.Add(oppression);
+            stories = new Stories(translationManager, openClose);
+            Forms.Add(stories);
+            lifeUnder = new LifeUnder(translationManager, openClose);
+            Forms.Add(lifeUnder);
+            timeline = new Timeline(translationManager, openClose);
+            Forms.Add(timeline);
+
         }
 
         // MAIN PAGE BEGIN (NOT PANELS)
@@ -90,36 +107,60 @@ namespace IQP_Tester
 
         // REGIME FALL END
 
+        // OPPRESSION START
 
-        // LIFE PANEL BEGIN
+        private void panelOppression_Click(object sender, EventArgs e)
+        {
+            openClose.CloseAllForms();
+            oppression = new Oppression(translationManager, openClose);
+            openClose.FadeIn(oppression);
+        }
 
+        // OPPRESSION END
 
+        // LIFE UNDER PANEL BEGIN
 
-        // LIFE PANEL END
+        private void panelLifeUnder_Click(object sender, EventArgs e)
+        {
+            openClose.CloseAllForms();
+            lifeUnder = new LifeUnder(translationManager, openClose);
+            openClose.FadeIn(lifeUnder);
+        }
 
-        // PROPOGANDA PANEL BEGIN
+        // LIFE PANEL UNDER END
 
+        // STORIES BEGIN
 
+        private void panelStories_Click(object sender, EventArgs e)
+        {
+            openClose.CloseAllForms();
+            stories = new Stories(translationManager, openClose);
+            openClose.FadeIn(stories);
+        }
 
-        // PROPOGANDA PANEL END
+        // STORIES END
 
-        // PRESENT DAY PANEL BEGIN
-        
+        // TIMELINE BEGIN
 
+        private void panelTimeline_Click(object sender, EventArgs e)
+        {
+            openClose.CloseAllForms();
+            timeline = new Timeline(translationManager, openClose);
+            openClose.FadeIn(timeline);
+        }
 
-        // PRESENT DAY PANEL END
-
-        // TAB MANAGEMENT BEGIN
-
-
-
-        // TAB MANAGEMENT END
+        // TIMELINE END
 
         // LANGUAGE MANAGEMENT BEGIN
 
         private void btnLanguage_Click(object sender, EventArgs e)
         {
             translationManager.Increment_Language(this);
+            Main_Resize(this, new EventArgs());
+        }
+
+        private void btnLanguage_TextChanged(object sender, EventArgs e)
+        {
             Main_Resize(this, new EventArgs());
         }
 
