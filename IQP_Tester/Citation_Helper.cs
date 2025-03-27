@@ -8,6 +8,9 @@ using static IQP_Tester.Main;
 using System.Windows.Forms;
 using System.IO;
 using static IQP_Tester.TranslationManager;
+using System.Drawing;
+using System.Reflection;
+using System.Windows.Forms.VisualStyles;
 
 namespace IQP_Tester
 {
@@ -58,13 +61,24 @@ namespace IQP_Tester
             "Pic",
             "ERR"
         };
-            
+
+
+        public string[] Valid_Image_Types =
+        {
+            ".png",
+            ".jpg",
+            ".jpeg",
+            ".bmp",
+            ".pdf",
+            ".svg"
+        };
 
         public Dictionary<string, Dictionary<string, string>> Citations;
+        public List<PictureBox> Pictures = new List<PictureBox>();
 
         public void Generate_Citation_JSON(string file_name)
         {
-            
+
             if (File.Exists(file_name))
             {
                 string json = File.ReadAllText(file_name);
@@ -108,14 +122,15 @@ namespace IQP_Tester
             }
         }
 
-        private void Add_Picture(Control control)
+        private void Add_Picture(Control control) // same picture is put into citations multiple times
         {
             if (control is PictureBox)
             {
                 PictureBox pb = (PictureBox)control;
-
                 if (pb.Image != null)
                 {
+                    string name = pb.Name;
+                    Pictures.Add(pb);
                     if (!Citations[Citations_to_String[(int)Citation_Type.Pictures]].ContainsKey(pb.Name))
                     {
                         Citations[Citations_to_String[(int)Citation_Type.Pictures]][pb.Name] = "NEED";
@@ -180,7 +195,7 @@ namespace IQP_Tester
             }
         }
 
-        public List<string> Get_Citations(Citation_Type type)
+        public List<string> Get_Citations_Except_Pictures(Citation_Type type)
         {
             List<string> list = new List<string>();
             if (type != Citation_Type.Pictures)
@@ -193,24 +208,9 @@ namespace IQP_Tester
             return list;
         }
 
-        public List<string> Get_Team_Members()
+        public List<PictureBox> Get_Pictures_List()
         {
-            List<string> Names = new List<string>();
-            for (int i = 0; i < Citations[Citations_to_String[(int)Citation_Type.Team_Members]].Count; i++)
-            {
-                Names.Add(Citations[Citations_to_String[(int)Citation_Type.Team_Members]][Get_Citation_Shortened[(int)Citation_Type.Team_Members] + i.ToString()]);
-            }
-            return Names;
-        }
-
-        public List<string> Get_Proffessors()
-        {
-            List<string> Profs = new List<string>();
-            for (int i = 0; i < Citations[Citations_to_String[(int)Citation_Type.Proffesors]].Count; i++)
-            {
-                Profs.Add(Citations[Citations_to_String[(int)Citation_Type.Proffesors]][Get_Citation_Shortened[(int)Citation_Type.Proffesors] + i.ToString()]);
-            }
-            return Profs;
+            return Pictures;
         }
     }
 }

@@ -41,18 +41,45 @@ namespace IQP_Tester
         {
             for (int i = 0; i < (int)Citation_Type.NUM_CITATION_TYPES; i++)
             {
-                Load_Citations((Citation_Type)i);
+                Load_Citations_Except_Pictures((Citation_Type)i);
             }
+            Load_Citations_Pictures();
             Set_Row_Heights();
         }
 
-        private void Load_Citations(Citation_Type type)
+        private void Load_Citations_Pictures()
         {
+            System.Windows.Forms.Label labelTitle = Get_Title_Label(citation_Helper.Citations_to_String[(int)Citation_Type.Pictures], "lbl" + citation_Helper.Get_Citation_Shortened[(int)Citation_Type.Pictures] + "title");
+            CreditsTableLayoutPanel.RowCount++;
+            CreditsTableLayoutPanel.Controls.Add(labelTitle, 0, CreditsTableLayoutPanel.RowCount);
+
+            List<PictureBox> pictures = citation_Helper.Get_Pictures_List();
+
+            for (int i = 0; i < pictures.Count; i++)
+            {
+                pictures[i].Anchor = STANDARD_ANCHOR;
+                CreditsTableLayoutPanel.RowCount++;
+                CreditsTableLayoutPanel.Controls.Add(pictures[i], 0, CreditsTableLayoutPanel.RowCount);
+
+                string citation = citation_Helper.Citations[citation_Helper.Citations_to_String[(int)Citation_Type.Pictures]][pictures[i].Name];
+                System.Windows.Forms.Label label = Get_Standard_Label(citation, "lbl" + pictures[i].Name + i.ToString());
+                CreditsTableLayoutPanel.RowCount++;
+                CreditsTableLayoutPanel.Controls.Add(label, 0, CreditsTableLayoutPanel.RowCount);
+            }
+        }
+
+        private void Load_Citations_Except_Pictures(Citation_Type type)
+        {
+            if (type == Citation_Type.Pictures)
+            {
+                return;
+            }
+
             System.Windows.Forms.Label labelTitle = Get_Title_Label(citation_Helper.Citations_to_String[(int)type], "lbl" + citation_Helper.Get_Citation_Shortened[(int)type] + "title");
             CreditsTableLayoutPanel.RowCount++;
             CreditsTableLayoutPanel.Controls.Add(labelTitle, 0, CreditsTableLayoutPanel.RowCount);
 
-            List<string> Citations = citation_Helper.Get_Citations(type);
+            List<string> Citations = citation_Helper.Get_Citations_Except_Pictures(type);
 
             for (int i = 0; i < Citations.Count; i++)
             {
