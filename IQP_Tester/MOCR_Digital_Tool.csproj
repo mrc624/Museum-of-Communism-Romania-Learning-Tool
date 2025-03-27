@@ -207,6 +207,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Blue_Circle.png" />
     <Content Include="Kneeling_With_Rifle.jpg" />
     <Content Include="Nicolae_Ceasescu.png" />
     <Content Include="Painting_on_Wall.jpg" />

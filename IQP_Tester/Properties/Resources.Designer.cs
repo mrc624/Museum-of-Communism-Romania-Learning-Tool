@@ -63,6 +63,16 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Blue_Circle {
+            get {
+                object obj = ResourceManager.GetObject("Blue_Circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Nicolae_Ceasescu {
             get {
                 object obj = ResourceManager.GetObject("Nicolae_Ceasescu", resourceCulture);

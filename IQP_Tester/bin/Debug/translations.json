@@ -17,7 +17,8 @@
     "lblWhyRevoltAns": "NEED\r\n\r\n",
     "lblWhyRevoltQ": "Why did people revolt?",
     "lblWhatWasRevolutionAns": "The Romanian Revolution was very quick and filled\nwith confusion, and it only lasted for seven days. Most\nof the country did not even know a revolution was \nhappening until after it was over. The revolution occured\nin 1989 and many Romanians continue to feel nostalgic\ntowards communism.\n",
-    "lblWhatWasRevolutionQ": "What was the revolution?"
+    "lblWhatWasRevolutionQ": "What was the revolution?",
+    "lblThenAndNow": "Then and Now"
   },
   "Romanian": {
     "btnCredits": "TRANSLATION NEEDED",
@@ -37,6 +38,7 @@
     "lblWhyRevoltAns": "TRANSLATION NEEDED",
     "lblWhyRevoltQ": "TRANSLATION NEEDED",
     "lblWhatWasRevolutionAns": "TRANSLATION NEEDED",
-    "lblWhatWasRevolutionQ": "TRANSLATION NEEDED"
+    "lblWhatWasRevolutionQ": "TRANSLATION NEEDED",
+    "lblThenAndNow": "TRANSLATION NEEDED"
   }
 }

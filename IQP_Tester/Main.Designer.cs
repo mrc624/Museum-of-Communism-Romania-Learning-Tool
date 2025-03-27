@@ -30,22 +30,22 @@
         {
             this.btnLanguage = new System.Windows.Forms.Button();
             this.panelRegimeFall = new System.Windows.Forms.Panel();
-            this.pbRevolution = new System.Windows.Forms.PictureBox();
             this.lblHowDidTheRegimeFall = new System.Windows.Forms.Label();
             this.panelCeausescu = new System.Windows.Forms.Panel();
             this.lblWhoWasCeausescu = new System.Windows.Forms.Label();
-            this.pbCeasescu = new System.Windows.Forms.PictureBox();
-            this.panelLifeUnder = new System.Windows.Forms.Panel();
-            this.lblHowWasLifeUnderRegime = new System.Windows.Forms.Label();
             this.panelPresentDay = new System.Windows.Forms.Panel();
             this.lblWhatWasEducationLike = new System.Windows.Forms.Label();
             this.btnCredits = new System.Windows.Forms.Button();
+            this.panelThenAndNow = new System.Windows.Forms.Panel();
+            this.lblThenAndNow = new System.Windows.Forms.Label();
+            this.pbCeasescu = new System.Windows.Forms.PictureBox();
+            this.pbRevolution = new System.Windows.Forms.PictureBox();
             this.panelRegimeFall.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).BeginInit();
             this.panelCeausescu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
-            this.panelLifeUnder.SuspendLayout();
             this.panelPresentDay.SuspendLayout();
+            this.panelThenAndNow.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -70,18 +70,6 @@
             this.panelRegimeFall.Size = new System.Drawing.Size(351, 314);
             this.panelRegimeFall.TabIndex = 5;
             this.panelRegimeFall.Click += new System.EventHandler(this.panelRegimeFall_Click);
-            // 
-            // pbRevolution
-            // 
-            this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.Location = new System.Drawing.Point(6, 34);
-            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
-            this.pbRevolution.Name = "pbRevolution";
-            this.pbRevolution.Size = new System.Drawing.Size(337, 261);
-            this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbRevolution.TabIndex = 2;
-            this.pbRevolution.TabStop = false;
             // 
             // lblHowDidTheRegimeFall
             // 
@@ -115,38 +103,6 @@
             this.lblWhoWasCeausescu.TabIndex = 0;
             this.lblWhoWasCeausescu.Text = "Who was Nicolae Ceaușescu?";
             // 
-            // pbCeasescu
-            // 
-            this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbCeasescu.Location = new System.Drawing.Point(72, 32);
-            this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
-            this.pbCeasescu.Name = "pbCeasescu";
-            this.pbCeasescu.Size = new System.Drawing.Size(247, 247);
-            this.pbCeasescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCeasescu.TabIndex = 1;
-            this.pbCeasescu.TabStop = false;
-            // 
-            // panelLifeUnder
-            // 
-            this.panelLifeUnder.Controls.Add(this.lblHowWasLifeUnderRegime);
-            this.panelLifeUnder.Location = new System.Drawing.Point(741, 102);
-            this.panelLifeUnder.Margin = new System.Windows.Forms.Padding(1);
-            this.panelLifeUnder.Name = "panelLifeUnder";
-            this.panelLifeUnder.Size = new System.Drawing.Size(470, 327);
-            this.panelLifeUnder.TabIndex = 7;
-            // 
-            // lblHowWasLifeUnderRegime
-            // 
-            this.lblHowWasLifeUnderRegime.AutoSize = true;
-            this.lblHowWasLifeUnderRegime.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHowWasLifeUnderRegime.Location = new System.Drawing.Point(11, 0);
-            this.lblHowWasLifeUnderRegime.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblHowWasLifeUnderRegime.Name = "lblHowWasLifeUnderRegime";
-            this.lblHowWasLifeUnderRegime.Size = new System.Drawing.Size(448, 31);
-            this.lblHowWasLifeUnderRegime.TabIndex = 0;
-            this.lblHowWasLifeUnderRegime.Text = "What was life like under the regime?\r\n";
-            // 
             // panelPresentDay
             // 
             this.panelPresentDay.Controls.Add(this.lblWhatWasEducationLike);
@@ -179,6 +135,53 @@
             this.btnCredits.UseVisualStyleBackColor = false;
             this.btnCredits.Click += new System.EventHandler(this.btnCredits_Click);
             // 
+            // panelThenAndNow
+            // 
+            this.panelThenAndNow.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.panelThenAndNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelThenAndNow.Controls.Add(this.lblThenAndNow);
+            this.panelThenAndNow.Location = new System.Drawing.Point(741, 102);
+            this.panelThenAndNow.Margin = new System.Windows.Forms.Padding(1);
+            this.panelThenAndNow.Name = "panelThenAndNow";
+            this.panelThenAndNow.Size = new System.Drawing.Size(470, 327);
+            this.panelThenAndNow.TabIndex = 7;
+            // 
+            // lblThenAndNow
+            // 
+            this.lblThenAndNow.AutoSize = true;
+            this.lblThenAndNow.BackColor = System.Drawing.Color.Transparent;
+            this.lblThenAndNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThenAndNow.Location = new System.Drawing.Point(139, 0);
+            this.lblThenAndNow.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.lblThenAndNow.Name = "lblThenAndNow";
+            this.lblThenAndNow.Size = new System.Drawing.Size(190, 31);
+            this.lblThenAndNow.TabIndex = 0;
+            this.lblThenAndNow.Text = "Then and Now";
+            // 
+            // pbCeasescu
+            // 
+            this.pbCeasescu.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
+            this.pbCeasescu.InitialImage = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
+            this.pbCeasescu.Location = new System.Drawing.Point(72, 32);
+            this.pbCeasescu.Margin = new System.Windows.Forms.Padding(1);
+            this.pbCeasescu.Name = "pbCeasescu";
+            this.pbCeasescu.Size = new System.Drawing.Size(247, 247);
+            this.pbCeasescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCeasescu.TabIndex = 1;
+            this.pbCeasescu.TabStop = false;
+            // 
+            // pbRevolution
+            // 
+            this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRevolution.Location = new System.Drawing.Point(6, 34);
+            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
+            this.pbRevolution.Name = "pbRevolution";
+            this.pbRevolution.Size = new System.Drawing.Size(337, 261);
+            this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRevolution.TabIndex = 2;
+            this.pbRevolution.TabStop = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,7 +190,7 @@
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btnCredits);
             this.Controls.Add(this.panelPresentDay);
-            this.Controls.Add(this.panelLifeUnder);
+            this.Controls.Add(this.panelThenAndNow);
             this.Controls.Add(this.panelCeausescu);
             this.Controls.Add(this.panelRegimeFall);
             this.Controls.Add(this.btnLanguage);
@@ -197,14 +200,14 @@
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.panelRegimeFall.ResumeLayout(false);
             this.panelRegimeFall.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
             this.panelCeausescu.ResumeLayout(false);
             this.panelCeausescu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).EndInit();
-            this.panelLifeUnder.ResumeLayout(false);
-            this.panelLifeUnder.PerformLayout();
             this.panelPresentDay.ResumeLayout(false);
             this.panelPresentDay.PerformLayout();
+            this.panelThenAndNow.ResumeLayout(false);
+            this.panelThenAndNow.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCeasescu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -215,8 +218,8 @@
         private System.Windows.Forms.Label lblHowDidTheRegimeFall;
         private System.Windows.Forms.Panel panelCeausescu;
         private System.Windows.Forms.Label lblWhoWasCeausescu;
-        private System.Windows.Forms.Panel panelLifeUnder;
-        private System.Windows.Forms.Label lblHowWasLifeUnderRegime;
+        private System.Windows.Forms.Panel panelThenAndNow;
+        private System.Windows.Forms.Label lblThenAndNow;
         private System.Windows.Forms.Panel panelPresentDay;
         private System.Windows.Forms.Label lblWhatWasEducationLike;
         private System.Windows.Forms.Button btnCredits;

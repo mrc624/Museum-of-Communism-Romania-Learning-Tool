@@ -129,15 +129,15 @@ namespace IQP_Tester
 
             resize.Reposition(panelRegimeFall);
             resize.Reposition(panelCeausescu);
-            resize.Reposition(panelLifeUnder);
+            resize.Reposition(panelThenAndNow);
             resize.Reposition(panelPresentDay);
 
             resize.Reposition(lblHowDidTheRegimeFall);
             resize.Center_X(lblHowDidTheRegimeFall);
             resize.Reposition(lblWhoWasCeausescu);
             resize.Center_X(lblWhoWasCeausescu);
-            resize.Reposition(lblHowWasLifeUnderRegime);
-            resize.Center_X(lblHowWasLifeUnderRegime);
+            resize.Reposition(lblThenAndNow);
+            resize.Center_X(lblThenAndNow);
             resize.Reposition(lblWhatWasEducationLike);
             resize.Center_X(lblWhatWasEducationLike);
 
