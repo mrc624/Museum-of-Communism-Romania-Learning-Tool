@@ -180,6 +180,19 @@ namespace IQP_Tester
             }
         }
 
+        public List<string> Get_Citations(Citation_Type type)
+        {
+            List<string> list = new List<string>();
+            if (type != Citation_Type.Pictures)
+            {
+                for (int i = 0; i < Citations[Citations_to_String[(int)type]].Count; i++)
+                {
+                    list.Add(Citations[Citations_to_String[(int)type]][Get_Citation_Shortened[(int)type] + i.ToString()]);
+                }
+            }
+            return list;
+        }
+
         public List<string> Get_Team_Members()
         {
             List<string> Names = new List<string>();

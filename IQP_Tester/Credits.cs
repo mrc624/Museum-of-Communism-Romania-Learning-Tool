@@ -5,10 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static IQP_Tester.Citation_Helper;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace IQP_Tester
 {
@@ -19,7 +21,13 @@ namespace IQP_Tester
 
         List<string> Members;
 
-        public float TITLE_FONT_SIZE = 14F;
+        public const float TITLE_FONT_SIZE = 14F;
+        public const float STANDARD_FONT_SIZE = 12F;
+        public const AnchorStyles TITLE_ANCHOR = AnchorStyles.Top | AnchorStyles.Left;
+        public const AnchorStyles STANDARD_ANCHOR = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        public const ContentAlignment TITLE_ALIGN = ContentAlignment.TopLeft;
+        public const ContentAlignment STANDARD_ALIGN = ContentAlignment.MiddleCenter;
+
 
         public Credits(Citation_Helper citation_helper)
         {
@@ -31,77 +39,54 @@ namespace IQP_Tester
 
         private void Credits_Load(object sender, EventArgs e)
         {
-            Load_Members();
-            Load_Proffessors();
+            for (int i = 0; i < (int)Citation_Type.NUM_CITATION_TYPES; i++)
+            {
+                Load_Citations((Citation_Type)i);
+            }
             Set_Row_Heights();
         }
-        
-        private void Load_Members()
-        {
-            System.Windows.Forms.Label labelTitle = new System.Windows.Forms.Label();
 
-            labelTitle.AutoSize = true;
-            labelTitle.Location = new System.Drawing.Point(4, 1);
-            labelTitle.Name = "MemberTitle";
-            labelTitle.Size = new System.Drawing.Size(92, 32);
-            labelTitle.TabIndex = 1;
-            labelTitle.Text = "Project Members:\n";
-            labelTitle.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-            labelTitle.Font = new Font(labelTitle.Font.FontFamily, TITLE_FONT_SIZE);
+        private void Load_Citations(Citation_Type type)
+        {
+            System.Windows.Forms.Label labelTitle = Get_Title_Label(citation_Helper.Citations_to_String[(int)type], "lbl" + citation_Helper.Get_Citation_Shortened[(int)type] + "title");
             CreditsTableLayoutPanel.RowCount++;
             CreditsTableLayoutPanel.Controls.Add(labelTitle, 0, CreditsTableLayoutPanel.RowCount);
 
-            List<string> Members = citation_Helper.Get_Team_Members();
+            List<string> Citations = citation_Helper.Get_Citations(type);
 
-            for (int i = 0; i < Members.Count; i++)
+            for (int i = 0; i < Citations.Count; i++)
             {
-                System.Windows.Forms.Label labelMem = new System.Windows.Forms.Label();
+                System.Windows.Forms.Label label = Get_Standard_Label(Citations[i].ToString(), "lbl" + citation_Helper.Get_Citation_Shortened[(int)type] + i.ToString());
 
-                labelMem.AutoSize = true;
-                labelMem.Location = new System.Drawing.Point(4, 1);
-                labelMem.Name = "Member" + i.ToString();
-                labelMem.Size = new System.Drawing.Size(92, 32);
-                labelMem.TabIndex = 1;
-                labelMem.Text = Members[i].ToString();
-                labelMem.Anchor = AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Left;
-                labelMem.TextAlign = ContentAlignment.MiddleCenter;
                 CreditsTableLayoutPanel.RowCount++;
-                CreditsTableLayoutPanel.Controls.Add(labelMem, 0, CreditsTableLayoutPanel.RowCount);
+                CreditsTableLayoutPanel.Controls.Add(label, 0, CreditsTableLayoutPanel.RowCount);
             }
         }
 
-        private void Load_Proffessors()
+        private System.Windows.Forms.Label Get_Title_Label(string title, string name)
         {
-            System.Windows.Forms.Label labelTitle = new System.Windows.Forms.Label();
+            return Get_Label(title, name, TITLE_FONT_SIZE, TITLE_ANCHOR, TITLE_ALIGN);
+        }
 
-            labelTitle.AutoSize = true;
-            labelTitle.Location = new System.Drawing.Point(4, 1);
-            labelTitle.Name = "ProfTitle";
-            labelTitle.Size = new System.Drawing.Size(92, 32);
-            labelTitle.TabIndex = 1;
-            labelTitle.Text = "Project Proffessors:\n";
-            labelTitle.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-            labelTitle.Font = new Font(labelTitle.Font.FontFamily, TITLE_FONT_SIZE);
-            CreditsTableLayoutPanel.RowCount++;
-            CreditsTableLayoutPanel.Controls.Add(labelTitle, 0, CreditsTableLayoutPanel.RowCount);
+        private System.Windows.Forms.Label Get_Standard_Label(string text, string name)
+        {
+            return Get_Label(text, name, STANDARD_FONT_SIZE, STANDARD_ANCHOR, STANDARD_ALIGN);
+        }
 
-            List<string> Profs = citation_Helper.Get_Proffessors();
+        private System.Windows.Forms.Label Get_Label(string text, string name, float font, AnchorStyles anchor, ContentAlignment align)
+        {
+            System.Windows.Forms.Label label = new System.Windows.Forms.Label();
 
-            for (int i = 0; i < Profs.Count; i++)
-            {
-                System.Windows.Forms.Label labelProf = new System.Windows.Forms.Label();
+            label.AutoSize = true;
+            label.Location = new System.Drawing.Point(4, 1);
+            label.Name = name;
+            label.Size = new System.Drawing.Size(92, 32);
+            label.TabIndex = 1;
+            label.Text = text;
+            label.Anchor = anchor;
+            label.TextAlign = align;
 
-                labelProf.AutoSize = true;
-                labelProf.Location = new System.Drawing.Point(4, 1);
-                labelProf.Name = "Prof" + i.ToString();
-                labelProf.Size = new System.Drawing.Size(92, 32);
-                labelProf.TabIndex = 1;
-                labelProf.Text = Profs[i].ToString();
-                labelProf.Anchor = AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Left;
-                labelProf.TextAlign = ContentAlignment.MiddleCenter;
-                CreditsTableLayoutPanel.RowCount++;
-                CreditsTableLayoutPanel.Controls.Add(labelProf, 0, CreditsTableLayoutPanel.RowCount);
-            }
+            return label;
         }
 
         private void Set_Row_Heights()
