@@ -339,6 +339,28 @@ namespace IQP_Tester
             }
         }
 
+        public void Repostition_All_Main_Panels(Form form)
+        {
+            for (int i = 0; i < form.Controls.Count; i++)
+            {
+                if (form.Controls[i] is Panel)
+                {
+                    Panel panel = (Panel)form.Controls[i];
+                    Reposition(panel);
+                    Reposition_All_Controls_In_Main_Panel(panel);
+                }
+            }
+        }
+
+        public void Reposition_All_Controls_In_Main_Panel(Panel panel)
+        {
+            for (int i = 0; i < panel.Controls.Count;i++)
+            {
+                Reposition(panel.Controls[i]);
+                Center_X(panel.Controls[i]);
+            }
+        }
+
         private void Reposition_Panel_With_PB_lblQ_lblAns(Panel panel)
         {
             if (panel.Controls.Count != NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS)

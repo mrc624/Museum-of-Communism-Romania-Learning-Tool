@@ -142,22 +142,8 @@ namespace IQP_Tester
         {
             resize.Handle_Resize(this);
 
-            resize.Reposition(panelRegimeFall);
-            resize.Reposition(panelCeausescu);
-            resize.Reposition(panelThenAndNow);
-            resize.Reposition(panelPresentDay);
+            resize.Repostition_All_Main_Panels(this);
 
-            resize.Reposition(lblHowDidTheRegimeFall);
-            resize.Center_X(lblHowDidTheRegimeFall);
-            resize.Reposition(lblWhoWasCeausescu);
-            resize.Center_X(lblWhoWasCeausescu);
-            resize.Reposition(lblThenAndNow);
-            resize.Center_X(lblThenAndNow);
-            resize.Reposition(lblWhatWasEducationLike);
-            resize.Center_X(lblWhatWasEducationLike);
-
-            resize.Reposition(pbCeasescu);
-            resize.Reposition(pbRevolution);
             resize.Center_to_Other_Control(lblHowDidTheRegimeFall, pbRevolution, Resize_Helper.Centering_Options.to_top);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
