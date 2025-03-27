@@ -22,7 +22,7 @@ namespace IQP_Tester
         List<string> Members;
 
         public const float TITLE_FONT_SIZE = 14F;
-        public const float STANDARD_FONT_SIZE = 12F;
+        public const float STANDARD_FONT_SIZE = 10F;
         public const AnchorStyles TITLE_ANCHOR = AnchorStyles.Top | AnchorStyles.Left;
         public const AnchorStyles STANDARD_ANCHOR = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         public const ContentAlignment TITLE_ALIGN = ContentAlignment.TopLeft;
@@ -85,6 +85,7 @@ namespace IQP_Tester
             label.Text = text;
             label.Anchor = anchor;
             label.TextAlign = align;
+            label.Font = new Font(label.Font.FontFamily, font);
 
             return label;
         }
