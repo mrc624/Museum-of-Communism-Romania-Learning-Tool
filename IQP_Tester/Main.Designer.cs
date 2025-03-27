@@ -145,13 +145,14 @@
             this.panelThenAndNow.Name = "panelThenAndNow";
             this.panelThenAndNow.Size = new System.Drawing.Size(470, 327);
             this.panelThenAndNow.TabIndex = 7;
+            this.panelThenAndNow.Click += new System.EventHandler(this.panelThenAndNow_Click);
             // 
             // lblThenAndNow
             // 
             this.lblThenAndNow.AutoSize = true;
             this.lblThenAndNow.BackColor = System.Drawing.Color.Transparent;
             this.lblThenAndNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThenAndNow.Location = new System.Drawing.Point(139, 0);
+            this.lblThenAndNow.Location = new System.Drawing.Point(140, 16);
             this.lblThenAndNow.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblThenAndNow.Name = "lblThenAndNow";
             this.lblThenAndNow.Size = new System.Drawing.Size(190, 31);

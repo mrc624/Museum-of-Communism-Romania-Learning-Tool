@@ -348,9 +348,9 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "RegimeFall";
             this.Text = "History";
-            this.Shown += new System.EventHandler(this.History_Shown);
-            this.Click += new System.EventHandler(this.History_Click);
-            this.Resize += new System.EventHandler(this.History_Resize);
+            this.Shown += new System.EventHandler(this.RegimeFall_Shown);
+            this.Click += new System.EventHandler(this.RegimeFall_Click);
+            this.Resize += new System.EventHandler(this.RegimeFall_Resize);
             this.panelWhatWasRevolution.ResumeLayout(false);
             this.panelWhatWasRevolution.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbWhatWasRevolution)).EndInit();

@@ -31,6 +31,7 @@ namespace IQP_Tester
         public static List<Form> Forms = new List<Form>();
 
         RegimeFall regimeFall;
+        ThenAndNow thenAndNow;
 
         Credits credits;
 
@@ -51,6 +52,7 @@ namespace IQP_Tester
         private void Set_Panel_Clicks()
         {
             click_helper.Assign_All_Children_To_Same_Click(panelRegimeFall, panelRegimeFall_Click);
+            click_helper.Assign_All_Children_To_Same_Click(panelThenAndNow, panelThenAndNow_Click);
         }
 
         private void Add_Forms()
@@ -58,13 +60,26 @@ namespace IQP_Tester
             Forms.Add(this);
             regimeFall = new RegimeFall(translationManager, openClose);
             Forms.Add(regimeFall);
+            thenAndNow = new ThenAndNow(translationManager, openClose);
+            Forms.Add(thenAndNow);
         }
 
         // MAIN PAGE BEGIN (NOT PANELS)
 
         // MAIN PAGE END   (NOT PANELS)
 
-        // HISTORY PANEL BEGIN
+        // THEN AND NOW BEGIN
+
+        private void panelThenAndNow_Click(object sender, EventArgs e)
+        {
+            openClose.CloseAllForms();
+            thenAndNow = new ThenAndNow(translationManager, openClose);
+            openClose.FadeIn(thenAndNow);
+        }
+
+        // THEN AND NOW END
+
+        // REGIME FALL BEGIN
 
         private void panelRegimeFall_Click(object sender, EventArgs e)
         {
@@ -73,7 +88,7 @@ namespace IQP_Tester
             openClose.FadeIn(regimeFall);
         }
 
-        // HISTORY PANEL END
+        // REGIME FALL END
 
 
         // LIFE PANEL BEGIN
