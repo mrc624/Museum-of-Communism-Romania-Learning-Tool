@@ -49,6 +49,8 @@ namespace IQP_Tester
 
         private void Load_Citations_Pictures()
         {
+            citation_Helper.Add_Pictures();
+
             System.Windows.Forms.Label labelTitle = Get_Title_Label(citation_Helper.Citations_to_String[(int)Citation_Type.Pictures], "lbl" + citation_Helper.Get_Citation_Shortened[(int)Citation_Type.Pictures] + "title");
             CreditsTableLayoutPanel.RowCount++;
             CreditsTableLayoutPanel.Controls.Add(labelTitle, 0, CreditsTableLayoutPanel.RowCount);
@@ -58,6 +60,7 @@ namespace IQP_Tester
             for (int i = 0; i < pictures.Count; i++)
             {
                 pictures[i].Anchor = STANDARD_ANCHOR;
+                pictures[i].Name = pictures[i].Name;
                 CreditsTableLayoutPanel.RowCount++;
                 CreditsTableLayoutPanel.Controls.Add(pictures[i], 0, CreditsTableLayoutPanel.RowCount);
 

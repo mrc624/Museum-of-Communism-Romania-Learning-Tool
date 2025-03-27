@@ -105,20 +105,22 @@ namespace IQP_Tester
                 Init_Text();
             }
 
-            for (int i = 0; i < Forms.Count; i++)
-            {
-                Add_Pictures(Forms[i]);
-            }
+            Add_Pictures();
 
             string updated = JsonSerializer.Serialize(Citations, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(file_name, updated, Encoding.UTF8);
         }
 
-        private void Add_Pictures(Form form)
+        public void Add_Pictures()
         {
-            for (int i = 0; i < form.Controls.Count; i++)
+            Pictures.Clear();
+
+            for (int j = 0; j < Forms.Count; j++)
             {
-                Add_Picture(form.Controls[i]);
+                for (int i = 0; i < Forms[j].Controls.Count; i++)
+                {
+                    Add_Picture(Forms[j].Controls[i]);
+                }
             }
         }
 
@@ -130,7 +132,7 @@ namespace IQP_Tester
                 if (pb.Image != null)
                 {
                     string name = pb.Name;
-                    Pictures.Add(pb);
+                    Pictures.Add(Copy_Picturebox(pb));
                     if (!Citations[Citations_to_String[(int)Citation_Type.Pictures]].ContainsKey(pb.Name))
                     {
                         Citations[Citations_to_String[(int)Citation_Type.Pictures]][pb.Name] = "NEED";
@@ -145,6 +147,23 @@ namespace IQP_Tester
                     Add_Picture(control.Controls[i]);
                 }
             }
+        }
+
+        private PictureBox Copy_Picturebox(PictureBox og)
+        {
+            PictureBox copy = new PictureBox();
+
+            copy.Image = og.Image;
+            copy.InitialImage = og.Image;
+            copy.Location = new System.Drawing.Point(0, 0);
+            copy.Margin = og.Margin;
+            copy.Name = og.Name;
+            copy.Size = new System.Drawing.Size(247, 247);
+            copy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            copy.TabIndex = 1;
+            copy.TabStop = false;
+
+            return copy;
         }
 
         private void Init_Team_Mem()
