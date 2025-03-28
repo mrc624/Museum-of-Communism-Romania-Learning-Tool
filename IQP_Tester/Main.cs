@@ -22,7 +22,7 @@ namespace IQP_Tester
     {
         delegate void VoidDelegate();
 
-        TranslationManager translationManager = new TranslationManager();
+        TextManager textManager = new TextManager();
         Resize_Helper resize = new Resize_Helper();
         Open_Close_Helper openClose = new Open_Close_Helper();
         Click_Helper click_helper = new Click_Helper();
@@ -44,9 +44,9 @@ namespace IQP_Tester
             InitializeComponent();
             Add_Forms();
             resize.CaptureAspectRatios(this);
-            translationManager.Generate_Translation_JSON(TranslationManager.translation_file_name);
+            textManager.Generate_Text_JSON(TextManager.TEXT_MANAGER_FILE_NAME);
             citation_Helper.Generate_Citation_JSON(Citation_Helper.CITATION_FILE_NAME);
-            translationManager.Update_One_Form(this);
+            textManager.Update_One_Form(this);
             Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());
             openClose.Start_Timer();
@@ -66,17 +66,17 @@ namespace IQP_Tester
         private void Add_Forms()
         {
             Forms.Add(this);
-            regimeFall = new RegimeFall(translationManager, openClose);
+            regimeFall = new RegimeFall(textManager, openClose);
             Forms.Add(regimeFall);
-            thenAndNow = new ThenAndNow(translationManager, openClose);
+            thenAndNow = new ThenAndNow(textManager, openClose);
             Forms.Add(thenAndNow);
-            oppression = new Oppression(translationManager, openClose);
+            oppression = new Oppression(textManager, openClose);
             Forms.Add(oppression);
-            stories = new Stories(translationManager, openClose);
+            stories = new Stories(textManager, openClose);
             Forms.Add(stories);
-            lifeUnder = new LifeUnder(translationManager, openClose);
+            lifeUnder = new LifeUnder(textManager, openClose);
             Forms.Add(lifeUnder);
-            timeline = new Timeline(translationManager, openClose);
+            timeline = new Timeline(textManager, openClose);
             Forms.Add(timeline);
 
         }
@@ -90,7 +90,7 @@ namespace IQP_Tester
         private void panelThenAndNow_Click(object sender, EventArgs e)
         {
             openClose.CloseAllForms();
-            thenAndNow = new ThenAndNow(translationManager, openClose);
+            thenAndNow = new ThenAndNow(textManager, openClose);
             openClose.FadeIn(thenAndNow);
         }
 
@@ -101,7 +101,7 @@ namespace IQP_Tester
         private void panelRegimeFall_Click(object sender, EventArgs e)
         {
             openClose.CloseAllForms();
-            regimeFall = new RegimeFall(translationManager, openClose);
+            regimeFall = new RegimeFall(textManager, openClose);
             openClose.FadeIn(regimeFall);
         }
 
@@ -112,7 +112,7 @@ namespace IQP_Tester
         private void panelOppression_Click(object sender, EventArgs e)
         {
             openClose.CloseAllForms();
-            oppression = new Oppression(translationManager, openClose);
+            oppression = new Oppression(textManager, openClose);
             openClose.FadeIn(oppression);
         }
 
@@ -123,7 +123,7 @@ namespace IQP_Tester
         private void panelLifeUnder_Click(object sender, EventArgs e)
         {
             openClose.CloseAllForms();
-            lifeUnder = new LifeUnder(translationManager, openClose);
+            lifeUnder = new LifeUnder(textManager, openClose);
             openClose.FadeIn(lifeUnder);
         }
 
@@ -134,7 +134,7 @@ namespace IQP_Tester
         private void panelStories_Click(object sender, EventArgs e)
         {
             openClose.CloseAllForms();
-            stories = new Stories(translationManager, openClose);
+            stories = new Stories(textManager, openClose);
             openClose.FadeIn(stories);
         }
 
@@ -145,7 +145,7 @@ namespace IQP_Tester
         private void panelTimeline_Click(object sender, EventArgs e)
         {
             openClose.CloseAllForms();
-            timeline = new Timeline(translationManager, openClose);
+            timeline = new Timeline(textManager, openClose);
             openClose.FadeIn(timeline);
         }
 
@@ -155,7 +155,7 @@ namespace IQP_Tester
 
         private void btnLanguage_Click(object sender, EventArgs e)
         {
-            translationManager.Increment_Language(this);
+            textManager.Increment_Language(this);
             Main_Resize(this, new EventArgs());
         }
 

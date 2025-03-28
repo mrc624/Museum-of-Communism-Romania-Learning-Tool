@@ -186,7 +186,7 @@
     <Compile Include="ThenAndNow.Designer.cs">
       <DependentUpon>ThenAndNow.cs</DependentUpon>
     </Compile>
-    <Compile Include="TranslationManager.cs" />
+    <Compile Include="TextManager.cs" />
     <EmbeddedResource Include="Credits.resx">
       <DependentUpon>Credits.cs</DependentUpon>
     </EmbeddedResource>

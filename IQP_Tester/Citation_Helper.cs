@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using static IQP_Tester.Main;
 using System.Windows.Forms;
 using System.IO;
-using static IQP_Tester.TranslationManager;
+using static IQP_Tester.TextManager;
 using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms.VisualStyles;

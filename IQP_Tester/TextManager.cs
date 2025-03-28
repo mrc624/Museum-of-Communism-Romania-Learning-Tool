@@ -10,7 +10,7 @@ using System.IO;
 
 namespace IQP_Tester
 {
-    public class TranslationManager
+    public class TextManager
     {
         Polaroid_Zoom_Helper polaroid_Zoom_Helper = new Polaroid_Zoom_Helper();
 
@@ -28,22 +28,22 @@ namespace IQP_Tester
 
         public Language language = default_language;
 
-        public const string translation_file_name = "translations.json";
+        public const string TEXT_MANAGER_FILE_NAME = "text_manager.json";
 
         public bool JSON_Generated_or_Updated = false;
 
-        public void Generate_Translation_JSON(string file_name)
+        public void Generate_Text_JSON(string file_name)
         {
-            Dictionary<string, Dictionary<string, string>> translations;
+            Dictionary<string, Dictionary<string, string>> text;
 
             if (File.Exists(file_name))
             {
                 string json = File.ReadAllText(file_name);
-                translations = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                text = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
             }
             else
             {
-                translations = new Dictionary<string, Dictionary<string, string>>
+                text = new Dictionary<string, Dictionary<string, string>>
                 {
                     { language_to_string[(int)Language.English], new Dictionary<string, string>() },
                     { language_to_string[(int)Language.Romanian], new Dictionary<string, string>() }
@@ -54,33 +54,33 @@ namespace IQP_Tester
 
             for (int i = 0; i < Forms.Count; i++)
             {
-                Add_Form_Translation(Forms[i], translations);
+                Add_Form_Text(Forms[i], text);
             }
 
-            string updated = JsonSerializer.Serialize(translations, new JsonSerializerOptions { WriteIndented = true });
+            string updated = JsonSerializer.Serialize(text, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(file_name, updated, Encoding.UTF8);
 
         }
 
-        private void Add_Form_Translation(Form form, Dictionary<string, Dictionary<string, string>> translations)
+        private void Add_Form_Text(Form form, Dictionary<string, Dictionary<string, string>> text)
         {
             for (int i = 0; i < form.Controls.Count; i++)
             {
-                Add_Control_Translation(form.Controls[i], translations);
+                Add_Control_Text(form.Controls[i], text);
             }
         }
 
-        private void Add_Control_Translation(Control control, Dictionary<string, Dictionary<string, string>> translations)
+        private void Add_Control_Text(Control control, Dictionary<string, Dictionary<string, string>> text)
         {
             if (!string.IsNullOrEmpty(control.Text))
             {
-                if (!translations[language_to_string[(int)Language.English]].ContainsKey(control.Name))
+                if (!text[language_to_string[(int)Language.English]].ContainsKey(control.Name))
                 {
-                    translations[language_to_string[(int)Language.English]][control.Name] = control.Text;
+                    text[language_to_string[(int)Language.English]][control.Name] = control.Text;
                 }
-                if (!translations[language_to_string[(int)Language.Romanian]].ContainsKey(control.Name))
+                if (!text[language_to_string[(int)Language.Romanian]].ContainsKey(control.Name))
                 {
-                    translations[language_to_string[(int)Language.Romanian]][control.Name] = "TRANSLATION NEEDED";
+                    text[language_to_string[(int)Language.Romanian]][control.Name] = "TRANSLATION NEEDED";
                 }
             }
 
@@ -93,13 +93,13 @@ namespace IQP_Tester
                     string ans = polaroid_Zoom_Helper.Get_Ans_Name(panel);
                     string ansLong = ans + Polaroid_Zoom_Helper.LONG_POLAROID_ANS_FLAG;
 
-                    if (!translations[language_to_string[(int)Language.English]].ContainsKey(ansLong))
+                    if (!text[language_to_string[(int)Language.English]].ContainsKey(ansLong))
                     {
-                        translations[language_to_string[(int)Language.English]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
+                        text[language_to_string[(int)Language.English]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
                     }
-                    if (!translations[language_to_string[(int)Language.Romanian]].ContainsKey(ansLong))
+                    if (!text[language_to_string[(int)Language.Romanian]].ContainsKey(ansLong))
                     {
-                        translations[language_to_string[(int)Language.Romanian]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
+                        text[language_to_string[(int)Language.Romanian]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
                     }
                 }
             }
@@ -108,7 +108,7 @@ namespace IQP_Tester
             {
                 for (int i = 0; i < control.Controls.Count; i++)
                 {
-                    Add_Control_Translation(control.Controls[i], translations);
+                    Add_Control_Text(control.Controls[i], text);
                 }
             }
         }
@@ -125,19 +125,19 @@ namespace IQP_Tester
             Update_All_Forms();
         }
 
-        public void Update_Translations()
+        public void Update_Text()
         {
-            Dictionary<string, Dictionary<string, string>> translations = new Dictionary<string, Dictionary<string, string>>();
+            Dictionary<string, Dictionary<string, string>> text = new Dictionary<string, Dictionary<string, string>>();
 
-            if (File.Exists(translation_file_name))
+            if (File.Exists(TEXT_MANAGER_FILE_NAME))
             {
-                string json = File.ReadAllText(translation_file_name);
-                translations = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                string json = File.ReadAllText(TEXT_MANAGER_FILE_NAME);
+                text = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
             }
 
             if (language < Language.num_supported_languages && language > Language.Invalid_Language)
             {
-                Dictionary<string, string> translated = translations[language_to_string[(int)language]];
+                Dictionary<string, string> translated = text[language_to_string[(int)language]];
 
                 for (int i = 0; i < Forms.Count; i++)
                 {
@@ -157,12 +157,12 @@ namespace IQP_Tester
 
         public void Update_One_Form(Form form)
         {
-            if (File.Exists(translation_file_name) && JSON_Generated_or_Updated)
+            if (File.Exists(TEXT_MANAGER_FILE_NAME) && JSON_Generated_or_Updated)
             {
-                Dictionary<string, Dictionary<string, string>> translations = new Dictionary<string, Dictionary<string, string>>();
-                string json = File.ReadAllText(translation_file_name);
-                translations = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
-                Dictionary<string, string> translated = translations[language_to_string[(int)language]];
+                Dictionary<string, Dictionary<string, string>> text = new Dictionary<string, Dictionary<string, string>>();
+                string json = File.ReadAllText(TEXT_MANAGER_FILE_NAME);
+                text = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                Dictionary<string, string> translated = text[language_to_string[(int)language]];
                 Translate_Form(form, translated);
             }
         }
@@ -184,7 +184,7 @@ namespace IQP_Tester
             }
         }
 
-        public string Get_Translation(Control control, Dictionary<string, string> translated)
+        public string Get_Text(Control control, Dictionary<string, string> translated)
         {
             if (control.Text != null)
             {
@@ -196,14 +196,28 @@ namespace IQP_Tester
             }
         }
 
+        public string Get_Text(string name)
+        {
+            Dictionary<string, string> text = Get_Translated_Dictionary();
+
+            if (text.ContainsKey(name))
+            {
+                return text[name];
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public Dictionary<string, string> Get_Translated_Dictionary()
         {
-            if (File.Exists(translation_file_name) && JSON_Generated_or_Updated)
+            if (File.Exists(TEXT_MANAGER_FILE_NAME) && JSON_Generated_or_Updated)
             {
-                Dictionary<string, Dictionary<string, string>> translations = new Dictionary<string, Dictionary<string, string>>();
-                string json = File.ReadAllText(translation_file_name);
-                translations = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
-                return translations[language_to_string[(int)language]];
+                Dictionary<string, Dictionary<string, string>> text = new Dictionary<string, Dictionary<string, string>>();
+                string json = File.ReadAllText(TEXT_MANAGER_FILE_NAME);
+                text = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                return text[language_to_string[(int)language]];
             }
             else
             {
@@ -224,20 +238,6 @@ namespace IQP_Tester
                 {
                     Translate_Control(control.Controls[i], translated);
                 }
-            }
-        }
-
-        public string Get_Translation(string name)
-        {
-            Dictionary<string, string> translations = Get_Translated_Dictionary();
-
-            if (translations.ContainsKey(name))
-            {
-                return translations[name];
-            }
-            else
-            {
-                return null;
             }
         }
 

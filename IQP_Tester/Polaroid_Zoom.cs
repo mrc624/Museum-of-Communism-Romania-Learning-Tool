@@ -15,7 +15,7 @@ namespace IQP_Tester
     {
 
         Resize_Helper resize = new Resize_Helper();
-        TranslationManager translationManager;
+        TextManager translationManager;
         Open_Close_Helper openClose;
         Polaroid_Zoom_Helper polaroid_Zoom_Helper = new Polaroid_Zoom_Helper();
 
@@ -23,7 +23,7 @@ namespace IQP_Tester
         Label lblQ;
         Label lblAns;
 
-        public Polaroid_Zoom(Panel panel, TranslationManager translationMan, Open_Close_Helper open_close)
+        public Polaroid_Zoom(Panel panel, TextManager translationMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
 
@@ -66,7 +66,7 @@ namespace IQP_Tester
 
         public void Handle_Long_Ans()
         {
-            string name = translationManager.Get_Translation(polaroid_Zoom_Helper.Get_Long_Ans_Name(lblAns));
+            string name = translationManager.Get_Text(polaroid_Zoom_Helper.Get_Long_Ans_Name(lblAns));
             if (name != null && name != Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG)
             {
                 lblAnswer.Text = name;
@@ -101,9 +101,9 @@ namespace IQP_Tester
 
         private void Translate_Polaroid()
         {
-            lblQuestion.Text = translationManager.Get_Translation(lblQ, translationManager.Get_Translated_Dictionary());
-            lblAnswer.Text = translationManager.Get_Translation(lblAns, translationManager.Get_Translated_Dictionary());
-            btnLanguage.Text = translationManager.Get_Translation(btnLanguage, translationManager.Get_Translated_Dictionary());
+            lblQuestion.Text = translationManager.Get_Text(lblQ, translationManager.Get_Translated_Dictionary());
+            lblAnswer.Text = translationManager.Get_Text(lblAns, translationManager.Get_Translated_Dictionary());
+            btnLanguage.Text = translationManager.Get_Text(btnLanguage, translationManager.Get_Translated_Dictionary());
             Handle_Long_Ans();
         }
 

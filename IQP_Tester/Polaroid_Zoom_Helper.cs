@@ -14,7 +14,7 @@ namespace IQP_Tester
         Open_Close_Helper openClose;
         Click_Helper click_helper = new Click_Helper();
 
-        TranslationManager translationManager;
+        TextManager textManager;
 
         public const string LONG_POLAROID_ANS_FLAG = "PolLong";
         public const int NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS = 3;
@@ -47,15 +47,15 @@ namespace IQP_Tester
                 panel = (Panel)((PictureBox)sender).Parent;
             }
 
-            Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(panel, translationManager, openClose);
+            Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(panel, textManager, openClose);
             openClose.FadeIn(polaroid_zoom);
         }
 
         public const int num_controls = 3;
 
-        public void Assign_Click_Handler_To_Valid(Form form, TranslationManager translationMan, Open_Close_Helper open_close)
+        public void Assign_Click_Handler_To_Valid(Form form, TextManager textMan, Open_Close_Helper open_close)
         {
-            translationManager = translationMan;
+            textManager = textMan;
             openClose = open_close;
             for (int i = 0; i < form.Controls.Count; i++)
             {
