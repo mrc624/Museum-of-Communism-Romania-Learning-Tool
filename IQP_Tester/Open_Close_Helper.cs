@@ -74,37 +74,43 @@ namespace IQP_Tester
 
         public void FadeIn(Form form, int interval = DEFAULT_FADE_INTERVAL, double increment = DEFAULT_FADE_INCREMENT)
         {
-            form.Opacity = 0; // start fully transparent
-            form.Show();
-            System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
-            fadeTimer.Interval = interval; // time in milliseconds between opacity updates
-            fadeTimer.Tick += (s, e) =>
+            if (!form.IsDisposed)
             {
-                if (form.Opacity < 1.0)
-                    form.Opacity += increment; // increase opacity gradually
-                else
-                    fadeTimer.Stop(); // stop when fully visible
-            };
-            Form_Opened();
-            fadeTimer.Start();
+                form.Opacity = 0; // start fully transparent
+                form.Show();
+                System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
+                fadeTimer.Interval = interval; // time in milliseconds between opacity updates
+                fadeTimer.Tick += (s, e) =>
+                {
+                    if (form.Opacity < 1.0)
+                        form.Opacity += increment; // increase opacity gradually
+                    else
+                        fadeTimer.Stop(); // stop when fully visible
+                };
+                Form_Opened();
+                fadeTimer.Start();
+            }
         }
 
         private void FadeOut(Form form, int interval = DEFAULT_FADE_INTERVAL, double increment = DEFAULT_FADE_INCREMENT)
         {
-            System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
-            fadeTimer.Interval = interval; // time in milliseconds between opacity updates
-            fadeTimer.Tick += (s, e) =>
+            if (!form.IsDisposed)
             {
-                if (form.Opacity > 0)
-                    form.Opacity -= increment;
-                else
-                    fadeTimer.Stop(); // stop when invisible
-            };
-            fadeTimer.Start();
+                System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
+                fadeTimer.Interval = interval; // time in milliseconds between opacity updates
+                fadeTimer.Tick += (s, e) =>
+                {
+                    if (form.Opacity > 0)
+                        form.Opacity -= increment;
+                    else
+                        fadeTimer.Stop(); // stop when invisible
+                };
+                fadeTimer.Start();
 
-            if (form.Opacity <= 0)
-            {
-                form.Close();
+                if (form.Opacity <= 0)
+                {
+                    form.Close();
+                }
             }
         }
 
