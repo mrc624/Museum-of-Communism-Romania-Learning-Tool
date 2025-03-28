@@ -49,11 +49,10 @@ namespace IQP_Tester
                 translationManager = translationMan;
                 openClose = open_close;
                 Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
+                Translate_Polaroid();
+                Handle_Long_Ans();
                 resize.CaptureAspectRatios(this);
                 resize.Fullscreen_Form(this);
-
-                Translate_Polaroid();
-
                 Polaroid_Zoom_Resize(this, new EventArgs());
             }
         }
@@ -63,6 +62,15 @@ namespace IQP_Tester
             pbPicture.Image = image;
             lblQuestion.Text = question;
             lblAnswer.Text = answer;
+        }
+
+        public void Handle_Long_Ans()
+        {
+            string name = translationManager.Get_Translation(polaroid_Zoom_Helper.Get_Long_Ans_Name(lblAns));
+            if (name != null && name != Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG)
+            {
+                lblAnswer.Text = name;
+            }
         }
 
         private void Polaroid_Zoom_Click(object sender, EventArgs e)
@@ -96,6 +104,7 @@ namespace IQP_Tester
             lblQuestion.Text = translationManager.Get_Translation(lblQ, translationManager.Get_Translated_Dictionary());
             lblAnswer.Text = translationManager.Get_Translation(lblAns, translationManager.Get_Translated_Dictionary());
             btnLanguage.Text = translationManager.Get_Translation(btnLanguage, translationManager.Get_Translated_Dictionary());
+            Handle_Long_Ans();
         }
 
         private void pbPicture_Click(object sender, EventArgs e)

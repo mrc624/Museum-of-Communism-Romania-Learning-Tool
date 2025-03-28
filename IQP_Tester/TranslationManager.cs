@@ -12,6 +12,8 @@ namespace IQP_Tester
 {
     public class TranslationManager
     {
+        Polaroid_Zoom_Helper polaroid_Zoom_Helper = new Polaroid_Zoom_Helper();
+
         public enum Language
         {
             Invalid_Language,
@@ -79,6 +81,26 @@ namespace IQP_Tester
                 if (!translations[language_to_string[(int)Language.Romanian]].ContainsKey(control.Name))
                 {
                     translations[language_to_string[(int)Language.Romanian]][control.Name] = "TRANSLATION NEEDED";
+                }
+            }
+
+            // Add in long answers for polaroids
+            if (control is Panel)
+            {
+                Panel panel = (Panel)control;
+                if (polaroid_Zoom_Helper.Is_Polaroid(panel))
+                {
+                    string ans = polaroid_Zoom_Helper.Get_Ans_Name(panel);
+                    string ansLong = ans + Polaroid_Zoom_Helper.LONG_POLAROID_ANS_FLAG;
+
+                    if (!translations[language_to_string[(int)Language.English]].ContainsKey(ansLong))
+                    {
+                        translations[language_to_string[(int)Language.English]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
+                    }
+                    if (!translations[language_to_string[(int)Language.Romanian]].ContainsKey(ansLong))
+                    {
+                        translations[language_to_string[(int)Language.Romanian]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
+                    }
                 }
             }
 
@@ -202,6 +224,20 @@ namespace IQP_Tester
                 {
                     Translate_Control(control.Controls[i], translated);
                 }
+            }
+        }
+
+        public string Get_Translation(string name)
+        {
+            Dictionary<string, string> translations = Get_Translated_Dictionary();
+
+            if (translations.ContainsKey(name))
+            {
+                return translations[name];
+            }
+            else
+            {
+                return null;
             }
         }
 

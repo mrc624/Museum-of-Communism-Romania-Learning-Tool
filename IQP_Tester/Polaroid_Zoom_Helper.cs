@@ -21,6 +21,7 @@ namespace IQP_Tester
         public const string BEGIN_PICTUREBOX_FLAG = "pb";
         public const string END_ANSWER_FLAG = "Ans";
         public const string END_QUESTION_FLAG = "Q";
+        public const string IGNORE_LONG_ANS_FLAG = "EMPTY, USING OTHER ANS";
 
         public List<Panel> Polaroids = new List<Panel>();
 
@@ -118,5 +119,38 @@ namespace IQP_Tester
             }
         }
 
+        public string Get_Ans_Name(Panel panel)
+        {
+            string ans = "";
+            if (Is_Polaroid(panel))
+            {
+                for (int i = 0; i < NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS; i++)
+                {
+                    string control_name = panel.Controls[i].Name;
+                    if (control_name.EndsWith(END_ANSWER_FLAG) && panel.Controls[i] is Label)
+                    {
+                        ans = control_name;
+                    }
+                }
+            }
+            return ans;
+        }
+
+        public string Get_Long_Ans_Name(Label label)
+        {
+            return label.Name + LONG_POLAROID_ANS_FLAG;
+        }
+
+        public void Check_Add_Polaroid(Control control)
+        {
+            if (control is Panel)
+            {
+                Panel panel = (Panel)control;
+                if (Is_Polaroid(panel))
+                {
+                    Polaroids.Add(panel);
+                }
+            }
+        }
     }
 }
