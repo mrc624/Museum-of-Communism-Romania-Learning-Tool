@@ -16,6 +16,14 @@ namespace IQP_Tester
 
         TranslationManager translationManager;
 
+        public const string LONG_POLAROID_ANS_FLAG = "PolLong";
+        public const int NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS = 3;
+        public const string BEGIN_PICTUREBOX_FLAG = "pb";
+        public const string END_ANSWER_FLAG = "Ans";
+        public const string END_QUESTION_FLAG = "Q";
+
+        public List<Panel> Polaroids = new List<Panel>();
+
         public Polaroid_Zoom_Helper()
         {
 
@@ -53,7 +61,7 @@ namespace IQP_Tester
                 if (form.Controls[i] is Panel && form.Controls[i].Controls.Count == num_controls)
                 {
                     Panel panel = (Panel)form.Controls[i];
-                    if (resize.Panel_Has_PB_lblQ_lblAns(panel))
+                    if (Is_Polaroid(panel))
                     {
                         click_helper.Assign_All_Children_To_Same_Click(panel, Polaroid_Zoom_Click_Handler);
                     }
@@ -61,6 +69,54 @@ namespace IQP_Tester
             }
         }
 
+        public void Find_Polaroids(Control control)
+        {
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                if (Is_Polaroid(control))
+                {
+                    Polaroids.Add((Panel)control);
+                }
+
+                if (control.Controls[i].HasChildren)
+                {
+                    Find_Polaroids(control.Controls[i]);
+                }
+            }
+        }
+
+        public bool Is_Polaroid(Control panel)
+        {
+            if (panel is Panel && panel.Controls.Count == NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS)
+            {
+                bool found_PB = false;
+                bool found_Q = false;
+                bool found_Ans = false;
+
+                for (int i = 0; i < NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS; i++)
+                {
+                    string control_name = panel.Controls[i].Name;
+                    if (panel.Controls[i] is PictureBox)
+                    {
+                        found_PB = true;
+                    }
+                    else if (control_name.EndsWith(END_QUESTION_FLAG) && panel.Controls[i] is Label)
+                    {
+                        found_Q = true;
+                    }
+                    else if (control_name.EndsWith(END_ANSWER_FLAG) && panel.Controls[i] is Label)
+                    {
+                        found_Ans = true;
+                    }
+                }
+
+                return found_PB && found_Q & found_Ans;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
     }
 }

@@ -275,70 +275,6 @@ namespace IQP_Tester
             form.Bounds = Screen.PrimaryScreen.Bounds;
         }
 
-        private const int NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS = 3;
-        private const string BEGIN_PICTUREBOX_FLAG = "pb";
-        public const string END_ANSWER_FLAG = "Ans";
-        public const string END_QUESTION_FLAG = "Q";
-
-        List<Panel> Panels_With_PB_lblQ_lblAns = new List<Panel>();
-
-        public void Find_Panels_With_PB_lblQ_lblAns (Control control)
-        {
-            for (int i = 0; i < control.Controls.Count; i++)
-            {
-                if (Panel_Has_PB_lblQ_lblAns(control))
-                {
-                    Panels_With_PB_lblQ_lblAns.Add((Panel)control);
-                }
-
-                if (control.Controls[i].HasChildren)
-                {
-                    Find_Panels_With_PB_lblQ_lblAns(control.Controls[i]);
-                }
-            }
-        }
-
-        public void Reposition_Panels_With_PB_lblQ_lblAns()
-        {
-            for (int i = 0; i < Panels_With_PB_lblQ_lblAns.Count; i++)
-            {
-                Reposition_Panel_With_PB_lblQ_lblAns(Panels_With_PB_lblQ_lblAns[i]);
-            }
-        }
-
-        public bool Panel_Has_PB_lblQ_lblAns(Control panel)
-        {
-            if (panel is Panel && panel.Controls.Count == NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS)
-            {
-                bool found_PB = false;
-                bool found_Q = false;
-                bool found_Ans = false;
-
-                for (int i = 0; i < NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS; i++)
-                {
-                    string control_name = panel.Controls[i].Name;
-                    if (panel.Controls[i] is PictureBox)
-                    {
-                        found_PB = true;
-                    }
-                    else if (control_name.EndsWith(END_QUESTION_FLAG) && panel.Controls[i] is Label)
-                    {
-                        found_Q = true;
-                    }
-                    else if (control_name.EndsWith(END_ANSWER_FLAG) && panel.Controls[i] is Label)
-                    {
-                        found_Ans = true;
-                    }
-                }
-
-                return found_PB && found_Q & found_Ans;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
         public void Repostition_All_Main_Panels(Form form)
         {
             for (int i = 0; i < form.Controls.Count; i++)
@@ -361,11 +297,19 @@ namespace IQP_Tester
             }
         }
 
-        private void Reposition_Panel_With_PB_lblQ_lblAns(Panel panel)
+        public void Reposition_Polaroids(List<Panel> polaroids)
         {
-            if (panel.Controls.Count != NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS)
+            for (int i = 0; i < polaroids.Count; i++)
             {
-                MessageBox.Show("Invalid Amount of Controls in Panel " + panel.Name + "\nCount of: " + panel.Controls.Count + "\n Must be a Count of: " + NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS);
+                Reposition_Polaroid(polaroids[i]);
+            }
+        }
+
+        private void Reposition_Polaroid(Panel panel)
+        {
+            if (panel.Controls.Count != Polaroid_Zoom_Helper.NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS)
+            {
+                MessageBox.Show("Invalid Amount of Controls in Panel " + panel.Name + "\nCount of: " + panel.Controls.Count + "\n Must be a Count of: " + Polaroid_Zoom_Helper.NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS);
             }
             else
             {
@@ -375,18 +319,18 @@ namespace IQP_Tester
                 Label question = null;
                 Label answer = null;
 
-                for (int i = 0; i < NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS; i++)
+                for (int i = 0; i < Polaroid_Zoom_Helper.NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS; i++)
                 {
                     string control_name = panel.Controls[i].Name;
                     if (panel.Controls[i] is PictureBox)
                     {
                         picturebox = (PictureBox)panel.Controls[i];   
                     }
-                    else if (control_name.EndsWith(END_QUESTION_FLAG) && panel.Controls[i] is Label)
+                    else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_QUESTION_FLAG) && panel.Controls[i] is Label)
                     {
                        question = (Label)panel.Controls[i];
                     }
-                    else if (control_name.EndsWith(END_ANSWER_FLAG) && panel.Controls[i] is Label)
+                    else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_ANSWER_FLAG) && panel.Controls[i] is Label)
                     {
                         answer = (Label)panel.Controls[i];
                     }

@@ -24,7 +24,7 @@ namespace IQP_Tester
             translationManager = translationMan;
             translationManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
-            resize.Find_Panels_With_PB_lblQ_lblAns(this);
+            polaroid_Zoom_Helper.Find_Polaroids(this);
             ThenAndNow_Resize(this, new EventArgs());
         }
 

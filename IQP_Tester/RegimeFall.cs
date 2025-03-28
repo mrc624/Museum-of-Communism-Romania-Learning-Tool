@@ -28,7 +28,7 @@ namespace IQP_Tester
             translationManager = translationMan;
             translationManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
-            resize.Find_Panels_With_PB_lblQ_lblAns(this);
+            polaroid_Zoom_Helper.Find_Polaroids(this);
             RegimeFall_Resize(this, new EventArgs());
 
             polaroid_Zoom_Helper.Assign_Click_Handler_To_Valid(this, translationMan, openClose);
@@ -50,7 +50,7 @@ namespace IQP_Tester
         {
             resize.Handle_Resize(this);
 
-            resize.Reposition_Panels_With_PB_lblQ_lblAns();
+            resize.Reposition_Polaroids(polaroid_Zoom_Helper.Polaroids);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }

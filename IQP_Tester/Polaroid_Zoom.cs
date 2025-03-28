@@ -17,6 +17,7 @@ namespace IQP_Tester
         Resize_Helper resize = new Resize_Helper();
         TranslationManager translationManager;
         Open_Close_Helper openClose;
+        Polaroid_Zoom_Helper polaroid_Zoom_Helper = new Polaroid_Zoom_Helper();
 
         PictureBox pb;
         Label lblQ;
@@ -26,7 +27,7 @@ namespace IQP_Tester
         {
             InitializeComponent();
 
-            if (resize.Panel_Has_PB_lblQ_lblAns(panel))
+            if (polaroid_Zoom_Helper.Is_Polaroid(panel))
             {
                 for (int i = 0; i < panel.Controls.Count; i++)
                 {
@@ -36,11 +37,11 @@ namespace IQP_Tester
                     {
                         pb = (PictureBox)panel.Controls[i];
                     }
-                    else if (control_name.EndsWith(Resize_Helper.END_QUESTION_FLAG) && panel.Controls[i] is Label)
+                    else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_QUESTION_FLAG) && panel.Controls[i] is Label)
                     {
                         lblQ = (Label)panel.Controls[i];
                     }
-                    else if (control_name.EndsWith(Resize_Helper.END_ANSWER_FLAG) && panel.Controls[i] is Label)
+                    else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_ANSWER_FLAG) && panel.Controls[i] is Label)
                     {
                         lblAns = (Label)panel.Controls[i];
                     }
