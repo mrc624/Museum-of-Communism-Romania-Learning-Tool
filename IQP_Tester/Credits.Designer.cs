@@ -36,13 +36,13 @@
             this.CreditsTableLayoutPanel.AutoScroll = true;
             this.CreditsTableLayoutPanel.ColumnCount = 1;
             this.CreditsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.CreditsTableLayoutPanel.Location = new System.Drawing.Point(4, 9);
+            this.CreditsTableLayoutPanel.Location = new System.Drawing.Point(-2, -1);
             this.CreditsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.CreditsTableLayoutPanel.Name = "CreditsTableLayoutPanel";
             this.CreditsTableLayoutPanel.RowCount = 1;
             this.CreditsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.14973F));
             this.CreditsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.85027F));
-            this.CreditsTableLayoutPanel.Size = new System.Drawing.Size(792, 657);
+            this.CreditsTableLayoutPanel.Size = new System.Drawing.Size(813, 678);
             this.CreditsTableLayoutPanel.TabIndex = 0;
             // 
             // Credits
