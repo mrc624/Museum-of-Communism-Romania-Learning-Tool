@@ -1,9 +1,11 @@
 make translation button UK flag and Romanian flag
 
-when the translation JSON is generated, if a lbl has the phrase "Ans" add another aspect to both english and romanian translatiosn that is the long version of the answer. This can be used in polaroid zooms to give a more in depth answer.
-
 Thinking about renaming translation manager to text manager. Since it is now managing the long answers now
 
 Perhaps should be centering main titles to the main pictures, but may not be needed since they both get Center_X()
 
 Add a progress bar for credits, it takes A WHILE to load
+
+Should update close timer whenever the user interacts
+
+Make title page

@@ -36,22 +36,24 @@
             this.CreditsTableLayoutPanel.AutoScroll = true;
             this.CreditsTableLayoutPanel.ColumnCount = 1;
             this.CreditsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.CreditsTableLayoutPanel.Location = new System.Drawing.Point(12, 21);
+            this.CreditsTableLayoutPanel.Location = new System.Drawing.Point(4, 9);
+            this.CreditsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.CreditsTableLayoutPanel.Name = "CreditsTableLayoutPanel";
             this.CreditsTableLayoutPanel.RowCount = 1;
             this.CreditsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.14973F));
             this.CreditsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.85027F));
-            this.CreditsTableLayoutPanel.Size = new System.Drawing.Size(2125, 1567);
+            this.CreditsTableLayoutPanel.Size = new System.Drawing.Size(792, 657);
             this.CreditsTableLayoutPanel.TabIndex = 0;
             // 
             // Credits
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2149, 1594);
+            this.ClientSize = new System.Drawing.Size(806, 668);
             this.Controls.Add(this.CreditsTableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Credits";
             this.Text = "Credits";
             this.Load += new System.EventHandler(this.Credits_Load);

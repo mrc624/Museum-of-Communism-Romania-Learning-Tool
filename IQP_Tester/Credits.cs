@@ -23,10 +23,10 @@ namespace IQP_Tester
 
         public const float TITLE_FONT_SIZE = 14F;
         public const float STANDARD_FONT_SIZE = 10F;
-        public const AnchorStyles TITLE_ANCHOR = AnchorStyles.Top | AnchorStyles.Left;
-        public const AnchorStyles STANDARD_ANCHOR = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-        public const ContentAlignment TITLE_ALIGN = ContentAlignment.TopLeft;
-        public const ContentAlignment STANDARD_ALIGN = ContentAlignment.MiddleCenter;
+        public const AnchorStyles TITLE_ANCHOR = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+        public const AnchorStyles STANDARD_ANCHOR = AnchorStyles.Top | AnchorStyles.Left;
+        public const ContentAlignment TITLE_ALIGN = ContentAlignment.MiddleCenter;
+        public const ContentAlignment STANDARD_ALIGN = ContentAlignment.TopLeft;
 
 
         public Credits(Citation_Helper citation_helper)

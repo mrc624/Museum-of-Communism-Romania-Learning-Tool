@@ -18,12 +18,15 @@ namespace IQP_Tester
     {
 
         public const string CITATION_FILE_NAME = "citations.json";
+        public const string BIBLIOGRAPH_TXT_FILE_NAME = "bibliography.txt";
+        public const string INDENT = "\n        ";
+        public const int INDENT_EVERY_CHAR = 100;
 
         public enum Citation_Type
         {
             Team_Members,
             Collaborators,
-            Proffesors,
+            Professors,
             Interviewees,
             Institutions,
             Informative_Texts,
@@ -35,7 +38,7 @@ namespace IQP_Tester
         {
             "Team Members",
             "Collaborators",
-            "Proffesors",
+            "Professors",
             "Interviewees",
             "Institutions",
             "Informative Texts",
@@ -90,7 +93,7 @@ namespace IQP_Tester
                 {
                     { Citations_to_String[(int)Citation_Type.Team_Members], new Dictionary<string, string>() },
                     { Citations_to_String[(int)Citation_Type.Collaborators], new Dictionary<string, string>() },
-                    { Citations_to_String[(int)Citation_Type.Proffesors], new Dictionary<string, string>() },
+                    { Citations_to_String[(int)Citation_Type.Professors], new Dictionary<string, string>() },
                     { Citations_to_String[(int)Citation_Type.Interviewees], new Dictionary<string, string>() },
                     { Citations_to_String[(int)Citation_Type.Institutions], new Dictionary<string, string>() },
                     { Citations_to_String[(int)Citation_Type.Informative_Texts], new Dictionary<string, string>() },
@@ -102,9 +105,9 @@ namespace IQP_Tester
                 Init_Prof();
                 Init_Interviewee();
                 Init_Institute();
-                Init_Text();
             }
 
+            Init_Text();
             Add_Pictures();
 
             string updated = JsonSerializer.Serialize(Citations, new JsonSerializerOptions { WriteIndented = true });
@@ -186,7 +189,7 @@ namespace IQP_Tester
         {
             for (int i = 0; i < INIT_PROF_NUM; i++)
             {
-                Citations[Citations_to_String[(int)Citation_Type.Proffesors]][Get_Citation_Shortened[(int)Citation_Type.Proffesors] + i.ToString()] = "NEED";
+                Citations[Citations_to_String[(int)Citation_Type.Professors]][Get_Citation_Shortened[(int)Citation_Type.Professors] + i.ToString()] = "NEED";
             }
         }
 
@@ -208,9 +211,35 @@ namespace IQP_Tester
 
         private void Init_Text()
         {
-            for (int i = 0; i < INIT_TEXT_NUM; i++)
+            if (File.Exists(BIBLIOGRAPH_TXT_FILE_NAME))
             {
-                Citations[Citations_to_String[(int)Citation_Type.Informative_Texts]][Get_Citation_Shortened[(int)Citation_Type.Informative_Texts] + i.ToString()] = "NEED";
+                string[] lines = File.ReadAllLines(BIBLIOGRAPH_TXT_FILE_NAME);
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    string cite = lines[i];
+                    for (int j = INDENT_EVERY_CHAR; j < lines[i].Length; j+= INDENT_EVERY_CHAR)
+                    {
+                        if (lines[i].Length > INDENT_EVERY_CHAR)
+                        {
+                            if (cite.Substring(j - 1, 1).Equals(" ") || cite.Substring(j, 1).Equals(" "))
+                            {
+                                cite = cite.Substring(0, j) + INDENT + cite.Substring(j);
+                            }
+                            else
+                            {
+                                cite = cite.Substring(0, j) + "-" + INDENT + cite.Substring(j);
+                            }
+                        }
+                    }
+                    Citations[Citations_to_String[(int)Citation_Type.Informative_Texts]][Get_Citation_Shortened[(int)Citation_Type.Informative_Texts] + i.ToString()] = cite;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < INIT_TEXT_NUM; i++)
+                {
+                    Citations[Citations_to_String[(int)Citation_Type.Informative_Texts]][Get_Citation_Shortened[(int)Citation_Type.Informative_Texts] + i.ToString()] = "NEED";
+                }
             }
         }
 
