@@ -252,7 +252,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="University.png" />
     <None Include="Blue_Circle.png" />
+    <None Include="Demonstration.png" />
     <Content Include="Kneeling_With_Rifle.jpg" />
     <Content Include="Nicolae_Ceasescu.png" />
     <Content Include="Painting_on_Wall.jpg" />
@@ -265,6 +267,7 @@
     <Content Include="People_Marching_Many_Flags_And_Sign.jpg" />
     <Content Include="People_Reading_From_Balcony.jpg" />
     <Content Include="Police_Against_Wall_With_Grafitti.jpg" />
+    <None Include="Ration.png" />
     <Content Include="Romanian_Revolution.jpg" />
     <Content Include="Romania_Flag.png" />
     <Content Include="Rumanian_Revolution_Tank.jpg" />
