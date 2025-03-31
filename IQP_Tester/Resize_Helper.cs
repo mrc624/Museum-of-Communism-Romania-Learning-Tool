@@ -308,45 +308,17 @@ namespace IQP_Tester
         private void Reposition_Polaroid(Panel panel)
         {
             Reposition(panel);
-
-            PictureBox picturebox = null;
-            Label question = null;
-            Label answer = null;
-            TableLayoutPanel table = null;
-
             for (int i = 0; i < panel.Controls.Count; i++)
             {
-                string control_name = panel.Controls[i].Name;
-                if (panel.Controls[i] is PictureBox)
+                if (i == 0)
                 {
-                    picturebox = (PictureBox)panel.Controls[i];   
+                    Reposition(panel.Controls[i]);
+                    Center_X(panel.Controls[i]);
                 }
-                else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_QUESTION_FLAG) && panel.Controls[i] is Label)
+                else
                 {
-                    question = (Label)panel.Controls[i];
+                    Center_to_Other_Control(panel.Controls[i-1], panel.Controls[i]); //tbh don't know why i-1 is first and i is second, I thought it would be the opposite but it works
                 }
-                else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_ANSWER_FLAG) && panel.Controls[i] is Label)
-                {
-                    answer = (Label)panel.Controls[i];
-                }
-                else if (panel.Controls[i] is TableLayoutPanel)
-                {
-                    table = (TableLayoutPanel)panel.Controls[i];
-                    answer = (Label)table.Controls[Polaroid_Zoom_Helper.TABLE_LAYOUT_QUESTION_INDEX];
-                    question = (Label)table.Controls[Polaroid_Zoom_Helper.TABLE_LAYOUT_ANS_INDEX];
-                }
-            }
-
-            Reposition(picturebox);
-            Center_X(picturebox); // centering x as well, may not be needed becuase calling reposition
-            if (table != null)
-            {
-                Center_to_Other_Control(table, picturebox);
-            }
-            else
-            {
-                Center_to_Other_Control(question, picturebox);
-                Center_to_Other_Control(answer, question);
             }
         }
     }

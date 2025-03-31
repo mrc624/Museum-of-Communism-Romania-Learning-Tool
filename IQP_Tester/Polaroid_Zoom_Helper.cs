@@ -27,39 +27,34 @@ namespace IQP_Tester
 
         public List<Panel> Polaroids = new List<Panel>();
 
-        public Polaroid_Zoom_Helper()
-        {
-
-        }
-
         public void Polaroid_Zoom_Click_Handler(object sender, EventArgs e)
         {
-            Panel panel = null;
+            Panel Polaroid = null;
+            if (!(sender is Panel))
+                {
+                Control send = (Control)sender;
 
-            if (sender is Panel)
-            {
-                panel = (Panel)sender;
+                while (Polaroid == null)
+                {
+                    send = send.Parent;
+                    if (Polaroids.Contains(send))
+                    {
+                        Polaroid = Polaroids[Polaroids.IndexOf((Panel)send)];
+                    }
+                }
             }
-            else if (sender is Label)
+            else
             {
-                panel = (Panel)((TableLayoutPanel)((Label)sender).Parent).Parent;
-            }
-            else if (sender is PictureBox)
-            {
-                panel = (Panel)((PictureBox)sender).Parent;
-            }
-            else if (sender is TableLayoutPanel)
-            {
-                panel = (Panel)((TableLayoutPanel)sender).Parent;
+                Polaroid = (Panel)sender;
             }
 
-            Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(panel, textManager, openClose);
+            Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose);
             openClose.FadeIn(polaroid_zoom);
         }
 
         public const int num_controls = 3;
 
-        public void Assign_Click_Handler_To_Valid(Form form, TextManager textMan, Open_Close_Helper open_close)
+        public void Assign_Click_Handler_To_Valid(Form form, TextManager textMan, Open_Close_Helper open_close) // maybe this should be looking through children of the form too, in case polaroids are grouped in panels
         {
             textManager = textMan;
             openClose = open_close;
@@ -67,6 +62,7 @@ namespace IQP_Tester
             {
                 if (Is_Polaroid(form.Controls[i]))
                 {
+                    form.Controls[i].Click += Polaroid_Zoom_Click_Handler;
                     click_helper.Assign_All_Children_To_Same_Click(form.Controls[i], Polaroid_Zoom_Click_Handler);
                 }
             }
@@ -76,10 +72,7 @@ namespace IQP_Tester
         {
             for (int i = 0; i < control.Controls.Count; i++)
             {
-                if (Is_Polaroid(control))
-                {
-                    Polaroids.Add((Panel)control);
-                }
+                Check_Add_Polaroid(control);
 
                 if (control.Controls[i].HasChildren)
                 {
@@ -90,47 +83,7 @@ namespace IQP_Tester
 
         public bool Is_Polaroid(Control panel)
         {
-            if (panel is Panel && (panel.Controls.Count == NUM_CONTROLS_IN_POLAROID || panel.Controls.Count == NUM_CONTROLS_IN_POLAROID_WITH_TABLE_LAYOUT))
-            {
-                bool found_PB = false;
-                bool found_Q = false;
-                bool found_Ans = false;
-
-                for (int i = 0; i < panel.Controls.Count; i++)
-                {
-                    string control_name = panel.Controls[i].Name;
-                    if (panel.Controls[i] is PictureBox)
-                    {
-                        found_PB = true;
-                    }
-                    else if (control_name.EndsWith(END_QUESTION_FLAG) && panel.Controls[i] is Label)
-                    {
-                        found_Q = true;
-                    }
-                    else if (control_name.EndsWith(END_ANSWER_FLAG) && panel.Controls[i] is Label)
-                    {
-                        found_Ans = true;
-                    }
-                    else if (panel.Controls[i] is TableLayoutPanel)
-                    {
-                        TableLayoutPanel table = (TableLayoutPanel)panel.Controls[i];
-                        if (table.Controls[TABLE_LAYOUT_QUESTION_INDEX].Name.EndsWith(END_QUESTION_FLAG) && table.Controls[TABLE_LAYOUT_QUESTION_INDEX] is Label)
-                        {
-                            found_Q = true;
-                        }
-                        if (table.Controls[TABLE_LAYOUT_ANS_INDEX].Name.EndsWith(END_ANSWER_FLAG) && table.Controls[TABLE_LAYOUT_ANS_INDEX] is Label)
-                        {
-                            found_Ans = true;
-                        }
-                    }
-                }
-
-                return found_PB && found_Q & found_Ans;
-            }
-            else
-            {
-                return false;
-            }
+            return ((panel is Panel) && panel.HasChildren && Find_PB(panel) != null) && (Find_Ans(panel) != null) && (Find_Q(panel) != null);
         }
 
         public string Get_Ans_Name(Panel panel)
@@ -157,14 +110,98 @@ namespace IQP_Tester
 
         public void Check_Add_Polaroid(Control control)
         {
-            if (control is Panel)
+            if (Is_Polaroid(control))
             {
-                Panel panel = (Panel)control;
-                if (Is_Polaroid(panel))
+                Polaroids.Add((Panel)control);
+            }
+        }
+
+        public bool Is_Ans(Label label)
+        {
+            return label.Name.EndsWith(END_ANSWER_FLAG);
+        }
+
+        public bool Is_Q(Label label)
+        {
+            return label.Name.EndsWith(END_QUESTION_FLAG);
+        }
+
+        public Label Find_Ans(Control container)
+        {
+            Label ans = null;
+            for (int i = 0; i < container.Controls.Count; i++)
+            {
+                if (container.Controls[i].HasChildren)
                 {
-                    Polaroids.Add(panel);
+                    ans = Find_Ans(container.Controls[i]);
+                }
+                if (ans == null)
+                {
+                    if (container.Controls[i]  is Label)
+                    {
+                        if (Is_Ans((Label)container.Controls[i]))
+                        {
+                           return (Label)container.Controls[i];
+                        }
+                    }
+                }
+                else
+                {
+                    return ans;
                 }
             }
+            return ans;
+        }
+
+        public Label Find_Q(Control container)
+        {
+            Label Q = null;
+            for (int i = 0; i < container.Controls.Count; i++)
+            {
+                if (container.Controls[i].HasChildren)
+                {
+                    return Find_Q(container.Controls[i]);
+                }
+                if (Q == null)
+                {
+                    if (container.Controls[i] is Label)
+                    {
+                        if (Is_Q((Label)container.Controls[i]))
+                        {
+                            return (Label)container.Controls[i];
+                        }
+                    }
+                }
+                else
+                {
+                    return Q;
+                }
+            }
+            return Q;
+        }
+
+        public PictureBox Find_PB(Control container)
+        {
+            PictureBox PB = null;
+            for (int i = 0; i < container.Controls.Count; i++)
+            {
+                if (container.Controls[i].HasChildren)
+                {
+                    PB = Find_PB(container.Controls[i]);
+                }
+                if (PB == null)
+                {
+                    if (container.Controls[i] is PictureBox)
+                    {
+                        return (PictureBox)container.Controls[i];
+                    }
+                }
+                else
+                {
+                    return PB;
+                }
+            }
+            return PB;
         }
     }
 }

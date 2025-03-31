@@ -26,40 +26,15 @@ namespace IQP_Tester
         public Polaroid_Zoom(Panel panel, TextManager translationMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
+            translationManager = translationMan;
+            openClose = open_close;
 
             if (polaroid_Zoom_Helper.Is_Polaroid(panel))
             {
-                for (int i = 0; i < panel.Controls.Count; i++)
-                {
-                    string control_name = panel.Controls[i].Name;
+                pb = polaroid_Zoom_Helper.Find_PB(panel);
+                lblQ = polaroid_Zoom_Helper.Find_Q(panel);
+                lblAns = polaroid_Zoom_Helper.Find_Ans(panel);
 
-                    if (panel.Controls[i] is PictureBox)
-                    {
-                        pb = (PictureBox)panel.Controls[i];
-                    }
-                    else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_QUESTION_FLAG) && panel.Controls[i] is Label)
-                    {
-                        lblQ = (Label)panel.Controls[i];
-                    }
-                    else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_ANSWER_FLAG) && panel.Controls[i] is Label)
-                    {
-                        lblAns = (Label)panel.Controls[i];
-                    }
-                    else if (panel.Controls[i] is TableLayoutPanel)
-                    {
-                        TableLayoutPanel table = (TableLayoutPanel)panel.Controls[i];
-                         if (table.Controls[Polaroid_Zoom_Helper.TABLE_LAYOUT_QUESTION_INDEX].Name.EndsWith(Polaroid_Zoom_Helper.END_QUESTION_FLAG) && table.Controls[i] is Label)
-                        {
-                            lblQ = (Label)table.Controls[i];
-                        }
-                        if (table.Controls[Polaroid_Zoom_Helper.TABLE_LAYOUT_ANS_INDEX].Name.EndsWith(Polaroid_Zoom_Helper.END_ANSWER_FLAG) && table.Controls[i] is Label)
-                        {
-                            lblAns = (Label)table.Controls[i];
-                        }
-                    }
-                }
-                translationManager = translationMan;
-                openClose = open_close;
                 Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
                 Translate_Polaroid();
                 Handle_Long_Ans();
