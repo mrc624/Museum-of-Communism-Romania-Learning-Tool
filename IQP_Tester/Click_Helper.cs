@@ -20,6 +20,10 @@ namespace IQP_Tester
             for (int i = 0; i < parent.Controls.Count; i++)
             {
                 parent.Controls[i].Click += click;
+                if (parent.Controls[i].HasChildren)
+                {
+                    Assign_All_Children_To_Same_Click(parent.Controls[i], click);
+                }
             }
         }
 

@@ -45,6 +45,18 @@ namespace IQP_Tester
                     {
                         lblAns = (Label)panel.Controls[i];
                     }
+                    else if (panel.Controls[i] is TableLayoutPanel)
+                    {
+                        TableLayoutPanel table = (TableLayoutPanel)panel.Controls[i];
+                         if (table.Controls[Polaroid_Zoom_Helper.TABLE_LAYOUT_QUESTION_INDEX].Name.EndsWith(Polaroid_Zoom_Helper.END_QUESTION_FLAG) && table.Controls[i] is Label)
+                        {
+                            lblQ = (Label)table.Controls[i];
+                        }
+                        if (table.Controls[Polaroid_Zoom_Helper.TABLE_LAYOUT_ANS_INDEX].Name.EndsWith(Polaroid_Zoom_Helper.END_ANSWER_FLAG) && table.Controls[i] is Label)
+                        {
+                            lblAns = (Label)table.Controls[i];
+                        }
+                    }
                 }
                 translationManager = translationMan;
                 openClose = open_close;

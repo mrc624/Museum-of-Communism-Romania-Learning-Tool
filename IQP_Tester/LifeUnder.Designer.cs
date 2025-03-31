@@ -70,6 +70,7 @@
             this.lblRationAns = new System.Windows.Forms.Label();
             this.lblRationQ = new System.Windows.Forms.Label();
             this.pbRation = new System.Windows.Forms.PictureBox();
+            this.tableLayoutSchool = new System.Windows.Forms.TableLayoutPanel();
             this.panelSchool.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSchool)).BeginInit();
             this.panelFood.SuspendLayout();
@@ -90,6 +91,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMedia)).BeginInit();
             this.panelRation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRation)).BeginInit();
+            this.tableLayoutSchool.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -108,39 +110,43 @@
             // panelSchool
             // 
             this.panelSchool.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSchool.Controls.Add(this.lblSchoolAns);
-            this.panelSchool.Controls.Add(this.lblSchoolQ);
+            this.panelSchool.Controls.Add(this.tableLayoutSchool);
             this.panelSchool.Controls.Add(this.pbSchool);
-            this.panelSchool.Location = new System.Drawing.Point(34, 142);
+            this.panelSchool.Location = new System.Drawing.Point(29, 142);
             this.panelSchool.Name = "panelSchool";
-            this.panelSchool.Size = new System.Drawing.Size(313, 328);
+            this.panelSchool.Size = new System.Drawing.Size(267, 371);
             this.panelSchool.TabIndex = 13;
             // 
             // lblSchoolAns
             // 
+            this.lblSchoolAns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSchoolAns.AutoSize = true;
-            this.lblSchoolAns.Location = new System.Drawing.Point(118, 266);
+            this.lblSchoolAns.Location = new System.Drawing.Point(3, 25);
             this.lblSchoolAns.Name = "lblSchoolAns";
-            this.lblSchoolAns.Size = new System.Drawing.Size(53, 13);
+            this.lblSchoolAns.Size = new System.Drawing.Size(231, 13);
             this.lblSchoolAns.TabIndex = 7;
             this.lblSchoolAns.Text = "Unknown";
             this.lblSchoolAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblSchoolQ
             // 
+            this.lblSchoolQ.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSchoolQ.AutoSize = true;
             this.lblSchoolQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSchoolQ.Location = new System.Drawing.Point(97, 241);
+            this.lblSchoolQ.Location = new System.Drawing.Point(3, 0);
             this.lblSchoolQ.Name = "lblSchoolQ";
-            this.lblSchoolQ.Size = new System.Drawing.Size(101, 25);
+            this.lblSchoolQ.Size = new System.Drawing.Size(231, 25);
             this.lblSchoolQ.TabIndex = 5;
             this.lblSchoolQ.Text = "Unknown";
+            this.lblSchoolQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbSchool
             // 
             this.pbSchool.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu1;
             this.pbSchool.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSchool.InitialImage")));
-            this.pbSchool.Location = new System.Drawing.Point(48, 8);
+            this.pbSchool.Location = new System.Drawing.Point(18, 8);
             this.pbSchool.Name = "pbSchool";
             this.pbSchool.Size = new System.Drawing.Size(237, 235);
             this.pbSchool.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -238,6 +244,7 @@
             this.panelWork.Controls.Add(this.lblWorkQ);
             this.panelWork.Controls.Add(this.pbWork);
             this.panelWork.Location = new System.Drawing.Point(726, 187);
+            this.panelWork.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelWork.Name = "panelWork";
             this.panelWork.Size = new System.Drawing.Size(281, 326);
             this.panelWork.TabIndex = 14;
@@ -525,6 +532,20 @@
             this.pbRation.TabIndex = 0;
             this.pbRation.TabStop = false;
             // 
+            // tableLayoutSchool
+            // 
+            this.tableLayoutSchool.ColumnCount = 1;
+            this.tableLayoutSchool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutSchool.Controls.Add(this.lblSchoolQ, 0, 0);
+            this.tableLayoutSchool.Controls.Add(this.lblSchoolAns, 0, 1);
+            this.tableLayoutSchool.Location = new System.Drawing.Point(18, 249);
+            this.tableLayoutSchool.Name = "tableLayoutSchool";
+            this.tableLayoutSchool.RowCount = 2;
+            this.tableLayoutSchool.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutSchool.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutSchool.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutSchool.TabIndex = 8;
+            // 
             // LifeUnder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,7 +568,6 @@
             this.Click += new System.EventHandler(this.LifeUnder_Click);
             this.Resize += new System.EventHandler(this.LifeUnder_Resize);
             this.panelSchool.ResumeLayout(false);
-            this.panelSchool.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSchool)).EndInit();
             this.panelFood.ResumeLayout(false);
             this.panelFood.PerformLayout();
@@ -576,6 +596,8 @@
             this.panelRation.ResumeLayout(false);
             this.panelRation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRation)).EndInit();
+            this.tableLayoutSchool.ResumeLayout(false);
+            this.tableLayoutSchool.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -623,5 +645,6 @@
         private System.Windows.Forms.Label lblRationAns;
         private System.Windows.Forms.Label lblRationQ;
         private System.Windows.Forms.PictureBox pbRation;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutSchool;
     }
 }

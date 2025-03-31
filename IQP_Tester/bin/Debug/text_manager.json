@@ -55,7 +55,8 @@
     "lblFoodQ": "How did people get food?",
     "lblSchoolAnsPolLong": "School was very strict. The party wanted to demonstrate how educated and proper its citizens were - kids were even required to write in ink in a calligraphy style. All classrooms had a portrait of Ceausescu and students had to chant slogans about the Romanian Communist Party and how great Ceausescu is every day. There were lessons about the communist ideology and students were punished for not being able to recite Ceausescu\u0027s policies and speeches.",
     "lblSchoolAns": "\u0022We were like soldiers in school.\u0022",
-    "lblSchoolQ": "How was learning in school different in this time?"
+    "lblSchoolQ": "How was learning in school different in this time?",
+    "PolLong": "EMPTY, USING OTHER ANS"
   },
   "Romanian": {
     "lblOppression": "TRANSLATION NEEDED",
@@ -113,6 +114,7 @@
     "lblFoodQ": "TRANSLATION NEEDED",
     "lblSchoolAnsPolLong": "EMPTY, USING OTHER ANS",
     "lblSchoolAns": "TRANSLATION NEEDED",
-    "lblSchoolQ": "TRANSLATION NEEDED"
+    "lblSchoolQ": "TRANSLATION NEEDED",
+    "PolLong": "EMPTY, USING OTHER ANS"
   }
 }

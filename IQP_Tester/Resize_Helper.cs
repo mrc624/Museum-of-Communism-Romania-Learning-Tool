@@ -307,42 +307,46 @@ namespace IQP_Tester
 
         private void Reposition_Polaroid(Panel panel)
         {
-            if (panel.Controls.Count != Polaroid_Zoom_Helper.NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS)
+            Reposition(panel);
+
+            PictureBox picturebox = null;
+            Label question = null;
+            Label answer = null;
+            TableLayoutPanel table = null;
+
+            for (int i = 0; i < panel.Controls.Count; i++)
             {
-                MessageBox.Show("Invalid Amount of Controls in Panel " + panel.Name + "\nCount of: " + panel.Controls.Count + "\n Must be a Count of: " + Polaroid_Zoom_Helper.NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS);
+                string control_name = panel.Controls[i].Name;
+                if (panel.Controls[i] is PictureBox)
+                {
+                    picturebox = (PictureBox)panel.Controls[i];   
+                }
+                else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_QUESTION_FLAG) && panel.Controls[i] is Label)
+                {
+                    question = (Label)panel.Controls[i];
+                }
+                else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_ANSWER_FLAG) && panel.Controls[i] is Label)
+                {
+                    answer = (Label)panel.Controls[i];
+                }
+                else if (panel.Controls[i] is TableLayoutPanel)
+                {
+                    table = (TableLayoutPanel)panel.Controls[i];
+                    answer = (Label)table.Controls[Polaroid_Zoom_Helper.TABLE_LAYOUT_QUESTION_INDEX];
+                    question = (Label)table.Controls[Polaroid_Zoom_Helper.TABLE_LAYOUT_ANS_INDEX];
+                }
+            }
+
+            Reposition(picturebox);
+            Center_X(picturebox); // centering x as well, may not be needed becuase calling reposition
+            if (table != null)
+            {
+                Center_to_Other_Control(table, picturebox);
             }
             else
             {
-                Reposition(panel);
-
-                PictureBox picturebox = null;
-                Label question = null;
-                Label answer = null;
-
-                for (int i = 0; i < Polaroid_Zoom_Helper.NUM_CONTROLS_IN_PANEL_WITH_PB_LBLQ_LBLANS; i++)
-                {
-                    string control_name = panel.Controls[i].Name;
-                    if (panel.Controls[i] is PictureBox)
-                    {
-                        picturebox = (PictureBox)panel.Controls[i];   
-                    }
-                    else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_QUESTION_FLAG) && panel.Controls[i] is Label)
-                    {
-                       question = (Label)panel.Controls[i];
-                    }
-                    else if (control_name.EndsWith(Polaroid_Zoom_Helper.END_ANSWER_FLAG) && panel.Controls[i] is Label)
-                    {
-                        answer = (Label)panel.Controls[i];
-                    }
-                }
-
-                if (picturebox != null && question != null && answer != null)
-                {
-                    Reposition(picturebox);
-                    Center_X(picturebox); // centering x as well, may not be needed becuase calling reposition
-                    Center_to_Other_Control(question, picturebox);
-                    Center_to_Other_Control(answer, question);
-                }
+                Center_to_Other_Control(question, picturebox);
+                Center_to_Other_Control(answer, question);
             }
         }
     }
