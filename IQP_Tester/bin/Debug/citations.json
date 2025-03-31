@@ -110,6 +110,12 @@
     "pbSchool": "NEED",
     "pbFood": "NEED",
     "pbWork": "NEED",
-    "pbDemonstation": "NEED"
+    "pbDemonstation": "NEED",
+    "pbUniversity": "NEED",
+    "pbEmigration": "NEED",
+    "pbYouthOrg": "NEED",
+    "pbMedia": "NEED",
+    "pbRation": "NEED",
+    "pbChildhood": "NEED"
   }
 }

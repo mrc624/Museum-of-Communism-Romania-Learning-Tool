@@ -3806,16 +3806,7 @@
         DQe3NXq9XqD/2Q==
 </value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>The Romanian Revolution was very quick and filled
-with confusion, and it only lasted for seven days. Most
-of the country did not even know a revolution was 
-happening until after it was over. The revolution occured
-in 1989 and many Romanians continue to feel nostalgic
-towards communism.
-</value>
-  </data>
-  <data name="pictureBox2.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbChildhood.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
@@ -5657,14 +5648,6 @@ towards communism.
         KHmeYkBSDg9KcyjK9s1JIAq5A5oGeYpX1JgdqHeVozuJPsB8U52ZsZJqKVyGC8YoE+qO0ncR8VAxZkJy
         AR27VKI1YHOear7kYLAEjFABqmm/VLv3L5uOKy8ttLE+10IxWimkcE4Yiqu4mkbOWzQVvJPWlJIpXAzT
         DQe3NXq9XqD/2Q==
-</value>
-  </data>
-  <data name="lblWorkAns.Text" xml:space="preserve">
-    <value>A few main jobs - engineer, Securitate, Professor,
-factory worker, and if you were a skilled, a 
-sportsman. Leonard spoke about how family pressure
-often led to Lawyer, Dcotor, Pilot, professor and other
-skilled professions.
 </value>
   </data>
   <data name="pbWork.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -7511,16 +7494,7 @@ skilled professions.
         DQe3NXq9XqD/2Q==
 </value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>The Romanian Revolution was very quick and filled
-with confusion, and it only lasted for seven days. Most
-of the country did not even know a revolution was 
-happening until after it was over. The revolution occured
-in 1989 and many Romanians continue to feel nostalgic
-towards communism.
-</value>
-  </data>
-  <data name="pictureBox5.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbUniversity.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
@@ -9364,16 +9338,7 @@ towards communism.
         DQe3NXq9XqD/2Q==
 </value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>The Romanian Revolution was very quick and filled
-with confusion, and it only lasted for seven days. Most
-of the country did not even know a revolution was 
-happening until after it was over. The revolution occured
-in 1989 and many Romanians continue to feel nostalgic
-towards communism.
-</value>
-  </data>
-  <data name="pictureBox6.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbEmigration.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
@@ -11217,16 +11182,7 @@ towards communism.
         DQe3NXq9XqD/2Q==
 </value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>The Romanian Revolution was very quick and filled
-with confusion, and it only lasted for seven days. Most
-of the country did not even know a revolution was 
-happening until after it was over. The revolution occured
-in 1989 and many Romanians continue to feel nostalgic
-towards communism.
-</value>
-  </data>
-  <data name="pictureBox7.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbYouthOrg.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
@@ -13069,14 +13025,6 @@ towards communism.
         AR27VKI1YHOear7kYLAEjFABqmm/VLv3L5uOKy8ttLE+10IxWimkcE4Yiqu4mkbOWzQVvJPWlJIpXAzT
         DQe3NXq9XqD/2Q==
 </value>
-  </data>
-  <data name="lblDemonstationAns.Text" xml:space="preserve">
-    <value>Civilians were forced to attend Communist party
-demonstations that promoted communist ideologies
-and laws. Consequences for not attending could be;
-losing your job or tortue. These demonstrations were
-dedicated to the leader of the communist party,
-Nicolae Ceaușescu.</value>
   </data>
   <data name="pbDemonstation.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -14922,16 +14870,7 @@ Nicolae Ceaușescu.</value>
         DQe3NXq9XqD/2Q==
 </value>
   </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>The Romanian Revolution was very quick and filled
-with confusion, and it only lasted for seven days. Most
-of the country did not even know a revolution was 
-happening until after it was over. The revolution occured
-in 1989 and many Romanians continue to feel nostalgic
-towards communism.
-</value>
-  </data>
-  <data name="pictureBox9.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbMedia.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
@@ -16775,16 +16714,7 @@ towards communism.
         DQe3NXq9XqD/2Q==
 </value>
   </data>
-  <data name="label19.Text" xml:space="preserve">
-    <value>The Romanian Revolution was very quick and filled
-with confusion, and it only lasted for seven days. Most
-of the country did not even know a revolution was 
-happening until after it was over. The revolution occured
-in 1989 and many Romanians continue to feel nostalgic
-towards communism.
-</value>
-  </data>
-  <data name="pictureBox10.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbRation.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwg
         JC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIy
