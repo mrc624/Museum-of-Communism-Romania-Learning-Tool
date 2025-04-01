@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace IQP_Tester
 {
-    public partial class Stories : Form
+    public partial class blSchoolPropagandaQ : Form
     {
         TextManager textManager;
         Resize_Helper resize = new Resize_Helper();
         Polaroid_Zoom_Helper polaroid_Zoom_Helper = new Polaroid_Zoom_Helper();
         Open_Close_Helper openClose = new Open_Close_Helper();
 
-        public Stories(TextManager textMan, Open_Close_Helper open_close)
+        public blSchoolPropagandaQ(TextManager textMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
             openClose = open_close;
