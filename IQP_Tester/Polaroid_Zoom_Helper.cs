@@ -30,7 +30,7 @@ namespace IQP_Tester
         public void Polaroid_Zoom_Click_Handler(object sender, EventArgs e)
         {
             Panel Polaroid = null;
-            if (!(sender is Panel))
+            if (!(Polaroids.Contains(sender)))
                 {
                 Control send = (Control)sender;
 
