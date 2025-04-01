@@ -133,6 +133,12 @@
     <Compile Include="Credits.Designer.cs">
       <DependentUpon>Credits.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dev_Tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev_Tools.Designer.cs">
+      <DependentUpon>Dev_Tools.cs</DependentUpon>
+    </Compile>
     <Compile Include="Open_Close_Helper.cs" />
     <Compile Include="Stories.cs">
       <SubType>Form</SubType>
@@ -146,6 +152,7 @@
     <Compile Include="LifeUnder.Designer.cs">
       <DependentUpon>LifeUnder.cs</DependentUpon>
     </Compile>
+    <Compile Include="TableLayout_Helper.cs" />
     <Compile Include="Timeline.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +196,9 @@
     <Compile Include="TextManager.cs" />
     <EmbeddedResource Include="Credits.resx">
       <DependentUpon>Credits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev_Tools.resx">
+      <DependentUpon>Dev_Tools.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stories.resx">
       <DependentUpon>Stories.cs</DependentUpon>

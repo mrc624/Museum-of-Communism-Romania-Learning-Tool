@@ -223,6 +223,21 @@ namespace IQP_Tester
             }
         }
 
+        public Dictionary<string, Dictionary<string, string>> Get_Text_Dictionary()
+        {
+            if (File.Exists(TEXT_MANAGER_FILE_NAME) && JSON_Generated_or_Updated)
+            {
+                Dictionary<string, Dictionary<string, string>> text = new Dictionary<string, Dictionary<string, string>>();
+                string json = File.ReadAllText(TEXT_MANAGER_FILE_NAME);
+                text = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                return text;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public void Translate_Control(Control control, Dictionary<string, string> translated)
         {
             for (int i = 0; i < control.Controls.Count; i++)

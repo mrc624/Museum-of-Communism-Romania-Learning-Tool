@@ -38,6 +38,7 @@ namespace IQP_Tester
         Timeline timeline;
 
         Credits credits;
+        Dev_Tools dev_Tools;
 
         public Main()
         {
@@ -207,6 +208,12 @@ namespace IQP_Tester
                 this.FormBorderStyle = FormBorderStyle.None;
                 this.WindowState = FormWindowState.Maximized;
                 this.Bounds = Screen.PrimaryScreen.Bounds;
+                return true;
+            }
+            else if (keyData == Keys.F12)
+            {
+                dev_Tools = new Dev_Tools(textManager);
+                openClose.FadeIn(dev_Tools);
                 return true;
             }
             else
