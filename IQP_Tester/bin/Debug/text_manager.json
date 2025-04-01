@@ -39,8 +39,8 @@
     "lblYouthOrgAns": "\u0022We were the RCP\u0027s eagles.\u0022",
     "lblYouthOrgQ": "What did being a pioneer in grade school mean?",
     "lblDemonstationAnsPolLong": "Civilians were forced to attend Communist party festivities that promoted comunist ideologies and praising Nicolae Ceausescu. Consequences for not attending could include being fired from your job or harsh torture.",
-    "lblDemonstationAns": "\u0022You were not supposed to understand why, you were just obliged to do it. This way, they manipulated you to lose your inner self and become a part of collectivity.\u0022",
-    "lblDemonstationQ": "What were communist state festivities?",
+    "lblDemonstrationQ": "What were communist state festivities?",
+    "lblDemonstrationAns": "\u0022We didn\u0027t have TV, you know. It was only for two hours during the evening when the whole program was only about Ceausescu. It was nothing else.\u0022",
     "lblMediaAnsPolLong": "Books, movies, and news were available but all were censored to control information and prevent criticism of the regime. The role of the media was to spread state propaganda, convincing people that Ceausescu was a great leader and that life was better than it really was. Some Romanian and foreign media was sold in black markets.",
     "lblMediaAns": "\u0022We didn\u0027t have TV, you know. It was only for two hours during the evening when the whole program was only about Ceausescu. It was nothing else.\u0022",
     "lblMediaQ": "What type of media was available?",
@@ -115,6 +115,8 @@
     "lblSchoolAnsPolLong": "EMPTY, USING OTHER ANS",
     "lblSchoolAns": "TRANSLATION NEEDED",
     "lblSchoolQ": "TRANSLATION NEEDED",
-    "PolLong": "EMPTY, USING OTHER ANS"
+    "PolLong": "EMPTY, USING OTHER ANS",
+    "lblDemonstrationQ": "TRANSLATION NEEDED",
+    "lblDemonstrationAns": "TRANSLATION NEEDED"
   }
 }
