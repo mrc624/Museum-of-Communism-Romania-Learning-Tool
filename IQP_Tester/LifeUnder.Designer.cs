@@ -755,7 +755,7 @@
             this.Controls.Add(this.panelSchool);
             this.Controls.Add(this.btnLanguage);
             this.Name = "LifeUnder";
-            this.Text = "Then_And_Now";
+            this.Text = "Life Under Communism";
             this.Shown += new System.EventHandler(this.LifeUnder_Shown);
             this.Click += new System.EventHandler(this.LifeUnder_Click);
             this.Resize += new System.EventHandler(this.LifeUnder_Resize);

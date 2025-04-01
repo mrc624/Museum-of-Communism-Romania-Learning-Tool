@@ -1,6 +1,6 @@
 ﻿namespace IQP_Tester
 {
-    partial class blSchoolPropagandaQ
+    partial class Stories
     {
         /// <summary>
         /// Required designer variable.
@@ -79,11 +79,11 @@
             this.lblSwimmerKillerQ = new System.Windows.Forms.Label();
             this.lblSwimmerKillerAns = new System.Windows.Forms.Label();
             this.pbSwimmerKiller = new System.Windows.Forms.PictureBox();
-            this.panelStopEnginners = new System.Windows.Forms.Panel();
-            this.tableLayoutStopEnginners = new System.Windows.Forms.TableLayoutPanel();
-            this.lblStopEnginnersQ = new System.Windows.Forms.Label();
-            this.lblStopEnginnersAns = new System.Windows.Forms.Label();
-            this.pbStopEnginners = new System.Windows.Forms.PictureBox();
+            this.panelStopEngineers = new System.Windows.Forms.Panel();
+            this.tableLayoutStopEngineers = new System.Windows.Forms.TableLayoutPanel();
+            this.lblStopEngineersQ = new System.Windows.Forms.Label();
+            this.lblStopEngineersAns = new System.Windows.Forms.Label();
+            this.pbStopEngineers = new System.Windows.Forms.PictureBox();
             this.panelCutPhoneLines = new System.Windows.Forms.Panel();
             this.tableLayoutCutPhoneLines = new System.Windows.Forms.TableLayoutPanel();
             this.lblCutPhoneLinesQ = new System.Windows.Forms.Label();
@@ -119,9 +119,9 @@
             this.panelSwimmerKiller.SuspendLayout();
             this.tableLayoutSwimmerKiller.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSwimmerKiller)).BeginInit();
-            this.panelStopEnginners.SuspendLayout();
-            this.tableLayoutStopEnginners.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStopEnginners)).BeginInit();
+            this.panelStopEngineers.SuspendLayout();
+            this.tableLayoutStopEngineers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStopEngineers)).BeginInit();
             this.panelCutPhoneLines.SuspendLayout();
             this.tableLayoutCutPhoneLines.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCutPhoneLines)).BeginInit();
@@ -740,65 +740,65 @@
             this.pbSwimmerKiller.TabIndex = 0;
             this.pbSwimmerKiller.TabStop = false;
             // 
-            // panelStopEnginners
+            // panelStopEngineers
             // 
-            this.panelStopEnginners.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelStopEnginners.Controls.Add(this.tableLayoutStopEnginners);
-            this.panelStopEnginners.Controls.Add(this.pbStopEnginners);
-            this.panelStopEnginners.Location = new System.Drawing.Point(1571, 665);
-            this.panelStopEnginners.Name = "panelStopEnginners";
-            this.panelStopEnginners.Size = new System.Drawing.Size(268, 314);
-            this.panelStopEnginners.TabIndex = 17;
+            this.panelStopEngineers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelStopEngineers.Controls.Add(this.tableLayoutStopEngineers);
+            this.panelStopEngineers.Controls.Add(this.pbStopEngineers);
+            this.panelStopEngineers.Location = new System.Drawing.Point(1571, 665);
+            this.panelStopEngineers.Name = "panelStopEngineers";
+            this.panelStopEngineers.Size = new System.Drawing.Size(268, 314);
+            this.panelStopEngineers.TabIndex = 17;
             // 
-            // tableLayoutStopEnginners
+            // tableLayoutStopEngineers
             // 
-            this.tableLayoutStopEnginners.ColumnCount = 1;
-            this.tableLayoutStopEnginners.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
-            this.tableLayoutStopEnginners.Controls.Add(this.lblStopEnginnersQ, 0, 0);
-            this.tableLayoutStopEnginners.Controls.Add(this.lblStopEnginnersAns, 0, 1);
-            this.tableLayoutStopEnginners.Location = new System.Drawing.Point(16, 190);
-            this.tableLayoutStopEnginners.Name = "tableLayoutStopEnginners";
-            this.tableLayoutStopEnginners.RowCount = 2;
-            this.tableLayoutStopEnginners.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutStopEnginners.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutStopEnginners.Size = new System.Drawing.Size(237, 100);
-            this.tableLayoutStopEnginners.TabIndex = 9;
+            this.tableLayoutStopEngineers.ColumnCount = 1;
+            this.tableLayoutStopEngineers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutStopEngineers.Controls.Add(this.lblStopEngineersQ, 0, 0);
+            this.tableLayoutStopEngineers.Controls.Add(this.lblStopEngineersAns, 0, 1);
+            this.tableLayoutStopEngineers.Location = new System.Drawing.Point(16, 190);
+            this.tableLayoutStopEngineers.Name = "tableLayoutStopEngineers";
+            this.tableLayoutStopEngineers.RowCount = 2;
+            this.tableLayoutStopEngineers.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutStopEngineers.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutStopEngineers.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutStopEngineers.TabIndex = 9;
             // 
-            // lblStopEnginnersQ
+            // lblStopEngineersQ
             // 
-            this.lblStopEnginnersQ.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblStopEngineersQ.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblStopEnginnersQ.AutoSize = true;
-            this.lblStopEnginnersQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStopEnginnersQ.Location = new System.Drawing.Point(3, 0);
-            this.lblStopEnginnersQ.Name = "lblStopEnginnersQ";
-            this.lblStopEnginnersQ.Size = new System.Drawing.Size(231, 25);
-            this.lblStopEnginnersQ.TabIndex = 5;
-            this.lblStopEnginnersQ.Text = "Unknown";
-            this.lblStopEnginnersQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblStopEngineersQ.AutoSize = true;
+            this.lblStopEngineersQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStopEngineersQ.Location = new System.Drawing.Point(3, 0);
+            this.lblStopEngineersQ.Name = "lblStopEngineersQ";
+            this.lblStopEngineersQ.Size = new System.Drawing.Size(231, 25);
+            this.lblStopEngineersQ.TabIndex = 5;
+            this.lblStopEngineersQ.Text = "Unknown";
+            this.lblStopEngineersQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lblStopEnginnersAns
+            // lblStopEngineersAns
             // 
-            this.lblStopEnginnersAns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblStopEngineersAns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblStopEnginnersAns.AutoSize = true;
-            this.lblStopEnginnersAns.Location = new System.Drawing.Point(3, 25);
-            this.lblStopEnginnersAns.Name = "lblStopEnginnersAns";
-            this.lblStopEnginnersAns.Size = new System.Drawing.Size(231, 13);
-            this.lblStopEnginnersAns.TabIndex = 7;
-            this.lblStopEnginnersAns.Text = "Unknown";
-            this.lblStopEnginnersAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblStopEngineersAns.AutoSize = true;
+            this.lblStopEngineersAns.Location = new System.Drawing.Point(3, 25);
+            this.lblStopEngineersAns.Name = "lblStopEngineersAns";
+            this.lblStopEngineersAns.Size = new System.Drawing.Size(231, 13);
+            this.lblStopEngineersAns.TabIndex = 7;
+            this.lblStopEngineersAns.Text = "Unknown";
+            this.lblStopEngineersAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbStopEnginners
+            // pbStopEngineers
             // 
-            this.pbStopEnginners.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbStopEnginners.InitialImage = null;
-            this.pbStopEnginners.Location = new System.Drawing.Point(44, 3);
-            this.pbStopEnginners.Name = "pbStopEnginners";
-            this.pbStopEnginners.Size = new System.Drawing.Size(186, 190);
-            this.pbStopEnginners.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbStopEnginners.TabIndex = 0;
-            this.pbStopEnginners.TabStop = false;
+            this.pbStopEngineers.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.pbStopEngineers.InitialImage = null;
+            this.pbStopEngineers.Location = new System.Drawing.Point(44, 3);
+            this.pbStopEngineers.Name = "pbStopEngineers";
+            this.pbStopEngineers.Size = new System.Drawing.Size(186, 190);
+            this.pbStopEngineers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbStopEngineers.TabIndex = 0;
+            this.pbStopEngineers.TabStop = false;
             // 
             // panelCutPhoneLines
             // 
@@ -860,12 +860,12 @@
             this.pbCutPhoneLines.TabIndex = 0;
             this.pbCutPhoneLines.TabStop = false;
             // 
-            // blSchoolPropagandaQ
+            // Stories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.panelStopEnginners);
+            this.Controls.Add(this.panelStopEngineers);
             this.Controls.Add(this.panelCutPhoneLines);
             this.Controls.Add(this.panelSwimmerKiller);
             this.Controls.Add(this.panelJapaneseMachines);
@@ -878,8 +878,8 @@
             this.Controls.Add(this.panelButterWhy);
             this.Controls.Add(this.panelStolenHorse);
             this.Controls.Add(this.btnLanguage);
-            this.Name = "blSchoolPropagandaQ";
-            this.Text = "Then_And_Now";
+            this.Name = "Stories";
+            this.Text = "Stories";
             this.Shown += new System.EventHandler(this.Stories_Shown);
             this.Click += new System.EventHandler(this.Stories_Click);
             this.Resize += new System.EventHandler(this.Stories_Resize);
@@ -923,10 +923,10 @@
             this.tableLayoutSwimmerKiller.ResumeLayout(false);
             this.tableLayoutSwimmerKiller.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSwimmerKiller)).EndInit();
-            this.panelStopEnginners.ResumeLayout(false);
-            this.tableLayoutStopEnginners.ResumeLayout(false);
-            this.tableLayoutStopEnginners.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStopEnginners)).EndInit();
+            this.panelStopEngineers.ResumeLayout(false);
+            this.tableLayoutStopEngineers.ResumeLayout(false);
+            this.tableLayoutStopEngineers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStopEngineers)).EndInit();
             this.panelCutPhoneLines.ResumeLayout(false);
             this.tableLayoutCutPhoneLines.ResumeLayout(false);
             this.tableLayoutCutPhoneLines.PerformLayout();
@@ -988,11 +988,11 @@
         private System.Windows.Forms.Label lblSwimmerKillerQ;
         private System.Windows.Forms.Label lblSwimmerKillerAns;
         private System.Windows.Forms.PictureBox pbSwimmerKiller;
-        private System.Windows.Forms.Panel panelStopEnginners;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutStopEnginners;
-        private System.Windows.Forms.Label lblStopEnginnersQ;
-        private System.Windows.Forms.Label lblStopEnginnersAns;
-        private System.Windows.Forms.PictureBox pbStopEnginners;
+        private System.Windows.Forms.Panel panelStopEngineers;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutStopEngineers;
+        private System.Windows.Forms.Label lblStopEngineersQ;
+        private System.Windows.Forms.Label lblStopEngineersAns;
+        private System.Windows.Forms.PictureBox pbStopEngineers;
         private System.Windows.Forms.Panel panelCutPhoneLines;
         private System.Windows.Forms.TableLayoutPanel tableLayoutCutPhoneLines;
         private System.Windows.Forms.Label lblCutPhoneLinesQ;
