@@ -252,7 +252,7 @@
             this.panelChildhood.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelChildhood.Controls.Add(this.tableLayoutPanel4);
             this.panelChildhood.Controls.Add(this.pbChildhood);
-            this.panelChildhood.Location = new System.Drawing.Point(1094, 531);
+            this.panelChildhood.Location = new System.Drawing.Point(1141, 500);
             this.panelChildhood.Name = "panelChildhood";
             this.panelChildhood.Size = new System.Drawing.Size(238, 339);
             this.panelChildhood.TabIndex = 15;
@@ -379,18 +379,18 @@
             this.panelMedia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMedia.Controls.Add(this.tableLayoutPanel5);
             this.panelMedia.Controls.Add(this.pbMedia);
-            this.panelMedia.Location = new System.Drawing.Point(1559, 690);
+            this.panelMedia.Location = new System.Drawing.Point(1517, 624);
             this.panelMedia.Name = "panelMedia";
-            this.panelMedia.Size = new System.Drawing.Size(333, 339);
+            this.panelMedia.Size = new System.Drawing.Size(279, 339);
             this.panelMedia.TabIndex = 14;
             // 
             // pbMedia
             // 
             this.pbMedia.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu1;
             this.pbMedia.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbMedia.InitialImage")));
-            this.pbMedia.Location = new System.Drawing.Point(23, 14);
+            this.pbMedia.Location = new System.Drawing.Point(49, 10);
             this.pbMedia.Name = "pbMedia";
-            this.pbMedia.Size = new System.Drawing.Size(283, 190);
+            this.pbMedia.Size = new System.Drawing.Size(189, 190);
             this.pbMedia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMedia.TabIndex = 0;
             this.pbMedia.TabStop = false;
@@ -670,7 +670,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPanel5.Controls.Add(this.lblMediaQ, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.lblMediaAns, 0, 1);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(48, 210);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(25, 211);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
