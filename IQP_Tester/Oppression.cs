@@ -26,13 +26,15 @@ namespace IQP_Tester
             resize.CaptureAspectRatios(this);
             polaroid_Zoom_Helper.Find_Polaroids(this);
             Oppression_Resize(this, new EventArgs());
+
+            polaroid_Zoom_Helper.Assign_Click_Handler_To_Valid(this, textMan, openClose);
         }
 
         private void Oppression_Resize(object sender, EventArgs e)
         {
             resize.Handle_Resize(this);
 
-
+            resize.Reposition_Polaroids(polaroid_Zoom_Helper.Polaroids);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }

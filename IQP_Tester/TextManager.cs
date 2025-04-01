@@ -85,22 +85,20 @@ namespace IQP_Tester
             }
 
             // Add in long answers for polaroids
-            if (control is Panel)
+            if (polaroid_Zoom_Helper.Is_Polaroid(control))
             {
                 Panel panel = (Panel)control;
-                if (polaroid_Zoom_Helper.Is_Polaroid(panel))
-                {
-                    string ans = polaroid_Zoom_Helper.Get_Ans_Name(panel);
-                    string ansLong = ans + Polaroid_Zoom_Helper.LONG_POLAROID_ANS_FLAG;
+                string name = panel.Name;
+                string ans = polaroid_Zoom_Helper.Get_Ans_Name(panel);
+                string ansLong = ans + Polaroid_Zoom_Helper.LONG_POLAROID_ANS_FLAG;
 
-                    if (!text[language_to_string[(int)Language.English]].ContainsKey(ansLong))
-                    {
-                        text[language_to_string[(int)Language.English]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
-                    }
-                    if (!text[language_to_string[(int)Language.Romanian]].ContainsKey(ansLong))
-                    {
-                        text[language_to_string[(int)Language.Romanian]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
-                    }
+                if (!text[language_to_string[(int)Language.English]].ContainsKey(ansLong))
+                {
+                    text[language_to_string[(int)Language.English]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
+                }
+                if (!text[language_to_string[(int)Language.Romanian]].ContainsKey(ansLong))
+                {
+                    text[language_to_string[(int)Language.Romanian]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
                 }
             }
 

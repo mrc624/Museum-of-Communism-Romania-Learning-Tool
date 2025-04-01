@@ -116,6 +116,18 @@
     "pbYouthOrg": "NEED",
     "pbMedia": "NEED",
     "pbRation": "NEED",
-    "pbChildhood": "NEED"
+    "pbChildhood": "NEED",
+    "pictureBox11": "NEED",
+    "pbDeportation": "NEED",
+    "pbPalace": "NEED",
+    "pbFear": "NEED",
+    "pbReligion": "NEED",
+    "pbExports": "NEED",
+    "pbInfluence": "NEED",
+    "pbPossesions": "NEED",
+    "pbLanguage": "NEED",
+    "pbPropoganda": "NEED",
+    "pbConsequences": "NEED",
+    "pbSecuritate": "NEED"
   }
 }

@@ -88,19 +88,15 @@ namespace IQP_Tester
 
         public string Get_Ans_Name(Panel panel)
         {
-            string ans = "";
-            if (Is_Polaroid(panel))
+            Label ans = Find_Ans(panel);
+            if (ans != null)
             {
-                for (int i = 0; i < panel.Controls.Count; i++)
-                {
-                    string control_name = panel.Controls[i].Name;
-                    if (control_name.EndsWith(END_ANSWER_FLAG) && panel.Controls[i] is Label)
-                    {
-                        ans = control_name;
-                    }
-                }
+                return ans.Name;
             }
-            return ans;
+            else
+            {
+                return null;
+            }
         }
 
         public string Get_Long_Ans_Name(Label label)
