@@ -191,7 +191,7 @@ namespace IQP_Tester
 
         private void Resize_PB(PictureBox pb)
         {
-            if (Dictionary_Updated)
+            if (Dictionary_Updated && pb.Image != null)
             {
                 double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
 

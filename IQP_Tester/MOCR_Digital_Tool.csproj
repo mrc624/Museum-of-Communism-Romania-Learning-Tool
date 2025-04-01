@@ -252,10 +252,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="YouthOrg.png" />
     <None Include="University.png" />
     <None Include="Blue_Circle.png" />
     <None Include="Demonstration.png" />
+    <None Include="Childhood.png" />
     <Content Include="Kneeling_With_Rifle.jpg" />
+    <None Include="Media.png" />
     <Content Include="Nicolae_Ceasescu.png" />
     <Content Include="Painting_on_Wall.jpg" />
     <Content Include="People_Gathering.jpg" />

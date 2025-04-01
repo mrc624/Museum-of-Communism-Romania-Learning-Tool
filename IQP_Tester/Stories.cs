@@ -25,24 +25,26 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Zoom_Helper.Find_Polaroids(this);
-            ThenAndNow_Resize(this, new EventArgs());
+            Stories_Resize(this, new EventArgs());
+
+            polaroid_Zoom_Helper.Assign_Click_Handler_To_Valid(this, textMan, openClose);
         }
 
-        private void ThenAndNow_Resize(object sender, EventArgs e)
+        private void Stories_Resize(object sender, EventArgs e)
         {
             resize.Handle_Resize(this);
 
-
+            resize.Reposition_Polaroids(polaroid_Zoom_Helper.Polaroids);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
 
-        private void ThenAndNow_Click(object sender, EventArgs e)
+        private void Stories_Click(object sender, EventArgs e)
         {
             openClose.Close(this);
         }
 
-        private void ThenAndNow_Shown(object sender, EventArgs e)
+        private void Stories_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
         }
@@ -54,7 +56,7 @@ namespace IQP_Tester
 
         private void btnLanguage_TextChanged(object sender, EventArgs e)
         {
-            ThenAndNow_Resize(this, new EventArgs());
+            Stories_Resize(this, new EventArgs());
         }
     }
 }

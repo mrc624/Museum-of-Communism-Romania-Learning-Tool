@@ -124,6 +124,9 @@
   <data name="Timisoara_Uprising" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timisoara_Uprising.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ration" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Ration.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Romanian_Revolution" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Romanian_Revolution.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,6 +139,9 @@
   <data name="Nicolae_Ceasescu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Nicolae_Ceasescu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Childhood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Childhood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Nicolae_Ceasescu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Nicolae_Ceasescu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,7 +151,10 @@
   <data name="Timisoara_Uprising1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timisoara_Uprising.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ration" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Ration.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="YouthOrg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\YouthOrg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

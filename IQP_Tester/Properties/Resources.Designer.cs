@@ -73,9 +73,29 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Childhood {
+            get {
+                object obj = ResourceManager.GetObject("Childhood", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Demonstration {
             get {
                 object obj = ResourceManager.GetObject("Demonstration", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media {
+            get {
+                object obj = ResourceManager.GetObject("Media", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +176,16 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap University {
             get {
                 object obj = ResourceManager.GetObject("University", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YouthOrg {
+            get {
+                object obj = ResourceManager.GetObject("YouthOrg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
