@@ -17,7 +17,7 @@ namespace IQP_Tester
         Resize_Helper resize = new Resize_Helper();
         TextManager translationManager;
         Open_Close_Helper openClose;
-        Polaroid_Zoom_Helper polaroid_Zoom_Helper = new Polaroid_Zoom_Helper();
+        Polaroid_Helper polaroid_Zoom_Helper = new Polaroid_Helper();
 
         PictureBox pb;
         Label lblQ;
@@ -54,7 +54,7 @@ namespace IQP_Tester
         public void Handle_Long_Ans()
         {
             string name = translationManager.Get_Text(polaroid_Zoom_Helper.Get_Long_Ans_Name(lblAns));
-            if (name != null && name != Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG)
+            if (name != null && name != Polaroid_Helper.IGNORE_LONG_ANS_FLAG)
             {
                 lblAnswer.Text = name;
             }

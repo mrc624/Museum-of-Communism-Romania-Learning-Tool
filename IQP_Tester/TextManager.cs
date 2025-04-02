@@ -12,7 +12,7 @@ namespace IQP_Tester
 {
     public class TextManager
     {
-        Polaroid_Zoom_Helper polaroid_Zoom_Helper = new Polaroid_Zoom_Helper();
+        Polaroid_Helper polaroid_Zoom_Helper = new Polaroid_Helper();
 
         public enum Language
         {
@@ -90,15 +90,15 @@ namespace IQP_Tester
                 Panel panel = (Panel)control;
                 string name = panel.Name;
                 string ans = polaroid_Zoom_Helper.Get_Ans_Name(panel);
-                string ansLong = ans + Polaroid_Zoom_Helper.LONG_POLAROID_ANS_FLAG;
+                string ansLong = ans + Polaroid_Helper.LONG_POLAROID_ANS_FLAG;
 
                 if (!text[language_to_string[(int)Language.English]].ContainsKey(ansLong))
                 {
-                    text[language_to_string[(int)Language.English]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
+                    text[language_to_string[(int)Language.English]][ansLong] = Polaroid_Helper.IGNORE_LONG_ANS_FLAG;
                 }
                 if (!text[language_to_string[(int)Language.Romanian]].ContainsKey(ansLong))
                 {
-                    text[language_to_string[(int)Language.Romanian]][ansLong] = Polaroid_Zoom_Helper.IGNORE_LONG_ANS_FLAG;
+                    text[language_to_string[(int)Language.Romanian]][ansLong] = Polaroid_Helper.IGNORE_LONG_ANS_FLAG;
                 }
             }
 

@@ -290,35 +290,10 @@ namespace IQP_Tester
 
         public void Reposition_All_Controls_In_Main_Panel(Panel panel)
         {
-            for (int i = 0; i < panel.Controls.Count;i++)
+            for (int i = 0; i < panel.Controls.Count; i++)
             {
                 Reposition(panel.Controls[i]);
                 Center_X(panel.Controls[i]);
-            }
-        }
-
-        public void Reposition_Polaroids(List<Panel> polaroids)
-        {
-            for (int i = 0; i < polaroids.Count; i++)
-            {
-                Reposition_Polaroid(polaroids[i]);
-            }
-        }
-
-        private void Reposition_Polaroid(Panel panel)
-        {
-            Reposition(panel);
-            for (int i = 0; i < panel.Controls.Count; i++)
-            {
-                if (i == 0)
-                {
-                    Reposition(panel.Controls[i]);
-                    Center_X(panel.Controls[i]);
-                }
-                else
-                {
-                    Center_to_Other_Control(panel.Controls[i-1], panel.Controls[i]); //tbh don't know why i-1 is first and i is second, I thought it would be the opposite but it works
-                }
             }
         }
     }

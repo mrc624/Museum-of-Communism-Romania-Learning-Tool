@@ -8,11 +8,11 @@ using System.Windows.Forms;
 
 namespace IQP_Tester
 {
-    internal class Polaroid_Zoom_Helper
+    internal class Polaroid_Helper
     {
         Open_Close_Helper openClose;
         Click_Helper click_helper = new Click_Helper();
-
+        Resize_Helper resize = new Resize_Helper();
         TextManager textManager;
 
         public const string LONG_POLAROID_ANS_FLAG = "PolLong";
@@ -198,6 +198,31 @@ namespace IQP_Tester
                 }
             }
             return PB;
+        }
+
+        public void Reposition_Polaroids(List<Panel> polaroids)
+        {
+            for (int i = 0; i < polaroids.Count; i++)
+            {
+                Reposition_Polaroid(polaroids[i]);
+            }
+        }
+
+        private void Reposition_Polaroid(Panel panel)
+        {
+            resize.Reposition(panel);
+            for (int i = 0; i < panel.Controls.Count; i++)
+            {
+                if (i == 0)
+                {
+                    resize.Reposition(panel.Controls[i]);
+                    resize.Center_X(panel.Controls[i]);
+                }
+                else
+                {
+                    resize.Center_to_Other_Control(panel.Controls[i - 1], panel.Controls[i]); //tbh don't know why i-1 is first and i is second, I thought it would be the opposite but it works
+                }
+            }
         }
     }
 }

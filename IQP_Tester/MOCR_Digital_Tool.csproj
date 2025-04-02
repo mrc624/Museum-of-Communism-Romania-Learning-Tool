@@ -165,7 +165,7 @@
     <Compile Include="Polaroid_Zoom.Designer.cs">
       <DependentUpon>Polaroid_Zoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Polaroid_Zoom_Helper.cs" />
+    <Compile Include="Polaroid_Helper.cs" />
     <Compile Include="RegimeFall.cs">
       <SubType>Form</SubType>
     </Compile>
