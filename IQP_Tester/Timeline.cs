@@ -21,6 +21,11 @@ namespace IQP_Tester
         public const int START_YEAR = 1947;
         public const int END_YEAR = 1989;
         public const int YEAR_RANGE = END_YEAR - START_YEAR;
+        public const int LINE_WIDTH = 3;
+        public const string LINE_NAME = "line";
+        public int INVALID_Y_LINE = -1;
+
+        List <Panel> Lines = new List <Panel> ();
 
         public enum Position
         {
@@ -51,11 +56,13 @@ namespace IQP_Tester
             {
                 Point bottom_mid = new Point(point.X, point.Y + vertical_offset);
                 Point top_left = new Point(bottom_mid.X - (control.Width / 2), bottom_mid.Y + control.Height);
+                Draw_Line(point, bottom_mid);
             }
             else if (position == Position.Bottom)
             {
                 Point top_mid = new Point(point.X, point.Y - vertical_offset);
                 Point top_left = new Point(top_mid.X - (control.Width / 2), top_mid.Y);
+                Draw_Line(top_mid, point);
             }
         }
 
@@ -75,9 +82,43 @@ namespace IQP_Tester
             return point;
         }
 
-        private void Draw_Line(Point from, Point to)
+        private void Draw_Line(Point from, Point to) // assumes drawing in a straight line, not diagonal
         {
-            
+            Panel panel = new Panel();
+            panel.Size = new System.Drawing.Size(LINE_WIDTH, Math.Abs(to.Y - from.Y));
+            panel.Name = LINE_NAME + Lines.Count;
+            panel.Tag = LINE_NAME;
+            panel.BackColor = Color.Black;
+            panel.TabIndex = Lines.Count;
+
+            if (from.X == to.X)
+            {
+                int line_x =  from.X - (LINE_WIDTH / 2);
+                Point line_point = new Point(line_x, INVALID_Y_LINE);
+                if (from.Y > to.Y)
+                {
+                    line_point.Y = from.Y;
+                }
+                else if (from.Y < to.Y)
+                {
+                    line_point.Y = to.Y;
+                }
+                if (line_point.Y > INVALID_Y_LINE)
+                {
+                    panel.Location = line_point;
+                    Lines.Add(panel);
+                    this.Controls.Add(panel);
+                    panel.BringToFront();
+                }
+            }
+        }
+
+        private void Delete_All_Lines()
+        {
+            for (int i = 0; i < Lines.Count; i++)
+            {
+                this.Controls.Remove(Lines[i]);
+            }
         }
 
 

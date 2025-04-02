@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.pbTimeLine = new System.Windows.Forms.PictureBox();
             this.panelTesting = new System.Windows.Forms.Panel();
+            this.pbTimeLine = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbTimeLine)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,6 +47,14 @@
             this.btnLanguage.TextChanged += new System.EventHandler(this.btnLanguage_TextChanged);
             this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
             // 
+            // panelTesting
+            // 
+            this.panelTesting.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTesting.Location = new System.Drawing.Point(150, 74);
+            this.panelTesting.Name = "panelTesting";
+            this.panelTesting.Size = new System.Drawing.Size(188, 213);
+            this.panelTesting.TabIndex = 10;
+            // 
             // pbTimeLine
             // 
             this.pbTimeLine.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
@@ -56,14 +64,6 @@
             this.pbTimeLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbTimeLine.TabIndex = 9;
             this.pbTimeLine.TabStop = false;
-            // 
-            // panelTesting
-            // 
-            this.panelTesting.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelTesting.Location = new System.Drawing.Point(150, 74);
-            this.panelTesting.Name = "panelTesting";
-            this.panelTesting.Size = new System.Drawing.Size(188, 213);
-            this.panelTesting.TabIndex = 10;
             // 
             // Timeline
             // 
