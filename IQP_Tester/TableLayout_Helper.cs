@@ -85,5 +85,15 @@ namespace IQP_Tester
                 rowStyle.SizeType = SizeType.AutoSize;
             }
         }
+
+        public void Set_Same_Height_To_Minimum(TableLayoutPanel table)
+        {
+            float net_row_height = 0;
+            for (int i = 0; i < table.Controls.Count; i++)
+            {
+                net_row_height = table.Controls[i].Height;
+            }
+            table.Height = (int)Math.Ceiling(net_row_height);
+        }
     }
 }

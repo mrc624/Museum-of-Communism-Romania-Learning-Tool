@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +14,7 @@ namespace IQP_Tester
         Open_Close_Helper openClose;
         Click_Helper click_helper = new Click_Helper();
         Resize_Helper resize = new Resize_Helper();
+        TableLayout_Helper tableLayout_Helper = new TableLayout_Helper();
 
         TextManager textManager;
 
@@ -25,6 +27,11 @@ namespace IQP_Tester
         public const string IGNORE_LONG_ANS_FLAG = "EMPTY, USING OTHER ANS";
         public const int TABLE_LAYOUT_QUESTION_INDEX = 0;
         public const int TABLE_LAYOUT_ANS_INDEX = 1;
+
+        public const int POALROID_STANDARD_VERTICAL_OFFSET = 10;
+        public const int TOP_CONTROL_VERTICAL_OFFSET = POALROID_STANDARD_VERTICAL_OFFSET;
+        public const int BOTTOM_CONTROL_VERTICAL_OFFSET = POALROID_STANDARD_VERTICAL_OFFSET;
+        public const int POLAROID_STANDARD_HORIZONTAL_OFFSET = 10;
 
         public List<Panel> Polaroids = new List<Panel>();
 
@@ -211,7 +218,13 @@ namespace IQP_Tester
 
         private void Reposition_Polaroid(Panel panel)
         {
-            resize.Reposition(panel);
+            Reposition_Polaroid_Internals(panel);
+            Set_Polaroid_Size(panel);
+            Reposition_Polaroid_Internals(panel);
+        }
+
+        public void Reposition_Polaroid_Internals(Panel panel)
+        {
             for (int i = 0; i < panel.Controls.Count; i++)
             {
                 if (i == 0)
@@ -226,13 +239,57 @@ namespace IQP_Tester
             }
         }
 
-        public void Set_Polaroid_Size(Panel panel) //this should be called after all items inside the polaroid have been resized and repositioned
+        public bool If_TableLayout_Set_Size(Panel polaroid)
         {
-            Control lowest_control = panel.Controls[0];
-            for (int i = 0; i < panel.Controls.Count; i++)
+            for (int i = 0; i < polaroid.Controls.Count; ++i)
             {
-
+                if (polaroid.Controls[i] is TableLayoutPanel)
+                {
+                    tableLayout_Helper.Set_Same_Height_To_Minimum((TableLayoutPanel)polaroid.Controls[0]);
+                    return true;
+                }
             }
+            return false;
+        }
+
+        public void Set_Polaroid_Size(Panel polaroid) //this should be called after all items inside the polaroid have been resized and repositioned
+        {
+            if (If_TableLayout_Set_Size(polaroid))
+            {
+                Reposition_Polaroid_Internals(polaroid);
+            }
+            // setting height of polaroid
+            Control top_control = polaroid.Controls[0];
+            Control bottom_control = polaroid.Controls[0];
+            for (int i = 0; i < polaroid.Controls.Count; i++)
+            {
+                if (polaroid.Controls[i].Location.Y > bottom_control.Location.Y)
+                {
+                    bottom_control = polaroid.Controls[i];
+                }
+
+                if (polaroid.Controls[i].Location.Y < top_control.Location.Y)
+                {
+                    top_control = polaroid.Controls[i];
+                }
+            }
+
+            resize.Set_Vertical_Offset(top_control, TOP_CONTROL_VERTICAL_OFFSET);
+
+            int net_height = bottom_control.Location.Y + bottom_control.Height + BOTTOM_CONTROL_VERTICAL_OFFSET;
+            polaroid.Height = net_height;
+
+            // setting width of polaroid
+            Control widest_control = polaroid.Controls[0];
+            for (int i = 0; i < polaroid.Controls.Count; i++)
+            {
+                if (polaroid.Controls[i].Width > widest_control.Width)
+                {
+                    widest_control = polaroid.Controls[i];
+                }
+            }
+
+            polaroid.Width = widest_control.Width + POLAROID_STANDARD_HORIZONTAL_OFFSET * 2; // times 2 for left and right
         }
     }
 }

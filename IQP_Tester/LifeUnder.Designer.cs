@@ -203,7 +203,7 @@
             this.tableLayoutFood.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutFood.Controls.Add(this.lblFoodQ, 0, 0);
             this.tableLayoutFood.Controls.Add(this.lblFoodAns, 0, 1);
-            this.tableLayoutFood.Location = new System.Drawing.Point(16, 190);
+            this.tableLayoutFood.Location = new System.Drawing.Point(13, 213);
             this.tableLayoutFood.Name = "tableLayoutFood";
             this.tableLayoutFood.RowCount = 2;
             this.tableLayoutFood.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -240,7 +240,7 @@
             // 
             this.pbFood.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
             this.pbFood.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFood.InitialImage")));
-            this.pbFood.Location = new System.Drawing.Point(44, 3);
+            this.pbFood.Location = new System.Drawing.Point(47, 20);
             this.pbFood.Name = "pbFood";
             this.pbFood.Size = new System.Drawing.Size(186, 190);
             this.pbFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -618,7 +618,7 @@
             // tableLayoutMedia
             // 
             this.tableLayoutMedia.ColumnCount = 1;
-            this.tableLayoutMedia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutMedia.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.tableLayoutMedia.Controls.Add(this.lblMediaQ, 0, 0);
             this.tableLayoutMedia.Controls.Add(this.lblMediaAns, 0, 1);
             this.tableLayoutMedia.Location = new System.Drawing.Point(25, 138);
@@ -670,9 +670,9 @@
             this.panelRation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelRation.Controls.Add(this.tableLayoutRation);
             this.panelRation.Controls.Add(this.pbRation);
-            this.panelRation.Location = new System.Drawing.Point(34, 624);
+            this.panelRation.Location = new System.Drawing.Point(34, 546);
             this.panelRation.Name = "panelRation";
-            this.panelRation.Size = new System.Drawing.Size(333, 339);
+            this.panelRation.Size = new System.Drawing.Size(333, 417);
             this.panelRation.TabIndex = 14;
             // 
             // tableLayoutRation
@@ -681,7 +681,7 @@
             this.tableLayoutRation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutRation.Controls.Add(this.lblRationQ, 0, 0);
             this.tableLayoutRation.Controls.Add(this.lblRationAns, 0, 1);
-            this.tableLayoutRation.Location = new System.Drawing.Point(44, 207);
+            this.tableLayoutRation.Location = new System.Drawing.Point(46, 312);
             this.tableLayoutRation.Name = "tableLayoutRation";
             this.tableLayoutRation.RowCount = 2;
             this.tableLayoutRation.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -717,7 +717,7 @@
             // pbRation
             // 
             this.pbRation.Image = global::IQP_Tester.Properties.Resources.Ration;
-            this.pbRation.Location = new System.Drawing.Point(21, 10);
+            this.pbRation.Location = new System.Drawing.Point(13, 115);
             this.pbRation.Name = "pbRation";
             this.pbRation.Size = new System.Drawing.Size(300, 194);
             this.pbRation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

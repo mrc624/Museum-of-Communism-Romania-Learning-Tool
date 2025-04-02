@@ -134,6 +134,11 @@ namespace IQP_Tester
             Center_Y(control, percent_y);
         }
 
+        public void Set_Vertical_Offset(Control control, int offset)
+        {
+            control.Location = new Point(control.Location.X, offset);
+        }
+
         public enum Centering_Options
         {
             to_left,
@@ -215,7 +220,6 @@ namespace IQP_Tester
                 control.Font = new Font(control.Font.FontFamily, (float)(newFontSize));
             }
         }
-
 
         private void Resize_Control(Control control)
         {
