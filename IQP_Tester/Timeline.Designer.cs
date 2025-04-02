@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.btnLanguage = new System.Windows.Forms.Button();
+            this.pbTimeLine = new System.Windows.Forms.PictureBox();
+            this.panelTesting = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTimeLine)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -44,17 +47,38 @@
             this.btnLanguage.TextChanged += new System.EventHandler(this.btnLanguage_TextChanged);
             this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
             // 
-            // ThenAndNow
+            // pbTimeLine
+            // 
+            this.pbTimeLine.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
+            this.pbTimeLine.Location = new System.Drawing.Point(12, 541);
+            this.pbTimeLine.Name = "pbTimeLine";
+            this.pbTimeLine.Size = new System.Drawing.Size(1880, 125);
+            this.pbTimeLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbTimeLine.TabIndex = 9;
+            this.pbTimeLine.TabStop = false;
+            // 
+            // panelTesting
+            // 
+            this.panelTesting.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTesting.Location = new System.Drawing.Point(150, 74);
+            this.panelTesting.Name = "panelTesting";
+            this.panelTesting.Size = new System.Drawing.Size(188, 213);
+            this.panelTesting.TabIndex = 10;
+            // 
+            // Timeline
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.panelTesting);
+            this.Controls.Add(this.pbTimeLine);
             this.Controls.Add(this.btnLanguage);
-            this.Name = "ThenAndNow";
+            this.Name = "Timeline";
             this.Text = "Then_And_Now";
             this.Shown += new System.EventHandler(this.ThenAndNow_Shown);
             this.Click += new System.EventHandler(this.ThenAndNow_Click);
             this.Resize += new System.EventHandler(this.ThenAndNow_Resize);
+            ((System.ComponentModel.ISupportInitialize)(this.pbTimeLine)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -62,5 +86,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnLanguage;
+        private System.Windows.Forms.PictureBox pbTimeLine;
+        private System.Windows.Forms.Panel panelTesting;
     }
 }

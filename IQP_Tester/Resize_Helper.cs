@@ -193,13 +193,25 @@ namespace IQP_Tester
         {
             if (Dictionary_Updated && pb.Image != null)
             {
-                double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
+                if (pb.SizeMode == PictureBoxSizeMode.Zoom)
+                {
+                    double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
 
-                var items = ratios[pb];
-                double width_ratio = items.width_ratio;
+                    var items = ratios[pb];
+                    double width_ratio = items.width_ratio;
 
-                pb.Width = (int)(pb.Parent.Width * width_ratio);
-                pb.Height = (int)((1 / aspect_ratio) * pb.Width);
+                    pb.Width = (int)(pb.Parent.Width * width_ratio);
+                    pb.Height = (int)((1 / aspect_ratio) * pb.Width);
+                }
+                else
+                {
+                    var items = ratios[pb];
+                    double width_ratio = items.width_ratio;
+                    double height_ratio = items.height_ratio;
+
+                    pb.Height = (int)(height_ratio * pb.Parent.Height);
+                    pb.Width = (int)(width_ratio * pb.Parent.Width);
+                }
             }
         }
 
