@@ -30,13 +30,13 @@
         {
             this.TabControlDevs = new System.Windows.Forms.TabControl();
             this.tabText_Edit = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tableLayoutDevEditText = new System.Windows.Forms.TableLayoutPanel();
-            this.lblEditTextControlName = new System.Windows.Forms.Label();
-            this.lblEditTextEnglish = new System.Windows.Forms.Label();
-            this.lblEditTextRomanian = new System.Windows.Forms.Label();
-            this.btnEditTextRefresh = new System.Windows.Forms.Button();
             this.btnEditTextApply = new System.Windows.Forms.Button();
+            this.btnEditTextRefresh = new System.Windows.Forms.Button();
+            this.tableLayoutDevEditText = new System.Windows.Forms.TableLayoutPanel();
+            this.lblEditTextRomanian = new System.Windows.Forms.Label();
+            this.lblEditTextEnglish = new System.Windows.Forms.Label();
+            this.lblEditTextControlName = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.TabControlDevs.SuspendLayout();
             this.tabText_Edit.SuspendLayout();
             this.tableLayoutDevEditText.SuspendLayout();
@@ -65,15 +65,27 @@
             this.tabText_Edit.Text = "Edit Text";
             this.tabText_Edit.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // btnEditTextApply
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.btnEditTextApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEditTextApply.Location = new System.Drawing.Point(612, 589);
+            this.btnEditTextApply.Name = "btnEditTextApply";
+            this.btnEditTextApply.Size = new System.Drawing.Size(75, 23);
+            this.btnEditTextApply.TabIndex = 2;
+            this.btnEditTextApply.Text = "Apply";
+            this.btnEditTextApply.UseVisualStyleBackColor = false;
+            this.btnEditTextApply.Click += new System.EventHandler(this.btnEditTextApply_Click);
+            // 
+            // btnEditTextRefresh
+            // 
+            this.btnEditTextRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEditTextRefresh.Location = new System.Drawing.Point(693, 589);
+            this.btnEditTextRefresh.Name = "btnEditTextRefresh";
+            this.btnEditTextRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnEditTextRefresh.TabIndex = 1;
+            this.btnEditTextRefresh.Text = "Refresh";
+            this.btnEditTextRefresh.UseVisualStyleBackColor = false;
+            this.btnEditTextRefresh.Click += new System.EventHandler(this.btnEditTextRefresh_Click);
             // 
             // tableLayoutDevEditText
             // 
@@ -93,17 +105,17 @@
             this.tableLayoutDevEditText.Size = new System.Drawing.Size(761, 576);
             this.tableLayoutDevEditText.TabIndex = 0;
             // 
-            // lblEditTextControlName
+            // lblEditTextRomanian
             // 
-            this.lblEditTextControlName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblEditTextRomanian.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEditTextControlName.AutoSize = true;
-            this.lblEditTextControlName.Location = new System.Drawing.Point(3, 0);
-            this.lblEditTextControlName.Name = "lblEditTextControlName";
-            this.lblEditTextControlName.Size = new System.Drawing.Size(247, 13);
-            this.lblEditTextControlName.TabIndex = 0;
-            this.lblEditTextControlName.Text = "Control Name";
-            this.lblEditTextControlName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblEditTextRomanian.AutoSize = true;
+            this.lblEditTextRomanian.Location = new System.Drawing.Point(509, 0);
+            this.lblEditTextRomanian.Name = "lblEditTextRomanian";
+            this.lblEditTextRomanian.Size = new System.Drawing.Size(249, 13);
+            this.lblEditTextRomanian.TabIndex = 2;
+            this.lblEditTextRomanian.Text = "Romanian";
+            this.lblEditTextRomanian.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblEditTextEnglish
             // 
@@ -117,39 +129,27 @@
             this.lblEditTextEnglish.Text = "English";
             this.lblEditTextEnglish.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lblEditTextRomanian
+            // lblEditTextControlName
             // 
-            this.lblEditTextRomanian.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblEditTextControlName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEditTextRomanian.AutoSize = true;
-            this.lblEditTextRomanian.Location = new System.Drawing.Point(509, 0);
-            this.lblEditTextRomanian.Name = "lblEditTextRomanian";
-            this.lblEditTextRomanian.Size = new System.Drawing.Size(249, 13);
-            this.lblEditTextRomanian.TabIndex = 2;
-            this.lblEditTextRomanian.Text = "Romanian";
-            this.lblEditTextRomanian.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblEditTextControlName.AutoSize = true;
+            this.lblEditTextControlName.Location = new System.Drawing.Point(3, 0);
+            this.lblEditTextControlName.Name = "lblEditTextControlName";
+            this.lblEditTextControlName.Size = new System.Drawing.Size(247, 13);
+            this.lblEditTextControlName.TabIndex = 0;
+            this.lblEditTextControlName.Text = "Control Name";
+            this.lblEditTextControlName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btnEditTextRefresh
+            // tabPage2
             // 
-            this.btnEditTextRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEditTextRefresh.Location = new System.Drawing.Point(693, 589);
-            this.btnEditTextRefresh.Name = "btnEditTextRefresh";
-            this.btnEditTextRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnEditTextRefresh.TabIndex = 1;
-            this.btnEditTextRefresh.Text = "Refresh";
-            this.btnEditTextRefresh.UseVisualStyleBackColor = false;
-            this.btnEditTextRefresh.Click += new System.EventHandler(this.btnEditTextRefresh_Click);
-            // 
-            // btnEditTextApply
-            // 
-            this.btnEditTextApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEditTextApply.Location = new System.Drawing.Point(612, 589);
-            this.btnEditTextApply.Name = "btnEditTextApply";
-            this.btnEditTextApply.Size = new System.Drawing.Size(75, 23);
-            this.btnEditTextApply.TabIndex = 2;
-            this.btnEditTextApply.Text = "Apply";
-            this.btnEditTextApply.UseVisualStyleBackColor = false;
-            this.btnEditTextApply.Click += new System.EventHandler(this.btnEditTextApply_Click);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(774, 618);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Dev_Tools
             // 

@@ -17,6 +17,9 @@ namespace IQP_Tester
         public const AnchorStyles STANDARD_ANCHOR = AnchorStyles.Top | AnchorStyles.Left;
         public const ContentAlignment TITLE_ALIGN = ContentAlignment.MiddleCenter;
         public const ContentAlignment STANDARD_ALIGN = ContentAlignment.TopLeft;
+        public const HorizontalAlignment TB_STANDARD = HorizontalAlignment.Left;
+        public const ScrollBars TB_SCROLLBARS = ScrollBars.Vertical;
+        public const int FONT_HEIGHT_OFFSET = 5;
 
         public System.Windows.Forms.Label Get_Title_Label(string title, string name)
         {
@@ -43,6 +46,35 @@ namespace IQP_Tester
             label.Font = new Font(label.Font.FontFamily, font);
 
             return label;
+        }
+
+        public TextBox Get_Textbox(string text, string name, int width, float font, AnchorStyles anchor, HorizontalAlignment align, ScrollBars scrollbar)
+        {
+            TextBox textbox = new TextBox();
+
+            textbox.Location = new System.Drawing.Point(4, 1);
+            textbox.Name = name;
+            textbox.Size = new System.Drawing.Size(100, 20);
+            textbox.TabIndex = 1;
+            textbox.Text = text;
+            textbox.Anchor = anchor;
+            textbox.TextAlign = align;
+            textbox.Font = new Font(textbox.Font.FontFamily, font);
+            textbox.Multiline = true;
+            textbox.WordWrap = true;
+            textbox.Width = width;
+            textbox.ScrollBars = scrollbar;
+            
+            int lines = textbox.GetLineFromCharIndex(textbox.TextLength) + 1;
+            int height_of_one_line = textbox.Height;
+            textbox.Height = lines * height_of_one_line;
+
+            return textbox;
+        }
+
+        public TextBox Get_Textbox(string text, string name, int width)
+        {
+            return Get_Textbox(text, name, width, STANDARD_FONT_SIZE, STANDARD_ANCHOR, TB_STANDARD, TB_SCROLLBARS);
         }
 
         public void Set_Row_Heights(TableLayoutPanel table)
