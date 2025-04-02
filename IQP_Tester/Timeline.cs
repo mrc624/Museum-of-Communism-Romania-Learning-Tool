@@ -14,7 +14,7 @@ namespace IQP_Tester
     {
         TextManager textManager;
         Resize_Helper resize = new Resize_Helper();
-        Polaroid_Zoom_Helper polaroid_Zoom_Helper = new Polaroid_Zoom_Helper();
+        Polaroid_Helper polaroid_Zoom_Helper = new Polaroid_Helper();
         Open_Close_Helper openClose = new Open_Close_Helper();
 
         public Timeline(TextManager textMan, Open_Close_Helper open_close)

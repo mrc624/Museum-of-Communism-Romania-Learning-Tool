@@ -19,8 +19,6 @@ namespace IQP_Tester
         TableLayout_Helper tableLayout_Helper = new TableLayout_Helper();
         Citation_Helper citation_Helper;
 
-        List<string> Members;
-
         public Credits(Citation_Helper citation_helper)
         {
             InitializeComponent();
