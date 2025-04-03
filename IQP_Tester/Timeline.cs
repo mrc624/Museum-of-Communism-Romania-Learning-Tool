@@ -91,7 +91,6 @@ namespace IQP_Tester
                 Point top_left = new Point(bottom_mid.X - (panel.Width / 2), bottom_mid.Y - panel.Height);
                 panel.Location = top_left;
                 Resize_Reposition_Line(bottom_mid, point, Panel_Lines[panel]);
-                label2.Text = "Panel: " + panel.Location.X.ToString() + ", " + panel.Location.Y.ToString();
             }
             else if (position == Position.Bottom)
             {
@@ -99,9 +98,7 @@ namespace IQP_Tester
                 Point top_left = new Point(top_mid.X - (panel.Width / 2), top_mid.Y);
                 panel.Location = top_left;
                 Resize_Reposition_Line(top_mid, point, Panel_Lines[panel]);
-                label2.Text = "Panel: " + panel.Location.X.ToString() + ", " + panel.Location.Y.ToString();
             }
-            label1.Text = "Line: " + Panel_Lines[panel].Location.X.ToString() + ", " + Panel_Lines[panel].Location.Y.ToString();
         }
 
         private Point Get_Point_From_Year(int year, Position position)
@@ -163,33 +160,6 @@ namespace IQP_Tester
                 }
             } // if all if statements fail the line is not a straight line
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         private void ThenAndNow_Resize(object sender, EventArgs e)
         {
