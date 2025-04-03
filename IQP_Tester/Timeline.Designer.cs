@@ -51,7 +51,7 @@
             // panelTesting
             // 
             this.panelTesting.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelTesting.Location = new System.Drawing.Point(332, 718);
+            this.panelTesting.Location = new System.Drawing.Point(28, 189);
             this.panelTesting.Name = "panelTesting";
             this.panelTesting.Size = new System.Drawing.Size(188, 213);
             this.panelTesting.TabIndex = 10;
@@ -69,9 +69,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(423, 131);
+            this.panel1.Location = new System.Drawing.Point(111, 408);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.Size = new System.Drawing.Size(19, 127);
             this.panel1.TabIndex = 11;
             // 
             // Timeline

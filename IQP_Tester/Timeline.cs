@@ -27,6 +27,7 @@ namespace IQP_Tester
         public static Color Line_Color = Color.Black;
 
         Dictionary<Panel, Panel> Panel_Lines = new Dictionary<Panel, Panel>();
+        Dictionary<Control, Rectangle> Originals = new Dictionary<Control, Rectangle>();
 
         public enum Position
         {
@@ -43,6 +44,7 @@ namespace IQP_Tester
             InitializeComponent();
             openClose = open_close;
             textManager = textMan;
+            Capture_Original_Size_Location(this);
             Assign_Lines_To_Panels();
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
@@ -81,10 +83,14 @@ namespace IQP_Tester
             return line.BackColor == Line_Color;
         }
 
-        private void Place_Panel_At_Year(Panel panel, int year, Position position, int vertical_offset)
+        private void Place_Panel_With_Line_At_Year(Panel panel, int year, Position position)
         {
             Point point = Get_Point_From_Year(year, position);
-
+            int vertical_offset = Get_Vertical_Offset(pbTimeLine, panel);
+            if (vertical_offset < 0)
+            {
+                return;
+            }
             if (position == Position.Top)
             {
                 Point bottom_mid = new Point(point.X, point.Y - vertical_offset);
@@ -98,6 +104,67 @@ namespace IQP_Tester
                 Point top_left = new Point(top_mid.X - (panel.Width / 2), top_mid.Y);
                 panel.Location = top_left;
                 Resize_Reposition_Line(top_mid, point, Panel_Lines[panel]);
+            }
+        }
+
+        private int Get_Vertical_Offset(Control timeline, Panel panel)
+        {
+            int original_offset = 0;
+            if (Originals[timeline].Location.Y > Originals[panel].Location.Y)
+            {
+                original_offset = Originals[timeline].Location.Y - (Originals[panel].Location.Y + Originals[panel].Height);
+            }
+            else if (Originals[timeline].Location.Y + Originals[timeline].Height < Originals[panel].Location.Y)
+            {
+                original_offset = Originals[panel].Location.Y - (Originals[timeline].Location.Y + Originals[timeline].Height);
+            }
+            else
+            {
+                return 0;
+            }
+
+            if (timeline.Location.Y > panel.Location.Y)
+            {
+                int height_change = panel.Height - Originals[panel].Height;
+                int offset = original_offset - height_change;
+                if (offset < 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return offset;
+                }
+            }
+            else if (timeline.Location.Y + timeline.Height < panel.Location.Y)
+            {
+                int height_change = timeline.Height - Originals[timeline].Height;
+                int offset = original_offset - height_change;
+                if (offset < 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return offset;
+                }
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        private void Capture_Original_Size_Location(Control control)
+        {
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                Rectangle rectange = control.Controls[i].Bounds;
+                Originals[control.Controls[i]] = rectange;
+                if (Controls[i].HasChildren)
+                {
+                    Capture_Original_Size_Location(Controls[i]);
+                }
             }
         }
 
@@ -166,9 +233,8 @@ namespace IQP_Tester
             resize.Handle_Resize(this);
 
             resize.Center_X_Y(pbTimeLine);
-            resize.Reposition(panelTesting);
 
-            Place_Panel_At_Year(panelTesting, 1956, Position.Top, panelTesting.Location.Y - pbTimeLine.Location.Y);
+            Place_Panel_With_Line_At_Year(panelTesting, 1956, Position.Top);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
