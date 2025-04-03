@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static IQP_Tester.TextManager;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace IQP_Tester
 {
@@ -76,7 +77,7 @@ namespace IQP_Tester
             {
                 Dictionary<string, string> controls = text[languages[i]];
                 List<string> names = controls.Keys.ToList();
-                for (int j = 0; j < names.Count; j++)
+                for (int j = 0; j < names.Count; j++) // count is amount of keys that have dictionaries corresponding with them
                 {
                     string control_name = names[j];
                     string control_text = controls[control_name];
@@ -90,6 +91,31 @@ namespace IQP_Tester
                 }
             }
             return reformatted;
+        }
+
+        private Dictionary<string, Dictionary<string, string>> Convert_Reformatted(Dictionary<string, Dictionary<string, string>> reformatted)
+        {
+            Dictionary<string, Dictionary<string, string>> text = new Dictionary<string, Dictionary<string, string>>();
+
+            List<string> control_names = reformatted.Keys.ToList();
+            for (int i = 0; i < control_names.Count; i++)
+            {
+                Dictionary<string, string> languages = reformatted[control_names[i]];
+                List<string> language = languages.Keys.ToList();
+                for (int j = 0; j < language.Count; j++) // count is amount of keys that have dictionaries corresponding with them
+                {
+                    string lang = language[j];
+                    string control_text = languages[lang];
+
+                    if (!text.ContainsKey(lang))
+                    {
+                        text[lang] = new Dictionary<string, string>();
+                    }
+
+                    text[lang][control_names[i]] = control_text;
+                }
+            }
+            return text;
         }
 
         private Dictionary<string, Dictionary<string, string>> Put_Table_Into_Reformatted_Dictionary()
@@ -110,7 +136,8 @@ namespace IQP_Tester
 
         private void btnEditTextApply_Click(object sender, EventArgs e)
         {
-            
+            Dictionary<string, Dictionary<string, string>> reformatted = Put_Table_Into_Reformatted_Dictionary();
+            Dictionary<string, Dictionary<string, string>> text = Convert_Reformatted(reformatted);
         }
 
         private void btnEditTextRefresh_Click(object sender, EventArgs e)
