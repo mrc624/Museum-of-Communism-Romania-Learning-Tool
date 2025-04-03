@@ -30,7 +30,7 @@ namespace IQP_Tester
         public const int DEFAULT_LINE_Y = 0;
         public const string LINE_NAME = "line";
         public int INVALID_LINE = -1;
-        public static Color Line_Color = Color.Black;
+        private static readonly Color Line_Color = Color.Black;
 
         Dictionary<Control, Panel> Lines_Assignments = new Dictionary<Control, Panel>();
         Dictionary<Control, Rectangle> Originals = new Dictionary<Control, Rectangle>();
@@ -49,7 +49,7 @@ namespace IQP_Tester
         {
             InitializeComponent();
             Make_Assign_Lines(this);
-             openClose = open_close;
+            openClose = open_close;
             textManager = textMan;
             Capture_Original_Size_Location(this);
             textManager.Update_One_Form(this);
@@ -75,14 +75,14 @@ namespace IQP_Tester
                 Control control = form.Controls[i];
                 if (control is Panel || control is Label)
                 {
-                    Panel line = Get_Line(LINE_NAME + i.ToString(), Line_Color);
+                    Panel line = Get_Line(LINE_NAME + i.ToString());
                     this.Controls.Add(line);
                     Lines_Assignments[control] = line;
                 }
             }
         }
 
-        private Panel Get_Line(string name, Color back_color, int x = DEFAULT_LINE_X, int y = DEFAULT_LINE_Y, int width = LINE_WIDTH, int height = DEFAULT_LINE_HEIGHT)
+        private Panel Get_Line(string name, int x = DEFAULT_LINE_X, int y = DEFAULT_LINE_Y, int width = LINE_WIDTH, int height = DEFAULT_LINE_HEIGHT)
         {
             Panel panel = new Panel();
 
@@ -90,7 +90,7 @@ namespace IQP_Tester
             panel.Name = name;
             panel.Size = new System.Drawing.Size(width, height);
             panel.TabIndex = this.Controls.Count;
-            panel.BackColor = back_color;
+            panel.BackColor = Line_Color;
 
             return panel;
         }
