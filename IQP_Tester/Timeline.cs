@@ -99,6 +99,7 @@ namespace IQP_Tester
                 Point top_left = new Point(top_mid.X - (panel.Width / 2), top_mid.Y);
                 panel.Location = top_left;
                 Resize_Reposition_Line(top_mid, point, Panel_Lines[panel]);
+                label2.Text = "Panel: " + panel.Location.X.ToString() + ", " + panel.Location.Y.ToString();
             }
             label1.Text = "Line: " + Panel_Lines[panel].Location.X.ToString() + ", " + Panel_Lines[panel].Location.Y.ToString();
         }
@@ -130,11 +131,11 @@ namespace IQP_Tester
                 line.Size = new System.Drawing.Size(LINE_WIDTH, Math.Abs(to.Y - from.Y));
                 int line_x =  from.X - (LINE_WIDTH / 2);
                 Point line_point = new Point(line_x, INVALID_LINE);
-                if (from.Y > to.Y)
+                if (from.Y < to.Y)
                 {
                     line_point.Y = from.Y;
                 }
-                else if (from.Y < to.Y)
+                else if (from.Y > to.Y)
                 {
                     line_point.Y = to.Y;
                 }
