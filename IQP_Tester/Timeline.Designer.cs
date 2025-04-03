@@ -162,7 +162,7 @@
             this.tableLayoutAna.RowCount = 2;
             this.tableLayoutAna.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutAna.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutAna.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutAna.Size = new System.Drawing.Size(237, 119);
             this.tableLayoutAna.TabIndex = 9;
             // 
             // lblAnaQ
@@ -212,9 +212,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(987, 395);
+            this.panel5.Location = new System.Drawing.Point(987, 472);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(19, 127);
+            this.panel5.Size = new System.Drawing.Size(23, 50);
             this.panel5.TabIndex = 20;
             // 
             // panelWarsaw
@@ -222,9 +222,9 @@
             this.panelWarsaw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelWarsaw.Controls.Add(this.tableLayoutWarsaw);
             this.panelWarsaw.Controls.Add(this.pbWarsaw);
-            this.panelWarsaw.Location = new System.Drawing.Point(860, 72);
+            this.panelWarsaw.Location = new System.Drawing.Point(864, 125);
             this.panelWarsaw.Name = "panelWarsaw";
-            this.panelWarsaw.Size = new System.Drawing.Size(268, 314);
+            this.panelWarsaw.Size = new System.Drawing.Size(268, 341);
             this.panelWarsaw.TabIndex = 19;
             // 
             // tableLayoutWarsaw
@@ -238,7 +238,7 @@
             this.tableLayoutWarsaw.RowCount = 2;
             this.tableLayoutWarsaw.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutWarsaw.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutWarsaw.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutWarsaw.Size = new System.Drawing.Size(237, 146);
             this.tableLayoutWarsaw.TabIndex = 9;
             // 
             // lblWarsawQ
@@ -306,7 +306,7 @@
             this.tableLayoutJuly.RowCount = 2;
             this.tableLayoutJuly.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutJuly.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutJuly.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutJuly.Size = new System.Drawing.Size(237, 119);
             this.tableLayoutJuly.TabIndex = 9;
             // 
             // lblJulyQ
@@ -358,9 +358,9 @@
             this.panelHousePeople.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelHousePeople.Controls.Add(this.tableLayoutHousePeople);
             this.panelHousePeople.Controls.Add(this.pbHousePeople);
-            this.panelHousePeople.Location = new System.Drawing.Point(964, 715);
+            this.panelHousePeople.Location = new System.Drawing.Point(779, 674);
             this.panelHousePeople.Name = "panelHousePeople";
-            this.panelHousePeople.Size = new System.Drawing.Size(268, 314);
+            this.panelHousePeople.Size = new System.Drawing.Size(268, 340);
             this.panelHousePeople.TabIndex = 23;
             // 
             // tableLayoutHousePeople
@@ -374,7 +374,7 @@
             this.tableLayoutHousePeople.RowCount = 2;
             this.tableLayoutHousePeople.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutHousePeople.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutHousePeople.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutHousePeople.Size = new System.Drawing.Size(237, 133);
             this.tableLayoutHousePeople.TabIndex = 9;
             // 
             // lblHousePeopleQ
