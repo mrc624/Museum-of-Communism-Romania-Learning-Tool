@@ -43,23 +43,23 @@ namespace IQP_Tester
 
             tableLayoutDevEditText.CellBorderStyle = LOADING;
 
-            for (int i = ROWS_TO_SKIP; i < controls.Count; i++)
+            for (int i = 0; i < controls.Count; i++)
             {
                 tableLayoutDevEditText.RowCount++;
-
+                int row = i + ROWS_TO_SKIP;
                 string control_name = controls[i];
-                Label control = tableLayout_Helper.Get_Standard_Label(control_name, control_name + i.ToString());
-                tableLayoutDevEditText.Controls.Add(control, CONTROL_NAME_COLUMN, i);
+                Label control = tableLayout_Helper.Get_Standard_Label(control_name, control_name);
+                tableLayoutDevEditText.Controls.Add(control, CONTROL_NAME_COLUMN, row);
                 
                 string english_text = reformatted[control_name][textManager.language_to_string[(int)TextManager.Language.English]];
                 int eng_width = tableLayoutDevEditText.GetColumnWidths()[ENGLISH_COLUMN];
                 TextBox english = tableLayout_Helper.Get_Textbox(english_text, ENGLISH_NAME + i.ToString(), eng_width);
-                tableLayoutDevEditText.Controls.Add(english, ENGLISH_COLUMN, i);
+                tableLayoutDevEditText.Controls.Add(english, ENGLISH_COLUMN, row);
 
                 string romanian_text = reformatted[control_name][textManager.language_to_string[(int)TextManager.Language.Romanian]];
                 int rom_width = tableLayoutDevEditText.GetColumnWidths()[ROMANIAN_COLUMN];
                 TextBox romanian = tableLayout_Helper.Get_Textbox(romanian_text, ROMANIAN_NAME + i.ToString(), rom_width);
-                tableLayoutDevEditText.Controls.Add(romanian, ROMANIAN_COLUMN, i);
+                tableLayoutDevEditText.Controls.Add(romanian, ROMANIAN_COLUMN, row);
                 
             }
             tableLayout_Helper.Set_Row_Heights(tableLayoutDevEditText);
@@ -138,6 +138,10 @@ namespace IQP_Tester
         {
             Dictionary<string, Dictionary<string, string>> reformatted = Put_Table_Into_Reformatted_Dictionary();
             Dictionary<string, Dictionary<string, string>> text = Convert_Reformatted(reformatted);
+            if (text != null)
+            {
+                textManager.Overwrite_JSON(text, TextManager.TEXT_MANAGER_FILE_NAME);
+            }
         }
 
         private void btnEditTextRefresh_Click(object sender, EventArgs e)

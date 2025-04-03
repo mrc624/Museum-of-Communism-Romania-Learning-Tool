@@ -57,9 +57,13 @@ namespace IQP_Tester
                 Add_Form_Text(Forms[i], text);
             }
 
+            Overwrite_JSON(text, file_name);
+        }
+
+        public void Overwrite_JSON(Dictionary<string, Dictionary<string, string>> text, string file_name)
+        {
             string updated = JsonSerializer.Serialize(text, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(file_name, updated, Encoding.UTF8);
-
         }
 
         private void Add_Form_Text(Form form, Dictionary<string, Dictionary<string, string>> text)
