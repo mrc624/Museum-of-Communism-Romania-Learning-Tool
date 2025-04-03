@@ -5,9 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static IQP_Tester.Timeline;
 
 namespace IQP_Tester
 {
@@ -18,22 +20,26 @@ namespace IQP_Tester
         Resize_Helper resize = new Resize_Helper();
         Polaroid_Helper polaroid_Helper = new Polaroid_Helper();
         Click_Helper click_Helper = new Click_Helper();
+        TableLayout_Helper tableLayoutHelper = new TableLayout_Helper();
 
         RegimeFall regimeFall;
 
         public const int START_YEAR = 1947;
         public const int END_YEAR = 1989;
+        public const int TICKS_EVERY = 10;
         public const int YEAR_RANGE = END_YEAR - START_YEAR;
         public const int LINE_WIDTH = 3;
         public const int DEFAULT_LINE_HEIGHT = 0;
         public const int DEFAULT_LINE_X = 0;
         public const int DEFAULT_LINE_Y = 0;
         public const string LINE_NAME = "line";
+        public const string YEAR_LABEL_NAME = "year";
         public int INVALID_LINE = -1;
         private static readonly Color Line_Color = Color.Black;
 
         Dictionary<Control, Panel> Lines_Assignments = new Dictionary<Control, Panel>();
         Dictionary<Control, Rectangle> Originals = new Dictionary<Control, Rectangle>();
+        List<Label> Year_Labels = new List<Label>();
 
         public enum Position
         {
@@ -48,6 +54,7 @@ namespace IQP_Tester
         public Timeline(TextManager textMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
+            Make_Year_Lables(this);
             Make_Assign_Lines(this);
             openClose = open_close;
             textManager = textMan;
@@ -79,6 +86,28 @@ namespace IQP_Tester
                     this.Controls.Add(line);
                     Lines_Assignments[control] = line;
                 }
+            }
+        }
+
+        private void Make_Year_Lables(Form form)
+        {
+            int remainder_start = START_YEAR % TICKS_EVERY;
+            int add_to_start = TICKS_EVERY - remainder_start;
+            int start_ticks = START_YEAR + add_to_start;
+            
+            int remainder_end = END_YEAR % TICKS_EVERY;
+            int subtract_from_end = TICKS_EVERY - remainder_end;
+            int end_ticks = END_YEAR - subtract_from_end;
+
+            int ticks = ((end_ticks - start_ticks) / TICKS_EVERY) + 1;
+
+            for (int i = 0; i < ticks; i++)
+            {
+                int year = start_ticks + (i * TICKS_EVERY);
+                Label label = tableLayoutHelper.Get_Label(year.ToString(), YEAR_LABEL_NAME + i.ToString(), TableLayout_Helper.STANDARD_FONT_SIZE, TableLayout_Helper.STANDARD_ANCHOR, TableLayout_Helper.STANDARD_ALIGN);
+                Year_Labels.Add(label);
+                this.Controls.Add(label);
+
             }
         }
 
@@ -134,6 +163,41 @@ namespace IQP_Tester
                     panel.Location = top_left;
                     Resize_Reposition_Line(top_mid, point, Lines_Assignments[panel]);
                 }
+            }
+        }
+
+        private void Place_Labels_And_Ticks()
+        {
+            int remainder_start = START_YEAR % TICKS_EVERY;
+            int add_to_start = TICKS_EVERY - remainder_start;
+            int start_ticks = START_YEAR + add_to_start;
+            for (int i = 0; i < Year_Labels.Count; i++)
+            {
+                Place_Label_With_Tick_At_Year(Year_Labels[i], start_ticks + (i * TICKS_EVERY));
+            }
+        }
+
+        private void Place_Label_With_Tick_At_Year(Label label, int year)
+        {
+            if (year < START_YEAR)
+            {
+                label.Location = new Point(0, 0);
+                label.Visible = false;
+            }
+            else if (year > END_YEAR)
+            {
+                label.Location = new Point(0, 0);
+                label.Visible = false;
+            }
+            else
+            {
+                Point point_top = Get_Point_From_Year(year, Position.Top);
+                Point point_bottom = Get_Point_From_Year(year, Position.Bottom);
+                int middle_y = (point_top.Y + point_bottom.Y) / 2;
+                label.Location = new Point(point_top.X - (label.Width / 2), middle_y - (label.Height / 2));
+                Resize_Reposition_Line(point_top, point_bottom, Lines_Assignments[label]);
+                Lines_Assignments[label].BringToFront();
+                label.BringToFront();
             }
         }
 
@@ -268,6 +332,7 @@ namespace IQP_Tester
             Place_Panel_With_Line_At_Year(panelJuly, 1971, Position.Top);
             Place_Panel_With_Line_At_Year(panelHousePeople, 1984, Position.Bottom);
             Place_Panel_With_Line_At_Year(panelRegimeFall, 1989, Position.Top);
+            Place_Labels_And_Ticks();
 
             resize.Center_X(pbRevolution);
             resize.Center_to_Other_Control(lblHowDidTheRegimeFall, pbRevolution, Resize_Helper.Centering_Options.to_top);
