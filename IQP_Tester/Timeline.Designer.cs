@@ -34,26 +34,21 @@
             this.lblHowDidTheRegimeFall = new System.Windows.Forms.Label();
             this.pbRevolution = new System.Windows.Forms.PictureBox();
             this.panelRegimeFall = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelAna = new System.Windows.Forms.Panel();
             this.tableLayoutAna = new System.Windows.Forms.TableLayoutPanel();
             this.lblAnaQ = new System.Windows.Forms.Label();
             this.lblAnaAns = new System.Windows.Forms.Label();
             this.pbAna = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panelWarsaw = new System.Windows.Forms.Panel();
             this.tableLayoutWarsaw = new System.Windows.Forms.TableLayoutPanel();
             this.lblWarsawQ = new System.Windows.Forms.Label();
             this.lblWarsawAns = new System.Windows.Forms.Label();
             this.pbWarsaw = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panelJuly = new System.Windows.Forms.Panel();
             this.tableLayoutJuly = new System.Windows.Forms.TableLayoutPanel();
             this.lblJulyQ = new System.Windows.Forms.Label();
             this.lblJulyAns = new System.Windows.Forms.Label();
             this.pbJuly = new System.Windows.Forms.PictureBox();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panelHousePeople = new System.Windows.Forms.Panel();
             this.tableLayoutHousePeople = new System.Windows.Forms.TableLayoutPanel();
             this.lblHousePeopleQ = new System.Windows.Forms.Label();
@@ -133,14 +128,6 @@
             this.panelRegimeFall.TabIndex = 12;
             this.panelRegimeFall.Click += new System.EventHandler(this.panelRegimeFall_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(1716, 395);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(19, 127);
-            this.panel2.TabIndex = 13;
-            // 
             // panelAna
             // 
             this.panelAna.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -200,22 +187,6 @@
             this.pbAna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbAna.TabIndex = 0;
             this.pbAna.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(693, 390);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(19, 127);
-            this.panel4.TabIndex = 18;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(987, 472);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(23, 50);
-            this.panel5.TabIndex = 20;
             // 
             // panelWarsaw
             // 
@@ -277,14 +248,6 @@
             this.pbWarsaw.TabIndex = 0;
             this.pbWarsaw.TabStop = false;
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Location = new System.Drawing.Point(1291, 411);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(19, 127);
-            this.panel6.TabIndex = 22;
-            // 
             // panelJuly
             // 
             this.panelJuly.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -344,14 +307,6 @@
             this.pbJuly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbJuly.TabIndex = 0;
             this.pbJuly.TabStop = false;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Black;
-            this.panel7.Location = new System.Drawing.Point(1072, 674);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(19, 127);
-            this.panel7.TabIndex = 24;
             // 
             // panelHousePeople
             // 
@@ -418,15 +373,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panelHousePeople);
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panelJuly);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelWarsaw);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelAna);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelRegimeFall);
             this.Controls.Add(this.pbTimeLine);
             this.Controls.Add(this.btnLanguage);
@@ -466,26 +416,21 @@
         private System.Windows.Forms.Label lblHowDidTheRegimeFall;
         private System.Windows.Forms.PictureBox pbRevolution;
         private System.Windows.Forms.Panel panelRegimeFall;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelAna;
         private System.Windows.Forms.TableLayoutPanel tableLayoutAna;
         private System.Windows.Forms.Label lblAnaQ;
         private System.Windows.Forms.Label lblAnaAns;
         private System.Windows.Forms.PictureBox pbAna;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panelWarsaw;
         private System.Windows.Forms.TableLayoutPanel tableLayoutWarsaw;
         private System.Windows.Forms.Label lblWarsawQ;
         private System.Windows.Forms.Label lblWarsawAns;
         private System.Windows.Forms.PictureBox pbWarsaw;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panelJuly;
         private System.Windows.Forms.TableLayoutPanel tableLayoutJuly;
         private System.Windows.Forms.Label lblJulyQ;
         private System.Windows.Forms.Label lblJulyAns;
         private System.Windows.Forms.PictureBox pbJuly;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panelHousePeople;
         private System.Windows.Forms.TableLayoutPanel tableLayoutHousePeople;
         private System.Windows.Forms.Label lblHousePeopleQ;

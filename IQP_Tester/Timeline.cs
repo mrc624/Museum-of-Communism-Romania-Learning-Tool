@@ -25,11 +25,14 @@ namespace IQP_Tester
         public const int END_YEAR = 1989;
         public const int YEAR_RANGE = END_YEAR - START_YEAR;
         public const int LINE_WIDTH = 3;
+        public const int DEFAULT_LINE_HEIGHT = 0;
+        public const int DEFAULT_LINE_X = 0;
+        public const int DEFAULT_LINE_Y = 0;
         public const string LINE_NAME = "line";
         public int INVALID_LINE = -1;
         public static Color Line_Color = Color.Black;
 
-        Dictionary<Panel, Panel> Panel_Lines = new Dictionary<Panel, Panel>();
+        Dictionary<Control, Panel> Lines_Assignments = new Dictionary<Control, Panel>();
         Dictionary<Control, Rectangle> Originals = new Dictionary<Control, Rectangle>();
 
         public enum Position
@@ -45,10 +48,10 @@ namespace IQP_Tester
         public Timeline(TextManager textMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
-            openClose = open_close;
+            Make_Assign_Lines(this);
+             openClose = open_close;
             textManager = textMan;
             Capture_Original_Size_Location(this);
-            Assign_Lines_To_Panels();
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
@@ -62,30 +65,34 @@ namespace IQP_Tester
             click_Helper.Assign_All_Children_To_Same_Click(panelRegimeFall, panelRegimeFall_Click);
         }
 
-        private void Assign_Lines_To_Panels()
+        private void Make_Assign_Lines(Form form)
         {
-            List<Panel> lines = new List<Panel>();
             List<Panel> panels = new List<Panel>();
-            for (int i = 0; i < this.Controls.Count; i++)
+            List<Label> labels = new List<Label>();
+            int control_count = form.Controls.Count;
+            for (int i = 0; i < control_count; i++)
             {
-                if (this.Controls[i] is Panel)
+                Control control = form.Controls[i];
+                if (control is Panel || control is Label)
                 {
-                    Panel panel = (Panel)this.Controls[i];
-                    if (Panel_Is_Line(panel))
-                    {
-                        lines.Add(panel);
-                    }
-                    else
-                    {
-                        panels.Add(panel);
-                    }
+                    Panel line = Get_Line(LINE_NAME + i.ToString(), Line_Color);
+                    this.Controls.Add(line);
+                    Lines_Assignments[control] = line;
                 }
             }
+        }
 
-            for (int i = 0; i < Math.Min(panels.Count, lines.Count); i++)
-            {
-                Panel_Lines[panels[i]] = lines[i];
-            }
+        private Panel Get_Line(string name, Color back_color, int x = DEFAULT_LINE_X, int y = DEFAULT_LINE_Y, int width = LINE_WIDTH, int height = DEFAULT_LINE_HEIGHT)
+        {
+            Panel panel = new Panel();
+
+            panel.Location = new System.Drawing.Point(x, y);
+            panel.Name = name;
+            panel.Size = new System.Drawing.Size(width, height);
+            panel.TabIndex = this.Controls.Count;
+            panel.BackColor = back_color;
+
+            return panel;
         }
 
         private bool Panel_Is_Line(Panel line)
@@ -98,12 +105,12 @@ namespace IQP_Tester
             if (year < START_YEAR)
             {
                 resize.Center_to_Other_Control(panel, pbTimeLine, Resize_Helper.Centering_Options.to_left);
-                Panel_Lines[panel].Visible = false;
+                Lines_Assignments[panel].Visible = false;
             }
             else if (year > END_YEAR)
             {
                 resize.Center_to_Other_Control(panel, pbTimeLine, Resize_Helper.Centering_Options.to_right);
-                Panel_Lines[panel].Visible = false;
+                Lines_Assignments[panel].Visible = false;
             }
             else
             {
@@ -118,14 +125,14 @@ namespace IQP_Tester
                     Point bottom_mid = new Point(point.X, point.Y - vertical_offset);
                     Point top_left = new Point(bottom_mid.X - (panel.Width / 2), bottom_mid.Y - panel.Height);
                     panel.Location = top_left;
-                    Resize_Reposition_Line(bottom_mid, point, Panel_Lines[panel]);
+                    Resize_Reposition_Line(bottom_mid, point, Lines_Assignments[panel]);
                 }
                 else if (position == Position.Bottom)
                 {
                     Point top_mid = new Point(point.X, point.Y + vertical_offset);
                     Point top_left = new Point(top_mid.X - (panel.Width / 2), top_mid.Y);
                     panel.Location = top_left;
-                    Resize_Reposition_Line(top_mid, point, Panel_Lines[panel]);
+                    Resize_Reposition_Line(top_mid, point, Lines_Assignments[panel]);
                 }
             }
         }
@@ -182,16 +189,8 @@ namespace IQP_Tester
         {
             for (int i = 0; i < control.Controls.Count; i++)
             {
-                if (control.Controls[i] is Panel || control.Controls[i] is PictureBox)
-                {
-                    Rectangle rectange = control.Controls[i].Bounds;
-                    Originals[control.Controls[i]] = rectange;
-                    string name = control.Controls[i].Name; // debug
-                }
-                if (control.Controls[i].HasChildren)
-                {
-                    Capture_Original_Size_Location(Controls[i]);
-                }
+                Rectangle rectange = control.Controls[i].Bounds;
+                Originals[control.Controls[i]] = rectange;
             }
         }
 
