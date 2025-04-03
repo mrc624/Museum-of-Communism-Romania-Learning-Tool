@@ -9,3 +9,7 @@ Should update close timer whenever the user interacts
 Make title page
 
 Upload Missing Interview Recordings
+
+Finish adding pictures
+
+Make some kind of lock so that when you open something you can't open more
