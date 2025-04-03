@@ -55,8 +55,8 @@
             // tabText_Edit
             // 
             this.tabText_Edit.Controls.Add(this.btnEditTextApply);
-            this.tabText_Edit.Controls.Add(this.btnEditTextRefresh);
             this.tabText_Edit.Controls.Add(this.tableLayoutDevEditText);
+            this.tabText_Edit.Controls.Add(this.btnEditTextRefresh);
             this.tabText_Edit.Location = new System.Drawing.Point(4, 22);
             this.tabText_Edit.Name = "tabText_Edit";
             this.tabText_Edit.Padding = new System.Windows.Forms.Padding(3);
@@ -97,9 +97,9 @@
             this.tableLayoutDevEditText.Controls.Add(this.lblEditTextRomanian, 2, 0);
             this.tableLayoutDevEditText.Controls.Add(this.lblEditTextEnglish, 1, 0);
             this.tableLayoutDevEditText.Controls.Add(this.lblEditTextControlName, 0, 0);
-            this.tableLayoutDevEditText.Location = new System.Drawing.Point(7, 7);
+            this.tableLayoutDevEditText.Location = new System.Drawing.Point(7, 3);
             this.tableLayoutDevEditText.Name = "tableLayoutDevEditText";
-            this.tableLayoutDevEditText.RowCount = 2;
+            this.tableLayoutDevEditText.RowCount = 1;
             this.tableLayoutDevEditText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.801653F));
             this.tableLayoutDevEditText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96.19835F));
             this.tableLayoutDevEditText.Size = new System.Drawing.Size(761, 576);
