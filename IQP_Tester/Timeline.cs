@@ -54,6 +54,7 @@ namespace IQP_Tester
             polaroid_Helper.Find_Polaroids(this);
             ThenAndNow_Resize(this, new EventArgs());
             Set_Panel_Clicks();
+            polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, open_close);
         }
 
         private void Set_Panel_Clicks()
@@ -94,25 +95,38 @@ namespace IQP_Tester
 
         private void Place_Panel_With_Line_At_Year(Panel panel, int year, Position position)
         {
-            Point point = Get_Point_From_Year(year, position);
-            int vertical_offset = Get_Vertical_Offset(pbTimeLine, panel);
-            if (vertical_offset < 0)
+            if (year < START_YEAR)
             {
-                return;
+                resize.Center_to_Other_Control(panel, pbTimeLine, Resize_Helper.Centering_Options.to_left);
+                Panel_Lines[panel].Visible = false;
             }
-            if (position == Position.Top)
+            else if (year > END_YEAR)
             {
-                Point bottom_mid = new Point(point.X, point.Y - vertical_offset);
-                Point top_left = new Point(bottom_mid.X - (panel.Width / 2), bottom_mid.Y - panel.Height);
-                panel.Location = top_left;
-                Resize_Reposition_Line(bottom_mid, point, Panel_Lines[panel]);
+                resize.Center_to_Other_Control(panel, pbTimeLine, Resize_Helper.Centering_Options.to_right);
+                Panel_Lines[panel].Visible = false;
             }
-            else if (position == Position.Bottom)
+            else
             {
-                Point top_mid = new Point(point.X, point.Y + vertical_offset);
-                Point top_left = new Point(top_mid.X - (panel.Width / 2), top_mid.Y);
-                panel.Location = top_left;
-                Resize_Reposition_Line(top_mid, point, Panel_Lines[panel]);
+                Point point = Get_Point_From_Year(year, position);
+                int vertical_offset = Get_Vertical_Offset(pbTimeLine, panel);
+                if (vertical_offset < 0)
+                {
+                    return;
+                }
+                if (position == Position.Top)
+                {
+                    Point bottom_mid = new Point(point.X, point.Y - vertical_offset);
+                    Point top_left = new Point(bottom_mid.X - (panel.Width / 2), bottom_mid.Y - panel.Height);
+                    panel.Location = top_left;
+                    Resize_Reposition_Line(bottom_mid, point, Panel_Lines[panel]);
+                }
+                else if (position == Position.Bottom)
+                {
+                    Point top_mid = new Point(point.X, point.Y + vertical_offset);
+                    Point top_left = new Point(top_mid.X - (panel.Width / 2), top_mid.Y);
+                    panel.Location = top_left;
+                    Resize_Reposition_Line(top_mid, point, Panel_Lines[panel]);
+                }
             }
         }
 
@@ -185,7 +199,7 @@ namespace IQP_Tester
         {
             Point point = new Point(0, 0);
             int pixels_per_year = pbTimeLine.Width / YEAR_RANGE;
-            int x = pixels_per_year * (year - START_YEAR);
+            int x = pixels_per_year * (year - START_YEAR) + pbTimeLine.Location.X;
             if (position == Position.Top)
             {
                 point = new Point(x, pbTimeLine.Location.Y);
@@ -247,7 +261,13 @@ namespace IQP_Tester
 
             resize.Center_X_Y(pbTimeLine);
 
-            Place_Panel_With_Line_At_Year(panelTesting, 1956, Position.Top);
+
+            polaroid_Helper.Reposition_Polaroids(polaroid_Helper.Polaroids);
+
+            Place_Panel_With_Line_At_Year(panelAna, 1947, Position.Top);
+            Place_Panel_With_Line_At_Year(panelWarsaw, 1969, Position.Bottom);
+            Place_Panel_With_Line_At_Year(panelJuly, 1971, Position.Top);
+            Place_Panel_With_Line_At_Year(panelHousePeople, 1984, Position.Bottom);
             Place_Panel_With_Line_At_Year(panelRegimeFall, 1989, Position.Top);
 
             resize.Center_X(pbRevolution);
@@ -280,7 +300,6 @@ namespace IQP_Tester
 
         private void panelRegimeFall_Click(object sender, EventArgs e)
         {
-            openClose.CloseAllForms();
             regimeFall = new RegimeFall(textManager, openClose);
             openClose.FadeIn(regimeFall);
         }

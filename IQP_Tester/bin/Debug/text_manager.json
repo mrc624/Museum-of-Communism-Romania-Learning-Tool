@@ -125,8 +125,18 @@
     "lblStolenHorseAnsPolLong": "My grandparents were in the countryside and had land. The communists took their land and they made sacrifices to buy it back from them. They had to give it away in a single day, everything they had, the cows, sheep, horses were not theirs, it belonged to the state and was no longer their property.\n\nMy grandparents had two horses - my grandfather loved them, and took care of them, and when he died in 1987, the communists came to the house and took the two horses, it was part of the family, but it wasn\u2019t ours.",
     "lblStolenHorseQ": "Grandpa\u0027s Horses",
     "lblStolenHorseAns": "My grandparents were in the countryside and had land. The communists took their land and they made sacrifices to buy it back from them...",
-    "label1": "86063, 478",
-    "label2": "Panel: 85970, 931"
+    "lblHousePeopleAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblHousePeopleQ": "Unknown",
+    "lblHousePeopleAns": "Unknown",
+    "lblJulyAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblJulyQ": "Unknown",
+    "lblJulyAns": "Unknown",
+    "lblWarsawAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblWarsawQ": "Unknown",
+    "lblWarsawAns": "Unknown",
+    "lblAnaAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblAnaQ": "Unknown",
+    "lblAnaAns": "Unknown"
   },
   "Romanian": {
     "lblOppression": "TRANSLATION NEEDED",
@@ -254,7 +264,17 @@
     "lblSchoolAnsPolLong": "EMPTY, USING OTHER ANS",
     "lblSchoolQ": "TRANSLATION NEEDED",
     "lblSchoolAns": "TRANSLATION NEEDED",
-    "label1": "TRANSLATION NEEDED",
-    "label2": "TRANSLATION NEEDED"
+    "lblHousePeopleAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblHousePeopleQ": "TRANSLATION NEEDED",
+    "lblHousePeopleAns": "TRANSLATION NEEDED",
+    "lblJulyAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblJulyQ": "TRANSLATION NEEDED",
+    "lblJulyAns": "TRANSLATION NEEDED",
+    "lblWarsawAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblWarsawQ": "TRANSLATION NEEDED",
+    "lblWarsawAns": "TRANSLATION NEEDED",
+    "lblAnaAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblAnaQ": "TRANSLATION NEEDED",
+    "lblAnaAns": "TRANSLATION NEEDED"
   }
 }

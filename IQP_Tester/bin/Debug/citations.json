@@ -143,6 +143,11 @@
     "pbStolenHorse": "NEED",
     "pbStopEngineers": "NEED",
     "pbTimeLine": "NEED",
-    "pbLine": "NEED"
+    "pbLine": "NEED",
+    "pbHousePeople": "NEED",
+    "pbJuly": "NEED",
+    "pbWarsaw": "NEED",
+    "pbAna": "NEED",
+    "pbStart": "NEED"
   }
 }
