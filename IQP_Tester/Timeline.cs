@@ -62,7 +62,7 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
-            ThenAndNow_Resize(this, new EventArgs());
+            Timeline_Resize(this, new EventArgs());
             Set_Panel_Clicks();
             polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, open_close);
         }
@@ -318,7 +318,7 @@ namespace IQP_Tester
             } // if all if statements fail the line is not a straight line
         }
 
-        private void ThenAndNow_Resize(object sender, EventArgs e)
+        private void Timeline_Resize(object sender, EventArgs e)
         {
             resize.Handle_Resize(this);
 
@@ -340,12 +340,12 @@ namespace IQP_Tester
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
 
-        private void ThenAndNow_Click(object sender, EventArgs e)
+        private void Timeline_Click(object sender, EventArgs e)
         {
             openClose.Close(this);
         }
 
-        private void ThenAndNow_Shown(object sender, EventArgs e)
+        private void Timeline_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
         }
@@ -357,7 +357,7 @@ namespace IQP_Tester
 
         private void btnLanguage_TextChanged(object sender, EventArgs e)
         {
-            ThenAndNow_Resize(this, new EventArgs());
+            Timeline_Resize(this, new EventArgs());
         }
 
         // Regime Fall

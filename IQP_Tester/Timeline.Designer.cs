@@ -382,9 +382,9 @@
             this.Controls.Add(this.btnLanguage);
             this.Name = "Timeline";
             this.Text = "Then_And_Now";
-            this.Shown += new System.EventHandler(this.ThenAndNow_Shown);
-            this.Click += new System.EventHandler(this.ThenAndNow_Click);
-            this.Resize += new System.EventHandler(this.ThenAndNow_Resize);
+            this.Shown += new System.EventHandler(this.Timeline_Shown);
+            this.Click += new System.EventHandler(this.Timeline_Click);
+            this.Resize += new System.EventHandler(this.Timeline_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pbTimeLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
             this.panelRegimeFall.ResumeLayout(false);
