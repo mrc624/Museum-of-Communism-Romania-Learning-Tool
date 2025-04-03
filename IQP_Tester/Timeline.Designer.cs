@@ -358,7 +358,7 @@
             this.panelHousePeople.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelHousePeople.Controls.Add(this.tableLayoutHousePeople);
             this.panelHousePeople.Controls.Add(this.pbHousePeople);
-            this.panelHousePeople.Location = new System.Drawing.Point(779, 674);
+            this.panelHousePeople.Location = new System.Drawing.Point(768, 703);
             this.panelHousePeople.Name = "panelHousePeople";
             this.panelHousePeople.Size = new System.Drawing.Size(268, 340);
             this.panelHousePeople.TabIndex = 23;
