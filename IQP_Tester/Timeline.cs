@@ -26,8 +26,8 @@ namespace IQP_Tester
         CeausescusRise ceausescusRise;
         SovietEra sovietEra;
 
-        public const int START_YEAR = 1947;
-        public const int END_YEAR = 1989;
+        public const int START_YEAR = 1940;
+        public const int END_YEAR = 1990;
         public const int TICKS_EVERY = 10;
         public const int YEAR_RANGE = END_YEAR - START_YEAR;
         public const int LINE_WIDTH = 3;
@@ -95,15 +95,9 @@ namespace IQP_Tester
 
         private void Make_Year_Lables(Form form)
         {
-            int remainder_start = START_YEAR % TICKS_EVERY;
-            int add_to_start = TICKS_EVERY - remainder_start;
-            int start_ticks = START_YEAR + add_to_start;
-            
-            int remainder_end = END_YEAR % TICKS_EVERY;
-            int subtract_from_end = TICKS_EVERY - remainder_end;
-            int end_ticks = END_YEAR - subtract_from_end;
+            int start_ticks = Get_Start_ticks();
 
-            int ticks = ((end_ticks - start_ticks) / TICKS_EVERY) + 1;
+            int ticks = ((Get_End_Ticks() - start_ticks) / TICKS_EVERY) + 1;
 
             for (int i = 0; i < ticks; i++)
             {
@@ -111,8 +105,29 @@ namespace IQP_Tester
                 Label label = tableLayoutHelper.Get_Label(year.ToString(), YEAR_LABEL_NAME + i.ToString(), TableLayout_Helper.STANDARD_FONT_SIZE, TableLayout_Helper.STANDARD_ANCHOR, TableLayout_Helper.STANDARD_ALIGN);
                 Year_Labels.Add(label);
                 this.Controls.Add(label);
-
             }
+        }
+
+        private int Get_Start_ticks()
+        {
+            int remainder_start = START_YEAR % TICKS_EVERY;
+            int add_to_start = TICKS_EVERY - remainder_start;
+            if (remainder_start <= 0)
+            {
+                add_to_start = 0;
+            }
+            return START_YEAR + add_to_start;
+        }
+
+        private int Get_End_Ticks()
+        {
+            int remainder_end = END_YEAR % TICKS_EVERY;
+            int subtract_from_end = TICKS_EVERY - remainder_end;
+            if (remainder_end <= 0)
+            {
+                subtract_from_end = 0;
+            }
+            return END_YEAR - subtract_from_end;
         }
 
         private Panel Get_Line(string name, int x = DEFAULT_LINE_X, int y = DEFAULT_LINE_Y, int width = LINE_WIDTH, int height = DEFAULT_LINE_HEIGHT)
@@ -172,9 +187,7 @@ namespace IQP_Tester
 
         private void Place_Labels_And_Ticks()
         {
-            int remainder_start = START_YEAR % TICKS_EVERY;
-            int add_to_start = TICKS_EVERY - remainder_start;
-            int start_ticks = START_YEAR + add_to_start;
+            int start_ticks = Get_Start_ticks();
             for (int i = 0; i < Year_Labels.Count; i++)
             {
                 Place_Label_With_Tick_At_Year(Year_Labels[i], start_ticks + (i * TICKS_EVERY));

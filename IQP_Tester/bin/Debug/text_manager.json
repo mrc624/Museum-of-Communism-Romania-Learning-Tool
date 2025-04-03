@@ -118,10 +118,6 @@
     "lblAnaAnsPolLong": "The Romanian Communist Party was founded on May 8th, 1921 (Chicina, 2023). After World War II, the party was influenced by the Soviet Union and its leader, Joseph Stalin. The communists slowly took control by using propaganda and taking advantage of other political parties\u2019 weaknesses (Chicina, 2023). Communism officially started in Romania in 1947, when King Michael I was forced to give up the throne and the country became a communist republic.\n\nAna Pauker was an intellectual and was the unofficial prime minister of Romania\u0027s communist party after WWII. She was a strong believer in Stalinist ideology, a totalitarian political regime lead by Joseph Stalin. The main policies of his regime were rapid induztrialization, cultural revoluetion, and a reorginization of agricultural output (Brown et al., 2018).\n\n While she supported Stalinism, she did not believe in collectivization and did allow for emigration of the Jewish population - something not seen in other communist leaders at the time. Pauker was the first woman to hold such a position in the Communist Party. In 1952, she was ousted of her position by Gheorghe Gheorghiu-Dej and was placed under arrest as a result due to the political risk she posed to Gheorghiu-Dej.",
     "lblAnaQ": "Who was Ana Pauker?",
     "lblAnaAns": "Communism started in Romania in 1947 with Ana Pauker as the unofficial leader of the party.",
-    "year0": "1950",
-    "year1": "1960",
-    "year2": "1970",
-    "year3": "1980",
     "lblHowDidTheRegimeFall": "How did the fall?",
     "lblWhereCeausescuAnsPolLong": "EMPTY, USING OTHER ANS",
     "lblWhereCeausescuAns": "Unknown",
@@ -148,7 +144,13 @@
     "lblMarxismAns": "Unknown",
     "lblPostWW2AnsPolLong": "EMPTY, USING OTHER ANS",
     "lblPostWW2Q": "Unknown",
-    "lblPostWW2Ans": "Unknown"
+    "lblPostWW2Ans": "Unknown",
+    "year5": "1990",
+    "year4": "1980",
+    "year3": "1970",
+    "year2": "1960",
+    "year1": "1950",
+    "year0": "1940"
   },
   "Romanian": {
     "lblOppression": "TRANSLATION NEEDED",
@@ -269,10 +271,6 @@
     "lblAnaAnsPolLong": "EMPTY, USING OTHER ANS",
     "lblAnaQ": "TRANSLATION NEEDED",
     "lblAnaAns": "TRANSLATION NEEDED",
-    "year0": "TRANSLATION NEEDED",
-    "year1": "TRANSLATION NEEDED",
-    "year2": "TRANSLATION NEEDED",
-    "year3": "TRANSLATION NEEDED",
     "lblHowDidTheRegimeFall": "TRANSLATION NEEDED",
     "lblWhereCeausescuAnsPolLong": "EMPTY, USING OTHER ANS",
     "lblWhereCeausescuAns": "TRANSLATION NEEDED",
@@ -299,6 +297,12 @@
     "lblMarxismAns": "TRANSLATION NEEDED",
     "lblPostWW2AnsPolLong": "EMPTY, USING OTHER ANS",
     "lblPostWW2Q": "TRANSLATION NEEDED",
-    "lblPostWW2Ans": "TRANSLATION NEEDED"
+    "lblPostWW2Ans": "TRANSLATION NEEDED",
+    "year4": "TRANSLATION NEEDED",
+    "year5": "TRANSLATION NEEDED",
+    "year3": "TRANSLATION NEEDED",
+    "year2": "TRANSLATION NEEDED",
+    "year1": "TRANSLATION NEEDED",
+    "year0": "TRANSLATION NEEDED"
   }
 }
