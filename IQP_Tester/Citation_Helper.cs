@@ -11,6 +11,7 @@ using static IQP_Tester.TextManager;
 using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms.VisualStyles;
+using System.Security.Policy;
 
 namespace IQP_Tester
 {
@@ -216,21 +217,7 @@ namespace IQP_Tester
                 string[] lines = File.ReadAllLines(BIBLIOGRAPH_TXT_FILE_NAME);
                 for (int i = 0; i < lines.Length; i++)
                 {
-                    string cite = lines[i];
-                    for (int j = INDENT_EVERY_CHAR; j < lines[i].Length; j+= INDENT_EVERY_CHAR)
-                    {
-                        if (lines[i].Length > INDENT_EVERY_CHAR)
-                        {
-                            if (cite.Substring(j - 1, 1).Equals(" ") || cite.Substring(j, 1).Equals(" "))
-                            {
-                                cite = cite.Substring(0, j) + INDENT + cite.Substring(j);
-                            }
-                            else
-                            {
-                                cite = cite.Substring(0, j) + "-" + INDENT + cite.Substring(j);
-                            }
-                        }
-                    }
+                    string cite = Format_Hanging_Indentation(lines[i]);
                     Citations[Citations_to_String[(int)Citation_Type.Informative_Texts]][Get_Citation_Shortened[(int)Citation_Type.Informative_Texts] + i.ToString()] = cite;
                 }
             }
@@ -241,6 +228,25 @@ namespace IQP_Tester
                     Citations[Citations_to_String[(int)Citation_Type.Informative_Texts]][Get_Citation_Shortened[(int)Citation_Type.Informative_Texts] + i.ToString()] = "NEED";
                 }
             }
+        }
+
+        public string Format_Hanging_Indentation(string citation, int indent_every = INDENT_EVERY_CHAR)
+        {
+            if (citation.Length > indent_every)
+            {
+                for (int i = INDENT_EVERY_CHAR; i < citation.Length; i += INDENT_EVERY_CHAR)
+                {
+                    if (citation.Substring(i - 1, 1).Equals(" ") || citation.Substring(i, 1).Equals(" "))
+                    {
+                        citation = citation.Substring(0, i) + INDENT + citation.Substring(i);
+                    }
+                    else
+                    {
+                        citation = citation.Substring(0, i) + "-" + INDENT + citation.Substring(i);
+                    }
+                }
+            }
+            return citation;
         }
 
         public List<string> Get_Citations_Except_Pictures(Citation_Type type)
