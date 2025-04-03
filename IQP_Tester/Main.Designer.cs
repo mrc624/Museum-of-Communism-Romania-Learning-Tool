@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.panelRegimeFall = new System.Windows.Forms.Panel();
-            this.pbRevolution = new System.Windows.Forms.PictureBox();
-            this.lblHowDidTheRegimeFall = new System.Windows.Forms.Label();
             this.btnCredits = new System.Windows.Forms.Button();
             this.panelOppression = new System.Windows.Forms.Panel();
             this.lblOppression = new System.Windows.Forms.Label();
@@ -44,8 +41,6 @@
             this.lblStories = new System.Windows.Forms.Label();
             this.panelThenAndNow = new System.Windows.Forms.Panel();
             this.lblThenAndNow = new System.Windows.Forms.Label();
-            this.panelRegimeFall.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).BeginInit();
             this.panelOppression.SuspendLayout();
             this.panelLifeUnder.SuspendLayout();
             this.panelTimeline.SuspendLayout();
@@ -65,40 +60,6 @@
             this.btnLanguage.UseVisualStyleBackColor = false;
             this.btnLanguage.TextChanged += new System.EventHandler(this.btnLanguage_TextChanged);
             this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
-            // 
-            // panelRegimeFall
-            // 
-            this.panelRegimeFall.Controls.Add(this.pbRevolution);
-            this.panelRegimeFall.Controls.Add(this.lblHowDidTheRegimeFall);
-            this.panelRegimeFall.Location = new System.Drawing.Point(31, 791);
-            this.panelRegimeFall.Margin = new System.Windows.Forms.Padding(1);
-            this.panelRegimeFall.Name = "panelRegimeFall";
-            this.panelRegimeFall.Size = new System.Drawing.Size(192, 84);
-            this.panelRegimeFall.TabIndex = 5;
-            this.panelRegimeFall.Click += new System.EventHandler(this.panelRegimeFall_Click);
-            // 
-            // pbRevolution
-            // 
-            this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.Location = new System.Drawing.Point(6, 34);
-            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
-            this.pbRevolution.Name = "pbRevolution";
-            this.pbRevolution.Size = new System.Drawing.Size(337, 261);
-            this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbRevolution.TabIndex = 2;
-            this.pbRevolution.TabStop = false;
-            // 
-            // lblHowDidTheRegimeFall
-            // 
-            this.lblHowDidTheRegimeFall.AutoSize = true;
-            this.lblHowDidTheRegimeFall.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHowDidTheRegimeFall.Location = new System.Drawing.Point(15, 0);
-            this.lblHowDidTheRegimeFall.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lblHowDidTheRegimeFall.Name = "lblHowDidTheRegimeFall";
-            this.lblHowDidTheRegimeFall.Size = new System.Drawing.Size(303, 31);
-            this.lblHowDidTheRegimeFall.TabIndex = 0;
-            this.lblHowDidTheRegimeFall.Text = "How did the regime fall?";
             // 
             // btnCredits
             // 
@@ -244,16 +205,12 @@
             this.Controls.Add(this.panelStories);
             this.Controls.Add(this.btnCredits);
             this.Controls.Add(this.panelThenAndNow);
-            this.Controls.Add(this.panelRegimeFall);
             this.Controls.Add(this.btnLanguage);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Main";
             this.Text = "MOCR Interactive Tool";
             this.Resize += new System.EventHandler(this.Main_Resize);
-            this.panelRegimeFall.ResumeLayout(false);
-            this.panelRegimeFall.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
             this.panelOppression.ResumeLayout(false);
             this.panelOppression.PerformLayout();
             this.panelLifeUnder.ResumeLayout(false);
@@ -270,12 +227,9 @@
 
         #endregion
         private System.Windows.Forms.Button btnLanguage;
-        private System.Windows.Forms.Panel panelRegimeFall;
-        private System.Windows.Forms.Label lblHowDidTheRegimeFall;
         private System.Windows.Forms.Panel panelThenAndNow;
         private System.Windows.Forms.Label lblThenAndNow;
         private System.Windows.Forms.Button btnCredits;
-        private System.Windows.Forms.PictureBox pbRevolution;
         private System.Windows.Forms.Panel panelStories;
         private System.Windows.Forms.Label lblStories;
         private System.Windows.Forms.Panel panelTimeline;

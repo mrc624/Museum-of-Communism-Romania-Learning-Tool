@@ -14,9 +14,12 @@ namespace IQP_Tester
     public partial class Timeline : Form
     {
         TextManager textManager;
+        Open_Close_Helper openClose;
         Resize_Helper resize = new Resize_Helper();
         Polaroid_Helper polaroid_Helper = new Polaroid_Helper();
-        Open_Close_Helper openClose = new Open_Close_Helper();
+        Click_Helper click_Helper = new Click_Helper();
+
+        RegimeFall regimeFall;
 
         public const int START_YEAR = 1947;
         public const int END_YEAR = 1989;
@@ -50,6 +53,12 @@ namespace IQP_Tester
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
             ThenAndNow_Resize(this, new EventArgs());
+            Set_Panel_Clicks();
+        }
+
+        private void Set_Panel_Clicks()
+        {
+            click_Helper.Assign_All_Children_To_Same_Click(panelRegimeFall, panelRegimeFall_Click);
         }
 
         private void Assign_Lines_To_Panels()
@@ -159,9 +168,13 @@ namespace IQP_Tester
         {
             for (int i = 0; i < control.Controls.Count; i++)
             {
-                Rectangle rectange = control.Controls[i].Bounds;
-                Originals[control.Controls[i]] = rectange;
-                if (Controls[i].HasChildren)
+                if (control.Controls[i] is Panel || control.Controls[i] is PictureBox)
+                {
+                    Rectangle rectange = control.Controls[i].Bounds;
+                    Originals[control.Controls[i]] = rectange;
+                    string name = control.Controls[i].Name; // debug
+                }
+                if (control.Controls[i].HasChildren)
                 {
                     Capture_Original_Size_Location(Controls[i]);
                 }
@@ -235,6 +248,10 @@ namespace IQP_Tester
             resize.Center_X_Y(pbTimeLine);
 
             Place_Panel_With_Line_At_Year(panelTesting, 1956, Position.Top);
+            Place_Panel_With_Line_At_Year(panelRegimeFall, 1989, Position.Top);
+
+            resize.Center_X(pbRevolution);
+            resize.Center_to_Other_Control(lblHowDidTheRegimeFall, pbRevolution, Resize_Helper.Centering_Options.to_top);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
@@ -257,6 +274,15 @@ namespace IQP_Tester
         private void btnLanguage_TextChanged(object sender, EventArgs e)
         {
             ThenAndNow_Resize(this, new EventArgs());
+        }
+
+        // Regime Fall
+
+        private void panelRegimeFall_Click(object sender, EventArgs e)
+        {
+            openClose.CloseAllForms();
+            regimeFall = new RegimeFall(textManager, openClose);
+            openClose.FadeIn(regimeFall);
         }
     }
 }

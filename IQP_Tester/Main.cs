@@ -30,7 +30,6 @@ namespace IQP_Tester
 
         public static List<Form> Forms = new List<Form>();
 
-        RegimeFall regimeFall;
         ThenAndNow thenAndNow;
         Oppression oppression;
         Stories stories;
@@ -56,7 +55,6 @@ namespace IQP_Tester
 
         private void Set_Panel_Clicks()
         {
-            click_helper.Assign_All_Children_To_Same_Click(panelRegimeFall, panelRegimeFall_Click);
             click_helper.Assign_All_Children_To_Same_Click(panelThenAndNow, panelThenAndNow_Click);
             click_helper.Assign_All_Children_To_Same_Click(panelOppression, panelOppression_Click);
             click_helper.Assign_All_Children_To_Same_Click(panelStories, panelStories_Click);
@@ -67,8 +65,6 @@ namespace IQP_Tester
         private void Add_Forms()
         {
             Forms.Add(this);
-            regimeFall = new RegimeFall(textManager, openClose);
-            Forms.Add(regimeFall);
             thenAndNow = new ThenAndNow(textManager, openClose);
             Forms.Add(thenAndNow);
             oppression = new Oppression(textManager, openClose);
@@ -96,17 +92,6 @@ namespace IQP_Tester
         }
 
         // THEN AND NOW END
-
-        // REGIME FALL BEGIN
-
-        private void panelRegimeFall_Click(object sender, EventArgs e)
-        {
-            openClose.CloseAllForms();
-            regimeFall = new RegimeFall(textManager, openClose);
-            openClose.FadeIn(regimeFall);
-        }
-
-        // REGIME FALL END
 
         // OPPRESSION START
 
@@ -185,8 +170,6 @@ namespace IQP_Tester
             resize.Handle_Resize(this);
 
             resize.Repostition_All_Main_Panels(this);
-
-            resize.Center_to_Other_Control(lblHowDidTheRegimeFall, pbRevolution, Resize_Helper.Centering_Options.to_top);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
             resize.Center_to_Other_Control(btnCredits, btnLanguage, Resize_Helper.Centering_Options.to_left);

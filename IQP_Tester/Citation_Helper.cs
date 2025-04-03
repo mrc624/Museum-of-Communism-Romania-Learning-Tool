@@ -19,7 +19,7 @@ namespace IQP_Tester
 
         public const string CITATION_FILE_NAME = "citations.json";
         public const string BIBLIOGRAPH_TXT_FILE_NAME = "bibliography.txt";
-        public const string INDENT = "\n        ";
+        public const string INDENT = "in        ";
         public const int INDENT_EVERY_CHAR = 100;
 
         public enum Citation_Type
