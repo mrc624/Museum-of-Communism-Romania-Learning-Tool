@@ -62,33 +62,30 @@ namespace IQP_Tester
                 for (int i = 0; i < control.Controls.Count; i++)
                 {
                     Control curr = control.Controls[i];
-                    if (curr != null && (curr.Tag == null || curr.Tag.ToString() != Timeline.LINE_NAME))
+                    if (curr is Panel)
                     {
-                        if (curr is Panel)
+                        Resize_Panel((Panel)curr);
+                    }
+                    else if (curr is PictureBox)
+                    {
+                        Resize_PB((PictureBox)curr);
+                    }
+                    else
+                    {
+                        if (curr.Font != null)
                         {
-                            Resize_Panel((Panel)curr);
-                        }
-                        else if (curr is PictureBox)
-                        {
-                            Resize_PB((PictureBox)curr);
-                        }
-                        else
-                        {
-                            if (curr.Font != null)
-                            {
-                                Resize_Font(curr);
-                            }
-
-                            if (curr is Button)
-                            {
-                                Resize_Control(curr);
-                            }
+                            Resize_Font(curr);
                         }
 
-                        if (curr.HasChildren)
+                        if (curr is Button)
                         {
-                            Handle_Resize(curr);
+                            Resize_Control(curr);
                         }
+                    }
+
+                    if (curr.HasChildren)
+                    {
+                        Handle_Resize(curr);
                     }
                 }
             }

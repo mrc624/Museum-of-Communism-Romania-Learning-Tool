@@ -31,6 +31,9 @@
             this.btnLanguage = new System.Windows.Forms.Button();
             this.panelTesting = new System.Windows.Forms.Panel();
             this.pbTimeLine = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbTimeLine)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +53,7 @@
             // panelTesting
             // 
             this.panelTesting.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelTesting.Location = new System.Drawing.Point(150, 74);
+            this.panelTesting.Location = new System.Drawing.Point(332, 718);
             this.panelTesting.Name = "panelTesting";
             this.panelTesting.Size = new System.Drawing.Size(188, 213);
             this.panelTesting.TabIndex = 10;
@@ -65,11 +68,40 @@
             this.pbTimeLine.TabIndex = 9;
             this.pbTimeLine.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(423, 131);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(889, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(876, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "label2";
+            // 
             // Timeline
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTesting);
             this.Controls.Add(this.pbTimeLine);
             this.Controls.Add(this.btnLanguage);
@@ -80,6 +112,7 @@
             this.Resize += new System.EventHandler(this.ThenAndNow_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pbTimeLine)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -88,5 +121,8 @@
         private System.Windows.Forms.Button btnLanguage;
         private System.Windows.Forms.PictureBox pbTimeLine;
         private System.Windows.Forms.Panel panelTesting;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
