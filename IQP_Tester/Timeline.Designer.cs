@@ -321,6 +321,7 @@
             this.panelSoviet.Name = "panelSoviet";
             this.panelSoviet.Size = new System.Drawing.Size(285, 246);
             this.panelSoviet.TabIndex = 24;
+            this.panelSoviet.Click += new System.EventHandler(this.panelSoviet_Click);
             // 
             // lblSoviet
             // 
@@ -329,9 +330,9 @@
             this.lblSoviet.Location = new System.Drawing.Point(15, 0);
             this.lblSoviet.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblSoviet.Name = "lblSoviet";
-            this.lblSoviet.Size = new System.Drawing.Size(257, 31);
+            this.lblSoviet.Size = new System.Drawing.Size(248, 31);
             this.lblSoviet.TabIndex = 0;
-            this.lblSoviet.Text = "Era of Soviertization";
+            this.lblSoviet.Text = "Era of Sovietization";
             // 
             // panelCeausescusRise
             // 
@@ -460,7 +461,7 @@
             this.Controls.Add(this.pbTimeLine);
             this.Controls.Add(this.btnLanguage);
             this.Name = "Timeline";
-            this.Text = "Then_And_Now";
+            this.Text = "Timeline";
             this.Shown += new System.EventHandler(this.Timeline_Shown);
             this.Click += new System.EventHandler(this.Timeline_Click);
             this.Resize += new System.EventHandler(this.Timeline_Resize);

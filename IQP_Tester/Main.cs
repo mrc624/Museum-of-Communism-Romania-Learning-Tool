@@ -38,6 +38,7 @@ namespace IQP_Tester
 
         RegimeFall regimeFall;
         CeausescusRise ceausescusRise;
+        SovietEra sovietEra;
 
         Credits credits;
         Dev_Tools dev_Tools;
@@ -82,6 +83,8 @@ namespace IQP_Tester
             Forms.Add(regimeFall);
             ceausescusRise = new CeausescusRise(textManager, openClose);
             Forms.Add(ceausescusRise);
+            sovietEra = new SovietEra(textManager, openClose);
+            Forms.Add(sovietEra);
         }
 
         // MAIN PAGE BEGIN (NOT PANELS)

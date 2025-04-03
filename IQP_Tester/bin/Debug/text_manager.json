@@ -139,7 +139,16 @@
     "lblNicolaeAns": "Unknown",
     "lblElenaAnsPolLong": "EMPTY, USING OTHER ANS",
     "lblElenaQ": "Unknown",
-    "lblElenaAns": "Unknown"
+    "lblElenaAns": "Unknown",
+    "lblGheorgheAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblGheorgheQ": "Unknown",
+    "lblGheorgheAns": "Unknown",
+    "lblMarxismAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblMarxismQ": "Unknown",
+    "lblMarxismAns": "Unknown",
+    "lblPostWW2AnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblPostWW2Q": "Unknown",
+    "lblPostWW2Ans": "Unknown"
   },
   "Romanian": {
     "lblOppression": "TRANSLATION NEEDED",
@@ -281,6 +290,15 @@
     "lblNicolaeAns": "TRANSLATION NEEDED",
     "lblElenaAnsPolLong": "EMPTY, USING OTHER ANS",
     "lblElenaQ": "TRANSLATION NEEDED",
-    "lblElenaAns": "TRANSLATION NEEDED"
+    "lblElenaAns": "TRANSLATION NEEDED",
+    "lblGheorgheAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblGheorgheQ": "TRANSLATION NEEDED",
+    "lblGheorgheAns": "TRANSLATION NEEDED",
+    "lblMarxismAnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblMarxismQ": "TRANSLATION NEEDED",
+    "lblMarxismAns": "TRANSLATION NEEDED",
+    "lblPostWW2AnsPolLong": "EMPTY, USING OTHER ANS",
+    "lblPostWW2Q": "TRANSLATION NEEDED",
+    "lblPostWW2Ans": "TRANSLATION NEEDED"
   }
 }

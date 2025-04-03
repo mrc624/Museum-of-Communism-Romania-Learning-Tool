@@ -24,6 +24,7 @@ namespace IQP_Tester
 
         RegimeFall regimeFall;
         CeausescusRise ceausescusRise;
+        SovietEra sovietEra;
 
         public const int START_YEAR = 1947;
         public const int END_YEAR = 1989;
@@ -72,6 +73,7 @@ namespace IQP_Tester
         {
             click_Helper.Assign_All_Children_To_Same_Click(panelRegimeFall, panelRegimeFall_Click);
             click_Helper.Assign_All_Children_To_Same_Click(panelCeausescusRise, panelCeausescusRise_Click);
+            click_Helper.Assign_All_Children_To_Same_Click(panelSoviet, panelSoviet_Click);
         }
 
         private void Make_Assign_Lines(Form form)
@@ -382,6 +384,14 @@ namespace IQP_Tester
         {
             ceausescusRise = new CeausescusRise(textManager, openClose);
             openClose.FadeIn(ceausescusRise);
+        }
+
+        // Soviet Era
+
+        private void panelSoviet_Click(object sender, EventArgs e)
+        {
+            sovietEra = new SovietEra(textManager, openClose);
+            openClose.FadeIn(sovietEra);
         }
     }
 }
