@@ -23,6 +23,7 @@ namespace IQP_Tester
         TableLayout_Helper tableLayoutHelper = new TableLayout_Helper();
 
         RegimeFall regimeFall;
+        CeausescusRise ceausescusRise;
 
         public const int START_YEAR = 1947;
         public const int END_YEAR = 1989;
@@ -70,6 +71,7 @@ namespace IQP_Tester
         private void Set_Panel_Clicks()
         {
             click_Helper.Assign_All_Children_To_Same_Click(panelRegimeFall, panelRegimeFall_Click);
+            click_Helper.Assign_All_Children_To_Same_Click(panelCeausescusRise, panelCeausescusRise_Click);
         }
 
         private void Make_Assign_Lines(Form form)
@@ -332,10 +334,16 @@ namespace IQP_Tester
             Place_Panel_With_Line_At_Year(panelJuly, 1971, Position.Top);
             Place_Panel_With_Line_At_Year(panelHousePeople, 1984, Position.Bottom);
             Place_Panel_With_Line_At_Year(panelRegimeFall, 1989, Position.Top);
+            Place_Panel_With_Line_At_Year(panelSoviet, 1952, Position.Bottom);
+            Place_Panel_With_Line_At_Year(panelCeausescusRise, 1965, Position.Top);
             Place_Labels_And_Ticks();
 
             resize.Center_X(pbRevolution);
             resize.Center_to_Other_Control(lblHowDidTheRegimeFall, pbRevolution, Resize_Helper.Centering_Options.to_top);
+            resize.Center_X(pbSoviet);
+            resize.Center_to_Other_Control(lblSoviet, pbSoviet, Resize_Helper.Centering_Options.to_top);
+            resize.Center_X(pbCeausescusRise);
+            resize.Center_to_Other_Control(lblCeausescusRise, pbCeausescusRise, Resize_Helper.Centering_Options.to_top);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
@@ -366,6 +374,14 @@ namespace IQP_Tester
         {
             regimeFall = new RegimeFall(textManager, openClose);
             openClose.FadeIn(regimeFall);
+        }
+
+        // Rise Ceausescus
+
+        private void panelCeausescusRise_Click(object sender, EventArgs e)
+        {
+            ceausescusRise = new CeausescusRise(textManager, openClose);
+            openClose.FadeIn(ceausescusRise);
         }
     }
 }

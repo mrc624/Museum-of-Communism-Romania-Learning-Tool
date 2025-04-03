@@ -13,7 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace IQP_Tester
 {
-    public partial class RegimeFall : Form
+    public partial class CeausescusRise : Form
     {
         TextManager textManager;
         Resize_Helper resize = new Resize_Helper();
@@ -21,7 +21,7 @@ namespace IQP_Tester
         Open_Close_Helper openClose = new Open_Close_Helper();
 
 
-        public RegimeFall(TextManager textMan, Open_Close_Helper open_close)
+        public CeausescusRise(TextManager textMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
             openClose = open_close;
@@ -29,31 +29,30 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
-            RegimeFall_Resize(this, new EventArgs());
+            CeausescusRise_Resize(this, new EventArgs());
 
             polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, openClose);
         }
 
-        private void RegimeFall_Shown(object sender, EventArgs e)
+        private void CeausescusRise_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
         }
 
-        private void RegimeFall_Click(object sender, EventArgs e)
+        private void CeausescusRise_Click(object sender, EventArgs e)
         {
             openClose.Close(this);
         }
 
         // Resize
         
-        private void RegimeFall_Resize(object sender, EventArgs e)
+        private void CeausescusRise_Resize(object sender, EventArgs e)
         {
             resize.Handle_Resize(this);
 
             polaroid_Helper.Reposition_Polaroids(polaroid_Helper.Polaroids);
-            resize.Center_X_Y(panelWhatWasRevolution, Resize_Helper.QUARTER, Resize_Helper.CENTER);
-            resize.Center_X_Y(panelWhyRevolt, Resize_Helper.CENTER, Resize_Helper.CENTER);
-            resize.Center_X_Y(panelWhereCeausescu, Resize_Helper.THREE_QUARTERS, Resize_Helper.CENTER);
+            resize.Center_X_Y(panelElena, Resize_Helper.QUARTER, Resize_Helper.CENTER);
+            resize.Center_X_Y(panelNicolae, Resize_Helper.THREE_QUARTERS, Resize_Helper.CENTER);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
@@ -65,7 +64,7 @@ namespace IQP_Tester
 
         private void btnLanguage_TextChanged(object sender, EventArgs e)
         {
-            RegimeFall_Resize(this, new EventArgs());
+            CeausescusRise_Resize(this, new EventArgs());
         }
     }
 }

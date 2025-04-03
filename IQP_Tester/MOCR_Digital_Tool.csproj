@@ -140,6 +140,12 @@
       <DependentUpon>Dev_Tools.cs</DependentUpon>
     </Compile>
     <Compile Include="Open_Close_Helper.cs" />
+    <Compile Include="CeausescusRise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CeausescusRise.Designer.cs">
+      <DependentUpon>CeausescusRise.cs</DependentUpon>
+    </Compile>
     <Compile Include="Stories.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dev_Tools.resx">
       <DependentUpon>Dev_Tools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CeausescusRise.resx">
+      <DependentUpon>CeausescusRise.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stories.resx">
       <DependentUpon>Stories.cs</DependentUpon>

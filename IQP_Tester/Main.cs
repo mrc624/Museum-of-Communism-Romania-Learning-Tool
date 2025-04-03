@@ -36,6 +36,9 @@ namespace IQP_Tester
         LifeUnder lifeUnder;
         Timeline timeline;
 
+        RegimeFall regimeFall;
+        CeausescusRise ceausescusRise;
+
         Credits credits;
         Dev_Tools dev_Tools;
 
@@ -75,7 +78,10 @@ namespace IQP_Tester
             Forms.Add(lifeUnder);
             timeline = new Timeline(textManager, openClose);
             Forms.Add(timeline);
-
+            regimeFall = new RegimeFall(textManager, openClose);
+            Forms.Add(regimeFall);
+            ceausescusRise = new CeausescusRise(textManager, openClose);
+            Forms.Add(ceausescusRise);
         }
 
         // MAIN PAGE BEGIN (NOT PANELS)

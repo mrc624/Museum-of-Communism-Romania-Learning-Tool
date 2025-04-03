@@ -16,6 +16,10 @@ namespace IQP_Tester
 
         bool Dictionary_Updated = false;
 
+        public const double CENTER = 0.5;
+        public const double QUARTER = 0.25;
+        public const double THREE_QUARTERS = 0.75;
+
         public void CaptureAspectRatios(Control parent)
         {
             for (int i = 0; i < parent.Controls.Count; i++)
