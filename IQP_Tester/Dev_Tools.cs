@@ -27,16 +27,22 @@ namespace IQP_Tester
         public int ENGLISH_COLUMN = 1;
         public int ROMANIAN_COLUMN = 2;
         public int ROWS_TO_SKIP = 1;
+        public int HEADER_ROW = 0;
 
         public string CONTROL_NAME = "control";
         public string ROMANIAN_NAME = "Rom";
         public string ENGLISH_NAME = "Eng";
+
+        public string HEADER_CONTROL_TEXT = "Control Name";
+        public string HEADER_ENGLISH_TEXT = "English";
+        public string HEADER_ROMANIAN_TEXT = "Romanian";
 
         public TableLayoutPanelCellBorderStyle LOADING = TableLayoutPanelCellBorderStyle.None;
         public TableLayoutPanelCellBorderStyle LOADED = TableLayoutPanelCellBorderStyle.Single;
 
         private void Fill_EditText_Table()
         {
+            tableLayoutDevEditText.Visible = false;
             Dictionary<string, Dictionary<string, string>> reformatted = Get_Reformatted_Dictionary();
 
             List<string> controls = reformatted.Keys.ToList();
@@ -64,6 +70,33 @@ namespace IQP_Tester
             }
             tableLayout_Helper.Set_Row_Heights(tableLayoutDevEditText);
             tableLayoutDevEditText.CellBorderStyle = LOADED;
+            tableLayoutDevEditText.Visible = true;
+        }
+
+        private void Empty_EditText_Table()
+        {
+            tableLayoutDevEditText.Visible = false;
+            tableLayoutDevEditText.CellBorderStyle = LOADING;
+            while (tableLayoutDevEditText.Controls.Count > 0)
+            {
+                tableLayoutDevEditText.Controls[0].Dispose();
+            }
+            tableLayoutDevEditText.RowCount = 0;
+            Add_Headers();
+        }
+
+        private void Add_Headers()
+        {
+            Label control = tableLayout_Helper.Get_Title_Label(HEADER_CONTROL_TEXT, HEADER_CONTROL_TEXT);
+            tableLayoutDevEditText.Controls.Add(control, CONTROL_NAME_COLUMN, HEADER_ROW);
+
+            int eng_width = tableLayoutDevEditText.GetColumnWidths()[ENGLISH_COLUMN];
+            Label english = tableLayout_Helper.Get_Title_Label(HEADER_ENGLISH_TEXT, HEADER_ENGLISH_TEXT);
+            tableLayoutDevEditText.Controls.Add(english, ENGLISH_COLUMN, HEADER_ROW);
+
+            int rom_width = tableLayoutDevEditText.GetColumnWidths()[ROMANIAN_COLUMN];
+            Label romanian = tableLayout_Helper.Get_Title_Label(HEADER_ROMANIAN_TEXT, HEADER_ROMANIAN_TEXT);
+            tableLayoutDevEditText.Controls.Add(romanian, ROMANIAN_COLUMN, HEADER_ROW);
         }
 
         private Dictionary<string, Dictionary<string, string>> Get_Reformatted_Dictionary()
@@ -142,11 +175,13 @@ namespace IQP_Tester
             {
                 textManager.Overwrite_JSON(text, TextManager.TEXT_MANAGER_FILE_NAME);
             }
+            btnEditTextRefresh_Click(this, new EventArgs());
         }
 
         private void btnEditTextRefresh_Click(object sender, EventArgs e)
         {
             textManager.Update_Text();
+            Empty_EditText_Table();
             Fill_EditText_Table();
         }
     }

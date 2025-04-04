@@ -15,3 +15,5 @@ Finish adding pictures
 Make some kind of lock so that when you open something you can't open more
 
 Organize pictures into folders
+
+Adjust indenting for citations so it doesn't go in the middle of a word unless a certain amount of characters go by
