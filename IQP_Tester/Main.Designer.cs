@@ -41,11 +41,21 @@
             this.lblStories = new System.Windows.Forms.Label();
             this.panelThenAndNow = new System.Windows.Forms.Panel();
             this.lblThenAndNow = new System.Windows.Forms.Label();
+            this.pbOppression = new System.Windows.Forms.PictureBox();
+            this.pbThenAndNow = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panelOppression.SuspendLayout();
             this.panelLifeUnder.SuspendLayout();
             this.panelTimeline.SuspendLayout();
             this.panelStories.SuspendLayout();
             this.panelThenAndNow.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOppression)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThenAndNow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -77,6 +87,7 @@
             // 
             this.panelOppression.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
             this.panelOppression.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelOppression.Controls.Add(this.pbOppression);
             this.panelOppression.Controls.Add(this.lblOppression);
             this.panelOppression.Location = new System.Drawing.Point(67, 36);
             this.panelOppression.Margin = new System.Windows.Forms.Padding(1);
@@ -101,6 +112,7 @@
             // 
             this.panelLifeUnder.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
             this.panelLifeUnder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelLifeUnder.Controls.Add(this.pictureBox3);
             this.panelLifeUnder.Controls.Add(this.lblLifeUnder);
             this.panelLifeUnder.Location = new System.Drawing.Point(1403, 36);
             this.panelLifeUnder.Margin = new System.Windows.Forms.Padding(1);
@@ -125,6 +137,7 @@
             // 
             this.panelTimeline.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
             this.panelTimeline.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelTimeline.Controls.Add(this.pictureBox4);
             this.panelTimeline.Controls.Add(this.lblCommunistTimeline);
             this.panelTimeline.Location = new System.Drawing.Point(1201, 673);
             this.panelTimeline.Margin = new System.Windows.Forms.Padding(1);
@@ -149,6 +162,7 @@
             // 
             this.panelStories.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
             this.panelStories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelStories.Controls.Add(this.pictureBox5);
             this.panelStories.Controls.Add(this.lblStories);
             this.panelStories.Location = new System.Drawing.Point(342, 673);
             this.panelStories.Margin = new System.Windows.Forms.Padding(1);
@@ -173,6 +187,7 @@
             // 
             this.panelThenAndNow.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
             this.panelThenAndNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelThenAndNow.Controls.Add(this.pbThenAndNow);
             this.panelThenAndNow.Controls.Add(this.lblThenAndNow);
             this.panelThenAndNow.Location = new System.Drawing.Point(710, 36);
             this.panelThenAndNow.Margin = new System.Windows.Forms.Padding(1);
@@ -192,6 +207,66 @@
             this.lblThenAndNow.Size = new System.Drawing.Size(190, 31);
             this.lblThenAndNow.TabIndex = 0;
             this.lblThenAndNow.Text = "Then and Now";
+            // 
+            // pbOppression
+            // 
+            this.pbOppression.BackColor = System.Drawing.Color.Transparent;
+            this.pbOppression.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbOppression.Image = global::IQP_Tester.Properties.Resources.OpressionMain;
+            this.pbOppression.Location = new System.Drawing.Point(107, 50);
+            this.pbOppression.Name = "pbOppression";
+            this.pbOppression.Size = new System.Drawing.Size(251, 221);
+            this.pbOppression.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbOppression.TabIndex = 1;
+            this.pbOppression.TabStop = false;
+            // 
+            // pbThenAndNow
+            // 
+            this.pbThenAndNow.BackColor = System.Drawing.Color.Transparent;
+            this.pbThenAndNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbThenAndNow.Image = global::IQP_Tester.Properties.Resources.ThenNowMain;
+            this.pbThenAndNow.Location = new System.Drawing.Point(161, 66);
+            this.pbThenAndNow.Name = "pbThenAndNow";
+            this.pbThenAndNow.Size = new System.Drawing.Size(141, 188);
+            this.pbThenAndNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbThenAndNow.TabIndex = 2;
+            this.pbThenAndNow.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Image = global::IQP_Tester.Properties.Resources.LifeUnderMain;
+            this.pictureBox3.Location = new System.Drawing.Point(110, 66);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(251, 221);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Image = global::IQP_Tester.Properties.Resources.TimelineMain;
+            this.pictureBox4.Location = new System.Drawing.Point(116, 70);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(251, 221);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Image = global::IQP_Tester.Properties.Resources.StoriesMain;
+            this.pictureBox5.Location = new System.Drawing.Point(120, 85);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(251, 221);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
             // 
             // Main
             // 
@@ -221,6 +296,11 @@
             this.panelStories.PerformLayout();
             this.panelThenAndNow.ResumeLayout(false);
             this.panelThenAndNow.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOppression)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbThenAndNow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -238,6 +318,11 @@
         private System.Windows.Forms.Label lblLifeUnder;
         private System.Windows.Forms.Panel panelOppression;
         private System.Windows.Forms.Label lblOppression;
+        private System.Windows.Forms.PictureBox pbOppression;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbThenAndNow;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
 

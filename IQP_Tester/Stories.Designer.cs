@@ -33,98 +33,98 @@
             this.tableLayoutStolenHorse = new System.Windows.Forms.TableLayoutPanel();
             this.lblStolenHorseQ = new System.Windows.Forms.Label();
             this.lblStolenHorseAns = new System.Windows.Forms.Label();
-            this.pbStolenHorse = new System.Windows.Forms.PictureBox();
             this.panelButterWhy = new System.Windows.Forms.Panel();
             this.tableLayoutButterWhy = new System.Windows.Forms.TableLayoutPanel();
             this.lblButterWhyQ = new System.Windows.Forms.Label();
             this.lblButterWhyAns = new System.Windows.Forms.Label();
-            this.pbButterWhy = new System.Windows.Forms.PictureBox();
             this.panelTeacherBeating = new System.Windows.Forms.Panel();
             this.tableLayoutTeacherBeating = new System.Windows.Forms.TableLayoutPanel();
             this.lblTeacherBeatingQ = new System.Windows.Forms.Label();
             this.lblTeacherBeatingAns = new System.Windows.Forms.Label();
-            this.pbTeacherBeating = new System.Windows.Forms.PictureBox();
             this.panelDestiny = new System.Windows.Forms.Panel();
             this.tableLayoutDestiny = new System.Windows.Forms.TableLayoutPanel();
             this.lblDestinyQ = new System.Windows.Forms.Label();
             this.lblDestinyAns = new System.Windows.Forms.Label();
-            this.pbDestiny = new System.Windows.Forms.PictureBox();
             this.panelSoftTomato = new System.Windows.Forms.Panel();
             this.tableLayoutSoftTomato = new System.Windows.Forms.TableLayoutPanel();
             this.lblSoftTomatoQ = new System.Windows.Forms.Label();
             this.lblSoftTomatoAns = new System.Windows.Forms.Label();
-            this.pbSoftTomato = new System.Windows.Forms.PictureBox();
             this.panelColdHands = new System.Windows.Forms.Panel();
             this.tableLayoutColdHands = new System.Windows.Forms.TableLayoutPanel();
             this.lblColdHandsQ = new System.Windows.Forms.Label();
             this.lblColdHandsAns = new System.Windows.Forms.Label();
-            this.pbColdHands = new System.Windows.Forms.PictureBox();
             this.panelSchoolPropaganda = new System.Windows.Forms.Panel();
             this.tableLayoutSchoolPropaganda = new System.Windows.Forms.TableLayoutPanel();
             this.lblSchoolPropagandaQ = new System.Windows.Forms.Label();
             this.lblSchoolPropagandaAns = new System.Windows.Forms.Label();
-            this.pbSchoolPropaganda = new System.Windows.Forms.PictureBox();
             this.panelCeausescuMail = new System.Windows.Forms.Panel();
             this.tableLayoutCeausescuMail = new System.Windows.Forms.TableLayoutPanel();
             this.lblCeausescuMailQ = new System.Windows.Forms.Label();
             this.lblCeausescuMailAns = new System.Windows.Forms.Label();
-            this.pbCeausescuMail = new System.Windows.Forms.PictureBox();
             this.panelJapaneseMachines = new System.Windows.Forms.Panel();
             this.tableLayoutJapaneseMachines = new System.Windows.Forms.TableLayoutPanel();
             this.lblJapaneseMachinesQ = new System.Windows.Forms.Label();
             this.lblJapaneseMachinesAns = new System.Windows.Forms.Label();
-            this.pbJapaneseMachines = new System.Windows.Forms.PictureBox();
             this.panelSwimmerKiller = new System.Windows.Forms.Panel();
             this.tableLayoutSwimmerKiller = new System.Windows.Forms.TableLayoutPanel();
             this.lblSwimmerKillerQ = new System.Windows.Forms.Label();
             this.lblSwimmerKillerAns = new System.Windows.Forms.Label();
-            this.pbSwimmerKiller = new System.Windows.Forms.PictureBox();
             this.panelStopEngineers = new System.Windows.Forms.Panel();
             this.tableLayoutStopEngineers = new System.Windows.Forms.TableLayoutPanel();
             this.lblStopEngineersQ = new System.Windows.Forms.Label();
             this.lblStopEngineersAns = new System.Windows.Forms.Label();
-            this.pbStopEngineers = new System.Windows.Forms.PictureBox();
             this.panelCutPhoneLines = new System.Windows.Forms.Panel();
             this.tableLayoutCutPhoneLines = new System.Windows.Forms.TableLayoutPanel();
             this.lblCutPhoneLinesQ = new System.Windows.Forms.Label();
             this.lblCutPhoneLinesAns = new System.Windows.Forms.Label();
+            this.pbStopEngineers = new System.Windows.Forms.PictureBox();
             this.pbCutPhoneLines = new System.Windows.Forms.PictureBox();
+            this.pbSwimmerKiller = new System.Windows.Forms.PictureBox();
+            this.pbJapaneseMachines = new System.Windows.Forms.PictureBox();
+            this.pbCeausescuMail = new System.Windows.Forms.PictureBox();
+            this.pbSchoolPropaganda = new System.Windows.Forms.PictureBox();
+            this.pbColdHands = new System.Windows.Forms.PictureBox();
+            this.pbSoftTomato = new System.Windows.Forms.PictureBox();
+            this.pbDestiny = new System.Windows.Forms.PictureBox();
+            this.pbTeacherBeating = new System.Windows.Forms.PictureBox();
+            this.pbButterWhy = new System.Windows.Forms.PictureBox();
+            this.pbStolenHorse = new System.Windows.Forms.PictureBox();
             this.panelStolenHorse.SuspendLayout();
             this.tableLayoutStolenHorse.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStolenHorse)).BeginInit();
             this.panelButterWhy.SuspendLayout();
             this.tableLayoutButterWhy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbButterWhy)).BeginInit();
             this.panelTeacherBeating.SuspendLayout();
             this.tableLayoutTeacherBeating.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTeacherBeating)).BeginInit();
             this.panelDestiny.SuspendLayout();
             this.tableLayoutDestiny.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDestiny)).BeginInit();
             this.panelSoftTomato.SuspendLayout();
             this.tableLayoutSoftTomato.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSoftTomato)).BeginInit();
             this.panelColdHands.SuspendLayout();
             this.tableLayoutColdHands.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbColdHands)).BeginInit();
             this.panelSchoolPropaganda.SuspendLayout();
             this.tableLayoutSchoolPropaganda.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSchoolPropaganda)).BeginInit();
             this.panelCeausescuMail.SuspendLayout();
             this.tableLayoutCeausescuMail.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCeausescuMail)).BeginInit();
             this.panelJapaneseMachines.SuspendLayout();
             this.tableLayoutJapaneseMachines.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbJapaneseMachines)).BeginInit();
             this.panelSwimmerKiller.SuspendLayout();
             this.tableLayoutSwimmerKiller.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSwimmerKiller)).BeginInit();
             this.panelStopEngineers.SuspendLayout();
             this.tableLayoutStopEngineers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStopEngineers)).BeginInit();
             this.panelCutPhoneLines.SuspendLayout();
             this.tableLayoutCutPhoneLines.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStopEngineers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCutPhoneLines)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSwimmerKiller)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJapaneseMachines)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCeausescuMail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSchoolPropaganda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbColdHands)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSoftTomato)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDestiny)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTeacherBeating)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbButterWhy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStolenHorse)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -189,17 +189,6 @@
             this.lblStolenHorseAns.Text = "Unknown";
             this.lblStolenHorseAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbStolenHorse
-            // 
-            this.pbStolenHorse.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbStolenHorse.InitialImage = null;
-            this.pbStolenHorse.Location = new System.Drawing.Point(44, 3);
-            this.pbStolenHorse.Name = "pbStolenHorse";
-            this.pbStolenHorse.Size = new System.Drawing.Size(186, 190);
-            this.pbStolenHorse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbStolenHorse.TabIndex = 0;
-            this.pbStolenHorse.TabStop = false;
-            // 
             // panelButterWhy
             // 
             this.panelButterWhy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -248,17 +237,6 @@
             this.lblButterWhyAns.TabIndex = 7;
             this.lblButterWhyAns.Text = "Unknown";
             this.lblButterWhyAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbButterWhy
-            // 
-            this.pbButterWhy.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbButterWhy.InitialImage = null;
-            this.pbButterWhy.Location = new System.Drawing.Point(44, 3);
-            this.pbButterWhy.Name = "pbButterWhy";
-            this.pbButterWhy.Size = new System.Drawing.Size(186, 190);
-            this.pbButterWhy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbButterWhy.TabIndex = 0;
-            this.pbButterWhy.TabStop = false;
             // 
             // panelTeacherBeating
             // 
@@ -309,17 +287,6 @@
             this.lblTeacherBeatingAns.Text = "Unknown";
             this.lblTeacherBeatingAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbTeacherBeating
-            // 
-            this.pbTeacherBeating.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbTeacherBeating.InitialImage = null;
-            this.pbTeacherBeating.Location = new System.Drawing.Point(44, 3);
-            this.pbTeacherBeating.Name = "pbTeacherBeating";
-            this.pbTeacherBeating.Size = new System.Drawing.Size(186, 190);
-            this.pbTeacherBeating.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbTeacherBeating.TabIndex = 0;
-            this.pbTeacherBeating.TabStop = false;
-            // 
             // panelDestiny
             // 
             this.panelDestiny.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -368,17 +335,6 @@
             this.lblDestinyAns.TabIndex = 7;
             this.lblDestinyAns.Text = "Unknown";
             this.lblDestinyAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbDestiny
-            // 
-            this.pbDestiny.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbDestiny.InitialImage = null;
-            this.pbDestiny.Location = new System.Drawing.Point(44, 3);
-            this.pbDestiny.Name = "pbDestiny";
-            this.pbDestiny.Size = new System.Drawing.Size(186, 190);
-            this.pbDestiny.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbDestiny.TabIndex = 0;
-            this.pbDestiny.TabStop = false;
             // 
             // panelSoftTomato
             // 
@@ -429,17 +385,6 @@
             this.lblSoftTomatoAns.Text = "Unknown";
             this.lblSoftTomatoAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbSoftTomato
-            // 
-            this.pbSoftTomato.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbSoftTomato.InitialImage = null;
-            this.pbSoftTomato.Location = new System.Drawing.Point(44, 3);
-            this.pbSoftTomato.Name = "pbSoftTomato";
-            this.pbSoftTomato.Size = new System.Drawing.Size(186, 190);
-            this.pbSoftTomato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSoftTomato.TabIndex = 0;
-            this.pbSoftTomato.TabStop = false;
-            // 
             // panelColdHands
             // 
             this.panelColdHands.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -488,17 +433,6 @@
             this.lblColdHandsAns.TabIndex = 7;
             this.lblColdHandsAns.Text = "Unknown";
             this.lblColdHandsAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbColdHands
-            // 
-            this.pbColdHands.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbColdHands.InitialImage = null;
-            this.pbColdHands.Location = new System.Drawing.Point(44, 3);
-            this.pbColdHands.Name = "pbColdHands";
-            this.pbColdHands.Size = new System.Drawing.Size(186, 190);
-            this.pbColdHands.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbColdHands.TabIndex = 0;
-            this.pbColdHands.TabStop = false;
             // 
             // panelSchoolPropaganda
             // 
@@ -549,25 +483,14 @@
             this.lblSchoolPropagandaAns.Text = "Unknown";
             this.lblSchoolPropagandaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbSchoolPropaganda
-            // 
-            this.pbSchoolPropaganda.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbSchoolPropaganda.InitialImage = null;
-            this.pbSchoolPropaganda.Location = new System.Drawing.Point(44, 3);
-            this.pbSchoolPropaganda.Name = "pbSchoolPropaganda";
-            this.pbSchoolPropaganda.Size = new System.Drawing.Size(186, 190);
-            this.pbSchoolPropaganda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSchoolPropaganda.TabIndex = 0;
-            this.pbSchoolPropaganda.TabStop = false;
-            // 
             // panelCeausescuMail
             // 
             this.panelCeausescuMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCeausescuMail.Controls.Add(this.tableLayoutCeausescuMail);
             this.panelCeausescuMail.Controls.Add(this.pbCeausescuMail);
-            this.panelCeausescuMail.Location = new System.Drawing.Point(1616, 31);
+            this.panelCeausescuMail.Location = new System.Drawing.Point(1605, 26);
             this.panelCeausescuMail.Name = "panelCeausescuMail";
-            this.panelCeausescuMail.Size = new System.Drawing.Size(268, 314);
+            this.panelCeausescuMail.Size = new System.Drawing.Size(268, 380);
             this.panelCeausescuMail.TabIndex = 19;
             // 
             // tableLayoutCeausescuMail
@@ -581,7 +504,7 @@
             this.tableLayoutCeausescuMail.RowCount = 2;
             this.tableLayoutCeausescuMail.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutCeausescuMail.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutCeausescuMail.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutCeausescuMail.Size = new System.Drawing.Size(237, 185);
             this.tableLayoutCeausescuMail.TabIndex = 9;
             // 
             // lblCeausescuMailQ
@@ -609,17 +532,6 @@
             this.lblCeausescuMailAns.Text = "Unknown";
             this.lblCeausescuMailAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbCeausescuMail
-            // 
-            this.pbCeausescuMail.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbCeausescuMail.InitialImage = null;
-            this.pbCeausescuMail.Location = new System.Drawing.Point(44, 3);
-            this.pbCeausescuMail.Name = "pbCeausescuMail";
-            this.pbCeausescuMail.Size = new System.Drawing.Size(186, 190);
-            this.pbCeausescuMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCeausescuMail.TabIndex = 0;
-            this.pbCeausescuMail.TabStop = false;
-            // 
             // panelJapaneseMachines
             // 
             this.panelJapaneseMachines.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -641,7 +553,7 @@
             this.tableLayoutJapaneseMachines.RowCount = 2;
             this.tableLayoutJapaneseMachines.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutJapaneseMachines.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutJapaneseMachines.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutJapaneseMachines.Size = new System.Drawing.Size(237, 109);
             this.tableLayoutJapaneseMachines.TabIndex = 9;
             // 
             // lblJapaneseMachinesQ
@@ -669,17 +581,6 @@
             this.lblJapaneseMachinesAns.Text = "Unknown";
             this.lblJapaneseMachinesAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbJapaneseMachines
-            // 
-            this.pbJapaneseMachines.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbJapaneseMachines.InitialImage = null;
-            this.pbJapaneseMachines.Location = new System.Drawing.Point(44, 3);
-            this.pbJapaneseMachines.Name = "pbJapaneseMachines";
-            this.pbJapaneseMachines.Size = new System.Drawing.Size(186, 190);
-            this.pbJapaneseMachines.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbJapaneseMachines.TabIndex = 0;
-            this.pbJapaneseMachines.TabStop = false;
-            // 
             // panelSwimmerKiller
             // 
             this.panelSwimmerKiller.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -701,7 +602,7 @@
             this.tableLayoutSwimmerKiller.RowCount = 2;
             this.tableLayoutSwimmerKiller.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutSwimmerKiller.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutSwimmerKiller.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutSwimmerKiller.Size = new System.Drawing.Size(237, 119);
             this.tableLayoutSwimmerKiller.TabIndex = 9;
             // 
             // lblSwimmerKillerQ
@@ -729,25 +630,14 @@
             this.lblSwimmerKillerAns.Text = "Unknown";
             this.lblSwimmerKillerAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbSwimmerKiller
-            // 
-            this.pbSwimmerKiller.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbSwimmerKiller.InitialImage = null;
-            this.pbSwimmerKiller.Location = new System.Drawing.Point(44, 3);
-            this.pbSwimmerKiller.Name = "pbSwimmerKiller";
-            this.pbSwimmerKiller.Size = new System.Drawing.Size(186, 190);
-            this.pbSwimmerKiller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSwimmerKiller.TabIndex = 0;
-            this.pbSwimmerKiller.TabStop = false;
-            // 
             // panelStopEngineers
             // 
             this.panelStopEngineers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelStopEngineers.Controls.Add(this.tableLayoutStopEngineers);
             this.panelStopEngineers.Controls.Add(this.pbStopEngineers);
-            this.panelStopEngineers.Location = new System.Drawing.Point(1571, 665);
+            this.panelStopEngineers.Location = new System.Drawing.Point(1588, 663);
             this.panelStopEngineers.Name = "panelStopEngineers";
-            this.panelStopEngineers.Size = new System.Drawing.Size(268, 314);
+            this.panelStopEngineers.Size = new System.Drawing.Size(268, 366);
             this.panelStopEngineers.TabIndex = 17;
             // 
             // tableLayoutStopEngineers
@@ -761,7 +651,7 @@
             this.tableLayoutStopEngineers.RowCount = 2;
             this.tableLayoutStopEngineers.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutStopEngineers.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutStopEngineers.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutStopEngineers.Size = new System.Drawing.Size(237, 171);
             this.tableLayoutStopEngineers.TabIndex = 9;
             // 
             // lblStopEngineersQ
@@ -789,17 +679,6 @@
             this.lblStopEngineersAns.Text = "Unknown";
             this.lblStopEngineersAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbStopEngineers
-            // 
-            this.pbStopEngineers.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
-            this.pbStopEngineers.InitialImage = null;
-            this.pbStopEngineers.Location = new System.Drawing.Point(44, 3);
-            this.pbStopEngineers.Name = "pbStopEngineers";
-            this.pbStopEngineers.Size = new System.Drawing.Size(186, 190);
-            this.pbStopEngineers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbStopEngineers.TabIndex = 0;
-            this.pbStopEngineers.TabStop = false;
-            // 
             // panelCutPhoneLines
             // 
             this.panelCutPhoneLines.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -821,7 +700,7 @@
             this.tableLayoutCutPhoneLines.RowCount = 2;
             this.tableLayoutCutPhoneLines.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutCutPhoneLines.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutCutPhoneLines.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutCutPhoneLines.Size = new System.Drawing.Size(237, 119);
             this.tableLayoutCutPhoneLines.TabIndex = 9;
             // 
             // lblCutPhoneLinesQ
@@ -849,9 +728,20 @@
             this.lblCutPhoneLinesAns.Text = "Unknown";
             this.lblCutPhoneLinesAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pbStopEngineers
+            // 
+            this.pbStopEngineers.Image = global::IQP_Tester.Properties.Resources.StopEngineers;
+            this.pbStopEngineers.InitialImage = null;
+            this.pbStopEngineers.Location = new System.Drawing.Point(44, 3);
+            this.pbStopEngineers.Name = "pbStopEngineers";
+            this.pbStopEngineers.Size = new System.Drawing.Size(186, 190);
+            this.pbStopEngineers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbStopEngineers.TabIndex = 0;
+            this.pbStopEngineers.TabStop = false;
+            // 
             // pbCutPhoneLines
             // 
-            this.pbCutPhoneLines.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.pbCutPhoneLines.Image = global::IQP_Tester.Properties.Resources.CutPhoneLines;
             this.pbCutPhoneLines.InitialImage = null;
             this.pbCutPhoneLines.Location = new System.Drawing.Point(44, 3);
             this.pbCutPhoneLines.Name = "pbCutPhoneLines";
@@ -859,6 +749,116 @@
             this.pbCutPhoneLines.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCutPhoneLines.TabIndex = 0;
             this.pbCutPhoneLines.TabStop = false;
+            // 
+            // pbSwimmerKiller
+            // 
+            this.pbSwimmerKiller.Image = global::IQP_Tester.Properties.Resources.SwimmerKiller;
+            this.pbSwimmerKiller.InitialImage = null;
+            this.pbSwimmerKiller.Location = new System.Drawing.Point(44, 3);
+            this.pbSwimmerKiller.Name = "pbSwimmerKiller";
+            this.pbSwimmerKiller.Size = new System.Drawing.Size(186, 190);
+            this.pbSwimmerKiller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSwimmerKiller.TabIndex = 0;
+            this.pbSwimmerKiller.TabStop = false;
+            // 
+            // pbJapaneseMachines
+            // 
+            this.pbJapaneseMachines.Image = global::IQP_Tester.Properties.Resources.JapaneseMachines;
+            this.pbJapaneseMachines.InitialImage = null;
+            this.pbJapaneseMachines.Location = new System.Drawing.Point(44, 3);
+            this.pbJapaneseMachines.Name = "pbJapaneseMachines";
+            this.pbJapaneseMachines.Size = new System.Drawing.Size(186, 190);
+            this.pbJapaneseMachines.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbJapaneseMachines.TabIndex = 0;
+            this.pbJapaneseMachines.TabStop = false;
+            // 
+            // pbCeausescuMail
+            // 
+            this.pbCeausescuMail.Image = global::IQP_Tester.Properties.Resources.CeauşescuMail;
+            this.pbCeausescuMail.InitialImage = null;
+            this.pbCeausescuMail.Location = new System.Drawing.Point(44, 3);
+            this.pbCeausescuMail.Name = "pbCeausescuMail";
+            this.pbCeausescuMail.Size = new System.Drawing.Size(186, 190);
+            this.pbCeausescuMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCeausescuMail.TabIndex = 0;
+            this.pbCeausescuMail.TabStop = false;
+            // 
+            // pbSchoolPropaganda
+            // 
+            this.pbSchoolPropaganda.Image = global::IQP_Tester.Properties.Resources.SchoolPropaganda;
+            this.pbSchoolPropaganda.InitialImage = null;
+            this.pbSchoolPropaganda.Location = new System.Drawing.Point(44, 3);
+            this.pbSchoolPropaganda.Name = "pbSchoolPropaganda";
+            this.pbSchoolPropaganda.Size = new System.Drawing.Size(186, 190);
+            this.pbSchoolPropaganda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSchoolPropaganda.TabIndex = 0;
+            this.pbSchoolPropaganda.TabStop = false;
+            // 
+            // pbColdHands
+            // 
+            this.pbColdHands.Image = global::IQP_Tester.Properties.Resources.ColdHands;
+            this.pbColdHands.InitialImage = null;
+            this.pbColdHands.Location = new System.Drawing.Point(44, 3);
+            this.pbColdHands.Name = "pbColdHands";
+            this.pbColdHands.Size = new System.Drawing.Size(186, 190);
+            this.pbColdHands.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbColdHands.TabIndex = 0;
+            this.pbColdHands.TabStop = false;
+            // 
+            // pbSoftTomato
+            // 
+            this.pbSoftTomato.Image = global::IQP_Tester.Properties.Resources.SoftTomato;
+            this.pbSoftTomato.InitialImage = null;
+            this.pbSoftTomato.Location = new System.Drawing.Point(44, 3);
+            this.pbSoftTomato.Name = "pbSoftTomato";
+            this.pbSoftTomato.Size = new System.Drawing.Size(186, 190);
+            this.pbSoftTomato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSoftTomato.TabIndex = 0;
+            this.pbSoftTomato.TabStop = false;
+            // 
+            // pbDestiny
+            // 
+            this.pbDestiny.Image = global::IQP_Tester.Properties.Resources.Destiny;
+            this.pbDestiny.InitialImage = null;
+            this.pbDestiny.Location = new System.Drawing.Point(44, 3);
+            this.pbDestiny.Name = "pbDestiny";
+            this.pbDestiny.Size = new System.Drawing.Size(186, 190);
+            this.pbDestiny.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbDestiny.TabIndex = 0;
+            this.pbDestiny.TabStop = false;
+            // 
+            // pbTeacherBeating
+            // 
+            this.pbTeacherBeating.Image = global::IQP_Tester.Properties.Resources.TeacherBeating;
+            this.pbTeacherBeating.InitialImage = null;
+            this.pbTeacherBeating.Location = new System.Drawing.Point(44, 3);
+            this.pbTeacherBeating.Name = "pbTeacherBeating";
+            this.pbTeacherBeating.Size = new System.Drawing.Size(186, 190);
+            this.pbTeacherBeating.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbTeacherBeating.TabIndex = 0;
+            this.pbTeacherBeating.TabStop = false;
+            // 
+            // pbButterWhy
+            // 
+            this.pbButterWhy.Image = global::IQP_Tester.Properties.Resources.ButterWhy;
+            this.pbButterWhy.InitialImage = null;
+            this.pbButterWhy.Location = new System.Drawing.Point(44, 3);
+            this.pbButterWhy.Name = "pbButterWhy";
+            this.pbButterWhy.Size = new System.Drawing.Size(186, 190);
+            this.pbButterWhy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbButterWhy.TabIndex = 0;
+            this.pbButterWhy.TabStop = false;
+            // 
+            // pbStolenHorse
+            // 
+            this.pbStolenHorse.Image = global::IQP_Tester.Properties.Resources.StolenHorse;
+            this.pbStolenHorse.InitialImage = null;
+            this.pbStolenHorse.Location = new System.Drawing.Point(44, 3);
+            this.pbStolenHorse.Name = "pbStolenHorse";
+            this.pbStolenHorse.Size = new System.Drawing.Size(186, 190);
+            this.pbStolenHorse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbStolenHorse.TabIndex = 0;
+            this.pbStolenHorse.TabStop = false;
             // 
             // Stories
             // 
@@ -886,51 +886,51 @@
             this.panelStolenHorse.ResumeLayout(false);
             this.tableLayoutStolenHorse.ResumeLayout(false);
             this.tableLayoutStolenHorse.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStolenHorse)).EndInit();
             this.panelButterWhy.ResumeLayout(false);
             this.tableLayoutButterWhy.ResumeLayout(false);
             this.tableLayoutButterWhy.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbButterWhy)).EndInit();
             this.panelTeacherBeating.ResumeLayout(false);
             this.tableLayoutTeacherBeating.ResumeLayout(false);
             this.tableLayoutTeacherBeating.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTeacherBeating)).EndInit();
             this.panelDestiny.ResumeLayout(false);
             this.tableLayoutDestiny.ResumeLayout(false);
             this.tableLayoutDestiny.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDestiny)).EndInit();
             this.panelSoftTomato.ResumeLayout(false);
             this.tableLayoutSoftTomato.ResumeLayout(false);
             this.tableLayoutSoftTomato.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSoftTomato)).EndInit();
             this.panelColdHands.ResumeLayout(false);
             this.tableLayoutColdHands.ResumeLayout(false);
             this.tableLayoutColdHands.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbColdHands)).EndInit();
             this.panelSchoolPropaganda.ResumeLayout(false);
             this.tableLayoutSchoolPropaganda.ResumeLayout(false);
             this.tableLayoutSchoolPropaganda.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSchoolPropaganda)).EndInit();
             this.panelCeausescuMail.ResumeLayout(false);
             this.tableLayoutCeausescuMail.ResumeLayout(false);
             this.tableLayoutCeausescuMail.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCeausescuMail)).EndInit();
             this.panelJapaneseMachines.ResumeLayout(false);
             this.tableLayoutJapaneseMachines.ResumeLayout(false);
             this.tableLayoutJapaneseMachines.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbJapaneseMachines)).EndInit();
             this.panelSwimmerKiller.ResumeLayout(false);
             this.tableLayoutSwimmerKiller.ResumeLayout(false);
             this.tableLayoutSwimmerKiller.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSwimmerKiller)).EndInit();
             this.panelStopEngineers.ResumeLayout(false);
             this.tableLayoutStopEngineers.ResumeLayout(false);
             this.tableLayoutStopEngineers.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStopEngineers)).EndInit();
             this.panelCutPhoneLines.ResumeLayout(false);
             this.tableLayoutCutPhoneLines.ResumeLayout(false);
             this.tableLayoutCutPhoneLines.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStopEngineers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCutPhoneLines)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSwimmerKiller)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJapaneseMachines)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCeausescuMail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSchoolPropaganda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbColdHands)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSoftTomato)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDestiny)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTeacherBeating)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbButterWhy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStolenHorse)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -252,6 +252,7 @@
     <EmbeddedResource Include="ThenAndNow.resx">
       <DependentUpon>ThenAndNow.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="fancy soap luxury.HEIC" />
     <None Include="IQP_Tester_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -286,9 +287,16 @@
     <None Include="Demonstration.png" />
     <None Include="Childhood.png" />
     <None Include="Black_Line.png" />
+    <Content Include="ButterWhy.png" />
+    <Content Include="CeauşescuMail.png" />
+    <Content Include="ColdHands.png" />
+    <Content Include="CutPhoneLines.png" />
+    <Content Include="Destiny.png" />
+    <Content Include="JapaneseMachines.png" />
     <Content Include="Kneeling_With_Rifle.jpg" />
     <None Include="Media.png" />
     <Content Include="Nicolae_Ceasescu.png" />
+    <Content Include="not sure what to use this one for.jpg" />
     <Content Include="Painting_on_Wall.jpg" />
     <Content Include="People_Gathering.jpg" />
     <Content Include="People_in_Square.jpg" />
@@ -304,6 +312,25 @@
     <Content Include="Romania_Flag.png" />
     <Content Include="Rumanian_Revolution_Tank.jpg" />
     <None Include="Timisoara_Uprising.jpg" />
+    <Content Include="SchoolPropaganda.png" />
+    <Content Include="SoftTomato.png" />
+    <Content Include="StolenHorse.png" />
+    <Content Include="StopEngineers.png" />
+    <None Include="Stories_Pictures\ButterWhy.png" />
+    <None Include="Stories_Pictures\CeauşescuMail.png" />
+    <None Include="Stories_Pictures\ColdHands.png" />
+    <None Include="Stories_Pictures\CutPhoneLines.png" />
+    <None Include="Stories_Pictures\Destiny.png" />
+    <None Include="Stories_Pictures\JapaneseMachines.png" />
+    <None Include="Stories_Pictures\not sure what to use this one for.jpg" />
+    <None Include="Stories_Pictures\SchoolPropaganda.png" />
+    <None Include="Stories_Pictures\SoftTomato.png" />
+    <None Include="Stories_Pictures\StolenHorse.png" />
+    <None Include="Stories_Pictures\StopEngineers.png" />
+    <None Include="Stories_Pictures\SwimmerKiller.png" />
+    <None Include="Stories_Pictures\TeacherBeating.png" />
+    <Content Include="SwimmerKiller.png" />
+    <Content Include="TeacherBeating.png" />
     <Content Include="UK_Flag.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
