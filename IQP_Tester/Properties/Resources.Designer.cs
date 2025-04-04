@@ -63,6 +63,16 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ana {
+            get {
+                object obj = ResourceManager.GetObject("Ana", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Black_Line {
             get {
                 object obj = ResourceManager.GetObject("Black_Line", resourceCulture);
@@ -203,6 +213,16 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HousePeople {
+            get {
+                object obj = ResourceManager.GetObject("HousePeople", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Influence {
             get {
                 object obj = ResourceManager.GetObject("Influence", resourceCulture);
@@ -216,6 +236,16 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap JapaneseMachines {
             get {
                 object obj = ResourceManager.GetObject("JapaneseMachines", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap July {
+            get {
+                object obj = ResourceManager.GetObject("July", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,6 +506,16 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap University {
             get {
                 object obj = ResourceManager.GetObject("University", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Warsaw {
+            get {
+                object obj = ResourceManager.GetObject("Warsaw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

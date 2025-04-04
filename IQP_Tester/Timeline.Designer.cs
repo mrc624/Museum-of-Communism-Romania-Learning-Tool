@@ -382,7 +382,7 @@
             // 
             // pbHousePeople
             // 
-            this.pbHousePeople.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.pbHousePeople.Image = global::IQP_Tester.Properties.Resources.HousePeople;
             this.pbHousePeople.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbHousePeople.InitialImage")));
             this.pbHousePeople.Location = new System.Drawing.Point(44, 3);
             this.pbHousePeople.Name = "pbHousePeople";
@@ -393,7 +393,7 @@
             // 
             // pbJuly
             // 
-            this.pbJuly.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.pbJuly.Image = global::IQP_Tester.Properties.Resources.July;
             this.pbJuly.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbJuly.InitialImage")));
             this.pbJuly.Location = new System.Drawing.Point(44, 3);
             this.pbJuly.Name = "pbJuly";
@@ -404,7 +404,7 @@
             // 
             // pbWarsaw
             // 
-            this.pbWarsaw.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.pbWarsaw.Image = global::IQP_Tester.Properties.Resources.Warsaw;
             this.pbWarsaw.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWarsaw.InitialImage")));
             this.pbWarsaw.Location = new System.Drawing.Point(44, 3);
             this.pbWarsaw.Name = "pbWarsaw";
@@ -415,11 +415,11 @@
             // 
             // pbAna
             // 
-            this.pbAna.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.pbAna.Image = global::IQP_Tester.Properties.Resources.Ana;
             this.pbAna.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbAna.InitialImage")));
-            this.pbAna.Location = new System.Drawing.Point(44, 3);
+            this.pbAna.Location = new System.Drawing.Point(16, 30);
             this.pbAna.Name = "pbAna";
-            this.pbAna.Size = new System.Drawing.Size(186, 190);
+            this.pbAna.Size = new System.Drawing.Size(237, 113);
             this.pbAna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbAna.TabIndex = 0;
             this.pbAna.TabStop = false;

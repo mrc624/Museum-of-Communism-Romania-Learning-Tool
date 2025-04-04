@@ -281,18 +281,26 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Timeline_Pictures\Ana.png" />
+    <None Include="Timeline_Pictures\HousePeople.png" />
+    <None Include="Timeline_Pictures\July.png" />
+    <None Include="Timeline_Pictures\Warsaw.png" />
+    <Content Include="Warsaw.png" />
     <None Include="YouthOrg.png" />
     <None Include="University.png" />
     <None Include="Blue_Circle.png" />
     <None Include="Demonstration.png" />
     <None Include="Childhood.png" />
     <None Include="Black_Line.png" />
+    <Content Include="Ana.png" />
     <Content Include="ButterWhy.png" />
     <Content Include="CeauşescuMail.png" />
     <Content Include="ColdHands.png" />
     <Content Include="CutPhoneLines.png" />
     <Content Include="Destiny.png" />
+    <Content Include="HousePeople.png" />
     <Content Include="JapaneseMachines.png" />
+    <Content Include="July.png" />
     <Content Include="Kneeling_With_Rifle.jpg" />
     <None Include="Media.png" />
     <Content Include="Nicolae_Ceasescu.png" />
