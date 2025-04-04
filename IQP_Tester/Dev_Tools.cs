@@ -22,6 +22,7 @@ namespace IQP_Tester
             this.textManager = textManager;
         }
 
+        Dictionary<string, Dictionary<string, string>> Reformatted;
 
         public int CONTROL_NAME_COLUMN = 0;
         public int ENGLISH_COLUMN = 1;
@@ -40,10 +41,19 @@ namespace IQP_Tester
         public TableLayoutPanelCellBorderStyle LOADING = TableLayoutPanelCellBorderStyle.None;
         public TableLayoutPanelCellBorderStyle LOADED = TableLayoutPanelCellBorderStyle.Single;
 
+        private void Update_Global_Reformatted(Dictionary<string, Dictionary<string, string>> reformatted)
+        {
+            if (reformatted != null)
+            {
+                Reformatted = reformatted;
+            }
+        }
+
         private void Fill_EditText_Table()
         {
             tableLayoutDevEditText.Visible = false;
-            Dictionary<string, Dictionary<string, string>> reformatted = Get_Reformatted_Dictionary();
+            Dictionary<string, Dictionary<string, string>>  reformatted = Get_Reformatted_Dictionary();
+            Update_Global_Reformatted(reformatted);
 
             List<string> controls = reformatted.Keys.ToList();
 
@@ -61,16 +71,57 @@ namespace IQP_Tester
                 int eng_width = tableLayoutDevEditText.GetColumnWidths()[ENGLISH_COLUMN];
                 TextBox english = tableLayout_Helper.Get_Textbox(english_text, ENGLISH_NAME + i.ToString(), eng_width);
                 tableLayoutDevEditText.Controls.Add(english, ENGLISH_COLUMN, row);
+                english.TextChanged += EditText_TextChanged;
 
                 string romanian_text = reformatted[control_name][textManager.language_to_string[(int)TextManager.Language.Romanian]];
                 int rom_width = tableLayoutDevEditText.GetColumnWidths()[ROMANIAN_COLUMN];
                 TextBox romanian = tableLayout_Helper.Get_Textbox(romanian_text, ROMANIAN_NAME + i.ToString(), rom_width);
                 tableLayoutDevEditText.Controls.Add(romanian, ROMANIAN_COLUMN, row);
+                romanian.TextChanged += EditText_TextChanged;
                 
             }
             tableLayout_Helper.Set_Row_Heights(tableLayoutDevEditText);
             tableLayoutDevEditText.CellBorderStyle = LOADED;
             tableLayoutDevEditText.Visible = true;
+        }
+
+        private void EditText_TextChanged(object sender, EventArgs e)
+        {
+            if (tableLayoutDevEditText.Visible)
+            {
+                TextBox textBox = (TextBox)sender;
+                TableLayoutPanelCellPosition position = tableLayoutDevEditText.GetCellPosition(textBox);
+
+                string control_name = tableLayoutDevEditText.GetControlFromPosition(CONTROL_NAME_COLUMN, position.Row).Name;
+                string lang_key = null;
+                if (position.Column == ENGLISH_COLUMN)
+                {
+                    lang_key = textManager.language_to_string[(int)TextManager.Language.English];
+                }
+                else if (position.Column == ROMANIAN_COLUMN)
+                {
+                    lang_key = textManager.language_to_string[(int)TextManager.Language.Romanian];
+                }
+                else
+                {
+                    return;
+                }
+                string old_text = Reformatted[control_name][lang_key];
+
+                if (old_text != textBox.Text)
+                {
+                    textBox.BackColor = Color.Yellow;
+                }
+                else
+                {
+                    textBox.BackColor = SystemColors.Window;
+                }
+            }
+        }
+
+        private int Get_Textbox_Name_Number(TableLayoutPanelCellPosition position)
+        {
+            return position.Column + ROWS_TO_SKIP;
         }
 
         private void Empty_EditText_Table()
