@@ -21,7 +21,10 @@ namespace IQP_Tester
         public const string CITATION_FILE_NAME = "citations.json";
         public const string BIBLIOGRAPH_TXT_FILE_NAME = "bibliography.txt";
         public const string INDENT = "\n        ";
+        public const char SPACE = ' ';
+        public const char HYPHEN = '-';
         public const int INDENT_EVERY_CHAR = 100;
+        public const int INDENT_SEARCH_FOR_SPACE_CHAR_RANGE = 15;
 
         public enum Citation_Type
         {
@@ -236,17 +239,40 @@ namespace IQP_Tester
             {
                 for (int i = INDENT_EVERY_CHAR; i < citation.Length; i += INDENT_EVERY_CHAR)
                 {
-                    if (citation.Substring(i - 1, 1).Equals(" ") || citation.Substring(i, 1).Equals(" "))
+                    int indent_ind = Find_Space_Index(citation, i);
+                    if (indent_ind > 0)
                     {
-                        citation = citation.Substring(0, i) + INDENT + citation.Substring(i);
+                        citation = citation.Substring(0, indent_ind) + INDENT + citation.Substring(indent_ind);
                     }
                     else
                     {
-                        citation = citation.Substring(0, i) + "-" + INDENT + citation.Substring(i);
+                        citation = citation.Substring(0, i) + HYPHEN + INDENT + citation.Substring(i);
                     }
                 }
             }
             return citation;
+        }
+
+        public int Find_Space_Index(string citation, int ind)
+        {
+            // searching for space to the right
+            for (int i = ind; i < citation.Length && i <= ind + INDENT_SEARCH_FOR_SPACE_CHAR_RANGE; i++)
+            {
+                if (citation[i] == SPACE)
+                {
+                    return i;
+                }
+            }
+            // searching for space to the left
+            for (int i = ind; i >= 0 && i >= ind - INDENT_SEARCH_FOR_SPACE_CHAR_RANGE; i--)
+            {
+                if (citation[i] == SPACE)
+                {
+                    return i;
+                }
+            }
+            // no space found case
+            return -1;
         }
 
         public List<string> Get_Citations_Except_Pictures(Citation_Type type)

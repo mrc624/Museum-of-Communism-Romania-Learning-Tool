@@ -149,7 +149,8 @@
     "year4": "1980",
     "year3": "1970",
     "year2": "1960",
-    "year1": "1950"
+    "year1": "1950",
+    "year0": "1940"
   },
   "Romanian": {
     "lblOppression": "TRANSLATION NEEDED",
@@ -301,6 +302,7 @@
     "year4": "TRANSLATION NEEDED",
     "year3": "TRANSLATION NEEDED",
     "year2": "TRANSLATION NEEDED",
-    "year1": "TRANSLATION NEEDED"
+    "year1": "TRANSLATION NEEDED",
+    "year0": "TRANSLATION NEEDED"
   }
 }
