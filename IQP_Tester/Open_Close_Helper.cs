@@ -12,16 +12,20 @@ namespace IQP_Tester
     {
 
         delegate void VoidDelegate();
-        delegate void FormDelegate(Form form, int interval, double incement);
+        delegate void FormIntDoubleDelegate(Form form, int interval, double incement);
         delegate void FormIntDelegate(Form form, double val);
 
         public const int DEFAULT_FADE_INTERVAL = 10;
         public const double DEFAULT_FADE_INCREMENT = 0.05;
 
+        public Open_Close_Helper(Main _main)
+        {
+            main = _main;
+        }
 
 
         //Timeout things
-        Form main;
+        Main main;
 
         private System.Timers.Timer Timer;
 
@@ -29,11 +33,6 @@ namespace IQP_Tester
         public const uint tab_open_debounce = 1; // in 1/10 of seconds, 1/10 of a second
         static uint lastOpenTime = 0;
         public static uint seconds = 0; // not actually seconds, 1/10 of a second
-
-        public void Set_Main(Form _main)
-        {
-            main = _main;
-        }
 
         public void Start_Timer()
         {
@@ -53,7 +52,7 @@ namespace IQP_Tester
             seconds++;
             if (seconds == lastOpenTime + tabTimeout)
             {
-                CloseAllForms();
+                main.Invoke(new VoidDelegate(main.Open_Title_Page));
             }
         }
 
@@ -118,7 +117,7 @@ namespace IQP_Tester
         {
             if (form.InvokeRequired)
             {
-                form.Invoke(new FormDelegate(FadeOut), form, DEFAULT_FADE_INTERVAL, DEFAULT_FADE_INCREMENT);
+                form.Invoke(new FormIntDoubleDelegate(FadeOut), form, DEFAULT_FADE_INTERVAL, DEFAULT_FADE_INCREMENT);
             }
             else
             {

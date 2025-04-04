@@ -206,6 +206,12 @@
       <DependentUpon>ThenAndNow.cs</DependentUpon>
     </Compile>
     <Compile Include="TextManager.cs" />
+    <Compile Include="TitlePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitlePage.Designer.cs">
+      <DependentUpon>TitlePage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Credits.resx">
       <DependentUpon>Credits.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThenAndNow.resx">
       <DependentUpon>ThenAndNow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitlePage.resx">
+      <DependentUpon>TitlePage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="fancy soap luxury.HEIC" />
     <None Include="IQP_Tester_TemporaryKey.pfx" />

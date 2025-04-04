@@ -24,7 +24,7 @@ namespace IQP_Tester
 
         TextManager textManager = new TextManager();
         Resize_Helper resize = new Resize_Helper();
-        Open_Close_Helper openClose = new Open_Close_Helper();
+        Open_Close_Helper openClose;
         Click_Helper click_helper = new Click_Helper();
         Citation_Helper citation_Helper = new Citation_Helper();
 
@@ -43,10 +43,13 @@ namespace IQP_Tester
         Credits credits;
         Dev_Tools dev_Tools;
 
+        TitlePage titlePage;
+
         public Main()
         {
             InitializeComponent();
             Add_Forms();
+            openClose = new Open_Close_Helper(this);
             resize.CaptureAspectRatios(this);
             textManager.Generate_Text_JSON(TextManager.TEXT_MANAGER_FILE_NAME);
             citation_Helper.Generate_Citation_JSON(Citation_Helper.CITATION_FILE_NAME);
@@ -54,7 +57,6 @@ namespace IQP_Tester
             Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());
             openClose.Start_Timer();
-            openClose.Set_Main(this);
         }
 
         private void Set_Panel_Clicks()
@@ -85,11 +87,24 @@ namespace IQP_Tester
             Forms.Add(ceausescusRise);
             sovietEra = new SovietEra(textManager, openClose);
             Forms.Add(sovietEra);
+            titlePage = new TitlePage(textManager, openClose);
+            Forms.Add(titlePage);
         }
 
         // MAIN PAGE BEGIN (NOT PANELS)
 
         // MAIN PAGE END   (NOT PANELS)
+
+        // TITLE PAGE BEGIN
+
+        public void Open_Title_Page()
+        {
+            openClose.CloseAllForms();
+            titlePage = new TitlePage(textManager, openClose);
+            openClose.FadeIn(titlePage);
+        }
+
+        // TITLE PAGE END
 
         // THEN AND NOW BEGIN
 
