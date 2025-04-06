@@ -48,7 +48,7 @@ namespace IQP_Tester
             return label;
         }
 
-        public TextBox Get_Textbox(string text, string name, int width, float font, AnchorStyles anchor, HorizontalAlignment align, ScrollBars scrollbar)
+        public TextBox Get_Textbox(string text, string name, int width, float font, AnchorStyles anchor, HorizontalAlignment align, ScrollBars scrollbar, bool auto_height = false)
         {
             TextBox textbox = new TextBox();
 
@@ -65,16 +65,19 @@ namespace IQP_Tester
             textbox.Width = width;
             textbox.ScrollBars = scrollbar;
             
-            int lines = textbox.GetLineFromCharIndex(textbox.TextLength) + 1;
-            int height_of_one_line = textbox.Height;
-            textbox.Height = lines * height_of_one_line;
+            if (auto_height) // produces a taller textbox than neccessary
+            {
+                int lines = textbox.GetLineFromCharIndex(textbox.TextLength) + 1;
+                int height_of_one_line = textbox.Height;
+                textbox.Height = lines * height_of_one_line;
+            }
 
             return textbox;
         }
 
-        public TextBox Get_Textbox(string text, string name, int width)
+        public TextBox Get_Textbox(string text, string name, int width, bool auto_size)
         {
-            return Get_Textbox(text, name, width, STANDARD_FONT_SIZE, STANDARD_ANCHOR, TB_STANDARD, TB_SCROLLBARS);
+            return Get_Textbox(text, name, width, STANDARD_FONT_SIZE, STANDARD_ANCHOR, TB_STANDARD, TB_SCROLLBARS, auto_size);
         }
 
         public void Set_Row_Heights(TableLayoutPanel table)

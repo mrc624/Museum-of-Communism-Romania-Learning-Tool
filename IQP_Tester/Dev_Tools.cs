@@ -29,6 +29,7 @@ namespace IQP_Tester
         public int ROMANIAN_COLUMN = 2;
         public int ROWS_TO_SKIP = 1;
         public int HEADER_ROW = 0;
+        private bool AUTO_SIZE = true;
 
         public string CONTROL_NAME = "control";
         public string ROMANIAN_NAME = "Rom";
@@ -51,7 +52,7 @@ namespace IQP_Tester
 
         private void Fill_EditText_Table()
         {
-            tableLayoutDevEditText.Visible = false;
+            //UNCOMMENT, COMMENTED FOR TESTING tableLayoutDevEditText.Visible = false;
             Dictionary<string, Dictionary<string, string>>  reformatted = Get_Reformatted_Dictionary();
             Update_Global_Reformatted(reformatted);
 
@@ -69,13 +70,13 @@ namespace IQP_Tester
                 
                 string english_text = reformatted[control_name][textManager.language_to_string[(int)TextManager.Language.English]];
                 int eng_width = tableLayoutDevEditText.GetColumnWidths()[ENGLISH_COLUMN];
-                TextBox english = tableLayout_Helper.Get_Textbox(english_text, ENGLISH_NAME + i.ToString(), eng_width);
+                TextBox english = tableLayout_Helper.Get_Textbox(english_text, ENGLISH_NAME + i.ToString(), eng_width, AUTO_SIZE);
                 tableLayoutDevEditText.Controls.Add(english, ENGLISH_COLUMN, row);
                 english.TextChanged += EditText_TextChanged;
 
                 string romanian_text = reformatted[control_name][textManager.language_to_string[(int)TextManager.Language.Romanian]];
                 int rom_width = tableLayoutDevEditText.GetColumnWidths()[ROMANIAN_COLUMN];
-                TextBox romanian = tableLayout_Helper.Get_Textbox(romanian_text, ROMANIAN_NAME + i.ToString(), rom_width);
+                TextBox romanian = tableLayout_Helper.Get_Textbox(romanian_text, ROMANIAN_NAME + i.ToString(), rom_width, AUTO_SIZE);
                 tableLayoutDevEditText.Controls.Add(romanian, ROMANIAN_COLUMN, row);
                 romanian.TextChanged += EditText_TextChanged;
                 
@@ -126,7 +127,7 @@ namespace IQP_Tester
 
         private void Empty_EditText_Table()
         {
-            tableLayoutDevEditText.Visible = false;
+            //UNCOMMENT COMMENTED FOR TESTING tableLayoutDevEditText.Visible = false;
             tableLayoutDevEditText.CellBorderStyle = LOADING;
             while (tableLayoutDevEditText.Controls.Count > 0)
             {
