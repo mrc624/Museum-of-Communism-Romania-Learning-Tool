@@ -22,6 +22,8 @@ namespace IQP_Tester
             InitializeComponent();
             textManager = textMan;
             openClose = open_close;
+            textManager.Update_One_Form(this);
+            resize.CaptureAspectRatios(this);
             resize.Fullscreen_Form(this);
             clickHelper.Assign_All_Children_To_Same_Click(this, TitlePage_Click);
         }
@@ -29,6 +31,13 @@ namespace IQP_Tester
         private void TitlePage_Click(object sender, EventArgs e)
         {
             openClose.Close(this);
+        }
+
+        private void TitlePage_Resize(object sender, EventArgs e)
+        {
+            resize.Handle_Resize(this);
+
+            resize.Center_X_Y(tableLayoutTitle);
         }
     }
 }

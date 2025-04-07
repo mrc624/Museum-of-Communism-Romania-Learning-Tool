@@ -150,7 +150,9 @@
     "year3": "1970",
     "year2": "1960",
     "year1": "1950",
-    "year0": "1940"
+    "year0": "1940",
+    "lblTitle": "Understanding Stories of Romanian Communism",
+    "lblSubtitle": "I like big macs, I think they are tasty. I like McDonalds and the fries that come with it. The Mcnuggets are better than a big mac though."
   },
   "Romanian": {
     "lblOppression": "TRANSLATION NEEDED",
@@ -303,6 +305,8 @@
     "year3": "TRANSLATION NEEDED",
     "year2": "TRANSLATION NEEDED",
     "year1": "TRANSLATION NEEDED",
-    "year0": "TRANSLATION NEEDED"
+    "year0": "TRANSLATION NEEDED",
+    "lblTitle": "TRANSLATION NEEDED",
+    "lblSubtitle": "TRANSLATION NEEDED"
   }
 }
