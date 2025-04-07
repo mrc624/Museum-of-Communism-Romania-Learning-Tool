@@ -19,13 +19,13 @@ namespace IQP_Tester
         TableLayout_Helper tableLayout_Helper = new TableLayout_Helper();
         Citation_Helper citation_Helper;
 
+        public const uint ROW_VERTICAL_OFFSET = 10;
+
         public Credits(Citation_Helper citation_helper)
         {
             InitializeComponent();
             citation_Helper = citation_helper;
         }
-
-        public const uint ROW_VERTICAL_OFFSET = 10;
 
         private void Credits_Load(object sender, EventArgs e)
         {
@@ -49,12 +49,13 @@ namespace IQP_Tester
 
             for (int i = 0; i < pictures.Count; i++)
             {
-                pictures[i].Anchor = TableLayout_Helper.STANDARD_ANCHOR;
+                pictures[i].Anchor = TableLayout_Helper.TITLE_ANCHOR;
                 pictures[i].Name = pictures[i].Name;
                 CreditsTableLayoutPanel.RowCount++;
                 CreditsTableLayoutPanel.Controls.Add(pictures[i], 0, CreditsTableLayoutPanel.RowCount);
 
                 string citation = citation_Helper.Citations[citation_Helper.Citations_to_String[(int)Citation_Type.Pictures]][pictures[i].Name];
+                citation = citation_Helper.Format_Hanging_Indentation(citation);
                 System.Windows.Forms.Label label = tableLayout_Helper.Get_Standard_Label(citation, "lbl" + pictures[i].Name + i.ToString());
                 CreditsTableLayoutPanel.RowCount++;
                 CreditsTableLayoutPanel.Controls.Add(label, 0, CreditsTableLayoutPanel.RowCount);

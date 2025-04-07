@@ -29,7 +29,7 @@ namespace IQP_Tester
 
         private System.Timers.Timer Timer;
 
-        public const uint tabTimeout = 100; // in 1/10 of seconds, 10 seconds
+        public const uint tabTimeout = 1000; // in 1/10 of seconds, 100 seconds
         public const uint tab_open_debounce = 1; // in 1/10 of seconds, 1/10 of a second
         static uint lastOpenTime = 0;
         public const int TIMER_TICK = 100; // tick 10 times a second
