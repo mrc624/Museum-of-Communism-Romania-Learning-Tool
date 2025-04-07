@@ -42,6 +42,7 @@ namespace IQP_Tester
         public string HEADER_ENGLISH_TEXT = "English";
         public string HEADER_ROMANIAN_TEXT = "Romanian";
 
+
         public TableLayoutPanelCellBorderStyle LOADING = TableLayoutPanelCellBorderStyle.None;
         public TableLayoutPanelCellBorderStyle LOADED = TableLayoutPanelCellBorderStyle.Single;
 
@@ -243,7 +244,9 @@ namespace IQP_Tester
         private void btnGenerateTextCSV_Click(object sender, EventArgs e)
         {
             Dictionary<string, Dictionary<string, string>> reformatted = Get_Reformatted_Dictionary();
-            csv_Helper.Create_CSV_From_Reformatted(reformatted);
+            List<string> header = new List<string> { HEADER_CONTROL_TEXT, HEADER_ENGLISH_TEXT, HEADER_ROMANIAN_TEXT};
+
+            csv_Helper.Create_CSV_From_Reformatted(reformatted, header);
         }
     }
 }
