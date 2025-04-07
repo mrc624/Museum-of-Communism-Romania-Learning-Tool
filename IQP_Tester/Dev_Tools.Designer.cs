@@ -37,6 +37,7 @@
             this.lblEditTextControlName = new System.Windows.Forms.Label();
             this.btnEditTextRefresh = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnGenerateTextCSV = new System.Windows.Forms.Button();
             this.TabControlDevs.SuspendLayout();
             this.tabText_Edit.SuspendLayout();
             this.tableLayoutDevEditText.SuspendLayout();
@@ -55,6 +56,7 @@
             // 
             // tabText_Edit
             // 
+            this.tabText_Edit.Controls.Add(this.btnGenerateTextCSV);
             this.tabText_Edit.Controls.Add(this.btnEditTextApply);
             this.tabText_Edit.Controls.Add(this.tableLayoutDevEditText);
             this.tabText_Edit.Controls.Add(this.btnEditTextRefresh);
@@ -160,6 +162,18 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // btnGenerateTextCSV
+            // 
+            this.btnGenerateTextCSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnGenerateTextCSV.Location = new System.Drawing.Point(8, 1416);
+            this.btnGenerateTextCSV.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnGenerateTextCSV.Name = "btnGenerateTextCSV";
+            this.btnGenerateTextCSV.Size = new System.Drawing.Size(200, 55);
+            this.btnGenerateTextCSV.TabIndex = 3;
+            this.btnGenerateTextCSV.Text = "CSV";
+            this.btnGenerateTextCSV.UseVisualStyleBackColor = false;
+            this.btnGenerateTextCSV.Click += new System.EventHandler(this.btnGenerateTextCSV_Click);
+            // 
             // Dev_Tools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -188,5 +202,6 @@
         private System.Windows.Forms.Label lblEditTextControlName;
         private System.Windows.Forms.Button btnEditTextRefresh;
         private System.Windows.Forms.Button btnEditTextApply;
+        private System.Windows.Forms.Button btnGenerateTextCSV;
     }
 }

@@ -16,10 +16,13 @@ namespace IQP_Tester
     {
         TextManager textManager;
         TableLayout_Helper tableLayout_Helper = new TableLayout_Helper();
+        CSV_Helper csv_Helper;
+
         public Dev_Tools(TextManager textManager)
         {
             InitializeComponent();
             this.textManager = textManager;
+            csv_Helper = new CSV_Helper(textManager);
         }
 
         Dictionary<string, Dictionary<string, string>> Reformatted;
@@ -52,7 +55,7 @@ namespace IQP_Tester
 
         private void Fill_EditText_Table()
         {
-            //UNCOMMENT, COMMENTED FOR TESTING tableLayoutDevEditText.Visible = false;
+            tableLayoutDevEditText.Visible = false;
             Dictionary<string, Dictionary<string, string>>  reformatted = Get_Reformatted_Dictionary();
             Update_Global_Reformatted(reformatted);
 
@@ -127,7 +130,7 @@ namespace IQP_Tester
 
         private void Empty_EditText_Table()
         {
-            //UNCOMMENT COMMENTED FOR TESTING tableLayoutDevEditText.Visible = false;
+            tableLayoutDevEditText.Visible = false;
             tableLayoutDevEditText.CellBorderStyle = LOADING;
             while (tableLayoutDevEditText.Controls.Count > 0)
             {
@@ -235,6 +238,12 @@ namespace IQP_Tester
             textManager.Update_Text();
             Empty_EditText_Table();
             Fill_EditText_Table();
+        }
+
+        private void btnGenerateTextCSV_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, Dictionary<string, string>> reformatted = Get_Reformatted_Dictionary();
+            csv_Helper.Create_CSV_From_Reformatted(reformatted);
         }
     }
 }

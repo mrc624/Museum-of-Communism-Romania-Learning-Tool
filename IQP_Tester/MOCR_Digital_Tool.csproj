@@ -133,6 +133,8 @@
     <Compile Include="Credits.Designer.cs">
       <DependentUpon>Credits.cs</DependentUpon>
     </Compile>
+    <Compile Include="CSV.cs" />
+    <Compile Include="CSV_Helper.cs" />
     <Compile Include="Dev_Tools.cs">
       <SubType>Form</SubType>
     </Compile>
