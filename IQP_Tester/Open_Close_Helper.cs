@@ -31,7 +31,7 @@ namespace IQP_Tester
 
         public const uint tabTimeout = 1000; // in 1/10 of seconds, 100 seconds
         public const uint tab_open_debounce = 1; // in 1/10 of seconds, 1/10 of a second
-        static uint lastOpenTime = 0;
+        static uint lastInteraction = 0;
         public const int TIMER_TICK = 100; // tick 10 times a second
         public static uint seconds = 0; // not actually seconds, 1/100 of a second
 
@@ -43,15 +43,15 @@ namespace IQP_Tester
             Timer.Enabled = true;
         }
 
-        public void Form_Opened()
+        public void Interaction()
         {
-            lastOpenTime = seconds;
+            lastInteraction = seconds;
         }
 
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
             seconds++;
-            if (seconds == lastOpenTime + tabTimeout)
+            if (seconds == lastInteraction + tabTimeout)
             {
                 main.Invoke(new VoidDelegate(main.Open_Title_Page));
             }
@@ -97,7 +97,7 @@ namespace IQP_Tester
                     else
                         fadeTimer.Stop(); // stop when fully visible
                 };
-                Form_Opened();
+                Interaction();
                 fadeTimer.Start();
             }
         }

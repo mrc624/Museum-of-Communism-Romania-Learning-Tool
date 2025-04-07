@@ -62,6 +62,7 @@ namespace IQP_Tester
 
         private void Polaroid_Zoom_Click(object sender, EventArgs e)
         {
+            openClose.Interaction();
             openClose.Close(this);
         }
 
@@ -81,6 +82,7 @@ namespace IQP_Tester
 
         private void btnLanguage_Click(object sender, EventArgs e)
         {
+            openClose.Interaction();
             translationManager.Increment_Language(this);
             Polaroid_Zoom_Resize(this, new EventArgs());
             Translate_Polaroid();

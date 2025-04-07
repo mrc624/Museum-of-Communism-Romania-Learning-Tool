@@ -30,6 +30,7 @@ namespace IQP_Tester
 
         private void TitlePage_Click(object sender, EventArgs e)
         {
+            openClose.Interaction();
             openClose.Close(this);
         }
 

@@ -2,11 +2,9 @@ make translation button UK flag and Romanian flag
 
 Perhaps should be centering main titles to the main pictures, but may not be needed since they both get Center_X()
 
-Add a progress bar for credits, it takes A WHILE to load
+Add a progress bar for credits and other
 
 Should update close timer whenever the user interacts
-
-Make title page
 
 Finish adding pictures
 

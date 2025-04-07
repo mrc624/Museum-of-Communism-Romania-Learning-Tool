@@ -41,6 +41,7 @@ namespace IQP_Tester
 
         private void CeausescusRise_Click(object sender, EventArgs e)
         {
+            openClose.Interaction();
             openClose.Close(this);
         }
         
@@ -57,6 +58,7 @@ namespace IQP_Tester
 
         private void btnLanguage_Click(object sender, EventArgs e)
         {
+            openClose.Interaction();
             textManager.Increment_Language(this);
         }
 
