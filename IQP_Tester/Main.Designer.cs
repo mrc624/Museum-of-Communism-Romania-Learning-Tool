@@ -35,13 +35,13 @@
             this.pbOppression = new System.Windows.Forms.PictureBox();
             this.lblOppression = new System.Windows.Forms.Label();
             this.panelLifeUnder = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pbLifeUnder = new System.Windows.Forms.PictureBox();
             this.lblLifeUnder = new System.Windows.Forms.Label();
             this.panelTimeline = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pbTimeline = new System.Windows.Forms.PictureBox();
             this.lblCommunistTimeline = new System.Windows.Forms.Label();
             this.panelStories = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pbStories = new System.Windows.Forms.PictureBox();
             this.lblStories = new System.Windows.Forms.Label();
             this.panelThenAndNow = new System.Windows.Forms.Panel();
             this.pbThenAndNow = new System.Windows.Forms.PictureBox();
@@ -49,11 +49,11 @@
             this.panelOppression.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOppression)).BeginInit();
             this.panelLifeUnder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLifeUnder)).BeginInit();
             this.panelTimeline.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTimeline)).BeginInit();
             this.panelStories.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStories)).BeginInit();
             this.panelThenAndNow.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbThenAndNow)).BeginInit();
             this.SuspendLayout();
@@ -62,10 +62,9 @@
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(4853, 2480);
-            this.btnLanguage.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(248, 88);
+            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
             this.btnLanguage.TabIndex = 2;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -76,10 +75,9 @@
             // 
             this.btnCredits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCredits.Location = new System.Drawing.Point(4589, 2480);
-            this.btnCredits.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnCredits.Location = new System.Drawing.Point(1721, 1040);
             this.btnCredits.Name = "btnCredits";
-            this.btnCredits.Size = new System.Drawing.Size(248, 88);
+            this.btnCredits.Size = new System.Drawing.Size(93, 37);
             this.btnCredits.TabIndex = 9;
             this.btnCredits.Text = "Credits";
             this.btnCredits.UseVisualStyleBackColor = false;
@@ -91,10 +89,10 @@
             this.panelOppression.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelOppression.Controls.Add(this.pbOppression);
             this.panelOppression.Controls.Add(this.lblOppression);
-            this.panelOppression.Location = new System.Drawing.Point(179, 86);
-            this.panelOppression.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelOppression.Location = new System.Drawing.Point(67, 36);
+            this.panelOppression.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.panelOppression.Name = "panelOppression";
-            this.panelOppression.Size = new System.Drawing.Size(1253, 780);
+            this.panelOppression.Size = new System.Drawing.Size(470, 327);
             this.panelOppression.TabIndex = 13;
             this.panelOppression.Click += new System.EventHandler(this.panelOppression_Click);
             // 
@@ -103,10 +101,9 @@
             this.pbOppression.BackColor = System.Drawing.Color.Transparent;
             this.pbOppression.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pbOppression.Image = global::IQP_Tester.Properties.Resources.OpressionMain;
-            this.pbOppression.Location = new System.Drawing.Point(285, 119);
-            this.pbOppression.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.pbOppression.Location = new System.Drawing.Point(107, 50);
             this.pbOppression.Name = "pbOppression";
-            this.pbOppression.Size = new System.Drawing.Size(669, 527);
+            this.pbOppression.Size = new System.Drawing.Size(251, 221);
             this.pbOppression.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbOppression.TabIndex = 1;
             this.pbOppression.TabStop = false;
@@ -116,9 +113,10 @@
             this.lblOppression.AutoSize = true;
             this.lblOppression.BackColor = System.Drawing.Color.Transparent;
             this.lblOppression.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOppression.Location = new System.Drawing.Point(411, 38);
+            this.lblOppression.Location = new System.Drawing.Point(154, 16);
+            this.lblOppression.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblOppression.Name = "lblOppression";
-            this.lblOppression.Size = new System.Drawing.Size(383, 78);
+            this.lblOppression.Size = new System.Drawing.Size(153, 31);
             this.lblOppression.TabIndex = 0;
             this.lblOppression.Text = "Oppression";
             // 
@@ -126,36 +124,36 @@
             // 
             this.panelLifeUnder.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
             this.panelLifeUnder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelLifeUnder.Controls.Add(this.pictureBox3);
+            this.panelLifeUnder.Controls.Add(this.pbLifeUnder);
             this.panelLifeUnder.Controls.Add(this.lblLifeUnder);
-            this.panelLifeUnder.Location = new System.Drawing.Point(3741, 86);
-            this.panelLifeUnder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelLifeUnder.Location = new System.Drawing.Point(1403, 36);
+            this.panelLifeUnder.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.panelLifeUnder.Name = "panelLifeUnder";
-            this.panelLifeUnder.Size = new System.Drawing.Size(1253, 780);
+            this.panelLifeUnder.Size = new System.Drawing.Size(470, 327);
             this.panelLifeUnder.TabIndex = 12;
             this.panelLifeUnder.Click += new System.EventHandler(this.panelLifeUnder_Click);
             // 
-            // pictureBox3
+            // pbLifeUnder
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Image = global::IQP_Tester.Properties.Resources.LifeUnderMain;
-            this.pictureBox3.Location = new System.Drawing.Point(293, 157);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(669, 527);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.pbLifeUnder.BackColor = System.Drawing.Color.Transparent;
+            this.pbLifeUnder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbLifeUnder.Image = global::IQP_Tester.Properties.Resources.LifeUnderMain;
+            this.pbLifeUnder.Location = new System.Drawing.Point(110, 66);
+            this.pbLifeUnder.Name = "pbLifeUnder";
+            this.pbLifeUnder.Size = new System.Drawing.Size(251, 221);
+            this.pbLifeUnder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLifeUnder.TabIndex = 2;
+            this.pbLifeUnder.TabStop = false;
             // 
             // lblLifeUnder
             // 
             this.lblLifeUnder.AutoSize = true;
             this.lblLifeUnder.BackColor = System.Drawing.Color.Transparent;
             this.lblLifeUnder.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLifeUnder.Location = new System.Drawing.Point(224, 76);
+            this.lblLifeUnder.Location = new System.Drawing.Point(84, 32);
+            this.lblLifeUnder.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblLifeUnder.Name = "lblLifeUnder";
-            this.lblLifeUnder.Size = new System.Drawing.Size(750, 78);
+            this.lblLifeUnder.Size = new System.Drawing.Size(297, 31);
             this.lblLifeUnder.TabIndex = 0;
             this.lblLifeUnder.Text = "Life Under Communism";
             // 
@@ -163,36 +161,36 @@
             // 
             this.panelTimeline.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
             this.panelTimeline.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelTimeline.Controls.Add(this.pictureBox4);
+            this.panelTimeline.Controls.Add(this.pbTimeline);
             this.panelTimeline.Controls.Add(this.lblCommunistTimeline);
-            this.panelTimeline.Location = new System.Drawing.Point(3203, 1605);
-            this.panelTimeline.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelTimeline.Location = new System.Drawing.Point(1201, 673);
+            this.panelTimeline.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.panelTimeline.Name = "panelTimeline";
-            this.panelTimeline.Size = new System.Drawing.Size(1253, 780);
+            this.panelTimeline.Size = new System.Drawing.Size(470, 327);
             this.panelTimeline.TabIndex = 11;
             this.panelTimeline.Click += new System.EventHandler(this.panelTimeline_Click);
             // 
-            // pictureBox4
+            // pbTimeline
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Image = global::IQP_Tester.Properties.Resources.TimelineMain;
-            this.pictureBox4.Location = new System.Drawing.Point(309, 167);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(669, 527);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
+            this.pbTimeline.BackColor = System.Drawing.Color.Transparent;
+            this.pbTimeline.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbTimeline.Image = global::IQP_Tester.Properties.Resources.TimelineMain;
+            this.pbTimeline.Location = new System.Drawing.Point(116, 70);
+            this.pbTimeline.Name = "pbTimeline";
+            this.pbTimeline.Size = new System.Drawing.Size(251, 221);
+            this.pbTimeline.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbTimeline.TabIndex = 2;
+            this.pbTimeline.TabStop = false;
             // 
             // lblCommunistTimeline
             // 
             this.lblCommunistTimeline.AutoSize = true;
             this.lblCommunistTimeline.BackColor = System.Drawing.Color.Transparent;
             this.lblCommunistTimeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCommunistTimeline.Location = new System.Drawing.Point(248, 86);
+            this.lblCommunistTimeline.Location = new System.Drawing.Point(93, 36);
+            this.lblCommunistTimeline.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblCommunistTimeline.Name = "lblCommunistTimeline";
-            this.lblCommunistTimeline.Size = new System.Drawing.Size(658, 78);
+            this.lblCommunistTimeline.Size = new System.Drawing.Size(260, 31);
             this.lblCommunistTimeline.TabIndex = 0;
             this.lblCommunistTimeline.Text = "Communist Timeline";
             // 
@@ -200,36 +198,36 @@
             // 
             this.panelStories.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
             this.panelStories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelStories.Controls.Add(this.pictureBox5);
+            this.panelStories.Controls.Add(this.pbStories);
             this.panelStories.Controls.Add(this.lblStories);
-            this.panelStories.Location = new System.Drawing.Point(912, 1605);
-            this.panelStories.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelStories.Location = new System.Drawing.Point(342, 673);
+            this.panelStories.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.panelStories.Name = "panelStories";
-            this.panelStories.Size = new System.Drawing.Size(1253, 780);
+            this.panelStories.Size = new System.Drawing.Size(470, 327);
             this.panelStories.TabIndex = 10;
             this.panelStories.Click += new System.EventHandler(this.panelStories_Click);
             // 
-            // pictureBox5
+            // pbStories
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Image = global::IQP_Tester.Properties.Resources.StoriesMain;
-            this.pictureBox5.Location = new System.Drawing.Point(320, 203);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(669, 527);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
+            this.pbStories.BackColor = System.Drawing.Color.Transparent;
+            this.pbStories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbStories.Image = global::IQP_Tester.Properties.Resources.StoriesMain;
+            this.pbStories.Location = new System.Drawing.Point(120, 85);
+            this.pbStories.Name = "pbStories";
+            this.pbStories.Size = new System.Drawing.Size(251, 221);
+            this.pbStories.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbStories.TabIndex = 2;
+            this.pbStories.TabStop = false;
             // 
             // lblStories
             // 
             this.lblStories.AutoSize = true;
             this.lblStories.BackColor = System.Drawing.Color.Transparent;
             this.lblStories.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStories.Location = new System.Drawing.Point(213, 122);
+            this.lblStories.Location = new System.Drawing.Point(80, 51);
+            this.lblStories.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblStories.Name = "lblStories";
-            this.lblStories.Size = new System.Drawing.Size(788, 78);
+            this.lblStories.Size = new System.Drawing.Size(312, 31);
             this.lblStories.TabIndex = 0;
             this.lblStories.Text = "Stories from communism";
             // 
@@ -239,10 +237,10 @@
             this.panelThenAndNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelThenAndNow.Controls.Add(this.pbThenAndNow);
             this.panelThenAndNow.Controls.Add(this.lblThenAndNow);
-            this.panelThenAndNow.Location = new System.Drawing.Point(1893, 86);
-            this.panelThenAndNow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelThenAndNow.Location = new System.Drawing.Point(710, 36);
+            this.panelThenAndNow.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.panelThenAndNow.Name = "panelThenAndNow";
-            this.panelThenAndNow.Size = new System.Drawing.Size(1253, 780);
+            this.panelThenAndNow.Size = new System.Drawing.Size(470, 327);
             this.panelThenAndNow.TabIndex = 7;
             this.panelThenAndNow.Click += new System.EventHandler(this.panelThenAndNow_Click);
             // 
@@ -251,10 +249,9 @@
             this.pbThenAndNow.BackColor = System.Drawing.Color.Transparent;
             this.pbThenAndNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbThenAndNow.Image = global::IQP_Tester.Properties.Resources.ThenNowMain;
-            this.pbThenAndNow.Location = new System.Drawing.Point(429, 157);
-            this.pbThenAndNow.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.pbThenAndNow.Location = new System.Drawing.Point(161, 66);
             this.pbThenAndNow.Name = "pbThenAndNow";
-            this.pbThenAndNow.Size = new System.Drawing.Size(376, 448);
+            this.pbThenAndNow.Size = new System.Drawing.Size(141, 188);
             this.pbThenAndNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbThenAndNow.TabIndex = 2;
             this.pbThenAndNow.TabStop = false;
@@ -264,18 +261,19 @@
             this.lblThenAndNow.AutoSize = true;
             this.lblThenAndNow.BackColor = System.Drawing.Color.Transparent;
             this.lblThenAndNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThenAndNow.Location = new System.Drawing.Point(373, 38);
+            this.lblThenAndNow.Location = new System.Drawing.Point(140, 16);
+            this.lblThenAndNow.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblThenAndNow.Name = "lblThenAndNow";
-            this.lblThenAndNow.Size = new System.Drawing.Size(475, 78);
+            this.lblThenAndNow.Size = new System.Drawing.Size(190, 31);
             this.lblThenAndNow.TabIndex = 0;
             this.lblThenAndNow.Text = "Then and Now";
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(3844, 2348);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panelOppression);
             this.Controls.Add(this.panelLifeUnder);
             this.Controls.Add(this.panelTimeline);
@@ -284,7 +282,7 @@
             this.Controls.Add(this.panelThenAndNow);
             this.Controls.Add(this.btnLanguage);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "Main";
             this.Text = "MOCR Interactive Tool";
             this.Resize += new System.EventHandler(this.Main_Resize);
@@ -293,13 +291,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbOppression)).EndInit();
             this.panelLifeUnder.ResumeLayout(false);
             this.panelLifeUnder.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLifeUnder)).EndInit();
             this.panelTimeline.ResumeLayout(false);
             this.panelTimeline.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTimeline)).EndInit();
             this.panelStories.ResumeLayout(false);
             this.panelStories.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStories)).EndInit();
             this.panelThenAndNow.ResumeLayout(false);
             this.panelThenAndNow.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbThenAndNow)).EndInit();
@@ -321,10 +319,10 @@
         private System.Windows.Forms.Panel panelOppression;
         private System.Windows.Forms.Label lblOppression;
         private System.Windows.Forms.PictureBox pbOppression;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbLifeUnder;
         private System.Windows.Forms.PictureBox pbThenAndNow;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pbTimeline;
+        private System.Windows.Forms.PictureBox pbStories;
     }
 }
 

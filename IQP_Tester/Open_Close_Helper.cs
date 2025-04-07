@@ -29,14 +29,15 @@ namespace IQP_Tester
 
         private System.Timers.Timer Timer;
 
-        public const uint tabTimeout = 1000; // in 1/10 of seconds, 100 seconds
+        public const uint tabTimeout = 100; // in 1/10 of seconds, 10 seconds
         public const uint tab_open_debounce = 1; // in 1/10 of seconds, 1/10 of a second
         static uint lastOpenTime = 0;
-        public static uint seconds = 0; // not actually seconds, 1/10 of a second
+        public const int TIMER_TICK = 100; // tick 10 times a second
+        public static uint seconds = 0; // not actually seconds, 1/100 of a second
 
         public void Start_Timer()
         {
-            Timer = new System.Timers.Timer(100); //tick 10 times a second
+            Timer = new System.Timers.Timer(TIMER_TICK);
             Timer.Elapsed += OnTimedEvent;
             Timer.AutoReset = true;
             Timer.Enabled = true;
@@ -56,20 +57,30 @@ namespace IQP_Tester
             }
         }
 
-        public void CloseAllForms()
+        public void CloseAllForms(Form keep_open = null)
         {
             for (int i = 0; i < Application.OpenForms.Count; i++)
             {
-                if (Application.OpenForms[i] != main)
+                if (Application.OpenForms[i] != main && Application.OpenForms[i] != keep_open)
                 {
                     Close(Application.OpenForms[i]);
                 }
             }
         }
 
+        public bool IsOpened(Form form)
+        {
+            for (int i = 0; i < Application.OpenForms.Count; i++)
+            {
+                if (Application.OpenForms[i] == form)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         // General open close things
-
 
         public void FadeIn(Form form, int interval = DEFAULT_FADE_INTERVAL, double increment = DEFAULT_FADE_INCREMENT)
         {
@@ -100,16 +111,17 @@ namespace IQP_Tester
                 fadeTimer.Tick += (s, e) =>
                 {
                     if (form.Opacity > 0)
+                    {
                         form.Opacity -= increment;
+                    }
                     else
+                    {
                         fadeTimer.Stop(); // stop when invisible
+                        form.Close();
+                    }
+                    
                 };
                 fadeTimer.Start();
-
-                if (form.Opacity <= 0)
-                {
-                    form.Close();
-                }
             }
         }
 

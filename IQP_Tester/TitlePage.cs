@@ -15,13 +15,14 @@ namespace IQP_Tester
         TextManager textManager;
         Open_Close_Helper openClose;
         Click_Helper clickHelper = new Click_Helper();
+        Resize_Helper resize = new Resize_Helper();
 
         public TitlePage(TextManager textMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
             textManager = textMan;
             openClose = open_close;
-
+            resize.Fullscreen_Form(this);
             clickHelper.Assign_All_Children_To_Same_Click(this, TitlePage_Click);
         }
 

@@ -99,9 +99,12 @@ namespace IQP_Tester
 
         public void Open_Title_Page()
         {
-            openClose.CloseAllForms();
-            titlePage = new TitlePage(textManager, openClose);
-            openClose.FadeIn(titlePage);
+            if (!openClose.IsOpened(titlePage))
+            {
+                titlePage = new TitlePage(textManager, openClose);
+                openClose.FadeIn(titlePage);
+                openClose.CloseAllForms(titlePage);
+            }
         }
 
         // TITLE PAGE END
