@@ -218,7 +218,7 @@
             // 
             // pbGheorghe
             // 
-            this.pbGheorghe.Image = ((System.Drawing.Image)(resources.GetObject("pbGheorghe.Image")));
+            this.pbGheorghe.Image = global::IQP_Tester.Properties.Resources.Gheorghe;
             this.pbGheorghe.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbGheorghe.InitialImage")));
             this.pbGheorghe.Location = new System.Drawing.Point(23, 14);
             this.pbGheorghe.Name = "pbGheorghe";
@@ -229,7 +229,7 @@
             // 
             // pbMarxism
             // 
-            this.pbMarxism.Image = ((System.Drawing.Image)(resources.GetObject("pbMarxism.Image")));
+            this.pbMarxism.Image = global::IQP_Tester.Properties.Resources.Marxism;
             this.pbMarxism.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbMarxism.InitialImage")));
             this.pbMarxism.Location = new System.Drawing.Point(23, 14);
             this.pbMarxism.Name = "pbMarxism";
@@ -240,7 +240,7 @@
             // 
             // pbPostWW2
             // 
-            this.pbPostWW2.Image = ((System.Drawing.Image)(resources.GetObject("pbPostWW2.Image")));
+            this.pbPostWW2.Image = global::IQP_Tester.Properties.Resources.PostWW2;
             this.pbPostWW2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPostWW2.InitialImage")));
             this.pbPostWW2.Location = new System.Drawing.Point(23, 14);
             this.pbPostWW2.Name = "pbPostWW2";
@@ -249,7 +249,7 @@
             this.pbPostWW2.TabIndex = 0;
             this.pbPostWW2.TabStop = false;
             // 
-            // Soviet_Era
+            // SovietEra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -259,7 +259,7 @@
             this.Controls.Add(this.panelPostWW2);
             this.Controls.Add(this.btnLanguage);
             this.Margin = new System.Windows.Forms.Padding(1);
-            this.Name = "Soviet_Era";
+            this.Name = "SovietEra";
             this.Text = "Era of Sovietization";
             this.Shown += new System.EventHandler(this.Soviet_Era_Shown);
             this.Click += new System.EventHandler(this.Soviet_Era_Click);

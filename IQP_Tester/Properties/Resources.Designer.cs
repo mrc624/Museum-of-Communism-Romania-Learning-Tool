@@ -103,9 +103,29 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ceausescu {
+            get {
+                object obj = ResourceManager.GetObject("Ceausescu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CeauşescuMail {
             get {
                 object obj = ResourceManager.GetObject("CeauşescuMail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CeausescusRise {
+            get {
+                object obj = ResourceManager.GetObject("CeausescusRise", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +203,16 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Elena {
+            get {
+                object obj = ResourceManager.GetObject("Elena", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Emigration {
             get {
                 object obj = ResourceManager.GetObject("Emigration", resourceCulture);
@@ -206,6 +236,26 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap Fear {
             get {
                 object obj = ResourceManager.GetObject("Fear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Food {
+            get {
+                object obj = ResourceManager.GetObject("Food", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gheorghe {
+            get {
+                object obj = ResourceManager.GetObject("Gheorghe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +316,16 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap LifeUnderMain {
             get {
                 object obj = ResourceManager.GetObject("LifeUnderMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Marxism {
+            get {
+                object obj = ResourceManager.GetObject("Marxism", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,6 +403,16 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PostWW2 {
+            get {
+                object obj = ResourceManager.GetObject("PostWW2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Propaganda {
             get {
                 object obj = ResourceManager.GetObject("Propaganda", resourceCulture);
@@ -363,6 +433,26 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RegimeFall {
+            get {
+                object obj = ResourceManager.GetObject("RegimeFall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Religion {
+            get {
+                object obj = ResourceManager.GetObject("Religion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Romania_Flag {
             get {
                 object obj = ResourceManager.GetObject("Romania_Flag", resourceCulture);
@@ -376,6 +466,16 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap Romanian_Revolution {
             get {
                 object obj = ResourceManager.GetObject("Romanian_Revolution", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap school {
+            get {
+                object obj = ResourceManager.GetObject("school", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +506,16 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap SoftTomato {
             get {
                 object obj = ResourceManager.GetObject("SoftTomato", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Soviet {
+            get {
+                object obj = ResourceManager.GetObject("Soviet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -516,6 +626,36 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap Warsaw {
             get {
                 object obj = ResourceManager.GetObject("Warsaw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatWasRevolution {
+            get {
+                object obj = ResourceManager.GetObject("WhatWasRevolution", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhereCeausescu {
+            get {
+                object obj = ResourceManager.GetObject("WhereCeausescu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhyRevolt {
+            get {
+                object obj = ResourceManager.GetObject("WhyRevolt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

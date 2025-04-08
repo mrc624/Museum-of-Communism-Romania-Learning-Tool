@@ -51,7 +51,7 @@
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btnLanguage);
             this.Name = "ThenAndNow";
-            this.Text = "Then_And_Now";
+            this.Text = "Then And Now";
             this.Shown += new System.EventHandler(this.ThenAndNow_Shown);
             this.Click += new System.EventHandler(this.ThenAndNow_Click);
             this.Resize += new System.EventHandler(this.ThenAndNow_Resize);

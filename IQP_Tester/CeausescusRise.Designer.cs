@@ -161,7 +161,7 @@
             // 
             // pbNicolae
             // 
-            this.pbNicolae.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.pbNicolae.Image = global::IQP_Tester.Properties.Resources.Ceausescu;
             this.pbNicolae.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbNicolae.InitialImage")));
             this.pbNicolae.Location = new System.Drawing.Point(44, 3);
             this.pbNicolae.Name = "pbNicolae";
@@ -172,7 +172,7 @@
             // 
             // pbElena
             // 
-            this.pbElena.Image = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.pbElena.Image = global::IQP_Tester.Properties.Resources.Elena;
             this.pbElena.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbElena.InitialImage")));
             this.pbElena.Location = new System.Drawing.Point(44, 3);
             this.pbElena.Name = "pbElena";

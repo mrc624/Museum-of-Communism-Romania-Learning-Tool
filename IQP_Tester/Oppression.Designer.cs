@@ -500,12 +500,12 @@
             this.tableLayoutReligion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutReligion.Controls.Add(this.lblReligionQ, 0, 0);
             this.tableLayoutReligion.Controls.Add(this.lblReligionAns, 0, 1);
-            this.tableLayoutReligion.Location = new System.Drawing.Point(21, 210);
+            this.tableLayoutReligion.Location = new System.Drawing.Point(21, 181);
             this.tableLayoutReligion.Name = "tableLayoutReligion";
             this.tableLayoutReligion.RowCount = 2;
             this.tableLayoutReligion.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutReligion.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutReligion.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutReligion.Size = new System.Drawing.Size(237, 129);
             this.tableLayoutReligion.TabIndex = 10;
             // 
             // lblReligionQ
@@ -718,11 +718,11 @@
             // 
             // pbReligion
             // 
-            this.pbReligion.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu1;
+            this.pbReligion.Image = global::IQP_Tester.Properties.Resources.Religion;
             this.pbReligion.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbReligion.InitialImage")));
-            this.pbReligion.Location = new System.Drawing.Point(49, 14);
+            this.pbReligion.Location = new System.Drawing.Point(21, 40);
             this.pbReligion.Name = "pbReligion";
-            this.pbReligion.Size = new System.Drawing.Size(186, 190);
+            this.pbReligion.Size = new System.Drawing.Size(237, 120);
             this.pbReligion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbReligion.TabIndex = 0;
             this.pbReligion.TabStop = false;
@@ -822,7 +822,7 @@
             this.Controls.Add(this.panelSecuritate);
             this.Controls.Add(this.btnLanguage);
             this.Name = "Oppression";
-            this.Text = "Then_And_Now";
+            this.Text = "Oppression";
             this.Shown += new System.EventHandler(this.Oppression_Shown);
             this.Click += new System.EventHandler(this.Oppression_Click);
             this.Resize += new System.EventHandler(this.Oppression_Resize);

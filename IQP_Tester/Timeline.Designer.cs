@@ -58,7 +58,7 @@
             this.pbJuly = new System.Windows.Forms.PictureBox();
             this.pbWarsaw = new System.Windows.Forms.PictureBox();
             this.pbAna = new System.Windows.Forms.PictureBox();
-            this.pbRevolution = new System.Windows.Forms.PictureBox();
+            this.pbRegimeFall = new System.Windows.Forms.PictureBox();
             this.pbTimeLine = new System.Windows.Forms.PictureBox();
             this.panelRegimeFall.SuspendLayout();
             this.panelAna.SuspendLayout();
@@ -77,7 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbJuly)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWarsaw)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAna)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRegimeFall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTimeLine)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,7 +107,7 @@
             // 
             // panelRegimeFall
             // 
-            this.panelRegimeFall.Controls.Add(this.pbRevolution);
+            this.panelRegimeFall.Controls.Add(this.pbRegimeFall);
             this.panelRegimeFall.Controls.Add(this.lblHowDidTheRegimeFall);
             this.panelRegimeFall.Location = new System.Drawing.Point(1546, 72);
             this.panelRegimeFall.Margin = new System.Windows.Forms.Padding(1);
@@ -358,7 +358,7 @@
             // 
             // pbCeausescusRise
             // 
-            this.pbCeausescusRise.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
+            this.pbCeausescusRise.Image = global::IQP_Tester.Properties.Resources.CeausescusRise;
             this.pbCeausescusRise.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
             this.pbCeausescusRise.Location = new System.Drawing.Point(38, 32);
             this.pbCeausescusRise.Margin = new System.Windows.Forms.Padding(1);
@@ -370,7 +370,7 @@
             // 
             // pbSoviet
             // 
-            this.pbSoviet.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbSoviet.Image = global::IQP_Tester.Properties.Resources.Soviet;
             this.pbSoviet.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
             this.pbSoviet.Location = new System.Drawing.Point(6, 32);
             this.pbSoviet.Margin = new System.Windows.Forms.Padding(1);
@@ -424,17 +424,17 @@
             this.pbAna.TabIndex = 0;
             this.pbAna.TabStop = false;
             // 
-            // pbRevolution
+            // pbRegimeFall
             // 
-            this.pbRevolution.Image = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRevolution.Location = new System.Drawing.Point(6, 34);
-            this.pbRevolution.Margin = new System.Windows.Forms.Padding(1);
-            this.pbRevolution.Name = "pbRevolution";
-            this.pbRevolution.Size = new System.Drawing.Size(246, 190);
-            this.pbRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbRevolution.TabIndex = 2;
-            this.pbRevolution.TabStop = false;
+            this.pbRegimeFall.Image = global::IQP_Tester.Properties.Resources.RegimeFall;
+            this.pbRegimeFall.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRegimeFall.Location = new System.Drawing.Point(6, 34);
+            this.pbRegimeFall.Margin = new System.Windows.Forms.Padding(1);
+            this.pbRegimeFall.Name = "pbRegimeFall";
+            this.pbRegimeFall.Size = new System.Drawing.Size(246, 190);
+            this.pbRegimeFall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRegimeFall.TabIndex = 2;
+            this.pbRegimeFall.TabStop = false;
             // 
             // pbTimeLine
             // 
@@ -489,7 +489,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbJuly)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWarsaw)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAna)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRevolution)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRegimeFall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTimeLine)).EndInit();
             this.ResumeLayout(false);
 
@@ -500,7 +500,7 @@
         private System.Windows.Forms.Button btnLanguage;
         private System.Windows.Forms.PictureBox pbTimeLine;
         private System.Windows.Forms.Label lblHowDidTheRegimeFall;
-        private System.Windows.Forms.PictureBox pbRevolution;
+        private System.Windows.Forms.PictureBox pbRegimeFall;
         private System.Windows.Forms.Panel panelRegimeFall;
         private System.Windows.Forms.Panel panelAna;
         private System.Windows.Forms.TableLayoutPanel tableLayoutAna;

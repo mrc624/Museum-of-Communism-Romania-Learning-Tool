@@ -353,8 +353,8 @@ namespace IQP_Tester
             Place_Panel_With_Line_At_Year(panelCeausescusRise, 1965, Position.Top);
             Place_Labels_And_Ticks();
 
-            resize.Center_X(pbRevolution);
-            resize.Center_to_Other_Control(lblHowDidTheRegimeFall, pbRevolution, Resize_Helper.Centering_Options.to_top);
+            resize.Center_X(pbRegimeFall);
+            resize.Center_to_Other_Control(lblHowDidTheRegimeFall, pbRegimeFall, Resize_Helper.Centering_Options.to_top);
             resize.Center_X(pbSoviet);
             resize.Center_to_Other_Control(lblSoviet, pbSoviet, Resize_Helper.Centering_Options.to_top);
             resize.Center_X(pbCeausescusRise);

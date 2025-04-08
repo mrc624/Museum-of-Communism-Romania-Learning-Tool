@@ -11,3 +11,5 @@ Finish adding pictures
 Make some kind of lock so that when you open something you can't open more
 
 Organize pictures into folders
+
+Add MOCR Icon to all forms
