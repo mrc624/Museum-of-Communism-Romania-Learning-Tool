@@ -212,7 +212,7 @@ namespace IQP_Tester
         {
             if (Dictionary_Updated && pb.Image != null)
             {
-                if (pb.SizeMode == PictureBoxSizeMode.Zoom)
+                if (pb.SizeMode == PictureBoxSizeMode.Zoom && pb.Image != null)
                 {
                     double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
 
