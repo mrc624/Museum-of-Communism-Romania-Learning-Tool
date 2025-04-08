@@ -14,7 +14,7 @@ namespace IQP_Tester
     {
         TextManager textManager;
         Resize_Helper resize = new Resize_Helper();
-        Polaroid_Helper polaroid_Zoom_Helper = new Polaroid_Helper();
+        DoublePolaroid_Helper doublePolaroid_Helper;
         Open_Close_Helper openClose;
 
         public const int TABLE_LAYOUR_MAIN_EDGE_MARGIN = 50;
@@ -24,10 +24,20 @@ namespace IQP_Tester
             InitializeComponent();
             openClose = open_close;
             textManager = textMan;
+            doublePolaroid_Helper = new DoublePolaroid_Helper(textMan, open_close);
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
-            polaroid_Zoom_Helper.Find_Polaroids(this);
+            doublePolaroid_Helper.Find_DoublePolaroids(this);
+            doublePolaroid_Helper.Assign_Click_Handers(doublePolaroid_Helper.DoublePolaroids);
             ThenAndNow_Resize(this, new EventArgs());
+            Set_Clicks();
+        }
+
+        public void Set_Clicks()
+        {
+            tableLayoutTNMain.Click += ThenAndNow_Click;
+            tableLayoutTN.Click += ThenAndNow_Click;
+            lblThenAndNowTitle.Click += ThenAndNow_Click;
         }
 
         private void ThenAndNow_Resize(object sender, EventArgs e)

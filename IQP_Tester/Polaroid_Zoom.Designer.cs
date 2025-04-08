@@ -31,8 +31,8 @@
             this.tableLayoutPanelQuestionAndAnswer = new System.Windows.Forms.TableLayoutPanel();
             this.lblQuestion = new System.Windows.Forms.Label();
             this.lblAnswer = new System.Windows.Forms.Label();
-            this.pbPicture = new System.Windows.Forms.PictureBox();
             this.btnLanguage = new System.Windows.Forms.Button();
+            this.pbPicture = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanelQuestionAndAnswer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +45,7 @@
             this.tableLayoutPanelQuestionAndAnswer.Controls.Add(this.lblAnswer, 0, 1);
             this.tableLayoutPanelQuestionAndAnswer.Location = new System.Drawing.Point(969, 12);
             this.tableLayoutPanelQuestionAndAnswer.Name = "tableLayoutPanelQuestionAndAnswer";
-            this.tableLayoutPanelQuestionAndAnswer.RowCount = 2;
+            this.tableLayoutPanelQuestionAndAnswer.RowCount = 1;
             this.tableLayoutPanelQuestionAndAnswer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.242871F));
             this.tableLayoutPanelQuestionAndAnswer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.75713F));
             this.tableLayoutPanelQuestionAndAnswer.Size = new System.Drawing.Size(923, 1017);
@@ -80,16 +80,6 @@
             this.lblAnswer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblAnswer.Click += new System.EventHandler(this.lblAnswer_Click);
             // 
-            // pbPicture
-            // 
-            this.pbPicture.Location = new System.Drawing.Point(12, 12);
-            this.pbPicture.Name = "pbPicture";
-            this.pbPicture.Size = new System.Drawing.Size(950, 1017);
-            this.pbPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPicture.TabIndex = 0;
-            this.pbPicture.TabStop = false;
-            this.pbPicture.Click += new System.EventHandler(this.pbPicture_Click);
-            // 
             // btnLanguage
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -101,6 +91,16 @@
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
             this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
+            // 
+            // pbPicture
+            // 
+            this.pbPicture.Location = new System.Drawing.Point(12, 12);
+            this.pbPicture.Name = "pbPicture";
+            this.pbPicture.Size = new System.Drawing.Size(950, 1017);
+            this.pbPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPicture.TabIndex = 0;
+            this.pbPicture.TabStop = false;
+            this.pbPicture.Click += new System.EventHandler(this.pbPicture_Click);
             // 
             // Polaroid_Zoom
             // 

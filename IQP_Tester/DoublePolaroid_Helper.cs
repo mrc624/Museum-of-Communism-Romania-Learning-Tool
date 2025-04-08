@@ -1,0 +1,135 @@
+﻿using System;
+using System.CodeDom;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace IQP_Tester
+{
+    public class DoublePolaroid_Helper
+    {
+        TextManager textManager;
+        Open_Close_Helper openClose;
+        Click_Helper clickHelper = new Click_Helper();
+
+        public DoublePolaroid_Helper(TextManager textMan, Open_Close_Helper open_close)
+        {
+            textManager = textMan;
+            openClose = open_close;
+        }
+
+        public const int NUM_PICTURES = 2;
+        public const int NUM_TEXT = 1;
+
+        public const string THEN_KEYWORD = "Then";
+        public const string NOW_KEYWORD = "Now";
+        public const string DOUBLE_POLAROID_END_WITH_FLAG = "DP";
+
+        public const int FIRST_ITEM = 0;
+        public const int THEN_INDEX = 0;
+        public const int NOW_INDEX = 1;
+
+        public List<Control> DoublePolaroids = new List<Control>();
+
+        public static int check_count = 0;
+
+        public bool Is_DoublePolaroid(Control control)
+        {
+            check_count++;
+            if (control.Name.EndsWith(DOUBLE_POLAROID_END_WITH_FLAG))
+            {
+                return (Find_Pb(control).Count == NUM_PICTURES) && (Find_Label(control).Count == NUM_TEXT);
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public List<PictureBox> Find_Pb(Control control)
+        {
+            List<PictureBox> list = new List<PictureBox>();
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                if (control.Controls[i] is PictureBox)
+                {
+                    list.Add((PictureBox)control.Controls[i]);
+                }
+                else if (control.Controls[i].HasChildren)
+                {
+                    List<PictureBox> newList = Find_Pb(control.Controls[i]);
+                    for (int j = 0; j < newList.Count; j++)
+                    {
+                        list.Add(newList[j]);
+                    }
+                }
+            }
+            return list;
+        }
+
+        public List<Label> Find_Label(Control control)
+        {
+            List<Label> list = new List<Label>();
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                if (control.Controls[i] is Label)
+                {
+                    list.Add((Label)control.Controls[i]);
+                }
+                else if (control.Controls[i].HasChildren)
+                {
+                    List<Label> newList = Find_Label(control.Controls[i]);
+                    for (int j = 0; j < newList.Count; j++)
+                    {
+                        list.Add(newList[j]);
+                    }
+                }
+            }
+            return list;
+        }
+
+        public void Find_DoublePolaroids(Control control)
+        {
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                Check_Add_DoublePolaroids(control.Controls[i]);
+                if (control.Controls[i].HasChildren)
+                {
+                    Find_DoublePolaroids(control.Controls[i]);
+                }
+            }
+        }
+
+        private void Check_Add_DoublePolaroids(Control control)
+        {
+            if (Is_DoublePolaroid(control))
+            {
+                DoublePolaroids.Add(control);
+            }
+        }
+
+        public void Assign_Click_Handers(List<Control> double_polaroids)
+        {
+            for (int i = 0; i < double_polaroids.Count; i++)
+            {
+                double_polaroids[i].Click += DoublePolaroid_Click_Handler;
+                clickHelper.Assign_All_Children_To_Same_Click(double_polaroids[i], DoublePolaroid_Click_Handler);
+            }
+        }
+
+        public void DoublePolaroid_Click_Handler(object sender, EventArgs e)
+        {
+            Control control = (Control)sender;
+            while(!DoublePolaroids.Contains(control))
+            {
+                control = control.Parent;
+            }
+
+            DoublePolaroid doublePolaroid = new DoublePolaroid(openClose, textManager, control);
+            openClose.FadeIn(doublePolaroid);
+        }
+    }
+}

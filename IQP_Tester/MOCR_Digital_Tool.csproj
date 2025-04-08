@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -141,6 +141,13 @@
     <Compile Include="Dev_Tools.Designer.cs">
       <DependentUpon>Dev_Tools.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoublePolaroid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoublePolaroid.Designer.cs">
+      <DependentUpon>DoublePolaroid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoublePolaroid_Helper.cs" />
     <Compile Include="Open_Close_Helper.cs" />
     <Compile Include="CeausescusRise.cs">
       <SubType>Form</SubType>
@@ -223,6 +230,9 @@
     <EmbeddedResource Include="CeausescusRise.resx">
       <DependentUpon>CeausescusRise.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DoublePolaroid.resx">
+      <DependentUpon>DoublePolaroid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SovietEra.resx">
       <DependentUpon>SovietEra.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,8 +273,17 @@
     <EmbeddedResource Include="TitlePage.resx">
       <DependentUpon>TitlePage.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="fancy soap luxury.HEIC" />
-    <None Include="IQP_Tester_TemporaryKey.pfx" />
+    <Content Include="citations.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClassroomsStuffNow.jpeg" />
+    <Content Include="ClassroomsStuffThen.png" />
+    <Content Include="fancy soap luxury.HEIC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IQP_Tester_TemporaryKey.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -292,82 +311,270 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Timeline_Pictures\Ana.png" />
-    <None Include="Timeline_Pictures\HousePeople.png" />
-    <None Include="Timeline_Pictures\July.png" />
-    <None Include="Timeline_Pictures\Warsaw.png" />
-    <None Include="Life_Under_Pictures\school.png" />
-    <Content Include="Food.png" />
-    <None Include="Life_Under_Pictures\Food.png" />
-    <None Include="Oppression_Pictures\Religion.png" />
-    <Content Include="Religion.png" />
-    <Content Include="School.png" />
-    <None Include="Timeline_Pictures\CeausescusRise.png" />
-    <None Include="Timeline_Pictures\RegimeFall.png" />
-    <None Include="Timeline_Pictures\Soviet.png" />
-    <None Include="Timeline_Pictures\CeausescusRise\Elena.png" />
-    <None Include="Timeline_Pictures\CeausescusRise\Ceausescu.png" />
-    <None Include="Timeline_Pictures\SovietEra\PostWW2.png" />
-    <None Include="Timeline_Pictures\SovietEra\Marxism.png" />
-    <None Include="Timeline_Pictures\SovietEra\Gheorghe.png" />
-    <None Include="Timeline_Pictures\RegimeFall\WhatWasRevolution.png" />
-    <None Include="Timeline_Pictures\RegimeFall\WhyRevolt.png" />
-    <None Include="Timeline_Pictures\RegimeFall\WhereCeausescu.png" />
-    <Content Include="Warsaw.png" />
-    <None Include="YouthOrg.png" />
-    <None Include="University.png" />
-    <None Include="Blue_Circle.png" />
-    <None Include="Demonstration.png" />
-    <None Include="Childhood.png" />
-    <None Include="Black_Line.png" />
-    <Content Include="Ana.png" />
-    <Content Include="ButterWhy.png" />
-    <Content Include="CeauşescuMail.png" />
-    <Content Include="ColdHands.png" />
-    <Content Include="CutPhoneLines.png" />
-    <Content Include="Destiny.png" />
-    <Content Include="HousePeople.png" />
-    <Content Include="JapaneseMachines.png" />
-    <Content Include="July.png" />
-    <Content Include="Kneeling_With_Rifle.jpg" />
-    <None Include="Media.png" />
-    <Content Include="Nicolae_Ceasescu.png" />
-    <Content Include="not sure what to use this one for.jpg" />
-    <Content Include="Painting_on_Wall.jpg" />
-    <Content Include="People_Gathering.jpg" />
-    <Content Include="People_in_Square.jpg" />
-    <Content Include="People_in_Square2.jpg" />
-    <Content Include="People_in_Square3.jpg" />
-    <Content Include="People_in_Square_Climbing_Trees.jpg" />
-    <Content Include="People_Marching_Hole_in_Flag.jpg" />
-    <Content Include="People_Marching_Many_Flags_And_Sign.jpg" />
-    <Content Include="People_Reading_From_Balcony.jpg" />
-    <Content Include="Police_Against_Wall_With_Grafitti.jpg" />
-    <None Include="Ration.png" />
-    <Content Include="Romanian_Revolution.jpg" />
-    <Content Include="Romania_Flag.png" />
-    <Content Include="Rumanian_Revolution_Tank.jpg" />
-    <None Include="Timisoara_Uprising.jpg" />
-    <Content Include="SchoolPropaganda.png" />
-    <Content Include="SoftTomato.png" />
-    <Content Include="StolenHorse.png" />
-    <Content Include="StopEngineers.png" />
-    <None Include="Stories_Pictures\ButterWhy.png" />
-    <None Include="Stories_Pictures\CeauşescuMail.png" />
-    <None Include="Stories_Pictures\ColdHands.png" />
-    <None Include="Stories_Pictures\CutPhoneLines.png" />
-    <None Include="Stories_Pictures\Destiny.png" />
-    <None Include="Stories_Pictures\JapaneseMachines.png" />
-    <None Include="Stories_Pictures\not sure what to use this one for.jpg" />
-    <None Include="Stories_Pictures\SchoolPropaganda.png" />
-    <None Include="Stories_Pictures\SoftTomato.png" />
-    <None Include="Stories_Pictures\StolenHorse.png" />
-    <None Include="Stories_Pictures\StopEngineers.png" />
-    <None Include="Stories_Pictures\SwimmerKiller.png" />
-    <None Include="Stories_Pictures\TeacherBeating.png" />
-    <Content Include="SwimmerKiller.png" />
-    <Content Include="TeacherBeating.png" />
-    <Content Include="UK_Flag.png" />
+    <Content Include="MarketNow.jpeg" />
+    <Content Include="MarketThen.jpg" />
+    <Content Include="MediaNow.jpg" />
+    <Content Include="MediaThen.png" />
+    <Content Include="NeighborhoodNow.png" />
+    <Content Include="NeighborhoodThen.png" />
+    <Content Include="text_manager.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Food\MarketThen.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Food\MarketNow.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Classrooms\ClassroomsStuffThen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Classrooms\ClassroomsStuffNow.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Media\MediaThen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Media\MediaNow.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Neighborhood\NeighborhoodThen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Neighborhood\NeighborhoodNow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\Ana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\HousePeople.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\July.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\Warsaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Life_Under_Pictures\school.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Food.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Life_Under_Pictures\Food.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Religion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Religion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="School.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\CeausescusRise.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\RegimeFall.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\Soviet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\CeausescusRise\Elena.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\CeausescusRise\Ceausescu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\SovietEra\PostWW2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\SovietEra\Marxism.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\SovietEra\Gheorghe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\RegimeFall\WhatWasRevolution.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\RegimeFall\WhyRevolt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timeline_Pictures\RegimeFall\WhereCeausescu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Warsaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="YouthOrg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="University.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Blue_Circle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Demonstration.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Childhood.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Black_Line.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ButterWhy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CeauşescuMail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ColdHands.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CutPhoneLines.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Destiny.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HousePeople.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JapaneseMachines.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="July.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kneeling_With_Rifle.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Nicolae_Ceasescu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="not sure what to use this one for.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Painting_on_Wall.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="People_Gathering.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="People_in_Square.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="People_in_Square2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="People_in_Square3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="People_in_Square_Climbing_Trees.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="People_Marching_Hole_in_Flag.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="People_Marching_Many_Flags_And_Sign.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="People_Reading_From_Balcony.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Police_Against_Wall_With_Grafitti.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ration.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Romanian_Revolution.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Romania_Flag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Rumanian_Revolution_Tank.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="text_manager.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Timisoara_Uprising.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SchoolPropaganda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SoftTomato.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StolenHorse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StopEngineers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\ButterWhy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\CeauşescuMail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\ColdHands.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\CutPhoneLines.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\Destiny.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\JapaneseMachines.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\not sure what to use this one for.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\SchoolPropaganda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\SoftTomato.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\StolenHorse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\StopEngineers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\SwimmerKiller.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Stories_Pictures\TeacherBeating.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SwimmerKiller.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TeacherBeating.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UK_Flag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
