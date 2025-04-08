@@ -95,6 +95,21 @@ namespace IQP_Tester
             }
         }
 
+        public void Resize_Fonts(Control control)
+        {
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                if (control.Controls[i].Font != null)
+                {
+                    Resize_Font(control.Controls[i]);
+                }
+                if (control.Controls[i].HasChildren)
+                {
+                    Resize_Fonts(control.Controls[i]);
+                }
+            }
+        }
+
         private void Resize_Panel(Panel panel)
         {
             var items = ratios[panel];
@@ -252,6 +267,7 @@ namespace IQP_Tester
             top_right,
             bottom_left,
             bottom_right,
+            all,
             num_corners
         }
 
@@ -263,16 +279,21 @@ namespace IQP_Tester
             switch (corner)
             {
                 case Corner.top_left:
-
+                    // to do
                     break;
                 case Corner.top_right:
-
+                    // to do
                     break;
                 case Corner.bottom_left:
-
+                    // to do
                     break;
                 case Corner.bottom_right:
                     control.Location = new Point(parent_width - control.Width - margin, parent_height - control.Height - margin);
+                    break;
+                case Corner.all:
+                    control.Location = new Point(margin, margin);
+                    control.Width = parent_width - (2 * margin);
+                    control.Height = parent_height - (2 * margin);
                     break;
             }
         }

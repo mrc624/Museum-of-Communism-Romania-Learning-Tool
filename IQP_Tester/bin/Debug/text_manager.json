@@ -152,7 +152,17 @@
     "year1": "1950",
     "year0": "1940",
     "lblTitle": "Understanding Stories of Romanian Communism",
-    "lblSubtitle": "I like big macs, I think they are tasty. I like McDonalds and the fries that come with it. The Mcnuggets are better than a big mac though."
+    "lblSubtitle": "I like big macs, I think they are tasty. I like McDonalds and the fries that come with it. The Mcnuggets are better than a big mac though.",
+    "lblFoodTN": "Unknown",
+    "lblUniformTN": "Unknown",
+    "lblNecessitiesTN": "Unknown",
+    "lblNeighborhoodTN": "Unknown",
+    "lblHandwritingTN": "Unknown",
+    "lblFreetimeTN": "Unknown",
+    "lblCarsTN": "Unknown",
+    "lblMediaTN": "Unknown",
+    "lblClassesTN": "Unknown",
+    "lblThenAndNowTitle": "Unknown"
   },
   "Romanian": {
     "lblOppression": "TRANSLATION NEEDED",
@@ -307,6 +317,16 @@
     "year1": "TRANSLATION NEEDED",
     "year0": "TRANSLATION NEEDED",
     "lblTitle": "TRANSLATION NEEDED",
-    "lblSubtitle": "TRANSLATION NEEDED"
+    "lblSubtitle": "TRANSLATION NEEDED",
+    "lblFoodTN": "TRANSLATION NEEDED",
+    "lblUniformTN": "TRANSLATION NEEDED",
+    "lblNecessitiesTN": "TRANSLATION NEEDED",
+    "lblNeighborhoodTN": "TRANSLATION NEEDED",
+    "lblHandwritingTN": "TRANSLATION NEEDED",
+    "lblFreetimeTN": "TRANSLATION NEEDED",
+    "lblCarsTN": "TRANSLATION NEEDED",
+    "lblMediaTN": "TRANSLATION NEEDED",
+    "lblClassesTN": "TRANSLATION NEEDED",
+    "lblThenAndNowTitle": "TRANSLATION NEEDED"
   }
 }
