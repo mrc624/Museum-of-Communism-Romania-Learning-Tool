@@ -210,28 +210,45 @@ namespace IQP_Tester
 
         private void Resize_PB(PictureBox pb)
         {
-            if (Dictionary_Updated && pb.Image != null)
+            if (Dictionary_Updated)
             {
-                if (pb.SizeMode == PictureBoxSizeMode.Zoom && pb.Image.Size != null)
+                try
                 {
-                    double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
-
-                    var items = ratios[pb];
-                    double width_ratio = items.width_ratio;
-
-                    pb.Width = (int)(pb.Parent.Width * width_ratio);
-                    pb.Height = (int)((1 / aspect_ratio) * pb.Width);
+                    if (pb.SizeMode == PictureBoxSizeMode.Zoom)
+                    {
+                        Resize_PB_With_Aspect(pb);
+                    }
+                    else
+                    {
+                        Resize_PB_Without_Aspect(pb);
+                    }
                 }
-                else
+                catch
                 {
-                    var items = ratios[pb];
-                    double width_ratio = items.width_ratio;
-                    double height_ratio = items.height_ratio;
-
-                    pb.Height = (int)(height_ratio * pb.Parent.Height);
-                    pb.Width = (int)(width_ratio * pb.Parent.Width);
+                    Resize_PB_Without_Aspect(pb);
                 }
             }
+        }
+
+        private void Resize_PB_With_Aspect(PictureBox pb)
+        {
+            double aspect_ratio = (double)pb.Image.Width / (double)pb.Image.Height;
+
+            var items = ratios[pb];
+            double width_ratio = items.width_ratio;
+
+            pb.Width = (int)(pb.Parent.Width * width_ratio);
+            pb.Height = (int)((1 / aspect_ratio) * pb.Width);
+        }
+
+        private void Resize_PB_Without_Aspect(PictureBox pb)
+        {
+            var items = ratios[pb];
+            double width_ratio = items.width_ratio;
+            double height_ratio = items.height_ratio;
+
+            pb.Height = (int)(height_ratio * pb.Parent.Height);
+            pb.Width = (int)(width_ratio * pb.Parent.Width);
         }
 
         private void Resize_Font(Control control)

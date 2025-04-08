@@ -47,9 +47,18 @@ namespace IQP_Tester
             {
                 Polaroid = (Panel)sender;
             }
-
+            openClose.CloseAllForms(Get_Form(Polaroid));
             Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose);
             openClose.FadeIn(polaroid_zoom);
+        }
+
+        private Form Get_Form(Control control)
+        {
+            while(!(control is Form))
+            {
+                control = control.Parent;
+            }
+            return (Form)control;
         }
 
         public const int num_controls = 3;

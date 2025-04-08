@@ -150,12 +150,12 @@ namespace IQP_Tester
         {
             if (form.InvokeRequired)
             {
-                form.Invoke(new FormDelegate(Dispose_Images), form);
+                //form.Invoke(new FormDelegate(Dispose_Images), form);
                 form.Invoke(new FormIntDoubleDelegate(FadeOut), form, DEFAULT_FADE_INTERVAL, DEFAULT_FADE_INCREMENT);
             }
             else
             {
-                Dispose_Images(form);
+                //Dispose_Images(form);
                 FadeOut(form);
             }
         }
