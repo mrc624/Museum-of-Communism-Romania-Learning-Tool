@@ -31,10 +31,12 @@ namespace IQP_Tester
         private System.Timers.Timer Timer;
 
         public const uint tabTimeout = 1000; // in 1/10 of seconds, 100 seconds
-        public const uint tab_open_debounce = 1; // in 1/10 of seconds, 1/10 of a second
+        public const uint tab_open_debounce = 10; // in 1/10 of seconds, 1 second
         static uint lastInteraction = 0;
         public const int TIMER_TICK = 100; // tick 10 times a second
         public static uint seconds = 0; // not actually seconds, 1/100 of a second
+
+        private bool block = false;
 
         public void Start_Timer()
         {
@@ -55,6 +57,13 @@ namespace IQP_Tester
             if (seconds == lastInteraction + tabTimeout)
             {
                 main.Invoke(new VoidDelegate(main.Open_Title_Page));
+            }
+            if (block)
+            {
+                if (seconds >= lastInteraction + tab_open_debounce)
+                {
+                    block = false;
+                }
             }
         }
 
@@ -85,8 +94,9 @@ namespace IQP_Tester
 
         public void FadeIn(Form form, int interval = DEFAULT_FADE_INTERVAL, double increment = DEFAULT_FADE_INCREMENT)
         {
-            if (!form.IsDisposed)
+            if (!form.IsDisposed && !block)
             {
+                block = true;
                 form.Opacity = 0; // start fully transparent
                 form.Show();
                 System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
@@ -94,9 +104,14 @@ namespace IQP_Tester
                 fadeTimer.Tick += (s, e) =>
                 {
                     if (form.Opacity < 1.0)
+                    {
                         form.Opacity += increment; // increase opacity gradually
+                        form.BringToFront();
+                    }
                     else
+                    {
                         fadeTimer.Stop(); // stop when fully visible
+                    }
                 };
                 Interaction();
                 fadeTimer.Start();
@@ -105,8 +120,9 @@ namespace IQP_Tester
 
         private void FadeOut(Form form, int interval = DEFAULT_FADE_INTERVAL, double increment = DEFAULT_FADE_INCREMENT)
         {
-            if (!form.IsDisposed)
+            if (!form.IsDisposed && !block)
             {
+                block = true;
                 System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
                 fadeTimer.Interval = interval; // time in milliseconds between opacity updates
                 fadeTimer.Tick += (s, e) =>
@@ -114,6 +130,7 @@ namespace IQP_Tester
                     if (form.Opacity > 0)
                     {
                         form.Opacity -= increment;
+                        form.BringToFront();
                     }
                     else
                     {
