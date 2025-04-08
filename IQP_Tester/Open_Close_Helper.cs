@@ -16,9 +16,6 @@ namespace IQP_Tester
         delegate void FormIntDoubleDelegate(Form form, int interval, double incement);
         delegate void FormIntDelegate(Form form, double val);
 
-        public const int DEFAULT_FADE_INTERVAL = 10;
-        public const double DEFAULT_FADE_INCREMENT = 0.05;
-
         public Open_Close_Helper(Main _main)
         {
             main = _main;
@@ -30,9 +27,12 @@ namespace IQP_Tester
 
         private System.Timers.Timer Timer;
 
+        public const int DEFAULT_FADE_INTERVAL = 10;
+        public const double DEFAULT_FADE_INCREMENT = 0.05;
         public const uint tabTimeout = 1000; // in 1/10 of seconds, 100 seconds
-        public const uint tab_open_debounce = 10; // in 1/10 of seconds, 1 second
+        public const uint tab_open_debounce = 5; // in 1/10 of seconds, 0.5 second
         static uint lastInteraction = 0;
+        static uint lastFormOpened = 0;
         public const int TIMER_TICK = 100; // tick 10 times a second
         public static uint seconds = 0; // not actually seconds, 1/100 of a second
 

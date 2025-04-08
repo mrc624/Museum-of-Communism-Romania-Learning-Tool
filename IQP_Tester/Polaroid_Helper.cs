@@ -49,6 +49,7 @@ namespace IQP_Tester
             }
             openClose.CloseAllForms(Get_Form(Polaroid));
             Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose);
+            openClose.Interaction();
             openClose.FadeIn(polaroid_zoom);
         }
 
