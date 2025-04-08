@@ -12,6 +12,7 @@ namespace IQP_Tester
     {
 
         delegate void VoidDelegate();
+        delegate void FormDelegate(Form form);
         delegate void FormIntDoubleDelegate(Form form, int interval, double incement);
         delegate void FormIntDelegate(Form form, double val);
 
@@ -125,14 +126,36 @@ namespace IQP_Tester
             }
         }
 
+        private void Dispose_Images(Control control)
+        {
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                if (control.Controls[i] is PictureBox)
+                {
+                    PictureBox pb = (PictureBox)control.Controls[i];
+                    if (pb.Image != null)
+                    {
+                        pb.Image.Dispose();
+                        pb.Image = null;
+                    }
+                }
+                else if (control.Controls[i].HasChildren)
+                {
+                    Dispose_Images(control.Controls[i]);
+                }
+            }
+        }
+
         public void Close(Form form)
         {
             if (form.InvokeRequired)
             {
+                form.Invoke(new FormDelegate(Dispose_Images), form);
                 form.Invoke(new FormIntDoubleDelegate(FadeOut), form, DEFAULT_FADE_INTERVAL, DEFAULT_FADE_INCREMENT);
             }
             else
             {
+                Dispose_Images(form);
                 FadeOut(form);
             }
         }
