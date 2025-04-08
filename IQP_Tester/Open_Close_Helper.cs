@@ -135,6 +135,7 @@ namespace IQP_Tester
                     else
                     {
                         fadeTimer.Stop(); // stop when invisible
+                        Dispose_Images(form);
                         form.Close();
                     }
                     
@@ -167,15 +168,12 @@ namespace IQP_Tester
         {
             if (form.InvokeRequired)
             {
-                //form.Invoke(new FormDelegate(Dispose_Images), form);
-                form.Invoke(new FormIntDoubleDelegate(FadeOut), form, DEFAULT_FADE_INTERVAL, DEFAULT_FADE_INCREMENT);
+                form.Invoke(new FormDelegate(Dispose_Images), form);
             }
             else
             {
-                //Dispose_Images(form);
                 FadeOut(form);
             }
         }
-
     }
 }

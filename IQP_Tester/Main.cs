@@ -48,8 +48,8 @@ namespace IQP_Tester
         public Main()
         {
             InitializeComponent();
-            Add_Forms();
             openClose = new Open_Close_Helper(this);
+            Add_Forms();
             resize.CaptureAspectRatios(this);
             textManager.Generate_Text_JSON(TextManager.TEXT_MANAGER_FILE_NAME);
             citation_Helper.Generate_Citation_JSON(Citation_Helper.CITATION_FILE_NAME);
@@ -57,6 +57,7 @@ namespace IQP_Tester
             Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());
             openClose.Start_Timer();
+            Clear_Forms();
         }
 
         private void Set_Panel_Clicks()
@@ -91,6 +92,17 @@ namespace IQP_Tester
             Forms.Add(titlePage);
         }
 
+        private void Clear_Forms()
+        {
+            for (int i = 0; i < Forms.Count; i++)
+            {
+                if (Forms[i] != this)
+                {
+                    Forms[i].Dispose();
+                }
+            }
+        }
+
         // MAIN PAGE BEGIN (NOT PANELS)
 
         // MAIN PAGE END   (NOT PANELS)
@@ -113,9 +125,17 @@ namespace IQP_Tester
 
         private void panelThenAndNow_Click(object sender, EventArgs e)
         {
-            openClose.CloseAllForms();
-            thenAndNow = new ThenAndNow(textManager, openClose);
-            openClose.FadeIn(thenAndNow);
+            if (thenAndNow.IsDisposed)
+            {
+                openClose.CloseAllForms();
+                thenAndNow = new ThenAndNow(textManager, openClose);
+                openClose.FadeIn(thenAndNow);
+            }
+            else
+            {
+                openClose.CloseAllForms(thenAndNow);
+                openClose.FadeIn(thenAndNow);
+            }
         }
 
         // THEN AND NOW END
@@ -124,9 +144,17 @@ namespace IQP_Tester
 
         private void panelOppression_Click(object sender, EventArgs e)
         {
-            openClose.CloseAllForms();
-            oppression = new Oppression(textManager, openClose);
-            openClose.FadeIn(oppression);
+            if (oppression.IsDisposed)
+            {
+                openClose.CloseAllForms();
+                oppression = new Oppression(textManager, openClose);
+                openClose.FadeIn(oppression);
+            }
+            else
+            {
+                openClose.CloseAllForms(oppression);
+                openClose.FadeIn(oppression);
+            }
         }
 
         // OPPRESSION END
@@ -135,9 +163,17 @@ namespace IQP_Tester
 
         private void panelLifeUnder_Click(object sender, EventArgs e)
         {
-            openClose.CloseAllForms();
-            lifeUnder = new LifeUnder(textManager, openClose);
-            openClose.FadeIn(lifeUnder);
+            if (lifeUnder.IsDisposed)
+            {
+                openClose.CloseAllForms();
+                lifeUnder = new LifeUnder(textManager, openClose);
+                openClose.FadeIn(lifeUnder);
+            }
+            else
+            {
+                openClose.CloseAllForms(lifeUnder);
+                openClose.FadeIn(lifeUnder);
+            }
         }
 
         // LIFE PANEL UNDER END
@@ -146,9 +182,17 @@ namespace IQP_Tester
 
         private void panelStories_Click(object sender, EventArgs e)
         {
-            openClose.CloseAllForms();
-            stories = new Stories(textManager, openClose);
-            openClose.FadeIn(stories);
+            if (stories.IsDisposed)
+            {
+                openClose.CloseAllForms();
+                stories = new Stories(textManager, openClose);
+                openClose.FadeIn(stories);
+            }
+            else
+            {
+                openClose.CloseAllForms(stories);
+                openClose.FadeIn(stories);
+            }
         }
 
         // STORIES END
@@ -157,9 +201,17 @@ namespace IQP_Tester
 
         private void panelTimeline_Click(object sender, EventArgs e)
         {
-            openClose.CloseAllForms();
-            timeline = new Timeline(textManager, openClose);
-            openClose.FadeIn(timeline);
+            if (timeline.IsDisposed)
+            {
+                openClose.CloseAllForms();
+                timeline = new Timeline(textManager, openClose);
+                openClose.FadeIn(timeline);
+            }
+            else
+            {
+                openClose.CloseAllForms(timeline);
+                openClose.FadeIn(timeline);
+            }
         }
 
         // TIMELINE END
