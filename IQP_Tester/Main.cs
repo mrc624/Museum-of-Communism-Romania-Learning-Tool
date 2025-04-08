@@ -57,7 +57,6 @@ namespace IQP_Tester
             Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());
             openClose.Start_Timer();
-            Clear_Forms();
         }
 
         private void Set_Panel_Clicks()
@@ -134,6 +133,7 @@ namespace IQP_Tester
             else
             {
                 openClose.CloseAllForms(thenAndNow);
+                textManager.Update_One_Form(thenAndNow);
                 openClose.FadeIn(thenAndNow);
             }
         }
@@ -153,6 +153,7 @@ namespace IQP_Tester
             else
             {
                 openClose.CloseAllForms(oppression);
+                textManager.Update_One_Form(oppression);
                 openClose.FadeIn(oppression);
             }
         }
@@ -172,6 +173,7 @@ namespace IQP_Tester
             else
             {
                 openClose.CloseAllForms(lifeUnder);
+                textManager.Update_One_Form(lifeUnder);
                 openClose.FadeIn(lifeUnder);
             }
         }
@@ -191,6 +193,7 @@ namespace IQP_Tester
             else
             {
                 openClose.CloseAllForms(stories);
+                textManager.Update_One_Form(stories);
                 openClose.FadeIn(stories);
             }
         }
@@ -210,6 +213,7 @@ namespace IQP_Tester
             else
             {
                 openClose.CloseAllForms(timeline);
+                textManager.Update_One_Form(timeline);
                 openClose.FadeIn(timeline);
             }
         }
