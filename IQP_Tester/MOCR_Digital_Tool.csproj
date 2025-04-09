@@ -273,6 +273,9 @@
     <EmbeddedResource Include="TitlePage.resx">
       <DependentUpon>TitlePage.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="bibliography.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="citations.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
