@@ -13,7 +13,7 @@ namespace IQP_Tester
     public class TextManager
     {
         Polaroid_Helper polaroid_Zoom_Helper = new Polaroid_Helper();
-
+        DoublePolaroid_Helper doublePolaroid_Helper = new DoublePolaroid_Helper();
         public enum Language
         {
             Invalid_Language,
@@ -92,9 +92,7 @@ namespace IQP_Tester
             if (polaroid_Zoom_Helper.Is_Polaroid(control))
             {
                 Panel panel = (Panel)control;
-                string name = panel.Name;
-                string ans = polaroid_Zoom_Helper.Get_Ans_Name(panel);
-                string ansLong = ans + Polaroid_Helper.LONG_POLAROID_ANS_FLAG;
+                string ansLong = polaroid_Zoom_Helper.Get_Ans_Name(panel) + Polaroid_Helper.LONG_POLAROID_ANS_FLAG;
 
                 if (!text[language_to_string[(int)Language.English]].ContainsKey(ansLong))
                 {
@@ -103,6 +101,30 @@ namespace IQP_Tester
                 if (!text[language_to_string[(int)Language.Romanian]].ContainsKey(ansLong))
                 {
                     text[language_to_string[(int)Language.Romanian]][ansLong] = Polaroid_Helper.IGNORE_LONG_ANS_FLAG;
+                }
+            }
+
+            if (doublePolaroid_Helper.Is_DoublePolaroid(control))
+            {
+                string ansLong = doublePolaroid_Helper.Find_Label(control)[DoublePolaroid_Helper.FIRST_ITEM].Name + DoublePolaroid_Helper.LONG_ANS_FLAG;
+
+                if (!text[language_to_string[(int)Language.English]].ContainsKey(ansLong))
+                {
+                    text[language_to_string[(int)Language.English]][ansLong] = DoublePolaroid_Helper.IGNORE_LONG_ANS_FLAG;
+                }
+                if (!text[language_to_string[(int)Language.Romanian]].ContainsKey(ansLong))
+                {
+                    text[language_to_string[(int)Language.Romanian]][ansLong] = DoublePolaroid_Helper.IGNORE_LONG_ANS_FLAG;
+                }
+
+                string title = control.Name + DoublePolaroid_Helper.TITLE_FLAG;
+                if (!text[language_to_string[(int)Language.English]].ContainsKey(title))
+                {
+                    text[language_to_string[(int)Language.English]][title] = DoublePolaroid_Helper.IGNORE_TITLE_FLAG;
+                }
+                if (!text[language_to_string[(int)Language.Romanian]].ContainsKey(title))
+                {
+                    text[language_to_string[(int)Language.Romanian]][title] = DoublePolaroid_Helper.IGNORE_TITLE_FLAG;
                 }
             }
 
