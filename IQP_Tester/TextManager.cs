@@ -16,15 +16,16 @@ namespace IQP_Tester
         DoublePolaroid_Helper doublePolaroid_Helper = new DoublePolaroid_Helper();
         public enum Language
         {
-            Invalid_Language,
             English,
             Romanian,
             num_supported_languages
         }
 
+        public const int INVALID = -1;
+
         public const Language default_language = Language.English;
 
-        public string[] language_to_string = { "ERROR", "English", "Romanian", "ERROR" };
+        public string[] language_to_string = { "English", "Romanian", "ERROR" };
 
         public Language language = default_language;
 
@@ -159,7 +160,7 @@ namespace IQP_Tester
                 text = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
             }
 
-            if (language < Language.num_supported_languages && language > Language.Invalid_Language)
+            if (language < Language.num_supported_languages && (int)language > INVALID)
             {
                 Dictionary<string, string> translated = text[language_to_string[(int)language]];
 

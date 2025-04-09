@@ -17,6 +17,7 @@ namespace IQP_Tester
         TextManager textManager;
         TableLayout_Helper tableLayout_Helper = new TableLayout_Helper();
         CSV_Helper csv_Helper;
+        CSV text_csv;
 
         public Dev_Tools(TextManager textManager)
         {
@@ -246,7 +247,19 @@ namespace IQP_Tester
             Dictionary<string, Dictionary<string, string>> reformatted = Get_Reformatted_Dictionary();
             List<string> header = new List<string> { HEADER_CONTROL_TEXT, HEADER_ENGLISH_TEXT, HEADER_ROMANIAN_TEXT};
 
-            csv_Helper.Create_CSV_From_Reformatted(reformatted, header);
+            text_csv = csv_Helper.Create_CSV_From_Reformatted(reformatted, header);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (text_csv == null)
+            {
+                text_csv = csv_Helper.Get_CSV(CSV_Helper.CSV_REFORMATTED_NAME);
+            }
+            text_csv.Update();
+            Dictionary<string, Dictionary<string, string>> reformatted = csv_Helper.Get_Reformatted_From_CSV(text_csv);
+            Dictionary<string, Dictionary<string, string>> text = Convert_Reformatted(reformatted);
+            textManager.Overwrite_JSON(text, TextManager.TEXT_MANAGER_FILE_NAME);
         }
     }
 }
