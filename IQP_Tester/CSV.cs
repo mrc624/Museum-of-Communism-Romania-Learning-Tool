@@ -179,7 +179,7 @@ namespace IQP_Tester
         {
             try
             {
-                var parse = new TextFieldParser(file_name);
+                var parse = new TextFieldParser(file_name, System.Text.Encoding.UTF8);
                 parse.SetDelimiters(COMMA);
                 parse.HasFieldsEnclosedInQuotes = true;
                 List<string[]> lines = new List<string[]>();
