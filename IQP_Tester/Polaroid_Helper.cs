@@ -26,6 +26,7 @@ namespace IQP_Tester
         public const int TABLE_LAYOUT_ANS_INDEX = 1;
 
         public List<Panel> Polaroids = new List<Panel>();
+        Polaroid_Zoom polaroid_zoom;
 
         public void Polaroid_Zoom_Click_Handler(object sender, EventArgs e)
         {
@@ -47,8 +48,11 @@ namespace IQP_Tester
             {
                 Polaroid = (Panel)sender;
             }
-            openClose.CloseAllForms(Get_Form(Polaroid));
-            Polaroid_Zoom polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose);
+            if (polaroid_zoom != null)
+            {
+                polaroid_zoom.Close();
+            }
+            polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose);
             openClose.Interaction();
             openClose.FadeIn(polaroid_zoom);
         }

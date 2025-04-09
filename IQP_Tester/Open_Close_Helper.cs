@@ -58,20 +58,13 @@ namespace IQP_Tester
             {
                 main.Invoke(new VoidDelegate(main.Open_Title_Page));
             }
-            if (block)
-            {
-                if (seconds >= lastInteraction + tab_open_debounce)
-                {
-                    block = false;
-                }
-            }
         }
 
-        public void CloseAllForms(Form keep_open = null)
+        public void CloseAllForms(Form keep_open0 = null, Form keep_open1 = null)
         {
             for (int i = 0; i < Application.OpenForms.Count; i++)
             {
-                if (Application.OpenForms[i] != main && Application.OpenForms[i] != keep_open)
+                if (Application.OpenForms[i] != main && Application.OpenForms[i] != keep_open0 && Application.OpenForms[i] != keep_open1)
                 {
                     Close(Application.OpenForms[i]);
                 }
@@ -94,7 +87,7 @@ namespace IQP_Tester
 
         public void FadeIn(Form form, int interval = DEFAULT_FADE_INTERVAL, double increment = DEFAULT_FADE_INCREMENT)
         {
-            if (!form.IsDisposed && !block)
+            if (!form.IsDisposed && !block && !form.Visible)
             {
                 block = true;
                 form.Opacity = 0; // start fully transparent
@@ -111,6 +104,7 @@ namespace IQP_Tester
                     else
                     {
                         fadeTimer.Stop(); // stop when fully visible
+                        block = false;
                     }
                 };
                 Interaction();
@@ -120,7 +114,7 @@ namespace IQP_Tester
 
         private void FadeOut(Form form, int interval = DEFAULT_FADE_INTERVAL, double increment = DEFAULT_FADE_INCREMENT)
         {
-            if (!form.IsDisposed && !block)
+            if (!form.IsDisposed && !block && form.Visible)
             {
                 block = true;
                 System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
@@ -135,8 +129,8 @@ namespace IQP_Tester
                     else
                     {
                         fadeTimer.Stop(); // stop when invisible
-                        Dispose_Images(form);
                         form.Close();
+                        block = false;
                     }
                     
                 };
@@ -144,7 +138,7 @@ namespace IQP_Tester
             }
         }
 
-        private void Dispose_Images(Control control)
+        public void Dispose_Images(Control control)
         {
             for (int i = 0; i < control.Controls.Count; i++)
             {
@@ -168,7 +162,7 @@ namespace IQP_Tester
         {
             if (form.InvokeRequired)
             {
-                form.Invoke(new FormDelegate(Dispose_Images), form);
+                form.Invoke(new FormIntDoubleDelegate(FadeOut), form, DEFAULT_FADE_INTERVAL, DEFAULT_FADE_INCREMENT);
             }
             else
             {

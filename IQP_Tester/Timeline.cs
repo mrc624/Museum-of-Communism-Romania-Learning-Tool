@@ -389,24 +389,54 @@ namespace IQP_Tester
 
         private void panelRegimeFall_Click(object sender, EventArgs e)
         {
-            regimeFall = new RegimeFall(textManager, openClose);
-            openClose.FadeIn(regimeFall);
+            if (regimeFall == null || regimeFall.IsDisposed)
+            {
+                openClose.CloseAllForms(this);
+                regimeFall = new RegimeFall(textManager, openClose);
+                openClose.FadeIn(regimeFall);
+            }
+            else
+            {
+                openClose.CloseAllForms(this, regimeFall);
+                textManager.Update_One_Form(regimeFall);
+                openClose.FadeIn(regimeFall);
+            }
         }
 
         // Rise Ceausescus
 
         private void panelCeausescusRise_Click(object sender, EventArgs e)
         {
-            ceausescusRise = new CeausescusRise(textManager, openClose);
-            openClose.FadeIn(ceausescusRise);
+            if (ceausescusRise == null || ceausescusRise.IsDisposed)
+            {
+                openClose.CloseAllForms(this);
+                ceausescusRise = new CeausescusRise(textManager, openClose);
+                openClose.FadeIn(ceausescusRise);
+            }
+            else
+            {
+                openClose.CloseAllForms(this, ceausescusRise);
+                textManager.Update_One_Form(ceausescusRise);
+                openClose.FadeIn(ceausescusRise);
+            }
         }
 
         // Soviet Era
 
         private void panelSoviet_Click(object sender, EventArgs e)
         {
-            sovietEra = new SovietEra(textManager, openClose);
-            openClose.FadeIn(sovietEra);
+            if (sovietEra == null || sovietEra.IsDisposed)
+            {
+                openClose.CloseAllForms(this);
+                sovietEra = new SovietEra(textManager, openClose);
+                openClose.FadeIn(sovietEra);
+            }
+            else
+            {
+                openClose.CloseAllForms(this, sovietEra);
+                textManager.Update_One_Form(sovietEra);
+                openClose.FadeIn(sovietEra);
+            }
         }
     }
 }
