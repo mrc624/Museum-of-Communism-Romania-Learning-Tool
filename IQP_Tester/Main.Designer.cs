@@ -302,6 +302,7 @@
             this.panelThenAndNow.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbThenAndNow)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

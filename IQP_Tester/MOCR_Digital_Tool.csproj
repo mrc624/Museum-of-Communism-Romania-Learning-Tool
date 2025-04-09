@@ -274,7 +274,7 @@
       <DependentUpon>TitlePage.cs</DependentUpon>
     </EmbeddedResource>
     <Content Include="citations.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ClassroomsStuffNow.jpeg" />
     <Content Include="ClassroomsStuffThen.png" />
@@ -318,7 +318,7 @@
     <Content Include="NeighborhoodNow.png" />
     <Content Include="NeighborhoodThen.png" />
     <Content Include="text_manager.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ThenAndNow_Pictures\Food\MarketThen.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -510,7 +510,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="text_manager.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Timisoara_Uprising.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
