@@ -17,14 +17,16 @@ namespace IQP_Tester
     public partial class Credits : Form
     {
         TableLayout_Helper tableLayout_Helper = new TableLayout_Helper();
+        Open_Close_Helper openClose;
         Citation_Helper citation_Helper;
 
         public const uint ROW_VERTICAL_OFFSET = 10;
 
-        public Credits(Citation_Helper citation_helper)
+        public Credits(Citation_Helper citation_helper, Open_Close_Helper openClose)
         {
             InitializeComponent();
             citation_Helper = citation_helper;
+            this.openClose = openClose;
         }
 
         private void Credits_Load(object sender, EventArgs e)
@@ -82,6 +84,11 @@ namespace IQP_Tester
                 CreditsTableLayoutPanel.RowCount++;
                 CreditsTableLayoutPanel.Controls.Add(label, 0, CreditsTableLayoutPanel.RowCount);
             }
+        }
+
+        private void Credits_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            openClose.Dispose_Images(this);
         }
     }
 }

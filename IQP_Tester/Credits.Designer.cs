@@ -37,7 +37,7 @@
             this.CreditsTableLayoutPanel.ColumnCount = 1;
             this.CreditsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.CreditsTableLayoutPanel.Location = new System.Drawing.Point(-2, -1);
-            this.CreditsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.CreditsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(1);
             this.CreditsTableLayoutPanel.Name = "CreditsTableLayoutPanel";
             this.CreditsTableLayoutPanel.RowCount = 1;
             this.CreditsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.14973F));
@@ -56,6 +56,7 @@
             this.MinimizeBox = false;
             this.Name = "Credits";
             this.Text = "Credits";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Credits_FormClosing);
             this.Load += new System.EventHandler(this.Credits_Load);
             this.ResumeLayout(false);
 

@@ -90,7 +90,7 @@ namespace IQP_Tester
             }
             try
             {
-                File.WriteAllText(file_name, text_write);
+                File.WriteAllText(file_name, text_write, System.Text.Encoding.UTF8);
             }
             catch (Exception e)
             {
