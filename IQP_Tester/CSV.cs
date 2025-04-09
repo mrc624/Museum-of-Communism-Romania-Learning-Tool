@@ -15,7 +15,7 @@ namespace IQP_Tester
 
         public const string COMMA = ",";
         public const char COMMA_CHAR = ',';
-        public static string[] SPLIT_FILE = { ",\n" };
+        public static string[] SPLIT_FILE = { ",\n", "\u000A" };
         public const string NEWLINE = "\n";
         public const string QUOTES = "\"";
         public const string DOUBLE_QUOTES = QUOTES + QUOTES;
