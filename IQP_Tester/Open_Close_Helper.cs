@@ -62,11 +62,12 @@ namespace IQP_Tester
 
         public void CloseAllForms(Form keep_open0 = null, Form keep_open1 = null)
         {
-            for (int i = 0; i < Application.OpenForms.Count; i++)
+            FormCollection forms = Application.OpenForms;
+            for (int i = 0; i < forms.Count; i++)
             {
-                if (Application.OpenForms[i] != main && Application.OpenForms[i] != keep_open0 && Application.OpenForms[i] != keep_open1)
+                if (forms[i] != main && forms[i] != keep_open0 && forms[i] != keep_open1)
                 {
-                    Close(Application.OpenForms[i]);
+                    Close(forms[i]);
                 }
             }
         }
@@ -87,7 +88,7 @@ namespace IQP_Tester
 
         public void FadeIn(Form form, int interval = DEFAULT_FADE_INTERVAL, double increment = DEFAULT_FADE_INCREMENT)
         {
-            if (!form.IsDisposed && !block && !form.Visible)
+            if (form != null && !form.IsDisposed && !block && !form.Visible)
             {
                 block = true;
                 form.Opacity = 0; // start fully transparent

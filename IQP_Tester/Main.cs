@@ -124,18 +124,15 @@ namespace IQP_Tester
 
         private void panelThenAndNow_Click(object sender, EventArgs e)
         {
-            if (thenAndNow.IsDisposed)
+            //openClose.CloseAllForms(thenAndNow);
+            if (thenAndNow != null)
             {
-                openClose.CloseAllForms();
-                thenAndNow = new ThenAndNow(textManager, openClose);
-                openClose.FadeIn(thenAndNow);
+                openClose.Dispose_Images(thenAndNow);
+                thenAndNow.Close();
             }
-            else
-            {
-                openClose.CloseAllForms(thenAndNow);
-                textManager.Update_One_Form(thenAndNow);
-                openClose.FadeIn(thenAndNow);
-            }
+            thenAndNow = new ThenAndNow(textManager, openClose);
+            openClose.Interaction();
+            openClose.FadeIn(thenAndNow);
         }
 
         // THEN AND NOW END
@@ -144,18 +141,15 @@ namespace IQP_Tester
 
         private void panelOppression_Click(object sender, EventArgs e)
         {
-            if (oppression.IsDisposed)
+            //openClose.CloseAllForms(oppression);
+            if (oppression != null)
             {
-                openClose.CloseAllForms();
-                oppression = new Oppression(textManager, openClose);
-                openClose.FadeIn(oppression);
+                openClose.Dispose_Images(oppression);
+                oppression.Close();
             }
-            else
-            {
-                openClose.CloseAllForms(oppression);
-                textManager.Update_One_Form(oppression);
-                openClose.FadeIn(oppression);
-            }
+            oppression = new Oppression(textManager, openClose);
+            openClose.Interaction();
+            openClose.FadeIn(oppression);
         }
 
         // OPPRESSION END
@@ -164,18 +158,15 @@ namespace IQP_Tester
 
         private void panelLifeUnder_Click(object sender, EventArgs e)
         {
-            if (lifeUnder.IsDisposed)
+            //openClose.CloseAllForms(lifeUnder);
+            if (lifeUnder != null)
             {
-                openClose.CloseAllForms();
-                lifeUnder = new LifeUnder(textManager, openClose);
-                openClose.FadeIn(lifeUnder);
+                openClose.Dispose_Images(lifeUnder);
+                lifeUnder.Close();
             }
-            else
-            {
-                openClose.CloseAllForms(lifeUnder);
-                textManager.Update_One_Form(lifeUnder);
-                openClose.FadeIn(lifeUnder);
-            }
+            lifeUnder = new LifeUnder(textManager, openClose);
+            openClose.Interaction();
+            openClose.FadeIn(lifeUnder);
         }
 
         // LIFE PANEL UNDER END
@@ -184,18 +175,15 @@ namespace IQP_Tester
 
         private void panelStories_Click(object sender, EventArgs e)
         {
-            if (stories.IsDisposed)
+            //openClose.CloseAllForms(stories);
+            if (stories != null)
             {
-                openClose.CloseAllForms();
-                stories = new Stories(textManager, openClose);
-                openClose.FadeIn(stories);
+                openClose.Dispose_Images(stories);
+                stories.Close();
             }
-            else
-            {
-                openClose.CloseAllForms(stories);
-                textManager.Update_One_Form(stories);
-                openClose.FadeIn(stories);
-            }
+            stories = new Stories(textManager, openClose);
+            openClose.Interaction();
+            openClose.FadeIn(stories);
         }
 
         // STORIES END
@@ -204,18 +192,15 @@ namespace IQP_Tester
 
         private void panelTimeline_Click(object sender, EventArgs e)
         {
-            if (timeline.IsDisposed)
+            //openClose.CloseAllForms(timeline);
+            if (timeline != null)
             {
-                openClose.CloseAllForms();
-                timeline = new Timeline(textManager, openClose);
-                openClose.FadeIn(timeline);
+                openClose.Dispose_Images(timeline);
+                timeline.Close();
             }
-            else
-            {
-                openClose.CloseAllForms(timeline);
-                textManager.Update_One_Form(timeline);
-                openClose.FadeIn(timeline);
-            }
+            timeline = new Timeline(textManager, openClose);
+            openClose.Interaction();
+            openClose.FadeIn(timeline);
         }
 
         // TIMELINE END

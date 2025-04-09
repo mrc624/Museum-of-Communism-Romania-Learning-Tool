@@ -90,7 +90,7 @@
             this.panelOppression.Controls.Add(this.pbOppression);
             this.panelOppression.Controls.Add(this.lblOppression);
             this.panelOppression.Location = new System.Drawing.Point(67, 36);
-            this.panelOppression.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panelOppression.Margin = new System.Windows.Forms.Padding(1);
             this.panelOppression.Name = "panelOppression";
             this.panelOppression.Size = new System.Drawing.Size(470, 327);
             this.panelOppression.TabIndex = 13;
@@ -127,7 +127,7 @@
             this.panelLifeUnder.Controls.Add(this.pbLifeUnder);
             this.panelLifeUnder.Controls.Add(this.lblLifeUnder);
             this.panelLifeUnder.Location = new System.Drawing.Point(1403, 36);
-            this.panelLifeUnder.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panelLifeUnder.Margin = new System.Windows.Forms.Padding(1);
             this.panelLifeUnder.Name = "panelLifeUnder";
             this.panelLifeUnder.Size = new System.Drawing.Size(470, 327);
             this.panelLifeUnder.TabIndex = 12;
@@ -164,7 +164,7 @@
             this.panelTimeline.Controls.Add(this.pbCommunistTimeline);
             this.panelTimeline.Controls.Add(this.lblCommunistTimeline);
             this.panelTimeline.Location = new System.Drawing.Point(1201, 673);
-            this.panelTimeline.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panelTimeline.Margin = new System.Windows.Forms.Padding(1);
             this.panelTimeline.Name = "panelTimeline";
             this.panelTimeline.Size = new System.Drawing.Size(470, 327);
             this.panelTimeline.TabIndex = 11;
@@ -201,7 +201,7 @@
             this.panelStories.Controls.Add(this.pbStories);
             this.panelStories.Controls.Add(this.lblStories);
             this.panelStories.Location = new System.Drawing.Point(342, 673);
-            this.panelStories.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panelStories.Margin = new System.Windows.Forms.Padding(1);
             this.panelStories.Name = "panelStories";
             this.panelStories.Size = new System.Drawing.Size(470, 327);
             this.panelStories.TabIndex = 10;
@@ -238,7 +238,7 @@
             this.panelThenAndNow.Controls.Add(this.pbThenAndNow);
             this.panelThenAndNow.Controls.Add(this.lblThenAndNow);
             this.panelThenAndNow.Location = new System.Drawing.Point(710, 36);
-            this.panelThenAndNow.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panelThenAndNow.Margin = new System.Windows.Forms.Padding(1);
             this.panelThenAndNow.Name = "panelThenAndNow";
             this.panelThenAndNow.Size = new System.Drawing.Size(470, 327);
             this.panelThenAndNow.TabIndex = 7;
@@ -282,7 +282,7 @@
             this.Controls.Add(this.panelThenAndNow);
             this.Controls.Add(this.btnLanguage);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Main";
             this.Text = "MOCR Interactive Tool";
             this.Resize += new System.EventHandler(this.Main_Resize);

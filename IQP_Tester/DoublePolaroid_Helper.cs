@@ -2,6 +2,7 @@
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,16 +22,26 @@ namespace IQP_Tester
             openClose = open_close;
         }
 
+        public DoublePolaroid_Helper()
+        {
+            textManager = null;
+            openClose = null;
+        }
+
         public const int NUM_PICTURES = 2;
         public const int NUM_TEXT = 1;
 
         public const string THEN_KEYWORD = "Then";
         public const string NOW_KEYWORD = "Now";
+        public const string LONG_ANS_FLAG = Polaroid_Helper.LONG_POLAROID_ANS_FLAG;
+        public const string IGNORE_LONG_ANS_FLAG = Polaroid_Helper.IGNORE_LONG_ANS_FLAG;
+        public const string TITLE_FLAG = "Title";
+        public const string IGNORE_TITLE_FLAG = "No Title";
         public const string DOUBLE_POLAROID_END_WITH_FLAG = "DP";
 
         public const int FIRST_ITEM = 0;
-        public const int THEN_INDEX = 0;
-        public const int NOW_INDEX = 1;
+        public const int THEN_INDEX = 1;
+        public const int NOW_INDEX = 0;
 
         public List<Control> DoublePolaroids = new List<Control>();
 
@@ -70,18 +81,18 @@ namespace IQP_Tester
             return list;
         }
 
-        public List<Label> Find_Label(Control control)
+        public List<System.Windows.Forms.Label> Find_Label(Control control)
         {
-            List<Label> list = new List<Label>();
+            List<System.Windows.Forms.Label> list = new List<System.Windows.Forms.Label>();
             for (int i = 0; i < control.Controls.Count; i++)
             {
-                if (control.Controls[i] is Label)
+                if (control.Controls[i] is System.Windows.Forms.Label)
                 {
-                    list.Add((Label)control.Controls[i]);
+                    list.Add((System.Windows.Forms.Label)control.Controls[i]);
                 }
                 else if (control.Controls[i].HasChildren)
                 {
-                    List<Label> newList = Find_Label(control.Controls[i]);
+                    List<System.Windows.Forms.Label> newList = Find_Label(control.Controls[i]);
                     for (int j = 0; j < newList.Count; j++)
                     {
                         list.Add(newList[j]);
