@@ -36,7 +36,7 @@ namespace IQP_Tester
         public const int TIMER_TICK = 100; // tick 10 times a second
         public static uint seconds = 0; // not actually seconds, 1/100 of a second
 
-        private bool block = false;
+        public bool block = false;
 
         public void Start_Timer()
         {

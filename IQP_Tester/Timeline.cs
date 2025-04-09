@@ -389,16 +389,15 @@ namespace IQP_Tester
 
         private void panelRegimeFall_Click(object sender, EventArgs e)
         {
-            if (regimeFall == null || regimeFall.IsDisposed)
+            if (!openClose.block)
             {
-                openClose.CloseAllForms(this);
+                if (regimeFall != null)
+                {
+                    openClose.Dispose_Images(regimeFall);
+                    regimeFall.Close();
+                }
                 regimeFall = new RegimeFall(textManager, openClose);
-                openClose.FadeIn(regimeFall);
-            }
-            else
-            {
-                openClose.CloseAllForms(this, regimeFall);
-                textManager.Update_One_Form(regimeFall);
+                openClose.Interaction();
                 openClose.FadeIn(regimeFall);
             }
         }
@@ -407,16 +406,15 @@ namespace IQP_Tester
 
         private void panelCeausescusRise_Click(object sender, EventArgs e)
         {
-            if (ceausescusRise == null || ceausescusRise.IsDisposed)
+            if (!openClose.block)
             {
-                openClose.CloseAllForms(this);
+                if (ceausescusRise != null)
+                {
+                    openClose.Dispose_Images(ceausescusRise);
+                    ceausescusRise.Close();
+                }
                 ceausescusRise = new CeausescusRise(textManager, openClose);
-                openClose.FadeIn(ceausescusRise);
-            }
-            else
-            {
-                openClose.CloseAllForms(this, ceausescusRise);
-                textManager.Update_One_Form(ceausescusRise);
+                openClose.Interaction();
                 openClose.FadeIn(ceausescusRise);
             }
         }
@@ -425,16 +423,15 @@ namespace IQP_Tester
 
         private void panelSoviet_Click(object sender, EventArgs e)
         {
-            if (sovietEra == null || sovietEra.IsDisposed)
+            if (!openClose.block)
             {
-                openClose.CloseAllForms(this);
+                if (sovietEra != null)
+                {
+                    openClose.Dispose_Images(sovietEra);
+                    sovietEra.Close();
+                }
                 sovietEra = new SovietEra(textManager, openClose);
-                openClose.FadeIn(sovietEra);
-            }
-            else
-            {
-                openClose.CloseAllForms(this, sovietEra);
-                textManager.Update_One_Form(sovietEra);
+                openClose.Interaction();
                 openClose.FadeIn(sovietEra);
             }
         }
