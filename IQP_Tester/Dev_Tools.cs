@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static IQP_Tester.TextManager;
 using static System.Net.Mime.MediaTypeNames;
+using System.IO;
 
 namespace IQP_Tester
 {
@@ -245,9 +246,27 @@ namespace IQP_Tester
         private void btnGenerateTextCSV_Click(object sender, EventArgs e)
         {
             Dictionary<string, Dictionary<string, string>> reformatted = Get_Reformatted_Dictionary();
-            List<string> header = new List<string> { HEADER_CONTROL_TEXT, HEADER_ENGLISH_TEXT, HEADER_ROMANIAN_TEXT};
-
+            List<string> header = new List<string> { HEADER_CONTROL_TEXT, HEADER_ENGLISH_TEXT, HEADER_ROMANIAN_TEXT };
             text_csv = csv_Helper.Create_CSV_From_Reformatted(reformatted, header);
+
+            SaveFileDialog save = new SaveFileDialog();
+            save.Title = "Export Text Manager";
+            save.Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*";
+            save.DefaultExt = "csv";
+            save.FileName = "text_manager.csv";
+
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    File.Copy(text_csv.file_name, save.FileName, true);
+                    MessageBox.Show("File Exported!\nFile at " + save.FileName);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error Exporting File\nError:\n" + ex);
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -255,11 +274,33 @@ namespace IQP_Tester
             if (text_csv == null)
             {
                 text_csv = csv_Helper.Get_CSV(CSV_Helper.CSV_REFORMATTED_NAME);
+                if (text_csv == null) // CSV has not yet been created
+                {
+                    Dictionary<string, Dictionary<string, string>> reff = Get_Reformatted_Dictionary();
+                    List<string> head = new List<string> { HEADER_CONTROL_TEXT, HEADER_ENGLISH_TEXT, HEADER_ROMANIAN_TEXT };
+                    text_csv = csv_Helper.Create_CSV_From_Reformatted(reff, head);
+                }
             }
-            text_csv.Update();
-            Dictionary<string, Dictionary<string, string>> reformatted = csv_Helper.Get_Reformatted_From_CSV(text_csv);
-            Dictionary<string, Dictionary<string, string>> text = Convert_Reformatted(reformatted);
-            textManager.Overwrite_JSON(text, TextManager.TEXT_MANAGER_FILE_NAME);
+
+            OpenFileDialog open = new OpenFileDialog();
+            open.Title = "Upload Text Manager";
+            open.Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*";
+
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    File.Copy(open.FileName, text_csv.file_name, true);
+                    text_csv.Update();
+                    Dictionary<string, Dictionary<string, string>> reformatted = csv_Helper.Get_Reformatted_From_CSV(text_csv);
+                    Dictionary<string, Dictionary<string, string>> text = Convert_Reformatted(reformatted);
+                    textManager.Overwrite_JSON(text, TextManager.TEXT_MANAGER_FILE_NAME);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error Saving File\nError:\n" + ex);
+                }
+            }
         }
     }
 }
