@@ -246,6 +246,7 @@ namespace IQP_Tester
                 credits = new Credits(citation_Helper, openClose);
                 openClose.Interaction();
                 openClose.FadeIn(credits);
+                credits.TopMost = true;
             }
         }
 

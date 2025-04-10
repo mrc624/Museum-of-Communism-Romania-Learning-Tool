@@ -25,6 +25,12 @@ namespace IQP_Tester
             InitializeComponent();
             this.textManager = textManager;
             csv_Helper = new CSV_Helper(textManager);
+
+            btnEditTextApply.Enabled = false;
+            btnGenerateTextCSV.Enabled = false;
+            btnReadCSV.Enabled = false;
+
+            btnEditTextRefresh_Click(this, new EventArgs());
         }
 
         Dictionary<string, Dictionary<string, string>> Reformatted;
@@ -227,34 +233,43 @@ namespace IQP_Tester
 
         private void btnEditTextApply_Click(object sender, EventArgs e)
         {
+            Loading load = new Loading("Applying Text");
             Dictionary<string, Dictionary<string, string>> reformatted = Put_Table_Into_Reformatted_Dictionary();
             Dictionary<string, Dictionary<string, string>> text = Convert_Reformatted(reformatted);
             if (text != null)
             {
                 textManager.Overwrite_JSON(text, TextManager.TEXT_MANAGER_FILE_NAME);
             }
+            load.Close();
             btnEditTextRefresh_Click(this, new EventArgs());
         }
 
         private void btnEditTextRefresh_Click(object sender, EventArgs e)
         {
+            Loading load = new Loading("Refreshing Edit Text Table");
             textManager.Update_Text();
             Empty_EditText_Table();
             Fill_EditText_Table();
+            btnEditTextApply.Enabled = true;
+            btnGenerateTextCSV.Enabled = true;
+            btnReadCSV.Enabled = true;
+            load.Close();
         }
 
         private void btnGenerateTextCSV_Click(object sender, EventArgs e)
         {
+            Loading load = new Loading("Generating CSV File");
             Dictionary<string, Dictionary<string, string>> reformatted = Get_Reformatted_Dictionary();
             List<string> header = new List<string> { HEADER_CONTROL_TEXT, HEADER_ENGLISH_TEXT, HEADER_ROMANIAN_TEXT };
             text_csv = csv_Helper.Create_CSV_From_Reformatted(reformatted, header);
             text_csv.Generate();
+            load.Update_Text("Getting Location");
             SaveFileDialog save = new SaveFileDialog();
             save.Title = "Export Text Manager";
             save.Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*";
             save.DefaultExt = "csv";
             save.FileName = "text_manager.csv";
-
+            load.Update_Text("Exporing to Location");
             if (save.ShowDialog() == DialogResult.OK)
             {
                 try
@@ -267,10 +282,12 @@ namespace IQP_Tester
                     MessageBox.Show("Error Exporting File\nError:\n" + ex);
                 }
             }
+            load.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnReadCSV_Click(object sender, EventArgs e)
         {
+            Loading load = new Loading("Generating CSV File");
             if (text_csv == null)
             {
                 text_csv = csv_Helper.Get_CSV(CSV_Helper.CSV_REFORMATTED_NAME);
@@ -281,7 +298,7 @@ namespace IQP_Tester
                     text_csv = csv_Helper.Create_CSV_From_Reformatted(reff, head);
                 }
             }
-
+            load.Update_Text("Getting File");
             OpenFileDialog open = new OpenFileDialog();
             open.Title = "Upload Text Manager";
             open.Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*";
@@ -290,15 +307,19 @@ namespace IQP_Tester
             {
                 try
                 {
+                    load.Update_Text("Saving File");
                     File.Copy(open.FileName, text_csv.file_name, true);
                     text_csv.Update();
                     Dictionary<string, Dictionary<string, string>> reformatted = csv_Helper.Get_Reformatted_From_CSV(text_csv);
                     Dictionary<string, Dictionary<string, string>> text = Convert_Reformatted(reformatted);
                     textManager.Overwrite_JSON(text, TextManager.TEXT_MANAGER_FILE_NAME);
+                    load.Close();
+                    btnEditTextRefresh_Click(this, new EventArgs());
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error Saving File\nError:\n" + ex);
+                    load.Close();
                 }
             }
         }

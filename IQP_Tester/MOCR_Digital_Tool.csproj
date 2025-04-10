@@ -164,6 +164,12 @@
       <DependentUpon>DoublePolaroid.cs</DependentUpon>
     </Compile>
     <Compile Include="DoublePolaroid_Helper.cs" />
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
     <Compile Include="Open_Close_Helper.cs" />
     <Compile Include="CeausescusRise.cs">
       <SubType>Form</SubType>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DoublePolaroid.resx">
       <DependentUpon>DoublePolaroid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SovietEra.resx">
       <DependentUpon>SovietEra.cs</DependentUpon>

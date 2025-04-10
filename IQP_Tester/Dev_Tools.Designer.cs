@@ -30,6 +30,7 @@
         {
             this.TabControlDevs = new System.Windows.Forms.TabControl();
             this.tabText_Edit = new System.Windows.Forms.TabPage();
+            this.btnReadCSV = new System.Windows.Forms.Button();
             this.btnGenerateTextCSV = new System.Windows.Forms.Button();
             this.btnEditTextApply = new System.Windows.Forms.Button();
             this.tableLayoutDevEditText = new System.Windows.Forms.TableLayoutPanel();
@@ -38,7 +39,6 @@
             this.lblEditTextControlName = new System.Windows.Forms.Label();
             this.btnEditTextRefresh = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.TabControlDevs.SuspendLayout();
             this.tabText_Edit.SuspendLayout();
             this.tableLayoutDevEditText.SuspendLayout();
@@ -56,18 +56,29 @@
             // 
             // tabText_Edit
             // 
-            this.tabText_Edit.Controls.Add(this.button1);
+            this.tabText_Edit.Controls.Add(this.btnReadCSV);
             this.tabText_Edit.Controls.Add(this.btnGenerateTextCSV);
             this.tabText_Edit.Controls.Add(this.btnEditTextApply);
             this.tabText_Edit.Controls.Add(this.tableLayoutDevEditText);
             this.tabText_Edit.Controls.Add(this.btnEditTextRefresh);
             this.tabText_Edit.Location = new System.Drawing.Point(4, 22);
             this.tabText_Edit.Name = "tabText_Edit";
-            this.tabText_Edit.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabText_Edit.Padding = new System.Windows.Forms.Padding(3);
             this.tabText_Edit.Size = new System.Drawing.Size(774, 618);
             this.tabText_Edit.TabIndex = 0;
             this.tabText_Edit.Text = "Edit Text";
             this.tabText_Edit.UseVisualStyleBackColor = true;
+            // 
+            // btnReadCSV
+            // 
+            this.btnReadCSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnReadCSV.Location = new System.Drawing.Point(109, 595);
+            this.btnReadCSV.Name = "btnReadCSV";
+            this.btnReadCSV.Size = new System.Drawing.Size(100, 23);
+            this.btnReadCSV.TabIndex = 4;
+            this.btnReadCSV.Text = "Read CSV";
+            this.btnReadCSV.UseVisualStyleBackColor = false;
+            this.btnReadCSV.Click += new System.EventHandler(this.btnReadCSV_Click);
             // 
             // btnGenerateTextCSV
             // 
@@ -160,22 +171,11 @@
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(774, 618);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(109, 595);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Read CSV";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Dev_Tools
             // 
@@ -205,6 +205,6 @@
         private System.Windows.Forms.Button btnEditTextRefresh;
         private System.Windows.Forms.Button btnEditTextApply;
         private System.Windows.Forms.Button btnGenerateTextCSV;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnReadCSV;
     }
 }
