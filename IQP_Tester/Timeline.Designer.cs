@@ -438,11 +438,12 @@
             // 
             // pbTimeLine
             // 
-            this.pbTimeLine.Image = global::IQP_Tester.Properties.Resources.Nicolae_Ceasescu;
-            this.pbTimeLine.Location = new System.Drawing.Point(264, 543);
+            this.pbTimeLine.BackColor = System.Drawing.Color.Transparent;
+            this.pbTimeLine.Image = global::IQP_Tester.Properties.Resources.Chain;
+            this.pbTimeLine.Location = new System.Drawing.Point(83, 562);
             this.pbTimeLine.Name = "pbTimeLine";
-            this.pbTimeLine.Size = new System.Drawing.Size(1512, 125);
-            this.pbTimeLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbTimeLine.Size = new System.Drawing.Size(1763, 117);
+            this.pbTimeLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbTimeLine.TabIndex = 9;
             this.pbTimeLine.TabStop = false;
             // 

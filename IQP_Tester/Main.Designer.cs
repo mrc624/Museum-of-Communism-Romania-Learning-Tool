@@ -285,6 +285,7 @@
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Main";
             this.Text = "MOCR Interactive Tool";
+            this.Shown += new System.EventHandler(this.Main_Shown);
             this.Resize += new System.EventHandler(this.Main_Resize);
             this.panelOppression.ResumeLayout(false);
             this.panelOppression.PerformLayout();
@@ -302,7 +303,6 @@
             this.panelThenAndNow.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbThenAndNow)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -58,6 +58,7 @@ namespace IQP_Tester
             Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());
             openClose.Start_Timer();
+            Open_Title_Page();
         }
 
         private void Set_Panel_Clicks()
@@ -235,9 +236,17 @@ namespace IQP_Tester
 
         private void btnCredits_Click(object sender, EventArgs e)
         {
-            openClose.CloseAllForms();
-            credits = new Credits(citation_Helper, openClose);
-            openClose.FadeIn(credits);
+            if (!openClose.block)
+            {
+                if (credits != null)
+                {
+                    openClose.Dispose_Images(credits);
+                    credits.Close();
+                }
+                credits = new Credits(citation_Helper, openClose);
+                openClose.Interaction();
+                openClose.FadeIn(credits);
+            }
         }
 
         // CREDITS MANAGEMENT END
@@ -285,5 +294,10 @@ namespace IQP_Tester
         }
 
         // HANDLING RESIZE END
+
+        private void Main_Shown(object sender, EventArgs e)
+        {
+            resize.Fullscreen_Form(this);
+        }
     }
 }

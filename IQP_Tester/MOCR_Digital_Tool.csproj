@@ -292,6 +292,7 @@
     <Content Include="bibliography.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Chain.png" />
     <Content Include="citations.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -366,6 +367,7 @@
     <Content Include="Timeline_Pictures\Ana.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Timeline_Pictures\Chain.png" />
     <Content Include="Timeline_Pictures\HousePeople.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
