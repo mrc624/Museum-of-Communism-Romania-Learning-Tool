@@ -504,7 +504,7 @@
             this.panelExports.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelExports.Controls.Add(this.tableLayoutExports);
             this.panelExports.Controls.Add(this.pbExports);
-            this.panelExports.Location = new System.Drawing.Point(44, 690);
+            this.panelExports.Location = new System.Drawing.Point(22, 690);
             this.panelExports.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelExports.Name = "panelExports";
             this.panelExports.Size = new System.Drawing.Size(281, 326);
@@ -521,7 +521,7 @@
             this.tableLayoutExports.RowCount = 2;
             this.tableLayoutExports.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutExports.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutExports.Size = new System.Drawing.Size(237, 129);
+            this.tableLayoutExports.Size = new System.Drawing.Size(237, 140);
             this.tableLayoutExports.TabIndex = 10;
             // 
             // lblExportsQ

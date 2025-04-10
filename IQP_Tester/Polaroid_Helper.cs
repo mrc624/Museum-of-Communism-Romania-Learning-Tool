@@ -25,12 +25,12 @@ namespace IQP_Tester
         public const int TABLE_LAYOUT_QUESTION_INDEX = 0;
         public const int TABLE_LAYOUT_ANS_INDEX = 1;
 
-        public List<Panel> Polaroids = new List<Panel>();
+        public List<Control> Polaroids = new List<Control>();
         Polaroid_Zoom polaroid_zoom;
 
         public void Polaroid_Zoom_Click_Handler(object sender, EventArgs e)
         {
-            Panel Polaroid = null;
+            Control Polaroid = null;
             if (!(Polaroids.Contains(sender)))
                 {
                 Control send = (Control)sender;
@@ -40,13 +40,13 @@ namespace IQP_Tester
                     send = send.Parent;
                     if (Polaroids.Contains(send))
                     {
-                        Polaroid = Polaroids[Polaroids.IndexOf((Panel)send)];
+                        Polaroid = Polaroids[Polaroids.IndexOf(send)];
                     }
                 }
             }
             else
             {
-                Polaroid = (Panel)sender;
+                Polaroid = (Control)sender;
             }
             if (polaroid_zoom != null)
             {
@@ -95,14 +95,14 @@ namespace IQP_Tester
             }
         }
 
-        public bool Is_Polaroid(Control panel)
+        public bool Is_Polaroid(Control control)
         {
-            return ((panel is Panel) && panel.HasChildren && Find_PB(panel) != null) && (Find_Ans(panel) != null) && (Find_Q(panel) != null);
+            return ((control is Panel) || (control is TableLayoutPanel)) && control.HasChildren && Find_PB(control) != null && Find_Ans(control) != null && Find_Q(control) != null;
         }
 
-        public string Get_Ans_Name(Panel panel)
+        public string Get_Ans_Name(Control control)
         {
-            Label ans = Find_Ans(panel);
+            Label ans = Find_Ans(control);
             if (ans != null)
             {
                 return ans.Name;
@@ -122,7 +122,7 @@ namespace IQP_Tester
         {
             if (Is_Polaroid(control))
             {
-                Polaroids.Add((Panel)control);
+                Polaroids.Add(control);
             }
         }
 
@@ -214,7 +214,7 @@ namespace IQP_Tester
             return PB;
         }
 
-        public void Reposition_Polaroids(List<Panel> polaroids)
+        public void Reposition_Polaroids(List<Control> polaroids)
         {
             for (int i = 0; i < polaroids.Count; i++)
             {
@@ -222,19 +222,19 @@ namespace IQP_Tester
             }
         }
 
-        private void Reposition_Polaroid(Panel panel)
+        private void Reposition_Polaroid(Control polaroid)
         {
-            resize.Reposition(panel);
-            for (int i = 0; i < panel.Controls.Count; i++)
+            resize.Reposition(polaroid);
+            for (int i = 0; i < polaroid.Controls.Count; i++)
             {
                 if (i == 0)
                 {
-                    resize.Reposition(panel.Controls[i]);
-                    resize.Center_X(panel.Controls[i]);
+                    resize.Reposition(polaroid.Controls[i]);
+                    resize.Center_X(polaroid.Controls[i]);
                 }
                 else
                 {
-                    resize.Center_to_Other_Control(panel.Controls[i - 1], panel.Controls[i]); //tbh don't know why i-1 is first and i is second, I thought it would be the opposite but it works
+                    resize.Center_to_Other_Control(polaroid.Controls[i - 1], polaroid.Controls[i]); //tbh don't know why i-1 is first and i is second, I thought it would be the opposite but it works
                 }
             }
         }

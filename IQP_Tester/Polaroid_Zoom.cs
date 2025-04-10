@@ -23,17 +23,17 @@ namespace IQP_Tester
         Label lblQ;
         Label lblAns;
 
-        public Polaroid_Zoom(Panel panel, TextManager textMan, Open_Close_Helper open_close)
+        public Polaroid_Zoom(Control polaroid, TextManager textMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
             textManager = textMan;
             openClose = open_close;
 
-            if (polaroid_Zoom_Helper.Is_Polaroid(panel))
+            if (polaroid_Zoom_Helper.Is_Polaroid(polaroid))
             {
-                pb = polaroid_Zoom_Helper.Find_PB(panel);
-                lblQ = polaroid_Zoom_Helper.Find_Q(panel);
-                lblAns = polaroid_Zoom_Helper.Find_Ans(panel);
+                pb = polaroid_Zoom_Helper.Find_PB(polaroid);
+                lblQ = polaroid_Zoom_Helper.Find_Q(polaroid);
+                lblAns = polaroid_Zoom_Helper.Find_Ans(polaroid);
 
                 Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
                 Translate_Polaroid();
