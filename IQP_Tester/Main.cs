@@ -112,6 +112,7 @@ namespace IQP_Tester
 
         public void Open_Title_Page()
         {
+            openClose.Hard_Close_Invisibles();
             if (!openClose.IsOpened(titlePage))
             {
                 titlePage = new TitlePage(textManager, openClose);
@@ -126,6 +127,7 @@ namespace IQP_Tester
 
         private void panelThenAndNow_Click(object sender, EventArgs e)
         {
+            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
                 if (thenAndNow != null)
@@ -145,6 +147,7 @@ namespace IQP_Tester
 
         private void panelOppression_Click(object sender, EventArgs e)
         {
+            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
                 if (oppression != null)
@@ -164,6 +167,7 @@ namespace IQP_Tester
 
         private void panelLifeUnder_Click(object sender, EventArgs e)
         {
+            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
                 if (lifeUnder != null)
@@ -183,6 +187,7 @@ namespace IQP_Tester
 
         private void panelStories_Click(object sender, EventArgs e)
         {
+            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
                 if (stories != null)
@@ -202,6 +207,7 @@ namespace IQP_Tester
 
         private void panelTimeline_Click(object sender, EventArgs e)
         {
+            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
                 if (timeline != null)
@@ -236,6 +242,7 @@ namespace IQP_Tester
 
         private void btnCredits_Click(object sender, EventArgs e)
         {
+            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
                 if (credits != null)

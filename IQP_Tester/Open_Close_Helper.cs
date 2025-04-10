@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -72,6 +73,18 @@ namespace IQP_Tester
             }
         }
 
+        public void Hard_Close_Invisibles()
+        {
+            for (int i = 0; i < Application.OpenForms.Count; i++)
+            {
+                if (!Application.OpenForms[i].Visible)
+                {
+                    Dispose_Images(Application.OpenForms[i]);
+                    Application.OpenForms[i].Close();
+                }
+            }
+        }
+
         public bool IsOpened(Form form)
         {
             for (int i = 0; i < Application.OpenForms.Count; i++)
@@ -93,6 +106,7 @@ namespace IQP_Tester
                 block = true;
                 form.Opacity = 0; // start fully transparent
                 form.Show();
+                form.TopMost = true;
                 System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
                 fadeTimer.Interval = interval; // time in milliseconds between opacity updates
                 fadeTimer.Tick += (s, e) =>

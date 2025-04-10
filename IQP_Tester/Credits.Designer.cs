@@ -58,6 +58,7 @@
             this.Text = "Credits";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Credits_FormClosing);
             this.Load += new System.EventHandler(this.Credits_Load);
+            this.Shown += new System.EventHandler(this.Credits_Shown);
             this.ResumeLayout(false);
 
         }
