@@ -15,7 +15,7 @@ namespace IQP_Tester
     {
 
         Resize_Helper resize = new Resize_Helper();
-        TextManager translationManager;
+        TextManager textManager;
         Open_Close_Helper openClose;
         Polaroid_Helper polaroid_Zoom_Helper = new Polaroid_Helper();
 
@@ -23,10 +23,10 @@ namespace IQP_Tester
         Label lblQ;
         Label lblAns;
 
-        public Polaroid_Zoom(Panel panel, TextManager translationMan, Open_Close_Helper open_close)
+        public Polaroid_Zoom(Panel panel, TextManager textMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
-            translationManager = translationMan;
+            textManager = textMan;
             openClose = open_close;
 
             if (polaroid_Zoom_Helper.Is_Polaroid(panel))
@@ -51,9 +51,9 @@ namespace IQP_Tester
             lblAnswer.Text = answer;
         }
 
-        public void Handle_Long_Ans()
+        private void Handle_Long_Ans()
         {
-            string name = translationManager.Get_Text(polaroid_Zoom_Helper.Get_Long_Ans_Name(lblAns));
+            string name = textManager.Get_Text(polaroid_Zoom_Helper.Get_Long_Ans_Name(lblAns));
             if (name != null && name != Polaroid_Helper.IGNORE_LONG_ANS_FLAG)
             {
                 lblAnswer.Text = name;
@@ -83,16 +83,16 @@ namespace IQP_Tester
         private void btnLanguage_Click(object sender, EventArgs e)
         {
             openClose.Interaction();
-            translationManager.Increment_Language(this);
+            textManager.Increment_Language(this);
             Polaroid_Zoom_Resize(this, new EventArgs());
             Translate_Polaroid();
         }
 
         private void Translate_Polaroid()
         {
-            lblQuestion.Text = translationManager.Get_Text(lblQ, translationManager.Get_Translated_Dictionary());
-            lblAnswer.Text = translationManager.Get_Text(lblAns, translationManager.Get_Translated_Dictionary());
-            btnLanguage.Text = translationManager.Get_Text(btnLanguage, translationManager.Get_Translated_Dictionary());
+            lblQuestion.Text = textManager.Get_Text(lblQ, textManager.Get_Translated_Dictionary());
+            lblAnswer.Text = textManager.Get_Text(lblAns, textManager.Get_Translated_Dictionary());
+            btnLanguage.Text = textManager.Get_Text(btnLanguage, textManager.Get_Translated_Dictionary());
             Handle_Long_Ans();
         }
 

@@ -142,5 +142,15 @@ namespace IQP_Tester
             DoublePolaroid doublePolaroid = new DoublePolaroid(openClose, textManager, control);
             openClose.FadeIn(doublePolaroid);
         }
+
+        public string Get_Long_Text_Name(System.Windows.Forms.Label label)
+        {
+            return label.Name + LONG_ANS_FLAG;
+        }
+
+        public string Get_Title_Name(Control control)
+        {
+            return control.Name + TITLE_FLAG;
+        }
     }
 }
