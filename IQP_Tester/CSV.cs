@@ -150,11 +150,11 @@ namespace IQP_Tester
             {
                 new_str = new_str.Replace(QUOTES, DOUBLE_QUOTES);
             }
-            if (str.Contains(QUOTES) || str.Contains(DOUBLE_QUOTES))
+            if (str.Contains(QUOTES) || str.Contains(COMMA))
             {
                 new_str = QUOTES + new_str + QUOTES;
             }
-            return str;
+            return new_str;
         }
 
 

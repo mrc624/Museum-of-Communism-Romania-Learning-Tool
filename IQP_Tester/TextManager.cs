@@ -40,7 +40,21 @@ namespace IQP_Tester
             if (File.Exists(file_name))
             {
                 string json = File.ReadAllText(file_name);
-                text = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                try
+                {
+                    text = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                }
+                catch (Exception ex)
+                {   
+                    DialogResult ans = MessageBox.Show("Error reading Text Manager JSON\n" + ex);
+
+                    if (ans != DialogResult.None)
+                    {
+                        Application.Exit();
+                    }
+
+                    text = null;
+                }
             }
             else
             {

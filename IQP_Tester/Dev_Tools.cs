@@ -248,7 +248,7 @@ namespace IQP_Tester
             Dictionary<string, Dictionary<string, string>> reformatted = Get_Reformatted_Dictionary();
             List<string> header = new List<string> { HEADER_CONTROL_TEXT, HEADER_ENGLISH_TEXT, HEADER_ROMANIAN_TEXT };
             text_csv = csv_Helper.Create_CSV_From_Reformatted(reformatted, header);
-
+            text_csv.Generate();
             SaveFileDialog save = new SaveFileDialog();
             save.Title = "Export Text Manager";
             save.Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*";

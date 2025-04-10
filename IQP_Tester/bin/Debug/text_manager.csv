@@ -1,117 +1,117 @@
-Control Name,English,Romanian
-lblOppression,"""Oppression,""",TRANSLATION NEEDED
-lblLifeUnder,"Life ""Under"" Communism",TRANSLATION NEEDED
-lblCommunistTimeline,Communist' Timeline,TRANSLATION NEEDED
-lblStories,Stories from communism$#@$@#$%^&*,TRANSLATION NEEDED
-btnCredits,Credits,TRANSLATION NEEDED
-lblThenAndNow,Then and Now,TRANSLATION NEEDED
-btnLanguage,English,TRANSLATION NEEDED
-lblWorkAnsPolLong,"Jobs were limited: Securitate, engineer, doctor, professor, factory worker, or, if skilled, a sportsman. Family pressure pushed for roles like lawyer, doctor, or pilot. Assignments were far from home, often in villages in the middle of nowhere, with no choice or prior knowledge of the destination.","EMPTY, USING OTHER ANS"
-lblWorkAns,"""Who knows where in the country, but you had the job. Let's presume you finished medicine. You became a young doctor, but who knows where in a little village in Romania.""",TRANSLATION NEEDED
-lblWorkQ,What jobs were available?,TRANSLATION NEEDED
-lblUniversityAnsPolLong,"University was mostly for students to obtain technical degress that would help in industrialization, construction, education, and health. After graduating, they were sent to anywhere in the country where there was a need for 'repartisare.' University was especially attractive to young men because they could shorten their mandatory military service.","EMPTY, USING OTHER ANS"
-lblUniversityAns,"""After finishing my studies, I would have been sent to go as a teacher somewhere in the countryside for a compulsatory partisanship.""",TRANSLATION NEEDED
-lblUniversityQ,Why did people choose to go to university?,TRANSLATION NEEDED
-lblEmigrationAnsPolLong,"Emigration was nearly impossible and trying to escape the country was met with rejection, arrest, and imprisonment. You could only leave if you were a sportsman or had special permission. You were forced to provide information upon your return.","EMPTY, USING OTHER ANS"
-lblEmigrationAns,"""I became very attractive as a German-speaking student for the Securitate… they needed a translator to accompany a young secretary of the central committee of the young communists. One of their bosses got invited to a conference in West Germany and they selected me to be a translator... they were testing me. I then defected.""",TRANSLATION NEEDED
-lblEmigrationQ,What was the punishment for trying to leave Romania?,TRANSLATION NEEDED
-lblYouthOrgAnsPolLong,"Pioneers are a ranking in schools from 2nd-8th grade, which was indicated by wearing a red scarf. Many school children fought over having a rank in school because it gave more value to their lives.","EMPTY, USING OTHER ANS"
-lblYouthOrgAns,"""We were the RCP's eagles.""",TRANSLATION NEEDED
-lblYouthOrgQ,What did being a pioneer in grade school mean?,TRANSLATION NEEDED
-lblDemonstrationAnsPolLong,Civilians were forced to attend Communist party festivities that promoted comunist ideologies and praising Nicolae Ceausescu. Consequences for not attending could include being fired from your job or harsh torture.,"EMPTY, USING OTHER ANS"
-lblDemonstrationQ,What were communist state festivities?,TRANSLATION NEEDED
-lblDemonstrationAns,"""We didn't have TV, you know. It was only for two hours during the evening when the whole program was only about Ceausescu. It was nothing else.""",TRANSLATION NEEDED
-lblMediaAnsPolLong,"Books, movies, and news were available but all were censored to control information and prevent criticism of the regime. The role of the media was to spread state propaganda, convincing people that Ceausescu was a great leader and that life was better than it really was. Some Romanian and foreign media was sold in black markets.","EMPTY, USING OTHER ANS"
-lblMediaAns,"""We didn't have TV, you know. It was only for two hours during the evening when the whole program was only about Ceausescu. It was nothing else.""",TRANSLATION NEEDED
-lblMediaQ,What type of media was available?,TRANSLATION NEEDED
-lblRationAnsPolLong,"Rations = fixed amount of goods that citizens are allowed to consume in times of shortages. Rations were placed on basic necessities like food, cooking oil, soaps, gasoline, electricity, and heating.","EMPTY, USING OTHER ANS"
-lblRationAns,"""We have to deal with rations, because if we want to buy usual stuff like oil or gas or bread or meat or butter, we have to have the cards, the tickets for the rations.""",TRANSLATION NEEDED
-lblRationQ,What products were rationed?,TRANSLATION NEEDED
-lblChildhoodAnsPolLong,"Many were protected by their parents but some still knew that the propaganda was lies. Children had to do chores, wait in the ration queues, and do homework in the dark. But, they still had hobbies and played with their friends. Some children lost their mothers due to illegal failed abortions.","EMPTY, USING OTHER ANS"
-lblChildhoodAns,"""Parents fought to create some sense of normalcy in the midst of the disaster that was reality.""",TRANSLATION NEEDED
-lblChildhoodQ,What was it like to be a child during this period?,TRANSLATION NEEDED
-lblFoodAnsPolLong,Food was scarce and there was no variety in stores. Basic necessities were rationed and of much worse quality compared to today.,"EMPTY, USING OTHER ANS"
-lblFoodAns,"""Not because you didn't have money, but because you can not find other things.""",TRANSLATION NEEDED
-lblFoodQ,How did people get food?,TRANSLATION NEEDED
-lblSchoolAnsPolLong,School was very strict. The party wanted to demonstrate how educated and proper its citizens were - kids were even required to write in ink in a calligraphy style. All classrooms had a portrait of Ceausescu and students had to chant slogans about the Romanian Communist Party and how great Ceausescu is every day. There were lessons about the communist ideology and students were punished for not being able to recite Ceausescu's policies and speeches.,"EMPTY, USING OTHER ANS"
-lblSchoolAns,"""We were like soldiers in school.""",TRANSLATION NEEDED
-lblSchoolQ,How was learning in school different in this time?,"Ce se �nv??a atunci, ce era diferit fa?? de azi?"
-lblDeportationAnsPolLong,The Securitate deported people that were perceived as dangerous to the communist party.,Securitatea a deportat persoane care erau v?zute ca persoane periculoase pentru societate ?i conducerea ??rii.
-lblDeportationQ,Who went to deportation camps?,Cine a fost deportat?
-lblDeportationAns,"""Young people that wrote we want food, freedom, and such on walls were seen as people who were dangerous against the regime and were put away.""","Tinerii care scriau pe ziduri Vrem m�ncare, Libertate, ?i alte cerin?e erau v?zu?i ca du?mani ai regimului ?i erau izola?i de societate - elimina?i din serviciu, �nchi?i, interna?i sau cu domicilii for?ate etc."
-lblPalaceAnsPolLong,Seven square kilometers of neighborhoods were destroyed to make room for the Palace of the People. Part of the money for this project came for relief funds for earthquake victims.,7 km2 au fost distru?i pentru a elibera teren s? se construiasc? Casa poporului. Parte din suma debani necesar? acestui proiect a venit din fondurile ce trebuiau alocate victimelor cutremurului din 1977. 
-lblPalaceQ,What was the Palace of the People built for?,Pentru ce a fost construit? Casa poporului? 
-lblPalaceAns,"""The actual Romania didn't exist for me anymore. And it didn't exist also because the neighborhood where I lived, where I was born, my house, my street, my neighborhood was pulled down.""","Romania de azi nu mai exista pentru mine. Un motiv se datoreaz? faptului c? nu mai exist? cartierul �n acre am locuit, unde m-am n?scut, casa mea, starda mea, cartierul meu a fost demolat."
-lblFearAnsPolLong,"People living under communism felt a mix of fear, anger, frustration, and hopelessness. Fear came from constantly being watched and reported. Frustration came from extreme shortages and harsh rules. Deep inside, many people still held onto hope. They dreamed  of freedom and a better life.","Oamenii care tr?iau �n comunism sim?eau un amestec de team?, frustrare ?i lips? de speran??. Frica venea din faptul c? erai urm?rit ?i raportat la Securitate. Frustrarea venea din lipsuri de tot felul ?i reguli foarte stricte. �n ad�ncul lor, oamenii tr?geau n?dejde de mai bine. Ei vbisau la libertate ?i o via?? mai bun?. "
-lblFearQ,What emotions did people feel while living under communism?,Ce emo?ii aveau oamenii care tr?iau �n comunism?
-lblFearAns,"""We thought that our destiny was completely destroyed but we did not complain. Just fought.""","Noi credeam c? destinul nostru era complet distrus, dar nu ne pl�ngeam. Doar luptam. "
-lblReligionAnsPolLong,Those who came from religous families were said to have unhealthy origins. Students that went to church on Sundays could be punished by their teachers and could prevent them from having other opportunities such as getting a university.,Cei care veneau din familii religioase erau considera?i cu origini nes?n?toase. Elevii care mergeau la biseric? duminica puteau fi pedepsi?i de profesori ?i puteau s? li se r?str�ng?viitorul accesul la universitate.
-lblReligionQ,How did people follow their faith?,TRANSLATION NEEDED
-lblReligionAns,"""My father was a priest which was an unhealthy origin.""",TRANSLATION NEEDED
-lblExportsAnsPolLong,"Romania exported a lot of products, especially during the 1980s, to pay off foreign debts. These included food like grains, meat, and oil, machinery, textiles, and cars. The state sent loads of resources to other countries while Romanians at home faced extreme shortages and empty shelves.","EMPTY, USING OTHER ANS"
-lblExportsQ,What Romanian products were exported?,TRANSLATION NEEDED
-lblExportsAns,"""The economy was going so badly due to Ceauşescu's poor leadership and idiotic investments in heavy industries… unsustainable, no raw materials, no energy, not enough of a work force.""",TRANSLATION NEEDED
-lblInfluenceAnsPolLong,No relationships with foreigners were allowed unless they were reported and approved by the party. Romanians were harshly limited on places they could travel to and it was hard to obtain visas for travel.,"EMPTY, USING OTHER ANS"
-lblInfluenceQ,How did Romanian's interact with people in foreign countries?,TRANSLATION NEEDED
-lblInfluenceAns,"""It was not easy to travel and we could not consume foreign media.""",TRANSLATION NEEDED
-lblPossesionsAnsPolLong,"They were often confiscated, controlled, or heavily monitored. Items that the Securitate labeled as ""Western"" or anti-regime were destroyed or hidden. The state could seize property whenever they wanted, and many people lived in fear of losing their belongings simply is they were perceived as being disloyal.","EMPTY, USING OTHER ANS"
-lblPossesionsQ,What happened to people's private posessions?,TRANSLATION NEEDED
-lblPossesionsAns,"""When the communists came, they had to give it away just like that. Everything that they had - cows, sheep, horses - it wasn't theirs. It was the government's.""",TRANSLATION NEEDED
-lblLanguageAnsPolLong,"Party figures spoke in a rigid, artifical style like ""wooden language."" It was a soulless way of talking that erased people's thoughts and expression. Words became like weapons of control and submission.","EMPTY, USING OTHER ANS"
-lblLanguageQ,How did politicians speak during the time?,TRANSLATION NEEDED
-lblLanguageAns,"""Ceausescu, PCR. Ceausescu, PCR.""",TRANSLATION NEEDED
-lblPropogandaAnsPolLong,"Propaganda: newspapers, TV, posters, and school lessons to brainwash people's thoughts and speech to maintain their loyalty. The PAD controlled all information and media, creating endless praise for Ceausescu and promoting socialist ideals through propaganda. This department limited cultural diversity in the country.","EMPTY, USING OTHER ANS"
-lblPropogandaQ,What was the role of the Propaganda & Agitation Department?,TRANSLATION NEEDED
-lblPropogandaAns,"""The Securitate’s weapon was propaganda. The old Securitate are good at changing history even now, contributing to today’s nostalgia.""",TRANSLATION NEEDED
-lblConsequencesAnsPolLong,"Political detainees were people that the Securitate perceived as being threats to the regime or expressing any opposition to its ideology. They faced discrimination, surveillance, loss of jobs, and sometimes even imprisonment.","EMPTY, USING OTHER ANS"
-lblConsequencesQ,What happened to political detainees and their families?,TRANSLATION NEEDED
-lblConsequencesAns,"""Two other women were in the same cell, but not political prisoners, were there for  “common” reasons. One was selling medicine illegal, and the other was doing illegal abortions.""",TRANSLATION NEEDED
-lblSecuritateAnsPolLong,"The Securitate used informants as snitches on people, followed people around, intercepted mail, and tapped phones. Any person, including children, could be coerced to be an informant to the Securitate. If you were an informant, there were benefits like food tickets, better jobs, etc.","EMPTY, USING OTHER ANS"
-lblSecuritateQ,What was the main tool of oppression?,TRANSLATION NEEDED
-lblSecuritateAns,"""I felt extremely cornered… the Securitate were testing me.""",TRANSLATION NEEDED
-lblStopEngineersAnsPolLong,"Four months after the earthquake [in 1977] [My father, an engineer and hundreds others] were all called for a meeting with Ceauşescu [to discuss the structural rigidity of the buildings] - it was the first time my father saw him in person.  During this meeting, Ceauşescu told roughly 300 people in this meeting ‘Everybody stops [their plans to strengthen these damaged buildings], if you continue, ill have police and prosecutors take care of you, they will arrest you, anyone who continues even inspecting more buildings will be arrested.’ my father made a note of many buildings that Securitate members lived that had been reinforced, or excepted from this order.","EMPTY, USING OTHER ANS"
-lblStopEngineersQ,"If You Continue, You'll Be Arrested",TRANSLATION NEEDED
-lblStopEngineersAns,"Four months after the earthquake [in 1977] [My father, an engineer and hundreds others] were all called for a meeting with Ceauşescu…",TRANSLATION NEEDED
-lblCutPhoneLinesAnsPolLong,"[The government] cut off our phone lines after my father was arrested, Securitate people were outside my house, they would follow me even just to buy bread. I would walk, and they would follow me by car, it was a measure of threat and intimidation. During that time, I could not speak with my sister from the home phone, so I would go to the post office and when I would go there, I would encounter the second investigator from the Securitate. They interrogated me too- and this guy, I would see him oct-Nov 1985, and he would threaten me ‘again you? what are you doing here, watch out what you say.’ I would tell my sister, we would talk in code, she knew my father was arrested, she understood, he was sick, she would understand everything.","EMPTY, USING OTHER ANS"
-lblCutPhoneLinesQ,Watch What You Say,TRANSLATION NEEDED
-lblCutPhoneLinesAns,"[The government] cut off our phone lines after my father was arrested, Securitate people were outside my house, they would follow me even just to buy bread…",TRANSLATION NEEDED
-lblSwimmerKillerAnsPolLong,"My father had a pipedream, an illusion, and we would joke on my escapades for the swim team I would bring back pieces of a gun and assemble it and kill Ceaușescu. It was a dark joke for us. Another dissident in the 80s- had the same plan as my father, to shoot Ceaușescu, and my father would say the same, he said ‘I shoot him, they catch and kill me, but I would rid 20 million people from this horrible fate.’","EMPTY, USING OTHER ANS"
-lblSwimmerKillerQ,My Father's Secret Plan,TRANSLATION NEEDED
-lblSwimmerKillerAns,"My father had a pipedream, an illusion, and we would joke on my escapades for the swim team I would bring back pieces of a gun…",TRANSLATION NEEDED
-lblJapaneseMachinesAnsPolLong,"They imported this Japanese guy who brought some machines/tools that needed to be explained how to work and supervise the workers in order for them to learn how to use them. he would say something at the end of the day, Sayonara and something else in Japanese that no one understood’ and everyday would say the same thing until the contract expired, and what did he say every day? He would say 'Goodbye and I'm sorry I didn’t participate in your strike' - it was sympathetic, as the economy was going so badly, not only due to Ceauşescu's poor leadership and idiotic investments in heavy industries,- unsustainable, no raw materials, no energy, not enough of a work force, but people seeing that everything was so mismanaged and being so sick of the leadership and the system, they would not work hard. They would sit there and have coffees and cigarettes. My father and I worked hard.","EMPTY, USING OTHER ANS"
-lblJapaneseMachinesQ,Ceausescu's Idiotic Investments,TRANSLATION NEEDED
-lblJapaneseMachinesAns,"The economy was going so badly, not only due to Ceauşescu's poor leadership and idiotic investments in heavy industries,- unsustainable, no raw materials, no energy...",TRANSLATION NEEDED
+﻿Control Name,English,Romanian,
+lblOppression,Oppression,TRANSLATION NEEDED,
+lblLifeUnder,Life Under Communism,TRANSLATION NEEDED,
+lblCommunistTimeline,Communist Timeline,TRANSLATION NEEDED,
+lblStories,Stories from communism,TRANSLATION NEEDED,
+btnCredits,Credits,TRANSLATION NEEDED,
+lblThenAndNow,Then and Now,TRANSLATION NEEDED,
+btnLanguage,English,TRANSLATION NEEDED,
+lblWorkAnsPolLong,"Jobs were limited: Securitate, engineer, doctor, professor, factory worker, or, if skilled, a sportsman. Family pressure pushed for roles like lawyer, doctor, or pilot. Assignments were far from home, often in villages in the middle of nowhere, with no choice or prior knowledge of the destination.","EMPTY, USING OTHER ANS",
+lblWorkAns,"""Who knows where in the country, but you had the job. Let's presume you finished medicine. You became a young doctor, but who knows where in a little village in Romania.""",TRANSLATION NEEDED,
+lblWorkQ,What jobs were available?,TRANSLATION NEEDED,
+lblUniversityAnsPolLong,"University was mostly for students to obtain technical degress that would help in industrialization, construction, education, and health. After graduating, they were sent to anywhere in the country where there was a need for 'repartisare.' University was especially attractive to young men because they could shorten their mandatory military service.","EMPTY, USING OTHER ANS",
+lblUniversityAns,"""After finishing my studies, I would have been sent to go as a teacher somewhere in the countryside for a compulsatory partisanship.""",TRANSLATION NEEDED,
+lblUniversityQ,Why did people choose to go to university?,TRANSLATION NEEDED,
+lblEmigrationAnsPolLong,"Emigration was nearly impossible and trying to escape the country was met with rejection, arrest, and imprisonment. You could only leave if you were a sportsman or had special permission. You were forced to provide information upon your return.","EMPTY, USING OTHER ANS",
+lblEmigrationAns,"""I became very attractive as a German-speaking student for the Securitate… they needed a translator to accompany a young secretary of the central committee of the young communists. One of their bosses got invited to a conference in West Germany and they selected me to be a translator... they were testing me. I then defected.""",TRANSLATION NEEDED,
+lblEmigrationQ,What was the punishment for trying to leave Romania?,TRANSLATION NEEDED,
+lblYouthOrgAnsPolLong,"Pioneers are a ranking in schools from 2nd-8th grade, which was indicated by wearing a red scarf. Many school children fought over having a rank in school because it gave more value to their lives.","EMPTY, USING OTHER ANS",
+lblYouthOrgAns,"""We were the RCP's eagles.""",TRANSLATION NEEDED,
+lblYouthOrgQ,What did being a pioneer in grade school mean?,TRANSLATION NEEDED,
+lblDemonstrationAnsPolLong,Civilians were forced to attend Communist party festivities that promoted comunist ideologies and praising Nicolae Ceausescu. Consequences for not attending could include being fired from your job or harsh torture.,"EMPTY, USING OTHER ANS",
+lblDemonstrationQ,What were communist state festivities?,TRANSLATION NEEDED,
+lblDemonstrationAns,"""We didn't have TV, you know. It was only for two hours during the evening when the whole program was only about Ceausescu. It was nothing else.""",TRANSLATION NEEDED,
+lblMediaAnsPolLong,"Books, movies, and news were available but all were censored to control information and prevent criticism of the regime. The role of the media was to spread state propaganda, convincing people that Ceausescu was a great leader and that life was better than it really was. Some Romanian and foreign media was sold in black markets.","EMPTY, USING OTHER ANS",
+lblMediaAns,"""We didn't have TV, you know. It was only for two hours during the evening when the whole program was only about Ceausescu. It was nothing else.""",TRANSLATION NEEDED,
+lblMediaQ,What type of media was available?,TRANSLATION NEEDED,
+lblRationAnsPolLong,"Rations = fixed amount of goods that citizens are allowed to consume in times of shortages. Rations were placed on basic necessities like food, cooking oil, soaps, gasoline, electricity, and heating.","EMPTY, USING OTHER ANS",
+lblRationAns,"""We have to deal with rations, because if we want to buy usual stuff like oil or gas or bread or meat or butter, we have to have the cards, the tickets for the rations.""",TRANSLATION NEEDED,
+lblRationQ,What products were rationed?,TRANSLATION NEEDED,
+lblChildhoodAnsPolLong,"Many were protected by their parents but some still knew that the propaganda was lies. Children had to do chores, wait in the ration queues, and do homework in the dark. But, they still had hobbies and played with their friends. Some children lost their mothers due to illegal failed abortions.","EMPTY, USING OTHER ANS",
+lblChildhoodAns,"""Parents fought to create some sense of normalcy in the midst of the disaster that was reality.""",TRANSLATION NEEDED,
+lblChildhoodQ,What was it like to be a child during this period?,TRANSLATION NEEDED,
+lblFoodAnsPolLong,Food was scarce and there was no variety in stores. Basic necessities were rationed and of much worse quality compared to today.,"EMPTY, USING OTHER ANS",
+lblFoodAns,"""Not because you didn't have money, but because you can not find other things.""",TRANSLATION NEEDED,
+lblFoodQ,How did people get food?,TRANSLATION NEEDED,
+lblSchoolAnsPolLong,School was very strict. The party wanted to demonstrate how educated and proper its citizens were - kids were even required to write in ink in a calligraphy style. All classrooms had a portrait of Ceausescu and students had to chant slogans about the Romanian Communist Party and how great Ceausescu is every day. There were lessons about the communist ideology and students were punished for not being able to recite Ceausescu's policies and speeches.,"EMPTY, USING OTHER ANS",
+lblSchoolAns,"""We were like soldiers in school.""",TRANSLATION NEEDED,
+lblSchoolQ,How was learning in school different in this time?,TRANSLATION NEEDED,
+lblDeportationAnsPolLong,The Securitate deported people that were perceived as dangerous to the communist party.,"EMPTY, USING OTHER ANS",
+lblDeportationQ,Who went to deportation camps?,TRANSLATION NEEDED,
+lblDeportationAns,"""Young people that wrote we want food, freedom, and such on walls were seen as people who were dangerous against the regime and were put away.""",TRANSLATION NEEDED,
+lblPalaceAnsPolLong,Seven square kilometers of neighborhoods were destroyed to make room for the Palace of the People. Part of the money for this project came for relief funds for earthquake victims.,"EMPTY, USING OTHER ANS",
+lblPalaceQ,What was the Palace of the People built for?,TRANSLATION NEEDED,
+lblPalaceAns,"""The actual Romania didn't exist for me anymore. And it didn't exist also because the neighborhood where I lived, where I was born, my house, my street, my neighborhood was pulled down.""",TRANSLATION NEEDED,
+lblFearAnsPolLong,"People living under communism felt a mix of fear, anger, frustration, and hopelessness. Fear came from constantly being watched and reported. Frustration came from extreme shortages and harsh rules. Deep inside, many people still held onto hope. They dreamed  of freedom and a better life.","EMPTY, USING OTHER ANS",
+lblFearQ,What emotions did people feel while living under communism?,TRANSLATION NEEDED,
+lblFearAns,"""We thought that our destiny was completely destroyed but we did not complain. Just fought.""",TRANSLATION NEEDED,
+lblReligionAnsPolLong,Those who came from religous families were said to have unhealthy origins. Students that went to church on Sundays could be punished by their teachers and could prevent them from having other opportunities such as getting a university.,"EMPTY, USING OTHER ANS",
+lblReligionQ,How did people follow their faith?,TRANSLATION NEEDED,
+lblReligionAns,"""My father was a priest which was an unhealthy origin.""",TRANSLATION NEEDED,
+lblExportsAnsPolLong,"Romania exported a lot of products, especially during the 1980s, to pay off foreign debts. These included food like grains, meat, and oil, machinery, textiles, and cars. The state sent loads of resources to other countries while Romanians at home faced extreme shortages and empty shelves.","EMPTY, USING OTHER ANS",
+lblExportsQ,What Romanian products were exported?,TRANSLATION NEEDED,
+lblExportsAns,"""The economy was going so badly due to Ceauşescu's poor leadership and idiotic investments in heavy industries… unsustainable, no raw materials, no energy, not enough of a work force.""",TRANSLATION NEEDED,
+lblInfluenceAnsPolLong,No relationships with foreigners were allowed unless they were reported and approved by the party. Romanians were harshly limited on places they could travel to and it was hard to obtain visas for travel.,"EMPTY, USING OTHER ANS",
+lblInfluenceQ,How did Romanian's interact with people in foreign countries?,TRANSLATION NEEDED,
+lblInfluenceAns,"""It was not easy to travel and we could not consume foreign media.""",TRANSLATION NEEDED,
+lblPossesionsAnsPolLong,"They were often confiscated, controlled, or heavily monitored. Items that the Securitate labeled as ""Western"" or anti-regime were destroyed or hidden. The state could seize property whenever they wanted, and many people lived in fear of losing their belongings simply is they were perceived as being disloyal.","EMPTY, USING OTHER ANS",
+lblPossesionsQ,What happened to people's private posessions?,TRANSLATION NEEDED,
+lblPossesionsAns,"""When the communists came, they had to give it away just like that. Everything that they had - cows, sheep, horses - it wasn't theirs. It was the government's.""",TRANSLATION NEEDED,
+lblLanguageAnsPolLong,"Party figures spoke in a rigid, artifical style like ""wooden language."" It was a soulless way of talking that erased people's thoughts and expression. Words became like weapons of control and submission.","EMPTY, USING OTHER ANS",
+lblLanguageQ,How did politicians speak during the time?,TRANSLATION NEEDED,
+lblLanguageAns,"""Ceausescu, PCR. Ceausescu, PCR.""",TRANSLATION NEEDED,
+lblPropogandaAnsPolLong,"Propaganda: newspapers, TV, posters, and school lessons to brainwash people's thoughts and speech to maintain their loyalty. The PAD controlled all information and media, creating endless praise for Ceausescu and promoting socialist ideals through propaganda. This department limited cultural diversity in the country.","EMPTY, USING OTHER ANS",
+lblPropogandaQ,What was the role of the Propaganda & Agitation Department?,TRANSLATION NEEDED,
+lblPropogandaAns,"""The Securitate’s weapon was propaganda. The old Securitate are good at changing history even now, contributing to today’s nostalgia.""",TRANSLATION NEEDED,
+lblConsequencesAnsPolLong,"Political detainees were people that the Securitate perceived as being threats to the regime or expressing any opposition to its ideology. They faced discrimination, surveillance, loss of jobs, and sometimes even imprisonment.","EMPTY, USING OTHER ANS",
+lblConsequencesQ,What happened to political detainees and their families?,TRANSLATION NEEDED,
+lblConsequencesAns,"""Two other women were in the same cell, but not political prisoners, were there for  “common” reasons. One was selling medicine illegal, and the other was doing illegal abortions.""",TRANSLATION NEEDED,
+lblSecuritateAnsPolLong,"The Securitate used informants as snitches on people, followed people around, intercepted mail, and tapped phones. Any person, including children, could be coerced to be an informant to the Securitate. If you were an informant, there were benefits like food tickets, better jobs, etc.","EMPTY, USING OTHER ANS",
+lblSecuritateQ,What was the main tool of oppression?,TRANSLATION NEEDED,
+lblSecuritateAns,"""I felt extremely cornered… the Securitate were testing me.""",TRANSLATION NEEDED,
+lblStopEngineersAnsPolLong,"Four months after the earthquake [in 1977] [My father, an engineer and hundreds others] were all called for a meeting with Ceauşescu [to discuss the structural rigidity of the buildings] - it was the first time my father saw him in person.  During this meeting, Ceauşescu told roughly 300 people in this meeting ‘Everybody stops [their plans to strengthen these damaged buildings], if you continue, ill have police and prosecutors take care of you, they will arrest you, anyone who continues even inspecting more buildings will be arrested.’ my father made a note of many buildings that Securitate members lived that had been reinforced, or excepted from this order.","EMPTY, USING OTHER ANS",
+lblStopEngineersQ,"If You Continue, You'll Be Arrested",TRANSLATION NEEDED,
+lblStopEngineersAns,"Four months after the earthquake [in 1977] [My father, an engineer and hundreds others] were all called for a meeting with Ceauşescu…",TRANSLATION NEEDED,
+lblCutPhoneLinesAnsPolLong,"[The government] cut off our phone lines after my father was arrested, Securitate people were outside my house, they would follow me even just to buy bread. I would walk, and they would follow me by car, it was a measure of threat and intimidation. During that time, I could not speak with my sister from the home phone, so I would go to the post office and when I would go there, I would encounter the second investigator from the Securitate. They interrogated me too- and this guy, I would see him oct-Nov 1985, and he would threaten me ‘again you? what are you doing here, watch out what you say.’ I would tell my sister, we would talk in code, she knew my father was arrested, she understood, he was sick, she would understand everything.","EMPTY, USING OTHER ANS",
+lblCutPhoneLinesQ,Watch What You Say,TRANSLATION NEEDED,
+lblCutPhoneLinesAns,"[The government] cut off our phone lines after my father was arrested, Securitate people were outside my house, they would follow me even just to buy bread…",TRANSLATION NEEDED,
+lblSwimmerKillerAnsPolLong,"My father had a pipedream, an illusion, and we would joke on my escapades for the swim team I would bring back pieces of a gun and assemble it and kill Ceaușescu. It was a dark joke for us. Another dissident in the 80s- had the same plan as my father, to shoot Ceaușescu, and my father would say the same, he said ‘I shoot him, they catch and kill me, but I would rid 20 million people from this horrible fate.’","EMPTY, USING OTHER ANS",
+lblSwimmerKillerQ,My Father's Secret Plan,TRANSLATION NEEDED,
+lblSwimmerKillerAns,"My father had a pipedream, an illusion, and we would joke on my escapades for the swim team I would bring back pieces of a gun…",TRANSLATION NEEDED,
+lblJapaneseMachinesAnsPolLong,"They imported this Japanese guy who brought some machines/tools that needed to be explained how to work and supervise the workers in order for them to learn how to use them. he would say something at the end of the day, Sayonara and something else in Japanese that no one understood’ and everyday would say the same thing until the contract expired, and what did he say every day? He would say 'Goodbye and I'm sorry I didn’t participate in your strike' - it was sympathetic, as the economy was going so badly, not only due to Ceauşescu's poor leadership and idiotic investments in heavy industries,- unsustainable, no raw materials, no energy, not enough of a work force, but people seeing that everything was so mismanaged and being so sick of the leadership and the system, they would not work hard. They would sit there and have coffees and cigarettes. My father and I worked hard.","EMPTY, USING OTHER ANS",
+lblJapaneseMachinesQ,Ceausescu's Idiotic Investments,TRANSLATION NEEDED,
+lblJapaneseMachinesAns,"The economy was going so badly, not only due to Ceauşescu's poor leadership and idiotic investments in heavy industries,- unsustainable, no raw materials, no energy...",TRANSLATION NEEDED,
 lblCeausescuMailAnsPolLong,"[As children,] we had this gap between what we had to say in public and what we were thinking about what is happening. we were very aware of this gap since a very young age, that in society, when we speak to our teachers, and even to our friends and other kids, we say some things, but when we are with our family, we can express the truth."" A joke we knew was ""Ceausescu goes to the post office, to see how the postal stamp with his face on it is sold, if it sells well. And the employee at the post office said it doesn't sell. 
 
-Why? It doesn't stick to the envelope.Ceausescu asks for a postal stamp.He spits on the stamp and he said, ‘Look, it sticks.’ Well, but all the people spit on the other side, so, on your face.""","EMPTY, USING OTHER ANS"
-lblCeausescuMailQ,The Things We Couldn't Say,TRANSLATION NEEDED
-lblCeausescuMailAns,"[As children,] we had this gap between what we had to say in public and what we were thinking about what is happening…",TRANSLATION NEEDED
-lblSchoolPropagandaAnsPolLong,"We also had propaganda. We started our days in school singing the Romanian anthem/hymn. The anthem was a story about our country, how big and great it is, how rich it is, how happy we are, how happy our parents and grandparents are, how beautiful life is here. But not a word about the history.","EMPTY, USING OTHER ANS"
-lblSchoolPropagandaQ,A Beautiful Life (They Said),TRANSLATION NEEDED
-lblSchoolPropagandaAns,We also had propaganda. We started our days in school singing the Romanian anthem/hymn. The anthem was a story…,TRANSLATION NEEDED
-lblColdHandsAnsPolLong,"I was going to college (in the 70s) and in class, we had to write with gloves and jackets on in the winter, it was extremely cold, no heating in the classroom. one of the little details, similar to home too, very cold. No hot water, but my father taught me how to take cold showers- I admired him for that. Transportation in Bucharest was terrible - people were trying to catch buses which were more and more rare, and they would try and hang on the doorways in very risky ways- climbing on top of one another, pretty ugly scenes.","EMPTY, USING OTHER ANS"
-lblColdHandsQ,The Cold We Lived In,TRANSLATION NEEDED
-lblColdHandsAns,"I was going to college (in the 70s) and in class, we had to write with gloves and jackets on in the winter, it was extremely cold…",TRANSLATION NEEDED
-lblSoftTomatoAnsPolLong,"When I was younger my mother cut pizza bread and she cut it in three pieces. The first one in the morning with a cup of tea, the middle one in the lunch with some soup, tomato soup, a very soft soup. And the third one with the dinner.","EMPTY, USING OTHER ANS"
-lblSoftTomatoQ,One Slice at a Time,TRANSLATION NEEDED
-lblSoftTomatoAns,When I was younger my mother cut pizza bread and she cut it in three pieces…,TRANSLATION NEEDED
-lblDestinyAnsPolLong,"Of course I was young and my memory is related to my faculty and it's okay because we were young. But, I was [always] thinking that my destiny was completely destroyed. And I remember after 1990 when we are discussing with the people and it was very common to discuss about that period. And I was not complaining. My style is not to complain, it's just to fight. But when we are discussing one of my friends is saying, 'Come on, why are you saying that it was bad?' 'Look, you are an engineer - This was done only with the support of communism. If you are not in the communism, who knows what you would be doing now?' And I said, 'No, I never asked the communists to prepare me as a human being. I can manage my life myself.' And I was never thinking that I would become an engineer. My dream was to be in my village and to manage the activity of my family. That was my destiny. Not to be an engineer and to be in this [higher] position in Bucharest to discuss about the policy of Romania and so on.","EMPTY, USING OTHER ANS"
-lblDestinyQ,I Could've Lived Another Life,TRANSLATION NEEDED
-lblDestinyAns,I was [always] thinking that my destiny was completely destroyed...,TRANSLATION NEEDED
-lblTeacherBeatingAnsPolLong,"My teacher in primary school  from 1st-4th - she would beat us. Pulling our hair, hitting students’ head on the wall. I never told my parents. I realized it wasn’t okay when I grew up. [But back then] it was normal, somehow.","EMPTY, USING OTHER ANS"
-lblTeacherBeatingQ,Back Then at School,TRANSLATION NEEDED
-lblTeacherBeatingAns,My teacher in primary school  from 1st-4th - she would beat us…,TRANSLATION NEEDED
-lblButterWhyAnsPolLong,"My wife received 4 portions of butter because of our 3 kids, and the woman behind her, a colleague of mine didn't recognize my wife. And she said 'why are you giving so many packages!? - just one package, no matter how many children there are, we also want some packages!","EMPTY, USING OTHER ANS"
-lblButterWhyQ,Just One Package!,TRANSLATION NEEDED
-lblButterWhyAns,"'Why are you giving so many packages!? - just one package, no matter how many children there are, we also want some packages…",TRANSLATION NEEDED
+Why? It doesn't stick to the envelope.Ceausescu asks for a postal stamp.He spits on the stamp and he said, ‘Look, it sticks.’ Well, but all the people spit on the other side, so, on your face.""","EMPTY, USING OTHER ANS",
+lblCeausescuMailQ,The Things We Couldn't Say,TRANSLATION NEEDED,
+lblCeausescuMailAns,"[As children,] we had this gap between what we had to say in public and what we were thinking about what is happening…",TRANSLATION NEEDED,
+lblSchoolPropagandaAnsPolLong,"We also had propaganda. We started our days in school singing the Romanian anthem/hymn. The anthem was a story about our country, how big and great it is, how rich it is, how happy we are, how happy our parents and grandparents are, how beautiful life is here. But not a word about the history.","EMPTY, USING OTHER ANS",
+lblSchoolPropagandaQ,A Beautiful Life (They Said),TRANSLATION NEEDED,
+lblSchoolPropagandaAns,We also had propaganda. We started our days in school singing the Romanian anthem/hymn. The anthem was a story…,TRANSLATION NEEDED,
+lblColdHandsAnsPolLong,"I was going to college (in the 70s) and in class, we had to write with gloves and jackets on in the winter, it was extremely cold, no heating in the classroom. one of the little details, similar to home too, very cold. No hot water, but my father taught me how to take cold showers- I admired him for that. Transportation in Bucharest was terrible - people were trying to catch buses which were more and more rare, and they would try and hang on the doorways in very risky ways- climbing on top of one another, pretty ugly scenes.","EMPTY, USING OTHER ANS",
+lblColdHandsQ,The Cold We Lived In,TRANSLATION NEEDED,
+lblColdHandsAns,"I was going to college (in the 70s) and in class, we had to write with gloves and jackets on in the winter, it was extremely cold…",TRANSLATION NEEDED,
+lblSoftTomatoAnsPolLong,"When I was younger my mother cut pizza bread and she cut it in three pieces. The first one in the morning with a cup of tea, the middle one in the lunch with some soup, tomato soup, a very soft soup. And the third one with the dinner.","EMPTY, USING OTHER ANS",
+lblSoftTomatoQ,One Slice at a Time,TRANSLATION NEEDED,
+lblSoftTomatoAns,When I was younger my mother cut pizza bread and she cut it in three pieces…,TRANSLATION NEEDED,
+lblDestinyAnsPolLong,"Of course I was young and my memory is related to my faculty and it's okay because we were young. But, I was [always] thinking that my destiny was completely destroyed. And I remember after 1990 when we are discussing with the people and it was very common to discuss about that period. And I was not complaining. My style is not to complain, it's just to fight. But when we are discussing one of my friends is saying, 'Come on, why are you saying that it was bad?' 'Look, you are an engineer - This was done only with the support of communism. If you are not in the communism, who knows what you would be doing now?' And I said, 'No, I never asked the communists to prepare me as a human being. I can manage my life myself.' And I was never thinking that I would become an engineer. My dream was to be in my village and to manage the activity of my family. That was my destiny. Not to be an engineer and to be in this [higher] position in Bucharest to discuss about the policy of Romania and so on.","EMPTY, USING OTHER ANS",
+lblDestinyQ,I Could've Lived Another Life,TRANSLATION NEEDED,
+lblDestinyAns,I was [always] thinking that my destiny was completely destroyed...,TRANSLATION NEEDED,
+lblTeacherBeatingAnsPolLong,"My teacher in primary school  from 1st-4th - she would beat us. Pulling our hair, hitting students’ head on the wall. I never told my parents. I realized it wasn’t okay when I grew up. [But back then] it was normal, somehow.","EMPTY, USING OTHER ANS",
+lblTeacherBeatingQ,Back Then at School,TRANSLATION NEEDED,
+lblTeacherBeatingAns,My teacher in primary school  from 1st-4th - she would beat us…,TRANSLATION NEEDED,
+lblButterWhyAnsPolLong,"My wife received 4 portions of butter because of our 3 kids, and the woman behind her, a colleague of mine didn't recognize my wife. And she said 'why are you giving so many packages!? - just one package, no matter how many children there are, we also want some packages!","EMPTY, USING OTHER ANS",
+lblButterWhyQ,Just One Package!,TRANSLATION NEEDED,
+lblButterWhyAns,"'Why are you giving so many packages!? - just one package, no matter how many children there are, we also want some packages…",TRANSLATION NEEDED,
 lblStolenHorseAnsPolLong,"My grandparents were in the countryside and had land. The communists took their land and they made sacrifices to buy it back from them. They had to give it away in a single day, everything they had, the cows, sheep, horses were not theirs, it belonged to the state and was no longer their property.
 
-My grandparents had two horses - my grandfather loved them, and took care of them, and when he died in 1987, the communists came to the house and took the two horses, it was part of the family, but it wasn’t ours.","EMPTY, USING OTHER ANS"
-lblStolenHorseQ,Grandpa's Horses,TRANSLATION NEEDED
-lblStolenHorseAns,My grandparents were in the countryside and had land. The communists took their land and they made sacrifices to buy it back from them...,TRANSLATION NEEDED
-lblHousePeopleAnsPolLong,"In the wake of a devastating 1977 earthquake, Ceaușescu seized the opportunity to destroy entire neighborhoods (more than 1450 ha) in Bucharest to create new Communist Party headquarters and housing for visiting diplomats and politicians (Gociman et al., 2018, p. 1157). This headquarters, named ""The People's House"" was constructed on a hill and used roughly 30% of Romania's GDP and used up significant amounts of Romania's natural resources. The 12 story tall 'house' was lit up with ornate chandieliers during a time where families could only get a single lightbulb a month (Vachon, 1993, p. 60). Due to the land the palace and the boulevard leading to it took, roughly 9,300 homes were demolished, leaving 50,000 families displaced and homeless (Vachon, 1993, p. 59).","EMPTY, USING OTHER ANS"
-lblHousePeopleQ,What was the People's House?,TRANSLATION NEEDED
-lblHousePeopleAns,"The People's House was constructed on a hill for which roughly 9,300 homes were demolished, leaving 50,000 families displaced and homeless.",TRANSLATION NEEDED
+My grandparents had two horses - my grandfather loved them, and took care of them, and when he died in 1987, the communists came to the house and took the two horses, it was part of the family, but it wasn’t ours.","EMPTY, USING OTHER ANS",
+lblStolenHorseQ,Grandpa's Horses,TRANSLATION NEEDED,
+lblStolenHorseAns,My grandparents were in the countryside and had land. The communists took their land and they made sacrifices to buy it back from them...,TRANSLATION NEEDED,
+lblHousePeopleAnsPolLong,"In the wake of a devastating 1977 earthquake, Ceaușescu seized the opportunity to destroy entire neighborhoods (more than 1450 ha) in Bucharest to create new Communist Party headquarters and housing for visiting diplomats and politicians (Gociman et al., 2018, p. 1157). This headquarters, named ""The People's House"" was constructed on a hill and used roughly 30% of Romania's GDP and used up significant amounts of Romania's natural resources. The 12 story tall 'house' was lit up with ornate chandieliers during a time where families could only get a single lightbulb a month (Vachon, 1993, p. 60). Due to the land the palace and the boulevard leading to it took, roughly 9,300 homes were demolished, leaving 50,000 families displaced and homeless (Vachon, 1993, p. 59).","EMPTY, USING OTHER ANS",
+lblHousePeopleQ,What was the People's House?,TRANSLATION NEEDED,
+lblHousePeopleAns,"The People's House was constructed on a hill for which roughly 9,300 homes were demolished, leaving 50,000 families displaced and homeless.",TRANSLATION NEEDED,
 lblJulyAnsPolLong,"The July Theses were a set of ideas and rules announced by Nicolae Ceaușescu in July 1971 after he visited China and North Korea, two countries with very strict communist systems. He was impressed by how those countries controlled their people and wanted to bring similar ideas to Romania.
 
  The July Theses included
@@ -122,65 +122,93 @@ lblJulyAnsPolLong,"The July Theses were a set of ideas and rules announced by Ni
 * Increased focus on nationalism — teaching that Romania was great and strong because of its leaders.
 * Restrictions on Western culture — music, clothes, and ideas from other countries were discouraged or banned.
 
-The July Theses marked the start of a harsher, more repressive period in Romania. Ceaușescu wanted to control what people thought, said, and even listened to. This shift made life even harder for many Romanians, especially for students, writers, and artists who wanted more freedom.","EMPTY, USING OTHER ANS"
-lblJulyQ,What did the July Theses entail?,TRANSLATION NEEDED
-lblJulyAns,"Set of ideas and rules announced by Nicolae Ceaușescu in July 1971 after he visited China and North Korea, two countries with very strict communist systems.",TRANSLATION NEEDED
-lblWarsawAnsPolLong,"The Warsaw Pact was a military alliance formed in 1955 by the Soviet Union and several Eastern European countries in response to the formation of North Atlantic Treaty Organization (NATO) in 1949. It was meant to unify the military forces of Soviet-aligned nations under Soviet control.  Romania formally joined as a satellite state in 1957. Due to it being a satellite state, Romania did have more friendly relations with the West. However, as the USSR became more controlling in the late 60s, Romania decided to leave the Warsaw Pact in 1969, making Romania more independent within the Eastern Bloc.","EMPTY, USING OTHER ANS"
-lblWarsawQ,What did the Warsaw Pact entail and why did Romania leave?,TRANSLATION NEEDED
-lblWarsawAns,Military alliance formed in 1955 by the Soviet Union and several Eastern European countries in response to the formation of NATO in 1949.,TRANSLATION NEEDED
+The July Theses marked the start of a harsher, more repressive period in Romania. Ceaușescu wanted to control what people thought, said, and even listened to. This shift made life even harder for many Romanians, especially for students, writers, and artists who wanted more freedom.","EMPTY, USING OTHER ANS",
+lblJulyQ,What did the July Theses entail?,TRANSLATION NEEDED,
+lblJulyAns,"Set of ideas and rules announced by Nicolae Ceaușescu in July 1971 after he visited China and North Korea, two countries with very strict communist systems.",TRANSLATION NEEDED,
+lblWarsawAnsPolLong,"The Warsaw Pact was a military alliance formed in 1955 by the Soviet Union and several Eastern European countries in response to the formation of North Atlantic Treaty Organization (NATO) in 1949. It was meant to unify the military forces of Soviet-aligned nations under Soviet control.  Romania formally joined as a satellite state in 1957. Due to it being a satellite state, Romania did have more friendly relations with the West. However, as the USSR became more controlling in the late 60s, Romania decided to leave the Warsaw Pact in 1969, making Romania more independent within the Eastern Bloc.","EMPTY, USING OTHER ANS",
+lblWarsawQ,What did the Warsaw Pact entail and why did Romania leave?,TRANSLATION NEEDED,
+lblWarsawAns,Military alliance formed in 1955 by the Soviet Union and several Eastern European countries in response to the formation of NATO in 1949.,TRANSLATION NEEDED,
 lblAnaAnsPolLong,"The Romanian Communist Party was founded on May 8th, 1921 (Chicina, 2023). After World War II, the party was influenced by the Soviet Union and its leader, Joseph Stalin. The communists slowly took control by using propaganda and taking advantage of other political parties’ weaknesses (Chicina, 2023). Communism officially started in Romania in 1947, when King Michael I was forced to give up the throne and the country became a communist republic.
 
 Ana Pauker was an intellectual and was the unofficial prime minister of Romania's communist party after WWII. She was a strong believer in Stalinist ideology, a totalitarian political regime lead by Joseph Stalin. The main policies of his regime were rapid induztrialization, cultural revoluetion, and a reorginization of agricultural output (Brown et al., 2018).
 
- While she supported Stalinism, she did not believe in collectivization and did allow for emigration of the Jewish population - something not seen in other communist leaders at the time. Pauker was the first woman to hold such a position in the Communist Party. In 1952, she was ousted of her position by Gheorghe Gheorghiu-Dej and was placed under arrest as a result due to the political risk she posed to Gheorghiu-Dej.","EMPTY, USING OTHER ANS"
-lblAnaQ,Who was Ana Pauker?,TRANSLATION NEEDED
-lblAnaAns,Communism started in Romania in 1947 with Ana Pauker as the unofficial leader of the party.,TRANSLATION NEEDED
-lblHowDidTheRegimeFall,How did the fall?,TRANSLATION NEEDED
-lblWhereCeausescuAnsPolLong,"From ""December 18-20, 1989, when people were dying in the streets of Timisoara, Nicolae Ceauşescu made his last visit abroad"" to Tehran, Iran (Betea, n.d.). The purpose of this trip was to help negotiate a deal regaridng oil and wheat exports between Iran and Romania (Betea, n.d.). Notably, Elena Ceauşescu did not travel with him on this trip.","EMPTY, USING OTHER ANS"
-lblWhereCeausescuAns,"He was in Tehran, Iran.",TRANSLATION NEEDED
-lblWhereCeausescuQ,Where was Nicolae Ceauşescu?,TRANSLATION NEEDED
+ While she supported Stalinism, she did not believe in collectivization and did allow for emigration of the Jewish population - something not seen in other communist leaders at the time. Pauker was the first woman to hold such a position in the Communist Party. In 1952, she was ousted of her position by Gheorghe Gheorghiu-Dej and was placed under arrest as a result due to the political risk she posed to Gheorghiu-Dej.","EMPTY, USING OTHER ANS",
+lblAnaQ,Who was Ana Pauker?,TRANSLATION NEEDED,
+lblAnaAns,Communism started in Romania in 1947 with Ana Pauker as the unofficial leader of the party.,TRANSLATION NEEDED,
+lblHowDidTheRegimeFall,How did the fall?,TRANSLATION NEEDED,
+lblWhereCeausescuAnsPolLong,"From ""December 18-20, 1989, when people were dying in the streets of Timisoara, Nicolae Ceauşescu made his last visit abroad"" to Tehran, Iran (Betea, n.d.). The purpose of this trip was to help negotiate a deal regaridng oil and wheat exports between Iran and Romania (Betea, n.d.). Notably, Elena Ceauşescu did not travel with him on this trip.","EMPTY, USING OTHER ANS",
+lblWhereCeausescuAns,"He was in Tehran, Iran.",TRANSLATION NEEDED,
+lblWhereCeausescuQ,Where was Nicolae Ceauşescu?,TRANSLATION NEEDED,
 lblWhyRevoltAnsPolLong,"People revolted in December 1989 because they were fed up with years of extreme oppression, hardship, fear, and government control. Life under Nicolae Ceaușescu’s communist regime was extremely difficult —there were severe food shortages, electricity was limited, and personal freedoms did not exist. The Securitate kept people in constant fear, and anyone who spoke out could be arrested or worse.
 
 The immediate spark for the revolution began in Timișoara, when the government tried to deport a pastor named László Tőkés. He had spoken out against the regime, and people gathered to support him. What started as a peaceful protest quickly grew into a much larger movement as more and more people stood up against the regime’s cruelty and repression.
 
-Years of anger and suffering finally boiled over, and the people demanded change, freedom, and an end to the dictatorship.","EMPTY, USING OTHER ANS"
+Years of anger and suffering finally boiled over, and the people demanded change, freedom, and an end to the dictatorship.","EMPTY, USING OTHER ANS",
 lblWhyRevoltAns,"People revolted in December 1989 because they were fed up with years of extreme oppression, hardship, fear, and government control.
-",TRANSLATION NEEDED
-lblWhyRevoltQ,Why did people revolt?,TRANSLATION NEEDED
+",TRANSLATION NEEDED,
+lblWhyRevoltQ,Why did people revolt?,TRANSLATION NEEDED,
 lblWhatWasRevolutionAnsPolLong,"The Revolution of 1989 was a major turning point in Romanian history. It began with protests in Timișoara, sparked by the government’s attempt to deport pastor László Tőkés. These protests quickly spread across the country, growing into a nationwide uprising against the brutal regime of Nicolae Ceaușescu. 
 
-Over the course of a week, demonstrations turned violent as the Securitate tried to crush the revolt. Over 1,000 people were killed and thousands more were injured during the clashes. Eventually, the pressure became too much for the Securitate. Nicolae and Elena Ceaușescu were arrested, tried in a military court, and executed on December 25th, 1989. The revolution brought an end to decades of dictatorship and marked the beginning of Romania’s transition to democracy.","EMPTY, USING OTHER ANS"
-lblWhatWasRevolutionAns,"The Revolution of 1989 brought an end to decades of dictatorship and marked the beginning of Romania’s transition to democracy.
+Over the course of a week, demonstrations turned violent as the Securitate tried to crush the revolt. Over 1,000 people were killed and thousands more were injured during the clashes. Eventually, the pressure became too much for the Securitate. Nicolae and Elena Ceaușescu were arrested, tried in a military court, and executed on December 25th, 1989. The revolution brought an end to decades of dictatorship and marked the beginning of Romania’s transition to democracy.","EMPTY, USING OTHER ANS",
+lblWhatWasRevolutionAns,The Revolution of 1989 brought an end to decades of dictatorship and marked the beginning of Romania’s transition to democracy.
 
-",TRANSLATION NEEDED
-lblWhatWasRevolutionQ,"What was the Revolution?
-",TRANSLATION NEEDED
-lblCeausescusRise,Rise of Ceausescus,TRANSLATION NEEDED
-lblSoviet,Era of Sovietization,TRANSLATION NEEDED
-lblNicolaeAnsPolLong,"Nicolae Ceaușescu was the leader of communist Romania from 1965 until 1989. At first, some people supported him because he spoke out against the Soviet Union, which made him seem independent and strong. However, over time, he became more authoritarian —  he demanded total control and didn’t allow others to disagree with him. Under Ceaușescu’s rule, life became very difficult for Romanian citizens. There were severe food and energy shortages, and people had almost no freedom of speech or movement. A powerful secret police force called the Securitate spied on citizens, creating an atmosphere of fear and mistrust. Ceaușescu also forced the country into huge construction projects, like the Palace of the Parliament in Bucharest —one of the largest buildings in the world. These projects cost billions and were meant to show off his power, while most people lived in poverty and hardship. Today, Ceaușescu is remembered as one of Europe’s most repressive and controlling dictators.","EMPTY, USING OTHER ANS"
-lblNicolaeQ,Who was Nicolae Ceauşescu?,TRANSLATION NEEDED
-lblNicolaeAns,Leader of communist Romania from 1965 until 1989 who is remembered as one of Europe’s most repressive and controlling dictators.,TRANSLATION NEEDED
-lblElenaAnsPolLong,"Elena Ceaușescu was the wife of Nicolae Ceaușescu, the dictator of communist Romania. Over time, she became one of the most powerful people in the country, even though she had little education and no real qualifications. Despite this, she was given high-ranking government positions, including Deputy Prime Minister and head of several scientific institutions. She was also president of Scientific Council of the Central Institute of Chemistry, but most of her academic titles and awards were fake or exaggerated. Her power came mainly from her close relationship with Nicolae as his “direct correspondent,” and she used it to promote herself and control others. Elena was known for being arrogant, strict, and deeply disliked by many Romanians. She was heavily involved in government decisions and is believed to have helped create the harsh policies that led to poverty, fear, and repression during the 1980s.","EMPTY, USING OTHER ANS"
-lblElenaQ,Who was Elena Ceauşescu?,TRANSLATION NEEDED
-lblElenaAns,"Wife of Nicolae Ceaușescu and one of the most powerful people in the country, even though she had little education and no real qualifications.",TRANSLATION NEEDED
-lblGheorgheAnsPolLong,Gheorghe Gheorghiu-Dej was a senior member of the Communist Party but was displeased with Pauker's loose understanding of Stalinism and would become the prime minister of Romania in 1952. During his time he tightened his grip on Romania due to his strict following of Marxism. He sought to distance Romania from the USSR after a high ranking Soviet Officer denounced the crimes Stalin had committed. Gheorghiu-Dej was General Secretary of Romania's Communist Party from 1952 until his death in 1965.,"EMPTY, USING OTHER ANS"
-lblGheorgheQ,Who was Gheorghe Gheorghiu-Dej?,TRANSLATION NEEDED
-lblGheorgheAns,General Secretary of Romania's Communist Party from 1952 until his death in 1965.,TRANSLATION NEEDED
+,TRANSLATION NEEDED,
+lblWhatWasRevolutionQ,What was the Revolution?
+,TRANSLATION NEEDED,
+lblCeausescusRise,Rise of Ceausescus,TRANSLATION NEEDED,
+lblSoviet,Era of Sovietization,TRANSLATION NEEDED,
+lblNicolaeAnsPolLong,"Nicolae Ceaușescu was the leader of communist Romania from 1965 until 1989. At first, some people supported him because he spoke out against the Soviet Union, which made him seem independent and strong. However, over time, he became more authoritarian —  he demanded total control and didn’t allow others to disagree with him. Under Ceaușescu’s rule, life became very difficult for Romanian citizens. There were severe food and energy shortages, and people had almost no freedom of speech or movement. A powerful secret police force called the Securitate spied on citizens, creating an atmosphere of fear and mistrust. Ceaușescu also forced the country into huge construction projects, like the Palace of the Parliament in Bucharest —one of the largest buildings in the world. These projects cost billions and were meant to show off his power, while most people lived in poverty and hardship. Today, Ceaușescu is remembered as one of Europe’s most repressive and controlling dictators.","EMPTY, USING OTHER ANS",
+lblNicolaeQ,Who was Nicolae Ceauşescu?,TRANSLATION NEEDED,
+lblNicolaeAns,Leader of communist Romania from 1965 until 1989 who is remembered as one of Europe’s most repressive and controlling dictators.,TRANSLATION NEEDED,
+lblElenaAnsPolLong,"Elena Ceaușescu was the wife of Nicolae Ceaușescu, the dictator of communist Romania. Over time, she became one of the most powerful people in the country, even though she had little education and no real qualifications. Despite this, she was given high-ranking government positions, including Deputy Prime Minister and head of several scientific institutions. She was also president of Scientific Council of the Central Institute of Chemistry, but most of her academic titles and awards were fake or exaggerated. Her power came mainly from her close relationship with Nicolae as his “direct correspondent,” and she used it to promote herself and control others. Elena was known for being arrogant, strict, and deeply disliked by many Romanians. She was heavily involved in government decisions and is believed to have helped create the harsh policies that led to poverty, fear, and repression during the 1980s.","EMPTY, USING OTHER ANS",
+lblElenaQ,Who was Elena Ceauşescu?,TRANSLATION NEEDED,
+lblElenaAns,"Wife of Nicolae Ceaușescu and one of the most powerful people in the country, even though she had little education and no real qualifications.",TRANSLATION NEEDED,
+lblGheorgheAnsPolLong,Gheorghe Gheorghiu-Dej was a senior member of the Communist Party but was displeased with Pauker's loose understanding of Stalinism and would become the prime minister of Romania in 1952. During his time he tightened his grip on Romania due to his strict following of Marxism. He sought to distance Romania from the USSR after a high ranking Soviet Officer denounced the crimes Stalin had committed. Gheorghiu-Dej was General Secretary of Romania's Communist Party from 1952 until his death in 1965.,"EMPTY, USING OTHER ANS",
+lblGheorgheQ,Who was Gheorghe Gheorghiu-Dej?,TRANSLATION NEEDED,
+lblGheorgheAns,General Secretary of Romania's Communist Party from 1952 until his death in 1965.,TRANSLATION NEEDED,
 lblMarxismAnsPolLong,"Marxism is a way of thinking about society, economics, and politics that was created by Karl Marx. It is the idea that society is divided into two main groups: the rich (bourgeoisie) – who own businesses, land, and factories - and the working class (proletariat) – who work for the rich but don’t own much themselves. Marx believed this wasn’t fair and believed that the workers should come together, take control of the economy, and share things more equally. The goal of Marxism is to create a society where everyone is equal, and there’s no rich or poor. 
 
-Sovietization stemmed from Marxism, as the Soviet Union attempted to put Marx’s ideas into practice by abolishing private property, redistributing wealth, and establishing a state-controlled economy in the name of equality and socialism.","EMPTY, USING OTHER ANS"
-lblMarxismQ,What is the Marxism ideology and how did Sovietization stem from it?,TRANSLATION NEEDED
-lblMarxismAns,"The goal of Marxism is to create a society where everyone is equal, and there’s no rich or poor.",TRANSLATION NEEDED
+Sovietization stemmed from Marxism, as the Soviet Union attempted to put Marx’s ideas into practice by abolishing private property, redistributing wealth, and establishing a state-controlled economy in the name of equality and socialism.","EMPTY, USING OTHER ANS",
+lblMarxismQ,What is the Marxism ideology and how did Sovietization stem from it?,TRANSLATION NEEDED,
+lblMarxismAns,"The goal of Marxism is to create a society where everyone is equal, and there’s no rich or poor.",TRANSLATION NEEDED,
 lblPostWW2AnsPolLong,"After World War II, Romania fell under heavy Soviet influence. Under Gheorghe Gherogiu-Dej, the country underwent a process of ‘Sovietization,’ which promoted Stalinist policies such as collectivization of agriculture and repression of any anti-ideology actions. 
 
-However, in the 1960s, after the death of Joseph Stalin and the subsequent de-Stalinization under Khrushchev, Romania began to distance itself from the USSR’s direct control. While still maintaining a Marxist-Leninist political structure, Gheorgiu-Dej emphasized national sovereignty and pursued a more independent foreign policy. Romania improved its relations with neighboring socialist countries such as Bulgaria and Yugoslavia, and advocated for denuclearization and greater autonomy within the Eastern Bloc.","EMPTY, USING OTHER ANS"
-lblPostWW2Q,What was post WWII Romania like?,TRANSLATION NEEDED
-lblPostWW2Ans,"Romania underwent a process of ‘Sovietization,’ which promoted Stalinist policies such as collectivization of agriculture and repression of any anti-ideology actions.",TRANSLATION NEEDED
-year5,1990,TRANSLATION NEEDED
-year4,1980,TRANSLATION NEEDED
-year3,1970,TRANSLATION NEEDED
-year2,1960,TRANSLATION NEEDED
-year1,1950,TRANSLATION NEEDED
-year0,1940,TRANSLATION NEEDED
-lblTitle,Understanding Stories of Romanian Communism,TRANSLATION NEEDED
-lblSubtitle,"I like big macs, I think they are tasty. I like McDonalds and the fries that come with it. The Mcnuggets are better than a big mac though.",TRANSLATION NEEDED
+However, in the 1960s, after the death of Joseph Stalin and the subsequent de-Stalinization under Khrushchev, Romania began to distance itself from the USSR’s direct control. While still maintaining a Marxist-Leninist political structure, Gheorgiu-Dej emphasized national sovereignty and pursued a more independent foreign policy. Romania improved its relations with neighboring socialist countries such as Bulgaria and Yugoslavia, and advocated for denuclearization and greater autonomy within the Eastern Bloc.","EMPTY, USING OTHER ANS",
+lblPostWW2Q,What was post WWII Romania like?,TRANSLATION NEEDED,
+lblPostWW2Ans,"Romania underwent a process of ‘Sovietization,’ which promoted Stalinist policies such as collectivization of agriculture and repression of any anti-ideology actions.",TRANSLATION NEEDED,
+year5,1990,TRANSLATION NEEDED,
+year4,1980,TRANSLATION NEEDED,
+year3,1970,TRANSLATION NEEDED,
+year2,1960,TRANSLATION NEEDED,
+year1,1950,TRANSLATION NEEDED,
+year0,1940,TRANSLATION NEEDED,
+lblTitle,Understanding Stories of Romanian Communism,TRANSLATION NEEDED,
+lblSubtitle,"I like big macs, I think they are tasty. I like McDonalds and the fries that come with it. The Mcnuggets are better than a big mac though.",TRANSLATION NEEDED,
+lblFoodTN,"""[I had] bananas in the 80s, sometimes I had a banana in school, and there were five or six children who lived in orphanages, there were also gypsies and some of them had bananas, some not, and they had asked my to give them the shell... and give to them to taste the fruit"" - Museum Curator",TRANSLATION NEEDED,
+lblUniformTN,"""I know that the shoes that we've had, they were of very poor quality. We call them ""dragasani""...they were so bad that if you wore them two or three time, they would fall apart."" - Museum Curator",TRANSLATION NEEDED,
+lblNecessitiesTN,"""Then we had one type of soaps, maximum two types of soap, today we have a multitude of soaps… Life has changed radically..and the abundance of products we have in all the shops."" - History Teacher",TRANSLATION NEEDED,
+lblNeighborhoodTN,"If communism came back, your home wouldn't be a safe place anymore. The government could move you and your family out at any time to make room for big construction projects. Whole neighborhoods were torn down just to build fancy buildings for important party leaders to live in. This picture shows the descruction of the Uranus-Izvor neighborhood to make room for the Palace of Parliament.",TRANSLATION NEEDED,
+lblHandwritingTN,"""Writing for me was a subject of coping, but also a little strain."" - Journalist",TRANSLATION NEEDED,
+lblFreetimeTN,"""If communism came back, you wouldn't get to enjoy field trips or free time the way you want anymore. Instead, children had to do forced 'volunteer' work and help with chores for the community, whether they liked it or not.""",TRANSLATION NEEDED,
+lblCarsTN,"""And after waiting a few years for that, because it was a great achievement as a common Romanian, not those from the Communist Party, to get a car. So after a few years of waiting, we got our own car, Romanian car, Dacia 1300."" - Museum Curator",TRANSLATION NEEDED,
+lblMediaTN,"""So, we didn't have TV, you know. It was only for two hours during the evening when the whole program was only about Ceauşescu. It was nothing else."" - Museum Curator",TRANSLATION NEEDED,
+lblClassesTN,Unknown,TRANSLATION NEEDED,
+lblThenAndNowTitle,Unknown,TRANSLATION NEEDED,
+lblUniformTNPolLong,"If communism came back, you wouldn't be able to express your individuality through clothing at school, as all students were required to wear standard uniforms.","EMPTY, USING OTHER ANS",
+tableLayoutUniformTNDPTitle,School Uniforms,No Title,
+lblNecessitiesTNPolLong,"If communism came back, you wouldn't be able to walk into a store and find things like shampoo, soap, or toilet paper. There weren't enough good-quality products made for people, so even basi things were hard to get. ","EMPTY, USING OTHER ANS",
+tableLayoutNecessitiesTNDPTitle,Basic Necessities,No Title,
+lblFoodTNPolLong,"If communism came back, you would not be able to get whichever food or snacks you would like at any time. Food was highly regulated, and getting enough to eat was often really hard due to the small rations. The rations consisted of basic ingredients like bread, cheese, meat, butter, sugar, flour, and oil. Fresh fruits and vegetables were more difficult to get as they only came from the countryside towns.","EMPTY, USING OTHER ANS",
+tableLayoutFoodTNDPTitle,Food,No Title,
+lblNeighborhoodTNPolLong,"If communism came back, your home wouldn't be a safe place anymore. The government could move you and your family out at any time to make room for big construction projects. Whole neighborhoods were torn down just to build fancy buildings for important party leaders to live in. This picture shows the descruction of the Uranus-Izvor neighborhood to make room for the Palace of Parliament.","EMPTY, USING OTHER ANS",
+tableLayoutNeighborhoodTNDPTitle,Neighborhoods,No Title,
+lblHandwritingTNPolLong,"If communism came back, you wouldn't be able to write and express yourself however you wanted. There were strict rules about handwriting in calligraphy, and writing was about showing literacy and ""smarts"" through writing techniques.","EMPTY, USING OTHER ANS",
+tableLayoutHandwritingTNDPTitle,Handwriting,No Title,
+lblFreetimeTNPolLong,"If communism came back, you wouldn't get to enjoy field trips or free time the way you want anymore. Instead, children had to do forced 'volunteer' work and help with chores for the community, whether they liked it or not. ","EMPTY, USING OTHER ANS",
+tableLayoutFreetimeTNDPTitle,Free Time Activities,No Title,
+lblCarsTNPolLong,"If communism came back, you wouldn't be able to buy any car you wanted, even if you had the money. Most families weren't even allowed to own a car, and if they were, they had to wait on a long list for permission. And when they finally got one, it was usualy just a plain, Romanian- made Dacia.","EMPTY, USING OTHER ANS",
+tableLayoutCarsTNDPTitle,Cars,No Title,
+lblMediaTNPolLong,"If communism came back, you wouldn't be free to watch your favorite shows or movies from around the world. The government controlled everything on TV, and there were only a few short programs at certain times. Radio, newspapers, and magazines all had to support the party's ideas, often showing pictures of Ceausescu and repeating government messages. ","EMPTY, USING OTHER ANS",
+tableLayoutMediaTNDPTitle,Media & Entertainment,No Title,
+lblClassesTNPolLong,"If communism came back, your classroom wouldn't be full of colorful decorations or fun lessons your teacher picked. Back then, every classroom had pictures of Ceausescu on the walls, and lessons were based on what the government wanted kids to learn, not necessarily what teachers thought was best.","EMPTY, USING OTHER ANS",
+tableLayoutClassesTNDPTitle,Classrooms,No Title,
