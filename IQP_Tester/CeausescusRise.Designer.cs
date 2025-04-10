@@ -34,18 +34,18 @@
             this.tableLayoutElena = new System.Windows.Forms.TableLayoutPanel();
             this.lblElenaQ = new System.Windows.Forms.Label();
             this.lblElenaAns = new System.Windows.Forms.Label();
+            this.pbElena = new System.Windows.Forms.PictureBox();
             this.panelNicolae = new System.Windows.Forms.Panel();
             this.tableLayoutNicolae = new System.Windows.Forms.TableLayoutPanel();
             this.lblNicolaeQ = new System.Windows.Forms.Label();
             this.lblNicolaeAns = new System.Windows.Forms.Label();
             this.pbNicolae = new System.Windows.Forms.PictureBox();
-            this.pbElena = new System.Windows.Forms.PictureBox();
             this.panelElena.SuspendLayout();
             this.tableLayoutElena.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbElena)).BeginInit();
             this.panelNicolae.SuspendLayout();
             this.tableLayoutNicolae.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNicolae)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbElena)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -110,6 +110,17 @@
             this.lblElenaAns.Text = "Unknown";
             this.lblElenaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pbElena
+            // 
+            this.pbElena.Image = global::IQP_Tester.Properties.Resources.Elena;
+            this.pbElena.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbElena.InitialImage")));
+            this.pbElena.Location = new System.Drawing.Point(39, 20);
+            this.pbElena.Name = "pbElena";
+            this.pbElena.Size = new System.Drawing.Size(186, 128);
+            this.pbElena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbElena.TabIndex = 0;
+            this.pbElena.TabStop = false;
+            // 
             // panelNicolae
             // 
             this.panelNicolae.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -163,23 +174,12 @@
             // 
             this.pbNicolae.Image = global::IQP_Tester.Properties.Resources.Ceausescu;
             this.pbNicolae.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbNicolae.InitialImage")));
-            this.pbNicolae.Location = new System.Drawing.Point(44, 3);
+            this.pbNicolae.Location = new System.Drawing.Point(69, 3);
             this.pbNicolae.Name = "pbNicolae";
-            this.pbNicolae.Size = new System.Drawing.Size(186, 190);
+            this.pbNicolae.Size = new System.Drawing.Size(136, 172);
             this.pbNicolae.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbNicolae.TabIndex = 0;
             this.pbNicolae.TabStop = false;
-            // 
-            // pbElena
-            // 
-            this.pbElena.Image = global::IQP_Tester.Properties.Resources.Elena;
-            this.pbElena.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbElena.InitialImage")));
-            this.pbElena.Location = new System.Drawing.Point(44, 3);
-            this.pbElena.Name = "pbElena";
-            this.pbElena.Size = new System.Drawing.Size(186, 190);
-            this.pbElena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbElena.TabIndex = 0;
-            this.pbElena.TabStop = false;
             // 
             // CeausescusRise
             // 
@@ -198,11 +198,11 @@
             this.panelElena.ResumeLayout(false);
             this.tableLayoutElena.ResumeLayout(false);
             this.tableLayoutElena.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbElena)).EndInit();
             this.panelNicolae.ResumeLayout(false);
             this.tableLayoutNicolae.ResumeLayout(false);
             this.tableLayoutNicolae.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNicolae)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbElena)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -180,9 +180,9 @@
             // 
             this.pbSchool.Image = global::IQP_Tester.Properties.Resources.school;
             this.pbSchool.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSchool.InitialImage")));
-            this.pbSchool.Location = new System.Drawing.Point(18, 8);
+            this.pbSchool.Location = new System.Drawing.Point(18, 31);
             this.pbSchool.Name = "pbSchool";
-            this.pbSchool.Size = new System.Drawing.Size(237, 235);
+            this.pbSchool.Size = new System.Drawing.Size(237, 188);
             this.pbSchool.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSchool.TabIndex = 0;
             this.pbSchool.TabStop = false;
@@ -240,9 +240,9 @@
             // 
             this.pbFood.Image = global::IQP_Tester.Properties.Resources.Food;
             this.pbFood.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFood.InitialImage")));
-            this.pbFood.Location = new System.Drawing.Point(44, 3);
+            this.pbFood.Location = new System.Drawing.Point(47, 28);
             this.pbFood.Name = "pbFood";
-            this.pbFood.Size = new System.Drawing.Size(186, 190);
+            this.pbFood.Size = new System.Drawing.Size(186, 118);
             this.pbFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFood.TabIndex = 0;
             this.pbFood.TabStop = false;
@@ -361,9 +361,9 @@
             // 
             this.pbWork.Image = global::IQP_Tester.Properties.Resources.Work;
             this.pbWork.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWork.InitialImage")));
-            this.pbWork.Location = new System.Drawing.Point(49, 14);
+            this.pbWork.Location = new System.Drawing.Point(52, 26);
             this.pbWork.Name = "pbWork";
-            this.pbWork.Size = new System.Drawing.Size(186, 190);
+            this.pbWork.Size = new System.Drawing.Size(186, 148);
             this.pbWork.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbWork.TabIndex = 0;
             this.pbWork.TabStop = false;
@@ -384,12 +384,12 @@
             this.tableLayoutUniversity.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutUniversity.Controls.Add(this.lblUniversityQ, 0, 0);
             this.tableLayoutUniversity.Controls.Add(this.lblUniversityAns, 0, 1);
-            this.tableLayoutUniversity.Location = new System.Drawing.Point(44, 199);
+            this.tableLayoutUniversity.Location = new System.Drawing.Point(41, 171);
             this.tableLayoutUniversity.Name = "tableLayoutUniversity";
             this.tableLayoutUniversity.RowCount = 2;
             this.tableLayoutUniversity.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutUniversity.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutUniversity.Size = new System.Drawing.Size(237, 100);
+            this.tableLayoutUniversity.Size = new System.Drawing.Size(237, 150);
             this.tableLayoutUniversity.TabIndex = 11;
             // 
             // lblUniversityQ
@@ -480,9 +480,9 @@
             // 
             this.pbEmigration.Image = global::IQP_Tester.Properties.Resources.Emigration;
             this.pbEmigration.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbEmigration.InitialImage")));
-            this.pbEmigration.Location = new System.Drawing.Point(21, 14);
+            this.pbEmigration.Location = new System.Drawing.Point(21, 18);
             this.pbEmigration.Name = "pbEmigration";
-            this.pbEmigration.Size = new System.Drawing.Size(234, 233);
+            this.pbEmigration.Size = new System.Drawing.Size(234, 186);
             this.pbEmigration.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbEmigration.TabIndex = 0;
             this.pbEmigration.TabStop = false;

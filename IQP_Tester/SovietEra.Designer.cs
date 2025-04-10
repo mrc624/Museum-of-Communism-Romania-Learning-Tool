@@ -34,26 +34,26 @@
             this.tableLayoutPostWW2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblPostWW2Q = new System.Windows.Forms.Label();
             this.lblPostWW2Ans = new System.Windows.Forms.Label();
+            this.pbPostWW2 = new System.Windows.Forms.PictureBox();
             this.panelMarxism = new System.Windows.Forms.Panel();
             this.tableLayoutPanelMarxism = new System.Windows.Forms.TableLayoutPanel();
             this.lblMarxismQ = new System.Windows.Forms.Label();
             this.lblMarxismAns = new System.Windows.Forms.Label();
+            this.pbMarxism = new System.Windows.Forms.PictureBox();
             this.panelGheorghe = new System.Windows.Forms.Panel();
             this.tableLayoutGheorghe = new System.Windows.Forms.TableLayoutPanel();
             this.lblGheorgheQ = new System.Windows.Forms.Label();
             this.lblGheorgheAns = new System.Windows.Forms.Label();
             this.pbGheorghe = new System.Windows.Forms.PictureBox();
-            this.pbMarxism = new System.Windows.Forms.PictureBox();
-            this.pbPostWW2 = new System.Windows.Forms.PictureBox();
             this.panelPostWW2.SuspendLayout();
             this.tableLayoutPostWW2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPostWW2)).BeginInit();
             this.panelMarxism.SuspendLayout();
             this.tableLayoutPanelMarxism.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMarxism)).BeginInit();
             this.panelGheorghe.SuspendLayout();
             this.tableLayoutGheorghe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGheorghe)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMarxism)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPostWW2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -118,6 +118,17 @@
             this.lblPostWW2Ans.Text = "Unknown";
             this.lblPostWW2Ans.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pbPostWW2
+            // 
+            this.pbPostWW2.Image = global::IQP_Tester.Properties.Resources.PostWW2;
+            this.pbPostWW2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPostWW2.InitialImage")));
+            this.pbPostWW2.Location = new System.Drawing.Point(38, 14);
+            this.pbPostWW2.Name = "pbPostWW2";
+            this.pbPostWW2.Size = new System.Drawing.Size(272, 190);
+            this.pbPostWW2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPostWW2.TabIndex = 0;
+            this.pbPostWW2.TabStop = false;
+            // 
             // panelMarxism
             // 
             this.panelMarxism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -166,6 +177,17 @@
             this.lblMarxismAns.TabIndex = 7;
             this.lblMarxismAns.Text = "Unknown";
             this.lblMarxismAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbMarxism
+            // 
+            this.pbMarxism.Image = global::IQP_Tester.Properties.Resources.Marxism;
+            this.pbMarxism.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbMarxism.InitialImage")));
+            this.pbMarxism.Location = new System.Drawing.Point(113, 3);
+            this.pbMarxism.Name = "pbMarxism";
+            this.pbMarxism.Size = new System.Drawing.Size(132, 190);
+            this.pbMarxism.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMarxism.TabIndex = 0;
+            this.pbMarxism.TabStop = false;
             // 
             // panelGheorghe
             // 
@@ -227,28 +249,6 @@
             this.pbGheorghe.TabIndex = 0;
             this.pbGheorghe.TabStop = false;
             // 
-            // pbMarxism
-            // 
-            this.pbMarxism.Image = global::IQP_Tester.Properties.Resources.Marxism;
-            this.pbMarxism.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbMarxism.InitialImage")));
-            this.pbMarxism.Location = new System.Drawing.Point(23, 14);
-            this.pbMarxism.Name = "pbMarxism";
-            this.pbMarxism.Size = new System.Drawing.Size(293, 190);
-            this.pbMarxism.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMarxism.TabIndex = 0;
-            this.pbMarxism.TabStop = false;
-            // 
-            // pbPostWW2
-            // 
-            this.pbPostWW2.Image = global::IQP_Tester.Properties.Resources.PostWW2;
-            this.pbPostWW2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPostWW2.InitialImage")));
-            this.pbPostWW2.Location = new System.Drawing.Point(23, 14);
-            this.pbPostWW2.Name = "pbPostWW2";
-            this.pbPostWW2.Size = new System.Drawing.Size(283, 190);
-            this.pbPostWW2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPostWW2.TabIndex = 0;
-            this.pbPostWW2.TabStop = false;
-            // 
             // SovietEra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,15 +267,15 @@
             this.panelPostWW2.ResumeLayout(false);
             this.tableLayoutPostWW2.ResumeLayout(false);
             this.tableLayoutPostWW2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPostWW2)).EndInit();
             this.panelMarxism.ResumeLayout(false);
             this.tableLayoutPanelMarxism.ResumeLayout(false);
             this.tableLayoutPanelMarxism.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMarxism)).EndInit();
             this.panelGheorghe.ResumeLayout(false);
             this.tableLayoutGheorghe.ResumeLayout(false);
             this.tableLayoutGheorghe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGheorghe)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMarxism)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPostWW2)).EndInit();
             this.ResumeLayout(false);
 
         }
