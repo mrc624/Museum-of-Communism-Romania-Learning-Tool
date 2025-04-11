@@ -81,8 +81,8 @@ namespace IQP_Tester
             
             for (int i = 0; i < Polaroids.Count; i++)
             {
-                form.Controls[i].Click += Polaroid_Zoom_Click_Handler;
-                click_helper.Assign_All_Children_To_Same_Click(form.Controls[i], Polaroid_Zoom_Click_Handler);
+                Polaroids[i].Click += Polaroid_Zoom_Click_Handler;
+                click_helper.Assign_All_Children_To_Same_Click(Polaroids[i], Polaroid_Zoom_Click_Handler);
             }
         }
 
@@ -230,9 +230,9 @@ namespace IQP_Tester
         {
             if (polaroid is Panel)
             {
-                resize.Reposition(polaroid);
                 if (polaroid.Controls.Count > 1)
                 {
+                    resize.Reposition(polaroid);
                     for (int i = 0; i < polaroid.Controls.Count; i++)
                     {
                         if (i == 0)
@@ -245,6 +245,12 @@ namespace IQP_Tester
                             resize.Center_to_Other_Control(polaroid.Controls[i - 1], polaroid.Controls[i]); //goes from bottom up on the polaroid
                         }
                     }
+                }
+                else
+                { // panel is just there for the border
+                    polaroid.Controls[0].Dock = DockStyle.None;
+                    resize.Reposition(polaroid);
+                    polaroid.Controls[0].Dock = DockStyle.Fill;
                 }
             }
         }
