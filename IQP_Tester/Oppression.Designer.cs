@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Oppression));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.panelSecuritate = new System.Windows.Forms.Panel();
             this.tableLayoutSecuritate = new System.Windows.Forms.TableLayoutPanel();
             this.lblSecuritateQ = new System.Windows.Forms.Label();
             this.lblSecuritateAns = new System.Windows.Forms.Label();
@@ -85,7 +84,8 @@
             this.lblDeportationQ = new System.Windows.Forms.Label();
             this.lblDeportationAns = new System.Windows.Forms.Label();
             this.pbDeportation = new System.Windows.Forms.PictureBox();
-            this.panelSecuritate.SuspendLayout();
+            this.tableLayoutSecuritateContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.panelSecuritate = new System.Windows.Forms.Panel();
             this.tableLayoutSecuritate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecuritate)).BeginInit();
             this.panelConsequences.SuspendLayout();
@@ -118,6 +118,8 @@
             this.panelDeportation.SuspendLayout();
             this.tableLayoutPanelDeportation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeportation)).BeginInit();
+            this.tableLayoutSecuritateContainer.SuspendLayout();
+            this.panelSecuritate.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -133,29 +135,21 @@
             this.btnLanguage.TextChanged += new System.EventHandler(this.btnLanguage_TextChanged);
             this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
             // 
-            // panelSecuritate
-            // 
-            this.panelSecuritate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSecuritate.Controls.Add(this.tableLayoutSecuritate);
-            this.panelSecuritate.Controls.Add(this.pbSecuritate);
-            this.panelSecuritate.Location = new System.Drawing.Point(44, 29);
-            this.panelSecuritate.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelSecuritate.Name = "panelSecuritate";
-            this.panelSecuritate.Size = new System.Drawing.Size(281, 326);
-            this.panelSecuritate.TabIndex = 15;
-            // 
             // tableLayoutSecuritate
             // 
+            this.tableLayoutSecuritate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutSecuritate.ColumnCount = 1;
             this.tableLayoutSecuritate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutSecuritate.Controls.Add(this.lblSecuritateQ, 0, 0);
             this.tableLayoutSecuritate.Controls.Add(this.lblSecuritateAns, 0, 1);
-            this.tableLayoutSecuritate.Location = new System.Drawing.Point(21, 170);
+            this.tableLayoutSecuritate.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutSecuritate.Name = "tableLayoutSecuritate";
             this.tableLayoutSecuritate.RowCount = 2;
             this.tableLayoutSecuritate.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutSecuritate.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutSecuritate.Size = new System.Drawing.Size(237, 155);
+            this.tableLayoutSecuritate.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutSecuritate.TabIndex = 10;
             // 
             // lblSecuritateQ
@@ -166,7 +160,7 @@
             this.lblSecuritateQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSecuritateQ.Location = new System.Drawing.Point(3, 0);
             this.lblSecuritateQ.Name = "lblSecuritateQ";
-            this.lblSecuritateQ.Size = new System.Drawing.Size(231, 25);
+            this.lblSecuritateQ.Size = new System.Drawing.Size(267, 25);
             this.lblSecuritateQ.TabIndex = 5;
             this.lblSecuritateQ.Text = "Unknown";
             this.lblSecuritateQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -178,18 +172,21 @@
             this.lblSecuritateAns.AutoSize = true;
             this.lblSecuritateAns.Location = new System.Drawing.Point(3, 25);
             this.lblSecuritateAns.Name = "lblSecuritateAns";
-            this.lblSecuritateAns.Size = new System.Drawing.Size(231, 13);
+            this.lblSecuritateAns.Size = new System.Drawing.Size(267, 13);
             this.lblSecuritateAns.TabIndex = 7;
             this.lblSecuritateAns.Text = "Unknown";
             this.lblSecuritateAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbSecuritate
             // 
+            this.pbSecuritate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbSecuritate.Image = global::IQP_Tester.Properties.Resources.Securitate;
             this.pbSecuritate.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSecuritate.InitialImage")));
-            this.pbSecuritate.Location = new System.Drawing.Point(49, 40);
+            this.pbSecuritate.Location = new System.Drawing.Point(3, 3);
             this.pbSecuritate.Name = "pbSecuritate";
-            this.pbSecuritate.Size = new System.Drawing.Size(186, 112);
+            this.pbSecuritate.Size = new System.Drawing.Size(273, 156);
             this.pbSecuritate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSecuritate.TabIndex = 0;
             this.pbSecuritate.TabStop = false;
@@ -804,6 +801,31 @@
             this.pbDeportation.TabIndex = 0;
             this.pbDeportation.TabStop = false;
             // 
+            // tableLayoutSecuritateContainer
+            // 
+            this.tableLayoutSecuritateContainer.ColumnCount = 1;
+            this.tableLayoutSecuritateContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutSecuritateContainer.Controls.Add(this.tableLayoutSecuritate, 0, 1);
+            this.tableLayoutSecuritateContainer.Controls.Add(this.pbSecuritate, 0, 0);
+            this.tableLayoutSecuritateContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutSecuritateContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutSecuritateContainer.Name = "tableLayoutSecuritateContainer";
+            this.tableLayoutSecuritateContainer.RowCount = 2;
+            this.tableLayoutSecuritateContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutSecuritateContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutSecuritateContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutSecuritateContainer.TabIndex = 22;
+            // 
+            // panelSecuritate
+            // 
+            this.panelSecuritate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSecuritate.Controls.Add(this.tableLayoutSecuritateContainer);
+            this.panelSecuritate.Location = new System.Drawing.Point(44, 29);
+            this.panelSecuritate.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelSecuritate.Name = "panelSecuritate";
+            this.panelSecuritate.Size = new System.Drawing.Size(281, 326);
+            this.panelSecuritate.TabIndex = 15;
+            // 
             // Oppression
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -826,7 +848,6 @@
             this.Shown += new System.EventHandler(this.Oppression_Shown);
             this.Click += new System.EventHandler(this.Oppression_Click);
             this.Resize += new System.EventHandler(this.Oppression_Resize);
-            this.panelSecuritate.ResumeLayout(false);
             this.tableLayoutSecuritate.ResumeLayout(false);
             this.tableLayoutSecuritate.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecuritate)).EndInit();
@@ -870,6 +891,8 @@
             this.tableLayoutPanelDeportation.ResumeLayout(false);
             this.tableLayoutPanelDeportation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeportation)).EndInit();
+            this.tableLayoutSecuritateContainer.ResumeLayout(false);
+            this.panelSecuritate.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -877,7 +900,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnLanguage;
-        private System.Windows.Forms.Panel panelSecuritate;
         private System.Windows.Forms.TableLayoutPanel tableLayoutSecuritate;
         private System.Windows.Forms.Label lblSecuritateQ;
         private System.Windows.Forms.Label lblSecuritateAns;
@@ -932,5 +954,7 @@
         private System.Windows.Forms.Label lblDeportationQ;
         private System.Windows.Forms.Label lblDeportationAns;
         private System.Windows.Forms.PictureBox pbDeportation;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutSecuritateContainer;
+        private System.Windows.Forms.Panel panelSecuritate;
     }
 }

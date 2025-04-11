@@ -24,6 +24,7 @@ namespace IQP_Tester
         public const string IGNORE_LONG_ANS_FLAG = "EMPTY, USING OTHER ANS";
         public const int TABLE_LAYOUT_QUESTION_INDEX = 0;
         public const int TABLE_LAYOUT_ANS_INDEX = 1;
+        public const int MIN_NUM_OF_CHILDREN = 2;
 
         public List<Control> Polaroids = new List<Control>();
         Polaroid_Zoom polaroid_zoom;
@@ -70,15 +71,18 @@ namespace IQP_Tester
 
         public void Assign_Click_Handler_To_Valid(Form form, TextManager textMan, Open_Close_Helper open_close) // maybe this should be looking through children of the form too, in case polaroids are grouped in panels
         {
+            if (Polaroids.Count == 0)
+            {
+                return;
+            }
+
             textManager = textMan;
             openClose = open_close;
-            for (int i = 0; i < form.Controls.Count; i++)
+            
+            for (int i = 0; i < Polaroids.Count; i++)
             {
-                if (Is_Polaroid(form.Controls[i]))
-                {
-                    form.Controls[i].Click += Polaroid_Zoom_Click_Handler;
-                    click_helper.Assign_All_Children_To_Same_Click(form.Controls[i], Polaroid_Zoom_Click_Handler);
-                }
+                form.Controls[i].Click += Polaroid_Zoom_Click_Handler;
+                click_helper.Assign_All_Children_To_Same_Click(form.Controls[i], Polaroid_Zoom_Click_Handler);
             }
         }
 
@@ -86,7 +90,7 @@ namespace IQP_Tester
         {
             for (int i = 0; i < control.Controls.Count; i++)
             {
-                Check_Add_Polaroid(control);
+                Check_Add_Polaroid(control.Controls[i]);
 
                 if (control.Controls[i].HasChildren)
                 {
@@ -97,7 +101,7 @@ namespace IQP_Tester
 
         public bool Is_Polaroid(Control control)
         {
-            return ((control is Panel) || (control is TableLayoutPanel)) && control.HasChildren && Find_PB(control) != null && Find_Ans(control) != null && Find_Q(control) != null;
+            return ((control is Panel) || (control is TableLayoutPanel)) && control.Controls.Count >= MIN_NUM_OF_CHILDREN && Find_PB(control) != null && Find_Ans(control) != null && Find_Q(control) != null;
         }
 
         public string Get_Ans_Name(Control control)
