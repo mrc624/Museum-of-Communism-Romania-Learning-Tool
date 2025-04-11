@@ -59,6 +59,7 @@ namespace IQP_Tester
             Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());
             openClose.Start_Timer();
+            this.BringToFront();
             Open_Title_Page();
         }
 
@@ -75,22 +76,31 @@ namespace IQP_Tester
         {
             Forms.Add(this);
             thenAndNow = new ThenAndNow(textManager, openClose);
+            openClose.Show_Hide(thenAndNow);
             Forms.Add(thenAndNow);
             oppression = new Oppression(textManager, openClose);
+            openClose.Show_Hide(oppression);
             Forms.Add(oppression);
             stories = new Stories(textManager, openClose);
+            openClose.Show_Hide(stories);
             Forms.Add(stories);
             lifeUnder = new LifeUnder(textManager, openClose);
+            openClose.Show_Hide(lifeUnder);
             Forms.Add(lifeUnder);
             regimeFall = new RegimeFall(textManager, openClose);
+            openClose.Show_Hide(regimeFall);
             Forms.Add(regimeFall);
             ceausescusRise = new CeausescusRise(textManager, openClose);
+            openClose.Show_Hide(ceausescusRise);
             Forms.Add(ceausescusRise);
             sovietEra = new SovietEra(textManager, openClose);
+            openClose.Show_Hide(sovietEra);
             Forms.Add(sovietEra);
             timeline = new Timeline(textManager, openClose, regimeFall, ceausescusRise, sovietEra);
+            openClose.Show_Hide(timeline);
             Forms.Add(timeline);
             titlePage = new TitlePage(textManager, openClose);
+            openClose.Show_Hide(titlePage);
             Forms.Add(titlePage);
         }
 

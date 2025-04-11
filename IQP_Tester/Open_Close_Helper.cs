@@ -184,5 +184,11 @@ namespace IQP_Tester
                 FadeOut(form);
             }
         }
+
+        public void Show_Hide(Form form)
+        {
+            form.Show();
+            form.Hide();
+        }
     }
 }

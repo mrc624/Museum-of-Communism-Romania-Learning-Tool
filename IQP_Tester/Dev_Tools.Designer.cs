@@ -193,13 +193,13 @@
             this.panelOpenForms.Controls.Add(this.lblOpenFormsCount);
             this.panelOpenForms.Location = new System.Drawing.Point(6, 6);
             this.panelOpenForms.Name = "panelOpenForms";
-            this.panelOpenForms.Size = new System.Drawing.Size(392, 139);
+            this.panelOpenForms.Size = new System.Drawing.Size(392, 238);
             this.panelOpenForms.TabIndex = 0;
             // 
             // btnRefreshOpenForms
             // 
             this.btnRefreshOpenForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnRefreshOpenForms.Location = new System.Drawing.Point(314, 113);
+            this.btnRefreshOpenForms.Location = new System.Drawing.Point(314, 212);
             this.btnRefreshOpenForms.Name = "btnRefreshOpenForms";
             this.btnRefreshOpenForms.Size = new System.Drawing.Size(75, 23);
             this.btnRefreshOpenForms.TabIndex = 3;
@@ -218,7 +218,7 @@
             this.tableLayoutPanelOpenForms.RowCount = 1;
             this.tableLayoutPanelOpenForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46F));
             this.tableLayoutPanelOpenForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54F));
-            this.tableLayoutPanelOpenForms.Size = new System.Drawing.Size(384, 83);
+            this.tableLayoutPanelOpenForms.Size = new System.Drawing.Size(384, 182);
             this.tableLayoutPanelOpenForms.TabIndex = 2;
             // 
             // lblOpenFormsCountDisp
