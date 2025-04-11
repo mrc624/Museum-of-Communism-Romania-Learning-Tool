@@ -225,16 +225,20 @@ namespace IQP_Tester
         private void Reposition_Polaroid(Control polaroid)
         {
             resize.Reposition(polaroid);
-            for (int i = 0; i < polaroid.Controls.Count; i++)
+
+            if (polaroid is Panel)
             {
-                if (i == 0)
+                for (int i = 0; i < polaroid.Controls.Count; i++)
                 {
-                    resize.Reposition(polaroid.Controls[i]);
-                    resize.Center_X(polaroid.Controls[i]);
-                }
-                else
-                {
-                    resize.Center_to_Other_Control(polaroid.Controls[i - 1], polaroid.Controls[i]); //tbh don't know why i-1 is first and i is second, I thought it would be the opposite but it works
+                    if (i == 0)
+                    {
+                        resize.Reposition(polaroid.Controls[i]);
+                        resize.Center_X(polaroid.Controls[i]);
+                    }
+                    else
+                    {
+                        resize.Center_to_Other_Control(polaroid.Controls[i - 1], polaroid.Controls[i]); //goes from bottom up on the polaroid
+                    }
                 }
             }
         }

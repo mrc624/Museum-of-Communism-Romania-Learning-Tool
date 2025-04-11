@@ -32,52 +32,52 @@
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblHowDidTheRegimeFall = new System.Windows.Forms.Label();
             this.panelRegimeFall = new System.Windows.Forms.Panel();
+            this.pbRegimeFall = new System.Windows.Forms.PictureBox();
             this.panelAna = new System.Windows.Forms.Panel();
             this.tableLayoutAna = new System.Windows.Forms.TableLayoutPanel();
             this.lblAnaQ = new System.Windows.Forms.Label();
             this.lblAnaAns = new System.Windows.Forms.Label();
+            this.pbAna = new System.Windows.Forms.PictureBox();
             this.panelWarsaw = new System.Windows.Forms.Panel();
             this.tableLayoutWarsaw = new System.Windows.Forms.TableLayoutPanel();
             this.lblWarsawQ = new System.Windows.Forms.Label();
             this.lblWarsawAns = new System.Windows.Forms.Label();
+            this.pbWarsaw = new System.Windows.Forms.PictureBox();
             this.panelJuly = new System.Windows.Forms.Panel();
             this.tableLayoutJuly = new System.Windows.Forms.TableLayoutPanel();
             this.lblJulyQ = new System.Windows.Forms.Label();
             this.lblJulyAns = new System.Windows.Forms.Label();
+            this.pbJuly = new System.Windows.Forms.PictureBox();
             this.panelHousePeople = new System.Windows.Forms.Panel();
             this.tableLayoutHousePeople = new System.Windows.Forms.TableLayoutPanel();
             this.lblHousePeopleQ = new System.Windows.Forms.Label();
             this.lblHousePeopleAns = new System.Windows.Forms.Label();
+            this.pbHousePeople = new System.Windows.Forms.PictureBox();
             this.panelSoviet = new System.Windows.Forms.Panel();
+            this.pbSoviet = new System.Windows.Forms.PictureBox();
             this.lblSoviet = new System.Windows.Forms.Label();
             this.panelCeausescusRise = new System.Windows.Forms.Panel();
-            this.lblCeausescusRise = new System.Windows.Forms.Label();
             this.pbCeausescusRise = new System.Windows.Forms.PictureBox();
-            this.pbSoviet = new System.Windows.Forms.PictureBox();
-            this.pbHousePeople = new System.Windows.Forms.PictureBox();
-            this.pbJuly = new System.Windows.Forms.PictureBox();
-            this.pbWarsaw = new System.Windows.Forms.PictureBox();
-            this.pbAna = new System.Windows.Forms.PictureBox();
-            this.pbRegimeFall = new System.Windows.Forms.PictureBox();
+            this.lblCeausescusRise = new System.Windows.Forms.Label();
             this.pbTimeLine = new System.Windows.Forms.PictureBox();
             this.panelRegimeFall.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRegimeFall)).BeginInit();
             this.panelAna.SuspendLayout();
             this.tableLayoutAna.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAna)).BeginInit();
             this.panelWarsaw.SuspendLayout();
             this.tableLayoutWarsaw.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWarsaw)).BeginInit();
             this.panelJuly.SuspendLayout();
             this.tableLayoutJuly.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJuly)).BeginInit();
             this.panelHousePeople.SuspendLayout();
             this.tableLayoutHousePeople.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHousePeople)).BeginInit();
             this.panelSoviet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSoviet)).BeginInit();
             this.panelCeausescusRise.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCeausescusRise)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSoviet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHousePeople)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbJuly)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWarsaw)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAna)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRegimeFall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTimeLine)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,23 +98,36 @@
             // 
             this.lblHowDidTheRegimeFall.AutoSize = true;
             this.lblHowDidTheRegimeFall.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHowDidTheRegimeFall.Location = new System.Drawing.Point(15, 0);
+            this.lblHowDidTheRegimeFall.Location = new System.Drawing.Point(4, 2);
             this.lblHowDidTheRegimeFall.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblHowDidTheRegimeFall.Name = "lblHowDidTheRegimeFall";
-            this.lblHowDidTheRegimeFall.Size = new System.Drawing.Size(214, 31);
+            this.lblHowDidTheRegimeFall.Size = new System.Drawing.Size(314, 31);
             this.lblHowDidTheRegimeFall.TabIndex = 0;
-            this.lblHowDidTheRegimeFall.Text = "How did the fall?";
+            this.lblHowDidTheRegimeFall.Text = "How did the Regime fall?";
             // 
             // panelRegimeFall
             // 
+            this.panelRegimeFall.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelRegimeFall.Controls.Add(this.pbRegimeFall);
             this.panelRegimeFall.Controls.Add(this.lblHowDidTheRegimeFall);
-            this.panelRegimeFall.Location = new System.Drawing.Point(1546, 72);
+            this.panelRegimeFall.Location = new System.Drawing.Point(1523, 145);
             this.panelRegimeFall.Margin = new System.Windows.Forms.Padding(1);
             this.panelRegimeFall.Name = "panelRegimeFall";
-            this.panelRegimeFall.Size = new System.Drawing.Size(257, 232);
+            this.panelRegimeFall.Size = new System.Drawing.Size(321, 232);
             this.panelRegimeFall.TabIndex = 12;
             this.panelRegimeFall.Click += new System.EventHandler(this.panelRegimeFall_Click);
+            // 
+            // pbRegimeFall
+            // 
+            this.pbRegimeFall.Image = global::IQP_Tester.Properties.Resources.RegimeFall;
+            this.pbRegimeFall.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRegimeFall.Location = new System.Drawing.Point(96, 34);
+            this.pbRegimeFall.Margin = new System.Windows.Forms.Padding(1);
+            this.pbRegimeFall.Name = "pbRegimeFall";
+            this.pbRegimeFall.Size = new System.Drawing.Size(150, 190);
+            this.pbRegimeFall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRegimeFall.TabIndex = 2;
+            this.pbRegimeFall.TabStop = false;
             // 
             // panelAna
             // 
@@ -165,6 +178,17 @@
             this.lblAnaAns.Text = "Unknown";
             this.lblAnaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pbAna
+            // 
+            this.pbAna.Image = global::IQP_Tester.Properties.Resources.Ana;
+            this.pbAna.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbAna.InitialImage")));
+            this.pbAna.Location = new System.Drawing.Point(16, 30);
+            this.pbAna.Name = "pbAna";
+            this.pbAna.Size = new System.Drawing.Size(237, 113);
+            this.pbAna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAna.TabIndex = 0;
+            this.pbAna.TabStop = false;
+            // 
             // panelWarsaw
             // 
             this.panelWarsaw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -214,14 +238,25 @@
             this.lblWarsawAns.Text = "Unknown";
             this.lblWarsawAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pbWarsaw
+            // 
+            this.pbWarsaw.Image = global::IQP_Tester.Properties.Resources.Warsaw;
+            this.pbWarsaw.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWarsaw.InitialImage")));
+            this.pbWarsaw.Location = new System.Drawing.Point(44, 3);
+            this.pbWarsaw.Name = "pbWarsaw";
+            this.pbWarsaw.Size = new System.Drawing.Size(186, 190);
+            this.pbWarsaw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbWarsaw.TabIndex = 0;
+            this.pbWarsaw.TabStop = false;
+            // 
             // panelJuly
             // 
             this.panelJuly.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelJuly.Controls.Add(this.tableLayoutJuly);
             this.panelJuly.Controls.Add(this.pbJuly);
-            this.panelJuly.Location = new System.Drawing.Point(1172, 223);
+            this.panelJuly.Location = new System.Drawing.Point(1259, 183);
             this.panelJuly.Name = "panelJuly";
-            this.panelJuly.Size = new System.Drawing.Size(268, 314);
+            this.panelJuly.Size = new System.Drawing.Size(246, 314);
             this.panelJuly.TabIndex = 21;
             // 
             // tableLayoutJuly
@@ -230,7 +265,7 @@
             this.tableLayoutJuly.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutJuly.Controls.Add(this.lblJulyQ, 0, 0);
             this.tableLayoutJuly.Controls.Add(this.lblJulyAns, 0, 1);
-            this.tableLayoutJuly.Location = new System.Drawing.Point(16, 190);
+            this.tableLayoutJuly.Location = new System.Drawing.Point(3, 190);
             this.tableLayoutJuly.Name = "tableLayoutJuly";
             this.tableLayoutJuly.RowCount = 2;
             this.tableLayoutJuly.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -262,6 +297,17 @@
             this.lblJulyAns.TabIndex = 7;
             this.lblJulyAns.Text = "Unknown";
             this.lblJulyAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pbJuly
+            // 
+            this.pbJuly.Image = global::IQP_Tester.Properties.Resources.July;
+            this.pbJuly.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbJuly.InitialImage")));
+            this.pbJuly.Location = new System.Drawing.Point(25, 21);
+            this.pbJuly.Name = "pbJuly";
+            this.pbJuly.Size = new System.Drawing.Size(186, 144);
+            this.pbJuly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbJuly.TabIndex = 0;
+            this.pbJuly.TabStop = false;
             // 
             // panelHousePeople
             // 
@@ -312,8 +358,20 @@
             this.lblHousePeopleAns.Text = "Unknown";
             this.lblHousePeopleAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pbHousePeople
+            // 
+            this.pbHousePeople.Image = global::IQP_Tester.Properties.Resources.HousePeople;
+            this.pbHousePeople.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbHousePeople.InitialImage")));
+            this.pbHousePeople.Location = new System.Drawing.Point(44, 3);
+            this.pbHousePeople.Name = "pbHousePeople";
+            this.pbHousePeople.Size = new System.Drawing.Size(186, 190);
+            this.pbHousePeople.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbHousePeople.TabIndex = 0;
+            this.pbHousePeople.TabStop = false;
+            // 
             // panelSoviet
             // 
+            this.panelSoviet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelSoviet.Controls.Add(this.pbSoviet);
             this.panelSoviet.Controls.Add(this.lblSoviet);
             this.panelSoviet.Location = new System.Drawing.Point(1428, 735);
@@ -322,6 +380,18 @@
             this.panelSoviet.Size = new System.Drawing.Size(285, 246);
             this.panelSoviet.TabIndex = 24;
             this.panelSoviet.Click += new System.EventHandler(this.panelSoviet_Click);
+            // 
+            // pbSoviet
+            // 
+            this.pbSoviet.Image = global::IQP_Tester.Properties.Resources.Soviet;
+            this.pbSoviet.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbSoviet.Location = new System.Drawing.Point(6, 32);
+            this.pbSoviet.Margin = new System.Windows.Forms.Padding(1);
+            this.pbSoviet.Name = "pbSoviet";
+            this.pbSoviet.Size = new System.Drawing.Size(266, 201);
+            this.pbSoviet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSoviet.TabIndex = 2;
+            this.pbSoviet.TabStop = false;
             // 
             // lblSoviet
             // 
@@ -336,6 +406,7 @@
             // 
             // panelCeausescusRise
             // 
+            this.panelCeausescusRise.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCeausescusRise.Controls.Add(this.pbCeausescusRise);
             this.panelCeausescusRise.Controls.Add(this.lblCeausescusRise);
             this.panelCeausescusRise.Location = new System.Drawing.Point(951, 164);
@@ -344,6 +415,18 @@
             this.panelCeausescusRise.Size = new System.Drawing.Size(285, 246);
             this.panelCeausescusRise.TabIndex = 25;
             this.panelCeausescusRise.Click += new System.EventHandler(this.panelCeausescusRise_Click);
+            // 
+            // pbCeausescusRise
+            // 
+            this.pbCeausescusRise.Image = global::IQP_Tester.Properties.Resources.CeausescusRise;
+            this.pbCeausescusRise.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbCeausescusRise.Location = new System.Drawing.Point(40, 76);
+            this.pbCeausescusRise.Margin = new System.Windows.Forms.Padding(1);
+            this.pbCeausescusRise.Name = "pbCeausescusRise";
+            this.pbCeausescusRise.Size = new System.Drawing.Size(201, 140);
+            this.pbCeausescusRise.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCeausescusRise.TabIndex = 2;
+            this.pbCeausescusRise.TabStop = false;
             // 
             // lblCeausescusRise
             // 
@@ -356,93 +439,13 @@
             this.lblCeausescusRise.TabIndex = 0;
             this.lblCeausescusRise.Text = "Rise of Ceausescus";
             // 
-            // pbCeausescusRise
-            // 
-            this.pbCeausescusRise.Image = global::IQP_Tester.Properties.Resources.CeausescusRise;
-            this.pbCeausescusRise.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbCeausescusRise.Location = new System.Drawing.Point(38, 32);
-            this.pbCeausescusRise.Margin = new System.Windows.Forms.Padding(1);
-            this.pbCeausescusRise.Name = "pbCeausescusRise";
-            this.pbCeausescusRise.Size = new System.Drawing.Size(201, 201);
-            this.pbCeausescusRise.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCeausescusRise.TabIndex = 2;
-            this.pbCeausescusRise.TabStop = false;
-            // 
-            // pbSoviet
-            // 
-            this.pbSoviet.Image = global::IQP_Tester.Properties.Resources.Soviet;
-            this.pbSoviet.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbSoviet.Location = new System.Drawing.Point(6, 32);
-            this.pbSoviet.Margin = new System.Windows.Forms.Padding(1);
-            this.pbSoviet.Name = "pbSoviet";
-            this.pbSoviet.Size = new System.Drawing.Size(266, 201);
-            this.pbSoviet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSoviet.TabIndex = 2;
-            this.pbSoviet.TabStop = false;
-            // 
-            // pbHousePeople
-            // 
-            this.pbHousePeople.Image = global::IQP_Tester.Properties.Resources.HousePeople;
-            this.pbHousePeople.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbHousePeople.InitialImage")));
-            this.pbHousePeople.Location = new System.Drawing.Point(44, 3);
-            this.pbHousePeople.Name = "pbHousePeople";
-            this.pbHousePeople.Size = new System.Drawing.Size(186, 190);
-            this.pbHousePeople.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbHousePeople.TabIndex = 0;
-            this.pbHousePeople.TabStop = false;
-            // 
-            // pbJuly
-            // 
-            this.pbJuly.Image = global::IQP_Tester.Properties.Resources.July;
-            this.pbJuly.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbJuly.InitialImage")));
-            this.pbJuly.Location = new System.Drawing.Point(44, 3);
-            this.pbJuly.Name = "pbJuly";
-            this.pbJuly.Size = new System.Drawing.Size(186, 190);
-            this.pbJuly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbJuly.TabIndex = 0;
-            this.pbJuly.TabStop = false;
-            // 
-            // pbWarsaw
-            // 
-            this.pbWarsaw.Image = global::IQP_Tester.Properties.Resources.Warsaw;
-            this.pbWarsaw.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWarsaw.InitialImage")));
-            this.pbWarsaw.Location = new System.Drawing.Point(44, 3);
-            this.pbWarsaw.Name = "pbWarsaw";
-            this.pbWarsaw.Size = new System.Drawing.Size(186, 190);
-            this.pbWarsaw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbWarsaw.TabIndex = 0;
-            this.pbWarsaw.TabStop = false;
-            // 
-            // pbAna
-            // 
-            this.pbAna.Image = global::IQP_Tester.Properties.Resources.Ana;
-            this.pbAna.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbAna.InitialImage")));
-            this.pbAna.Location = new System.Drawing.Point(16, 30);
-            this.pbAna.Name = "pbAna";
-            this.pbAna.Size = new System.Drawing.Size(237, 113);
-            this.pbAna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAna.TabIndex = 0;
-            this.pbAna.TabStop = false;
-            // 
-            // pbRegimeFall
-            // 
-            this.pbRegimeFall.Image = global::IQP_Tester.Properties.Resources.RegimeFall;
-            this.pbRegimeFall.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbRegimeFall.Location = new System.Drawing.Point(6, 34);
-            this.pbRegimeFall.Margin = new System.Windows.Forms.Padding(1);
-            this.pbRegimeFall.Name = "pbRegimeFall";
-            this.pbRegimeFall.Size = new System.Drawing.Size(246, 190);
-            this.pbRegimeFall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbRegimeFall.TabIndex = 2;
-            this.pbRegimeFall.TabStop = false;
-            // 
             // pbTimeLine
             // 
             this.pbTimeLine.BackColor = System.Drawing.Color.Transparent;
             this.pbTimeLine.Image = global::IQP_Tester.Properties.Resources.Chain;
-            this.pbTimeLine.Location = new System.Drawing.Point(83, 562);
+            this.pbTimeLine.Location = new System.Drawing.Point(100, 562);
             this.pbTimeLine.Name = "pbTimeLine";
-            this.pbTimeLine.Size = new System.Drawing.Size(1763, 117);
+            this.pbTimeLine.Size = new System.Drawing.Size(1670, 117);
             this.pbTimeLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbTimeLine.TabIndex = 9;
             this.pbTimeLine.TabStop = false;
@@ -468,29 +471,29 @@
             this.Resize += new System.EventHandler(this.Timeline_Resize);
             this.panelRegimeFall.ResumeLayout(false);
             this.panelRegimeFall.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRegimeFall)).EndInit();
             this.panelAna.ResumeLayout(false);
             this.tableLayoutAna.ResumeLayout(false);
             this.tableLayoutAna.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAna)).EndInit();
             this.panelWarsaw.ResumeLayout(false);
             this.tableLayoutWarsaw.ResumeLayout(false);
             this.tableLayoutWarsaw.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWarsaw)).EndInit();
             this.panelJuly.ResumeLayout(false);
             this.tableLayoutJuly.ResumeLayout(false);
             this.tableLayoutJuly.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbJuly)).EndInit();
             this.panelHousePeople.ResumeLayout(false);
             this.tableLayoutHousePeople.ResumeLayout(false);
             this.tableLayoutHousePeople.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHousePeople)).EndInit();
             this.panelSoviet.ResumeLayout(false);
             this.panelSoviet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSoviet)).EndInit();
             this.panelCeausescusRise.ResumeLayout(false);
             this.panelCeausescusRise.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCeausescusRise)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSoviet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHousePeople)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbJuly)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWarsaw)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAna)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRegimeFall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTimeLine)).EndInit();
             this.ResumeLayout(false);
 

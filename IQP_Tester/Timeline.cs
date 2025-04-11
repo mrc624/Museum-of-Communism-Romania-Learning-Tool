@@ -350,11 +350,11 @@ namespace IQP_Tester
 
             Place_Panel_With_Line_At_Year(panelAna, 1947, Position.Top);
             Place_Panel_With_Line_At_Year(panelWarsaw, 1969, Position.Bottom);
-            Place_Panel_With_Line_At_Year(panelJuly, 1971, Position.Top);
+            Place_Panel_With_Line_At_Year(panelJuly, 1972, Position.Top); // should be at 1971, moved to not overlap
             Place_Panel_With_Line_At_Year(panelHousePeople, 1984, Position.Bottom);
             Place_Panel_With_Line_At_Year(panelRegimeFall, 1989, Position.Top);
             Place_Panel_With_Line_At_Year(panelSoviet, 1952, Position.Bottom);
-            Place_Panel_With_Line_At_Year(panelCeausescusRise, 1965, Position.Top);
+            Place_Panel_With_Line_At_Year(panelCeausescusRise, 1964, Position.Top); // should be at 1965, moved to not overlap
             Place_Labels_And_Ticks();
 
             resize.Center_X(pbRegimeFall);
