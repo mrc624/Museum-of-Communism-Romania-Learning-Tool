@@ -9,10 +9,16 @@ namespace IQP_Tester
 {
     internal class Click_Helper
     {
+        Polaroid_Helper polaroid_Helper;
 
         public Click_Helper() 
         { 
             
+        }
+
+        public Click_Helper(Polaroid_Helper helper)
+        {
+            polaroid_Helper = helper;
         }
 
         public void Assign_All_Children_To_Same_Click(Control parent, EventHandler click)
@@ -24,6 +30,28 @@ namespace IQP_Tester
                 {
                     Assign_All_Children_To_Same_Click(parent.Controls[i], click);
                 }
+            }
+        }
+
+        public void Assign_Children_To_Same_Click_Avoid_Polaroids(Control parent, EventHandler click)
+        {
+            if (polaroid_Helper != null)
+            {
+                if (!polaroid_Helper.Is_Polaroid(parent))
+                {
+                    parent.Click += click;
+                    for (int i = 0; i < parent.Controls.Count; i++)
+                    {
+                        if (parent.Controls[i].HasChildren)
+                        {
+                            Assign_Children_To_Same_Click_Avoid_Polaroids(parent.Controls[i], click);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error: Polaroid Helper Not Set\nOccurred When Assigning Children And Avoiding Polaroids");
             }
         }
 

@@ -25,6 +25,9 @@ namespace IQP_Tester
         public const int TABLE_LAYOUT_QUESTION_INDEX = 0;
         public const int TABLE_LAYOUT_ANS_INDEX = 1;
         public const int MIN_NUM_OF_CHILDREN = 2;
+        public const int NUM_ANS = 1;
+        public const int NUM_Q = 1;
+        public const int NUM_PB = 1;
 
         public List<Control> Polaroids = new List<Control>();
         Polaroid_Zoom polaroid_zoom;
@@ -101,7 +104,32 @@ namespace IQP_Tester
 
         public bool Is_Polaroid(Control control)
         {
-            return control is Panel && control.HasChildren && Find_PB(control) != null && Find_Ans(control) != null && Find_Q(control) != null;
+            if (control.HasChildren)
+            {
+                if (control is Panel)
+                {
+                    if (control.Controls.Count >= MIN_NUM_OF_CHILDREN)
+                    { // panel is main container
+                        return PB_Count(control) == NUM_PB && Q_Count(control) == NUM_Q && Ans_Count(control) == NUM_ANS;
+                    }
+                    else
+                    { // panel exists purely for borders and only has 1 child
+                        if (control.Controls[0] is TableLayoutPanel)
+                        {
+                            return control.Controls[0].Controls.Count >= MIN_NUM_OF_CHILDREN && PB_Count(control) == NUM_PB && Q_Count(control) == NUM_Q && Ans_Count(control) == NUM_ANS;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+                else if (control is TableLayoutPanel)
+                {
+                    return control.Controls.Count >= MIN_NUM_OF_CHILDREN && PB_Count(control) == NUM_PB && Q_Count(control) == NUM_Q && Ans_Count(control) == NUM_ANS;
+                }
+            }
+            return false;
         }
 
         public string Get_Ans_Name(Control control)
@@ -167,6 +195,26 @@ namespace IQP_Tester
             return ans;
         }
 
+        private int Ans_Count(Control container)
+        {
+            int count = 0;
+            for (int i = 0; i < container.Controls.Count; i++)
+            {
+                if (container.Controls[i].HasChildren)
+                {
+                    count += Ans_Count(container.Controls[i]);
+                }
+                if (container.Controls[i] is Label)
+                {
+                    if (Is_Ans((Label)container.Controls[i]))
+                    {
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+
         public Label Find_Q(Control container)
         {
             Label Q = null;
@@ -194,6 +242,26 @@ namespace IQP_Tester
             return Q;
         }
 
+        private int Q_Count(Control container)
+        {
+            int count = 0;
+            for (int i = 0; i < container.Controls.Count; i++)
+            {
+                if (container.Controls[i].HasChildren)
+                {
+                    count += Q_Count(container.Controls[i]);
+                }
+                if (container.Controls[i] is Label)
+                {
+                    if (Is_Q((Label)container.Controls[i]))
+                    {
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+
         public PictureBox Find_PB(Control container)
         {
             PictureBox PB = null;
@@ -216,6 +284,23 @@ namespace IQP_Tester
                 }
             }
             return PB;
+        }
+
+        private int PB_Count(Control container)
+        {
+            int count = 0;
+            for (int i = 0; i < container.Controls.Count; i++)
+            {
+                if (container.Controls[i].HasChildren)
+                {
+                    count += PB_Count(container.Controls[i]);
+                }
+                if (container.Controls[i] is PictureBox)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
 
         public void Reposition_Polaroids(List<Control> polaroids)

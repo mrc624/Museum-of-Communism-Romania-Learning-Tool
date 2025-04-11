@@ -132,7 +132,7 @@
             this.pbOppression.Image = global::IQP_Tester.Properties.Resources.OpressionMain;
             this.pbOppression.Location = new System.Drawing.Point(3, 34);
             this.pbOppression.Name = "pbOppression";
-            this.pbOppression.Size = new System.Drawing.Size(384, 221);
+            this.pbOppression.Size = new System.Drawing.Size(384, 188);
             this.pbOppression.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbOppression.TabIndex = 1;
             this.pbOppression.TabStop = false;
@@ -176,7 +176,7 @@
             this.pbLifeUnder.Image = global::IQP_Tester.Properties.Resources.LifeUnderMain;
             this.pbLifeUnder.Location = new System.Drawing.Point(3, 34);
             this.pbLifeUnder.Name = "pbLifeUnder";
-            this.pbLifeUnder.Size = new System.Drawing.Size(384, 221);
+            this.pbLifeUnder.Size = new System.Drawing.Size(384, 188);
             this.pbLifeUnder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLifeUnder.TabIndex = 2;
             this.pbLifeUnder.TabStop = false;
@@ -220,7 +220,7 @@
             this.pbCommunistTimeline.Image = global::IQP_Tester.Properties.Resources.TimelineMain;
             this.pbCommunistTimeline.Location = new System.Drawing.Point(3, 34);
             this.pbCommunistTimeline.Name = "pbCommunistTimeline";
-            this.pbCommunistTimeline.Size = new System.Drawing.Size(394, 221);
+            this.pbCommunistTimeline.Size = new System.Drawing.Size(394, 188);
             this.pbCommunistTimeline.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCommunistTimeline.TabIndex = 2;
             this.pbCommunistTimeline.TabStop = false;
@@ -264,7 +264,7 @@
             this.pbStories.Image = global::IQP_Tester.Properties.Resources.StoriesMain;
             this.pbStories.Location = new System.Drawing.Point(3, 34);
             this.pbStories.Name = "pbStories";
-            this.pbStories.Size = new System.Drawing.Size(394, 221);
+            this.pbStories.Size = new System.Drawing.Size(394, 188);
             this.pbStories.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbStories.TabIndex = 2;
             this.pbStories.TabStop = false;
