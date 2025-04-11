@@ -113,5 +113,13 @@ namespace IQP_Tester
         {
             main.Enabled = false;
         }
+
+        private void CreditsTableLayoutPanel_VisibleChanged(object sender, EventArgs e)
+        {
+            if (main != null)
+            {
+                main.Enabled = false;
+            }
+        }
     }
 }
