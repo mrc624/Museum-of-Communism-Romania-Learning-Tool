@@ -24,7 +24,6 @@ namespace IQP_Tester
             openClose = open_close;
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
-            resize.Fullscreen_Form(this);
             clickHelper.Assign_All_Children_To_Same_Click(this, TitlePage_Click);
         }
 
@@ -39,6 +38,13 @@ namespace IQP_Tester
             resize.Handle_Resize(this);
 
             resize.Center_X_Y(tableLayoutTitle);
+        }
+
+        private void TitlePage_Shown(object sender, EventArgs e)
+        {
+            resize.Fullscreen_Form(this);
+            textManager.Update_One_Form(this);
+            TitlePage_Resize(this, new EventArgs());
         }
     }
 }

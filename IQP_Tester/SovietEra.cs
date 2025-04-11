@@ -29,7 +29,6 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
-            Soviet_Era_Resize(this, new EventArgs());
 
             polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, openClose);
         }
@@ -37,6 +36,8 @@ namespace IQP_Tester
         private void Soviet_Era_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
+            textManager.Update_One_Form(this);
+            Soviet_Era_Resize(this, new EventArgs());
         }
 
         private void Soviet_Era_Click(object sender, EventArgs e)

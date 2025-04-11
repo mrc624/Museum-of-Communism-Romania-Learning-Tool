@@ -37,15 +37,16 @@
             // tableLayoutTitle
             // 
             this.tableLayoutTitle.ColumnCount = 1;
-            this.tableLayoutTitle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutTitle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 5013F));
             this.tableLayoutTitle.Controls.Add(this.lblTitle, 0, 0);
             this.tableLayoutTitle.Controls.Add(this.lblSubtitle, 0, 1);
-            this.tableLayoutTitle.Location = new System.Drawing.Point(12, 401);
+            this.tableLayoutTitle.Location = new System.Drawing.Point(32, 956);
+            this.tableLayoutTitle.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutTitle.Name = "tableLayoutTitle";
             this.tableLayoutTitle.RowCount = 2;
             this.tableLayoutTitle.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutTitle.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutTitle.Size = new System.Drawing.Size(1880, 119);
+            this.tableLayoutTitle.Size = new System.Drawing.Size(5013, 284);
             this.tableLayoutTitle.TabIndex = 11;
             // 
             // lblTitle
@@ -54,9 +55,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(3, 0);
+            this.lblTitle.Location = new System.Drawing.Point(8, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1874, 55);
+            this.lblTitle.Size = new System.Drawing.Size(4997, 55);
             this.lblTitle.TabIndex = 5;
             this.lblTitle.Text = "Unknown";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -67,21 +69,24 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSubtitle.AutoSize = true;
             this.lblSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtitle.Location = new System.Drawing.Point(3, 55);
+            this.lblSubtitle.Location = new System.Drawing.Point(8, 55);
+            this.lblSubtitle.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(1874, 24);
+            this.lblSubtitle.Size = new System.Drawing.Size(4997, 24);
             this.lblSubtitle.TabIndex = 7;
             this.lblSubtitle.Text = "Unknown";
             this.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // TitlePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(5077, 1758);
             this.Controls.Add(this.tableLayoutTitle);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "TitlePage";
             this.Text = "TitlePage";
+            this.Shown += new System.EventHandler(this.TitlePage_Shown);
             this.Click += new System.EventHandler(this.TitlePage_Click);
             this.Resize += new System.EventHandler(this.TitlePage_Resize);
             this.tableLayoutTitle.ResumeLayout(false);

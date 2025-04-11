@@ -25,7 +25,6 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
-            LifeUnder_Resize(this, new EventArgs());
 
             polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, openClose);
         }
@@ -48,6 +47,8 @@ namespace IQP_Tester
         private void LifeUnder_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
+            textManager.Update_One_Form(this);
+            LifeUnder_Resize(this, new EventArgs());
         }
 
         private void btnLanguage_Click(object sender, EventArgs e)

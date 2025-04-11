@@ -29,7 +29,6 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
-            CeausescusRise_Resize(this, new EventArgs());
 
             polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, openClose);
         }
@@ -37,6 +36,8 @@ namespace IQP_Tester
         private void CeausescusRise_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
+            textManager.Update_One_Form(this);
+            CeausescusRise_Resize(this, new EventArgs());
         }
 
         private void CeausescusRise_Click(object sender, EventArgs e)

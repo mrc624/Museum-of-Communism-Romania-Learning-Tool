@@ -54,6 +54,7 @@ namespace IQP_Tester
             resize.CaptureAspectRatios(this);
             textManager.Generate_Text_JSON(TextManager.TEXT_MANAGER_FILE_NAME);
             citation_Helper.Generate_Citation_JSON(Citation_Helper.CITATION_FILE_NAME);
+            credits = new Credits(citation_Helper, openClose, this);
             textManager.Update_One_Form(this);
             Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());
@@ -81,14 +82,14 @@ namespace IQP_Tester
             Forms.Add(stories);
             lifeUnder = new LifeUnder(textManager, openClose);
             Forms.Add(lifeUnder);
-            timeline = new Timeline(textManager, openClose);
-            Forms.Add(timeline);
             regimeFall = new RegimeFall(textManager, openClose);
             Forms.Add(regimeFall);
             ceausescusRise = new CeausescusRise(textManager, openClose);
             Forms.Add(ceausescusRise);
             sovietEra = new SovietEra(textManager, openClose);
             Forms.Add(sovietEra);
+            timeline = new Timeline(textManager, openClose, regimeFall, ceausescusRise, sovietEra);
+            Forms.Add(timeline);
             titlePage = new TitlePage(textManager, openClose);
             Forms.Add(titlePage);
         }
@@ -112,10 +113,12 @@ namespace IQP_Tester
 
         public void Open_Title_Page()
         {
-            openClose.Hard_Close_Invisibles();
             if (!openClose.IsOpened(titlePage))
             {
-                titlePage = new TitlePage(textManager, openClose);
+                if (titlePage == null)
+                {
+                    titlePage = new TitlePage(textManager, openClose);
+                }
                 openClose.FadeIn(titlePage);
                 openClose.CloseAllForms(titlePage);
             }
@@ -127,15 +130,12 @@ namespace IQP_Tester
 
         private void panelThenAndNow_Click(object sender, EventArgs e)
         {
-            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
-                if (thenAndNow != null)
+                if (thenAndNow == null)
                 {
-                    openClose.Dispose_Images(thenAndNow);
-                    thenAndNow.Close();
+                    thenAndNow = new ThenAndNow(textManager, openClose);
                 }
-                thenAndNow = new ThenAndNow(textManager, openClose);
                 openClose.Interaction();
                 openClose.FadeIn(thenAndNow);
             }
@@ -147,18 +147,15 @@ namespace IQP_Tester
 
         private void panelOppression_Click(object sender, EventArgs e)
         {
-            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
-                if (oppression != null)
+                if (oppression == null)
                 {
-                    openClose.Dispose_Images(oppression);
-                    oppression.Close();
+                    oppression = new Oppression(textManager, openClose);
                 }
-                oppression = new Oppression(textManager, openClose);
                 openClose.Interaction();
                 openClose.FadeIn(oppression);
-            } 
+            }
         }
 
         // OPPRESSION END
@@ -167,15 +164,12 @@ namespace IQP_Tester
 
         private void panelLifeUnder_Click(object sender, EventArgs e)
         {
-            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
-                if (lifeUnder != null)
+                if (lifeUnder == null)
                 {
-                    openClose.Dispose_Images(lifeUnder);
-                    lifeUnder.Close();
+                    lifeUnder = new LifeUnder(textManager, openClose);
                 }
-                lifeUnder = new LifeUnder(textManager, openClose);
                 openClose.Interaction();
                 openClose.FadeIn(lifeUnder);
             }
@@ -187,15 +181,12 @@ namespace IQP_Tester
 
         private void panelStories_Click(object sender, EventArgs e)
         {
-            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
-                if (stories != null)
+                if (stories == null)
                 {
-                    openClose.Dispose_Images(stories);
-                    stories.Close();
+                    stories = new Stories(textManager, openClose);
                 }
-                stories = new Stories(textManager, openClose);
                 openClose.Interaction();
                 openClose.FadeIn(stories);
             }
@@ -207,15 +198,12 @@ namespace IQP_Tester
 
         private void panelTimeline_Click(object sender, EventArgs e)
         {
-            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
-                if (timeline != null)
+                if (timeline == null)
                 {
-                    openClose.Dispose_Images(timeline);
-                    timeline.Close();
+                    timeline = new Timeline(textManager, openClose, regimeFall, ceausescusRise, sovietEra);
                 }
-                timeline = new Timeline(textManager, openClose);
                 openClose.Interaction();
                 openClose.FadeIn(timeline);
             }
@@ -242,18 +230,14 @@ namespace IQP_Tester
 
         private void btnCredits_Click(object sender, EventArgs e)
         {
-            openClose.Hard_Close_Invisibles();
             if (!openClose.block)
             {
-                if (credits != null)
+                if (credits == null)
                 {
-                    openClose.Dispose_Images(credits);
-                    credits.Close();
+                    credits = new Credits(citation_Helper, openClose, this);
                 }
-                credits = new Credits(citation_Helper, openClose);
                 openClose.Interaction();
                 openClose.FadeIn(credits);
-                credits.TopMost = true;
             }
         }
 

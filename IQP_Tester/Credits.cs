@@ -23,11 +23,22 @@ namespace IQP_Tester
 
         public const uint ROW_VERTICAL_OFFSET = 10;
 
-        public Credits(Citation_Helper citation_helper, Open_Close_Helper openClose)
+        Main main;
+
+        public Credits(Citation_Helper citation_helper, Open_Close_Helper openClose, Main main)
         {
             InitializeComponent();
             citation_Helper = citation_helper;
             this.openClose = openClose;
+            this.main = main;
+
+            for (int i = 0; i < (int)Citation_Type.NUM_CITATION_TYPES; i++)
+            {
+                Load_Citations_Except_Pictures((Citation_Type)i);
+            }
+            Load_Citations_Pictures();
+            tableLayout_Helper.Set_Row_Heights(CreditsTableLayoutPanel);
+
         }
 
         private void Load_Citations_Pictures()
@@ -88,25 +99,19 @@ namespace IQP_Tester
 
         private void Credits_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Visible = false;
-            Empty_Credits_Table();
-            openClose.Dispose_Images(this);
+            e.Cancel = true;
+            main.Enabled = true;
+            openClose.Close(this);
         }
 
         private void Credits_Load(object sender, EventArgs e)
         {
-            CreditsTableLayoutPanel.Visible = false;
+
         }
 
         private void Credits_Shown(object sender, EventArgs e)
         {
-            for (int i = 0; i < (int)Citation_Type.NUM_CITATION_TYPES; i++)
-            {
-                Load_Citations_Except_Pictures((Citation_Type)i);
-            }
-            Load_Citations_Pictures();
-            tableLayout_Helper.Set_Row_Heights(CreditsTableLayoutPanel);
-            CreditsTableLayoutPanel.Visible = true;
+            main.Enabled = false;
         }
     }
 }

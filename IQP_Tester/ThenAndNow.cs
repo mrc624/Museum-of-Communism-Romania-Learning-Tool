@@ -29,7 +29,6 @@ namespace IQP_Tester
             resize.CaptureAspectRatios(this);
             doublePolaroid_Helper.Find_DoublePolaroids(this);
             doublePolaroid_Helper.Assign_Click_Handers(doublePolaroid_Helper.DoublePolaroids);
-            ThenAndNow_Resize(this, new EventArgs());
             Set_Clicks();
         }
 
@@ -57,6 +56,8 @@ namespace IQP_Tester
         private void ThenAndNow_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
+            textManager.Update_One_Form(this);
+            ThenAndNow_Resize(this, new EventArgs());
         }
 
         private void btnLanguage_Click(object sender, EventArgs e)

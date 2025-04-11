@@ -53,9 +53,14 @@ namespace IQP_Tester
             Num_Positions
         }
 
-        public Timeline(TextManager textMan, Open_Close_Helper open_close)
+        public Timeline(TextManager textMan, Open_Close_Helper open_close, RegimeFall regime, CeausescusRise ceausescus, SovietEra soviet)
         {
             InitializeComponent();
+
+            regimeFall = regime;
+            ceausescusRise = ceausescus;
+            sovietEra = soviet;
+
             Make_Year_Lables(this);
             Make_Assign_Lines(this);
             openClose = open_close;
@@ -64,7 +69,6 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
-            Timeline_Resize(this, new EventArgs());
             Set_Panel_Clicks();
             polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, open_close);
         }
@@ -372,6 +376,8 @@ namespace IQP_Tester
         private void Timeline_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
+            textManager.Update_One_Form(this);
+            Timeline_Resize(this, new EventArgs());
         }
 
         private void btnLanguage_Click(object sender, EventArgs e)
@@ -391,12 +397,10 @@ namespace IQP_Tester
         {
             if (!openClose.block)
             {
-                if (regimeFall != null)
+                if (regimeFall == null)
                 {
-                    openClose.Dispose_Images(regimeFall);
-                    regimeFall.Close();
+                    regimeFall = new RegimeFall(textManager, openClose);
                 }
-                regimeFall = new RegimeFall(textManager, openClose);
                 openClose.Interaction();
                 openClose.FadeIn(regimeFall);
             }
@@ -408,12 +412,10 @@ namespace IQP_Tester
         {
             if (!openClose.block)
             {
-                if (ceausescusRise != null)
+                if (ceausescusRise == null)
                 {
-                    openClose.Dispose_Images(ceausescusRise);
-                    ceausescusRise.Close();
+                    ceausescusRise = new CeausescusRise(textManager, openClose);
                 }
-                ceausescusRise = new CeausescusRise(textManager, openClose);
                 openClose.Interaction();
                 openClose.FadeIn(ceausescusRise);
             }
@@ -425,12 +427,10 @@ namespace IQP_Tester
         {
             if (!openClose.block)
             {
-                if (sovietEra != null)
+                if (sovietEra == null)
                 {
-                    openClose.Dispose_Images(sovietEra);
-                    sovietEra.Close();
+                    sovietEra = new SovietEra(textManager, openClose);
                 }
-                sovietEra = new SovietEra(textManager, openClose);
                 openClose.Interaction();
                 openClose.FadeIn(sovietEra);
             }
