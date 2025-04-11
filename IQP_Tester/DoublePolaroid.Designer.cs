@@ -105,9 +105,10 @@
             this.lblDPText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDPText.AutoSize = true;
+            this.lblDPText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDPText.Location = new System.Drawing.Point(3, 843);
             this.lblDPText.Name = "lblDPText";
-            this.lblDPText.Size = new System.Drawing.Size(1850, 13);
+            this.lblDPText.Size = new System.Drawing.Size(1850, 25);
             this.lblDPText.TabIndex = 2;
             this.lblDPText.Text = "Unknown";
             this.lblDPText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
