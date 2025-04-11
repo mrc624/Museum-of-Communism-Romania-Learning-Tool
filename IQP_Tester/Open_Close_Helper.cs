@@ -35,7 +35,7 @@ namespace IQP_Tester
         static uint lastInteraction = 0;
         static uint lastFormOpened = 0;
         public const int TIMER_TICK = 100; // tick 10 times a second
-        public static uint seconds = 0; // not actually seconds, 1/100 of a second
+        public static uint seconds = 0; // not actually seconds, 1/10 of a second
 
         public bool block = false;
 
