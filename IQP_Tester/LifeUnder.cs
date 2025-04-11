@@ -16,24 +16,28 @@ namespace IQP_Tester
         Resize_Helper resize = new Resize_Helper();
         Polaroid_Helper polaroid_Helper = new Polaroid_Helper();
         Open_Close_Helper openClose;
+        Click_Helper click_Helper;
+
+        public const int TABLE_LAYOUT_MAIN_EDGE_MARGIN = 50;
 
         public LifeUnder(TextManager textMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
             openClose = open_close;
             textManager = textMan;
+            click_Helper = new Click_Helper(polaroid_Helper);
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
 
             polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, openClose);
+            click_Helper.Assign_Children_To_Same_Click_Avoid_Polaroids(this, LifeUnder_Click);
         }
 
         private void LifeUnder_Resize(object sender, EventArgs e)
         {
-            resize.Handle_Resize(this);
-
-            polaroid_Helper.Reposition_Polaroids(polaroid_Helper.Polaroids);
+            resize.Glue_to_Corner(tableLayoutLifeUnderMain, Resize_Helper.Corner.all, TABLE_LAYOUT_MAIN_EDGE_MARGIN);
+            resize.Resize_Fonts(this);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
