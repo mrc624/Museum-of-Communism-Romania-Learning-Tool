@@ -34,92 +34,112 @@
             this.lblSecuritateQ = new System.Windows.Forms.Label();
             this.lblSecuritateAns = new System.Windows.Forms.Label();
             this.pbSecuritate = new System.Windows.Forms.PictureBox();
-            this.panelConsequences = new System.Windows.Forms.Panel();
             this.tableLayoutConsequences = new System.Windows.Forms.TableLayoutPanel();
             this.lblConsequencesQ = new System.Windows.Forms.Label();
             this.lblConsequencesAns = new System.Windows.Forms.Label();
             this.pbConsequences = new System.Windows.Forms.PictureBox();
-            this.panelPropoganda = new System.Windows.Forms.Panel();
             this.tableLayoutPropoganda = new System.Windows.Forms.TableLayoutPanel();
             this.lblPropogandaQ = new System.Windows.Forms.Label();
             this.lblPropogandaAns = new System.Windows.Forms.Label();
             this.pbPropoganda = new System.Windows.Forms.PictureBox();
-            this.panelLanguage = new System.Windows.Forms.Panel();
             this.tableLayoutLanguage = new System.Windows.Forms.TableLayoutPanel();
             this.lblLanguageQ = new System.Windows.Forms.Label();
             this.lblLanguageAns = new System.Windows.Forms.Label();
             this.pbLanguage = new System.Windows.Forms.PictureBox();
-            this.panelPossesions = new System.Windows.Forms.Panel();
             this.tableLayoutPossesions = new System.Windows.Forms.TableLayoutPanel();
             this.lblPossesionsQ = new System.Windows.Forms.Label();
             this.lblPossesionsAns = new System.Windows.Forms.Label();
             this.pbPossesions = new System.Windows.Forms.PictureBox();
-            this.panelInfluence = new System.Windows.Forms.Panel();
             this.tableLayoutInfluence = new System.Windows.Forms.TableLayoutPanel();
             this.lblInfluenceQ = new System.Windows.Forms.Label();
             this.lblInfluenceAns = new System.Windows.Forms.Label();
             this.pbInfluence = new System.Windows.Forms.PictureBox();
-            this.panelExports = new System.Windows.Forms.Panel();
             this.tableLayoutExports = new System.Windows.Forms.TableLayoutPanel();
             this.lblExportsQ = new System.Windows.Forms.Label();
             this.lblExportsAns = new System.Windows.Forms.Label();
             this.pbExports = new System.Windows.Forms.PictureBox();
-            this.panelReligion = new System.Windows.Forms.Panel();
             this.tableLayoutReligion = new System.Windows.Forms.TableLayoutPanel();
             this.lblReligionQ = new System.Windows.Forms.Label();
             this.lblReligionAns = new System.Windows.Forms.Label();
             this.pbReligion = new System.Windows.Forms.PictureBox();
-            this.panelFear = new System.Windows.Forms.Panel();
             this.tableLayoutFear = new System.Windows.Forms.TableLayoutPanel();
             this.lblFearQ = new System.Windows.Forms.Label();
             this.lblFearAns = new System.Windows.Forms.Label();
             this.pbFear = new System.Windows.Forms.PictureBox();
-            this.panelPalace = new System.Windows.Forms.Panel();
             this.tableLayoutPalace = new System.Windows.Forms.TableLayoutPanel();
             this.lblPalaceQ = new System.Windows.Forms.Label();
             this.lblPalaceAns = new System.Windows.Forms.Label();
             this.pbPalace = new System.Windows.Forms.PictureBox();
-            this.panelDeportation = new System.Windows.Forms.Panel();
             this.tableLayoutPanelDeportation = new System.Windows.Forms.TableLayoutPanel();
             this.lblDeportationQ = new System.Windows.Forms.Label();
             this.lblDeportationAns = new System.Windows.Forms.Label();
             this.pbDeportation = new System.Windows.Forms.PictureBox();
             this.tableLayoutSecuritateContainer = new System.Windows.Forms.TableLayoutPanel();
             this.panelSecuritate = new System.Windows.Forms.Panel();
+            this.panelConsequences = new System.Windows.Forms.Panel();
+            this.tableLayoutConsequencesContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.panelPropoganda = new System.Windows.Forms.Panel();
+            this.tableLayoutPropagandaContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.panelLanguage = new System.Windows.Forms.Panel();
+            this.tableLayoutLanguageContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.panelPossesions = new System.Windows.Forms.Panel();
+            this.tableLayoutPossesionsContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.panelInfluence = new System.Windows.Forms.Panel();
+            this.tableLayoutInfluenceContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.panelExports = new System.Windows.Forms.Panel();
+            this.tableLayoutExportsContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.panelReligion = new System.Windows.Forms.Panel();
+            this.tableLayoutReligionContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.panelFear = new System.Windows.Forms.Panel();
+            this.tableLayoutFearContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.panelPalace = new System.Windows.Forms.Panel();
+            this.tableLayoutPalaceContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.panelDeportation = new System.Windows.Forms.Panel();
+            this.tableLayoutDeportationContainer = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutSecuritate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecuritate)).BeginInit();
-            this.panelConsequences.SuspendLayout();
             this.tableLayoutConsequences.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbConsequences)).BeginInit();
-            this.panelPropoganda.SuspendLayout();
             this.tableLayoutPropoganda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPropoganda)).BeginInit();
-            this.panelLanguage.SuspendLayout();
             this.tableLayoutLanguage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLanguage)).BeginInit();
-            this.panelPossesions.SuspendLayout();
             this.tableLayoutPossesions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPossesions)).BeginInit();
-            this.panelInfluence.SuspendLayout();
             this.tableLayoutInfluence.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInfluence)).BeginInit();
-            this.panelExports.SuspendLayout();
             this.tableLayoutExports.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExports)).BeginInit();
-            this.panelReligion.SuspendLayout();
             this.tableLayoutReligion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbReligion)).BeginInit();
-            this.panelFear.SuspendLayout();
             this.tableLayoutFear.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFear)).BeginInit();
-            this.panelPalace.SuspendLayout();
             this.tableLayoutPalace.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPalace)).BeginInit();
-            this.panelDeportation.SuspendLayout();
             this.tableLayoutPanelDeportation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeportation)).BeginInit();
             this.tableLayoutSecuritateContainer.SuspendLayout();
             this.panelSecuritate.SuspendLayout();
+            this.panelConsequences.SuspendLayout();
+            this.tableLayoutConsequencesContainer.SuspendLayout();
+            this.panelPropoganda.SuspendLayout();
+            this.tableLayoutPropagandaContainer.SuspendLayout();
+            this.panelLanguage.SuspendLayout();
+            this.tableLayoutLanguageContainer.SuspendLayout();
+            this.panelPossesions.SuspendLayout();
+            this.tableLayoutPossesionsContainer.SuspendLayout();
+            this.panelInfluence.SuspendLayout();
+            this.tableLayoutInfluenceContainer.SuspendLayout();
+            this.panelExports.SuspendLayout();
+            this.tableLayoutExportsContainer.SuspendLayout();
+            this.panelReligion.SuspendLayout();
+            this.tableLayoutReligionContainer.SuspendLayout();
+            this.panelFear.SuspendLayout();
+            this.tableLayoutFearContainer.SuspendLayout();
+            this.panelPalace.SuspendLayout();
+            this.tableLayoutPalaceContainer.SuspendLayout();
+            this.panelDeportation.SuspendLayout();
+            this.tableLayoutDeportationContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -191,29 +211,21 @@
             this.pbSecuritate.TabIndex = 0;
             this.pbSecuritate.TabStop = false;
             // 
-            // panelConsequences
-            // 
-            this.panelConsequences.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelConsequences.Controls.Add(this.tableLayoutConsequences);
-            this.panelConsequences.Controls.Add(this.pbConsequences);
-            this.panelConsequences.Location = new System.Drawing.Point(390, 29);
-            this.panelConsequences.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelConsequences.Name = "panelConsequences";
-            this.panelConsequences.Size = new System.Drawing.Size(281, 326);
-            this.panelConsequences.TabIndex = 16;
-            // 
             // tableLayoutConsequences
             // 
+            this.tableLayoutConsequences.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutConsequences.ColumnCount = 1;
             this.tableLayoutConsequences.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutConsequences.Controls.Add(this.lblConsequencesQ, 0, 0);
             this.tableLayoutConsequences.Controls.Add(this.lblConsequencesAns, 0, 1);
-            this.tableLayoutConsequences.Location = new System.Drawing.Point(21, 170);
+            this.tableLayoutConsequences.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutConsequences.Name = "tableLayoutConsequences";
             this.tableLayoutConsequences.RowCount = 2;
             this.tableLayoutConsequences.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutConsequences.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutConsequences.Size = new System.Drawing.Size(237, 155);
+            this.tableLayoutConsequences.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutConsequences.TabIndex = 10;
             // 
             // lblConsequencesQ
@@ -224,7 +236,7 @@
             this.lblConsequencesQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConsequencesQ.Location = new System.Drawing.Point(3, 0);
             this.lblConsequencesQ.Name = "lblConsequencesQ";
-            this.lblConsequencesQ.Size = new System.Drawing.Size(231, 25);
+            this.lblConsequencesQ.Size = new System.Drawing.Size(267, 25);
             this.lblConsequencesQ.TabIndex = 5;
             this.lblConsequencesQ.Text = "Unknown";
             this.lblConsequencesQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -236,45 +248,40 @@
             this.lblConsequencesAns.AutoSize = true;
             this.lblConsequencesAns.Location = new System.Drawing.Point(3, 25);
             this.lblConsequencesAns.Name = "lblConsequencesAns";
-            this.lblConsequencesAns.Size = new System.Drawing.Size(231, 13);
+            this.lblConsequencesAns.Size = new System.Drawing.Size(267, 13);
             this.lblConsequencesAns.TabIndex = 7;
             this.lblConsequencesAns.Text = "Unknown";
             this.lblConsequencesAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbConsequences
             // 
+            this.pbConsequences.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbConsequences.Image = global::IQP_Tester.Properties.Resources.Consequences;
             this.pbConsequences.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbConsequences.InitialImage")));
-            this.pbConsequences.Location = new System.Drawing.Point(21, 40);
+            this.pbConsequences.Location = new System.Drawing.Point(3, 3);
             this.pbConsequences.Name = "pbConsequences";
-            this.pbConsequences.Size = new System.Drawing.Size(237, 110);
+            this.pbConsequences.Size = new System.Drawing.Size(273, 156);
             this.pbConsequences.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbConsequences.TabIndex = 0;
             this.pbConsequences.TabStop = false;
             // 
-            // panelPropoganda
-            // 
-            this.panelPropoganda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPropoganda.Controls.Add(this.tableLayoutPropoganda);
-            this.panelPropoganda.Controls.Add(this.pbPropoganda);
-            this.panelPropoganda.Location = new System.Drawing.Point(704, 29);
-            this.panelPropoganda.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelPropoganda.Name = "panelPropoganda";
-            this.panelPropoganda.Size = new System.Drawing.Size(281, 326);
-            this.panelPropoganda.TabIndex = 15;
-            // 
             // tableLayoutPropoganda
             // 
+            this.tableLayoutPropoganda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPropoganda.ColumnCount = 1;
             this.tableLayoutPropoganda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPropoganda.Controls.Add(this.lblPropogandaQ, 0, 0);
             this.tableLayoutPropoganda.Controls.Add(this.lblPropogandaAns, 0, 1);
-            this.tableLayoutPropoganda.Location = new System.Drawing.Point(21, 171);
+            this.tableLayoutPropoganda.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutPropoganda.Name = "tableLayoutPropoganda";
             this.tableLayoutPropoganda.RowCount = 2;
             this.tableLayoutPropoganda.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPropoganda.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPropoganda.Size = new System.Drawing.Size(237, 154);
+            this.tableLayoutPropoganda.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutPropoganda.TabIndex = 10;
             // 
             // lblPropogandaQ
@@ -285,7 +292,7 @@
             this.lblPropogandaQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPropogandaQ.Location = new System.Drawing.Point(3, 0);
             this.lblPropogandaQ.Name = "lblPropogandaQ";
-            this.lblPropogandaQ.Size = new System.Drawing.Size(231, 25);
+            this.lblPropogandaQ.Size = new System.Drawing.Size(267, 25);
             this.lblPropogandaQ.TabIndex = 5;
             this.lblPropogandaQ.Text = "Unknown";
             this.lblPropogandaQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -297,45 +304,40 @@
             this.lblPropogandaAns.AutoSize = true;
             this.lblPropogandaAns.Location = new System.Drawing.Point(3, 25);
             this.lblPropogandaAns.Name = "lblPropogandaAns";
-            this.lblPropogandaAns.Size = new System.Drawing.Size(231, 13);
+            this.lblPropogandaAns.Size = new System.Drawing.Size(267, 13);
             this.lblPropogandaAns.TabIndex = 7;
             this.lblPropogandaAns.Text = "Unknown";
             this.lblPropogandaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbPropoganda
             // 
+            this.pbPropoganda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbPropoganda.Image = global::IQP_Tester.Properties.Resources.Propaganda;
             this.pbPropoganda.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPropoganda.InitialImage")));
-            this.pbPropoganda.Location = new System.Drawing.Point(49, 27);
+            this.pbPropoganda.Location = new System.Drawing.Point(3, 3);
             this.pbPropoganda.Name = "pbPropoganda";
-            this.pbPropoganda.Size = new System.Drawing.Size(186, 138);
+            this.pbPropoganda.Size = new System.Drawing.Size(273, 156);
             this.pbPropoganda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPropoganda.TabIndex = 0;
             this.pbPropoganda.TabStop = false;
             // 
-            // panelLanguage
-            // 
-            this.panelLanguage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelLanguage.Controls.Add(this.tableLayoutLanguage);
-            this.panelLanguage.Controls.Add(this.pbLanguage);
-            this.panelLanguage.Location = new System.Drawing.Point(1030, 29);
-            this.panelLanguage.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelLanguage.Name = "panelLanguage";
-            this.panelLanguage.Size = new System.Drawing.Size(281, 326);
-            this.panelLanguage.TabIndex = 15;
-            // 
             // tableLayoutLanguage
             // 
+            this.tableLayoutLanguage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutLanguage.ColumnCount = 1;
             this.tableLayoutLanguage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutLanguage.Controls.Add(this.lblLanguageQ, 0, 0);
             this.tableLayoutLanguage.Controls.Add(this.lblLanguageAns, 0, 1);
-            this.tableLayoutLanguage.Location = new System.Drawing.Point(21, 170);
+            this.tableLayoutLanguage.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutLanguage.Name = "tableLayoutLanguage";
             this.tableLayoutLanguage.RowCount = 2;
             this.tableLayoutLanguage.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutLanguage.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutLanguage.Size = new System.Drawing.Size(237, 151);
+            this.tableLayoutLanguage.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutLanguage.TabIndex = 10;
             // 
             // lblLanguageQ
@@ -346,7 +348,7 @@
             this.lblLanguageQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLanguageQ.Location = new System.Drawing.Point(3, 0);
             this.lblLanguageQ.Name = "lblLanguageQ";
-            this.lblLanguageQ.Size = new System.Drawing.Size(231, 25);
+            this.lblLanguageQ.Size = new System.Drawing.Size(267, 25);
             this.lblLanguageQ.TabIndex = 5;
             this.lblLanguageQ.Text = "Unknown";
             this.lblLanguageQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -358,45 +360,40 @@
             this.lblLanguageAns.AutoSize = true;
             this.lblLanguageAns.Location = new System.Drawing.Point(3, 25);
             this.lblLanguageAns.Name = "lblLanguageAns";
-            this.lblLanguageAns.Size = new System.Drawing.Size(231, 13);
+            this.lblLanguageAns.Size = new System.Drawing.Size(267, 13);
             this.lblLanguageAns.TabIndex = 7;
             this.lblLanguageAns.Text = "Unknown";
             this.lblLanguageAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbLanguage
             // 
+            this.pbLanguage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbLanguage.Image = global::IQP_Tester.Properties.Resources.Language;
             this.pbLanguage.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbLanguage.InitialImage")));
-            this.pbLanguage.Location = new System.Drawing.Point(49, 14);
+            this.pbLanguage.Location = new System.Drawing.Point(3, 3);
             this.pbLanguage.Name = "pbLanguage";
-            this.pbLanguage.Size = new System.Drawing.Size(186, 136);
+            this.pbLanguage.Size = new System.Drawing.Size(273, 156);
             this.pbLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLanguage.TabIndex = 0;
             this.pbLanguage.TabStop = false;
             // 
-            // panelPossesions
-            // 
-            this.panelPossesions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPossesions.Controls.Add(this.tableLayoutPossesions);
-            this.panelPossesions.Controls.Add(this.pbPossesions);
-            this.panelPossesions.Location = new System.Drawing.Point(1332, 29);
-            this.panelPossesions.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelPossesions.Name = "panelPossesions";
-            this.panelPossesions.Size = new System.Drawing.Size(281, 326);
-            this.panelPossesions.TabIndex = 15;
-            // 
             // tableLayoutPossesions
             // 
+            this.tableLayoutPossesions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPossesions.ColumnCount = 1;
             this.tableLayoutPossesions.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPossesions.Controls.Add(this.lblPossesionsQ, 0, 0);
             this.tableLayoutPossesions.Controls.Add(this.lblPossesionsAns, 0, 1);
-            this.tableLayoutPossesions.Location = new System.Drawing.Point(21, 171);
+            this.tableLayoutPossesions.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutPossesions.Name = "tableLayoutPossesions";
             this.tableLayoutPossesions.RowCount = 2;
             this.tableLayoutPossesions.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPossesions.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPossesions.Size = new System.Drawing.Size(237, 154);
+            this.tableLayoutPossesions.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutPossesions.TabIndex = 10;
             // 
             // lblPossesionsQ
@@ -407,7 +404,7 @@
             this.lblPossesionsQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPossesionsQ.Location = new System.Drawing.Point(3, 0);
             this.lblPossesionsQ.Name = "lblPossesionsQ";
-            this.lblPossesionsQ.Size = new System.Drawing.Size(231, 25);
+            this.lblPossesionsQ.Size = new System.Drawing.Size(267, 25);
             this.lblPossesionsQ.TabIndex = 5;
             this.lblPossesionsQ.Text = "Unknown";
             this.lblPossesionsQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -419,45 +416,40 @@
             this.lblPossesionsAns.AutoSize = true;
             this.lblPossesionsAns.Location = new System.Drawing.Point(3, 25);
             this.lblPossesionsAns.Name = "lblPossesionsAns";
-            this.lblPossesionsAns.Size = new System.Drawing.Size(231, 13);
+            this.lblPossesionsAns.Size = new System.Drawing.Size(267, 13);
             this.lblPossesionsAns.TabIndex = 7;
             this.lblPossesionsAns.Text = "Unknown";
             this.lblPossesionsAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbPossesions
             // 
+            this.pbPossesions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbPossesions.Image = global::IQP_Tester.Properties.Resources.Posessions;
             this.pbPossesions.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPossesions.InitialImage")));
-            this.pbPossesions.Location = new System.Drawing.Point(49, 27);
+            this.pbPossesions.Location = new System.Drawing.Point(3, 3);
             this.pbPossesions.Name = "pbPossesions";
-            this.pbPossesions.Size = new System.Drawing.Size(186, 123);
+            this.pbPossesions.Size = new System.Drawing.Size(273, 156);
             this.pbPossesions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPossesions.TabIndex = 0;
             this.pbPossesions.TabStop = false;
             // 
-            // panelInfluence
-            // 
-            this.panelInfluence.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelInfluence.Controls.Add(this.tableLayoutInfluence);
-            this.panelInfluence.Controls.Add(this.pbInfluence);
-            this.panelInfluence.Location = new System.Drawing.Point(1619, 29);
-            this.panelInfluence.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelInfluence.Name = "panelInfluence";
-            this.panelInfluence.Size = new System.Drawing.Size(281, 326);
-            this.panelInfluence.TabIndex = 15;
-            // 
             // tableLayoutInfluence
             // 
+            this.tableLayoutInfluence.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutInfluence.ColumnCount = 1;
             this.tableLayoutInfluence.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutInfluence.Controls.Add(this.lblInfluenceQ, 0, 0);
             this.tableLayoutInfluence.Controls.Add(this.lblInfluenceAns, 0, 1);
-            this.tableLayoutInfluence.Location = new System.Drawing.Point(21, 171);
+            this.tableLayoutInfluence.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutInfluence.Name = "tableLayoutInfluence";
             this.tableLayoutInfluence.RowCount = 2;
             this.tableLayoutInfluence.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutInfluence.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutInfluence.Size = new System.Drawing.Size(237, 139);
+            this.tableLayoutInfluence.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutInfluence.TabIndex = 10;
             // 
             // lblInfluenceQ
@@ -468,7 +460,7 @@
             this.lblInfluenceQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfluenceQ.Location = new System.Drawing.Point(3, 0);
             this.lblInfluenceQ.Name = "lblInfluenceQ";
-            this.lblInfluenceQ.Size = new System.Drawing.Size(231, 25);
+            this.lblInfluenceQ.Size = new System.Drawing.Size(267, 25);
             this.lblInfluenceQ.TabIndex = 5;
             this.lblInfluenceQ.Text = "Unknown";
             this.lblInfluenceQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -480,45 +472,40 @@
             this.lblInfluenceAns.AutoSize = true;
             this.lblInfluenceAns.Location = new System.Drawing.Point(3, 25);
             this.lblInfluenceAns.Name = "lblInfluenceAns";
-            this.lblInfluenceAns.Size = new System.Drawing.Size(231, 13);
+            this.lblInfluenceAns.Size = new System.Drawing.Size(267, 13);
             this.lblInfluenceAns.TabIndex = 7;
             this.lblInfluenceAns.Text = "Unknown";
             this.lblInfluenceAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbInfluence
             // 
+            this.pbInfluence.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbInfluence.Image = global::IQP_Tester.Properties.Resources.Influence;
             this.pbInfluence.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbInfluence.InitialImage")));
-            this.pbInfluence.Location = new System.Drawing.Point(47, 27);
+            this.pbInfluence.Location = new System.Drawing.Point(3, 3);
             this.pbInfluence.Name = "pbInfluence";
-            this.pbInfluence.Size = new System.Drawing.Size(186, 122);
+            this.pbInfluence.Size = new System.Drawing.Size(273, 156);
             this.pbInfluence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbInfluence.TabIndex = 0;
             this.pbInfluence.TabStop = false;
             // 
-            // panelExports
-            // 
-            this.panelExports.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelExports.Controls.Add(this.tableLayoutExports);
-            this.panelExports.Controls.Add(this.pbExports);
-            this.panelExports.Location = new System.Drawing.Point(22, 690);
-            this.panelExports.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelExports.Name = "panelExports";
-            this.panelExports.Size = new System.Drawing.Size(281, 326);
-            this.panelExports.TabIndex = 17;
-            // 
             // tableLayoutExports
             // 
+            this.tableLayoutExports.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutExports.ColumnCount = 1;
             this.tableLayoutExports.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutExports.Controls.Add(this.lblExportsQ, 0, 0);
             this.tableLayoutExports.Controls.Add(this.lblExportsAns, 0, 1);
-            this.tableLayoutExports.Location = new System.Drawing.Point(21, 181);
+            this.tableLayoutExports.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutExports.Name = "tableLayoutExports";
             this.tableLayoutExports.RowCount = 2;
             this.tableLayoutExports.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutExports.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutExports.Size = new System.Drawing.Size(237, 140);
+            this.tableLayoutExports.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutExports.TabIndex = 10;
             // 
             // lblExportsQ
@@ -529,7 +516,7 @@
             this.lblExportsQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExportsQ.Location = new System.Drawing.Point(3, 0);
             this.lblExportsQ.Name = "lblExportsQ";
-            this.lblExportsQ.Size = new System.Drawing.Size(231, 25);
+            this.lblExportsQ.Size = new System.Drawing.Size(267, 25);
             this.lblExportsQ.TabIndex = 5;
             this.lblExportsQ.Text = "Unknown";
             this.lblExportsQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -541,45 +528,40 @@
             this.lblExportsAns.AutoSize = true;
             this.lblExportsAns.Location = new System.Drawing.Point(3, 25);
             this.lblExportsAns.Name = "lblExportsAns";
-            this.lblExportsAns.Size = new System.Drawing.Size(231, 13);
+            this.lblExportsAns.Size = new System.Drawing.Size(267, 13);
             this.lblExportsAns.TabIndex = 7;
             this.lblExportsAns.Text = "Unknown";
             this.lblExportsAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbExports
             // 
+            this.pbExports.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbExports.Image = ((System.Drawing.Image)(resources.GetObject("pbExports.Image")));
             this.pbExports.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbExports.InitialImage")));
-            this.pbExports.Location = new System.Drawing.Point(49, 14);
+            this.pbExports.Location = new System.Drawing.Point(3, 3);
             this.pbExports.Name = "pbExports";
-            this.pbExports.Size = new System.Drawing.Size(186, 146);
+            this.pbExports.Size = new System.Drawing.Size(273, 156);
             this.pbExports.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExports.TabIndex = 0;
             this.pbExports.TabStop = false;
             // 
-            // panelReligion
-            // 
-            this.panelReligion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelReligion.Controls.Add(this.tableLayoutReligion);
-            this.panelReligion.Controls.Add(this.pbReligion);
-            this.panelReligion.Location = new System.Drawing.Point(390, 690);
-            this.panelReligion.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelReligion.Name = "panelReligion";
-            this.panelReligion.Size = new System.Drawing.Size(281, 326);
-            this.panelReligion.TabIndex = 18;
-            // 
             // tableLayoutReligion
             // 
+            this.tableLayoutReligion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutReligion.ColumnCount = 1;
             this.tableLayoutReligion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutReligion.Controls.Add(this.lblReligionQ, 0, 0);
             this.tableLayoutReligion.Controls.Add(this.lblReligionAns, 0, 1);
-            this.tableLayoutReligion.Location = new System.Drawing.Point(21, 181);
+            this.tableLayoutReligion.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutReligion.Name = "tableLayoutReligion";
             this.tableLayoutReligion.RowCount = 2;
             this.tableLayoutReligion.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutReligion.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutReligion.Size = new System.Drawing.Size(237, 129);
+            this.tableLayoutReligion.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutReligion.TabIndex = 10;
             // 
             // lblReligionQ
@@ -590,7 +572,7 @@
             this.lblReligionQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReligionQ.Location = new System.Drawing.Point(3, 0);
             this.lblReligionQ.Name = "lblReligionQ";
-            this.lblReligionQ.Size = new System.Drawing.Size(231, 25);
+            this.lblReligionQ.Size = new System.Drawing.Size(267, 25);
             this.lblReligionQ.TabIndex = 5;
             this.lblReligionQ.Text = "Unknown";
             this.lblReligionQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -602,45 +584,40 @@
             this.lblReligionAns.AutoSize = true;
             this.lblReligionAns.Location = new System.Drawing.Point(3, 25);
             this.lblReligionAns.Name = "lblReligionAns";
-            this.lblReligionAns.Size = new System.Drawing.Size(231, 13);
+            this.lblReligionAns.Size = new System.Drawing.Size(267, 13);
             this.lblReligionAns.TabIndex = 7;
             this.lblReligionAns.Text = "Unknown";
             this.lblReligionAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbReligion
             // 
+            this.pbReligion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbReligion.Image = global::IQP_Tester.Properties.Resources.Religion;
             this.pbReligion.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbReligion.InitialImage")));
-            this.pbReligion.Location = new System.Drawing.Point(21, 28);
+            this.pbReligion.Location = new System.Drawing.Point(3, 3);
             this.pbReligion.Name = "pbReligion";
-            this.pbReligion.Size = new System.Drawing.Size(237, 120);
+            this.pbReligion.Size = new System.Drawing.Size(273, 156);
             this.pbReligion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbReligion.TabIndex = 0;
             this.pbReligion.TabStop = false;
             // 
-            // panelFear
-            // 
-            this.panelFear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelFear.Controls.Add(this.tableLayoutFear);
-            this.panelFear.Controls.Add(this.pbFear);
-            this.panelFear.Location = new System.Drawing.Point(704, 690);
-            this.panelFear.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelFear.Name = "panelFear";
-            this.panelFear.Size = new System.Drawing.Size(281, 326);
-            this.panelFear.TabIndex = 19;
-            // 
             // tableLayoutFear
             // 
+            this.tableLayoutFear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutFear.ColumnCount = 1;
             this.tableLayoutFear.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutFear.Controls.Add(this.lblFearQ, 0, 0);
             this.tableLayoutFear.Controls.Add(this.lblFearAns, 0, 1);
-            this.tableLayoutFear.Location = new System.Drawing.Point(21, 181);
+            this.tableLayoutFear.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutFear.Name = "tableLayoutFear";
             this.tableLayoutFear.RowCount = 2;
             this.tableLayoutFear.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutFear.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutFear.Size = new System.Drawing.Size(237, 129);
+            this.tableLayoutFear.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutFear.TabIndex = 10;
             // 
             // lblFearQ
@@ -651,7 +628,7 @@
             this.lblFearQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFearQ.Location = new System.Drawing.Point(3, 0);
             this.lblFearQ.Name = "lblFearQ";
-            this.lblFearQ.Size = new System.Drawing.Size(231, 25);
+            this.lblFearQ.Size = new System.Drawing.Size(267, 25);
             this.lblFearQ.TabIndex = 5;
             this.lblFearQ.Text = "Unknown";
             this.lblFearQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -663,45 +640,40 @@
             this.lblFearAns.AutoSize = true;
             this.lblFearAns.Location = new System.Drawing.Point(3, 25);
             this.lblFearAns.Name = "lblFearAns";
-            this.lblFearAns.Size = new System.Drawing.Size(231, 13);
+            this.lblFearAns.Size = new System.Drawing.Size(267, 13);
             this.lblFearAns.TabIndex = 7;
             this.lblFearAns.Text = "Unknown";
             this.lblFearAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbFear
             // 
+            this.pbFear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbFear.Image = global::IQP_Tester.Properties.Resources.Fear;
             this.pbFear.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFear.InitialImage")));
-            this.pbFear.Location = new System.Drawing.Point(49, 28);
+            this.pbFear.Location = new System.Drawing.Point(3, 3);
             this.pbFear.Name = "pbFear";
-            this.pbFear.Size = new System.Drawing.Size(186, 112);
+            this.pbFear.Size = new System.Drawing.Size(273, 156);
             this.pbFear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFear.TabIndex = 0;
             this.pbFear.TabStop = false;
             // 
-            // panelPalace
-            // 
-            this.panelPalace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPalace.Controls.Add(this.tableLayoutPalace);
-            this.panelPalace.Controls.Add(this.pbPalace);
-            this.panelPalace.Location = new System.Drawing.Point(1030, 690);
-            this.panelPalace.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelPalace.Name = "panelPalace";
-            this.panelPalace.Size = new System.Drawing.Size(281, 326);
-            this.panelPalace.TabIndex = 20;
-            // 
             // tableLayoutPalace
             // 
+            this.tableLayoutPalace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPalace.ColumnCount = 1;
             this.tableLayoutPalace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPalace.Controls.Add(this.lblPalaceQ, 0, 0);
             this.tableLayoutPalace.Controls.Add(this.lblPalaceAns, 0, 1);
-            this.tableLayoutPalace.Location = new System.Drawing.Point(21, 181);
+            this.tableLayoutPalace.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutPalace.Name = "tableLayoutPalace";
             this.tableLayoutPalace.RowCount = 2;
             this.tableLayoutPalace.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPalace.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPalace.Size = new System.Drawing.Size(237, 129);
+            this.tableLayoutPalace.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutPalace.TabIndex = 10;
             // 
             // lblPalaceQ
@@ -712,7 +684,7 @@
             this.lblPalaceQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPalaceQ.Location = new System.Drawing.Point(3, 0);
             this.lblPalaceQ.Name = "lblPalaceQ";
-            this.lblPalaceQ.Size = new System.Drawing.Size(231, 25);
+            this.lblPalaceQ.Size = new System.Drawing.Size(267, 25);
             this.lblPalaceQ.TabIndex = 5;
             this.lblPalaceQ.Text = "Unknown";
             this.lblPalaceQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -724,45 +696,40 @@
             this.lblPalaceAns.AutoSize = true;
             this.lblPalaceAns.Location = new System.Drawing.Point(3, 25);
             this.lblPalaceAns.Name = "lblPalaceAns";
-            this.lblPalaceAns.Size = new System.Drawing.Size(231, 13);
+            this.lblPalaceAns.Size = new System.Drawing.Size(267, 13);
             this.lblPalaceAns.TabIndex = 7;
             this.lblPalaceAns.Text = "Unknown";
             this.lblPalaceAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbPalace
             // 
+            this.pbPalace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbPalace.Image = global::IQP_Tester.Properties.Resources.Palace;
             this.pbPalace.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPalace.InitialImage")));
-            this.pbPalace.Location = new System.Drawing.Point(49, 28);
+            this.pbPalace.Location = new System.Drawing.Point(3, 3);
             this.pbPalace.Name = "pbPalace";
-            this.pbPalace.Size = new System.Drawing.Size(186, 124);
+            this.pbPalace.Size = new System.Drawing.Size(273, 156);
             this.pbPalace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPalace.TabIndex = 0;
             this.pbPalace.TabStop = false;
             // 
-            // panelDeportation
-            // 
-            this.panelDeportation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelDeportation.Controls.Add(this.tableLayoutPanelDeportation);
-            this.panelDeportation.Controls.Add(this.pbDeportation);
-            this.panelDeportation.Location = new System.Drawing.Point(1332, 690);
-            this.panelDeportation.MaximumSize = new System.Drawing.Size(281, 326);
-            this.panelDeportation.Name = "panelDeportation";
-            this.panelDeportation.Size = new System.Drawing.Size(281, 326);
-            this.panelDeportation.TabIndex = 21;
-            // 
             // tableLayoutPanelDeportation
             // 
+            this.tableLayoutPanelDeportation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanelDeportation.ColumnCount = 1;
             this.tableLayoutPanelDeportation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPanelDeportation.Controls.Add(this.lblDeportationQ, 0, 0);
             this.tableLayoutPanelDeportation.Controls.Add(this.lblDeportationAns, 0, 1);
-            this.tableLayoutPanelDeportation.Location = new System.Drawing.Point(21, 181);
+            this.tableLayoutPanelDeportation.Location = new System.Drawing.Point(3, 165);
             this.tableLayoutPanelDeportation.Name = "tableLayoutPanelDeportation";
             this.tableLayoutPanelDeportation.RowCount = 2;
             this.tableLayoutPanelDeportation.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelDeportation.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelDeportation.Size = new System.Drawing.Size(237, 129);
+            this.tableLayoutPanelDeportation.Size = new System.Drawing.Size(273, 156);
             this.tableLayoutPanelDeportation.TabIndex = 10;
             // 
             // lblDeportationQ
@@ -773,7 +740,7 @@
             this.lblDeportationQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeportationQ.Location = new System.Drawing.Point(3, 0);
             this.lblDeportationQ.Name = "lblDeportationQ";
-            this.lblDeportationQ.Size = new System.Drawing.Size(231, 25);
+            this.lblDeportationQ.Size = new System.Drawing.Size(267, 25);
             this.lblDeportationQ.TabIndex = 5;
             this.lblDeportationQ.Text = "Unknown";
             this.lblDeportationQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -785,18 +752,21 @@
             this.lblDeportationAns.AutoSize = true;
             this.lblDeportationAns.Location = new System.Drawing.Point(3, 25);
             this.lblDeportationAns.Name = "lblDeportationAns";
-            this.lblDeportationAns.Size = new System.Drawing.Size(231, 13);
+            this.lblDeportationAns.Size = new System.Drawing.Size(267, 13);
             this.lblDeportationAns.TabIndex = 7;
             this.lblDeportationAns.Text = "Unknown";
             this.lblDeportationAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbDeportation
             // 
+            this.pbDeportation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbDeportation.Image = global::IQP_Tester.Properties.Resources.Deportation;
             this.pbDeportation.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbDeportation.InitialImage")));
-            this.pbDeportation.Location = new System.Drawing.Point(49, 28);
+            this.pbDeportation.Location = new System.Drawing.Point(3, 3);
             this.pbDeportation.Name = "pbDeportation";
-            this.pbDeportation.Size = new System.Drawing.Size(186, 132);
+            this.pbDeportation.Size = new System.Drawing.Size(273, 156);
             this.pbDeportation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDeportation.TabIndex = 0;
             this.pbDeportation.TabStop = false;
@@ -826,6 +796,256 @@
             this.panelSecuritate.Size = new System.Drawing.Size(281, 326);
             this.panelSecuritate.TabIndex = 15;
             // 
+            // panelConsequences
+            // 
+            this.panelConsequences.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelConsequences.Controls.Add(this.tableLayoutConsequencesContainer);
+            this.panelConsequences.Location = new System.Drawing.Point(390, 30);
+            this.panelConsequences.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelConsequences.Name = "panelConsequences";
+            this.panelConsequences.Size = new System.Drawing.Size(281, 326);
+            this.panelConsequences.TabIndex = 22;
+            // 
+            // tableLayoutConsequencesContainer
+            // 
+            this.tableLayoutConsequencesContainer.ColumnCount = 1;
+            this.tableLayoutConsequencesContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutConsequencesContainer.Controls.Add(this.pbConsequences, 0, 0);
+            this.tableLayoutConsequencesContainer.Controls.Add(this.tableLayoutConsequences, 0, 1);
+            this.tableLayoutConsequencesContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutConsequencesContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutConsequencesContainer.Name = "tableLayoutConsequencesContainer";
+            this.tableLayoutConsequencesContainer.RowCount = 2;
+            this.tableLayoutConsequencesContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutConsequencesContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutConsequencesContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutConsequencesContainer.TabIndex = 22;
+            // 
+            // panelPropoganda
+            // 
+            this.panelPropoganda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPropoganda.Controls.Add(this.tableLayoutPropagandaContainer);
+            this.panelPropoganda.Location = new System.Drawing.Point(704, 33);
+            this.panelPropoganda.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelPropoganda.Name = "panelPropoganda";
+            this.panelPropoganda.Size = new System.Drawing.Size(281, 326);
+            this.panelPropoganda.TabIndex = 23;
+            // 
+            // tableLayoutPropagandaContainer
+            // 
+            this.tableLayoutPropagandaContainer.ColumnCount = 1;
+            this.tableLayoutPropagandaContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPropagandaContainer.Controls.Add(this.tableLayoutPropoganda, 0, 1);
+            this.tableLayoutPropagandaContainer.Controls.Add(this.pbPropoganda, 0, 0);
+            this.tableLayoutPropagandaContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPropagandaContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPropagandaContainer.Name = "tableLayoutPropagandaContainer";
+            this.tableLayoutPropagandaContainer.RowCount = 2;
+            this.tableLayoutPropagandaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPropagandaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPropagandaContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutPropagandaContainer.TabIndex = 22;
+            // 
+            // panelLanguage
+            // 
+            this.panelLanguage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelLanguage.Controls.Add(this.tableLayoutLanguageContainer);
+            this.panelLanguage.Location = new System.Drawing.Point(1030, 33);
+            this.panelLanguage.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelLanguage.Name = "panelLanguage";
+            this.panelLanguage.Size = new System.Drawing.Size(281, 326);
+            this.panelLanguage.TabIndex = 24;
+            // 
+            // tableLayoutLanguageContainer
+            // 
+            this.tableLayoutLanguageContainer.ColumnCount = 1;
+            this.tableLayoutLanguageContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutLanguageContainer.Controls.Add(this.tableLayoutLanguage, 0, 1);
+            this.tableLayoutLanguageContainer.Controls.Add(this.pbLanguage, 0, 0);
+            this.tableLayoutLanguageContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutLanguageContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutLanguageContainer.Name = "tableLayoutLanguageContainer";
+            this.tableLayoutLanguageContainer.RowCount = 2;
+            this.tableLayoutLanguageContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutLanguageContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutLanguageContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutLanguageContainer.TabIndex = 22;
+            // 
+            // panelPossesions
+            // 
+            this.panelPossesions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPossesions.Controls.Add(this.tableLayoutPossesionsContainer);
+            this.panelPossesions.Location = new System.Drawing.Point(1332, 33);
+            this.panelPossesions.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelPossesions.Name = "panelPossesions";
+            this.panelPossesions.Size = new System.Drawing.Size(281, 326);
+            this.panelPossesions.TabIndex = 25;
+            // 
+            // tableLayoutPossesionsContainer
+            // 
+            this.tableLayoutPossesionsContainer.ColumnCount = 1;
+            this.tableLayoutPossesionsContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPossesionsContainer.Controls.Add(this.pbPossesions, 0, 0);
+            this.tableLayoutPossesionsContainer.Controls.Add(this.tableLayoutPossesions, 0, 1);
+            this.tableLayoutPossesionsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPossesionsContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPossesionsContainer.Name = "tableLayoutPossesionsContainer";
+            this.tableLayoutPossesionsContainer.RowCount = 2;
+            this.tableLayoutPossesionsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPossesionsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPossesionsContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutPossesionsContainer.TabIndex = 22;
+            // 
+            // panelInfluence
+            // 
+            this.panelInfluence.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelInfluence.Controls.Add(this.tableLayoutInfluenceContainer);
+            this.panelInfluence.Location = new System.Drawing.Point(1619, 33);
+            this.panelInfluence.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelInfluence.Name = "panelInfluence";
+            this.panelInfluence.Size = new System.Drawing.Size(281, 326);
+            this.panelInfluence.TabIndex = 26;
+            // 
+            // tableLayoutInfluenceContainer
+            // 
+            this.tableLayoutInfluenceContainer.ColumnCount = 1;
+            this.tableLayoutInfluenceContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutInfluenceContainer.Controls.Add(this.tableLayoutInfluence, 0, 1);
+            this.tableLayoutInfluenceContainer.Controls.Add(this.pbInfluence, 0, 0);
+            this.tableLayoutInfluenceContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutInfluenceContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutInfluenceContainer.Name = "tableLayoutInfluenceContainer";
+            this.tableLayoutInfluenceContainer.RowCount = 2;
+            this.tableLayoutInfluenceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutInfluenceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutInfluenceContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutInfluenceContainer.TabIndex = 22;
+            // 
+            // panelExports
+            // 
+            this.panelExports.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelExports.Controls.Add(this.tableLayoutExportsContainer);
+            this.panelExports.Location = new System.Drawing.Point(44, 690);
+            this.panelExports.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelExports.Name = "panelExports";
+            this.panelExports.Size = new System.Drawing.Size(281, 326);
+            this.panelExports.TabIndex = 27;
+            // 
+            // tableLayoutExportsContainer
+            // 
+            this.tableLayoutExportsContainer.ColumnCount = 1;
+            this.tableLayoutExportsContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutExportsContainer.Controls.Add(this.tableLayoutExports, 0, 1);
+            this.tableLayoutExportsContainer.Controls.Add(this.pbExports, 0, 0);
+            this.tableLayoutExportsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutExportsContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutExportsContainer.Name = "tableLayoutExportsContainer";
+            this.tableLayoutExportsContainer.RowCount = 2;
+            this.tableLayoutExportsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutExportsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutExportsContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutExportsContainer.TabIndex = 22;
+            // 
+            // panelReligion
+            // 
+            this.panelReligion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelReligion.Controls.Add(this.tableLayoutReligionContainer);
+            this.panelReligion.Location = new System.Drawing.Point(390, 690);
+            this.panelReligion.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelReligion.Name = "panelReligion";
+            this.panelReligion.Size = new System.Drawing.Size(281, 326);
+            this.panelReligion.TabIndex = 24;
+            // 
+            // tableLayoutReligionContainer
+            // 
+            this.tableLayoutReligionContainer.ColumnCount = 1;
+            this.tableLayoutReligionContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutReligionContainer.Controls.Add(this.tableLayoutReligion, 0, 1);
+            this.tableLayoutReligionContainer.Controls.Add(this.pbReligion, 0, 0);
+            this.tableLayoutReligionContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutReligionContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutReligionContainer.Name = "tableLayoutReligionContainer";
+            this.tableLayoutReligionContainer.RowCount = 2;
+            this.tableLayoutReligionContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutReligionContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutReligionContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutReligionContainer.TabIndex = 22;
+            // 
+            // panelFear
+            // 
+            this.panelFear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelFear.Controls.Add(this.tableLayoutFearContainer);
+            this.panelFear.Location = new System.Drawing.Point(716, 690);
+            this.panelFear.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelFear.Name = "panelFear";
+            this.panelFear.Size = new System.Drawing.Size(281, 326);
+            this.panelFear.TabIndex = 24;
+            // 
+            // tableLayoutFearContainer
+            // 
+            this.tableLayoutFearContainer.ColumnCount = 1;
+            this.tableLayoutFearContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutFearContainer.Controls.Add(this.tableLayoutFear, 0, 1);
+            this.tableLayoutFearContainer.Controls.Add(this.pbFear, 0, 0);
+            this.tableLayoutFearContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutFearContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutFearContainer.Name = "tableLayoutFearContainer";
+            this.tableLayoutFearContainer.RowCount = 2;
+            this.tableLayoutFearContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutFearContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutFearContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutFearContainer.TabIndex = 22;
+            // 
+            // panelPalace
+            // 
+            this.panelPalace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPalace.Controls.Add(this.tableLayoutPalaceContainer);
+            this.panelPalace.Location = new System.Drawing.Point(1023, 691);
+            this.panelPalace.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelPalace.Name = "panelPalace";
+            this.panelPalace.Size = new System.Drawing.Size(281, 326);
+            this.panelPalace.TabIndex = 24;
+            // 
+            // tableLayoutPalaceContainer
+            // 
+            this.tableLayoutPalaceContainer.ColumnCount = 1;
+            this.tableLayoutPalaceContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPalaceContainer.Controls.Add(this.tableLayoutPalace, 0, 1);
+            this.tableLayoutPalaceContainer.Controls.Add(this.pbPalace, 0, 0);
+            this.tableLayoutPalaceContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPalaceContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPalaceContainer.Name = "tableLayoutPalaceContainer";
+            this.tableLayoutPalaceContainer.RowCount = 2;
+            this.tableLayoutPalaceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPalaceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPalaceContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutPalaceContainer.TabIndex = 22;
+            // 
+            // panelDeportation
+            // 
+            this.panelDeportation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelDeportation.Controls.Add(this.tableLayoutDeportationContainer);
+            this.panelDeportation.Location = new System.Drawing.Point(1331, 692);
+            this.panelDeportation.MaximumSize = new System.Drawing.Size(281, 326);
+            this.panelDeportation.Name = "panelDeportation";
+            this.panelDeportation.Size = new System.Drawing.Size(281, 326);
+            this.panelDeportation.TabIndex = 24;
+            // 
+            // tableLayoutDeportationContainer
+            // 
+            this.tableLayoutDeportationContainer.ColumnCount = 1;
+            this.tableLayoutDeportationContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutDeportationContainer.Controls.Add(this.tableLayoutPanelDeportation, 0, 1);
+            this.tableLayoutDeportationContainer.Controls.Add(this.pbDeportation, 0, 0);
+            this.tableLayoutDeportationContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutDeportationContainer.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutDeportationContainer.Name = "tableLayoutDeportationContainer";
+            this.tableLayoutDeportationContainer.RowCount = 2;
+            this.tableLayoutDeportationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutDeportationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutDeportationContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutDeportationContainer.TabIndex = 22;
+            // 
             // Oppression
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -851,48 +1071,58 @@
             this.tableLayoutSecuritate.ResumeLayout(false);
             this.tableLayoutSecuritate.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecuritate)).EndInit();
-            this.panelConsequences.ResumeLayout(false);
             this.tableLayoutConsequences.ResumeLayout(false);
             this.tableLayoutConsequences.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbConsequences)).EndInit();
-            this.panelPropoganda.ResumeLayout(false);
             this.tableLayoutPropoganda.ResumeLayout(false);
             this.tableLayoutPropoganda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPropoganda)).EndInit();
-            this.panelLanguage.ResumeLayout(false);
             this.tableLayoutLanguage.ResumeLayout(false);
             this.tableLayoutLanguage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLanguage)).EndInit();
-            this.panelPossesions.ResumeLayout(false);
             this.tableLayoutPossesions.ResumeLayout(false);
             this.tableLayoutPossesions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPossesions)).EndInit();
-            this.panelInfluence.ResumeLayout(false);
             this.tableLayoutInfluence.ResumeLayout(false);
             this.tableLayoutInfluence.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInfluence)).EndInit();
-            this.panelExports.ResumeLayout(false);
             this.tableLayoutExports.ResumeLayout(false);
             this.tableLayoutExports.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbExports)).EndInit();
-            this.panelReligion.ResumeLayout(false);
             this.tableLayoutReligion.ResumeLayout(false);
             this.tableLayoutReligion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbReligion)).EndInit();
-            this.panelFear.ResumeLayout(false);
             this.tableLayoutFear.ResumeLayout(false);
             this.tableLayoutFear.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFear)).EndInit();
-            this.panelPalace.ResumeLayout(false);
             this.tableLayoutPalace.ResumeLayout(false);
             this.tableLayoutPalace.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPalace)).EndInit();
-            this.panelDeportation.ResumeLayout(false);
             this.tableLayoutPanelDeportation.ResumeLayout(false);
             this.tableLayoutPanelDeportation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDeportation)).EndInit();
             this.tableLayoutSecuritateContainer.ResumeLayout(false);
             this.panelSecuritate.ResumeLayout(false);
+            this.panelConsequences.ResumeLayout(false);
+            this.tableLayoutConsequencesContainer.ResumeLayout(false);
+            this.panelPropoganda.ResumeLayout(false);
+            this.tableLayoutPropagandaContainer.ResumeLayout(false);
+            this.panelLanguage.ResumeLayout(false);
+            this.tableLayoutLanguageContainer.ResumeLayout(false);
+            this.panelPossesions.ResumeLayout(false);
+            this.tableLayoutPossesionsContainer.ResumeLayout(false);
+            this.panelInfluence.ResumeLayout(false);
+            this.tableLayoutInfluenceContainer.ResumeLayout(false);
+            this.panelExports.ResumeLayout(false);
+            this.tableLayoutExportsContainer.ResumeLayout(false);
+            this.panelReligion.ResumeLayout(false);
+            this.tableLayoutReligionContainer.ResumeLayout(false);
+            this.panelFear.ResumeLayout(false);
+            this.tableLayoutFearContainer.ResumeLayout(false);
+            this.panelPalace.ResumeLayout(false);
+            this.tableLayoutPalaceContainer.ResumeLayout(false);
+            this.panelDeportation.ResumeLayout(false);
+            this.tableLayoutDeportationContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -904,57 +1134,67 @@
         private System.Windows.Forms.Label lblSecuritateQ;
         private System.Windows.Forms.Label lblSecuritateAns;
         private System.Windows.Forms.PictureBox pbSecuritate;
-        private System.Windows.Forms.Panel panelConsequences;
         private System.Windows.Forms.TableLayoutPanel tableLayoutConsequences;
         private System.Windows.Forms.Label lblConsequencesQ;
         private System.Windows.Forms.Label lblConsequencesAns;
         private System.Windows.Forms.PictureBox pbConsequences;
-        private System.Windows.Forms.Panel panelPropoganda;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPropoganda;
         private System.Windows.Forms.Label lblPropogandaQ;
         private System.Windows.Forms.Label lblPropogandaAns;
         private System.Windows.Forms.PictureBox pbPropoganda;
-        private System.Windows.Forms.Panel panelLanguage;
         private System.Windows.Forms.TableLayoutPanel tableLayoutLanguage;
         private System.Windows.Forms.Label lblLanguageQ;
         private System.Windows.Forms.Label lblLanguageAns;
         private System.Windows.Forms.PictureBox pbLanguage;
-        private System.Windows.Forms.Panel panelPossesions;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPossesions;
         private System.Windows.Forms.Label lblPossesionsQ;
         private System.Windows.Forms.Label lblPossesionsAns;
         private System.Windows.Forms.PictureBox pbPossesions;
-        private System.Windows.Forms.Panel panelInfluence;
         private System.Windows.Forms.TableLayoutPanel tableLayoutInfluence;
         private System.Windows.Forms.Label lblInfluenceQ;
         private System.Windows.Forms.Label lblInfluenceAns;
         private System.Windows.Forms.PictureBox pbInfluence;
-        private System.Windows.Forms.Panel panelExports;
         private System.Windows.Forms.TableLayoutPanel tableLayoutExports;
         private System.Windows.Forms.Label lblExportsQ;
         private System.Windows.Forms.Label lblExportsAns;
         private System.Windows.Forms.PictureBox pbExports;
-        private System.Windows.Forms.Panel panelReligion;
         private System.Windows.Forms.TableLayoutPanel tableLayoutReligion;
         private System.Windows.Forms.Label lblReligionQ;
         private System.Windows.Forms.Label lblReligionAns;
         private System.Windows.Forms.PictureBox pbReligion;
-        private System.Windows.Forms.Panel panelFear;
         private System.Windows.Forms.TableLayoutPanel tableLayoutFear;
         private System.Windows.Forms.Label lblFearQ;
         private System.Windows.Forms.Label lblFearAns;
         private System.Windows.Forms.PictureBox pbFear;
-        private System.Windows.Forms.Panel panelPalace;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPalace;
         private System.Windows.Forms.Label lblPalaceQ;
         private System.Windows.Forms.Label lblPalaceAns;
         private System.Windows.Forms.PictureBox pbPalace;
-        private System.Windows.Forms.Panel panelDeportation;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelDeportation;
         private System.Windows.Forms.Label lblDeportationQ;
         private System.Windows.Forms.Label lblDeportationAns;
         private System.Windows.Forms.PictureBox pbDeportation;
         private System.Windows.Forms.TableLayoutPanel tableLayoutSecuritateContainer;
         private System.Windows.Forms.Panel panelSecuritate;
+        private System.Windows.Forms.Panel panelConsequences;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutConsequencesContainer;
+        private System.Windows.Forms.Panel panelPropoganda;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPropagandaContainer;
+        private System.Windows.Forms.Panel panelLanguage;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageContainer;
+        private System.Windows.Forms.Panel panelPossesions;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPossesionsContainer;
+        private System.Windows.Forms.Panel panelInfluence;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutInfluenceContainer;
+        private System.Windows.Forms.Panel panelExports;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutExportsContainer;
+        private System.Windows.Forms.Panel panelReligion;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutReligionContainer;
+        private System.Windows.Forms.Panel panelFear;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutFearContainer;
+        private System.Windows.Forms.Panel panelPalace;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPalaceContainer;
+        private System.Windows.Forms.Panel panelDeportation;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutDeportationContainer;
     }
 }
