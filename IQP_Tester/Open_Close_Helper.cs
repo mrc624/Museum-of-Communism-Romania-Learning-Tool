@@ -91,7 +91,7 @@ namespace IQP_Tester
             {
                 if (Application.OpenForms[i] == form)
                 {
-                    return true;
+                    return form.Visible;
                 }
             }
             return false;
