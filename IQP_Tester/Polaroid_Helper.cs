@@ -101,7 +101,7 @@ namespace IQP_Tester
 
         public bool Is_Polaroid(Control control)
         {
-            return ((control is Panel) || (control is TableLayoutPanel)) && control.Controls.Count >= MIN_NUM_OF_CHILDREN && Find_PB(control) != null && Find_Ans(control) != null && Find_Q(control) != null;
+            return control is Panel && control.HasChildren && Find_PB(control) != null && Find_Ans(control) != null && Find_Q(control) != null;
         }
 
         public string Get_Ans_Name(Control control)
@@ -228,20 +228,22 @@ namespace IQP_Tester
 
         private void Reposition_Polaroid(Control polaroid)
         {
-            resize.Reposition(polaroid);
-
             if (polaroid is Panel)
             {
-                for (int i = 0; i < polaroid.Controls.Count; i++)
+                resize.Reposition(polaroid);
+                if (polaroid.Controls.Count > 1)
                 {
-                    if (i == 0)
+                    for (int i = 0; i < polaroid.Controls.Count; i++)
                     {
-                        resize.Reposition(polaroid.Controls[i]);
-                        resize.Center_X(polaroid.Controls[i]);
-                    }
-                    else
-                    {
-                        resize.Center_to_Other_Control(polaroid.Controls[i - 1], polaroid.Controls[i]); //goes from bottom up on the polaroid
+                        if (i == 0)
+                        {
+                            resize.Reposition(polaroid.Controls[i]);
+                            resize.Center_X(polaroid.Controls[i]);
+                        }
+                        else
+                        {
+                            resize.Center_to_Other_Control(polaroid.Controls[i - 1], polaroid.Controls[i]); //goes from bottom up on the polaroid
+                        }
                     }
                 }
             }
