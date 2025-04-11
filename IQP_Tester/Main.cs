@@ -46,6 +46,8 @@ namespace IQP_Tester
 
         TitlePage titlePage;
 
+        public const int TABLE_LAYOUT_MAIN_EDGE_MARGIN = 50;
+
         public Main()
         {
             InitializeComponent();
@@ -257,9 +259,8 @@ namespace IQP_Tester
 
         private void Main_Resize(object sender, EventArgs e)
         {
-            resize.Handle_Resize(this);
-
-            resize.Repostition_All_Main_Panels(this);
+            resize.Glue_to_Corner(tableLayoutMain, Resize_Helper.Corner.all, TABLE_LAYOUT_MAIN_EDGE_MARGIN);
+            resize.Resize_Fonts(this);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
             resize.Center_to_Other_Control(btnCredits, btnLanguage, Resize_Helper.Centering_Options.to_left);

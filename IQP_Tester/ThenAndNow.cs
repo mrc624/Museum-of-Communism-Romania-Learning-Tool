@@ -17,7 +17,7 @@ namespace IQP_Tester
         DoublePolaroid_Helper doublePolaroid_Helper;
         Open_Close_Helper openClose;
 
-        public const int TABLE_LAYOUR_MAIN_EDGE_MARGIN = 50;
+        public const int TABLE_LAYOUT_MAIN_EDGE_MARGIN = 50;
 
         public ThenAndNow(TextManager textMan, Open_Close_Helper open_close)
         {
@@ -41,7 +41,7 @@ namespace IQP_Tester
 
         private void ThenAndNow_Resize(object sender, EventArgs e)
         {
-            resize.Glue_to_Corner(tableLayoutTNMain, Resize_Helper.Corner.all, TABLE_LAYOUR_MAIN_EDGE_MARGIN);
+            resize.Glue_to_Corner(tableLayoutTNMain, Resize_Helper.Corner.all, TABLE_LAYOUT_MAIN_EDGE_MARGIN);
             resize.Resize_Fonts(this);
 
             resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
