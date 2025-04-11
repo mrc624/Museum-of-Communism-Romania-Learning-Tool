@@ -35,21 +35,20 @@ namespace IQP_Tester
 
         Dictionary<string, Dictionary<string, string>> Reformatted;
 
-        public int CONTROL_NAME_COLUMN = 0;
-        public int ENGLISH_COLUMN = 1;
-        public int ROMANIAN_COLUMN = 2;
-        public int ROWS_TO_SKIP = 1;
-        public int HEADER_ROW = 0;
+        public const int CONTROL_NAME_COLUMN = 0;
+        public const int ENGLISH_COLUMN = 1;
+        public const int ROMANIAN_COLUMN = 2;
+        public const int ROWS_TO_SKIP = 1;
+        public const int HEADER_ROW = 0;
         private bool AUTO_SIZE = true;
 
-        public string CONTROL_NAME = "control";
-        public string ROMANIAN_NAME = "Rom";
-        public string ENGLISH_NAME = "Eng";
+        public const string CONTROL_NAME = "control";
+        public const string ROMANIAN_NAME = "Rom";
+        public const string ENGLISH_NAME = "Eng";
 
-        public string HEADER_CONTROL_TEXT = "Control Name";
-        public string HEADER_ENGLISH_TEXT = "English";
-        public string HEADER_ROMANIAN_TEXT = "Romanian";
-
+        public const string HEADER_CONTROL_TEXT = "Control Name";
+        public const string HEADER_ENGLISH_TEXT = "English";
+        public const string HEADER_ROMANIAN_TEXT = "Romanian";
 
         public TableLayoutPanelCellBorderStyle LOADING = TableLayoutPanelCellBorderStyle.None;
         public TableLayoutPanelCellBorderStyle LOADED = TableLayoutPanelCellBorderStyle.Single;
@@ -322,6 +321,41 @@ namespace IQP_Tester
                     load.Close();
                 }
             }
+        }
+
+        private void btnRefreshOpenForms_Click(object sender, EventArgs e)
+        {
+            lblOpenFormsCountDisp.Text = System.Windows.Forms.Application.OpenForms.Count.ToString();
+            Empty_OpenForms_Table();
+            Fill_OpenForms_Table();
+        }
+
+        private void Fill_OpenForms_Table()
+        {
+            tableLayoutPanelOpenForms.Visible = false;
+
+            for (int i = 0; i < System.Windows.Forms.Application.OpenForms.Count; i++)
+            {
+                tableLayoutPanelOpenForms.RowCount++;
+                string control_name = System.Windows.Forms.Application.OpenForms[i].Name;
+                Label control = tableLayout_Helper.Get_Standard_Label(control_name, control_name + i.ToString());
+                tableLayoutPanelOpenForms.Controls.Add(control, CONTROL_NAME_COLUMN, i);
+            }
+            tableLayout_Helper.Set_Row_Heights(tableLayoutPanelOpenForms);
+            tableLayoutPanelOpenForms.CellBorderStyle = LOADED;
+            tableLayoutPanelOpenForms.Visible = true;
+        }
+
+        private void Empty_OpenForms_Table()
+        {
+            tableLayoutPanelOpenForms.Visible = false;
+            tableLayoutPanelOpenForms.CellBorderStyle = LOADING;
+            while (tableLayoutPanelOpenForms.Controls.Count > 0)
+            {
+                tableLayoutPanelOpenForms.Controls[0].Dispose();
+            }
+            tableLayoutPanelOpenForms.RowCount = 0;
+            Add_Headers();
         }
     }
 }

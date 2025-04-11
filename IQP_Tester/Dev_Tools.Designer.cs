@@ -38,16 +38,23 @@
             this.lblEditTextEnglish = new System.Windows.Forms.Label();
             this.lblEditTextControlName = new System.Windows.Forms.Label();
             this.btnEditTextRefresh = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.TabStastics = new System.Windows.Forms.TabPage();
+            this.panelOpenForms = new System.Windows.Forms.Panel();
+            this.btnRefreshOpenForms = new System.Windows.Forms.Button();
+            this.tableLayoutPanelOpenForms = new System.Windows.Forms.TableLayoutPanel();
+            this.lblOpenFormsCountDisp = new System.Windows.Forms.Label();
+            this.lblOpenFormsCount = new System.Windows.Forms.Label();
             this.TabControlDevs.SuspendLayout();
             this.tabText_Edit.SuspendLayout();
             this.tableLayoutDevEditText.SuspendLayout();
+            this.TabStastics.SuspendLayout();
+            this.panelOpenForms.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControlDevs
             // 
             this.TabControlDevs.Controls.Add(this.tabText_Edit);
-            this.TabControlDevs.Controls.Add(this.tabPage2);
+            this.TabControlDevs.Controls.Add(this.TabStastics);
             this.TabControlDevs.Location = new System.Drawing.Point(12, 12);
             this.TabControlDevs.Name = "TabControlDevs";
             this.TabControlDevs.SelectedIndex = 0;
@@ -167,21 +174,78 @@
             this.btnEditTextRefresh.UseVisualStyleBackColor = false;
             this.btnEditTextRefresh.Click += new System.EventHandler(this.btnEditTextRefresh_Click);
             // 
-            // tabPage2
+            // TabStastics
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(774, 618);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.TabStastics.Controls.Add(this.panelOpenForms);
+            this.TabStastics.Location = new System.Drawing.Point(4, 22);
+            this.TabStastics.Name = "TabStastics";
+            this.TabStastics.Padding = new System.Windows.Forms.Padding(3);
+            this.TabStastics.Size = new System.Drawing.Size(774, 618);
+            this.TabStastics.TabIndex = 1;
+            this.TabStastics.Text = "Statistics";
+            this.TabStastics.UseVisualStyleBackColor = true;
+            // 
+            // panelOpenForms
+            // 
+            this.panelOpenForms.Controls.Add(this.btnRefreshOpenForms);
+            this.panelOpenForms.Controls.Add(this.tableLayoutPanelOpenForms);
+            this.panelOpenForms.Controls.Add(this.lblOpenFormsCountDisp);
+            this.panelOpenForms.Controls.Add(this.lblOpenFormsCount);
+            this.panelOpenForms.Location = new System.Drawing.Point(6, 6);
+            this.panelOpenForms.Name = "panelOpenForms";
+            this.panelOpenForms.Size = new System.Drawing.Size(392, 139);
+            this.panelOpenForms.TabIndex = 0;
+            // 
+            // btnRefreshOpenForms
+            // 
+            this.btnRefreshOpenForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRefreshOpenForms.Location = new System.Drawing.Point(314, 113);
+            this.btnRefreshOpenForms.Name = "btnRefreshOpenForms";
+            this.btnRefreshOpenForms.Size = new System.Drawing.Size(75, 23);
+            this.btnRefreshOpenForms.TabIndex = 3;
+            this.btnRefreshOpenForms.Text = "Refresh";
+            this.btnRefreshOpenForms.UseVisualStyleBackColor = false;
+            this.btnRefreshOpenForms.Click += new System.EventHandler(this.btnRefreshOpenForms_Click);
+            // 
+            // tableLayoutPanelOpenForms
+            // 
+            this.tableLayoutPanelOpenForms.AutoScroll = true;
+            this.tableLayoutPanelOpenForms.ColumnCount = 1;
+            this.tableLayoutPanelOpenForms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelOpenForms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelOpenForms.Location = new System.Drawing.Point(5, 24);
+            this.tableLayoutPanelOpenForms.Name = "tableLayoutPanelOpenForms";
+            this.tableLayoutPanelOpenForms.RowCount = 1;
+            this.tableLayoutPanelOpenForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46F));
+            this.tableLayoutPanelOpenForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54F));
+            this.tableLayoutPanelOpenForms.Size = new System.Drawing.Size(384, 83);
+            this.tableLayoutPanelOpenForms.TabIndex = 2;
+            // 
+            // lblOpenFormsCountDisp
+            // 
+            this.lblOpenFormsCountDisp.AutoSize = true;
+            this.lblOpenFormsCountDisp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOpenFormsCountDisp.Location = new System.Drawing.Point(155, 1);
+            this.lblOpenFormsCountDisp.Name = "lblOpenFormsCountDisp";
+            this.lblOpenFormsCountDisp.Size = new System.Drawing.Size(76, 20);
+            this.lblOpenFormsCountDisp.TabIndex = 1;
+            this.lblOpenFormsCountDisp.Text = "Unknown";
+            // 
+            // lblOpenFormsCount
+            // 
+            this.lblOpenFormsCount.AutoSize = true;
+            this.lblOpenFormsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOpenFormsCount.Location = new System.Drawing.Point(1, 1);
+            this.lblOpenFormsCount.Name = "lblOpenFormsCount";
+            this.lblOpenFormsCount.Size = new System.Drawing.Size(148, 20);
+            this.lblOpenFormsCount.TabIndex = 0;
+            this.lblOpenFormsCount.Text = "Open Forms Count:";
             // 
             // Dev_Tools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(806, 668);
+            this.ClientSize = new System.Drawing.Size(805, 669);
             this.Controls.Add(this.TabControlDevs);
             this.Name = "Dev_Tools";
             this.Text = "Dev_Tools";
@@ -189,6 +253,9 @@
             this.tabText_Edit.ResumeLayout(false);
             this.tableLayoutDevEditText.ResumeLayout(false);
             this.tableLayoutDevEditText.PerformLayout();
+            this.TabStastics.ResumeLayout(false);
+            this.panelOpenForms.ResumeLayout(false);
+            this.panelOpenForms.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -197,7 +264,7 @@
 
         private System.Windows.Forms.TabControl TabControlDevs;
         private System.Windows.Forms.TabPage tabText_Edit;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage TabStastics;
         private System.Windows.Forms.TableLayoutPanel tableLayoutDevEditText;
         private System.Windows.Forms.Label lblEditTextRomanian;
         private System.Windows.Forms.Label lblEditTextEnglish;
@@ -206,5 +273,10 @@
         private System.Windows.Forms.Button btnEditTextApply;
         private System.Windows.Forms.Button btnGenerateTextCSV;
         private System.Windows.Forms.Button btnReadCSV;
+        private System.Windows.Forms.Panel panelOpenForms;
+        private System.Windows.Forms.Label lblOpenFormsCountDisp;
+        private System.Windows.Forms.Label lblOpenFormsCount;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelOpenForms;
+        private System.Windows.Forms.Button btnRefreshOpenForms;
     }
 }
