@@ -48,6 +48,15 @@ namespace IQP_Tester
             pbDPNow.Image = pictures[DoublePolaroid_Helper.NOW_INDEX].Image;
         }
 
+        public void Update_After_Gen(Control DP)
+        {
+            doublepolaroid = DP;
+            Update_Controls();
+            Translate_DoublePolaroid();
+            textManager.Update_One_Form(this);
+            DoublePolaroid_Resize(this, new EventArgs());
+        }
+
         private void Translate_DoublePolaroid()
         {
             lblDPText.Text = textManager.Get_Text(labelText, textManager.Get_Translated_Dictionary());

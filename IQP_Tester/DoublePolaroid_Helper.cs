@@ -45,6 +45,8 @@ namespace IQP_Tester
 
         public List<Control> DoublePolaroids = new List<Control>();
 
+        DoublePolaroid doublePolaroid;
+
         public static int check_count = 0;
 
         public bool Is_DoublePolaroid(Control control)
@@ -139,7 +141,12 @@ namespace IQP_Tester
                 control = control.Parent;
             }
 
-            DoublePolaroid doublePolaroid = new DoublePolaroid(openClose, textManager, control);
+            if (doublePolaroid == null)
+            {
+                doublePolaroid = new DoublePolaroid(openClose, textManager, control);
+            }
+            openClose.Interaction();
+            doublePolaroid.Update_After_Gen(control);
             openClose.FadeIn(doublePolaroid);
         }
 

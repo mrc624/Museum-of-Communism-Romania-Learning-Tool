@@ -58,6 +58,7 @@ namespace IQP_Tester
             lblAns = polaroid_Zoom_Helper.Find_Ans(polaroid);
 
             Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
+            Polaroid_Zoom_Resize(this, new EventArgs());
         }
 
         private void Handle_Long_Ans()

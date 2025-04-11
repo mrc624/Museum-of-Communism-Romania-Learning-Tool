@@ -114,6 +114,7 @@ namespace IQP_Tester
                     if (form.Opacity < 1.0)
                     {
                         form.Opacity += increment; // increase opacity gradually
+                        form.BringToFront();
                     }
                     else
                     {
