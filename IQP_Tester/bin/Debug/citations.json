@@ -150,6 +150,16 @@
     "pbMediaNow": "NEED",
     "pbMediaThen": "NEED",
     "pbClassesNow": "NEED",
-    "pbClassesThen": "NEED"
+    "pbClassesThen": "NEED",
+    "pbUniformNow": "NEED",
+    "pbUniformThen": "NEED",
+    "pbNecessitiesNow": "NEED",
+    "pbNecessitiesThen": "NEED",
+    "pbHandwritingNow": "NEED",
+    "pbHandwritingThen": "NEED",
+    "pbFreetimeNow": "NEED",
+    "pbFreetimeThen": "NEED",
+    "pbCarsNow": "NEED",
+    "pbCarsThen": "NEED"
   }
 }

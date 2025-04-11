@@ -51,6 +51,15 @@ namespace IQP_Tester
             lblAnswer.Text = answer;
         }
 
+        public void Update_After_Gen(Control polaroid)
+        {
+            pb = polaroid_Zoom_Helper.Find_PB(polaroid);
+            lblQ = polaroid_Zoom_Helper.Find_Q(polaroid);
+            lblAns = polaroid_Zoom_Helper.Find_Ans(polaroid);
+
+            Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
+        }
+
         private void Handle_Long_Ans()
         {
             string name = textManager.Get_Text(polaroid_Zoom_Helper.Get_Long_Ans_Name(lblAns));

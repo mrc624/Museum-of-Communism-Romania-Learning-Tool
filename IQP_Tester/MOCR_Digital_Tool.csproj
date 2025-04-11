@@ -301,15 +301,23 @@
     <Content Include="bibliography.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="CarsNow.png" />
+    <Content Include="CarsThen.png" />
     <Content Include="Chain.png" />
     <Content Include="citations.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ClassroomsStuffNow.jpeg" />
     <Content Include="ClassroomsStuffThen.png" />
+    <Content Include="ClothesNow.png" />
+    <Content Include="ClothesThen.png" />
     <Content Include="fancy soap luxury.HEIC">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="FreeTimeNow.png" />
+    <Content Include="FreeTimeThen.png" />
+    <Content Include="HandwritingNow.png" />
+    <Content Include="HandwritingThen.png" />
     <Content Include="IQP_Tester_TemporaryKey.pfx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -344,11 +352,17 @@
     <Content Include="MarketThen.jpg" />
     <Content Include="MediaNow.jpg" />
     <Content Include="MediaThen.png" />
+    <Content Include="NecessitiesNow.png" />
+    <Content Include="NecessitiesThen.png" />
     <Content Include="NeighborhoodNow.png" />
     <Content Include="NeighborhoodThen.png" />
     <Content Include="text_manager.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="ThenAndNow_Pictures\Clothes\ClothesThen.png" />
+    <None Include="ThenAndNow_Pictures\Clothes\ClothesNow.png" />
+    <None Include="ThenAndNow_Pictures\Cars\CarsThen.png" />
+    <None Include="ThenAndNow_Pictures\Cars\CarsNow.png" />
     <Content Include="ThenAndNow_Pictures\Food\MarketThen.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -361,12 +375,18 @@
     <Content Include="ThenAndNow_Pictures\Classrooms\ClassroomsStuffNow.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="ThenAndNow_Pictures\Handwriting\HandwritingThen.png" />
+    <None Include="ThenAndNow_Pictures\Handwriting\HandwritingNow.png" />
+    <None Include="ThenAndNow_Pictures\FreeTime\FreeTimeThen.png" />
+    <None Include="ThenAndNow_Pictures\FreeTime\FreeTimeNow.png" />
     <Content Include="ThenAndNow_Pictures\Media\MediaThen.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="ThenAndNow_Pictures\Media\MediaNow.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="ThenAndNow_Pictures\Necessities\NecessitiesThen.png" />
+    <None Include="ThenAndNow_Pictures\Necessities\NecessitiesNow.png" />
     <Content Include="ThenAndNow_Pictures\Neighborhood\NeighborhoodThen.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

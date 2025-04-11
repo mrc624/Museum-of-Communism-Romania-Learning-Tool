@@ -103,6 +103,26 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CarsNow {
+            get {
+                object obj = ResourceManager.GetObject("CarsNow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CarsThen {
+            get {
+                object obj = ResourceManager.GetObject("CarsThen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ceausescu {
             get {
                 object obj = ResourceManager.GetObject("Ceausescu", resourceCulture);
@@ -176,6 +196,26 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap ClassroomsStuffThen {
             get {
                 object obj = ResourceManager.GetObject("ClassroomsStuffThen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ClothesNow {
+            get {
+                object obj = ResourceManager.GetObject("ClothesNow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ClothesThen {
+            get {
+                object obj = ResourceManager.GetObject("ClothesThen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +333,49 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FreeTimeNow {
+            get {
+                object obj = ResourceManager.GetObject("FreeTimeNow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FreeTimeThen {
+            get {
+                object obj = ResourceManager.GetObject("FreeTimeThen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gheorghe {
             get {
                 object obj = ResourceManager.GetObject("Gheorghe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HandwritingNow {
+            get {
+                object obj = ResourceManager.GetObject("HandwritingNow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HandwritingThen {
+            get {
+                object obj = ResourceManager.GetObject("HandwritingThen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,6 +506,26 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap MediaThen {
             get {
                 object obj = ResourceManager.GetObject("MediaThen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NecessitiesNow {
+            get {
+                object obj = ResourceManager.GetObject("NecessitiesNow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NecessitiesThen {
+            get {
+                object obj = ResourceManager.GetObject("NecessitiesThen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

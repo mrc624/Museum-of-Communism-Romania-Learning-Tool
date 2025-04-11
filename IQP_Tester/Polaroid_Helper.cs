@@ -48,12 +48,12 @@ namespace IQP_Tester
             {
                 Polaroid = (Control)sender;
             }
-            if (polaroid_zoom != null)
+            if (polaroid_zoom == null)
             {
-                polaroid_zoom.Close();
+                polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose);
             }
-            polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose);
             openClose.Interaction();
+            polaroid_zoom.Update_After_Gen(Polaroid);
             openClose.FadeIn(polaroid_zoom);
         }
 

@@ -30,91 +30,91 @@
         {
             this.btnLanguage = new System.Windows.Forms.Button();
             this.tableLayoutFoodPbTN = new System.Windows.Forms.TableLayoutPanel();
-            this.pbFoodNow = new System.Windows.Forms.PictureBox();
-            this.pbFoodThen = new System.Windows.Forms.PictureBox();
             this.lblFoodTN = new System.Windows.Forms.Label();
             this.tableLayoutFoodTNDP = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutTN = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutUniformTNDP = new System.Windows.Forms.TableLayoutPanel();
             this.lblUniformTN = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbUniformNow = new System.Windows.Forms.PictureBox();
-            this.pbUniformThen = new System.Windows.Forms.PictureBox();
             this.tableLayoutNecessitiesTNDP = new System.Windows.Forms.TableLayoutPanel();
             this.lblNecessitiesTN = new System.Windows.Forms.Label();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbNecessitiesNow = new System.Windows.Forms.PictureBox();
-            this.pbNecessitiesThen = new System.Windows.Forms.PictureBox();
             this.tableLayoutNeighborhoodTNDP = new System.Windows.Forms.TableLayoutPanel();
             this.lblNeighborhoodTN = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbNeighborhoodNow = new System.Windows.Forms.PictureBox();
-            this.pbNeighborhoodThen = new System.Windows.Forms.PictureBox();
             this.tableLayoutHandwritingTNDP = new System.Windows.Forms.TableLayoutPanel();
             this.lblHandwritingTN = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbHandwritingNow = new System.Windows.Forms.PictureBox();
-            this.pbHandwritingThen = new System.Windows.Forms.PictureBox();
             this.tableLayoutFreetimeTNDP = new System.Windows.Forms.TableLayoutPanel();
             this.lblFreetimeTN = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbFreetimeNow = new System.Windows.Forms.PictureBox();
-            this.pbFreetimeThen = new System.Windows.Forms.PictureBox();
             this.tableLayoutCarsTNDP = new System.Windows.Forms.TableLayoutPanel();
             this.lblCarsTN = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbCarsNow = new System.Windows.Forms.PictureBox();
-            this.pbCarsThen = new System.Windows.Forms.PictureBox();
             this.tableLayoutMediaTNDP = new System.Windows.Forms.TableLayoutPanel();
             this.lblMediaTN = new System.Windows.Forms.Label();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbMediaNow = new System.Windows.Forms.PictureBox();
-            this.pbMediaThen = new System.Windows.Forms.PictureBox();
             this.tableLayoutClassesTNDP = new System.Windows.Forms.TableLayoutPanel();
             this.lblClassesTN = new System.Windows.Forms.Label();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.pbClassesNow = new System.Windows.Forms.PictureBox();
-            this.pbClassesThen = new System.Windows.Forms.PictureBox();
             this.tableLayoutTNMain = new System.Windows.Forms.TableLayoutPanel();
             this.lblThenAndNowTitle = new System.Windows.Forms.Label();
+            this.pbUniformNow = new System.Windows.Forms.PictureBox();
+            this.pbUniformThen = new System.Windows.Forms.PictureBox();
+            this.pbNecessitiesNow = new System.Windows.Forms.PictureBox();
+            this.pbNecessitiesThen = new System.Windows.Forms.PictureBox();
+            this.pbFoodNow = new System.Windows.Forms.PictureBox();
+            this.pbFoodThen = new System.Windows.Forms.PictureBox();
+            this.pbNeighborhoodNow = new System.Windows.Forms.PictureBox();
+            this.pbNeighborhoodThen = new System.Windows.Forms.PictureBox();
+            this.pbHandwritingNow = new System.Windows.Forms.PictureBox();
+            this.pbHandwritingThen = new System.Windows.Forms.PictureBox();
+            this.pbFreetimeNow = new System.Windows.Forms.PictureBox();
+            this.pbFreetimeThen = new System.Windows.Forms.PictureBox();
+            this.pbCarsNow = new System.Windows.Forms.PictureBox();
+            this.pbCarsThen = new System.Windows.Forms.PictureBox();
+            this.pbMediaNow = new System.Windows.Forms.PictureBox();
+            this.pbMediaThen = new System.Windows.Forms.PictureBox();
+            this.pbClassesNow = new System.Windows.Forms.PictureBox();
+            this.pbClassesThen = new System.Windows.Forms.PictureBox();
             this.tableLayoutFoodPbTN.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoodNow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoodThen)).BeginInit();
             this.tableLayoutFoodTNDP.SuspendLayout();
             this.tableLayoutTN.SuspendLayout();
             this.tableLayoutUniformTNDP.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUniformNow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUniformThen)).BeginInit();
             this.tableLayoutNecessitiesTNDP.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNecessitiesNow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNecessitiesThen)).BeginInit();
             this.tableLayoutNeighborhoodTNDP.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNeighborhoodNow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNeighborhoodThen)).BeginInit();
             this.tableLayoutHandwritingTNDP.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHandwritingNow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHandwritingThen)).BeginInit();
             this.tableLayoutFreetimeTNDP.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFreetimeNow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFreetimeThen)).BeginInit();
             this.tableLayoutCarsTNDP.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCarsNow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCarsThen)).BeginInit();
             this.tableLayoutMediaTNDP.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMediaNow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMediaThen)).BeginInit();
             this.tableLayoutClassesTNDP.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
+            this.tableLayoutTNMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUniformNow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUniformThen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNecessitiesNow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNecessitiesThen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoodNow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoodThen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNeighborhoodNow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNeighborhoodThen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHandwritingNow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHandwritingThen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFreetimeNow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFreetimeThen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarsNow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarsThen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMediaNow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMediaThen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClassesNow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClassesThen)).BeginInit();
-            this.tableLayoutTNMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -147,32 +147,6 @@
             this.tableLayoutFoodPbTN.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutFoodPbTN.Size = new System.Drawing.Size(610, 227);
             this.tableLayoutFoodPbTN.TabIndex = 0;
-            // 
-            // pbFoodNow
-            // 
-            this.pbFoodNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFoodNow.Image = global::IQP_Tester.Properties.Resources.MarketNow;
-            this.pbFoodNow.Location = new System.Drawing.Point(308, 3);
-            this.pbFoodNow.Name = "pbFoodNow";
-            this.pbFoodNow.Size = new System.Drawing.Size(299, 221);
-            this.pbFoodNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFoodNow.TabIndex = 1;
-            this.pbFoodNow.TabStop = false;
-            // 
-            // pbFoodThen
-            // 
-            this.pbFoodThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFoodThen.Image = global::IQP_Tester.Properties.Resources.MarketThen;
-            this.pbFoodThen.Location = new System.Drawing.Point(3, 3);
-            this.pbFoodThen.Name = "pbFoodThen";
-            this.pbFoodThen.Size = new System.Drawing.Size(299, 221);
-            this.pbFoodThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFoodThen.TabIndex = 0;
-            this.pbFoodThen.TabStop = false;
             // 
             // lblFoodTN
             // 
@@ -281,30 +255,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(610, 227);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // pbUniformNow
-            // 
-            this.pbUniformNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbUniformNow.Location = new System.Drawing.Point(308, 3);
-            this.pbUniformNow.Name = "pbUniformNow";
-            this.pbUniformNow.Size = new System.Drawing.Size(299, 221);
-            this.pbUniformNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUniformNow.TabIndex = 1;
-            this.pbUniformNow.TabStop = false;
-            // 
-            // pbUniformThen
-            // 
-            this.pbUniformThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbUniformThen.Location = new System.Drawing.Point(3, 3);
-            this.pbUniformThen.Name = "pbUniformThen";
-            this.pbUniformThen.Size = new System.Drawing.Size(299, 221);
-            this.pbUniformThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUniformThen.TabIndex = 0;
-            this.pbUniformThen.TabStop = false;
-            // 
             // tableLayoutNecessitiesTNDP
             // 
             this.tableLayoutNecessitiesTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -354,30 +304,6 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(612, 228);
             this.tableLayoutPanel11.TabIndex = 0;
             // 
-            // pbNecessitiesNow
-            // 
-            this.pbNecessitiesNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNecessitiesNow.Location = new System.Drawing.Point(309, 3);
-            this.pbNecessitiesNow.Name = "pbNecessitiesNow";
-            this.pbNecessitiesNow.Size = new System.Drawing.Size(300, 222);
-            this.pbNecessitiesNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbNecessitiesNow.TabIndex = 1;
-            this.pbNecessitiesNow.TabStop = false;
-            // 
-            // pbNecessitiesThen
-            // 
-            this.pbNecessitiesThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNecessitiesThen.Location = new System.Drawing.Point(3, 3);
-            this.pbNecessitiesThen.Name = "pbNecessitiesThen";
-            this.pbNecessitiesThen.Size = new System.Drawing.Size(300, 222);
-            this.pbNecessitiesThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbNecessitiesThen.TabIndex = 0;
-            this.pbNecessitiesThen.TabStop = false;
-            // 
             // tableLayoutNeighborhoodTNDP
             // 
             this.tableLayoutNeighborhoodTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -426,32 +352,6 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(612, 227);
             this.tableLayoutPanel7.TabIndex = 0;
-            // 
-            // pbNeighborhoodNow
-            // 
-            this.pbNeighborhoodNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNeighborhoodNow.Image = global::IQP_Tester.Properties.Resources.NeighborhoodNow;
-            this.pbNeighborhoodNow.Location = new System.Drawing.Point(309, 3);
-            this.pbNeighborhoodNow.Name = "pbNeighborhoodNow";
-            this.pbNeighborhoodNow.Size = new System.Drawing.Size(300, 221);
-            this.pbNeighborhoodNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbNeighborhoodNow.TabIndex = 1;
-            this.pbNeighborhoodNow.TabStop = false;
-            // 
-            // pbNeighborhoodThen
-            // 
-            this.pbNeighborhoodThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNeighborhoodThen.Image = global::IQP_Tester.Properties.Resources.NeighborhoodThen;
-            this.pbNeighborhoodThen.Location = new System.Drawing.Point(3, 3);
-            this.pbNeighborhoodThen.Name = "pbNeighborhoodThen";
-            this.pbNeighborhoodThen.Size = new System.Drawing.Size(300, 221);
-            this.pbNeighborhoodThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbNeighborhoodThen.TabIndex = 0;
-            this.pbNeighborhoodThen.TabStop = false;
             // 
             // tableLayoutHandwritingTNDP
             // 
@@ -503,30 +403,6 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(612, 227);
             this.tableLayoutPanel9.TabIndex = 0;
             // 
-            // pbHandwritingNow
-            // 
-            this.pbHandwritingNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbHandwritingNow.Location = new System.Drawing.Point(309, 3);
-            this.pbHandwritingNow.Name = "pbHandwritingNow";
-            this.pbHandwritingNow.Size = new System.Drawing.Size(300, 221);
-            this.pbHandwritingNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbHandwritingNow.TabIndex = 1;
-            this.pbHandwritingNow.TabStop = false;
-            // 
-            // pbHandwritingThen
-            // 
-            this.pbHandwritingThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbHandwritingThen.Location = new System.Drawing.Point(3, 3);
-            this.pbHandwritingThen.Name = "pbHandwritingThen";
-            this.pbHandwritingThen.Size = new System.Drawing.Size(300, 221);
-            this.pbHandwritingThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbHandwritingThen.TabIndex = 0;
-            this.pbHandwritingThen.TabStop = false;
-            // 
             // tableLayoutFreetimeTNDP
             // 
             this.tableLayoutFreetimeTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -575,30 +451,6 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(610, 228);
             this.tableLayoutPanel5.TabIndex = 0;
-            // 
-            // pbFreetimeNow
-            // 
-            this.pbFreetimeNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFreetimeNow.Location = new System.Drawing.Point(308, 3);
-            this.pbFreetimeNow.Name = "pbFreetimeNow";
-            this.pbFreetimeNow.Size = new System.Drawing.Size(299, 222);
-            this.pbFreetimeNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFreetimeNow.TabIndex = 1;
-            this.pbFreetimeNow.TabStop = false;
-            // 
-            // pbFreetimeThen
-            // 
-            this.pbFreetimeThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFreetimeThen.Location = new System.Drawing.Point(3, 3);
-            this.pbFreetimeThen.Name = "pbFreetimeThen";
-            this.pbFreetimeThen.Size = new System.Drawing.Size(299, 222);
-            this.pbFreetimeThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFreetimeThen.TabIndex = 0;
-            this.pbFreetimeThen.TabStop = false;
             // 
             // tableLayoutCarsTNDP
             // 
@@ -649,30 +501,6 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(610, 228);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
-            // pbCarsNow
-            // 
-            this.pbCarsNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbCarsNow.Location = new System.Drawing.Point(308, 3);
-            this.pbCarsNow.Name = "pbCarsNow";
-            this.pbCarsNow.Size = new System.Drawing.Size(299, 222);
-            this.pbCarsNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCarsNow.TabIndex = 1;
-            this.pbCarsNow.TabStop = false;
-            // 
-            // pbCarsThen
-            // 
-            this.pbCarsThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbCarsThen.Location = new System.Drawing.Point(3, 3);
-            this.pbCarsThen.Name = "pbCarsThen";
-            this.pbCarsThen.Size = new System.Drawing.Size(299, 222);
-            this.pbCarsThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCarsThen.TabIndex = 0;
-            this.pbCarsThen.TabStop = false;
-            // 
             // tableLayoutMediaTNDP
             // 
             this.tableLayoutMediaTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -721,32 +549,6 @@
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel13.Size = new System.Drawing.Size(610, 227);
             this.tableLayoutPanel13.TabIndex = 0;
-            // 
-            // pbMediaNow
-            // 
-            this.pbMediaNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMediaNow.Image = global::IQP_Tester.Properties.Resources.MediaNow;
-            this.pbMediaNow.Location = new System.Drawing.Point(308, 3);
-            this.pbMediaNow.Name = "pbMediaNow";
-            this.pbMediaNow.Size = new System.Drawing.Size(299, 221);
-            this.pbMediaNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMediaNow.TabIndex = 1;
-            this.pbMediaNow.TabStop = false;
-            // 
-            // pbMediaThen
-            // 
-            this.pbMediaThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMediaThen.Image = global::IQP_Tester.Properties.Resources.MediaThen;
-            this.pbMediaThen.Location = new System.Drawing.Point(3, 3);
-            this.pbMediaThen.Name = "pbMediaThen";
-            this.pbMediaThen.Size = new System.Drawing.Size(299, 221);
-            this.pbMediaThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMediaThen.TabIndex = 0;
-            this.pbMediaThen.TabStop = false;
             // 
             // tableLayoutClassesTNDP
             // 
@@ -797,32 +599,6 @@
             this.tableLayoutPanel15.Size = new System.Drawing.Size(610, 227);
             this.tableLayoutPanel15.TabIndex = 0;
             // 
-            // pbClassesNow
-            // 
-            this.pbClassesNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbClassesNow.Image = global::IQP_Tester.Properties.Resources.ClassroomsStuffNow;
-            this.pbClassesNow.Location = new System.Drawing.Point(308, 3);
-            this.pbClassesNow.Name = "pbClassesNow";
-            this.pbClassesNow.Size = new System.Drawing.Size(299, 221);
-            this.pbClassesNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbClassesNow.TabIndex = 1;
-            this.pbClassesNow.TabStop = false;
-            // 
-            // pbClassesThen
-            // 
-            this.pbClassesThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbClassesThen.Image = global::IQP_Tester.Properties.Resources.ClassroomsStuffThen;
-            this.pbClassesThen.Location = new System.Drawing.Point(3, 3);
-            this.pbClassesThen.Name = "pbClassesThen";
-            this.pbClassesThen.Size = new System.Drawing.Size(299, 221);
-            this.pbClassesThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbClassesThen.TabIndex = 0;
-            this.pbClassesThen.TabStop = false;
-            // 
             // tableLayoutTNMain
             // 
             this.tableLayoutTNMain.ColumnCount = 1;
@@ -850,6 +626,240 @@
             this.lblThenAndNowTitle.Text = "Unknown";
             this.lblThenAndNowTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pbUniformNow
+            // 
+            this.pbUniformNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbUniformNow.Image = global::IQP_Tester.Properties.Resources.ClothesNow;
+            this.pbUniformNow.Location = new System.Drawing.Point(308, 3);
+            this.pbUniformNow.Name = "pbUniformNow";
+            this.pbUniformNow.Size = new System.Drawing.Size(299, 221);
+            this.pbUniformNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUniformNow.TabIndex = 1;
+            this.pbUniformNow.TabStop = false;
+            // 
+            // pbUniformThen
+            // 
+            this.pbUniformThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbUniformThen.Image = global::IQP_Tester.Properties.Resources.ClothesThen;
+            this.pbUniformThen.Location = new System.Drawing.Point(3, 3);
+            this.pbUniformThen.Name = "pbUniformThen";
+            this.pbUniformThen.Size = new System.Drawing.Size(299, 221);
+            this.pbUniformThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUniformThen.TabIndex = 0;
+            this.pbUniformThen.TabStop = false;
+            // 
+            // pbNecessitiesNow
+            // 
+            this.pbNecessitiesNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbNecessitiesNow.Image = global::IQP_Tester.Properties.Resources.NecessitiesNow;
+            this.pbNecessitiesNow.Location = new System.Drawing.Point(309, 3);
+            this.pbNecessitiesNow.Name = "pbNecessitiesNow";
+            this.pbNecessitiesNow.Size = new System.Drawing.Size(300, 222);
+            this.pbNecessitiesNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNecessitiesNow.TabIndex = 1;
+            this.pbNecessitiesNow.TabStop = false;
+            // 
+            // pbNecessitiesThen
+            // 
+            this.pbNecessitiesThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbNecessitiesThen.Image = global::IQP_Tester.Properties.Resources.NecessitiesThen;
+            this.pbNecessitiesThen.Location = new System.Drawing.Point(3, 3);
+            this.pbNecessitiesThen.Name = "pbNecessitiesThen";
+            this.pbNecessitiesThen.Size = new System.Drawing.Size(300, 222);
+            this.pbNecessitiesThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNecessitiesThen.TabIndex = 0;
+            this.pbNecessitiesThen.TabStop = false;
+            // 
+            // pbFoodNow
+            // 
+            this.pbFoodNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbFoodNow.Image = global::IQP_Tester.Properties.Resources.MarketNow;
+            this.pbFoodNow.Location = new System.Drawing.Point(308, 3);
+            this.pbFoodNow.Name = "pbFoodNow";
+            this.pbFoodNow.Size = new System.Drawing.Size(299, 221);
+            this.pbFoodNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFoodNow.TabIndex = 1;
+            this.pbFoodNow.TabStop = false;
+            // 
+            // pbFoodThen
+            // 
+            this.pbFoodThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbFoodThen.Image = global::IQP_Tester.Properties.Resources.MarketThen;
+            this.pbFoodThen.Location = new System.Drawing.Point(3, 3);
+            this.pbFoodThen.Name = "pbFoodThen";
+            this.pbFoodThen.Size = new System.Drawing.Size(299, 221);
+            this.pbFoodThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFoodThen.TabIndex = 0;
+            this.pbFoodThen.TabStop = false;
+            // 
+            // pbNeighborhoodNow
+            // 
+            this.pbNeighborhoodNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbNeighborhoodNow.Image = global::IQP_Tester.Properties.Resources.NeighborhoodNow;
+            this.pbNeighborhoodNow.Location = new System.Drawing.Point(309, 3);
+            this.pbNeighborhoodNow.Name = "pbNeighborhoodNow";
+            this.pbNeighborhoodNow.Size = new System.Drawing.Size(300, 221);
+            this.pbNeighborhoodNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNeighborhoodNow.TabIndex = 1;
+            this.pbNeighborhoodNow.TabStop = false;
+            // 
+            // pbNeighborhoodThen
+            // 
+            this.pbNeighborhoodThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbNeighborhoodThen.Image = global::IQP_Tester.Properties.Resources.NeighborhoodThen;
+            this.pbNeighborhoodThen.Location = new System.Drawing.Point(3, 3);
+            this.pbNeighborhoodThen.Name = "pbNeighborhoodThen";
+            this.pbNeighborhoodThen.Size = new System.Drawing.Size(300, 221);
+            this.pbNeighborhoodThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNeighborhoodThen.TabIndex = 0;
+            this.pbNeighborhoodThen.TabStop = false;
+            // 
+            // pbHandwritingNow
+            // 
+            this.pbHandwritingNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbHandwritingNow.Image = global::IQP_Tester.Properties.Resources.HandwritingNow;
+            this.pbHandwritingNow.Location = new System.Drawing.Point(309, 3);
+            this.pbHandwritingNow.Name = "pbHandwritingNow";
+            this.pbHandwritingNow.Size = new System.Drawing.Size(300, 221);
+            this.pbHandwritingNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbHandwritingNow.TabIndex = 1;
+            this.pbHandwritingNow.TabStop = false;
+            // 
+            // pbHandwritingThen
+            // 
+            this.pbHandwritingThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbHandwritingThen.Image = global::IQP_Tester.Properties.Resources.HandwritingThen;
+            this.pbHandwritingThen.Location = new System.Drawing.Point(3, 3);
+            this.pbHandwritingThen.Name = "pbHandwritingThen";
+            this.pbHandwritingThen.Size = new System.Drawing.Size(300, 221);
+            this.pbHandwritingThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbHandwritingThen.TabIndex = 0;
+            this.pbHandwritingThen.TabStop = false;
+            // 
+            // pbFreetimeNow
+            // 
+            this.pbFreetimeNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbFreetimeNow.Image = global::IQP_Tester.Properties.Resources.FreeTimeNow;
+            this.pbFreetimeNow.Location = new System.Drawing.Point(308, 3);
+            this.pbFreetimeNow.Name = "pbFreetimeNow";
+            this.pbFreetimeNow.Size = new System.Drawing.Size(299, 222);
+            this.pbFreetimeNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFreetimeNow.TabIndex = 1;
+            this.pbFreetimeNow.TabStop = false;
+            // 
+            // pbFreetimeThen
+            // 
+            this.pbFreetimeThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbFreetimeThen.Image = global::IQP_Tester.Properties.Resources.FreeTimeThen;
+            this.pbFreetimeThen.Location = new System.Drawing.Point(3, 3);
+            this.pbFreetimeThen.Name = "pbFreetimeThen";
+            this.pbFreetimeThen.Size = new System.Drawing.Size(299, 222);
+            this.pbFreetimeThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFreetimeThen.TabIndex = 0;
+            this.pbFreetimeThen.TabStop = false;
+            // 
+            // pbCarsNow
+            // 
+            this.pbCarsNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbCarsNow.Image = global::IQP_Tester.Properties.Resources.CarsNow;
+            this.pbCarsNow.Location = new System.Drawing.Point(308, 3);
+            this.pbCarsNow.Name = "pbCarsNow";
+            this.pbCarsNow.Size = new System.Drawing.Size(299, 222);
+            this.pbCarsNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCarsNow.TabIndex = 1;
+            this.pbCarsNow.TabStop = false;
+            // 
+            // pbCarsThen
+            // 
+            this.pbCarsThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbCarsThen.Image = global::IQP_Tester.Properties.Resources.CarsThen;
+            this.pbCarsThen.Location = new System.Drawing.Point(3, 3);
+            this.pbCarsThen.Name = "pbCarsThen";
+            this.pbCarsThen.Size = new System.Drawing.Size(299, 222);
+            this.pbCarsThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCarsThen.TabIndex = 0;
+            this.pbCarsThen.TabStop = false;
+            // 
+            // pbMediaNow
+            // 
+            this.pbMediaNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMediaNow.Image = global::IQP_Tester.Properties.Resources.MediaNow;
+            this.pbMediaNow.Location = new System.Drawing.Point(308, 3);
+            this.pbMediaNow.Name = "pbMediaNow";
+            this.pbMediaNow.Size = new System.Drawing.Size(299, 221);
+            this.pbMediaNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMediaNow.TabIndex = 1;
+            this.pbMediaNow.TabStop = false;
+            // 
+            // pbMediaThen
+            // 
+            this.pbMediaThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMediaThen.Image = global::IQP_Tester.Properties.Resources.MediaThen;
+            this.pbMediaThen.Location = new System.Drawing.Point(3, 3);
+            this.pbMediaThen.Name = "pbMediaThen";
+            this.pbMediaThen.Size = new System.Drawing.Size(299, 221);
+            this.pbMediaThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMediaThen.TabIndex = 0;
+            this.pbMediaThen.TabStop = false;
+            // 
+            // pbClassesNow
+            // 
+            this.pbClassesNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbClassesNow.Image = global::IQP_Tester.Properties.Resources.ClassroomsStuffNow;
+            this.pbClassesNow.Location = new System.Drawing.Point(308, 3);
+            this.pbClassesNow.Name = "pbClassesNow";
+            this.pbClassesNow.Size = new System.Drawing.Size(299, 221);
+            this.pbClassesNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbClassesNow.TabIndex = 1;
+            this.pbClassesNow.TabStop = false;
+            // 
+            // pbClassesThen
+            // 
+            this.pbClassesThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbClassesThen.Image = global::IQP_Tester.Properties.Resources.ClassroomsStuffThen;
+            this.pbClassesThen.Location = new System.Drawing.Point(3, 3);
+            this.pbClassesThen.Name = "pbClassesThen";
+            this.pbClassesThen.Size = new System.Drawing.Size(299, 221);
+            this.pbClassesThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbClassesThen.TabIndex = 0;
+            this.pbClassesThen.TabStop = false;
+            // 
             // ThenAndNow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -863,53 +873,53 @@
             this.Click += new System.EventHandler(this.ThenAndNow_Click);
             this.Resize += new System.EventHandler(this.ThenAndNow_Resize);
             this.tableLayoutFoodPbTN.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoodNow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoodThen)).EndInit();
             this.tableLayoutFoodTNDP.ResumeLayout(false);
             this.tableLayoutFoodTNDP.PerformLayout();
             this.tableLayoutTN.ResumeLayout(false);
             this.tableLayoutUniformTNDP.ResumeLayout(false);
             this.tableLayoutUniformTNDP.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbUniformNow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUniformThen)).EndInit();
             this.tableLayoutNecessitiesTNDP.ResumeLayout(false);
             this.tableLayoutNecessitiesTNDP.PerformLayout();
             this.tableLayoutPanel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbNecessitiesNow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNecessitiesThen)).EndInit();
             this.tableLayoutNeighborhoodTNDP.ResumeLayout(false);
             this.tableLayoutNeighborhoodTNDP.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbNeighborhoodNow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNeighborhoodThen)).EndInit();
             this.tableLayoutHandwritingTNDP.ResumeLayout(false);
             this.tableLayoutHandwritingTNDP.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbHandwritingNow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHandwritingThen)).EndInit();
             this.tableLayoutFreetimeTNDP.ResumeLayout(false);
             this.tableLayoutFreetimeTNDP.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbFreetimeNow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFreetimeThen)).EndInit();
             this.tableLayoutCarsTNDP.ResumeLayout(false);
             this.tableLayoutCarsTNDP.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbCarsNow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCarsThen)).EndInit();
             this.tableLayoutMediaTNDP.ResumeLayout(false);
             this.tableLayoutMediaTNDP.PerformLayout();
             this.tableLayoutPanel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbMediaNow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMediaThen)).EndInit();
             this.tableLayoutClassesTNDP.ResumeLayout(false);
             this.tableLayoutClassesTNDP.PerformLayout();
             this.tableLayoutPanel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbClassesNow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClassesThen)).EndInit();
             this.tableLayoutTNMain.ResumeLayout(false);
             this.tableLayoutTNMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUniformNow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUniformThen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNecessitiesNow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNecessitiesThen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoodNow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoodThen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNeighborhoodNow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNeighborhoodThen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHandwritingNow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHandwritingThen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFreetimeNow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFreetimeThen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarsNow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarsThen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMediaNow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMediaThen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClassesNow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClassesThen)).EndInit();
             this.ResumeLayout(false);
 
         }
