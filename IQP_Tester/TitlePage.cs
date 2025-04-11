@@ -17,6 +17,8 @@ namespace IQP_Tester
         Click_Helper clickHelper = new Click_Helper();
         Resize_Helper resize = new Resize_Helper();
 
+        public const int TABLE_LAYOUT_MAIN_EDGE_MARGIN = 50;
+
         public TitlePage(TextManager textMan, Open_Close_Helper open_close)
         {
             InitializeComponent();
@@ -35,9 +37,8 @@ namespace IQP_Tester
 
         private void TitlePage_Resize(object sender, EventArgs e)
         {
-            resize.Handle_Resize(this);
-
-            resize.Center_X_Y(tableLayoutTitle);
+            resize.Glue_to_Corner(tableLayoutTitleMain, Resize_Helper.Corner.all, TABLE_LAYOUT_MAIN_EDGE_MARGIN);
+            resize.Resize_Fonts(this);
         }
 
         private void TitlePage_Shown(object sender, EventArgs e)
