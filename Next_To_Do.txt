@@ -9,3 +9,5 @@ Finish adding pictures
 Organize pictures into folders
 
 Add MOCR Icon to all forms
+
+Dock all polaroids within the tablelayoutpanels, a maximum size is set which must be removed

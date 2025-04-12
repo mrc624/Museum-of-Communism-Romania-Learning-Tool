@@ -26,8 +26,8 @@ namespace IQP_Tester
         CeausescusRise ceausescusRise;
         SovietEra sovietEra;
 
-        public const int START_YEAR = 1940;
-        public const int END_YEAR = 1990;
+        public const int START_YEAR = 1931;
+        public const int END_YEAR = 1999;
         public const int TICKS_EVERY = 10;
         public const int YEAR_RANGE = END_YEAR - START_YEAR;
         public const int LINE_WIDTH = 3;
@@ -80,21 +80,28 @@ namespace IQP_Tester
             click_Helper.Assign_All_Children_To_Same_Click(panelSoviet, panelSoviet_Click);
         }
 
-        private void Make_Assign_Lines(Form form)
+        private void Make_Assign_Lines(Control parent)
         {
-            List<Panel> panels = new List<Panel>();
-            List<Label> labels = new List<Label>();
-            int control_count = form.Controls.Count;
-            for (int i = 0; i < control_count; i++)
+            for (int i = 0; i < parent.Controls.Count; i++)
             {
-                Control control = form.Controls[i];
-                if (control is Panel || control is Label)
+                if (parent.Controls[i].HasChildren)
+                {
+                    Make_Assign_Lines(parent.Controls[i]);
+                }
+
+                Control control = parent.Controls[i];
+                if ((control is Panel || control is Label) && !Is_Line(control))
                 {
                     Panel line = Get_Line(LINE_NAME + i.ToString());
                     this.Controls.Add(line);
                     Lines_Assignments[control] = line;
                 }
             }
+        }
+
+        private bool Is_Line(Control control)
+        {
+            return control is Panel && control.Name.StartsWith(LINE_NAME);
         }
 
         private void Make_Year_Lables(Form form)
@@ -110,6 +117,11 @@ namespace IQP_Tester
                 Year_Labels.Add(label);
                 this.Controls.Add(label);
             }
+        }
+
+        private bool Year_Is_Valid(int year)
+        {
+            return (year >= START_YEAR) && (year <= END_YEAR);
         }
 
         private int Get_Start_ticks()
@@ -188,6 +200,77 @@ namespace IQP_Tester
                 }
             }
         }
+
+        private void TableLayout_Adjust_Position_Draw_Line(Panel panel, int year, Position position)
+        {
+            if ((position == Position.Top || position == Position.Bottom) && Year_Is_Valid(year))
+            {
+                TableLayout_Adjust_Position(panel, year, position);
+                Point time_point = Get_Point_From_Year(year, position);
+                Resize_Reposition_Line(panel.Location, time_point, Lines_Assignments[panel]);
+            }
+        }
+
+        private void TableLayout_Adjust_Position(Panel panel, int year, Position position) // for this to work the panels must already be in the right order from left to right and the function must be called on the panels from left to right
+        {
+            if (panel != null && Year_Is_Valid(year) && panel.Parent is TableLayoutPanel && pbTimeLine.Parent is TableLayoutPanel && (position == Position.Top || position == Position.Bottom))
+            {
+                Point timeline_point = Get_Point_From_Year(year, position);
+                double time_point_percent = (double)timeline_point.X / (double)pbTimeLine.Width;
+                int panel_column = tableLayoutTimelineTop.GetColumn(panel);
+                double panel_percent = 0;
+                if (position == Position.Top)
+                {
+                    panel_percent = Get_Percent_Up_To(tableLayoutTimelineTop, panel_column);
+                }
+                else if (position == Position.Bottom)
+                {
+                    panel_percent = Get_Percent_Up_To(tableLayoutTimelineBottom, panel_column);
+                }
+                int column_to_change = panel_column - 1; // we're going to change the size of the column before it to adjust it's position
+                if (time_point_percent > panel_percent) // we need to move the panel to the right
+                {
+                    double diff = time_point_percent - panel_percent;
+                    if (position == Position.Top)
+                    {
+                        Change_Column_Percent(tableLayoutTimelineTop, column_to_change, (float)diff);
+                    }
+                    else if (position == Position.Bottom)
+                    {
+                        Change_Column_Percent(tableLayoutTimelineBottom, column_to_change, (float)diff);
+                    }
+                }
+                else if (time_point_percent < panel_percent) // we need to move the panel to the left
+                {
+                    double diff = panel_percent - time_point_percent;
+                    if (position == Position.Top)
+                    {
+                        Change_Column_Percent(tableLayoutTimelineTop, column_to_change, (float)diff);
+                    }
+                    else if (position == Position.Bottom)
+                    {
+                        Change_Column_Percent(tableLayoutTimelineBottom, column_to_change, (float)diff);
+                    }
+                }
+            }
+        }
+
+        private double Get_Percent_Up_To(TableLayoutPanel tableLayoutPanel, int column)
+        {
+            double percent = 0;
+            TableLayoutColumnStyleCollection column_styles = tableLayoutPanel.ColumnStyles;
+            for (int i = 0; i < column; i++)
+            {
+                percent += column_styles[i].Width;
+            }
+            return percent;
+        }
+
+        private void Change_Column_Percent(TableLayoutPanel tableLayoutPanel, int column, float percent)
+        {
+            tableLayoutPanel.ColumnStyles[column].Width = percent;
+        }
+
 
         private void Place_Labels_And_Ticks()
         {
@@ -341,30 +424,14 @@ namespace IQP_Tester
 
         private void Timeline_Resize(object sender, EventArgs e)
         {
-            resize.Handle_Resize(this);
-
-            resize.Center_X_Y(pbTimeLine);
-
-
-            polaroid_Helper.Reposition_Polaroids(polaroid_Helper.Polaroids);
-
-            Place_Panel_With_Line_At_Year(panelAna, 1947, Position.Top);
-            Place_Panel_With_Line_At_Year(panelWarsaw, 1969, Position.Bottom);
-            Place_Panel_With_Line_At_Year(panelJuly, 1973, Position.Top); // should be at 1971, moved to not overlap
-            Place_Panel_With_Line_At_Year(panelHousePeople, 1984, Position.Bottom);
-            Place_Panel_With_Line_At_Year(panelRegimeFall, 1989, Position.Top);
-            Place_Panel_With_Line_At_Year(panelSoviet, 1952, Position.Bottom);
-            Place_Panel_With_Line_At_Year(panelCeausescusRise, 1963, Position.Top); // should be at 1965, moved to not overlap
+            TableLayout_Adjust_Position_Draw_Line(panelAna, 1947, Position.Top);
+            TableLayout_Adjust_Position_Draw_Line(panelCeausescusRise, 1963, Position.Top); // should be at 1965, moved to not overlap
+            TableLayout_Adjust_Position_Draw_Line(panelJuly, 1973, Position.Top); // should be at 1971, moved to not overlap
+            TableLayout_Adjust_Position_Draw_Line(panelRegimeFall, 1989, Position.Top);
+            TableLayout_Adjust_Position_Draw_Line(panelSoviet, 1952, Position.Bottom);
+            TableLayout_Adjust_Position_Draw_Line(panelWarsaw, 1969, Position.Bottom);
+            TableLayout_Adjust_Position_Draw_Line(panelHousePeople, 1984, Position.Bottom);
             Place_Labels_And_Ticks();
-
-            resize.Center_X(pbRegimeFall);
-            resize.Center_to_Other_Control(lblHowDidTheRegimeFall, pbRegimeFall, Resize_Helper.Centering_Options.to_top);
-            resize.Center_X(pbSoviet);
-            resize.Center_to_Other_Control(lblSoviet, pbSoviet, Resize_Helper.Centering_Options.to_top);
-            resize.Center_X(pbCeausescusRise);
-            resize.Center_to_Other_Control(lblCeausescusRise, pbCeausescusRise, Resize_Helper.Centering_Options.to_top);
-
-            resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
 
         private void Timeline_Click(object sender, EventArgs e)
@@ -434,6 +501,16 @@ namespace IQP_Tester
                 openClose.Interaction();
                 openClose.FadeIn(sovietEra);
             }
+        }
+
+        private void Timeline_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutTimelineTop_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
