@@ -30,7 +30,7 @@ namespace IQP_Tester
 
         public const int DEFAULT_FADE_INTERVAL = 10;
         public const double DEFAULT_FADE_INCREMENT = 0.05;
-        public const uint tabTimeout = 1000; // in 1/10 of seconds, 100 seconds
+        public const uint tabTimeout = 100; // in 1/10 of seconds, 100 seconds
         public const uint tab_open_debounce = 5; // in 1/10 of seconds, 0.5 second
         static uint lastInteraction = 0;
         static uint lastFormOpened = 0;
@@ -69,6 +69,17 @@ namespace IQP_Tester
                 if (forms[i] != main && forms[i] != keep_open0 && forms[i] != keep_open1)
                 {
                     Close(forms[i]);
+                }
+            }
+        }
+
+        public void Hide_All_Forms(Form keep1 = null, Form keep2 = null)
+        {
+            for (int i = 0; i < Application.OpenForms.Count; i++)
+            {
+                if (Application.OpenForms[i] != keep1 && Application.OpenForms[i] != keep2)
+                {
+                    Application.OpenForms[i].Hide();
                 }
             }
         }

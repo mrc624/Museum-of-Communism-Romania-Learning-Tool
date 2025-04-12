@@ -132,7 +132,7 @@ namespace IQP_Tester
                     titlePage = new TitlePage(textManager, openClose);
                 }
                 openClose.FadeIn(titlePage);
-                openClose.CloseAllForms(titlePage);
+                openClose.Hide_All_Forms(this, titlePage);
             }
         }
 
