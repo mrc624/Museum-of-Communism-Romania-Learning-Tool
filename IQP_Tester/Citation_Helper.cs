@@ -12,6 +12,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms.VisualStyles;
 using System.Security.Policy;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace IQP_Tester
 {
@@ -31,7 +32,6 @@ namespace IQP_Tester
             Team_Members,
             Collaborators,
             Professors,
-            Interviewees,
             Institutions,
             Informative_Texts,
             Pictures,
@@ -43,7 +43,6 @@ namespace IQP_Tester
             "Team Members",
             "Collaborators",
             "Professors",
-            "Interviewees",
             "Institutions",
             "Informative Texts",
             "Pictures",
@@ -62,7 +61,6 @@ namespace IQP_Tester
             "Member",
             "Collab",
             "Prof",
-            "Interviewee",
             "Institute",
             "Text",
             "Pic",
@@ -89,7 +87,21 @@ namespace IQP_Tester
             if (File.Exists(file_name))
             {
                 string json = File.ReadAllText(file_name);
-                Citations = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                try
+                {
+                    Citations = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(json);
+                }
+                catch (Exception ex)
+                {
+                    DialogResult ans = MessageBox.Show("Invalid Citations JSON FIle:\n" + ex);
+
+                    if (ans != DialogResult.None)
+                    {
+                        System.Windows.Forms.Application.Exit();
+                    }
+
+                    Citations = null;
+                }
             }
             else
             {
@@ -98,7 +110,6 @@ namespace IQP_Tester
                     { Citations_to_String[(int)Citation_Type.Team_Members], new Dictionary<string, string>() },
                     { Citations_to_String[(int)Citation_Type.Collaborators], new Dictionary<string, string>() },
                     { Citations_to_String[(int)Citation_Type.Professors], new Dictionary<string, string>() },
-                    { Citations_to_String[(int)Citation_Type.Interviewees], new Dictionary<string, string>() },
                     { Citations_to_String[(int)Citation_Type.Institutions], new Dictionary<string, string>() },
                     { Citations_to_String[(int)Citation_Type.Informative_Texts], new Dictionary<string, string>() },
                     { Citations_to_String[(int)Citation_Type.Pictures], new Dictionary<string, string>() }
@@ -107,7 +118,6 @@ namespace IQP_Tester
                 Init_Team_Mem();
                 Init_Collab();
                 Init_Prof();
-                Init_Interviewee();
                 Init_Institute();
             }
 
@@ -194,14 +204,6 @@ namespace IQP_Tester
             for (int i = 0; i < INIT_PROF_NUM; i++)
             {
                 Citations[Citations_to_String[(int)Citation_Type.Professors]][Get_Citation_Shortened[(int)Citation_Type.Professors] + i.ToString()] = "NEED";
-            }
-        }
-
-        private void Init_Interviewee()
-        {
-            for (int i = 0; i < INIT_INTERVIEWEE_NUM; i++)
-            {
-                Citations[Citations_to_String[(int)Citation_Type.Interviewees]][Get_Citation_Shortened[(int)Citation_Type.Interviewees] + i.ToString()] = "NEED";
             }
         }
 
