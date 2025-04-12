@@ -26,8 +26,8 @@ namespace IQP_Tester
         CeausescusRise ceausescusRise;
         SovietEra sovietEra;
 
-        public const int START_YEAR = 1940;
-        public const int END_YEAR = 1990;
+        public const int START_YEAR = 1941;
+        public const int END_YEAR = 1989;
         public const int TICKS_EVERY = 10;
         public const int YEAR_RANGE = END_YEAR - START_YEAR;
         public const int LINE_WIDTH = 3;
@@ -407,6 +407,7 @@ namespace IQP_Tester
                 if (line_point.Y > INVALID_LINE)
                 {
                     line.Location = line_point;
+                    line.BringToFront();
                 }
             }
             else if (from.Y == to.Y)
@@ -425,13 +426,48 @@ namespace IQP_Tester
                 if (line_point.X > INVALID_LINE)
                 {
                     line.Location = line_point;
+                    line.BringToFront();
                 }
             } // if all if statements fail the line is not a straight line
+        }
+
+        private void Reposition_Line_From_Middle_To_Timeline(Panel panel, Position position)
+        {
+            Point from = new Point();
+            Point to = new Point();
+
+            if (position == Position.Top)
+            {
+                from.X = panel.PointToScreen(Point.Empty).X + (panel.Width / 2);
+                from.Y = panel.PointToScreen(Point.Empty).Y + panel.Height;
+                to.Y = pbTimeLine.PointToScreen(Point.Empty).Y + (pbTimeLine.Height / 2);
+                to.X = from.X;
+            }
+            else if (position == Position.Bottom)
+            {
+                to.X = panel.PointToScreen(Point.Empty).X + (panel.Width / 2);
+                to.Y = panel.PointToScreen(Point.Empty).Y;
+                from.Y = pbTimeLine.PointToScreen(Point.Empty).Y + (pbTimeLine.Height / 2);
+                from.X = to.X;
+            }
+            else
+            {
+                return; // invalid position
+            }
+            Resize_Reposition_Line(from, to, Lines_Assignments[panel]);
         }
 
         private void Timeline_Resize(object sender, EventArgs e)
         {
             resize.Resize_Fonts(this);
+            Reposition_Line_From_Middle_To_Timeline(panelAna, Position.Top);
+            Reposition_Line_From_Middle_To_Timeline(panelCeausescusRise, Position.Top);
+            Reposition_Line_From_Middle_To_Timeline(panelJuly, Position.Top);
+            Reposition_Line_From_Middle_To_Timeline(panelRegimeFall, Position.Top);
+            Reposition_Line_From_Middle_To_Timeline(panelSoviet, Position.Bottom);
+            Reposition_Line_From_Middle_To_Timeline(panelWarsaw, Position.Bottom);
+            Reposition_Line_From_Middle_To_Timeline(panelHousePeople, Position.Bottom);
+            Place_Labels_And_Ticks();
         }
 
         private void Timeline_Click(object sender, EventArgs e)
