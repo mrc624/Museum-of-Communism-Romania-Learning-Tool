@@ -93,9 +93,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(1805, 63);
+            this.btnLanguage.Location = new System.Drawing.Point(1805, 59);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(94, 31);
+            this.btnLanguage.Size = new System.Drawing.Size(94, 35);
             this.btnLanguage.TabIndex = 2;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -109,9 +109,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCredits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCredits.Location = new System.Drawing.Point(1705, 63);
+            this.btnCredits.Location = new System.Drawing.Point(1705, 59);
             this.btnCredits.Name = "btnCredits";
-            this.btnCredits.Size = new System.Drawing.Size(94, 31);
+            this.btnCredits.Size = new System.Drawing.Size(94, 35);
             this.btnCredits.TabIndex = 9;
             this.btnCredits.Text = "Credits";
             this.btnCredits.UseVisualStyleBackColor = false;
@@ -594,8 +594,8 @@
             this.tableLayoutLanguageMainBtnAlign.Location = new System.Drawing.Point(3, 939);
             this.tableLayoutLanguageMainBtnAlign.Name = "tableLayoutLanguageMainBtnAlign";
             this.tableLayoutLanguageMainBtnAlign.RowCount = 3;
-            this.tableLayoutLanguageMainBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.25F));
-            this.tableLayoutLanguageMainBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38F));
+            this.tableLayoutLanguageMainBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.tableLayoutLanguageMainBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
             this.tableLayoutLanguageMainBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.tableLayoutLanguageMainBtnAlign.Size = new System.Drawing.Size(1918, 99);
             this.tableLayoutLanguageMainBtnAlign.TabIndex = 17;

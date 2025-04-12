@@ -15,6 +15,7 @@ namespace IQP_Tester
         TextManager textManager;
         Resize_Helper resize = new Resize_Helper();
         Polaroid_Helper polaroid_Helper = new Polaroid_Helper();
+        Click_Helper click_Helper;
         Open_Close_Helper openClose;
 
         public Stories(TextManager textMan, Open_Close_Helper open_close)
@@ -22,20 +23,18 @@ namespace IQP_Tester
             InitializeComponent();
             openClose = open_close;
             textManager = textMan;
+            click_Helper = new Click_Helper(polaroid_Helper);
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
 
             polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, openClose);
+            click_Helper.Assign_Children_To_Same_Click_Avoid_Polaroids(this, Stories_Click);
         }
 
         private void Stories_Resize(object sender, EventArgs e)
         {
-            resize.Handle_Resize(this);
-
-            polaroid_Helper.Reposition_Polaroids(polaroid_Helper.Polaroids);
-
-            resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
+            resize.Resize_Fonts(this);
         }
 
         private void Stories_Click(object sender, EventArgs e)

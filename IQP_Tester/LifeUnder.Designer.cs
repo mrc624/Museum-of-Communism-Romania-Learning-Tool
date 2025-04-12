@@ -1056,9 +1056,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(1787, 63);
+            this.btnLanguage.Location = new System.Drawing.Point(1787, 59);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(93, 31);
+            this.btnLanguage.Size = new System.Drawing.Size(93, 35);
             this.btnLanguage.TabIndex = 8;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -1078,8 +1078,8 @@
             this.tableLayoutLanguageLifeUnderBtnAlign.Location = new System.Drawing.Point(3, 939);
             this.tableLayoutLanguageLifeUnderBtnAlign.Name = "tableLayoutLanguageLifeUnderBtnAlign";
             this.tableLayoutLanguageLifeUnderBtnAlign.RowCount = 3;
-            this.tableLayoutLanguageLifeUnderBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.25F));
-            this.tableLayoutLanguageLifeUnderBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38F));
+            this.tableLayoutLanguageLifeUnderBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.tableLayoutLanguageLifeUnderBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
             this.tableLayoutLanguageLifeUnderBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.tableLayoutLanguageLifeUnderBtnAlign.Size = new System.Drawing.Size(1898, 99);
             this.tableLayoutLanguageLifeUnderBtnAlign.TabIndex = 31;

@@ -101,6 +101,10 @@
             this.tableLayoutCutPhoneLinesContainer = new System.Windows.Forms.TableLayoutPanel();
             this.panelStopEngineers = new System.Windows.Forms.Panel();
             this.tableLayoutStopEngineersContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutStoriesMain = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutStoriesTop = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutStoriesBottom = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutLanguageStoriesBtnAlign = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutStolenHorse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbStolenHorse)).BeginInit();
             this.tableLayoutButterWhy.SuspendLayout();
@@ -149,15 +153,19 @@
             this.tableLayoutCutPhoneLinesContainer.SuspendLayout();
             this.panelStopEngineers.SuspendLayout();
             this.tableLayoutStopEngineersContainer.SuspendLayout();
+            this.tableLayoutStoriesMain.SuspendLayout();
+            this.tableLayoutStoriesTop.SuspendLayout();
+            this.tableLayoutStoriesBottom.SuspendLayout();
+            this.tableLayoutLanguageStoriesBtnAlign.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
+            this.btnLanguage.Location = new System.Drawing.Point(1787, 59);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
+            this.btnLanguage.Size = new System.Drawing.Size(93, 35);
             this.btnLanguage.TabIndex = 8;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -170,7 +178,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutStolenHorse.ColumnCount = 1;
-            this.tableLayoutStolenHorse.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutStolenHorse.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0F));
             this.tableLayoutStolenHorse.Controls.Add(this.lblStolenHorseQ, 0, 0);
             this.tableLayoutStolenHorse.Controls.Add(this.lblStolenHorseAns, 0, 1);
             this.tableLayoutStolenHorse.Location = new System.Drawing.Point(3, 165);
@@ -178,7 +186,7 @@
             this.tableLayoutStolenHorse.RowCount = 2;
             this.tableLayoutStolenHorse.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutStolenHorse.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutStolenHorse.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutStolenHorse.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutStolenHorse.TabIndex = 9;
             // 
             // lblStolenHorseQ
@@ -189,7 +197,7 @@
             this.lblStolenHorseQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStolenHorseQ.Location = new System.Drawing.Point(3, 0);
             this.lblStolenHorseQ.Name = "lblStolenHorseQ";
-            this.lblStolenHorseQ.Size = new System.Drawing.Size(267, 25);
+            this.lblStolenHorseQ.Size = new System.Drawing.Size(264, 25);
             this.lblStolenHorseQ.TabIndex = 5;
             this.lblStolenHorseQ.Text = "Unknown";
             this.lblStolenHorseQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -201,7 +209,7 @@
             this.lblStolenHorseAns.AutoSize = true;
             this.lblStolenHorseAns.Location = new System.Drawing.Point(3, 25);
             this.lblStolenHorseAns.Name = "lblStolenHorseAns";
-            this.lblStolenHorseAns.Size = new System.Drawing.Size(267, 13);
+            this.lblStolenHorseAns.Size = new System.Drawing.Size(264, 13);
             this.lblStolenHorseAns.TabIndex = 7;
             this.lblStolenHorseAns.Text = "Unknown";
             this.lblStolenHorseAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -215,7 +223,7 @@
             this.pbStolenHorse.InitialImage = null;
             this.pbStolenHorse.Location = new System.Drawing.Point(3, 3);
             this.pbStolenHorse.Name = "pbStolenHorse";
-            this.pbStolenHorse.Size = new System.Drawing.Size(273, 156);
+            this.pbStolenHorse.Size = new System.Drawing.Size(270, 156);
             this.pbStolenHorse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbStolenHorse.TabIndex = 0;
             this.pbStolenHorse.TabStop = false;
@@ -226,7 +234,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutButterWhy.ColumnCount = 1;
-            this.tableLayoutButterWhy.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutButterWhy.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutButterWhy.Controls.Add(this.lblButterWhyQ, 0, 0);
             this.tableLayoutButterWhy.Controls.Add(this.lblButterWhyAns, 0, 1);
             this.tableLayoutButterWhy.Location = new System.Drawing.Point(3, 165);
@@ -234,7 +242,7 @@
             this.tableLayoutButterWhy.RowCount = 2;
             this.tableLayoutButterWhy.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutButterWhy.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutButterWhy.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutButterWhy.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutButterWhy.TabIndex = 9;
             // 
             // lblButterWhyQ
@@ -245,7 +253,7 @@
             this.lblButterWhyQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblButterWhyQ.Location = new System.Drawing.Point(3, 0);
             this.lblButterWhyQ.Name = "lblButterWhyQ";
-            this.lblButterWhyQ.Size = new System.Drawing.Size(267, 25);
+            this.lblButterWhyQ.Size = new System.Drawing.Size(264, 25);
             this.lblButterWhyQ.TabIndex = 5;
             this.lblButterWhyQ.Text = "Unknown";
             this.lblButterWhyQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -257,7 +265,7 @@
             this.lblButterWhyAns.AutoSize = true;
             this.lblButterWhyAns.Location = new System.Drawing.Point(3, 25);
             this.lblButterWhyAns.Name = "lblButterWhyAns";
-            this.lblButterWhyAns.Size = new System.Drawing.Size(267, 13);
+            this.lblButterWhyAns.Size = new System.Drawing.Size(264, 13);
             this.lblButterWhyAns.TabIndex = 7;
             this.lblButterWhyAns.Text = "Unknown";
             this.lblButterWhyAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -271,7 +279,7 @@
             this.pbButterWhy.InitialImage = null;
             this.pbButterWhy.Location = new System.Drawing.Point(3, 3);
             this.pbButterWhy.Name = "pbButterWhy";
-            this.pbButterWhy.Size = new System.Drawing.Size(273, 156);
+            this.pbButterWhy.Size = new System.Drawing.Size(270, 156);
             this.pbButterWhy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbButterWhy.TabIndex = 0;
             this.pbButterWhy.TabStop = false;
@@ -282,7 +290,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutTeacherBeating.ColumnCount = 1;
-            this.tableLayoutTeacherBeating.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutTeacherBeating.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutTeacherBeating.Controls.Add(this.lblTeacherBeatingQ, 0, 0);
             this.tableLayoutTeacherBeating.Controls.Add(this.lblTeacherBeatingAns, 0, 1);
             this.tableLayoutTeacherBeating.Location = new System.Drawing.Point(3, 165);
@@ -290,7 +298,7 @@
             this.tableLayoutTeacherBeating.RowCount = 2;
             this.tableLayoutTeacherBeating.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutTeacherBeating.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutTeacherBeating.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutTeacherBeating.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutTeacherBeating.TabIndex = 9;
             // 
             // lblTeacherBeatingQ
@@ -301,7 +309,7 @@
             this.lblTeacherBeatingQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTeacherBeatingQ.Location = new System.Drawing.Point(3, 0);
             this.lblTeacherBeatingQ.Name = "lblTeacherBeatingQ";
-            this.lblTeacherBeatingQ.Size = new System.Drawing.Size(267, 25);
+            this.lblTeacherBeatingQ.Size = new System.Drawing.Size(264, 25);
             this.lblTeacherBeatingQ.TabIndex = 5;
             this.lblTeacherBeatingQ.Text = "Unknown";
             this.lblTeacherBeatingQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -313,7 +321,7 @@
             this.lblTeacherBeatingAns.AutoSize = true;
             this.lblTeacherBeatingAns.Location = new System.Drawing.Point(3, 25);
             this.lblTeacherBeatingAns.Name = "lblTeacherBeatingAns";
-            this.lblTeacherBeatingAns.Size = new System.Drawing.Size(267, 13);
+            this.lblTeacherBeatingAns.Size = new System.Drawing.Size(264, 13);
             this.lblTeacherBeatingAns.TabIndex = 7;
             this.lblTeacherBeatingAns.Text = "Unknown";
             this.lblTeacherBeatingAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -327,7 +335,7 @@
             this.pbTeacherBeating.InitialImage = null;
             this.pbTeacherBeating.Location = new System.Drawing.Point(3, 3);
             this.pbTeacherBeating.Name = "pbTeacherBeating";
-            this.pbTeacherBeating.Size = new System.Drawing.Size(273, 156);
+            this.pbTeacherBeating.Size = new System.Drawing.Size(270, 156);
             this.pbTeacherBeating.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbTeacherBeating.TabIndex = 0;
             this.pbTeacherBeating.TabStop = false;
@@ -338,7 +346,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutDestiny.ColumnCount = 1;
-            this.tableLayoutDestiny.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutDestiny.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutDestiny.Controls.Add(this.lblDestinyQ, 0, 0);
             this.tableLayoutDestiny.Controls.Add(this.lblDestinyAns, 0, 1);
             this.tableLayoutDestiny.Location = new System.Drawing.Point(3, 165);
@@ -346,7 +354,7 @@
             this.tableLayoutDestiny.RowCount = 2;
             this.tableLayoutDestiny.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutDestiny.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutDestiny.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutDestiny.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutDestiny.TabIndex = 9;
             // 
             // lblDestinyQ
@@ -357,7 +365,7 @@
             this.lblDestinyQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDestinyQ.Location = new System.Drawing.Point(3, 0);
             this.lblDestinyQ.Name = "lblDestinyQ";
-            this.lblDestinyQ.Size = new System.Drawing.Size(267, 25);
+            this.lblDestinyQ.Size = new System.Drawing.Size(264, 25);
             this.lblDestinyQ.TabIndex = 5;
             this.lblDestinyQ.Text = "Unknown";
             this.lblDestinyQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -369,7 +377,7 @@
             this.lblDestinyAns.AutoSize = true;
             this.lblDestinyAns.Location = new System.Drawing.Point(3, 25);
             this.lblDestinyAns.Name = "lblDestinyAns";
-            this.lblDestinyAns.Size = new System.Drawing.Size(267, 13);
+            this.lblDestinyAns.Size = new System.Drawing.Size(264, 13);
             this.lblDestinyAns.TabIndex = 7;
             this.lblDestinyAns.Text = "Unknown";
             this.lblDestinyAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -383,7 +391,7 @@
             this.pbDestiny.InitialImage = null;
             this.pbDestiny.Location = new System.Drawing.Point(3, 3);
             this.pbDestiny.Name = "pbDestiny";
-            this.pbDestiny.Size = new System.Drawing.Size(273, 156);
+            this.pbDestiny.Size = new System.Drawing.Size(270, 156);
             this.pbDestiny.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDestiny.TabIndex = 0;
             this.pbDestiny.TabStop = false;
@@ -394,7 +402,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutSoftTomato.ColumnCount = 1;
-            this.tableLayoutSoftTomato.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutSoftTomato.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutSoftTomato.Controls.Add(this.lblSoftTomatoQ, 0, 0);
             this.tableLayoutSoftTomato.Controls.Add(this.lblSoftTomatoAns, 0, 1);
             this.tableLayoutSoftTomato.Location = new System.Drawing.Point(3, 165);
@@ -402,7 +410,7 @@
             this.tableLayoutSoftTomato.RowCount = 2;
             this.tableLayoutSoftTomato.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutSoftTomato.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutSoftTomato.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutSoftTomato.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutSoftTomato.TabIndex = 9;
             // 
             // lblSoftTomatoQ
@@ -413,7 +421,7 @@
             this.lblSoftTomatoQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoftTomatoQ.Location = new System.Drawing.Point(3, 0);
             this.lblSoftTomatoQ.Name = "lblSoftTomatoQ";
-            this.lblSoftTomatoQ.Size = new System.Drawing.Size(267, 25);
+            this.lblSoftTomatoQ.Size = new System.Drawing.Size(264, 25);
             this.lblSoftTomatoQ.TabIndex = 5;
             this.lblSoftTomatoQ.Text = "Unknown";
             this.lblSoftTomatoQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -425,7 +433,7 @@
             this.lblSoftTomatoAns.AutoSize = true;
             this.lblSoftTomatoAns.Location = new System.Drawing.Point(3, 25);
             this.lblSoftTomatoAns.Name = "lblSoftTomatoAns";
-            this.lblSoftTomatoAns.Size = new System.Drawing.Size(267, 13);
+            this.lblSoftTomatoAns.Size = new System.Drawing.Size(264, 13);
             this.lblSoftTomatoAns.TabIndex = 7;
             this.lblSoftTomatoAns.Text = "Unknown";
             this.lblSoftTomatoAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -439,7 +447,7 @@
             this.pbSoftTomato.InitialImage = null;
             this.pbSoftTomato.Location = new System.Drawing.Point(3, 3);
             this.pbSoftTomato.Name = "pbSoftTomato";
-            this.pbSoftTomato.Size = new System.Drawing.Size(273, 156);
+            this.pbSoftTomato.Size = new System.Drawing.Size(270, 156);
             this.pbSoftTomato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSoftTomato.TabIndex = 0;
             this.pbSoftTomato.TabStop = false;
@@ -450,7 +458,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutColdHands.ColumnCount = 1;
-            this.tableLayoutColdHands.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutColdHands.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutColdHands.Controls.Add(this.lblColdHandsQ, 0, 0);
             this.tableLayoutColdHands.Controls.Add(this.lblColdHandsAns, 0, 1);
             this.tableLayoutColdHands.Location = new System.Drawing.Point(3, 165);
@@ -458,7 +466,7 @@
             this.tableLayoutColdHands.RowCount = 2;
             this.tableLayoutColdHands.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutColdHands.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutColdHands.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutColdHands.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutColdHands.TabIndex = 9;
             // 
             // lblColdHandsQ
@@ -469,7 +477,7 @@
             this.lblColdHandsQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblColdHandsQ.Location = new System.Drawing.Point(3, 0);
             this.lblColdHandsQ.Name = "lblColdHandsQ";
-            this.lblColdHandsQ.Size = new System.Drawing.Size(267, 25);
+            this.lblColdHandsQ.Size = new System.Drawing.Size(264, 25);
             this.lblColdHandsQ.TabIndex = 5;
             this.lblColdHandsQ.Text = "Unknown";
             this.lblColdHandsQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -481,7 +489,7 @@
             this.lblColdHandsAns.AutoSize = true;
             this.lblColdHandsAns.Location = new System.Drawing.Point(3, 25);
             this.lblColdHandsAns.Name = "lblColdHandsAns";
-            this.lblColdHandsAns.Size = new System.Drawing.Size(267, 13);
+            this.lblColdHandsAns.Size = new System.Drawing.Size(264, 13);
             this.lblColdHandsAns.TabIndex = 7;
             this.lblColdHandsAns.Text = "Unknown";
             this.lblColdHandsAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -495,7 +503,7 @@
             this.pbColdHands.InitialImage = null;
             this.pbColdHands.Location = new System.Drawing.Point(3, 3);
             this.pbColdHands.Name = "pbColdHands";
-            this.pbColdHands.Size = new System.Drawing.Size(273, 156);
+            this.pbColdHands.Size = new System.Drawing.Size(270, 156);
             this.pbColdHands.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbColdHands.TabIndex = 0;
             this.pbColdHands.TabStop = false;
@@ -506,7 +514,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutSchoolPropaganda.ColumnCount = 1;
-            this.tableLayoutSchoolPropaganda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutSchoolPropaganda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutSchoolPropaganda.Controls.Add(this.lblSchoolPropagandaQ, 0, 0);
             this.tableLayoutSchoolPropaganda.Controls.Add(this.lblSchoolPropagandaAns, 0, 1);
             this.tableLayoutSchoolPropaganda.Location = new System.Drawing.Point(3, 165);
@@ -514,7 +522,7 @@
             this.tableLayoutSchoolPropaganda.RowCount = 2;
             this.tableLayoutSchoolPropaganda.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutSchoolPropaganda.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutSchoolPropaganda.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutSchoolPropaganda.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutSchoolPropaganda.TabIndex = 9;
             // 
             // lblSchoolPropagandaQ
@@ -525,7 +533,7 @@
             this.lblSchoolPropagandaQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSchoolPropagandaQ.Location = new System.Drawing.Point(3, 0);
             this.lblSchoolPropagandaQ.Name = "lblSchoolPropagandaQ";
-            this.lblSchoolPropagandaQ.Size = new System.Drawing.Size(267, 25);
+            this.lblSchoolPropagandaQ.Size = new System.Drawing.Size(264, 25);
             this.lblSchoolPropagandaQ.TabIndex = 5;
             this.lblSchoolPropagandaQ.Text = "Unknown";
             this.lblSchoolPropagandaQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -537,7 +545,7 @@
             this.lblSchoolPropagandaAns.AutoSize = true;
             this.lblSchoolPropagandaAns.Location = new System.Drawing.Point(3, 25);
             this.lblSchoolPropagandaAns.Name = "lblSchoolPropagandaAns";
-            this.lblSchoolPropagandaAns.Size = new System.Drawing.Size(267, 13);
+            this.lblSchoolPropagandaAns.Size = new System.Drawing.Size(264, 13);
             this.lblSchoolPropagandaAns.TabIndex = 7;
             this.lblSchoolPropagandaAns.Text = "Unknown";
             this.lblSchoolPropagandaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -551,7 +559,7 @@
             this.pbSchoolPropaganda.InitialImage = null;
             this.pbSchoolPropaganda.Location = new System.Drawing.Point(3, 3);
             this.pbSchoolPropaganda.Name = "pbSchoolPropaganda";
-            this.pbSchoolPropaganda.Size = new System.Drawing.Size(273, 156);
+            this.pbSchoolPropaganda.Size = new System.Drawing.Size(270, 156);
             this.pbSchoolPropaganda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSchoolPropaganda.TabIndex = 0;
             this.pbSchoolPropaganda.TabStop = false;
@@ -562,7 +570,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutCeausescuMail.ColumnCount = 1;
-            this.tableLayoutCeausescuMail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutCeausescuMail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutCeausescuMail.Controls.Add(this.lblCeausescuMailQ, 0, 0);
             this.tableLayoutCeausescuMail.Controls.Add(this.lblCeausescuMailAns, 0, 1);
             this.tableLayoutCeausescuMail.Location = new System.Drawing.Point(3, 165);
@@ -570,7 +578,7 @@
             this.tableLayoutCeausescuMail.RowCount = 2;
             this.tableLayoutCeausescuMail.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutCeausescuMail.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutCeausescuMail.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutCeausescuMail.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutCeausescuMail.TabIndex = 9;
             // 
             // lblCeausescuMailQ
@@ -581,7 +589,7 @@
             this.lblCeausescuMailQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCeausescuMailQ.Location = new System.Drawing.Point(3, 0);
             this.lblCeausescuMailQ.Name = "lblCeausescuMailQ";
-            this.lblCeausescuMailQ.Size = new System.Drawing.Size(267, 25);
+            this.lblCeausescuMailQ.Size = new System.Drawing.Size(264, 25);
             this.lblCeausescuMailQ.TabIndex = 5;
             this.lblCeausescuMailQ.Text = "Unknown";
             this.lblCeausescuMailQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -593,7 +601,7 @@
             this.lblCeausescuMailAns.AutoSize = true;
             this.lblCeausescuMailAns.Location = new System.Drawing.Point(3, 25);
             this.lblCeausescuMailAns.Name = "lblCeausescuMailAns";
-            this.lblCeausescuMailAns.Size = new System.Drawing.Size(267, 13);
+            this.lblCeausescuMailAns.Size = new System.Drawing.Size(264, 13);
             this.lblCeausescuMailAns.TabIndex = 7;
             this.lblCeausescuMailAns.Text = "Unknown";
             this.lblCeausescuMailAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -607,7 +615,7 @@
             this.pbCeausescuMail.InitialImage = null;
             this.pbCeausescuMail.Location = new System.Drawing.Point(3, 3);
             this.pbCeausescuMail.Name = "pbCeausescuMail";
-            this.pbCeausescuMail.Size = new System.Drawing.Size(273, 156);
+            this.pbCeausescuMail.Size = new System.Drawing.Size(270, 156);
             this.pbCeausescuMail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCeausescuMail.TabIndex = 0;
             this.pbCeausescuMail.TabStop = false;
@@ -618,7 +626,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutJapaneseMachines.ColumnCount = 1;
-            this.tableLayoutJapaneseMachines.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutJapaneseMachines.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutJapaneseMachines.Controls.Add(this.lblJapaneseMachinesQ, 0, 0);
             this.tableLayoutJapaneseMachines.Controls.Add(this.lblJapaneseMachinesAns, 0, 1);
             this.tableLayoutJapaneseMachines.Location = new System.Drawing.Point(3, 165);
@@ -626,7 +634,7 @@
             this.tableLayoutJapaneseMachines.RowCount = 2;
             this.tableLayoutJapaneseMachines.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutJapaneseMachines.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutJapaneseMachines.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutJapaneseMachines.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutJapaneseMachines.TabIndex = 9;
             // 
             // lblJapaneseMachinesQ
@@ -637,7 +645,7 @@
             this.lblJapaneseMachinesQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJapaneseMachinesQ.Location = new System.Drawing.Point(3, 0);
             this.lblJapaneseMachinesQ.Name = "lblJapaneseMachinesQ";
-            this.lblJapaneseMachinesQ.Size = new System.Drawing.Size(267, 25);
+            this.lblJapaneseMachinesQ.Size = new System.Drawing.Size(264, 25);
             this.lblJapaneseMachinesQ.TabIndex = 5;
             this.lblJapaneseMachinesQ.Text = "Unknown";
             this.lblJapaneseMachinesQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -649,7 +657,7 @@
             this.lblJapaneseMachinesAns.AutoSize = true;
             this.lblJapaneseMachinesAns.Location = new System.Drawing.Point(3, 25);
             this.lblJapaneseMachinesAns.Name = "lblJapaneseMachinesAns";
-            this.lblJapaneseMachinesAns.Size = new System.Drawing.Size(267, 13);
+            this.lblJapaneseMachinesAns.Size = new System.Drawing.Size(264, 13);
             this.lblJapaneseMachinesAns.TabIndex = 7;
             this.lblJapaneseMachinesAns.Text = "Unknown";
             this.lblJapaneseMachinesAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -663,7 +671,7 @@
             this.pbJapaneseMachines.InitialImage = null;
             this.pbJapaneseMachines.Location = new System.Drawing.Point(3, 3);
             this.pbJapaneseMachines.Name = "pbJapaneseMachines";
-            this.pbJapaneseMachines.Size = new System.Drawing.Size(273, 156);
+            this.pbJapaneseMachines.Size = new System.Drawing.Size(270, 156);
             this.pbJapaneseMachines.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbJapaneseMachines.TabIndex = 0;
             this.pbJapaneseMachines.TabStop = false;
@@ -674,7 +682,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutSwimmerKiller.ColumnCount = 1;
-            this.tableLayoutSwimmerKiller.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutSwimmerKiller.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutSwimmerKiller.Controls.Add(this.lblSwimmerKillerQ, 0, 0);
             this.tableLayoutSwimmerKiller.Controls.Add(this.lblSwimmerKillerAns, 0, 1);
             this.tableLayoutSwimmerKiller.Location = new System.Drawing.Point(3, 165);
@@ -682,7 +690,7 @@
             this.tableLayoutSwimmerKiller.RowCount = 2;
             this.tableLayoutSwimmerKiller.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutSwimmerKiller.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutSwimmerKiller.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutSwimmerKiller.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutSwimmerKiller.TabIndex = 9;
             // 
             // lblSwimmerKillerQ
@@ -693,7 +701,7 @@
             this.lblSwimmerKillerQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSwimmerKillerQ.Location = new System.Drawing.Point(3, 0);
             this.lblSwimmerKillerQ.Name = "lblSwimmerKillerQ";
-            this.lblSwimmerKillerQ.Size = new System.Drawing.Size(267, 25);
+            this.lblSwimmerKillerQ.Size = new System.Drawing.Size(264, 25);
             this.lblSwimmerKillerQ.TabIndex = 5;
             this.lblSwimmerKillerQ.Text = "Unknown";
             this.lblSwimmerKillerQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -705,7 +713,7 @@
             this.lblSwimmerKillerAns.AutoSize = true;
             this.lblSwimmerKillerAns.Location = new System.Drawing.Point(3, 25);
             this.lblSwimmerKillerAns.Name = "lblSwimmerKillerAns";
-            this.lblSwimmerKillerAns.Size = new System.Drawing.Size(267, 13);
+            this.lblSwimmerKillerAns.Size = new System.Drawing.Size(264, 13);
             this.lblSwimmerKillerAns.TabIndex = 7;
             this.lblSwimmerKillerAns.Text = "Unknown";
             this.lblSwimmerKillerAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -719,7 +727,7 @@
             this.pbSwimmerKiller.InitialImage = null;
             this.pbSwimmerKiller.Location = new System.Drawing.Point(3, 3);
             this.pbSwimmerKiller.Name = "pbSwimmerKiller";
-            this.pbSwimmerKiller.Size = new System.Drawing.Size(273, 156);
+            this.pbSwimmerKiller.Size = new System.Drawing.Size(270, 156);
             this.pbSwimmerKiller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSwimmerKiller.TabIndex = 0;
             this.pbSwimmerKiller.TabStop = false;
@@ -730,7 +738,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutStopEngineers.ColumnCount = 1;
-            this.tableLayoutStopEngineers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutStopEngineers.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutStopEngineers.Controls.Add(this.lblStopEngineersQ, 0, 0);
             this.tableLayoutStopEngineers.Controls.Add(this.lblStopEngineersAns, 0, 1);
             this.tableLayoutStopEngineers.Location = new System.Drawing.Point(3, 165);
@@ -738,7 +746,7 @@
             this.tableLayoutStopEngineers.RowCount = 2;
             this.tableLayoutStopEngineers.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutStopEngineers.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutStopEngineers.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutStopEngineers.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutStopEngineers.TabIndex = 9;
             // 
             // lblStopEngineersQ
@@ -749,7 +757,7 @@
             this.lblStopEngineersQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStopEngineersQ.Location = new System.Drawing.Point(3, 0);
             this.lblStopEngineersQ.Name = "lblStopEngineersQ";
-            this.lblStopEngineersQ.Size = new System.Drawing.Size(267, 25);
+            this.lblStopEngineersQ.Size = new System.Drawing.Size(264, 25);
             this.lblStopEngineersQ.TabIndex = 5;
             this.lblStopEngineersQ.Text = "Unknown";
             this.lblStopEngineersQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -761,7 +769,7 @@
             this.lblStopEngineersAns.AutoSize = true;
             this.lblStopEngineersAns.Location = new System.Drawing.Point(3, 25);
             this.lblStopEngineersAns.Name = "lblStopEngineersAns";
-            this.lblStopEngineersAns.Size = new System.Drawing.Size(267, 13);
+            this.lblStopEngineersAns.Size = new System.Drawing.Size(264, 13);
             this.lblStopEngineersAns.TabIndex = 7;
             this.lblStopEngineersAns.Text = "Unknown";
             this.lblStopEngineersAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -775,7 +783,7 @@
             this.pbStopEngineers.InitialImage = null;
             this.pbStopEngineers.Location = new System.Drawing.Point(3, 3);
             this.pbStopEngineers.Name = "pbStopEngineers";
-            this.pbStopEngineers.Size = new System.Drawing.Size(273, 156);
+            this.pbStopEngineers.Size = new System.Drawing.Size(270, 156);
             this.pbStopEngineers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbStopEngineers.TabIndex = 0;
             this.pbStopEngineers.TabStop = false;
@@ -786,7 +794,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutCutPhoneLines.ColumnCount = 1;
-            this.tableLayoutCutPhoneLines.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutCutPhoneLines.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutCutPhoneLines.Controls.Add(this.lblCutPhoneLinesQ, 0, 0);
             this.tableLayoutCutPhoneLines.Controls.Add(this.lblCutPhoneLinesAns, 0, 1);
             this.tableLayoutCutPhoneLines.Location = new System.Drawing.Point(3, 165);
@@ -794,7 +802,7 @@
             this.tableLayoutCutPhoneLines.RowCount = 2;
             this.tableLayoutCutPhoneLines.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutCutPhoneLines.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutCutPhoneLines.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutCutPhoneLines.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutCutPhoneLines.TabIndex = 9;
             // 
             // lblCutPhoneLinesQ
@@ -805,7 +813,7 @@
             this.lblCutPhoneLinesQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCutPhoneLinesQ.Location = new System.Drawing.Point(3, 0);
             this.lblCutPhoneLinesQ.Name = "lblCutPhoneLinesQ";
-            this.lblCutPhoneLinesQ.Size = new System.Drawing.Size(267, 25);
+            this.lblCutPhoneLinesQ.Size = new System.Drawing.Size(264, 25);
             this.lblCutPhoneLinesQ.TabIndex = 5;
             this.lblCutPhoneLinesQ.Text = "Unknown";
             this.lblCutPhoneLinesQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -817,7 +825,7 @@
             this.lblCutPhoneLinesAns.AutoSize = true;
             this.lblCutPhoneLinesAns.Location = new System.Drawing.Point(3, 25);
             this.lblCutPhoneLinesAns.Name = "lblCutPhoneLinesAns";
-            this.lblCutPhoneLinesAns.Size = new System.Drawing.Size(267, 13);
+            this.lblCutPhoneLinesAns.Size = new System.Drawing.Size(264, 13);
             this.lblCutPhoneLinesAns.TabIndex = 7;
             this.lblCutPhoneLinesAns.Text = "Unknown";
             this.lblCutPhoneLinesAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -831,7 +839,7 @@
             this.pbCutPhoneLines.InitialImage = null;
             this.pbCutPhoneLines.Location = new System.Drawing.Point(3, 3);
             this.pbCutPhoneLines.Name = "pbCutPhoneLines";
-            this.pbCutPhoneLines.Size = new System.Drawing.Size(273, 156);
+            this.pbCutPhoneLines.Size = new System.Drawing.Size(270, 156);
             this.pbCutPhoneLines.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCutPhoneLines.TabIndex = 0;
             this.pbCutPhoneLines.TabStop = false;
@@ -840,10 +848,10 @@
             // 
             this.panelStolenHorse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelStolenHorse.Controls.Add(this.tableLayoutStolenHorseContainer);
-            this.panelStolenHorse.Location = new System.Drawing.Point(349, 27);
+            this.panelStolenHorse.Location = new System.Drawing.Point(341, 3);
             this.panelStolenHorse.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelStolenHorse.Name = "panelStolenHorse";
-            this.panelStolenHorse.Size = new System.Drawing.Size(281, 326);
+            this.panelStolenHorse.Size = new System.Drawing.Size(278, 326);
             this.panelStolenHorse.TabIndex = 25;
             // 
             // tableLayoutStolenHorseContainer
@@ -858,17 +866,17 @@
             this.tableLayoutStolenHorseContainer.RowCount = 2;
             this.tableLayoutStolenHorseContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutStolenHorseContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutStolenHorseContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutStolenHorseContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutStolenHorseContainer.TabIndex = 22;
             // 
             // panelTacherBeating
             // 
             this.panelTacherBeating.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelTacherBeating.Controls.Add(this.tableLayoutTeacherBeatingContainer);
-            this.panelTacherBeating.Location = new System.Drawing.Point(691, 26);
+            this.panelTacherBeating.Location = new System.Drawing.Point(652, 3);
             this.panelTacherBeating.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelTacherBeating.Name = "panelTacherBeating";
-            this.panelTacherBeating.Size = new System.Drawing.Size(281, 326);
+            this.panelTacherBeating.Size = new System.Drawing.Size(278, 326);
             this.panelTacherBeating.TabIndex = 26;
             // 
             // tableLayoutTeacherBeatingContainer
@@ -883,17 +891,17 @@
             this.tableLayoutTeacherBeatingContainer.RowCount = 2;
             this.tableLayoutTeacherBeatingContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutTeacherBeatingContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutTeacherBeatingContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutTeacherBeatingContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutTeacherBeatingContainer.TabIndex = 22;
             // 
             // panelSchoolPropaganda
             // 
             this.panelSchoolPropaganda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelSchoolPropaganda.Controls.Add(this.tableLayoutSchoolPropagandaContainer);
-            this.panelSchoolPropaganda.Location = new System.Drawing.Point(1028, 31);
+            this.panelSchoolPropaganda.Location = new System.Drawing.Point(963, 3);
             this.panelSchoolPropaganda.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelSchoolPropaganda.Name = "panelSchoolPropaganda";
-            this.panelSchoolPropaganda.Size = new System.Drawing.Size(281, 326);
+            this.panelSchoolPropaganda.Size = new System.Drawing.Size(278, 326);
             this.panelSchoolPropaganda.TabIndex = 26;
             // 
             // tableLayoutSchoolPropagandaContainer
@@ -908,17 +916,17 @@
             this.tableLayoutSchoolPropagandaContainer.RowCount = 2;
             this.tableLayoutSchoolPropagandaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutSchoolPropagandaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutSchoolPropagandaContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutSchoolPropagandaContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutSchoolPropagandaContainer.TabIndex = 22;
             // 
             // panelCeausescuMail
             // 
             this.panelCeausescuMail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCeausescuMail.Controls.Add(this.tableLayoutCeausescuMailContainer);
-            this.panelCeausescuMail.Location = new System.Drawing.Point(1339, 35);
+            this.panelCeausescuMail.Location = new System.Drawing.Point(1274, 3);
             this.panelCeausescuMail.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelCeausescuMail.Name = "panelCeausescuMail";
-            this.panelCeausescuMail.Size = new System.Drawing.Size(281, 326);
+            this.panelCeausescuMail.Size = new System.Drawing.Size(278, 326);
             this.panelCeausescuMail.TabIndex = 27;
             // 
             // tableLayoutCeausescuMailContainer
@@ -933,17 +941,17 @@
             this.tableLayoutCeausescuMailContainer.RowCount = 2;
             this.tableLayoutCeausescuMailContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutCeausescuMailContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutCeausescuMailContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutCeausescuMailContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutCeausescuMailContainer.TabIndex = 22;
             // 
             // panelColdHands
             // 
             this.panelColdHands.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelColdHands.Controls.Add(this.tableLayoutColdHandsContainer);
-            this.panelColdHands.Location = new System.Drawing.Point(1305, 415);
+            this.panelColdHands.Location = new System.Drawing.Point(1274, 3);
             this.panelColdHands.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelColdHands.Name = "panelColdHands";
-            this.panelColdHands.Size = new System.Drawing.Size(281, 326);
+            this.panelColdHands.Size = new System.Drawing.Size(278, 326);
             this.panelColdHands.TabIndex = 28;
             // 
             // tableLayoutColdHandsContainer
@@ -958,17 +966,17 @@
             this.tableLayoutColdHandsContainer.RowCount = 2;
             this.tableLayoutColdHandsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutColdHandsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutColdHandsContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutColdHandsContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutColdHandsContainer.TabIndex = 22;
             // 
             // panelButterWhy
             // 
             this.panelButterWhy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelButterWhy.Controls.Add(this.tableLayoutButterWhyContainer);
-            this.panelButterWhy.Location = new System.Drawing.Point(1018, 416);
+            this.panelButterWhy.Location = new System.Drawing.Point(963, 3);
             this.panelButterWhy.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelButterWhy.Name = "panelButterWhy";
-            this.panelButterWhy.Size = new System.Drawing.Size(281, 326);
+            this.panelButterWhy.Size = new System.Drawing.Size(278, 326);
             this.panelButterWhy.TabIndex = 29;
             // 
             // tableLayoutButterWhyContainer
@@ -983,17 +991,17 @@
             this.tableLayoutButterWhyContainer.RowCount = 2;
             this.tableLayoutButterWhyContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutButterWhyContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutButterWhyContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutButterWhyContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutButterWhyContainer.TabIndex = 22;
             // 
             // panelSoftTomato
             // 
             this.panelSoftTomato.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelSoftTomato.Controls.Add(this.tableLayoutSoftTomatoContainer);
-            this.panelSoftTomato.Location = new System.Drawing.Point(691, 412);
+            this.panelSoftTomato.Location = new System.Drawing.Point(652, 3);
             this.panelSoftTomato.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelSoftTomato.Name = "panelSoftTomato";
-            this.panelSoftTomato.Size = new System.Drawing.Size(281, 326);
+            this.panelSoftTomato.Size = new System.Drawing.Size(278, 326);
             this.panelSoftTomato.TabIndex = 30;
             // 
             // tableLayoutSoftTomatoContainer
@@ -1008,17 +1016,17 @@
             this.tableLayoutSoftTomatoContainer.RowCount = 2;
             this.tableLayoutSoftTomatoContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutSoftTomatoContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutSoftTomatoContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutSoftTomatoContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutSoftTomatoContainer.TabIndex = 22;
             // 
             // panelDestiny
             // 
             this.panelDestiny.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDestiny.Controls.Add(this.tableLayoutDestinyContainer);
-            this.panelDestiny.Location = new System.Drawing.Point(22, 26);
+            this.panelDestiny.Location = new System.Drawing.Point(30, 3);
             this.panelDestiny.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelDestiny.Name = "panelDestiny";
-            this.panelDestiny.Size = new System.Drawing.Size(281, 326);
+            this.panelDestiny.Size = new System.Drawing.Size(278, 326);
             this.panelDestiny.TabIndex = 28;
             // 
             // tableLayoutDestinyContainer
@@ -1033,17 +1041,17 @@
             this.tableLayoutDestinyContainer.RowCount = 2;
             this.tableLayoutDestinyContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutDestinyContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutDestinyContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutDestinyContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutDestinyContainer.TabIndex = 22;
             // 
             // panelJapaneseMachines
             // 
             this.panelJapaneseMachines.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelJapaneseMachines.Controls.Add(this.tableLayoutJapaneseMachinesContainer);
-            this.panelJapaneseMachines.Location = new System.Drawing.Point(65, 416);
+            this.panelJapaneseMachines.Location = new System.Drawing.Point(30, 3);
             this.panelJapaneseMachines.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelJapaneseMachines.Name = "panelJapaneseMachines";
-            this.panelJapaneseMachines.Size = new System.Drawing.Size(281, 326);
+            this.panelJapaneseMachines.Size = new System.Drawing.Size(278, 326);
             this.panelJapaneseMachines.TabIndex = 31;
             // 
             // tableLayoutJapaneseMachinesContainer
@@ -1058,17 +1066,17 @@
             this.tableLayoutJapaneseMachinesContainer.RowCount = 2;
             this.tableLayoutJapaneseMachinesContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutJapaneseMachinesContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutJapaneseMachinesContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutJapaneseMachinesContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutJapaneseMachinesContainer.TabIndex = 22;
             // 
             // panelSwimmerKiller
             // 
             this.panelSwimmerKiller.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelSwimmerKiller.Controls.Add(this.tableLayoutSwimmerKillerContainer);
-            this.panelSwimmerKiller.Location = new System.Drawing.Point(382, 420);
+            this.panelSwimmerKiller.Location = new System.Drawing.Point(341, 3);
             this.panelSwimmerKiller.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelSwimmerKiller.Name = "panelSwimmerKiller";
-            this.panelSwimmerKiller.Size = new System.Drawing.Size(281, 326);
+            this.panelSwimmerKiller.Size = new System.Drawing.Size(278, 326);
             this.panelSwimmerKiller.TabIndex = 28;
             // 
             // tableLayoutSwimmerKillerContainer
@@ -1083,17 +1091,17 @@
             this.tableLayoutSwimmerKillerContainer.RowCount = 2;
             this.tableLayoutSwimmerKillerContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutSwimmerKillerContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutSwimmerKillerContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutSwimmerKillerContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutSwimmerKillerContainer.TabIndex = 22;
             // 
             // panelCutPhoneLines
             // 
             this.panelCutPhoneLines.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCutPhoneLines.Controls.Add(this.tableLayoutCutPhoneLinesContainer);
-            this.panelCutPhoneLines.Location = new System.Drawing.Point(1592, 367);
+            this.panelCutPhoneLines.Location = new System.Drawing.Point(1585, 3);
             this.panelCutPhoneLines.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelCutPhoneLines.Name = "panelCutPhoneLines";
-            this.panelCutPhoneLines.Size = new System.Drawing.Size(281, 326);
+            this.panelCutPhoneLines.Size = new System.Drawing.Size(278, 326);
             this.panelCutPhoneLines.TabIndex = 28;
             // 
             // tableLayoutCutPhoneLinesContainer
@@ -1108,17 +1116,17 @@
             this.tableLayoutCutPhoneLinesContainer.RowCount = 2;
             this.tableLayoutCutPhoneLinesContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutCutPhoneLinesContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutCutPhoneLinesContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutCutPhoneLinesContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutCutPhoneLinesContainer.TabIndex = 22;
             // 
             // panelStopEngineers
             // 
             this.panelStopEngineers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelStopEngineers.Controls.Add(this.tableLayoutStopEngineersContainer);
-            this.panelStopEngineers.Location = new System.Drawing.Point(1611, 703);
+            this.panelStopEngineers.Location = new System.Drawing.Point(1585, 3);
             this.panelStopEngineers.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelStopEngineers.Name = "panelStopEngineers";
-            this.panelStopEngineers.Size = new System.Drawing.Size(281, 326);
+            this.panelStopEngineers.Size = new System.Drawing.Size(278, 326);
             this.panelStopEngineers.TabIndex = 28;
             // 
             // tableLayoutStopEngineersContainer
@@ -1133,27 +1141,117 @@
             this.tableLayoutStopEngineersContainer.RowCount = 2;
             this.tableLayoutStopEngineersContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutStopEngineersContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutStopEngineersContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutStopEngineersContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutStopEngineersContainer.TabIndex = 22;
+            // 
+            // tableLayoutStoriesMain
+            // 
+            this.tableLayoutStoriesMain.ColumnCount = 1;
+            this.tableLayoutStoriesMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutStoriesMain.Controls.Add(this.tableLayoutLanguageStoriesBtnAlign, 0, 4);
+            this.tableLayoutStoriesMain.Controls.Add(this.tableLayoutStoriesBottom, 0, 3);
+            this.tableLayoutStoriesMain.Controls.Add(this.tableLayoutStoriesTop, 0, 1);
+            this.tableLayoutStoriesMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutStoriesMain.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutStoriesMain.Name = "tableLayoutStoriesMain";
+            this.tableLayoutStoriesMain.RowCount = 5;
+            this.tableLayoutStoriesMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutStoriesMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutStoriesMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutStoriesMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutStoriesMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutStoriesMain.Size = new System.Drawing.Size(1904, 1041);
+            this.tableLayoutStoriesMain.TabIndex = 32;
+            // 
+            // tableLayoutStoriesTop
+            // 
+            this.tableLayoutStoriesTop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutStoriesTop.ColumnCount = 13;
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesTop.Controls.Add(this.panelDestiny, 1, 0);
+            this.tableLayoutStoriesTop.Controls.Add(this.panelStolenHorse, 3, 0);
+            this.tableLayoutStoriesTop.Controls.Add(this.panelTacherBeating, 5, 0);
+            this.tableLayoutStoriesTop.Controls.Add(this.panelSchoolPropaganda, 7, 0);
+            this.tableLayoutStoriesTop.Controls.Add(this.panelCutPhoneLines, 11, 0);
+            this.tableLayoutStoriesTop.Controls.Add(this.panelCeausescuMail, 9, 0);
+            this.tableLayoutStoriesTop.Location = new System.Drawing.Point(3, 107);
+            this.tableLayoutStoriesTop.Name = "tableLayoutStoriesTop";
+            this.tableLayoutStoriesTop.RowCount = 1;
+            this.tableLayoutStoriesTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutStoriesTop.Size = new System.Drawing.Size(1898, 358);
+            this.tableLayoutStoriesTop.TabIndex = 33;
+            // 
+            // tableLayoutStoriesBottom
+            // 
+            this.tableLayoutStoriesBottom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutStoriesBottom.ColumnCount = 13;
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.9985F));
+            this.tableLayoutStoriesBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.429857F));
+            this.tableLayoutStoriesBottom.Controls.Add(this.panelJapaneseMachines, 1, 0);
+            this.tableLayoutStoriesBottom.Controls.Add(this.panelSwimmerKiller, 3, 0);
+            this.tableLayoutStoriesBottom.Controls.Add(this.panelSoftTomato, 5, 0);
+            this.tableLayoutStoriesBottom.Controls.Add(this.panelStopEngineers, 11, 0);
+            this.tableLayoutStoriesBottom.Controls.Add(this.panelButterWhy, 7, 0);
+            this.tableLayoutStoriesBottom.Controls.Add(this.panelColdHands, 9, 0);
+            this.tableLayoutStoriesBottom.Location = new System.Drawing.Point(3, 575);
+            this.tableLayoutStoriesBottom.Name = "tableLayoutStoriesBottom";
+            this.tableLayoutStoriesBottom.RowCount = 1;
+            this.tableLayoutStoriesBottom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutStoriesBottom.Size = new System.Drawing.Size(1898, 358);
+            this.tableLayoutStoriesBottom.TabIndex = 34;
+            // 
+            // tableLayoutLanguageStoriesBtnAlign
+            // 
+            this.tableLayoutLanguageStoriesBtnAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutLanguageStoriesBtnAlign.ColumnCount = 3;
+            this.tableLayoutLanguageStoriesBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutLanguageStoriesBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.tableLayoutLanguageStoriesBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageStoriesBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
+            this.tableLayoutLanguageStoriesBtnAlign.Location = new System.Drawing.Point(3, 939);
+            this.tableLayoutLanguageStoriesBtnAlign.Name = "tableLayoutLanguageStoriesBtnAlign";
+            this.tableLayoutLanguageStoriesBtnAlign.RowCount = 3;
+            this.tableLayoutLanguageStoriesBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.tableLayoutLanguageStoriesBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.tableLayoutLanguageStoriesBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageStoriesBtnAlign.Size = new System.Drawing.Size(1898, 99);
+            this.tableLayoutLanguageStoriesBtnAlign.TabIndex = 33;
             // 
             // Stories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.panelStopEngineers);
-            this.Controls.Add(this.panelCutPhoneLines);
-            this.Controls.Add(this.panelSwimmerKiller);
-            this.Controls.Add(this.panelJapaneseMachines);
-            this.Controls.Add(this.panelDestiny);
-            this.Controls.Add(this.panelSoftTomato);
-            this.Controls.Add(this.panelButterWhy);
-            this.Controls.Add(this.panelColdHands);
-            this.Controls.Add(this.panelCeausescuMail);
-            this.Controls.Add(this.panelSchoolPropaganda);
-            this.Controls.Add(this.panelTacherBeating);
-            this.Controls.Add(this.panelStolenHorse);
-            this.Controls.Add(this.btnLanguage);
+            this.Controls.Add(this.tableLayoutStoriesMain);
             this.Name = "Stories";
             this.Text = "Stories";
             this.Shown += new System.EventHandler(this.Stories_Shown);
@@ -1219,6 +1317,10 @@
             this.tableLayoutCutPhoneLinesContainer.ResumeLayout(false);
             this.panelStopEngineers.ResumeLayout(false);
             this.tableLayoutStopEngineersContainer.ResumeLayout(false);
+            this.tableLayoutStoriesMain.ResumeLayout(false);
+            this.tableLayoutStoriesTop.ResumeLayout(false);
+            this.tableLayoutStoriesBottom.ResumeLayout(false);
+            this.tableLayoutLanguageStoriesBtnAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1298,5 +1400,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutCutPhoneLinesContainer;
         private System.Windows.Forms.Panel panelStopEngineers;
         private System.Windows.Forms.TableLayoutPanel tableLayoutStopEngineersContainer;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutStoriesMain;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutStoriesTop;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutStoriesBottom;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageStoriesBtnAlign;
     }
 }

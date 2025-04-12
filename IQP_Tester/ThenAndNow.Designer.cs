@@ -879,8 +879,8 @@
             this.tableLayoutLanguageThenAndNowBtnAlign.Location = new System.Drawing.Point(3, 991);
             this.tableLayoutLanguageThenAndNowBtnAlign.Name = "tableLayoutLanguageThenAndNowBtnAlign";
             this.tableLayoutLanguageThenAndNowBtnAlign.RowCount = 3;
-            this.tableLayoutLanguageThenAndNowBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
-            this.tableLayoutLanguageThenAndNowBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76F));
+            this.tableLayoutLanguageThenAndNowBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tableLayoutLanguageThenAndNowBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 84.5F));
             this.tableLayoutLanguageThenAndNowBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.5F));
             this.tableLayoutLanguageThenAndNowBtnAlign.Size = new System.Drawing.Size(1898, 47);
             this.tableLayoutLanguageThenAndNowBtnAlign.TabIndex = 32;
@@ -892,9 +892,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1787, 13);
+            this.button1.Location = new System.Drawing.Point(1787, 9);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 29);
+            this.button1.Size = new System.Drawing.Size(93, 33);
             this.button1.TabIndex = 8;
             this.button1.Text = "English";
             this.button1.UseVisualStyleBackColor = false;
