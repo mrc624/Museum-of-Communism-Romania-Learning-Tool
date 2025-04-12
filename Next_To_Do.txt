@@ -2,12 +2,6 @@ make translation button UK flag and Romanian flag
 
 Perhaps should be centering main titles to the main pictures, but may not be needed since they both get Center_X()
 
-Add a progress bar for credits and other
-
-Finish adding pictures
-
 Organize pictures into folders
 
 Add MOCR Icon to all forms
-
-Dock all polaroids within the tablelayoutpanels, a maximum size is set which must be removed
