@@ -33,22 +33,31 @@
             this.lblAnswer = new System.Windows.Forms.Label();
             this.btnLanguage = new System.Windows.Forms.Button();
             this.pbPicture = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPolaroidZoomContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPolaroidZoomMain = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutLanguagePolaroidZoomBtnAlign = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelQuestionAndAnswer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
+            this.tableLayoutPolaroidZoomContainer.SuspendLayout();
+            this.tableLayoutPolaroidZoomMain.SuspendLayout();
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanelQuestionAndAnswer
             // 
+            this.tableLayoutPanelQuestionAndAnswer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanelQuestionAndAnswer.ColumnCount = 1;
-            this.tableLayoutPanelQuestionAndAnswer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelQuestionAndAnswer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelQuestionAndAnswer.Controls.Add(this.lblQuestion, 0, 0);
             this.tableLayoutPanelQuestionAndAnswer.Controls.Add(this.lblAnswer, 0, 1);
-            this.tableLayoutPanelQuestionAndAnswer.Location = new System.Drawing.Point(969, 12);
+            this.tableLayoutPanelQuestionAndAnswer.Location = new System.Drawing.Point(952, 3);
             this.tableLayoutPanelQuestionAndAnswer.Name = "tableLayoutPanelQuestionAndAnswer";
             this.tableLayoutPanelQuestionAndAnswer.RowCount = 1;
-            this.tableLayoutPanelQuestionAndAnswer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.242871F));
-            this.tableLayoutPanelQuestionAndAnswer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.75713F));
-            this.tableLayoutPanelQuestionAndAnswer.Size = new System.Drawing.Size(923, 1017);
+            this.tableLayoutPanelQuestionAndAnswer.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelQuestionAndAnswer.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelQuestionAndAnswer.Size = new System.Drawing.Size(943, 820);
             this.tableLayoutPanelQuestionAndAnswer.TabIndex = 2;
             this.tableLayoutPanelQuestionAndAnswer.Click += new System.EventHandler(this.tableLayoutPanelQuestionAndAnswer_Click);
             // 
@@ -60,7 +69,7 @@
             this.lblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.Location = new System.Drawing.Point(3, 0);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(917, 39);
+            this.lblQuestion.Size = new System.Drawing.Size(937, 39);
             this.lblQuestion.TabIndex = 0;
             this.lblQuestion.Text = "EXAMPLE QUESTION FOR SIZING";
             this.lblQuestion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -72,9 +81,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAnswer.AutoSize = true;
             this.lblAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnswer.Location = new System.Drawing.Point(3, 93);
+            this.lblAnswer.Location = new System.Drawing.Point(3, 39);
             this.lblAnswer.Name = "lblAnswer";
-            this.lblAnswer.Size = new System.Drawing.Size(917, 31);
+            this.lblAnswer.Size = new System.Drawing.Size(937, 31);
             this.lblAnswer.TabIndex = 1;
             this.lblAnswer.Text = "EXAMPLE ANSWER FOR SIZING";
             this.lblAnswer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -84,9 +93,9 @@
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
+            this.btnLanguage.Location = new System.Drawing.Point(1787, 59);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
+            this.btnLanguage.Size = new System.Drawing.Size(93, 35);
             this.btnLanguage.TabIndex = 8;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -94,22 +103,76 @@
             // 
             // pbPicture
             // 
-            this.pbPicture.Location = new System.Drawing.Point(12, 12);
+            this.pbPicture.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbPicture.Location = new System.Drawing.Point(3, 3);
             this.pbPicture.Name = "pbPicture";
-            this.pbPicture.Size = new System.Drawing.Size(950, 1017);
+            this.pbPicture.Size = new System.Drawing.Size(943, 820);
             this.pbPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPicture.TabIndex = 0;
             this.pbPicture.TabStop = false;
             this.pbPicture.Click += new System.EventHandler(this.pbPicture_Click);
+            // 
+            // tableLayoutPolaroidZoomContainer
+            // 
+            this.tableLayoutPolaroidZoomContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPolaroidZoomContainer.ColumnCount = 2;
+            this.tableLayoutPolaroidZoomContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPolaroidZoomContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPolaroidZoomContainer.Controls.Add(this.pbPicture, 0, 0);
+            this.tableLayoutPolaroidZoomContainer.Controls.Add(this.tableLayoutPanelQuestionAndAnswer, 1, 0);
+            this.tableLayoutPolaroidZoomContainer.Location = new System.Drawing.Point(3, 107);
+            this.tableLayoutPolaroidZoomContainer.Name = "tableLayoutPolaroidZoomContainer";
+            this.tableLayoutPolaroidZoomContainer.RowCount = 1;
+            this.tableLayoutPolaroidZoomContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPolaroidZoomContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPolaroidZoomContainer.Size = new System.Drawing.Size(1898, 826);
+            this.tableLayoutPolaroidZoomContainer.TabIndex = 9;
+            // 
+            // tableLayoutPolaroidZoomMain
+            // 
+            this.tableLayoutPolaroidZoomMain.ColumnCount = 1;
+            this.tableLayoutPolaroidZoomMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPolaroidZoomMain.Controls.Add(this.tableLayoutLanguagePolaroidZoomBtnAlign, 0, 2);
+            this.tableLayoutPolaroidZoomMain.Controls.Add(this.tableLayoutPolaroidZoomContainer, 0, 1);
+            this.tableLayoutPolaroidZoomMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPolaroidZoomMain.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPolaroidZoomMain.Name = "tableLayoutPolaroidZoomMain";
+            this.tableLayoutPolaroidZoomMain.RowCount = 3;
+            this.tableLayoutPolaroidZoomMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPolaroidZoomMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPolaroidZoomMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPolaroidZoomMain.Size = new System.Drawing.Size(1904, 1041);
+            this.tableLayoutPolaroidZoomMain.TabIndex = 10;
+            // 
+            // tableLayoutLanguagePolaroidZoomBtnAlign
+            // 
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.ColumnCount = 3;
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.Location = new System.Drawing.Point(3, 939);
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.Name = "tableLayoutLanguagePolaroidZoomBtnAlign";
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.RowCount = 3;
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.Size = new System.Drawing.Size(1898, 99);
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.TabIndex = 32;
             // 
             // Polaroid_Zoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.btnLanguage);
-            this.Controls.Add(this.tableLayoutPanelQuestionAndAnswer);
-            this.Controls.Add(this.pbPicture);
+            this.Controls.Add(this.tableLayoutPolaroidZoomMain);
             this.Name = "Polaroid_Zoom";
             this.Text = "Polaroid_Zoom";
             this.Click += new System.EventHandler(this.Polaroid_Zoom_Click);
@@ -117,6 +180,9 @@
             this.tableLayoutPanelQuestionAndAnswer.ResumeLayout(false);
             this.tableLayoutPanelQuestionAndAnswer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
+            this.tableLayoutPolaroidZoomContainer.ResumeLayout(false);
+            this.tableLayoutPolaroidZoomMain.ResumeLayout(false);
+            this.tableLayoutLanguagePolaroidZoomBtnAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -128,5 +194,8 @@
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label lblAnswer;
         private System.Windows.Forms.Button btnLanguage;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPolaroidZoomContainer;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPolaroidZoomMain;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguagePolaroidZoomBtnAlign;
     }
 }
