@@ -229,6 +229,7 @@ namespace IQP_Tester
         {
             textManager.Increment_Language(this);
             Main_Resize(this, new EventArgs());
+            openClose.Interaction();
         }
 
         private void btnLanguage_TextChanged(object sender, EventArgs e)
@@ -259,11 +260,7 @@ namespace IQP_Tester
 
         private void Main_Resize(object sender, EventArgs e)
         {
-            resize.Glue_to_Corner(tableLayoutMain, Resize_Helper.Corner.all, TABLE_LAYOUT_MAIN_EDGE_MARGIN);
             resize.Resize_Fonts(this);
-
-            resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
-            resize.Center_to_Other_Control(btnCredits, btnLanguage, Resize_Helper.Centering_Options.to_left);
         }
 
         // key overides
