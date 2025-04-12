@@ -127,7 +127,7 @@
             this.lblHowDidTheRegimeFall.Location = new System.Drawing.Point(1, 0);
             this.lblHowDidTheRegimeFall.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblHowDidTheRegimeFall.Name = "lblHowDidTheRegimeFall";
-            this.lblHowDidTheRegimeFall.Size = new System.Drawing.Size(278, 62);
+            this.lblHowDidTheRegimeFall.Size = new System.Drawing.Size(241, 62);
             this.lblHowDidTheRegimeFall.TabIndex = 0;
             this.lblHowDidTheRegimeFall.Text = "How did the Regime fall?";
             this.lblHowDidTheRegimeFall.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -139,10 +139,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelRegimeFall.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelRegimeFall.Controls.Add(this.tableLayoutRegimeFall);
-            this.panelRegimeFall.Location = new System.Drawing.Point(1457, 1);
+            this.panelRegimeFall.Location = new System.Drawing.Point(1648, 1);
             this.panelRegimeFall.Margin = new System.Windows.Forms.Padding(1);
             this.panelRegimeFall.Name = "panelRegimeFall";
-            this.panelRegimeFall.Size = new System.Drawing.Size(282, 356);
+            this.panelRegimeFall.Size = new System.Drawing.Size(245, 356);
             this.panelRegimeFall.TabIndex = 12;
             this.panelRegimeFall.Click += new System.EventHandler(this.panelRegimeFall_Click);
             // 
@@ -158,7 +158,7 @@
             this.tableLayoutRegimeFall.RowCount = 2;
             this.tableLayoutRegimeFall.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutRegimeFall.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutRegimeFall.Size = new System.Drawing.Size(280, 354);
+            this.tableLayoutRegimeFall.Size = new System.Drawing.Size(243, 354);
             this.tableLayoutRegimeFall.TabIndex = 35;
             // 
             // pbRegimeFall
@@ -171,7 +171,7 @@
             this.pbRegimeFall.Location = new System.Drawing.Point(1, 63);
             this.pbRegimeFall.Margin = new System.Windows.Forms.Padding(1);
             this.pbRegimeFall.Name = "pbRegimeFall";
-            this.pbRegimeFall.Size = new System.Drawing.Size(278, 290);
+            this.pbRegimeFall.Size = new System.Drawing.Size(241, 290);
             this.pbRegimeFall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbRegimeFall.TabIndex = 2;
             this.pbRegimeFall.TabStop = false;
@@ -190,7 +190,7 @@
             this.tableLayoutAna.RowCount = 2;
             this.tableLayoutAna.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutAna.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutAna.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutAna.Size = new System.Drawing.Size(233, 156);
             this.tableLayoutAna.TabIndex = 9;
             // 
             // lblAnaQ
@@ -201,7 +201,7 @@
             this.lblAnaQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAnaQ.Location = new System.Drawing.Point(3, 0);
             this.lblAnaQ.Name = "lblAnaQ";
-            this.lblAnaQ.Size = new System.Drawing.Size(264, 25);
+            this.lblAnaQ.Size = new System.Drawing.Size(227, 25);
             this.lblAnaQ.TabIndex = 5;
             this.lblAnaQ.Text = "Unknown";
             this.lblAnaQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -213,7 +213,7 @@
             this.lblAnaAns.AutoSize = true;
             this.lblAnaAns.Location = new System.Drawing.Point(3, 25);
             this.lblAnaAns.Name = "lblAnaAns";
-            this.lblAnaAns.Size = new System.Drawing.Size(264, 13);
+            this.lblAnaAns.Size = new System.Drawing.Size(227, 13);
             this.lblAnaAns.TabIndex = 7;
             this.lblAnaAns.Text = "Unknown";
             this.lblAnaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -227,7 +227,7 @@
             this.pbAna.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbAna.InitialImage")));
             this.pbAna.Location = new System.Drawing.Point(3, 3);
             this.pbAna.Name = "pbAna";
-            this.pbAna.Size = new System.Drawing.Size(270, 156);
+            this.pbAna.Size = new System.Drawing.Size(233, 156);
             this.pbAna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbAna.TabIndex = 0;
             this.pbAna.TabStop = false;
@@ -302,7 +302,7 @@
             this.tableLayoutJuly.RowCount = 2;
             this.tableLayoutJuly.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutJuly.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutJuly.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutJuly.Size = new System.Drawing.Size(233, 156);
             this.tableLayoutJuly.TabIndex = 9;
             // 
             // lblJulyQ
@@ -313,7 +313,7 @@
             this.lblJulyQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJulyQ.Location = new System.Drawing.Point(3, 0);
             this.lblJulyQ.Name = "lblJulyQ";
-            this.lblJulyQ.Size = new System.Drawing.Size(264, 25);
+            this.lblJulyQ.Size = new System.Drawing.Size(227, 25);
             this.lblJulyQ.TabIndex = 5;
             this.lblJulyQ.Text = "Unknown";
             this.lblJulyQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -325,7 +325,7 @@
             this.lblJulyAns.AutoSize = true;
             this.lblJulyAns.Location = new System.Drawing.Point(3, 25);
             this.lblJulyAns.Name = "lblJulyAns";
-            this.lblJulyAns.Size = new System.Drawing.Size(264, 13);
+            this.lblJulyAns.Size = new System.Drawing.Size(227, 13);
             this.lblJulyAns.TabIndex = 7;
             this.lblJulyAns.Text = "Unknown";
             this.lblJulyAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -339,7 +339,7 @@
             this.pbJuly.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbJuly.InitialImage")));
             this.pbJuly.Location = new System.Drawing.Point(3, 3);
             this.pbJuly.Name = "pbJuly";
-            this.pbJuly.Size = new System.Drawing.Size(270, 156);
+            this.pbJuly.Size = new System.Drawing.Size(233, 156);
             this.pbJuly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbJuly.TabIndex = 0;
             this.pbJuly.TabStop = false;
@@ -433,10 +433,10 @@
             this.panelCeausescusRise.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCeausescusRise.Controls.Add(this.tableLayoutCeausescusRise);
             this.panelCeausescusRise.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCeausescusRise.Location = new System.Drawing.Point(587, 1);
+            this.panelCeausescusRise.Location = new System.Drawing.Point(635, 1);
             this.panelCeausescusRise.Margin = new System.Windows.Forms.Padding(1);
             this.panelCeausescusRise.Name = "panelCeausescusRise";
-            this.panelCeausescusRise.Size = new System.Drawing.Size(282, 356);
+            this.panelCeausescusRise.Size = new System.Drawing.Size(245, 356);
             this.panelCeausescusRise.TabIndex = 25;
             this.panelCeausescusRise.Click += new System.EventHandler(this.panelCeausescusRise_Click);
             // 
@@ -452,7 +452,7 @@
             this.tableLayoutCeausescusRise.RowCount = 2;
             this.tableLayoutCeausescusRise.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutCeausescusRise.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutCeausescusRise.Size = new System.Drawing.Size(280, 354);
+            this.tableLayoutCeausescusRise.Size = new System.Drawing.Size(243, 354);
             this.tableLayoutCeausescusRise.TabIndex = 34;
             // 
             // pbCeausescusRise
@@ -460,10 +460,10 @@
             this.pbCeausescusRise.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbCeausescusRise.Image = global::IQP_Tester.Properties.Resources.CeausescusRise;
             this.pbCeausescusRise.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
-            this.pbCeausescusRise.Location = new System.Drawing.Point(1, 32);
+            this.pbCeausescusRise.Location = new System.Drawing.Point(1, 63);
             this.pbCeausescusRise.Margin = new System.Windows.Forms.Padding(1);
             this.pbCeausescusRise.Name = "pbCeausescusRise";
-            this.pbCeausescusRise.Size = new System.Drawing.Size(278, 321);
+            this.pbCeausescusRise.Size = new System.Drawing.Size(241, 290);
             this.pbCeausescusRise.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCeausescusRise.TabIndex = 2;
             this.pbCeausescusRise.TabStop = false;
@@ -478,7 +478,7 @@
             this.lblCeausescusRise.Location = new System.Drawing.Point(1, 0);
             this.lblCeausescusRise.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblCeausescusRise.Name = "lblCeausescusRise";
-            this.lblCeausescusRise.Size = new System.Drawing.Size(278, 31);
+            this.lblCeausescusRise.Size = new System.Drawing.Size(241, 62);
             this.lblCeausescusRise.TabIndex = 0;
             this.lblCeausescusRise.Text = "Rise of Ceausescus";
             this.lblCeausescusRise.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -494,16 +494,17 @@
             this.pbTimeLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbTimeLine.TabIndex = 9;
             this.pbTimeLine.TabStop = false;
+            this.pbTimeLine.Click += new System.EventHandler(this.pbTimeLine_Click);
             // 
             // panelAna
             // 
             this.panelAna.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelAna.Controls.Add(this.tableLayoutAnaContainer);
             this.panelAna.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelAna.Location = new System.Drawing.Point(154, 3);
+            this.panelAna.Location = new System.Drawing.Point(110, 3);
             this.panelAna.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelAna.Name = "panelAna";
-            this.panelAna.Size = new System.Drawing.Size(278, 326);
+            this.panelAna.Size = new System.Drawing.Size(241, 326);
             this.panelAna.TabIndex = 30;
             // 
             // tableLayoutAnaContainer
@@ -518,7 +519,7 @@
             this.tableLayoutAnaContainer.RowCount = 2;
             this.tableLayoutAnaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutAnaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutAnaContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutAnaContainer.Size = new System.Drawing.Size(239, 324);
             this.tableLayoutAnaContainer.TabIndex = 22;
             // 
             // panelJuly
@@ -528,10 +529,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelJuly.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelJuly.Controls.Add(this.tableLayoutJulyContainer);
-            this.panelJuly.Location = new System.Drawing.Point(1024, 3);
+            this.panelJuly.Location = new System.Drawing.Point(884, 3);
             this.panelJuly.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelJuly.Name = "panelJuly";
-            this.panelJuly.Size = new System.Drawing.Size(278, 326);
+            this.panelJuly.Size = new System.Drawing.Size(241, 326);
             this.panelJuly.TabIndex = 31;
             // 
             // tableLayoutJulyContainer
@@ -546,14 +547,14 @@
             this.tableLayoutJulyContainer.RowCount = 2;
             this.tableLayoutJulyContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutJulyContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutJulyContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutJulyContainer.Size = new System.Drawing.Size(239, 324);
             this.tableLayoutJulyContainer.TabIndex = 22;
             // 
             // panelHousePeople
             // 
             this.panelHousePeople.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelHousePeople.Controls.Add(this.tableLayoutHousePeopleContainer);
-            this.panelHousePeople.Location = new System.Drawing.Point(1351, 3);
+            this.panelHousePeople.Location = new System.Drawing.Point(1529, 3);
             this.panelHousePeople.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelHousePeople.Name = "panelHousePeople";
             this.panelHousePeople.Size = new System.Drawing.Size(278, 326);
@@ -578,7 +579,7 @@
             // 
             this.panelWarsaw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelWarsaw.Controls.Add(this.tableLayoutWarsawContainer);
-            this.panelWarsaw.Location = new System.Drawing.Point(807, 3);
+            this.panelWarsaw.Location = new System.Drawing.Point(970, 3);
             this.panelWarsaw.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelWarsaw.Name = "panelWarsaw";
             this.panelWarsaw.Size = new System.Drawing.Size(278, 326);
@@ -619,7 +620,7 @@
             this.panelSoviet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelSoviet.Controls.Add(this.tableLayoutSoviet);
             this.panelSoviet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSoviet.Location = new System.Drawing.Point(261, 1);
+            this.panelSoviet.Location = new System.Drawing.Point(314, 1);
             this.panelSoviet.Margin = new System.Windows.Forms.Padding(1);
             this.panelSoviet.Name = "panelSoviet";
             this.panelSoviet.Size = new System.Drawing.Size(282, 356);
@@ -654,15 +655,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutTimelineTop.ColumnCount = 9;
-            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.652174F));
+            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.04348F));
+            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.78261F));
+            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.04348F));
+            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0F));
+            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.04348F));
+            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.3913F));
+            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.04348F));
+            this.tableLayoutTimelineTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0F));
             this.tableLayoutTimelineTop.Controls.Add(this.panelAna, 1, 0);
             this.tableLayoutTimelineTop.Controls.Add(this.panelRegimeFall, 7, 0);
             this.tableLayoutTimelineTop.Controls.Add(this.panelJuly, 5, 0);
@@ -673,7 +674,6 @@
             this.tableLayoutTimelineTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutTimelineTop.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutTimelineTop.TabIndex = 34;
-            this.tableLayoutTimelineTop.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutTimelineTop_Paint);
             // 
             // tableLayoutTimelineBottom
             // 
@@ -681,13 +681,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutTimelineBottom.ColumnCount = 7;
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.75F));
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.5F));
             this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.75F));
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.5F));
             this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.75F));
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.5F));
             this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.75F));
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.5F));
             this.tableLayoutTimelineBottom.Controls.Add(this.panelWarsaw, 3, 0);
             this.tableLayoutTimelineBottom.Controls.Add(this.panelHousePeople, 5, 0);
             this.tableLayoutTimelineBottom.Controls.Add(this.panelSoviet, 1, 0);
@@ -725,7 +725,6 @@
             this.Controls.Add(this.tableLayoutTimelineMain);
             this.Name = "Timeline";
             this.Text = "Timeline";
-            this.Load += new System.EventHandler(this.Timeline_Load);
             this.Shown += new System.EventHandler(this.Timeline_Shown);
             this.Click += new System.EventHandler(this.Timeline_Click);
             this.Resize += new System.EventHandler(this.Timeline_Resize);

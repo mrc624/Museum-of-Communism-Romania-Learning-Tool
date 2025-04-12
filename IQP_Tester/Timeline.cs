@@ -19,15 +19,15 @@ namespace IQP_Tester
         Open_Close_Helper openClose;
         Resize_Helper resize = new Resize_Helper();
         Polaroid_Helper polaroid_Helper = new Polaroid_Helper();
-        Click_Helper click_Helper = new Click_Helper();
+        Click_Helper click_Helper;
         TableLayout_Helper tableLayoutHelper = new TableLayout_Helper();
 
         RegimeFall regimeFall;
         CeausescusRise ceausescusRise;
         SovietEra sovietEra;
 
-        public const int START_YEAR = 1931;
-        public const int END_YEAR = 1999;
+        public const int START_YEAR = 1940;
+        public const int END_YEAR = 1990;
         public const int TICKS_EVERY = 10;
         public const int YEAR_RANGE = END_YEAR - START_YEAR;
         public const int LINE_WIDTH = 3;
@@ -60,6 +60,7 @@ namespace IQP_Tester
             regimeFall = regime;
             ceausescusRise = ceausescus;
             sovietEra = soviet;
+            click_Helper = new Click_Helper(polaroid_Helper);
 
             Make_Year_Lables(this);
             Make_Assign_Lines(this);
@@ -71,6 +72,7 @@ namespace IQP_Tester
             polaroid_Helper.Find_Polaroids(this);
             Set_Panel_Clicks();
             polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, open_close);
+            click_Helper.Assign_Children_To_Same_Click_Avoid_Polaroids(this, Timeline_Click);
         }
 
         private void Set_Panel_Clicks()
@@ -201,6 +203,8 @@ namespace IQP_Tester
             }
         }
 
+        // this function does not work properly
+        /*
         private void TableLayout_Adjust_Position_Draw_Line(Panel panel, int year, Position position)
         {
             if ((position == Position.Top || position == Position.Bottom) && Year_Is_Valid(year))
@@ -210,7 +214,9 @@ namespace IQP_Tester
                 Resize_Reposition_Line(panel.Location, time_point, Lines_Assignments[panel]);
             }
         }
-
+        */
+        // this function does not work properly
+        /*
         private void TableLayout_Adjust_Position(Panel panel, int year, Position position) // for this to work the panels must already be in the right order from left to right and the function must be called on the panels from left to right
         {
             if (panel != null && Year_Is_Valid(year) && panel.Parent is TableLayoutPanel && pbTimeLine.Parent is TableLayoutPanel && (position == Position.Top || position == Position.Bottom))
@@ -254,6 +260,7 @@ namespace IQP_Tester
                 }
             }
         }
+        */
 
         private double Get_Percent_Up_To(TableLayoutPanel tableLayoutPanel, int column)
         {
@@ -424,14 +431,7 @@ namespace IQP_Tester
 
         private void Timeline_Resize(object sender, EventArgs e)
         {
-            TableLayout_Adjust_Position_Draw_Line(panelAna, 1947, Position.Top);
-            TableLayout_Adjust_Position_Draw_Line(panelCeausescusRise, 1963, Position.Top); // should be at 1965, moved to not overlap
-            TableLayout_Adjust_Position_Draw_Line(panelJuly, 1973, Position.Top); // should be at 1971, moved to not overlap
-            TableLayout_Adjust_Position_Draw_Line(panelRegimeFall, 1989, Position.Top);
-            TableLayout_Adjust_Position_Draw_Line(panelSoviet, 1952, Position.Bottom);
-            TableLayout_Adjust_Position_Draw_Line(panelWarsaw, 1969, Position.Bottom);
-            TableLayout_Adjust_Position_Draw_Line(panelHousePeople, 1984, Position.Bottom);
-            Place_Labels_And_Ticks();
+            resize.Resize_Fonts(this);
         }
 
         private void Timeline_Click(object sender, EventArgs e)
@@ -503,14 +503,9 @@ namespace IQP_Tester
             }
         }
 
-        private void Timeline_Load(object sender, EventArgs e)
+        private void pbTimeLine_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void tableLayoutTimelineTop_Paint(object sender, PaintEventArgs e)
-        {
-
+            Timeline_Click(sender, e);
         }
     }
 }
