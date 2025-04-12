@@ -80,12 +80,12 @@
             this.tableLayoutElena.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutElena.Controls.Add(this.lblElenaQ, 0, 0);
             this.tableLayoutElena.Controls.Add(this.lblElenaAns, 0, 1);
-            this.tableLayoutElena.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutElena.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutElena.Name = "tableLayoutElena";
             this.tableLayoutElena.RowCount = 2;
             this.tableLayoutElena.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutElena.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutElena.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutElena.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutElena.TabIndex = 9;
             // 
             // lblElenaQ
@@ -122,7 +122,7 @@
             this.pbElena.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbElena.InitialImage")));
             this.pbElena.Location = new System.Drawing.Point(3, 3);
             this.pbElena.Name = "pbElena";
-            this.pbElena.Size = new System.Drawing.Size(270, 156);
+            this.pbElena.Size = new System.Drawing.Size(270, 169);
             this.pbElena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbElena.TabIndex = 0;
             this.pbElena.TabStop = false;
@@ -136,12 +136,12 @@
             this.tableLayoutNicolae.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutNicolae.Controls.Add(this.lblNicolaeQ, 0, 0);
             this.tableLayoutNicolae.Controls.Add(this.lblNicolaeAns, 0, 1);
-            this.tableLayoutNicolae.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutNicolae.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutNicolae.Name = "tableLayoutNicolae";
             this.tableLayoutNicolae.RowCount = 2;
             this.tableLayoutNicolae.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutNicolae.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutNicolae.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutNicolae.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutNicolae.TabIndex = 9;
             // 
             // lblNicolaeQ
@@ -178,7 +178,7 @@
             this.pbNicolae.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbNicolae.InitialImage")));
             this.pbNicolae.Location = new System.Drawing.Point(3, 3);
             this.pbNicolae.Name = "pbNicolae";
-            this.pbNicolae.Size = new System.Drawing.Size(270, 156);
+            this.pbNicolae.Size = new System.Drawing.Size(270, 169);
             this.pbNicolae.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbNicolae.TabIndex = 0;
             this.pbNicolae.TabStop = false;
@@ -187,10 +187,10 @@
             // 
             this.panelElena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelElena.Controls.Add(this.tableLayoutElenaContainer);
+            this.panelElena.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelElena.Location = new System.Drawing.Point(445, 3);
-            this.panelElena.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelElena.Name = "panelElena";
-            this.panelElena.Size = new System.Drawing.Size(278, 326);
+            this.panelElena.Size = new System.Drawing.Size(278, 352);
             this.panelElena.TabIndex = 28;
             // 
             // tableLayoutElenaContainer
@@ -205,17 +205,17 @@
             this.tableLayoutElenaContainer.RowCount = 2;
             this.tableLayoutElenaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutElenaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutElenaContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutElenaContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutElenaContainer.TabIndex = 22;
             // 
             // panelNicolae
             // 
             this.panelNicolae.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelNicolae.Controls.Add(this.tableLayoutNicolaeContainer);
+            this.panelNicolae.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNicolae.Location = new System.Drawing.Point(1171, 3);
-            this.panelNicolae.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelNicolae.Name = "panelNicolae";
-            this.panelNicolae.Size = new System.Drawing.Size(278, 326);
+            this.panelNicolae.Size = new System.Drawing.Size(278, 352);
             this.panelNicolae.TabIndex = 29;
             // 
             // tableLayoutNicolaeContainer
@@ -230,7 +230,7 @@
             this.tableLayoutNicolaeContainer.RowCount = 2;
             this.tableLayoutNicolaeContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutNicolaeContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutNicolaeContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutNicolaeContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutNicolaeContainer.TabIndex = 22;
             // 
             // tableLayoutCeausescusRiseMain

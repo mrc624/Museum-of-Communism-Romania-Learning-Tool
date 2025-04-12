@@ -90,12 +90,12 @@
             this.tableLayoutPostWW2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPostWW2.Controls.Add(this.lblPostWW2Q, 0, 0);
             this.tableLayoutPostWW2.Controls.Add(this.lblPostWW2Ans, 0, 1);
-            this.tableLayoutPostWW2.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutPostWW2.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutPostWW2.Name = "tableLayoutPostWW2";
             this.tableLayoutPostWW2.RowCount = 2;
             this.tableLayoutPostWW2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPostWW2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPostWW2.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutPostWW2.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutPostWW2.TabIndex = 10;
             // 
             // lblPostWW2Q
@@ -132,7 +132,7 @@
             this.pbPostWW2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPostWW2.InitialImage")));
             this.pbPostWW2.Location = new System.Drawing.Point(3, 3);
             this.pbPostWW2.Name = "pbPostWW2";
-            this.pbPostWW2.Size = new System.Drawing.Size(270, 156);
+            this.pbPostWW2.Size = new System.Drawing.Size(270, 169);
             this.pbPostWW2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPostWW2.TabIndex = 0;
             this.pbPostWW2.TabStop = false;
@@ -146,12 +146,12 @@
             this.tableLayoutPanelMarxism.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelMarxism.Controls.Add(this.lblMarxismQ, 0, 0);
             this.tableLayoutPanelMarxism.Controls.Add(this.lblMarxismAns, 0, 1);
-            this.tableLayoutPanelMarxism.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutPanelMarxism.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutPanelMarxism.Name = "tableLayoutPanelMarxism";
             this.tableLayoutPanelMarxism.RowCount = 2;
             this.tableLayoutPanelMarxism.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelMarxism.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelMarxism.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutPanelMarxism.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutPanelMarxism.TabIndex = 11;
             // 
             // lblMarxismQ
@@ -188,7 +188,7 @@
             this.pbMarxism.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbMarxism.InitialImage")));
             this.pbMarxism.Location = new System.Drawing.Point(3, 3);
             this.pbMarxism.Name = "pbMarxism";
-            this.pbMarxism.Size = new System.Drawing.Size(270, 156);
+            this.pbMarxism.Size = new System.Drawing.Size(270, 169);
             this.pbMarxism.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMarxism.TabIndex = 0;
             this.pbMarxism.TabStop = false;
@@ -202,12 +202,12 @@
             this.tableLayoutGheorghe.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutGheorghe.Controls.Add(this.lblGheorgheQ, 0, 0);
             this.tableLayoutGheorghe.Controls.Add(this.lblGheorgheAns, 0, 1);
-            this.tableLayoutGheorghe.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutGheorghe.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutGheorghe.Name = "tableLayoutGheorghe";
             this.tableLayoutGheorghe.RowCount = 2;
             this.tableLayoutGheorghe.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutGheorghe.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutGheorghe.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutGheorghe.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutGheorghe.TabIndex = 12;
             // 
             // lblGheorgheQ
@@ -244,7 +244,7 @@
             this.pbGheorghe.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbGheorghe.InitialImage")));
             this.pbGheorghe.Location = new System.Drawing.Point(3, 3);
             this.pbGheorghe.Name = "pbGheorghe";
-            this.pbGheorghe.Size = new System.Drawing.Size(270, 156);
+            this.pbGheorghe.Size = new System.Drawing.Size(270, 169);
             this.pbGheorghe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbGheorghe.TabIndex = 0;
             this.pbGheorghe.TabStop = false;
@@ -253,10 +253,10 @@
             // 
             this.panelPostWW2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelPostWW2.Controls.Add(this.tableLayoutPostWW2Container);
+            this.panelPostWW2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPostWW2.Location = new System.Drawing.Point(263, 3);
-            this.panelPostWW2.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelPostWW2.Name = "panelPostWW2";
-            this.panelPostWW2.Size = new System.Drawing.Size(278, 326);
+            this.panelPostWW2.Size = new System.Drawing.Size(278, 352);
             this.panelPostWW2.TabIndex = 27;
             // 
             // tableLayoutPostWW2Container
@@ -271,17 +271,17 @@
             this.tableLayoutPostWW2Container.RowCount = 2;
             this.tableLayoutPostWW2Container.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPostWW2Container.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPostWW2Container.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutPostWW2Container.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutPostWW2Container.TabIndex = 22;
             // 
             // panelMarxism
             // 
             this.panelMarxism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMarxism.Controls.Add(this.tableLayoutMarxismContainer);
+            this.panelMarxism.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMarxism.Location = new System.Drawing.Point(807, 3);
-            this.panelMarxism.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelMarxism.Name = "panelMarxism";
-            this.panelMarxism.Size = new System.Drawing.Size(278, 326);
+            this.panelMarxism.Size = new System.Drawing.Size(278, 352);
             this.panelMarxism.TabIndex = 28;
             // 
             // tableLayoutMarxismContainer
@@ -296,17 +296,17 @@
             this.tableLayoutMarxismContainer.RowCount = 2;
             this.tableLayoutMarxismContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutMarxismContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutMarxismContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutMarxismContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutMarxismContainer.TabIndex = 22;
             // 
             // panelGheorghe
             // 
             this.panelGheorghe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelGheorghe.Controls.Add(this.tableLayoutGheorgheContainer);
+            this.panelGheorghe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelGheorghe.Location = new System.Drawing.Point(1351, 3);
-            this.panelGheorghe.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelGheorghe.Name = "panelGheorghe";
-            this.panelGheorghe.Size = new System.Drawing.Size(278, 326);
+            this.panelGheorghe.Size = new System.Drawing.Size(278, 352);
             this.panelGheorghe.TabIndex = 29;
             // 
             // tableLayoutGheorgheContainer
@@ -321,7 +321,7 @@
             this.tableLayoutGheorgheContainer.RowCount = 2;
             this.tableLayoutGheorgheContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutGheorgheContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutGheorgheContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutGheorgheContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutGheorgheContainer.TabIndex = 22;
             // 
             // tableLayoutSovietEraMiddle

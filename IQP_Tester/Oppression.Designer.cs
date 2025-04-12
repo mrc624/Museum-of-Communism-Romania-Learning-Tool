@@ -169,12 +169,13 @@
             this.tableLayoutSecuritate.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutSecuritate.Controls.Add(this.lblSecuritateQ, 0, 0);
             this.tableLayoutSecuritate.Controls.Add(this.lblSecuritateAns, 0, 1);
-            this.tableLayoutSecuritate.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutSecuritate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutSecuritate.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutSecuritate.Name = "tableLayoutSecuritate";
             this.tableLayoutSecuritate.RowCount = 2;
             this.tableLayoutSecuritate.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutSecuritate.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutSecuritate.Size = new System.Drawing.Size(261, 156);
+            this.tableLayoutSecuritate.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutSecuritate.TabIndex = 10;
             // 
             // lblSecuritateQ
@@ -185,7 +186,7 @@
             this.lblSecuritateQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSecuritateQ.Location = new System.Drawing.Point(3, 0);
             this.lblSecuritateQ.Name = "lblSecuritateQ";
-            this.lblSecuritateQ.Size = new System.Drawing.Size(255, 25);
+            this.lblSecuritateQ.Size = new System.Drawing.Size(264, 25);
             this.lblSecuritateQ.TabIndex = 5;
             this.lblSecuritateQ.Text = "Unknown";
             this.lblSecuritateQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -197,7 +198,7 @@
             this.lblSecuritateAns.AutoSize = true;
             this.lblSecuritateAns.Location = new System.Drawing.Point(3, 25);
             this.lblSecuritateAns.Name = "lblSecuritateAns";
-            this.lblSecuritateAns.Size = new System.Drawing.Size(255, 13);
+            this.lblSecuritateAns.Size = new System.Drawing.Size(264, 13);
             this.lblSecuritateAns.TabIndex = 7;
             this.lblSecuritateAns.Text = "Unknown";
             this.lblSecuritateAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -211,7 +212,7 @@
             this.pbSecuritate.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSecuritate.InitialImage")));
             this.pbSecuritate.Location = new System.Drawing.Point(3, 3);
             this.pbSecuritate.Name = "pbSecuritate";
-            this.pbSecuritate.Size = new System.Drawing.Size(261, 156);
+            this.pbSecuritate.Size = new System.Drawing.Size(270, 169);
             this.pbSecuritate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSecuritate.TabIndex = 0;
             this.pbSecuritate.TabStop = false;
@@ -225,12 +226,12 @@
             this.tableLayoutConsequences.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutConsequences.Controls.Add(this.lblConsequencesQ, 0, 0);
             this.tableLayoutConsequences.Controls.Add(this.lblConsequencesAns, 0, 1);
-            this.tableLayoutConsequences.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutConsequences.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutConsequences.Name = "tableLayoutConsequences";
             this.tableLayoutConsequences.RowCount = 2;
             this.tableLayoutConsequences.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutConsequences.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutConsequences.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutConsequences.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutConsequences.TabIndex = 10;
             // 
             // lblConsequencesQ
@@ -267,7 +268,7 @@
             this.pbConsequences.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbConsequences.InitialImage")));
             this.pbConsequences.Location = new System.Drawing.Point(3, 3);
             this.pbConsequences.Name = "pbConsequences";
-            this.pbConsequences.Size = new System.Drawing.Size(270, 156);
+            this.pbConsequences.Size = new System.Drawing.Size(270, 169);
             this.pbConsequences.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbConsequences.TabIndex = 0;
             this.pbConsequences.TabStop = false;
@@ -281,12 +282,12 @@
             this.tableLayoutPropoganda.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPropoganda.Controls.Add(this.lblPropogandaQ, 0, 0);
             this.tableLayoutPropoganda.Controls.Add(this.lblPropogandaAns, 0, 1);
-            this.tableLayoutPropoganda.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutPropoganda.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutPropoganda.Name = "tableLayoutPropoganda";
             this.tableLayoutPropoganda.RowCount = 2;
             this.tableLayoutPropoganda.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPropoganda.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPropoganda.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutPropoganda.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutPropoganda.TabIndex = 10;
             // 
             // lblPropogandaQ
@@ -323,7 +324,7 @@
             this.pbPropoganda.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPropoganda.InitialImage")));
             this.pbPropoganda.Location = new System.Drawing.Point(3, 3);
             this.pbPropoganda.Name = "pbPropoganda";
-            this.pbPropoganda.Size = new System.Drawing.Size(270, 156);
+            this.pbPropoganda.Size = new System.Drawing.Size(270, 169);
             this.pbPropoganda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPropoganda.TabIndex = 0;
             this.pbPropoganda.TabStop = false;
@@ -337,12 +338,12 @@
             this.tableLayoutLanguage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutLanguage.Controls.Add(this.lblLanguageQ, 0, 0);
             this.tableLayoutLanguage.Controls.Add(this.lblLanguageAns, 0, 1);
-            this.tableLayoutLanguage.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutLanguage.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutLanguage.Name = "tableLayoutLanguage";
             this.tableLayoutLanguage.RowCount = 2;
             this.tableLayoutLanguage.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutLanguage.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutLanguage.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutLanguage.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutLanguage.TabIndex = 10;
             // 
             // lblLanguageQ
@@ -379,7 +380,7 @@
             this.pbLanguage.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbLanguage.InitialImage")));
             this.pbLanguage.Location = new System.Drawing.Point(3, 3);
             this.pbLanguage.Name = "pbLanguage";
-            this.pbLanguage.Size = new System.Drawing.Size(270, 156);
+            this.pbLanguage.Size = new System.Drawing.Size(270, 169);
             this.pbLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLanguage.TabIndex = 0;
             this.pbLanguage.TabStop = false;
@@ -393,12 +394,12 @@
             this.tableLayoutPossesions.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPossesions.Controls.Add(this.lblPossesionsQ, 0, 0);
             this.tableLayoutPossesions.Controls.Add(this.lblPossesionsAns, 0, 1);
-            this.tableLayoutPossesions.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutPossesions.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutPossesions.Name = "tableLayoutPossesions";
             this.tableLayoutPossesions.RowCount = 2;
             this.tableLayoutPossesions.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPossesions.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPossesions.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutPossesions.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutPossesions.TabIndex = 10;
             // 
             // lblPossesionsQ
@@ -435,7 +436,7 @@
             this.pbPossesions.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPossesions.InitialImage")));
             this.pbPossesions.Location = new System.Drawing.Point(3, 3);
             this.pbPossesions.Name = "pbPossesions";
-            this.pbPossesions.Size = new System.Drawing.Size(270, 156);
+            this.pbPossesions.Size = new System.Drawing.Size(270, 169);
             this.pbPossesions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPossesions.TabIndex = 0;
             this.pbPossesions.TabStop = false;
@@ -449,12 +450,12 @@
             this.tableLayoutInfluence.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutInfluence.Controls.Add(this.lblInfluenceQ, 0, 0);
             this.tableLayoutInfluence.Controls.Add(this.lblInfluenceAns, 0, 1);
-            this.tableLayoutInfluence.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutInfluence.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutInfluence.Name = "tableLayoutInfluence";
             this.tableLayoutInfluence.RowCount = 2;
             this.tableLayoutInfluence.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutInfluence.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutInfluence.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutInfluence.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutInfluence.TabIndex = 10;
             // 
             // lblInfluenceQ
@@ -491,7 +492,7 @@
             this.pbInfluence.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbInfluence.InitialImage")));
             this.pbInfluence.Location = new System.Drawing.Point(3, 3);
             this.pbInfluence.Name = "pbInfluence";
-            this.pbInfluence.Size = new System.Drawing.Size(270, 156);
+            this.pbInfluence.Size = new System.Drawing.Size(270, 169);
             this.pbInfluence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbInfluence.TabIndex = 0;
             this.pbInfluence.TabStop = false;
@@ -505,12 +506,12 @@
             this.tableLayoutExports.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutExports.Controls.Add(this.lblExportsQ, 0, 0);
             this.tableLayoutExports.Controls.Add(this.lblExportsAns, 0, 1);
-            this.tableLayoutExports.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutExports.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutExports.Name = "tableLayoutExports";
             this.tableLayoutExports.RowCount = 2;
             this.tableLayoutExports.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutExports.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutExports.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutExports.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutExports.TabIndex = 10;
             // 
             // lblExportsQ
@@ -547,7 +548,7 @@
             this.pbExports.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbExports.InitialImage")));
             this.pbExports.Location = new System.Drawing.Point(3, 3);
             this.pbExports.Name = "pbExports";
-            this.pbExports.Size = new System.Drawing.Size(270, 156);
+            this.pbExports.Size = new System.Drawing.Size(270, 169);
             this.pbExports.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExports.TabIndex = 0;
             this.pbExports.TabStop = false;
@@ -561,12 +562,12 @@
             this.tableLayoutReligion.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutReligion.Controls.Add(this.lblReligionQ, 0, 0);
             this.tableLayoutReligion.Controls.Add(this.lblReligionAns, 0, 1);
-            this.tableLayoutReligion.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutReligion.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutReligion.Name = "tableLayoutReligion";
             this.tableLayoutReligion.RowCount = 2;
             this.tableLayoutReligion.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutReligion.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutReligion.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutReligion.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutReligion.TabIndex = 10;
             // 
             // lblReligionQ
@@ -603,7 +604,7 @@
             this.pbReligion.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbReligion.InitialImage")));
             this.pbReligion.Location = new System.Drawing.Point(3, 3);
             this.pbReligion.Name = "pbReligion";
-            this.pbReligion.Size = new System.Drawing.Size(270, 156);
+            this.pbReligion.Size = new System.Drawing.Size(270, 169);
             this.pbReligion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbReligion.TabIndex = 0;
             this.pbReligion.TabStop = false;
@@ -617,12 +618,12 @@
             this.tableLayoutFear.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutFear.Controls.Add(this.lblFearQ, 0, 0);
             this.tableLayoutFear.Controls.Add(this.lblFearAns, 0, 1);
-            this.tableLayoutFear.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutFear.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutFear.Name = "tableLayoutFear";
             this.tableLayoutFear.RowCount = 2;
             this.tableLayoutFear.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutFear.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutFear.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutFear.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutFear.TabIndex = 10;
             // 
             // lblFearQ
@@ -659,7 +660,7 @@
             this.pbFear.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFear.InitialImage")));
             this.pbFear.Location = new System.Drawing.Point(3, 3);
             this.pbFear.Name = "pbFear";
-            this.pbFear.Size = new System.Drawing.Size(270, 156);
+            this.pbFear.Size = new System.Drawing.Size(270, 169);
             this.pbFear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFear.TabIndex = 0;
             this.pbFear.TabStop = false;
@@ -673,12 +674,12 @@
             this.tableLayoutPalace.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPalace.Controls.Add(this.lblPalaceQ, 0, 0);
             this.tableLayoutPalace.Controls.Add(this.lblPalaceAns, 0, 1);
-            this.tableLayoutPalace.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutPalace.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutPalace.Name = "tableLayoutPalace";
             this.tableLayoutPalace.RowCount = 2;
             this.tableLayoutPalace.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPalace.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPalace.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutPalace.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutPalace.TabIndex = 10;
             // 
             // lblPalaceQ
@@ -715,7 +716,7 @@
             this.pbPalace.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPalace.InitialImage")));
             this.pbPalace.Location = new System.Drawing.Point(3, 3);
             this.pbPalace.Name = "pbPalace";
-            this.pbPalace.Size = new System.Drawing.Size(270, 156);
+            this.pbPalace.Size = new System.Drawing.Size(270, 169);
             this.pbPalace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPalace.TabIndex = 0;
             this.pbPalace.TabStop = false;
@@ -729,12 +730,12 @@
             this.tableLayoutPanelDeportation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelDeportation.Controls.Add(this.lblDeportationQ, 0, 0);
             this.tableLayoutPanelDeportation.Controls.Add(this.lblDeportationAns, 0, 1);
-            this.tableLayoutPanelDeportation.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutPanelDeportation.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutPanelDeportation.Name = "tableLayoutPanelDeportation";
             this.tableLayoutPanelDeportation.RowCount = 2;
             this.tableLayoutPanelDeportation.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelDeportation.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelDeportation.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutPanelDeportation.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutPanelDeportation.TabIndex = 10;
             // 
             // lblDeportationQ
@@ -771,7 +772,7 @@
             this.pbDeportation.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbDeportation.InitialImage")));
             this.pbDeportation.Location = new System.Drawing.Point(3, 3);
             this.pbDeportation.Name = "pbDeportation";
-            this.pbDeportation.Size = new System.Drawing.Size(270, 156);
+            this.pbDeportation.Size = new System.Drawing.Size(270, 169);
             this.pbDeportation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDeportation.TabIndex = 0;
             this.pbDeportation.TabStop = false;
@@ -782,12 +783,13 @@
             this.tableLayoutSecuritateContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutSecuritateContainer.Controls.Add(this.tableLayoutSecuritate, 0, 1);
             this.tableLayoutSecuritateContainer.Controls.Add(this.pbSecuritate, 0, 0);
+            this.tableLayoutSecuritateContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutSecuritateContainer.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutSecuritateContainer.Name = "tableLayoutSecuritateContainer";
             this.tableLayoutSecuritateContainer.RowCount = 2;
             this.tableLayoutSecuritateContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutSecuritateContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutSecuritateContainer.Size = new System.Drawing.Size(267, 324);
+            this.tableLayoutSecuritateContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutSecuritateContainer.TabIndex = 22;
             // 
             // panelSecuritate
@@ -796,9 +798,8 @@
             this.panelSecuritate.Controls.Add(this.tableLayoutSecuritateContainer);
             this.panelSecuritate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelSecuritate.Location = new System.Drawing.Point(29, 3);
-            this.panelSecuritate.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelSecuritate.Name = "panelSecuritate";
-            this.panelSecuritate.Size = new System.Drawing.Size(278, 326);
+            this.panelSecuritate.Size = new System.Drawing.Size(278, 352);
             this.panelSecuritate.TabIndex = 15;
             // 
             // panelConsequences
@@ -807,9 +808,8 @@
             this.panelConsequences.Controls.Add(this.tableLayoutConsequencesContainer);
             this.panelConsequences.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelConsequences.Location = new System.Drawing.Point(339, 3);
-            this.panelConsequences.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelConsequences.Name = "panelConsequences";
-            this.panelConsequences.Size = new System.Drawing.Size(278, 326);
+            this.panelConsequences.Size = new System.Drawing.Size(278, 352);
             this.panelConsequences.TabIndex = 22;
             // 
             // tableLayoutConsequencesContainer
@@ -824,7 +824,7 @@
             this.tableLayoutConsequencesContainer.RowCount = 2;
             this.tableLayoutConsequencesContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutConsequencesContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutConsequencesContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutConsequencesContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutConsequencesContainer.TabIndex = 22;
             // 
             // panelPropoganda
@@ -833,9 +833,8 @@
             this.panelPropoganda.Controls.Add(this.tableLayoutPropagandaContainer);
             this.panelPropoganda.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPropoganda.Location = new System.Drawing.Point(649, 3);
-            this.panelPropoganda.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelPropoganda.Name = "panelPropoganda";
-            this.panelPropoganda.Size = new System.Drawing.Size(278, 326);
+            this.panelPropoganda.Size = new System.Drawing.Size(278, 352);
             this.panelPropoganda.TabIndex = 23;
             // 
             // tableLayoutPropagandaContainer
@@ -850,7 +849,7 @@
             this.tableLayoutPropagandaContainer.RowCount = 2;
             this.tableLayoutPropagandaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPropagandaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPropagandaContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutPropagandaContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutPropagandaContainer.TabIndex = 22;
             // 
             // panelLanguage
@@ -859,9 +858,8 @@
             this.panelLanguage.Controls.Add(this.tableLayoutLanguageContainer);
             this.panelLanguage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLanguage.Location = new System.Drawing.Point(959, 3);
-            this.panelLanguage.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelLanguage.Name = "panelLanguage";
-            this.panelLanguage.Size = new System.Drawing.Size(278, 326);
+            this.panelLanguage.Size = new System.Drawing.Size(278, 352);
             this.panelLanguage.TabIndex = 24;
             // 
             // tableLayoutLanguageContainer
@@ -876,7 +874,7 @@
             this.tableLayoutLanguageContainer.RowCount = 2;
             this.tableLayoutLanguageContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutLanguageContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutLanguageContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutLanguageContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutLanguageContainer.TabIndex = 22;
             // 
             // panelPossesions
@@ -885,9 +883,8 @@
             this.panelPossesions.Controls.Add(this.tableLayoutPossesionsContainer);
             this.panelPossesions.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPossesions.Location = new System.Drawing.Point(1269, 3);
-            this.panelPossesions.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelPossesions.Name = "panelPossesions";
-            this.panelPossesions.Size = new System.Drawing.Size(278, 326);
+            this.panelPossesions.Size = new System.Drawing.Size(278, 352);
             this.panelPossesions.TabIndex = 25;
             // 
             // tableLayoutPossesionsContainer
@@ -902,7 +899,7 @@
             this.tableLayoutPossesionsContainer.RowCount = 2;
             this.tableLayoutPossesionsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPossesionsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPossesionsContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutPossesionsContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutPossesionsContainer.TabIndex = 22;
             // 
             // panelInfluence
@@ -911,9 +908,8 @@
             this.panelInfluence.Controls.Add(this.tableLayoutInfluenceContainer);
             this.panelInfluence.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelInfluence.Location = new System.Drawing.Point(1579, 3);
-            this.panelInfluence.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelInfluence.Name = "panelInfluence";
-            this.panelInfluence.Size = new System.Drawing.Size(278, 326);
+            this.panelInfluence.Size = new System.Drawing.Size(278, 352);
             this.panelInfluence.TabIndex = 26;
             // 
             // tableLayoutInfluenceContainer
@@ -928,7 +924,7 @@
             this.tableLayoutInfluenceContainer.RowCount = 2;
             this.tableLayoutInfluenceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutInfluenceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutInfluenceContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutInfluenceContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutInfluenceContainer.TabIndex = 22;
             // 
             // panelExports
@@ -937,9 +933,8 @@
             this.panelExports.Controls.Add(this.tableLayoutExportsContainer);
             this.panelExports.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelExports.Location = new System.Drawing.Point(82, 3);
-            this.panelExports.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelExports.Name = "panelExports";
-            this.panelExports.Size = new System.Drawing.Size(278, 326);
+            this.panelExports.Size = new System.Drawing.Size(278, 352);
             this.panelExports.TabIndex = 27;
             // 
             // tableLayoutExportsContainer
@@ -954,7 +949,7 @@
             this.tableLayoutExportsContainer.RowCount = 2;
             this.tableLayoutExportsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutExportsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutExportsContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutExportsContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutExportsContainer.TabIndex = 22;
             // 
             // panelReligion
@@ -963,9 +958,8 @@
             this.panelReligion.Controls.Add(this.tableLayoutReligionContainer);
             this.panelReligion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelReligion.Location = new System.Drawing.Point(445, 3);
-            this.panelReligion.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelReligion.Name = "panelReligion";
-            this.panelReligion.Size = new System.Drawing.Size(278, 326);
+            this.panelReligion.Size = new System.Drawing.Size(278, 352);
             this.panelReligion.TabIndex = 24;
             // 
             // tableLayoutReligionContainer
@@ -980,7 +974,7 @@
             this.tableLayoutReligionContainer.RowCount = 2;
             this.tableLayoutReligionContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutReligionContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutReligionContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutReligionContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutReligionContainer.TabIndex = 22;
             // 
             // panelFear
@@ -989,9 +983,8 @@
             this.panelFear.Controls.Add(this.tableLayoutFearContainer);
             this.panelFear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFear.Location = new System.Drawing.Point(808, 3);
-            this.panelFear.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelFear.Name = "panelFear";
-            this.panelFear.Size = new System.Drawing.Size(278, 326);
+            this.panelFear.Size = new System.Drawing.Size(278, 352);
             this.panelFear.TabIndex = 24;
             // 
             // tableLayoutFearContainer
@@ -1006,7 +999,7 @@
             this.tableLayoutFearContainer.RowCount = 2;
             this.tableLayoutFearContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutFearContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutFearContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutFearContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutFearContainer.TabIndex = 22;
             // 
             // panelPalace
@@ -1015,9 +1008,8 @@
             this.panelPalace.Controls.Add(this.tableLayoutPalaceContainer);
             this.panelPalace.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPalace.Location = new System.Drawing.Point(1171, 3);
-            this.panelPalace.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelPalace.Name = "panelPalace";
-            this.panelPalace.Size = new System.Drawing.Size(278, 326);
+            this.panelPalace.Size = new System.Drawing.Size(278, 352);
             this.panelPalace.TabIndex = 24;
             // 
             // tableLayoutPalaceContainer
@@ -1032,7 +1024,7 @@
             this.tableLayoutPalaceContainer.RowCount = 2;
             this.tableLayoutPalaceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPalaceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPalaceContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutPalaceContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutPalaceContainer.TabIndex = 22;
             // 
             // panelDeportation
@@ -1041,9 +1033,8 @@
             this.panelDeportation.Controls.Add(this.tableLayoutDeportationContainer);
             this.panelDeportation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDeportation.Location = new System.Drawing.Point(1534, 3);
-            this.panelDeportation.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelDeportation.Name = "panelDeportation";
-            this.panelDeportation.Size = new System.Drawing.Size(278, 326);
+            this.panelDeportation.Size = new System.Drawing.Size(278, 352);
             this.panelDeportation.TabIndex = 24;
             // 
             // tableLayoutDeportationContainer
@@ -1058,7 +1049,7 @@
             this.tableLayoutDeportationContainer.RowCount = 2;
             this.tableLayoutDeportationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutDeportationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutDeportationContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutDeportationContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutDeportationContainer.TabIndex = 22;
             // 
             // tableLayoutOppressionTop

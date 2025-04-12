@@ -90,12 +90,12 @@
             this.tableLayoutWhatWasRevolution.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutWhatWasRevolution.Controls.Add(this.lblWhatWasRevolutionQ, 0, 0);
             this.tableLayoutWhatWasRevolution.Controls.Add(this.lblWhatWasRevolutionAns, 0, 1);
-            this.tableLayoutWhatWasRevolution.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutWhatWasRevolution.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutWhatWasRevolution.Name = "tableLayoutWhatWasRevolution";
             this.tableLayoutWhatWasRevolution.RowCount = 2;
             this.tableLayoutWhatWasRevolution.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutWhatWasRevolution.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutWhatWasRevolution.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutWhatWasRevolution.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutWhatWasRevolution.TabIndex = 10;
             // 
             // lblWhatWasRevolutionQ
@@ -132,7 +132,7 @@
             this.pbWhatWasRevolution.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhatWasRevolution.InitialImage")));
             this.pbWhatWasRevolution.Location = new System.Drawing.Point(3, 3);
             this.pbWhatWasRevolution.Name = "pbWhatWasRevolution";
-            this.pbWhatWasRevolution.Size = new System.Drawing.Size(270, 156);
+            this.pbWhatWasRevolution.Size = new System.Drawing.Size(270, 169);
             this.pbWhatWasRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbWhatWasRevolution.TabIndex = 0;
             this.pbWhatWasRevolution.TabStop = false;
@@ -146,12 +146,12 @@
             this.tableLayoutPanelWhyRevolt.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelWhyRevolt.Controls.Add(this.lblWhyRevoltQ, 0, 0);
             this.tableLayoutPanelWhyRevolt.Controls.Add(this.lblWhyRevoltAns, 0, 1);
-            this.tableLayoutPanelWhyRevolt.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutPanelWhyRevolt.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutPanelWhyRevolt.Name = "tableLayoutPanelWhyRevolt";
             this.tableLayoutPanelWhyRevolt.RowCount = 2;
             this.tableLayoutPanelWhyRevolt.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelWhyRevolt.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelWhyRevolt.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutPanelWhyRevolt.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutPanelWhyRevolt.TabIndex = 11;
             // 
             // lblWhyRevoltQ
@@ -188,7 +188,7 @@
             this.pbWhyRevolt.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhyRevolt.InitialImage")));
             this.pbWhyRevolt.Location = new System.Drawing.Point(3, 3);
             this.pbWhyRevolt.Name = "pbWhyRevolt";
-            this.pbWhyRevolt.Size = new System.Drawing.Size(270, 156);
+            this.pbWhyRevolt.Size = new System.Drawing.Size(270, 169);
             this.pbWhyRevolt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbWhyRevolt.TabIndex = 0;
             this.pbWhyRevolt.TabStop = false;
@@ -202,12 +202,12 @@
             this.tableLayoutWhereCeausescu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutWhereCeausescu.Controls.Add(this.lblWhereCeausescuQ, 0, 0);
             this.tableLayoutWhereCeausescu.Controls.Add(this.lblWhereCeausescuAns, 0, 1);
-            this.tableLayoutWhereCeausescu.Location = new System.Drawing.Point(3, 165);
+            this.tableLayoutWhereCeausescu.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutWhereCeausescu.Name = "tableLayoutWhereCeausescu";
             this.tableLayoutWhereCeausescu.RowCount = 2;
             this.tableLayoutWhereCeausescu.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutWhereCeausescu.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutWhereCeausescu.Size = new System.Drawing.Size(270, 156);
+            this.tableLayoutWhereCeausescu.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutWhereCeausescu.TabIndex = 12;
             // 
             // lblWhereCeausescuQ
@@ -244,7 +244,7 @@
             this.pbWhereCeausescu.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhereCeausescu.InitialImage")));
             this.pbWhereCeausescu.Location = new System.Drawing.Point(3, 3);
             this.pbWhereCeausescu.Name = "pbWhereCeausescu";
-            this.pbWhereCeausescu.Size = new System.Drawing.Size(270, 156);
+            this.pbWhereCeausescu.Size = new System.Drawing.Size(270, 169);
             this.pbWhereCeausescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbWhereCeausescu.TabIndex = 0;
             this.pbWhereCeausescu.TabStop = false;
@@ -253,10 +253,10 @@
             // 
             this.panelWhatWasRevolution.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelWhatWasRevolution.Controls.Add(this.tableLayoutWhatWasRevolutionContainer);
+            this.panelWhatWasRevolution.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelWhatWasRevolution.Location = new System.Drawing.Point(263, 3);
-            this.panelWhatWasRevolution.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelWhatWasRevolution.Name = "panelWhatWasRevolution";
-            this.panelWhatWasRevolution.Size = new System.Drawing.Size(278, 326);
+            this.panelWhatWasRevolution.Size = new System.Drawing.Size(278, 352);
             this.panelWhatWasRevolution.TabIndex = 26;
             // 
             // tableLayoutWhatWasRevolutionContainer
@@ -271,17 +271,17 @@
             this.tableLayoutWhatWasRevolutionContainer.RowCount = 2;
             this.tableLayoutWhatWasRevolutionContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutWhatWasRevolutionContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutWhatWasRevolutionContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutWhatWasRevolutionContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutWhatWasRevolutionContainer.TabIndex = 22;
             // 
             // panelWhyRevolt
             // 
             this.panelWhyRevolt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelWhyRevolt.Controls.Add(this.tableLayoutWhyRevoltContainer);
+            this.panelWhyRevolt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelWhyRevolt.Location = new System.Drawing.Point(807, 3);
-            this.panelWhyRevolt.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelWhyRevolt.Name = "panelWhyRevolt";
-            this.panelWhyRevolt.Size = new System.Drawing.Size(278, 326);
+            this.panelWhyRevolt.Size = new System.Drawing.Size(278, 352);
             this.panelWhyRevolt.TabIndex = 27;
             // 
             // tableLayoutWhyRevoltContainer
@@ -296,17 +296,17 @@
             this.tableLayoutWhyRevoltContainer.RowCount = 2;
             this.tableLayoutWhyRevoltContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutWhyRevoltContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutWhyRevoltContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutWhyRevoltContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutWhyRevoltContainer.TabIndex = 22;
             // 
             // panelWhereCeausescu
             // 
             this.panelWhereCeausescu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelWhereCeausescu.Controls.Add(this.tableLayoutWhereCeausescuContainer);
+            this.panelWhereCeausescu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelWhereCeausescu.Location = new System.Drawing.Point(1351, 3);
-            this.panelWhereCeausescu.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelWhereCeausescu.Name = "panelWhereCeausescu";
-            this.panelWhereCeausescu.Size = new System.Drawing.Size(278, 326);
+            this.panelWhereCeausescu.Size = new System.Drawing.Size(278, 352);
             this.panelWhereCeausescu.TabIndex = 28;
             // 
             // tableLayoutWhereCeausescuContainer
@@ -321,7 +321,7 @@
             this.tableLayoutWhereCeausescuContainer.RowCount = 2;
             this.tableLayoutWhereCeausescuContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutWhereCeausescuContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutWhereCeausescuContainer.Size = new System.Drawing.Size(276, 324);
+            this.tableLayoutWhereCeausescuContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutWhereCeausescuContainer.TabIndex = 22;
             // 
             // tableLayoutRegimeFallMain
