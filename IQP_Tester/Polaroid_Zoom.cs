@@ -79,16 +79,7 @@ namespace IQP_Tester
 
         private void Polaroid_Zoom_Resize(object sender, EventArgs e)
         {
-            resize.Handle_Resize(this);
-
-            resize.Reposition(pbPicture);
-            resize.Reposition(tableLayoutPanelQuestionAndAnswer);
-            resize.Reposition(lblQuestion);
-            resize.Reposition(lblAnswer);
-
-            resize.Center_Y(pbPicture);
-
-            resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
+            resize.Resize_Fonts(this);
         }
 
         private void btnLanguage_Click(object sender, EventArgs e)
