@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LifeUnder));
-            this.btnLanguage = new System.Windows.Forms.Button();
             this.tableLayoutSchool = new System.Windows.Forms.TableLayoutPanel();
             this.lblSchoolQ = new System.Windows.Forms.Label();
             this.lblSchoolAns = new System.Windows.Forms.Label();
@@ -95,6 +94,8 @@
             this.tableLayoutLifeUnderTop = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutLifeUnderBottom = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutLifeUnderMain = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLanguage = new System.Windows.Forms.Button();
+            this.tableLayoutLanguageLifeUnderBtnAlign = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutSchool.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSchool)).BeginInit();
             this.tableLayoutFood.SuspendLayout();
@@ -138,20 +139,8 @@
             this.tableLayoutLifeUnderTop.SuspendLayout();
             this.tableLayoutLifeUnderBottom.SuspendLayout();
             this.tableLayoutLifeUnderMain.SuspendLayout();
+            this.tableLayoutLanguageLifeUnderBtnAlign.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnLanguage
-            // 
-            this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
-            this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
-            this.btnLanguage.TabIndex = 8;
-            this.btnLanguage.Text = "English";
-            this.btnLanguage.UseVisualStyleBackColor = false;
-            this.btnLanguage.TextChanged += new System.EventHandler(this.btnLanguage_TextChanged);
-            this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
             // 
             // tableLayoutSchool
             // 
@@ -167,7 +156,7 @@
             this.tableLayoutSchool.RowCount = 2;
             this.tableLayoutSchool.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutSchool.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutSchool.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutSchool.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutSchool.TabIndex = 8;
             // 
             // lblSchoolQ
@@ -178,7 +167,7 @@
             this.lblSchoolQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSchoolQ.Location = new System.Drawing.Point(3, 0);
             this.lblSchoolQ.Name = "lblSchoolQ";
-            this.lblSchoolQ.Size = new System.Drawing.Size(261, 25);
+            this.lblSchoolQ.Size = new System.Drawing.Size(264, 25);
             this.lblSchoolQ.TabIndex = 5;
             this.lblSchoolQ.Text = "Unknown";
             this.lblSchoolQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -190,7 +179,7 @@
             this.lblSchoolAns.AutoSize = true;
             this.lblSchoolAns.Location = new System.Drawing.Point(3, 25);
             this.lblSchoolAns.Name = "lblSchoolAns";
-            this.lblSchoolAns.Size = new System.Drawing.Size(261, 13);
+            this.lblSchoolAns.Size = new System.Drawing.Size(264, 13);
             this.lblSchoolAns.TabIndex = 7;
             this.lblSchoolAns.Text = "Unknown";
             this.lblSchoolAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -204,7 +193,7 @@
             this.pbSchool.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSchool.InitialImage")));
             this.pbSchool.Location = new System.Drawing.Point(3, 3);
             this.pbSchool.Name = "pbSchool";
-            this.pbSchool.Size = new System.Drawing.Size(267, 156);
+            this.pbSchool.Size = new System.Drawing.Size(270, 156);
             this.pbSchool.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSchool.TabIndex = 0;
             this.pbSchool.TabStop = false;
@@ -223,7 +212,7 @@
             this.tableLayoutFood.RowCount = 2;
             this.tableLayoutFood.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutFood.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutFood.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutFood.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutFood.TabIndex = 9;
             // 
             // lblFoodQ
@@ -234,7 +223,7 @@
             this.lblFoodQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFoodQ.Location = new System.Drawing.Point(3, 0);
             this.lblFoodQ.Name = "lblFoodQ";
-            this.lblFoodQ.Size = new System.Drawing.Size(261, 25);
+            this.lblFoodQ.Size = new System.Drawing.Size(264, 25);
             this.lblFoodQ.TabIndex = 5;
             this.lblFoodQ.Text = "Unknown";
             this.lblFoodQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -246,7 +235,7 @@
             this.lblFoodAns.AutoSize = true;
             this.lblFoodAns.Location = new System.Drawing.Point(3, 25);
             this.lblFoodAns.Name = "lblFoodAns";
-            this.lblFoodAns.Size = new System.Drawing.Size(261, 13);
+            this.lblFoodAns.Size = new System.Drawing.Size(264, 13);
             this.lblFoodAns.TabIndex = 7;
             this.lblFoodAns.Text = "Unknown";
             this.lblFoodAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -260,7 +249,7 @@
             this.pbFood.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFood.InitialImage")));
             this.pbFood.Location = new System.Drawing.Point(3, 3);
             this.pbFood.Name = "pbFood";
-            this.pbFood.Size = new System.Drawing.Size(267, 156);
+            this.pbFood.Size = new System.Drawing.Size(270, 156);
             this.pbFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFood.TabIndex = 0;
             this.pbFood.TabStop = false;
@@ -279,7 +268,7 @@
             this.tableLayoutChildhood.RowCount = 2;
             this.tableLayoutChildhood.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutChildhood.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutChildhood.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutChildhood.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutChildhood.TabIndex = 11;
             // 
             // lblChildhoodQ
@@ -290,7 +279,7 @@
             this.lblChildhoodQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChildhoodQ.Location = new System.Drawing.Point(3, 0);
             this.lblChildhoodQ.Name = "lblChildhoodQ";
-            this.lblChildhoodQ.Size = new System.Drawing.Size(261, 25);
+            this.lblChildhoodQ.Size = new System.Drawing.Size(264, 25);
             this.lblChildhoodQ.TabIndex = 5;
             this.lblChildhoodQ.Text = "Unknown";
             this.lblChildhoodQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -302,7 +291,7 @@
             this.lblChildhoodAns.AutoSize = true;
             this.lblChildhoodAns.Location = new System.Drawing.Point(3, 25);
             this.lblChildhoodAns.Name = "lblChildhoodAns";
-            this.lblChildhoodAns.Size = new System.Drawing.Size(261, 13);
+            this.lblChildhoodAns.Size = new System.Drawing.Size(264, 13);
             this.lblChildhoodAns.TabIndex = 7;
             this.lblChildhoodAns.Text = "Unknown";
             this.lblChildhoodAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -316,7 +305,7 @@
             this.pbChildhood.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbChildhood.InitialImage")));
             this.pbChildhood.Location = new System.Drawing.Point(3, 3);
             this.pbChildhood.Name = "pbChildhood";
-            this.pbChildhood.Size = new System.Drawing.Size(267, 156);
+            this.pbChildhood.Size = new System.Drawing.Size(270, 156);
             this.pbChildhood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbChildhood.TabIndex = 0;
             this.pbChildhood.TabStop = false;
@@ -335,7 +324,7 @@
             this.tableLayoutWork.RowCount = 2;
             this.tableLayoutWork.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutWork.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutWork.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutWork.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutWork.TabIndex = 10;
             // 
             // lblWorkQ
@@ -346,7 +335,7 @@
             this.lblWorkQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWorkQ.Location = new System.Drawing.Point(3, 0);
             this.lblWorkQ.Name = "lblWorkQ";
-            this.lblWorkQ.Size = new System.Drawing.Size(261, 25);
+            this.lblWorkQ.Size = new System.Drawing.Size(264, 25);
             this.lblWorkQ.TabIndex = 5;
             this.lblWorkQ.Text = "Unknown";
             this.lblWorkQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -358,7 +347,7 @@
             this.lblWorkAns.AutoSize = true;
             this.lblWorkAns.Location = new System.Drawing.Point(3, 25);
             this.lblWorkAns.Name = "lblWorkAns";
-            this.lblWorkAns.Size = new System.Drawing.Size(261, 13);
+            this.lblWorkAns.Size = new System.Drawing.Size(264, 13);
             this.lblWorkAns.TabIndex = 7;
             this.lblWorkAns.Text = "Unknown";
             this.lblWorkAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -372,7 +361,7 @@
             this.pbWork.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWork.InitialImage")));
             this.pbWork.Location = new System.Drawing.Point(3, 3);
             this.pbWork.Name = "pbWork";
-            this.pbWork.Size = new System.Drawing.Size(267, 156);
+            this.pbWork.Size = new System.Drawing.Size(270, 156);
             this.pbWork.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbWork.TabIndex = 0;
             this.pbWork.TabStop = false;
@@ -391,7 +380,7 @@
             this.tableLayoutUniversity.RowCount = 2;
             this.tableLayoutUniversity.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutUniversity.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutUniversity.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutUniversity.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutUniversity.TabIndex = 11;
             // 
             // lblUniversityQ
@@ -402,7 +391,7 @@
             this.lblUniversityQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUniversityQ.Location = new System.Drawing.Point(3, 0);
             this.lblUniversityQ.Name = "lblUniversityQ";
-            this.lblUniversityQ.Size = new System.Drawing.Size(261, 25);
+            this.lblUniversityQ.Size = new System.Drawing.Size(264, 25);
             this.lblUniversityQ.TabIndex = 5;
             this.lblUniversityQ.Text = "Unknown";
             this.lblUniversityQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -414,7 +403,7 @@
             this.lblUniversityAns.AutoSize = true;
             this.lblUniversityAns.Location = new System.Drawing.Point(3, 25);
             this.lblUniversityAns.Name = "lblUniversityAns";
-            this.lblUniversityAns.Size = new System.Drawing.Size(261, 13);
+            this.lblUniversityAns.Size = new System.Drawing.Size(264, 13);
             this.lblUniversityAns.TabIndex = 7;
             this.lblUniversityAns.Text = "Unknown";
             this.lblUniversityAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -427,7 +416,7 @@
             this.pbUniversity.Image = global::IQP_Tester.Properties.Resources.University;
             this.pbUniversity.Location = new System.Drawing.Point(3, 3);
             this.pbUniversity.Name = "pbUniversity";
-            this.pbUniversity.Size = new System.Drawing.Size(267, 156);
+            this.pbUniversity.Size = new System.Drawing.Size(270, 156);
             this.pbUniversity.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbUniversity.TabIndex = 0;
             this.pbUniversity.TabStop = false;
@@ -446,7 +435,7 @@
             this.tableLayoutEmigration.RowCount = 2;
             this.tableLayoutEmigration.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutEmigration.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutEmigration.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutEmigration.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutEmigration.TabIndex = 11;
             // 
             // lblEmigrationQ
@@ -457,7 +446,7 @@
             this.lblEmigrationQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmigrationQ.Location = new System.Drawing.Point(3, 0);
             this.lblEmigrationQ.Name = "lblEmigrationQ";
-            this.lblEmigrationQ.Size = new System.Drawing.Size(261, 25);
+            this.lblEmigrationQ.Size = new System.Drawing.Size(264, 25);
             this.lblEmigrationQ.TabIndex = 5;
             this.lblEmigrationQ.Text = "Unknown";
             this.lblEmigrationQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -469,7 +458,7 @@
             this.lblEmigrationAns.AutoSize = true;
             this.lblEmigrationAns.Location = new System.Drawing.Point(3, 25);
             this.lblEmigrationAns.Name = "lblEmigrationAns";
-            this.lblEmigrationAns.Size = new System.Drawing.Size(261, 13);
+            this.lblEmigrationAns.Size = new System.Drawing.Size(264, 13);
             this.lblEmigrationAns.TabIndex = 7;
             this.lblEmigrationAns.Text = "Unknown";
             this.lblEmigrationAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -483,7 +472,7 @@
             this.pbEmigration.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbEmigration.InitialImage")));
             this.pbEmigration.Location = new System.Drawing.Point(3, 3);
             this.pbEmigration.Name = "pbEmigration";
-            this.pbEmigration.Size = new System.Drawing.Size(267, 156);
+            this.pbEmigration.Size = new System.Drawing.Size(270, 156);
             this.pbEmigration.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbEmigration.TabIndex = 0;
             this.pbEmigration.TabStop = false;
@@ -502,7 +491,7 @@
             this.tableLayoutYouthOrg.RowCount = 2;
             this.tableLayoutYouthOrg.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutYouthOrg.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutYouthOrg.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutYouthOrg.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutYouthOrg.TabIndex = 11;
             // 
             // lblYouthOrgQ
@@ -513,7 +502,7 @@
             this.lblYouthOrgQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYouthOrgQ.Location = new System.Drawing.Point(3, 0);
             this.lblYouthOrgQ.Name = "lblYouthOrgQ";
-            this.lblYouthOrgQ.Size = new System.Drawing.Size(261, 25);
+            this.lblYouthOrgQ.Size = new System.Drawing.Size(264, 25);
             this.lblYouthOrgQ.TabIndex = 5;
             this.lblYouthOrgQ.Text = "Unknown";
             this.lblYouthOrgQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -525,7 +514,7 @@
             this.lblYouthOrgAns.AutoSize = true;
             this.lblYouthOrgAns.Location = new System.Drawing.Point(3, 25);
             this.lblYouthOrgAns.Name = "lblYouthOrgAns";
-            this.lblYouthOrgAns.Size = new System.Drawing.Size(261, 13);
+            this.lblYouthOrgAns.Size = new System.Drawing.Size(264, 13);
             this.lblYouthOrgAns.TabIndex = 7;
             this.lblYouthOrgAns.Text = "Unknown";
             this.lblYouthOrgAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -538,7 +527,7 @@
             this.pbYouthOrg.Image = global::IQP_Tester.Properties.Resources.YouthOrg;
             this.pbYouthOrg.Location = new System.Drawing.Point(3, 3);
             this.pbYouthOrg.Name = "pbYouthOrg";
-            this.pbYouthOrg.Size = new System.Drawing.Size(267, 156);
+            this.pbYouthOrg.Size = new System.Drawing.Size(270, 156);
             this.pbYouthOrg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbYouthOrg.TabIndex = 0;
             this.pbYouthOrg.TabStop = false;
@@ -557,7 +546,7 @@
             this.tableLayoutDemonstration.RowCount = 2;
             this.tableLayoutDemonstration.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutDemonstration.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutDemonstration.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutDemonstration.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutDemonstration.TabIndex = 11;
             // 
             // lblDemonstrationQ
@@ -568,7 +557,7 @@
             this.lblDemonstrationQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDemonstrationQ.Location = new System.Drawing.Point(3, 0);
             this.lblDemonstrationQ.Name = "lblDemonstrationQ";
-            this.lblDemonstrationQ.Size = new System.Drawing.Size(261, 25);
+            this.lblDemonstrationQ.Size = new System.Drawing.Size(264, 25);
             this.lblDemonstrationQ.TabIndex = 5;
             this.lblDemonstrationQ.Text = "Unknown";
             this.lblDemonstrationQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -580,7 +569,7 @@
             this.lblDemonstrationAns.AutoSize = true;
             this.lblDemonstrationAns.Location = new System.Drawing.Point(3, 25);
             this.lblDemonstrationAns.Name = "lblDemonstrationAns";
-            this.lblDemonstrationAns.Size = new System.Drawing.Size(261, 13);
+            this.lblDemonstrationAns.Size = new System.Drawing.Size(264, 13);
             this.lblDemonstrationAns.TabIndex = 7;
             this.lblDemonstrationAns.Text = "Unknown";
             this.lblDemonstrationAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -593,7 +582,7 @@
             this.pbDemonstation.Image = global::IQP_Tester.Properties.Resources.Demonstration;
             this.pbDemonstation.Location = new System.Drawing.Point(3, 3);
             this.pbDemonstation.Name = "pbDemonstation";
-            this.pbDemonstation.Size = new System.Drawing.Size(267, 156);
+            this.pbDemonstation.Size = new System.Drawing.Size(270, 156);
             this.pbDemonstation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDemonstation.TabIndex = 0;
             this.pbDemonstation.TabStop = false;
@@ -612,7 +601,7 @@
             this.tableLayoutMedia.RowCount = 2;
             this.tableLayoutMedia.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutMedia.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutMedia.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutMedia.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutMedia.TabIndex = 11;
             // 
             // lblMediaQ
@@ -623,7 +612,7 @@
             this.lblMediaQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMediaQ.Location = new System.Drawing.Point(3, 0);
             this.lblMediaQ.Name = "lblMediaQ";
-            this.lblMediaQ.Size = new System.Drawing.Size(261, 25);
+            this.lblMediaQ.Size = new System.Drawing.Size(264, 25);
             this.lblMediaQ.TabIndex = 5;
             this.lblMediaQ.Text = "Unknown";
             this.lblMediaQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -635,7 +624,7 @@
             this.lblMediaAns.AutoSize = true;
             this.lblMediaAns.Location = new System.Drawing.Point(3, 25);
             this.lblMediaAns.Name = "lblMediaAns";
-            this.lblMediaAns.Size = new System.Drawing.Size(261, 13);
+            this.lblMediaAns.Size = new System.Drawing.Size(264, 13);
             this.lblMediaAns.TabIndex = 7;
             this.lblMediaAns.Text = "Unknown";
             this.lblMediaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -649,7 +638,7 @@
             this.pbMedia.InitialImage = global::IQP_Tester.Properties.Resources.Media;
             this.pbMedia.Location = new System.Drawing.Point(3, 3);
             this.pbMedia.Name = "pbMedia";
-            this.pbMedia.Size = new System.Drawing.Size(267, 156);
+            this.pbMedia.Size = new System.Drawing.Size(270, 156);
             this.pbMedia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMedia.TabIndex = 0;
             this.pbMedia.TabStop = false;
@@ -668,7 +657,7 @@
             this.tableLayoutRation.RowCount = 2;
             this.tableLayoutRation.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutRation.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutRation.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutRation.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutRation.TabIndex = 11;
             // 
             // lblRationQ
@@ -679,7 +668,7 @@
             this.lblRationQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRationQ.Location = new System.Drawing.Point(3, 0);
             this.lblRationQ.Name = "lblRationQ";
-            this.lblRationQ.Size = new System.Drawing.Size(261, 25);
+            this.lblRationQ.Size = new System.Drawing.Size(264, 25);
             this.lblRationQ.TabIndex = 5;
             this.lblRationQ.Text = "Unknown";
             this.lblRationQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -691,7 +680,7 @@
             this.lblRationAns.AutoSize = true;
             this.lblRationAns.Location = new System.Drawing.Point(3, 25);
             this.lblRationAns.Name = "lblRationAns";
-            this.lblRationAns.Size = new System.Drawing.Size(261, 13);
+            this.lblRationAns.Size = new System.Drawing.Size(264, 13);
             this.lblRationAns.TabIndex = 7;
             this.lblRationAns.Text = "Unknown";
             this.lblRationAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -704,7 +693,7 @@
             this.pbRation.Image = global::IQP_Tester.Properties.Resources.Ration;
             this.pbRation.Location = new System.Drawing.Point(3, 3);
             this.pbRation.Name = "pbRation";
-            this.pbRation.Size = new System.Drawing.Size(267, 156);
+            this.pbRation.Size = new System.Drawing.Size(270, 156);
             this.pbRation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbRation.TabIndex = 0;
             this.pbRation.TabStop = false;
@@ -728,10 +717,10 @@
             this.panelSchool.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelSchool.Controls.Add(this.tableLayoutSchoolContainer);
             this.panelSchool.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSchool.Location = new System.Drawing.Point(81, 3);
+            this.panelSchool.Location = new System.Drawing.Point(82, 3);
             this.panelSchool.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelSchool.Name = "panelSchool";
-            this.panelSchool.Size = new System.Drawing.Size(275, 326);
+            this.panelSchool.Size = new System.Drawing.Size(278, 326);
             this.panelSchool.TabIndex = 24;
             // 
             // tableLayoutSchoolContainer
@@ -746,7 +735,7 @@
             this.tableLayoutSchoolContainer.RowCount = 2;
             this.tableLayoutSchoolContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutSchoolContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutSchoolContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutSchoolContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutSchoolContainer.TabIndex = 22;
             // 
             // panelFood
@@ -754,10 +743,10 @@
             this.panelFood.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelFood.Controls.Add(this.tableLayoutFoodContainer);
             this.panelFood.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFood.Location = new System.Drawing.Point(440, 3);
+            this.panelFood.Location = new System.Drawing.Point(445, 3);
             this.panelFood.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelFood.Name = "panelFood";
-            this.panelFood.Size = new System.Drawing.Size(275, 326);
+            this.panelFood.Size = new System.Drawing.Size(278, 326);
             this.panelFood.TabIndex = 25;
             // 
             // tableLayoutFoodContainer
@@ -772,7 +761,7 @@
             this.tableLayoutFoodContainer.RowCount = 2;
             this.tableLayoutFoodContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutFoodContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutFoodContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutFoodContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutFoodContainer.TabIndex = 22;
             // 
             // panelWork
@@ -780,10 +769,10 @@
             this.panelWork.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelWork.Controls.Add(this.tableLayoutWorkContainer);
             this.panelWork.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelWork.Location = new System.Drawing.Point(81, 3);
+            this.panelWork.Location = new System.Drawing.Point(82, 3);
             this.panelWork.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelWork.Name = "panelWork";
-            this.panelWork.Size = new System.Drawing.Size(275, 326);
+            this.panelWork.Size = new System.Drawing.Size(278, 326);
             this.panelWork.TabIndex = 25;
             // 
             // tableLayoutWorkContainer
@@ -798,7 +787,7 @@
             this.tableLayoutWorkContainer.RowCount = 2;
             this.tableLayoutWorkContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutWorkContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutWorkContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutWorkContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutWorkContainer.TabIndex = 22;
             // 
             // panelDemonstration
@@ -806,10 +795,10 @@
             this.panelDemonstration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDemonstration.Controls.Add(this.tableLayoutDemonstrationContainer);
             this.panelDemonstration.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDemonstration.Location = new System.Drawing.Point(799, 3);
+            this.panelDemonstration.Location = new System.Drawing.Point(808, 3);
             this.panelDemonstration.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelDemonstration.Name = "panelDemonstration";
-            this.panelDemonstration.Size = new System.Drawing.Size(275, 326);
+            this.panelDemonstration.Size = new System.Drawing.Size(278, 326);
             this.panelDemonstration.TabIndex = 25;
             // 
             // tableLayoutDemonstrationContainer
@@ -824,7 +813,7 @@
             this.tableLayoutDemonstrationContainer.RowCount = 2;
             this.tableLayoutDemonstrationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutDemonstrationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutDemonstrationContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutDemonstrationContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutDemonstrationContainer.TabIndex = 22;
             // 
             // panelChildhood
@@ -832,10 +821,10 @@
             this.panelChildhood.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelChildhood.Controls.Add(this.tableLayoutChildhoodContainer);
             this.panelChildhood.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildhood.Location = new System.Drawing.Point(1158, 3);
+            this.panelChildhood.Location = new System.Drawing.Point(1171, 3);
             this.panelChildhood.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelChildhood.Name = "panelChildhood";
-            this.panelChildhood.Size = new System.Drawing.Size(275, 326);
+            this.panelChildhood.Size = new System.Drawing.Size(278, 326);
             this.panelChildhood.TabIndex = 25;
             // 
             // tableLayoutChildhoodContainer
@@ -850,7 +839,7 @@
             this.tableLayoutChildhoodContainer.RowCount = 2;
             this.tableLayoutChildhoodContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutChildhoodContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutChildhoodContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutChildhoodContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutChildhoodContainer.TabIndex = 22;
             // 
             // panelUniversity
@@ -858,10 +847,10 @@
             this.panelUniversity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelUniversity.Controls.Add(this.tableLayoutUniversityContainer);
             this.panelUniversity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelUniversity.Location = new System.Drawing.Point(1517, 3);
+            this.panelUniversity.Location = new System.Drawing.Point(1534, 3);
             this.panelUniversity.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelUniversity.Name = "panelUniversity";
-            this.panelUniversity.Size = new System.Drawing.Size(275, 326);
+            this.panelUniversity.Size = new System.Drawing.Size(278, 326);
             this.panelUniversity.TabIndex = 25;
             // 
             // tableLayoutUniversityContainer
@@ -876,7 +865,7 @@
             this.tableLayoutUniversityContainer.RowCount = 2;
             this.tableLayoutUniversityContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutUniversityContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutUniversityContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutUniversityContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutUniversityContainer.TabIndex = 22;
             // 
             // panelMedia
@@ -884,10 +873,10 @@
             this.panelMedia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMedia.Controls.Add(this.tableLayoutMediaContainer);
             this.panelMedia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMedia.Location = new System.Drawing.Point(1517, 3);
+            this.panelMedia.Location = new System.Drawing.Point(1534, 3);
             this.panelMedia.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelMedia.Name = "panelMedia";
-            this.panelMedia.Size = new System.Drawing.Size(275, 326);
+            this.panelMedia.Size = new System.Drawing.Size(278, 326);
             this.panelMedia.TabIndex = 26;
             // 
             // tableLayoutMediaContainer
@@ -902,7 +891,7 @@
             this.tableLayoutMediaContainer.RowCount = 2;
             this.tableLayoutMediaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutMediaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutMediaContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutMediaContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutMediaContainer.TabIndex = 22;
             // 
             // panelEmigration
@@ -910,10 +899,10 @@
             this.panelEmigration.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelEmigration.Controls.Add(this.tableLayoutEmigrationContainer);
             this.panelEmigration.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEmigration.Location = new System.Drawing.Point(1158, 3);
+            this.panelEmigration.Location = new System.Drawing.Point(1171, 3);
             this.panelEmigration.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelEmigration.Name = "panelEmigration";
-            this.panelEmigration.Size = new System.Drawing.Size(275, 326);
+            this.panelEmigration.Size = new System.Drawing.Size(278, 326);
             this.panelEmigration.TabIndex = 25;
             // 
             // tableLayoutEmigrationContainer
@@ -928,7 +917,7 @@
             this.tableLayoutEmigrationContainer.RowCount = 2;
             this.tableLayoutEmigrationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutEmigrationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutEmigrationContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutEmigrationContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutEmigrationContainer.TabIndex = 22;
             // 
             // panelYouthOrg
@@ -936,10 +925,10 @@
             this.panelYouthOrg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelYouthOrg.Controls.Add(this.tableLayoutYouthOrgContainer);
             this.panelYouthOrg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelYouthOrg.Location = new System.Drawing.Point(799, 3);
+            this.panelYouthOrg.Location = new System.Drawing.Point(808, 3);
             this.panelYouthOrg.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelYouthOrg.Name = "panelYouthOrg";
-            this.panelYouthOrg.Size = new System.Drawing.Size(275, 326);
+            this.panelYouthOrg.Size = new System.Drawing.Size(278, 326);
             this.panelYouthOrg.TabIndex = 27;
             // 
             // tableLayoutYouthOrgContainer
@@ -954,7 +943,7 @@
             this.tableLayoutYouthOrgContainer.RowCount = 2;
             this.tableLayoutYouthOrgContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutYouthOrgContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutYouthOrgContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutYouthOrgContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutYouthOrgContainer.TabIndex = 22;
             // 
             // panelRation
@@ -962,10 +951,10 @@
             this.panelRation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelRation.Controls.Add(this.tableLayoutRationContainer);
             this.panelRation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRation.Location = new System.Drawing.Point(440, 3);
+            this.panelRation.Location = new System.Drawing.Point(445, 3);
             this.panelRation.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelRation.Name = "panelRation";
-            this.panelRation.Size = new System.Drawing.Size(275, 326);
+            this.panelRation.Size = new System.Drawing.Size(278, 326);
             this.panelRation.TabIndex = 28;
             // 
             // tableLayoutRationContainer
@@ -980,7 +969,7 @@
             this.tableLayoutRationContainer.RowCount = 2;
             this.tableLayoutRationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutRationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutRationContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutRationContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutRationContainer.TabIndex = 22;
             // 
             // tableLayoutLifeUnderTop
@@ -1005,11 +994,11 @@
             this.tableLayoutLifeUnderTop.Controls.Add(this.panelDemonstration, 5, 0);
             this.tableLayoutLifeUnderTop.Controls.Add(this.panelChildhood, 7, 0);
             this.tableLayoutLifeUnderTop.Controls.Add(this.panelUniversity, 9, 0);
-            this.tableLayoutLifeUnderTop.Location = new System.Drawing.Point(3, 99);
+            this.tableLayoutLifeUnderTop.Location = new System.Drawing.Point(3, 107);
             this.tableLayoutLifeUnderTop.Name = "tableLayoutLifeUnderTop";
             this.tableLayoutLifeUnderTop.RowCount = 1;
             this.tableLayoutLifeUnderTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutLifeUnderTop.Size = new System.Drawing.Size(1874, 357);
+            this.tableLayoutLifeUnderTop.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutLifeUnderTop.TabIndex = 29;
             // 
             // tableLayoutLifeUnderBottom
@@ -1034,11 +1023,11 @@
             this.tableLayoutLifeUnderBottom.Controls.Add(this.panelMedia, 9, 0);
             this.tableLayoutLifeUnderBottom.Controls.Add(this.panelEmigration, 7, 0);
             this.tableLayoutLifeUnderBottom.Controls.Add(this.panelYouthOrg, 5, 0);
-            this.tableLayoutLifeUnderBottom.Location = new System.Drawing.Point(3, 558);
+            this.tableLayoutLifeUnderBottom.Location = new System.Drawing.Point(3, 575);
             this.tableLayoutLifeUnderBottom.Name = "tableLayoutLifeUnderBottom";
             this.tableLayoutLifeUnderBottom.RowCount = 1;
             this.tableLayoutLifeUnderBottom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutLifeUnderBottom.Size = new System.Drawing.Size(1874, 357);
+            this.tableLayoutLifeUnderBottom.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutLifeUnderBottom.TabIndex = 30;
             // 
             // tableLayoutLifeUnderMain
@@ -1047,16 +1036,53 @@
             this.tableLayoutLifeUnderMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutLifeUnderMain.Controls.Add(this.tableLayoutLifeUnderTop, 0, 1);
             this.tableLayoutLifeUnderMain.Controls.Add(this.tableLayoutLifeUnderBottom, 0, 3);
-            this.tableLayoutLifeUnderMain.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutLifeUnderMain.Controls.Add(this.tableLayoutLanguageLifeUnderBtnAlign, 0, 4);
+            this.tableLayoutLifeUnderMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutLifeUnderMain.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutLifeUnderMain.Name = "tableLayoutLifeUnderMain";
             this.tableLayoutLifeUnderMain.RowCount = 5;
-            this.tableLayoutLifeUnderMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.49051F));
-            this.tableLayoutLifeUnderMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.76424F));
-            this.tableLayoutLifeUnderMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.49051F));
-            this.tableLayoutLifeUnderMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.76424F));
-            this.tableLayoutLifeUnderMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.49051F));
-            this.tableLayoutLifeUnderMain.Size = new System.Drawing.Size(1880, 1017);
+            this.tableLayoutLifeUnderMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutLifeUnderMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutLifeUnderMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutLifeUnderMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutLifeUnderMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutLifeUnderMain.Size = new System.Drawing.Size(1904, 1041);
             this.tableLayoutLifeUnderMain.TabIndex = 31;
+            // 
+            // btnLanguage
+            // 
+            this.btnLanguage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLanguage.Location = new System.Drawing.Point(1787, 63);
+            this.btnLanguage.Name = "btnLanguage";
+            this.btnLanguage.Size = new System.Drawing.Size(93, 31);
+            this.btnLanguage.TabIndex = 8;
+            this.btnLanguage.Text = "English";
+            this.btnLanguage.UseVisualStyleBackColor = false;
+            this.btnLanguage.TextChanged += new System.EventHandler(this.btnLanguage_TextChanged);
+            this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
+            // 
+            // tableLayoutLanguageLifeUnderBtnAlign
+            // 
+            this.tableLayoutLanguageLifeUnderBtnAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutLanguageLifeUnderBtnAlign.ColumnCount = 3;
+            this.tableLayoutLanguageLifeUnderBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutLanguageLifeUnderBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.tableLayoutLanguageLifeUnderBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageLifeUnderBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
+            this.tableLayoutLanguageLifeUnderBtnAlign.Location = new System.Drawing.Point(3, 939);
+            this.tableLayoutLanguageLifeUnderBtnAlign.Name = "tableLayoutLanguageLifeUnderBtnAlign";
+            this.tableLayoutLanguageLifeUnderBtnAlign.RowCount = 3;
+            this.tableLayoutLanguageLifeUnderBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.25F));
+            this.tableLayoutLanguageLifeUnderBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38F));
+            this.tableLayoutLanguageLifeUnderBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageLifeUnderBtnAlign.Size = new System.Drawing.Size(1898, 99);
+            this.tableLayoutLanguageLifeUnderBtnAlign.TabIndex = 31;
             // 
             // LifeUnder
             // 
@@ -1064,7 +1090,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutLifeUnderMain);
-            this.Controls.Add(this.btnLanguage);
             this.Name = "LifeUnder";
             this.Text = "Life Under Communism";
             this.Shown += new System.EventHandler(this.LifeUnder_Shown);
@@ -1123,13 +1148,12 @@
             this.tableLayoutLifeUnderTop.ResumeLayout(false);
             this.tableLayoutLifeUnderBottom.ResumeLayout(false);
             this.tableLayoutLifeUnderMain.ResumeLayout(false);
+            this.tableLayoutLanguageLifeUnderBtnAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnLanguage;
         private System.Windows.Forms.Label lblSchoolAns;
         private System.Windows.Forms.Label lblSchoolQ;
         private System.Windows.Forms.PictureBox pbSchool;
@@ -1195,5 +1219,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutLifeUnderTop;
         private System.Windows.Forms.TableLayoutPanel tableLayoutLifeUnderBottom;
         private System.Windows.Forms.TableLayoutPanel tableLayoutLifeUnderMain;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageLifeUnderBtnAlign;
+        private System.Windows.Forms.Button btnLanguage;
     }
 }

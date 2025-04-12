@@ -37,7 +37,6 @@ namespace IQP_Tester
 
         private void TitlePage_Resize(object sender, EventArgs e)
         {
-            resize.Glue_to_Corner(tableLayoutTitleMain, Resize_Helper.Corner.all, TABLE_LAYOUT_MAIN_EDGE_MARGIN);
             resize.Resize_Fonts(this);
         }
 

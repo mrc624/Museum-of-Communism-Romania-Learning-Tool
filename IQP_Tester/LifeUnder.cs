@@ -36,10 +36,7 @@ namespace IQP_Tester
 
         private void LifeUnder_Resize(object sender, EventArgs e)
         {
-            resize.Glue_to_Corner(tableLayoutLifeUnderMain, Resize_Helper.Corner.all, TABLE_LAYOUT_MAIN_EDGE_MARGIN);
             resize.Resize_Fonts(this);
-
-            resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
 
         private void LifeUnder_Click(object sender, EventArgs e)

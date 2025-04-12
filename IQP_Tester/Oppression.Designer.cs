@@ -99,6 +99,7 @@
             this.tableLayoutOppressionTop = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutOppressionBottom = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutOppressionMain = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutLanguageOppressionBtnAlign = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutSecuritate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecuritate)).BeginInit();
             this.tableLayoutConsequences.SuspendLayout();
@@ -146,15 +147,16 @@
             this.tableLayoutOppressionTop.SuspendLayout();
             this.tableLayoutOppressionBottom.SuspendLayout();
             this.tableLayoutOppressionMain.SuspendLayout();
+            this.tableLayoutLanguageOppressionBtnAlign.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
+            this.btnLanguage.Location = new System.Drawing.Point(1787, 63);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
+            this.btnLanguage.Size = new System.Drawing.Size(93, 31);
             this.btnLanguage.TabIndex = 8;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -228,7 +230,7 @@
             this.tableLayoutConsequences.RowCount = 2;
             this.tableLayoutConsequences.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutConsequences.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutConsequences.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutConsequences.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutConsequences.TabIndex = 10;
             // 
             // lblConsequencesQ
@@ -239,7 +241,7 @@
             this.lblConsequencesQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConsequencesQ.Location = new System.Drawing.Point(3, 0);
             this.lblConsequencesQ.Name = "lblConsequencesQ";
-            this.lblConsequencesQ.Size = new System.Drawing.Size(261, 25);
+            this.lblConsequencesQ.Size = new System.Drawing.Size(264, 25);
             this.lblConsequencesQ.TabIndex = 5;
             this.lblConsequencesQ.Text = "Unknown";
             this.lblConsequencesQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -251,7 +253,7 @@
             this.lblConsequencesAns.AutoSize = true;
             this.lblConsequencesAns.Location = new System.Drawing.Point(3, 25);
             this.lblConsequencesAns.Name = "lblConsequencesAns";
-            this.lblConsequencesAns.Size = new System.Drawing.Size(261, 13);
+            this.lblConsequencesAns.Size = new System.Drawing.Size(264, 13);
             this.lblConsequencesAns.TabIndex = 7;
             this.lblConsequencesAns.Text = "Unknown";
             this.lblConsequencesAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -265,7 +267,7 @@
             this.pbConsequences.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbConsequences.InitialImage")));
             this.pbConsequences.Location = new System.Drawing.Point(3, 3);
             this.pbConsequences.Name = "pbConsequences";
-            this.pbConsequences.Size = new System.Drawing.Size(267, 156);
+            this.pbConsequences.Size = new System.Drawing.Size(270, 156);
             this.pbConsequences.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbConsequences.TabIndex = 0;
             this.pbConsequences.TabStop = false;
@@ -284,7 +286,7 @@
             this.tableLayoutPropoganda.RowCount = 2;
             this.tableLayoutPropoganda.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPropoganda.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPropoganda.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutPropoganda.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutPropoganda.TabIndex = 10;
             // 
             // lblPropogandaQ
@@ -295,7 +297,7 @@
             this.lblPropogandaQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPropogandaQ.Location = new System.Drawing.Point(3, 0);
             this.lblPropogandaQ.Name = "lblPropogandaQ";
-            this.lblPropogandaQ.Size = new System.Drawing.Size(261, 25);
+            this.lblPropogandaQ.Size = new System.Drawing.Size(264, 25);
             this.lblPropogandaQ.TabIndex = 5;
             this.lblPropogandaQ.Text = "Unknown";
             this.lblPropogandaQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -307,7 +309,7 @@
             this.lblPropogandaAns.AutoSize = true;
             this.lblPropogandaAns.Location = new System.Drawing.Point(3, 25);
             this.lblPropogandaAns.Name = "lblPropogandaAns";
-            this.lblPropogandaAns.Size = new System.Drawing.Size(261, 13);
+            this.lblPropogandaAns.Size = new System.Drawing.Size(264, 13);
             this.lblPropogandaAns.TabIndex = 7;
             this.lblPropogandaAns.Text = "Unknown";
             this.lblPropogandaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -321,7 +323,7 @@
             this.pbPropoganda.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPropoganda.InitialImage")));
             this.pbPropoganda.Location = new System.Drawing.Point(3, 3);
             this.pbPropoganda.Name = "pbPropoganda";
-            this.pbPropoganda.Size = new System.Drawing.Size(267, 156);
+            this.pbPropoganda.Size = new System.Drawing.Size(270, 156);
             this.pbPropoganda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPropoganda.TabIndex = 0;
             this.pbPropoganda.TabStop = false;
@@ -340,7 +342,7 @@
             this.tableLayoutLanguage.RowCount = 2;
             this.tableLayoutLanguage.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutLanguage.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutLanguage.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutLanguage.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutLanguage.TabIndex = 10;
             // 
             // lblLanguageQ
@@ -351,7 +353,7 @@
             this.lblLanguageQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLanguageQ.Location = new System.Drawing.Point(3, 0);
             this.lblLanguageQ.Name = "lblLanguageQ";
-            this.lblLanguageQ.Size = new System.Drawing.Size(261, 25);
+            this.lblLanguageQ.Size = new System.Drawing.Size(264, 25);
             this.lblLanguageQ.TabIndex = 5;
             this.lblLanguageQ.Text = "Unknown";
             this.lblLanguageQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -363,7 +365,7 @@
             this.lblLanguageAns.AutoSize = true;
             this.lblLanguageAns.Location = new System.Drawing.Point(3, 25);
             this.lblLanguageAns.Name = "lblLanguageAns";
-            this.lblLanguageAns.Size = new System.Drawing.Size(261, 13);
+            this.lblLanguageAns.Size = new System.Drawing.Size(264, 13);
             this.lblLanguageAns.TabIndex = 7;
             this.lblLanguageAns.Text = "Unknown";
             this.lblLanguageAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -377,7 +379,7 @@
             this.pbLanguage.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbLanguage.InitialImage")));
             this.pbLanguage.Location = new System.Drawing.Point(3, 3);
             this.pbLanguage.Name = "pbLanguage";
-            this.pbLanguage.Size = new System.Drawing.Size(267, 156);
+            this.pbLanguage.Size = new System.Drawing.Size(270, 156);
             this.pbLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLanguage.TabIndex = 0;
             this.pbLanguage.TabStop = false;
@@ -396,7 +398,7 @@
             this.tableLayoutPossesions.RowCount = 2;
             this.tableLayoutPossesions.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPossesions.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPossesions.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutPossesions.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutPossesions.TabIndex = 10;
             // 
             // lblPossesionsQ
@@ -407,7 +409,7 @@
             this.lblPossesionsQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPossesionsQ.Location = new System.Drawing.Point(3, 0);
             this.lblPossesionsQ.Name = "lblPossesionsQ";
-            this.lblPossesionsQ.Size = new System.Drawing.Size(261, 25);
+            this.lblPossesionsQ.Size = new System.Drawing.Size(264, 25);
             this.lblPossesionsQ.TabIndex = 5;
             this.lblPossesionsQ.Text = "Unknown";
             this.lblPossesionsQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -419,7 +421,7 @@
             this.lblPossesionsAns.AutoSize = true;
             this.lblPossesionsAns.Location = new System.Drawing.Point(3, 25);
             this.lblPossesionsAns.Name = "lblPossesionsAns";
-            this.lblPossesionsAns.Size = new System.Drawing.Size(261, 13);
+            this.lblPossesionsAns.Size = new System.Drawing.Size(264, 13);
             this.lblPossesionsAns.TabIndex = 7;
             this.lblPossesionsAns.Text = "Unknown";
             this.lblPossesionsAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -433,7 +435,7 @@
             this.pbPossesions.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPossesions.InitialImage")));
             this.pbPossesions.Location = new System.Drawing.Point(3, 3);
             this.pbPossesions.Name = "pbPossesions";
-            this.pbPossesions.Size = new System.Drawing.Size(267, 156);
+            this.pbPossesions.Size = new System.Drawing.Size(270, 156);
             this.pbPossesions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPossesions.TabIndex = 0;
             this.pbPossesions.TabStop = false;
@@ -452,7 +454,7 @@
             this.tableLayoutInfluence.RowCount = 2;
             this.tableLayoutInfluence.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutInfluence.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutInfluence.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutInfluence.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutInfluence.TabIndex = 10;
             // 
             // lblInfluenceQ
@@ -463,7 +465,7 @@
             this.lblInfluenceQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfluenceQ.Location = new System.Drawing.Point(3, 0);
             this.lblInfluenceQ.Name = "lblInfluenceQ";
-            this.lblInfluenceQ.Size = new System.Drawing.Size(261, 25);
+            this.lblInfluenceQ.Size = new System.Drawing.Size(264, 25);
             this.lblInfluenceQ.TabIndex = 5;
             this.lblInfluenceQ.Text = "Unknown";
             this.lblInfluenceQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -475,7 +477,7 @@
             this.lblInfluenceAns.AutoSize = true;
             this.lblInfluenceAns.Location = new System.Drawing.Point(3, 25);
             this.lblInfluenceAns.Name = "lblInfluenceAns";
-            this.lblInfluenceAns.Size = new System.Drawing.Size(261, 13);
+            this.lblInfluenceAns.Size = new System.Drawing.Size(264, 13);
             this.lblInfluenceAns.TabIndex = 7;
             this.lblInfluenceAns.Text = "Unknown";
             this.lblInfluenceAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -489,7 +491,7 @@
             this.pbInfluence.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbInfluence.InitialImage")));
             this.pbInfluence.Location = new System.Drawing.Point(3, 3);
             this.pbInfluence.Name = "pbInfluence";
-            this.pbInfluence.Size = new System.Drawing.Size(267, 156);
+            this.pbInfluence.Size = new System.Drawing.Size(270, 156);
             this.pbInfluence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbInfluence.TabIndex = 0;
             this.pbInfluence.TabStop = false;
@@ -508,7 +510,7 @@
             this.tableLayoutExports.RowCount = 2;
             this.tableLayoutExports.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutExports.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutExports.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutExports.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutExports.TabIndex = 10;
             // 
             // lblExportsQ
@@ -519,7 +521,7 @@
             this.lblExportsQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExportsQ.Location = new System.Drawing.Point(3, 0);
             this.lblExportsQ.Name = "lblExportsQ";
-            this.lblExportsQ.Size = new System.Drawing.Size(261, 25);
+            this.lblExportsQ.Size = new System.Drawing.Size(264, 25);
             this.lblExportsQ.TabIndex = 5;
             this.lblExportsQ.Text = "Unknown";
             this.lblExportsQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -531,7 +533,7 @@
             this.lblExportsAns.AutoSize = true;
             this.lblExportsAns.Location = new System.Drawing.Point(3, 25);
             this.lblExportsAns.Name = "lblExportsAns";
-            this.lblExportsAns.Size = new System.Drawing.Size(261, 13);
+            this.lblExportsAns.Size = new System.Drawing.Size(264, 13);
             this.lblExportsAns.TabIndex = 7;
             this.lblExportsAns.Text = "Unknown";
             this.lblExportsAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -545,7 +547,7 @@
             this.pbExports.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbExports.InitialImage")));
             this.pbExports.Location = new System.Drawing.Point(3, 3);
             this.pbExports.Name = "pbExports";
-            this.pbExports.Size = new System.Drawing.Size(267, 156);
+            this.pbExports.Size = new System.Drawing.Size(270, 156);
             this.pbExports.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExports.TabIndex = 0;
             this.pbExports.TabStop = false;
@@ -564,7 +566,7 @@
             this.tableLayoutReligion.RowCount = 2;
             this.tableLayoutReligion.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutReligion.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutReligion.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutReligion.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutReligion.TabIndex = 10;
             // 
             // lblReligionQ
@@ -575,7 +577,7 @@
             this.lblReligionQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReligionQ.Location = new System.Drawing.Point(3, 0);
             this.lblReligionQ.Name = "lblReligionQ";
-            this.lblReligionQ.Size = new System.Drawing.Size(261, 25);
+            this.lblReligionQ.Size = new System.Drawing.Size(264, 25);
             this.lblReligionQ.TabIndex = 5;
             this.lblReligionQ.Text = "Unknown";
             this.lblReligionQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -587,7 +589,7 @@
             this.lblReligionAns.AutoSize = true;
             this.lblReligionAns.Location = new System.Drawing.Point(3, 25);
             this.lblReligionAns.Name = "lblReligionAns";
-            this.lblReligionAns.Size = new System.Drawing.Size(261, 13);
+            this.lblReligionAns.Size = new System.Drawing.Size(264, 13);
             this.lblReligionAns.TabIndex = 7;
             this.lblReligionAns.Text = "Unknown";
             this.lblReligionAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -601,7 +603,7 @@
             this.pbReligion.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbReligion.InitialImage")));
             this.pbReligion.Location = new System.Drawing.Point(3, 3);
             this.pbReligion.Name = "pbReligion";
-            this.pbReligion.Size = new System.Drawing.Size(267, 156);
+            this.pbReligion.Size = new System.Drawing.Size(270, 156);
             this.pbReligion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbReligion.TabIndex = 0;
             this.pbReligion.TabStop = false;
@@ -620,7 +622,7 @@
             this.tableLayoutFear.RowCount = 2;
             this.tableLayoutFear.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutFear.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutFear.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutFear.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutFear.TabIndex = 10;
             // 
             // lblFearQ
@@ -631,7 +633,7 @@
             this.lblFearQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFearQ.Location = new System.Drawing.Point(3, 0);
             this.lblFearQ.Name = "lblFearQ";
-            this.lblFearQ.Size = new System.Drawing.Size(261, 25);
+            this.lblFearQ.Size = new System.Drawing.Size(264, 25);
             this.lblFearQ.TabIndex = 5;
             this.lblFearQ.Text = "Unknown";
             this.lblFearQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -643,7 +645,7 @@
             this.lblFearAns.AutoSize = true;
             this.lblFearAns.Location = new System.Drawing.Point(3, 25);
             this.lblFearAns.Name = "lblFearAns";
-            this.lblFearAns.Size = new System.Drawing.Size(261, 13);
+            this.lblFearAns.Size = new System.Drawing.Size(264, 13);
             this.lblFearAns.TabIndex = 7;
             this.lblFearAns.Text = "Unknown";
             this.lblFearAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -657,7 +659,7 @@
             this.pbFear.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFear.InitialImage")));
             this.pbFear.Location = new System.Drawing.Point(3, 3);
             this.pbFear.Name = "pbFear";
-            this.pbFear.Size = new System.Drawing.Size(267, 156);
+            this.pbFear.Size = new System.Drawing.Size(270, 156);
             this.pbFear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFear.TabIndex = 0;
             this.pbFear.TabStop = false;
@@ -676,7 +678,7 @@
             this.tableLayoutPalace.RowCount = 2;
             this.tableLayoutPalace.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPalace.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPalace.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutPalace.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutPalace.TabIndex = 10;
             // 
             // lblPalaceQ
@@ -687,7 +689,7 @@
             this.lblPalaceQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPalaceQ.Location = new System.Drawing.Point(3, 0);
             this.lblPalaceQ.Name = "lblPalaceQ";
-            this.lblPalaceQ.Size = new System.Drawing.Size(261, 25);
+            this.lblPalaceQ.Size = new System.Drawing.Size(264, 25);
             this.lblPalaceQ.TabIndex = 5;
             this.lblPalaceQ.Text = "Unknown";
             this.lblPalaceQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -699,7 +701,7 @@
             this.lblPalaceAns.AutoSize = true;
             this.lblPalaceAns.Location = new System.Drawing.Point(3, 25);
             this.lblPalaceAns.Name = "lblPalaceAns";
-            this.lblPalaceAns.Size = new System.Drawing.Size(261, 13);
+            this.lblPalaceAns.Size = new System.Drawing.Size(264, 13);
             this.lblPalaceAns.TabIndex = 7;
             this.lblPalaceAns.Text = "Unknown";
             this.lblPalaceAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -713,7 +715,7 @@
             this.pbPalace.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPalace.InitialImage")));
             this.pbPalace.Location = new System.Drawing.Point(3, 3);
             this.pbPalace.Name = "pbPalace";
-            this.pbPalace.Size = new System.Drawing.Size(267, 156);
+            this.pbPalace.Size = new System.Drawing.Size(270, 156);
             this.pbPalace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPalace.TabIndex = 0;
             this.pbPalace.TabStop = false;
@@ -732,7 +734,7 @@
             this.tableLayoutPanelDeportation.RowCount = 2;
             this.tableLayoutPanelDeportation.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelDeportation.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelDeportation.Size = new System.Drawing.Size(267, 156);
+            this.tableLayoutPanelDeportation.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutPanelDeportation.TabIndex = 10;
             // 
             // lblDeportationQ
@@ -743,7 +745,7 @@
             this.lblDeportationQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeportationQ.Location = new System.Drawing.Point(3, 0);
             this.lblDeportationQ.Name = "lblDeportationQ";
-            this.lblDeportationQ.Size = new System.Drawing.Size(261, 25);
+            this.lblDeportationQ.Size = new System.Drawing.Size(264, 25);
             this.lblDeportationQ.TabIndex = 5;
             this.lblDeportationQ.Text = "Unknown";
             this.lblDeportationQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -755,7 +757,7 @@
             this.lblDeportationAns.AutoSize = true;
             this.lblDeportationAns.Location = new System.Drawing.Point(3, 25);
             this.lblDeportationAns.Name = "lblDeportationAns";
-            this.lblDeportationAns.Size = new System.Drawing.Size(261, 13);
+            this.lblDeportationAns.Size = new System.Drawing.Size(264, 13);
             this.lblDeportationAns.TabIndex = 7;
             this.lblDeportationAns.Text = "Unknown";
             this.lblDeportationAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -769,7 +771,7 @@
             this.pbDeportation.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbDeportation.InitialImage")));
             this.pbDeportation.Location = new System.Drawing.Point(3, 3);
             this.pbDeportation.Name = "pbDeportation";
-            this.pbDeportation.Size = new System.Drawing.Size(267, 156);
+            this.pbDeportation.Size = new System.Drawing.Size(270, 156);
             this.pbDeportation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDeportation.TabIndex = 0;
             this.pbDeportation.TabStop = false;
@@ -796,7 +798,7 @@
             this.panelSecuritate.Location = new System.Drawing.Point(29, 3);
             this.panelSecuritate.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelSecuritate.Name = "panelSecuritate";
-            this.panelSecuritate.Size = new System.Drawing.Size(275, 326);
+            this.panelSecuritate.Size = new System.Drawing.Size(278, 326);
             this.panelSecuritate.TabIndex = 15;
             // 
             // panelConsequences
@@ -804,10 +806,10 @@
             this.panelConsequences.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelConsequences.Controls.Add(this.tableLayoutConsequencesContainer);
             this.panelConsequences.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelConsequences.Location = new System.Drawing.Point(336, 3);
+            this.panelConsequences.Location = new System.Drawing.Point(339, 3);
             this.panelConsequences.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelConsequences.Name = "panelConsequences";
-            this.panelConsequences.Size = new System.Drawing.Size(275, 326);
+            this.panelConsequences.Size = new System.Drawing.Size(278, 326);
             this.panelConsequences.TabIndex = 22;
             // 
             // tableLayoutConsequencesContainer
@@ -822,7 +824,7 @@
             this.tableLayoutConsequencesContainer.RowCount = 2;
             this.tableLayoutConsequencesContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutConsequencesContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutConsequencesContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutConsequencesContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutConsequencesContainer.TabIndex = 22;
             // 
             // panelPropoganda
@@ -830,10 +832,10 @@
             this.panelPropoganda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelPropoganda.Controls.Add(this.tableLayoutPropagandaContainer);
             this.panelPropoganda.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPropoganda.Location = new System.Drawing.Point(643, 3);
+            this.panelPropoganda.Location = new System.Drawing.Point(649, 3);
             this.panelPropoganda.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelPropoganda.Name = "panelPropoganda";
-            this.panelPropoganda.Size = new System.Drawing.Size(275, 326);
+            this.panelPropoganda.Size = new System.Drawing.Size(278, 326);
             this.panelPropoganda.TabIndex = 23;
             // 
             // tableLayoutPropagandaContainer
@@ -848,7 +850,7 @@
             this.tableLayoutPropagandaContainer.RowCount = 2;
             this.tableLayoutPropagandaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPropagandaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPropagandaContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutPropagandaContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutPropagandaContainer.TabIndex = 22;
             // 
             // panelLanguage
@@ -856,10 +858,10 @@
             this.panelLanguage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLanguage.Controls.Add(this.tableLayoutLanguageContainer);
             this.panelLanguage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelLanguage.Location = new System.Drawing.Point(950, 3);
+            this.panelLanguage.Location = new System.Drawing.Point(959, 3);
             this.panelLanguage.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelLanguage.Name = "panelLanguage";
-            this.panelLanguage.Size = new System.Drawing.Size(275, 326);
+            this.panelLanguage.Size = new System.Drawing.Size(278, 326);
             this.panelLanguage.TabIndex = 24;
             // 
             // tableLayoutLanguageContainer
@@ -874,7 +876,7 @@
             this.tableLayoutLanguageContainer.RowCount = 2;
             this.tableLayoutLanguageContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutLanguageContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutLanguageContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutLanguageContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutLanguageContainer.TabIndex = 22;
             // 
             // panelPossesions
@@ -882,10 +884,10 @@
             this.panelPossesions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelPossesions.Controls.Add(this.tableLayoutPossesionsContainer);
             this.panelPossesions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPossesions.Location = new System.Drawing.Point(1257, 3);
+            this.panelPossesions.Location = new System.Drawing.Point(1269, 3);
             this.panelPossesions.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelPossesions.Name = "panelPossesions";
-            this.panelPossesions.Size = new System.Drawing.Size(275, 326);
+            this.panelPossesions.Size = new System.Drawing.Size(278, 326);
             this.panelPossesions.TabIndex = 25;
             // 
             // tableLayoutPossesionsContainer
@@ -900,7 +902,7 @@
             this.tableLayoutPossesionsContainer.RowCount = 2;
             this.tableLayoutPossesionsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPossesionsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPossesionsContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutPossesionsContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutPossesionsContainer.TabIndex = 22;
             // 
             // panelInfluence
@@ -908,10 +910,10 @@
             this.panelInfluence.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelInfluence.Controls.Add(this.tableLayoutInfluenceContainer);
             this.panelInfluence.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelInfluence.Location = new System.Drawing.Point(1564, 3);
+            this.panelInfluence.Location = new System.Drawing.Point(1579, 3);
             this.panelInfluence.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelInfluence.Name = "panelInfluence";
-            this.panelInfluence.Size = new System.Drawing.Size(275, 326);
+            this.panelInfluence.Size = new System.Drawing.Size(278, 326);
             this.panelInfluence.TabIndex = 26;
             // 
             // tableLayoutInfluenceContainer
@@ -926,7 +928,7 @@
             this.tableLayoutInfluenceContainer.RowCount = 2;
             this.tableLayoutInfluenceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutInfluenceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutInfluenceContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutInfluenceContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutInfluenceContainer.TabIndex = 22;
             // 
             // panelExports
@@ -934,10 +936,10 @@
             this.panelExports.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelExports.Controls.Add(this.tableLayoutExportsContainer);
             this.panelExports.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelExports.Location = new System.Drawing.Point(81, 3);
+            this.panelExports.Location = new System.Drawing.Point(82, 3);
             this.panelExports.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelExports.Name = "panelExports";
-            this.panelExports.Size = new System.Drawing.Size(275, 326);
+            this.panelExports.Size = new System.Drawing.Size(278, 326);
             this.panelExports.TabIndex = 27;
             // 
             // tableLayoutExportsContainer
@@ -952,7 +954,7 @@
             this.tableLayoutExportsContainer.RowCount = 2;
             this.tableLayoutExportsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutExportsContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutExportsContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutExportsContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutExportsContainer.TabIndex = 22;
             // 
             // panelReligion
@@ -960,10 +962,10 @@
             this.panelReligion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelReligion.Controls.Add(this.tableLayoutReligionContainer);
             this.panelReligion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelReligion.Location = new System.Drawing.Point(440, 3);
+            this.panelReligion.Location = new System.Drawing.Point(445, 3);
             this.panelReligion.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelReligion.Name = "panelReligion";
-            this.panelReligion.Size = new System.Drawing.Size(275, 326);
+            this.panelReligion.Size = new System.Drawing.Size(278, 326);
             this.panelReligion.TabIndex = 24;
             // 
             // tableLayoutReligionContainer
@@ -978,7 +980,7 @@
             this.tableLayoutReligionContainer.RowCount = 2;
             this.tableLayoutReligionContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutReligionContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutReligionContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutReligionContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutReligionContainer.TabIndex = 22;
             // 
             // panelFear
@@ -986,10 +988,10 @@
             this.panelFear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelFear.Controls.Add(this.tableLayoutFearContainer);
             this.panelFear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFear.Location = new System.Drawing.Point(799, 3);
+            this.panelFear.Location = new System.Drawing.Point(808, 3);
             this.panelFear.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelFear.Name = "panelFear";
-            this.panelFear.Size = new System.Drawing.Size(275, 326);
+            this.panelFear.Size = new System.Drawing.Size(278, 326);
             this.panelFear.TabIndex = 24;
             // 
             // tableLayoutFearContainer
@@ -1004,7 +1006,7 @@
             this.tableLayoutFearContainer.RowCount = 2;
             this.tableLayoutFearContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutFearContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutFearContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutFearContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutFearContainer.TabIndex = 22;
             // 
             // panelPalace
@@ -1012,10 +1014,10 @@
             this.panelPalace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelPalace.Controls.Add(this.tableLayoutPalaceContainer);
             this.panelPalace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPalace.Location = new System.Drawing.Point(1158, 3);
+            this.panelPalace.Location = new System.Drawing.Point(1171, 3);
             this.panelPalace.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelPalace.Name = "panelPalace";
-            this.panelPalace.Size = new System.Drawing.Size(275, 326);
+            this.panelPalace.Size = new System.Drawing.Size(278, 326);
             this.panelPalace.TabIndex = 24;
             // 
             // tableLayoutPalaceContainer
@@ -1030,7 +1032,7 @@
             this.tableLayoutPalaceContainer.RowCount = 2;
             this.tableLayoutPalaceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPalaceContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPalaceContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutPalaceContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutPalaceContainer.TabIndex = 22;
             // 
             // panelDeportation
@@ -1038,10 +1040,10 @@
             this.panelDeportation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelDeportation.Controls.Add(this.tableLayoutDeportationContainer);
             this.panelDeportation.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDeportation.Location = new System.Drawing.Point(1517, 3);
+            this.panelDeportation.Location = new System.Drawing.Point(1534, 3);
             this.panelDeportation.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelDeportation.Name = "panelDeportation";
-            this.panelDeportation.Size = new System.Drawing.Size(275, 326);
+            this.panelDeportation.Size = new System.Drawing.Size(278, 326);
             this.panelDeportation.TabIndex = 24;
             // 
             // tableLayoutDeportationContainer
@@ -1056,7 +1058,7 @@
             this.tableLayoutDeportationContainer.RowCount = 2;
             this.tableLayoutDeportationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutDeportationContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutDeportationContainer.Size = new System.Drawing.Size(273, 324);
+            this.tableLayoutDeportationContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutDeportationContainer.TabIndex = 22;
             // 
             // tableLayoutOppressionTop
@@ -1084,11 +1086,11 @@
             this.tableLayoutOppressionTop.Controls.Add(this.panelLanguage, 7, 0);
             this.tableLayoutOppressionTop.Controls.Add(this.panelPossesions, 9, 0);
             this.tableLayoutOppressionTop.Controls.Add(this.panelInfluence, 11, 0);
-            this.tableLayoutOppressionTop.Location = new System.Drawing.Point(3, 99);
+            this.tableLayoutOppressionTop.Location = new System.Drawing.Point(3, 107);
             this.tableLayoutOppressionTop.Name = "tableLayoutOppressionTop";
             this.tableLayoutOppressionTop.RowCount = 1;
             this.tableLayoutOppressionTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutOppressionTop.Size = new System.Drawing.Size(1874, 357);
+            this.tableLayoutOppressionTop.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutOppressionTop.TabIndex = 28;
             // 
             // tableLayoutOppressionBottom
@@ -1113,11 +1115,11 @@
             this.tableLayoutOppressionBottom.Controls.Add(this.panelDeportation, 9, 0);
             this.tableLayoutOppressionBottom.Controls.Add(this.panelFear, 5, 0);
             this.tableLayoutOppressionBottom.Controls.Add(this.panelPalace, 7, 0);
-            this.tableLayoutOppressionBottom.Location = new System.Drawing.Point(3, 558);
+            this.tableLayoutOppressionBottom.Location = new System.Drawing.Point(3, 575);
             this.tableLayoutOppressionBottom.Name = "tableLayoutOppressionBottom";
             this.tableLayoutOppressionBottom.RowCount = 1;
             this.tableLayoutOppressionBottom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutOppressionBottom.Size = new System.Drawing.Size(1874, 357);
+            this.tableLayoutOppressionBottom.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutOppressionBottom.TabIndex = 29;
             // 
             // tableLayoutOppressionMain
@@ -1126,16 +1128,37 @@
             this.tableLayoutOppressionMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutOppressionMain.Controls.Add(this.tableLayoutOppressionBottom, 0, 3);
             this.tableLayoutOppressionMain.Controls.Add(this.tableLayoutOppressionTop, 0, 1);
-            this.tableLayoutOppressionMain.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutOppressionMain.Controls.Add(this.tableLayoutLanguageOppressionBtnAlign, 0, 4);
+            this.tableLayoutOppressionMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutOppressionMain.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutOppressionMain.Name = "tableLayoutOppressionMain";
             this.tableLayoutOppressionMain.RowCount = 5;
-            this.tableLayoutOppressionMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.523809F));
-            this.tableLayoutOppressionMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.71429F));
-            this.tableLayoutOppressionMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.523809F));
-            this.tableLayoutOppressionMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.71429F));
-            this.tableLayoutOppressionMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.523809F));
-            this.tableLayoutOppressionMain.Size = new System.Drawing.Size(1880, 1017);
+            this.tableLayoutOppressionMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutOppressionMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutOppressionMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutOppressionMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutOppressionMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutOppressionMain.Size = new System.Drawing.Size(1904, 1041);
             this.tableLayoutOppressionMain.TabIndex = 30;
+            // 
+            // tableLayoutLanguageOppressionBtnAlign
+            // 
+            this.tableLayoutLanguageOppressionBtnAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutLanguageOppressionBtnAlign.ColumnCount = 3;
+            this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageOppressionBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
+            this.tableLayoutLanguageOppressionBtnAlign.Location = new System.Drawing.Point(3, 939);
+            this.tableLayoutLanguageOppressionBtnAlign.Name = "tableLayoutLanguageOppressionBtnAlign";
+            this.tableLayoutLanguageOppressionBtnAlign.RowCount = 3;
+            this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.25F));
+            this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38F));
+            this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageOppressionBtnAlign.Size = new System.Drawing.Size(1898, 99);
+            this.tableLayoutLanguageOppressionBtnAlign.TabIndex = 32;
             // 
             // Oppression
             // 
@@ -1143,7 +1166,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutOppressionMain);
-            this.Controls.Add(this.btnLanguage);
             this.Name = "Oppression";
             this.Text = "Oppression";
             this.Shown += new System.EventHandler(this.Oppression_Shown);
@@ -1207,6 +1229,7 @@
             this.tableLayoutOppressionTop.ResumeLayout(false);
             this.tableLayoutOppressionBottom.ResumeLayout(false);
             this.tableLayoutOppressionMain.ResumeLayout(false);
+            this.tableLayoutLanguageOppressionBtnAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1283,5 +1306,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutOppressionTop;
         private System.Windows.Forms.TableLayoutPanel tableLayoutOppressionBottom;
         private System.Windows.Forms.TableLayoutPanel tableLayoutOppressionMain;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageOppressionBtnAlign;
     }
 }

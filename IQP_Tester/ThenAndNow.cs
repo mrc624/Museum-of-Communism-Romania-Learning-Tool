@@ -36,15 +36,13 @@ namespace IQP_Tester
         {
             tableLayoutTNMain.Click += ThenAndNow_Click;
             tableLayoutTN.Click += ThenAndNow_Click;
+            tableLayoutLanguageThenAndNowBtnAlign.Click += ThenAndNow_Click;
             lblThenAndNowTitle.Click += ThenAndNow_Click;
         }
 
         private void ThenAndNow_Resize(object sender, EventArgs e)
         {
-            resize.Glue_to_Corner(tableLayoutTNMain, Resize_Helper.Corner.all, TABLE_LAYOUT_MAIN_EDGE_MARGIN);
             resize.Resize_Fonts(this);
-
-            resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
         }
 
         private void ThenAndNow_Click(object sender, EventArgs e)

@@ -45,12 +45,12 @@
             this.tableLayoutTitle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1880F));
             this.tableLayoutTitle.Controls.Add(this.lblTitle, 0, 0);
             this.tableLayoutTitle.Controls.Add(this.lblSubtitle, 0, 1);
-            this.tableLayoutTitle.Location = new System.Drawing.Point(3, 283);
+            this.tableLayoutTitle.Location = new System.Drawing.Point(3, 293);
             this.tableLayoutTitle.Name = "tableLayoutTitle";
             this.tableLayoutTitle.RowCount = 2;
             this.tableLayoutTitle.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutTitle.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutTitle.Size = new System.Drawing.Size(1874, 134);
+            this.tableLayoutTitle.Size = new System.Drawing.Size(1898, 139);
             this.tableLayoutTitle.TabIndex = 11;
             // 
             // lblTitle
@@ -61,7 +61,7 @@
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(3, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1874, 55);
+            this.lblTitle.Size = new System.Drawing.Size(1892, 55);
             this.lblTitle.TabIndex = 5;
             this.lblTitle.Text = "Unknown";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -74,7 +74,7 @@
             this.lblSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtitle.Location = new System.Drawing.Point(3, 55);
             this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(1874, 24);
+            this.lblSubtitle.Size = new System.Drawing.Size(1892, 24);
             this.lblSubtitle.TabIndex = 7;
             this.lblSubtitle.Text = "Unknown";
             this.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -84,13 +84,14 @@
             this.tableLayoutTitleMain.ColumnCount = 1;
             this.tableLayoutTitleMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutTitleMain.Controls.Add(this.tableLayoutTitle, 0, 1);
-            this.tableLayoutTitleMain.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutTitleMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutTitleMain.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutTitleMain.Name = "tableLayoutTitleMain";
             this.tableLayoutTitleMain.RowCount = 3;
             this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutTitleMain.Size = new System.Drawing.Size(1880, 701);
+            this.tableLayoutTitleMain.Size = new System.Drawing.Size(1904, 725);
             this.tableLayoutTitleMain.TabIndex = 12;
             // 
             // TitlePage
