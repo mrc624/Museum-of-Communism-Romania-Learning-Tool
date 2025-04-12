@@ -19,6 +19,7 @@ namespace IQP_Tester
         Resize_Helper resize = new Resize_Helper();
         Polaroid_Helper polaroid_Helper = new Polaroid_Helper();
         Open_Close_Helper openClose;
+        Click_Helper click_Helper;
 
 
         public SovietEra(TextManager textMan, Open_Close_Helper open_close)
@@ -26,11 +27,13 @@ namespace IQP_Tester
             InitializeComponent();
             openClose = open_close;
             textManager = textMan;
+            click_Helper = new Click_Helper(polaroid_Helper);
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
 
             polaroid_Helper.Assign_Click_Handler_To_Valid(this, textMan, openClose);
+            click_Helper.Assign_Children_To_Same_Click_Avoid_Polaroids(this, Soviet_Era_Click);
         }
 
         private void Soviet_Era_Shown(object sender, EventArgs e)
@@ -48,14 +51,7 @@ namespace IQP_Tester
         
         private void Soviet_Era_Resize(object sender, EventArgs e)
         {
-            resize.Handle_Resize(this);
-
-            polaroid_Helper.Reposition_Polaroids(polaroid_Helper.Polaroids);
-            resize.Center_X_Y(panelPostWW2, Resize_Helper.QUARTER, Resize_Helper.CENTER);
-            resize.Center_X_Y(panelMarxism, Resize_Helper.CENTER, Resize_Helper.CENTER);
-            resize.Center_X_Y(panelGheorghe, Resize_Helper.THREE_QUARTERS, Resize_Helper.CENTER);
-
-            resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
+            resize.Resize_Fonts(this);
         }
 
         private void btnLanguage_Click(object sender, EventArgs e)

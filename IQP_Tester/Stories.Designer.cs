@@ -178,7 +178,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutStolenHorse.ColumnCount = 1;
-            this.tableLayoutStolenHorse.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0F));
+            this.tableLayoutStolenHorse.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutStolenHorse.Controls.Add(this.lblStolenHorseQ, 0, 0);
             this.tableLayoutStolenHorse.Controls.Add(this.lblStolenHorseAns, 0, 1);
             this.tableLayoutStolenHorse.Location = new System.Drawing.Point(3, 165);

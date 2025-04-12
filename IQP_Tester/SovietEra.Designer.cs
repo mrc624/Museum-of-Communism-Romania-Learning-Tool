@@ -48,6 +48,9 @@
             this.tableLayoutMarxismContainer = new System.Windows.Forms.TableLayoutPanel();
             this.panelGheorghe = new System.Windows.Forms.Panel();
             this.tableLayoutGheorgheContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutSovietEraMiddle = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutSovietEraMain = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutLanguageSovietEraBtnAlign = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPostWW2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPostWW2)).BeginInit();
             this.tableLayoutPanelMarxism.SuspendLayout();
@@ -60,15 +63,18 @@
             this.tableLayoutMarxismContainer.SuspendLayout();
             this.panelGheorghe.SuspendLayout();
             this.tableLayoutGheorgheContainer.SuspendLayout();
+            this.tableLayoutSovietEraMiddle.SuspendLayout();
+            this.tableLayoutSovietEraMain.SuspendLayout();
+            this.tableLayoutLanguageSovietEraBtnAlign.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
+            this.btnLanguage.Location = new System.Drawing.Point(1787, 59);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
+            this.btnLanguage.Size = new System.Drawing.Size(93, 35);
             this.btnLanguage.TabIndex = 7;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -81,7 +87,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPostWW2.ColumnCount = 1;
-            this.tableLayoutPostWW2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutPostWW2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPostWW2.Controls.Add(this.lblPostWW2Q, 0, 0);
             this.tableLayoutPostWW2.Controls.Add(this.lblPostWW2Ans, 0, 1);
             this.tableLayoutPostWW2.Location = new System.Drawing.Point(3, 165);
@@ -89,7 +95,7 @@
             this.tableLayoutPostWW2.RowCount = 2;
             this.tableLayoutPostWW2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPostWW2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPostWW2.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutPostWW2.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutPostWW2.TabIndex = 10;
             // 
             // lblPostWW2Q
@@ -100,7 +106,7 @@
             this.lblPostWW2Q.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPostWW2Q.Location = new System.Drawing.Point(3, 0);
             this.lblPostWW2Q.Name = "lblPostWW2Q";
-            this.lblPostWW2Q.Size = new System.Drawing.Size(267, 25);
+            this.lblPostWW2Q.Size = new System.Drawing.Size(264, 25);
             this.lblPostWW2Q.TabIndex = 5;
             this.lblPostWW2Q.Text = "Unknown";
             this.lblPostWW2Q.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -112,7 +118,7 @@
             this.lblPostWW2Ans.AutoSize = true;
             this.lblPostWW2Ans.Location = new System.Drawing.Point(3, 25);
             this.lblPostWW2Ans.Name = "lblPostWW2Ans";
-            this.lblPostWW2Ans.Size = new System.Drawing.Size(267, 13);
+            this.lblPostWW2Ans.Size = new System.Drawing.Size(264, 13);
             this.lblPostWW2Ans.TabIndex = 7;
             this.lblPostWW2Ans.Text = "Unknown";
             this.lblPostWW2Ans.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -126,7 +132,7 @@
             this.pbPostWW2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPostWW2.InitialImage")));
             this.pbPostWW2.Location = new System.Drawing.Point(3, 3);
             this.pbPostWW2.Name = "pbPostWW2";
-            this.pbPostWW2.Size = new System.Drawing.Size(273, 156);
+            this.pbPostWW2.Size = new System.Drawing.Size(270, 156);
             this.pbPostWW2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPostWW2.TabIndex = 0;
             this.pbPostWW2.TabStop = false;
@@ -137,7 +143,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanelMarxism.ColumnCount = 1;
-            this.tableLayoutPanelMarxism.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutPanelMarxism.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelMarxism.Controls.Add(this.lblMarxismQ, 0, 0);
             this.tableLayoutPanelMarxism.Controls.Add(this.lblMarxismAns, 0, 1);
             this.tableLayoutPanelMarxism.Location = new System.Drawing.Point(3, 165);
@@ -145,7 +151,7 @@
             this.tableLayoutPanelMarxism.RowCount = 2;
             this.tableLayoutPanelMarxism.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelMarxism.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelMarxism.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutPanelMarxism.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutPanelMarxism.TabIndex = 11;
             // 
             // lblMarxismQ
@@ -156,7 +162,7 @@
             this.lblMarxismQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarxismQ.Location = new System.Drawing.Point(3, 0);
             this.lblMarxismQ.Name = "lblMarxismQ";
-            this.lblMarxismQ.Size = new System.Drawing.Size(267, 25);
+            this.lblMarxismQ.Size = new System.Drawing.Size(264, 25);
             this.lblMarxismQ.TabIndex = 5;
             this.lblMarxismQ.Text = "Unknown";
             this.lblMarxismQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -168,7 +174,7 @@
             this.lblMarxismAns.AutoSize = true;
             this.lblMarxismAns.Location = new System.Drawing.Point(3, 25);
             this.lblMarxismAns.Name = "lblMarxismAns";
-            this.lblMarxismAns.Size = new System.Drawing.Size(267, 13);
+            this.lblMarxismAns.Size = new System.Drawing.Size(264, 13);
             this.lblMarxismAns.TabIndex = 7;
             this.lblMarxismAns.Text = "Unknown";
             this.lblMarxismAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -182,7 +188,7 @@
             this.pbMarxism.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbMarxism.InitialImage")));
             this.pbMarxism.Location = new System.Drawing.Point(3, 3);
             this.pbMarxism.Name = "pbMarxism";
-            this.pbMarxism.Size = new System.Drawing.Size(273, 156);
+            this.pbMarxism.Size = new System.Drawing.Size(270, 156);
             this.pbMarxism.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMarxism.TabIndex = 0;
             this.pbMarxism.TabStop = false;
@@ -193,7 +199,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutGheorghe.ColumnCount = 1;
-            this.tableLayoutGheorghe.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutGheorghe.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutGheorghe.Controls.Add(this.lblGheorgheQ, 0, 0);
             this.tableLayoutGheorghe.Controls.Add(this.lblGheorgheAns, 0, 1);
             this.tableLayoutGheorghe.Location = new System.Drawing.Point(3, 165);
@@ -201,7 +207,7 @@
             this.tableLayoutGheorghe.RowCount = 2;
             this.tableLayoutGheorghe.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutGheorghe.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutGheorghe.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutGheorghe.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutGheorghe.TabIndex = 12;
             // 
             // lblGheorgheQ
@@ -212,7 +218,7 @@
             this.lblGheorgheQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGheorgheQ.Location = new System.Drawing.Point(3, 0);
             this.lblGheorgheQ.Name = "lblGheorgheQ";
-            this.lblGheorgheQ.Size = new System.Drawing.Size(267, 25);
+            this.lblGheorgheQ.Size = new System.Drawing.Size(264, 25);
             this.lblGheorgheQ.TabIndex = 5;
             this.lblGheorgheQ.Text = "Unknown";
             this.lblGheorgheQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -224,7 +230,7 @@
             this.lblGheorgheAns.AutoSize = true;
             this.lblGheorgheAns.Location = new System.Drawing.Point(3, 25);
             this.lblGheorgheAns.Name = "lblGheorgheAns";
-            this.lblGheorgheAns.Size = new System.Drawing.Size(267, 13);
+            this.lblGheorgheAns.Size = new System.Drawing.Size(264, 13);
             this.lblGheorgheAns.TabIndex = 7;
             this.lblGheorgheAns.Text = "Unknown";
             this.lblGheorgheAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -238,7 +244,7 @@
             this.pbGheorghe.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbGheorghe.InitialImage")));
             this.pbGheorghe.Location = new System.Drawing.Point(3, 3);
             this.pbGheorghe.Name = "pbGheorghe";
-            this.pbGheorghe.Size = new System.Drawing.Size(273, 156);
+            this.pbGheorghe.Size = new System.Drawing.Size(270, 156);
             this.pbGheorghe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbGheorghe.TabIndex = 0;
             this.pbGheorghe.TabStop = false;
@@ -247,10 +253,10 @@
             // 
             this.panelPostWW2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelPostWW2.Controls.Add(this.tableLayoutPostWW2Container);
-            this.panelPostWW2.Location = new System.Drawing.Point(620, 249);
+            this.panelPostWW2.Location = new System.Drawing.Point(263, 3);
             this.panelPostWW2.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelPostWW2.Name = "panelPostWW2";
-            this.panelPostWW2.Size = new System.Drawing.Size(281, 326);
+            this.panelPostWW2.Size = new System.Drawing.Size(278, 326);
             this.panelPostWW2.TabIndex = 27;
             // 
             // tableLayoutPostWW2Container
@@ -265,17 +271,17 @@
             this.tableLayoutPostWW2Container.RowCount = 2;
             this.tableLayoutPostWW2Container.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPostWW2Container.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPostWW2Container.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutPostWW2Container.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutPostWW2Container.TabIndex = 22;
             // 
             // panelMarxism
             // 
             this.panelMarxism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMarxism.Controls.Add(this.tableLayoutMarxismContainer);
-            this.panelMarxism.Location = new System.Drawing.Point(1048, 249);
+            this.panelMarxism.Location = new System.Drawing.Point(807, 3);
             this.panelMarxism.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelMarxism.Name = "panelMarxism";
-            this.panelMarxism.Size = new System.Drawing.Size(281, 326);
+            this.panelMarxism.Size = new System.Drawing.Size(278, 326);
             this.panelMarxism.TabIndex = 28;
             // 
             // tableLayoutMarxismContainer
@@ -290,17 +296,17 @@
             this.tableLayoutMarxismContainer.RowCount = 2;
             this.tableLayoutMarxismContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutMarxismContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutMarxismContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutMarxismContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutMarxismContainer.TabIndex = 22;
             // 
             // panelGheorghe
             // 
             this.panelGheorghe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelGheorghe.Controls.Add(this.tableLayoutGheorgheContainer);
-            this.panelGheorghe.Location = new System.Drawing.Point(1509, 250);
+            this.panelGheorghe.Location = new System.Drawing.Point(1351, 3);
             this.panelGheorghe.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelGheorghe.Name = "panelGheorghe";
-            this.panelGheorghe.Size = new System.Drawing.Size(281, 326);
+            this.panelGheorghe.Size = new System.Drawing.Size(278, 326);
             this.panelGheorghe.TabIndex = 29;
             // 
             // tableLayoutGheorgheContainer
@@ -315,18 +321,74 @@
             this.tableLayoutGheorgheContainer.RowCount = 2;
             this.tableLayoutGheorgheContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutGheorgheContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutGheorgheContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutGheorgheContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutGheorgheContainer.TabIndex = 22;
+            // 
+            // tableLayoutSovietEraMiddle
+            // 
+            this.tableLayoutSovietEraMiddle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutSovietEraMiddle.ColumnCount = 7;
+            this.tableLayoutSovietEraMiddle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.75F));
+            this.tableLayoutSovietEraMiddle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutSovietEraMiddle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.75F));
+            this.tableLayoutSovietEraMiddle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutSovietEraMiddle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.75F));
+            this.tableLayoutSovietEraMiddle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutSovietEraMiddle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.75F));
+            this.tableLayoutSovietEraMiddle.Controls.Add(this.panelPostWW2, 1, 0);
+            this.tableLayoutSovietEraMiddle.Controls.Add(this.panelGheorghe, 5, 0);
+            this.tableLayoutSovietEraMiddle.Controls.Add(this.panelMarxism, 3, 0);
+            this.tableLayoutSovietEraMiddle.Location = new System.Drawing.Point(3, 341);
+            this.tableLayoutSovietEraMiddle.Name = "tableLayoutSovietEraMiddle";
+            this.tableLayoutSovietEraMiddle.RowCount = 1;
+            this.tableLayoutSovietEraMiddle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutSovietEraMiddle.Size = new System.Drawing.Size(1898, 358);
+            this.tableLayoutSovietEraMiddle.TabIndex = 30;
+            // 
+            // tableLayoutSovietEraMain
+            // 
+            this.tableLayoutSovietEraMain.ColumnCount = 1;
+            this.tableLayoutSovietEraMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutSovietEraMain.Controls.Add(this.tableLayoutLanguageSovietEraBtnAlign, 0, 3);
+            this.tableLayoutSovietEraMain.Controls.Add(this.tableLayoutSovietEraMiddle, 0, 1);
+            this.tableLayoutSovietEraMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutSovietEraMain.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutSovietEraMain.Name = "tableLayoutSovietEraMain";
+            this.tableLayoutSovietEraMain.RowCount = 4;
+            this.tableLayoutSovietEraMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.5F));
+            this.tableLayoutSovietEraMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutSovietEraMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutSovietEraMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutSovietEraMain.Size = new System.Drawing.Size(1904, 1041);
+            this.tableLayoutSovietEraMain.TabIndex = 31;
+            // 
+            // tableLayoutLanguageSovietEraBtnAlign
+            // 
+            this.tableLayoutLanguageSovietEraBtnAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutLanguageSovietEraBtnAlign.ColumnCount = 3;
+            this.tableLayoutLanguageSovietEraBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutLanguageSovietEraBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.tableLayoutLanguageSovietEraBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageSovietEraBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
+            this.tableLayoutLanguageSovietEraBtnAlign.Location = new System.Drawing.Point(3, 939);
+            this.tableLayoutLanguageSovietEraBtnAlign.Name = "tableLayoutLanguageSovietEraBtnAlign";
+            this.tableLayoutLanguageSovietEraBtnAlign.RowCount = 3;
+            this.tableLayoutLanguageSovietEraBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.tableLayoutLanguageSovietEraBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.tableLayoutLanguageSovietEraBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageSovietEraBtnAlign.Size = new System.Drawing.Size(1898, 99);
+            this.tableLayoutLanguageSovietEraBtnAlign.TabIndex = 33;
             // 
             // SovietEra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.panelGheorghe);
-            this.Controls.Add(this.panelMarxism);
-            this.Controls.Add(this.panelPostWW2);
-            this.Controls.Add(this.btnLanguage);
+            this.Controls.Add(this.tableLayoutSovietEraMain);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "SovietEra";
             this.Text = "Era of Sovietization";
@@ -348,6 +410,9 @@
             this.tableLayoutMarxismContainer.ResumeLayout(false);
             this.panelGheorghe.ResumeLayout(false);
             this.tableLayoutGheorgheContainer.ResumeLayout(false);
+            this.tableLayoutSovietEraMiddle.ResumeLayout(false);
+            this.tableLayoutSovietEraMain.ResumeLayout(false);
+            this.tableLayoutLanguageSovietEraBtnAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -372,5 +437,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutMarxismContainer;
         private System.Windows.Forms.Panel panelGheorghe;
         private System.Windows.Forms.TableLayoutPanel tableLayoutGheorgheContainer;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutSovietEraMiddle;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutSovietEraMain;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageSovietEraBtnAlign;
     }
 }

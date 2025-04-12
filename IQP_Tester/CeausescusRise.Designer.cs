@@ -42,6 +42,9 @@
             this.tableLayoutElenaContainer = new System.Windows.Forms.TableLayoutPanel();
             this.panelNicolae = new System.Windows.Forms.Panel();
             this.tableLayoutNicolaeContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutCeausescusRiseMain = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutLanguageCeausescusRiseBtnAlign = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutElena.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbElena)).BeginInit();
             this.tableLayoutNicolae.SuspendLayout();
@@ -50,15 +53,18 @@
             this.tableLayoutElenaContainer.SuspendLayout();
             this.panelNicolae.SuspendLayout();
             this.tableLayoutNicolaeContainer.SuspendLayout();
+            this.tableLayoutCeausescusRiseMain.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
+            this.btnLanguage.Location = new System.Drawing.Point(1787, 59);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
+            this.btnLanguage.Size = new System.Drawing.Size(93, 35);
             this.btnLanguage.TabIndex = 7;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -71,7 +77,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutElena.ColumnCount = 1;
-            this.tableLayoutElena.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutElena.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutElena.Controls.Add(this.lblElenaQ, 0, 0);
             this.tableLayoutElena.Controls.Add(this.lblElenaAns, 0, 1);
             this.tableLayoutElena.Location = new System.Drawing.Point(3, 165);
@@ -79,7 +85,7 @@
             this.tableLayoutElena.RowCount = 2;
             this.tableLayoutElena.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutElena.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutElena.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutElena.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutElena.TabIndex = 9;
             // 
             // lblElenaQ
@@ -90,7 +96,7 @@
             this.lblElenaQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblElenaQ.Location = new System.Drawing.Point(3, 0);
             this.lblElenaQ.Name = "lblElenaQ";
-            this.lblElenaQ.Size = new System.Drawing.Size(267, 25);
+            this.lblElenaQ.Size = new System.Drawing.Size(264, 25);
             this.lblElenaQ.TabIndex = 5;
             this.lblElenaQ.Text = "Unknown";
             this.lblElenaQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -102,7 +108,7 @@
             this.lblElenaAns.AutoSize = true;
             this.lblElenaAns.Location = new System.Drawing.Point(3, 25);
             this.lblElenaAns.Name = "lblElenaAns";
-            this.lblElenaAns.Size = new System.Drawing.Size(267, 13);
+            this.lblElenaAns.Size = new System.Drawing.Size(264, 13);
             this.lblElenaAns.TabIndex = 7;
             this.lblElenaAns.Text = "Unknown";
             this.lblElenaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -116,7 +122,7 @@
             this.pbElena.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbElena.InitialImage")));
             this.pbElena.Location = new System.Drawing.Point(3, 3);
             this.pbElena.Name = "pbElena";
-            this.pbElena.Size = new System.Drawing.Size(273, 156);
+            this.pbElena.Size = new System.Drawing.Size(270, 156);
             this.pbElena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbElena.TabIndex = 0;
             this.pbElena.TabStop = false;
@@ -127,7 +133,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutNicolae.ColumnCount = 1;
-            this.tableLayoutNicolae.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
+            this.tableLayoutNicolae.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutNicolae.Controls.Add(this.lblNicolaeQ, 0, 0);
             this.tableLayoutNicolae.Controls.Add(this.lblNicolaeAns, 0, 1);
             this.tableLayoutNicolae.Location = new System.Drawing.Point(3, 165);
@@ -135,7 +141,7 @@
             this.tableLayoutNicolae.RowCount = 2;
             this.tableLayoutNicolae.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutNicolae.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutNicolae.Size = new System.Drawing.Size(273, 156);
+            this.tableLayoutNicolae.Size = new System.Drawing.Size(270, 156);
             this.tableLayoutNicolae.TabIndex = 9;
             // 
             // lblNicolaeQ
@@ -146,7 +152,7 @@
             this.lblNicolaeQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNicolaeQ.Location = new System.Drawing.Point(3, 0);
             this.lblNicolaeQ.Name = "lblNicolaeQ";
-            this.lblNicolaeQ.Size = new System.Drawing.Size(267, 25);
+            this.lblNicolaeQ.Size = new System.Drawing.Size(264, 25);
             this.lblNicolaeQ.TabIndex = 5;
             this.lblNicolaeQ.Text = "Unknown";
             this.lblNicolaeQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -158,7 +164,7 @@
             this.lblNicolaeAns.AutoSize = true;
             this.lblNicolaeAns.Location = new System.Drawing.Point(3, 25);
             this.lblNicolaeAns.Name = "lblNicolaeAns";
-            this.lblNicolaeAns.Size = new System.Drawing.Size(267, 13);
+            this.lblNicolaeAns.Size = new System.Drawing.Size(264, 13);
             this.lblNicolaeAns.TabIndex = 7;
             this.lblNicolaeAns.Text = "Unknown";
             this.lblNicolaeAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -172,7 +178,7 @@
             this.pbNicolae.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbNicolae.InitialImage")));
             this.pbNicolae.Location = new System.Drawing.Point(3, 3);
             this.pbNicolae.Name = "pbNicolae";
-            this.pbNicolae.Size = new System.Drawing.Size(273, 156);
+            this.pbNicolae.Size = new System.Drawing.Size(270, 156);
             this.pbNicolae.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbNicolae.TabIndex = 0;
             this.pbNicolae.TabStop = false;
@@ -181,10 +187,10 @@
             // 
             this.panelElena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelElena.Controls.Add(this.tableLayoutElenaContainer);
-            this.panelElena.Location = new System.Drawing.Point(256, 224);
+            this.panelElena.Location = new System.Drawing.Point(445, 3);
             this.panelElena.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelElena.Name = "panelElena";
-            this.panelElena.Size = new System.Drawing.Size(281, 326);
+            this.panelElena.Size = new System.Drawing.Size(278, 326);
             this.panelElena.TabIndex = 28;
             // 
             // tableLayoutElenaContainer
@@ -199,17 +205,17 @@
             this.tableLayoutElenaContainer.RowCount = 2;
             this.tableLayoutElenaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutElenaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutElenaContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutElenaContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutElenaContainer.TabIndex = 22;
             // 
             // panelNicolae
             // 
             this.panelNicolae.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelNicolae.Controls.Add(this.tableLayoutNicolaeContainer);
-            this.panelNicolae.Location = new System.Drawing.Point(1030, 225);
+            this.panelNicolae.Location = new System.Drawing.Point(1171, 3);
             this.panelNicolae.MaximumSize = new System.Drawing.Size(281, 326);
             this.panelNicolae.Name = "panelNicolae";
-            this.panelNicolae.Size = new System.Drawing.Size(281, 326);
+            this.panelNicolae.Size = new System.Drawing.Size(278, 326);
             this.panelNicolae.TabIndex = 29;
             // 
             // tableLayoutNicolaeContainer
@@ -224,17 +230,71 @@
             this.tableLayoutNicolaeContainer.RowCount = 2;
             this.tableLayoutNicolaeContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutNicolaeContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutNicolaeContainer.Size = new System.Drawing.Size(279, 324);
+            this.tableLayoutNicolaeContainer.Size = new System.Drawing.Size(276, 324);
             this.tableLayoutNicolaeContainer.TabIndex = 22;
+            // 
+            // tableLayoutCeausescusRiseMain
+            // 
+            this.tableLayoutCeausescusRiseMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutCeausescusRiseMain.ColumnCount = 5;
+            this.tableLayoutCeausescusRiseMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.33233F));
+            this.tableLayoutCeausescusRiseMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.0015F));
+            this.tableLayoutCeausescusRiseMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.33233F));
+            this.tableLayoutCeausescusRiseMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.0015F));
+            this.tableLayoutCeausescusRiseMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.33233F));
+            this.tableLayoutCeausescusRiseMain.Controls.Add(this.panelElena, 1, 0);
+            this.tableLayoutCeausescusRiseMain.Controls.Add(this.panelNicolae, 3, 0);
+            this.tableLayoutCeausescusRiseMain.Location = new System.Drawing.Point(3, 341);
+            this.tableLayoutCeausescusRiseMain.Name = "tableLayoutCeausescusRiseMain";
+            this.tableLayoutCeausescusRiseMain.RowCount = 1;
+            this.tableLayoutCeausescusRiseMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutCeausescusRiseMain.Size = new System.Drawing.Size(1898, 358);
+            this.tableLayoutCeausescusRiseMain.TabIndex = 30;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutLanguageCeausescusRiseBtnAlign, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutCeausescusRiseMain, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1904, 1041);
+            this.tableLayoutPanel1.TabIndex = 31;
+            // 
+            // tableLayoutLanguageCeausescusRiseBtnAlign
+            // 
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.ColumnCount = 3;
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.Location = new System.Drawing.Point(3, 939);
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.Name = "tableLayoutLanguageCeausescusRiseBtnAlign";
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.RowCount = 3;
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.Size = new System.Drawing.Size(1898, 99);
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.TabIndex = 34;
             // 
             // CeausescusRise
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.panelNicolae);
-            this.Controls.Add(this.panelElena);
-            this.Controls.Add(this.btnLanguage);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "CeausescusRise";
             this.Text = "Rise of the Ceaușescus";
@@ -251,6 +311,9 @@
             this.tableLayoutElenaContainer.ResumeLayout(false);
             this.panelNicolae.ResumeLayout(false);
             this.tableLayoutNicolaeContainer.ResumeLayout(false);
+            this.tableLayoutCeausescusRiseMain.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutLanguageCeausescusRiseBtnAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -269,5 +332,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutElenaContainer;
         private System.Windows.Forms.Panel panelNicolae;
         private System.Windows.Forms.TableLayoutPanel tableLayoutNicolaeContainer;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutCeausescusRiseMain;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageCeausescusRiseBtnAlign;
     }
 }
