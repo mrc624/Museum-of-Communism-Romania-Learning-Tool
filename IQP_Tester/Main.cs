@@ -283,7 +283,10 @@ namespace IQP_Tester
             }
             else if (keyData == Keys.F12)
             {
-                dev_Tools = new Dev_Tools(textManager);
+                if (dev_Tools == null)
+                {
+                    dev_Tools = new Dev_Tools(textManager);
+                }
                 openClose.FadeIn(dev_Tools);
                 return true;
             }
