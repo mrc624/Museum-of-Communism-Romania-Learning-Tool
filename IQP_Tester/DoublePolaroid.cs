@@ -37,7 +37,18 @@ namespace IQP_Tester
             resize.CaptureAspectRatios(this);
             DoublePolaroid_Resize(this, new EventArgs());
             tableLayoutDPMain.Click += DoublePolaroid_Click;
-            click.Assign_All_Children_To_Same_Click(tableLayoutDPMain, DoublePolaroid_Click);
+            Set_Clicks();
+        }
+
+        private void Set_Clicks()
+        {
+            pbDPNow.Click += DoublePolaroid_Click;
+            pbDPThen.Click += DoublePolaroid_Click;
+            lblDPText.Click += DoublePolaroid_Click;
+            lblDPTitle.Click += DoublePolaroid_Click;
+            tableLayoutDPMain.Click -= DoublePolaroid_Click;
+            tableLayoutDPPictures.Click -= DoublePolaroid_Click;
+            tableLayoutLanguageDoublePolaroidZoomBtnAlign.Click -= DoublePolaroid_Click;
         }
 
         private void Update_Controls()
@@ -90,9 +101,7 @@ namespace IQP_Tester
 
         private void DoublePolaroid_Resize(object sender, EventArgs e)
         {
-            resize.Glue_to_Corner(tableLayoutDPMain, Resize_Helper.Corner.all, GLUE_TO_CORNER_MARGIN);
-            resize.Resize_Fonts(tableLayoutDPMain);
-            resize.Glue_to_Corner(btnLanguage, Resize_Helper.Corner.bottom_right);
+            resize.Resize_Fonts(this);
         }
 
         private void DoublePolaroid_Click(object sender, EventArgs e)

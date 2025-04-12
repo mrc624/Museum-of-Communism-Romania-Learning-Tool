@@ -78,7 +78,6 @@
             this.tableLayoutTNMain = new System.Windows.Forms.TableLayoutPanel();
             this.lblThenAndNowTitle = new System.Windows.Forms.Label();
             this.tableLayoutLanguageThenAndNowBtnAlign = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutFoodPbTN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoodNow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoodThen)).BeginInit();
@@ -124,9 +123,9 @@
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(1820, 1040);
+            this.btnLanguage.Location = new System.Drawing.Point(1787, 9);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(93, 37);
+            this.btnLanguage.Size = new System.Drawing.Size(93, 33);
             this.btnLanguage.TabIndex = 8;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -876,7 +875,7 @@
             this.tableLayoutLanguageThenAndNowBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
             this.tableLayoutLanguageThenAndNowBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
             this.tableLayoutLanguageThenAndNowBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.tableLayoutLanguageThenAndNowBtnAlign.Controls.Add(this.button1, 1, 1);
+            this.tableLayoutLanguageThenAndNowBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
             this.tableLayoutLanguageThenAndNowBtnAlign.Location = new System.Drawing.Point(3, 991);
             this.tableLayoutLanguageThenAndNowBtnAlign.Name = "tableLayoutLanguageThenAndNowBtnAlign";
             this.tableLayoutLanguageThenAndNowBtnAlign.RowCount = 3;
@@ -886,27 +885,12 @@
             this.tableLayoutLanguageThenAndNowBtnAlign.Size = new System.Drawing.Size(1898, 47);
             this.tableLayoutLanguageThenAndNowBtnAlign.TabIndex = 32;
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1787, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 33);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "English";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // ThenAndNow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutTNMain);
-            this.Controls.Add(this.btnLanguage);
             this.Name = "ThenAndNow";
             this.Text = "Then And Now";
             this.Shown += new System.EventHandler(this.ThenAndNow_Shown);
@@ -1017,6 +1001,5 @@
         private System.Windows.Forms.PictureBox pbUniformThen;
         private System.Windows.Forms.Label lblThenAndNowTitle;
         private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageThenAndNowBtnAlign;
-        private System.Windows.Forms.Button button1;
     }
 }

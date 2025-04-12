@@ -180,8 +180,7 @@
     "lblMediaTNPolLong": "If communism came back, you wouldn\u0027t be free to watch your favorite shows or movies from around the world. The government controlled everything on TV, and there were only a few short programs at certain times. Radio, newspapers, and magazines all had to support the party\u0027s ideas, often showing pictures of Ceau\u0219escu and repeating government messages.",
     "tableLayoutMediaTNDPTitle": "Media \u0026 Entertainment",
     "lblClassesTNPolLong": "If communism came back, your classroom wouldn\u0027t be full of colorful decorations or fun lessons your teacher picked. Back then, every classroom had pictures of Ceau\u0219escu on the walls, and lessons were based on what the government wanted kids to learn, not necessarily what teachers thought was best.",
-    "tableLayoutClassesTNDPTitle": "Classrooms",
-    "button1": "English"
+    "tableLayoutClassesTNDPTitle": "Classrooms"
   },
   "Romanian": {
     "lblOppression": "Represiune",
@@ -364,7 +363,6 @@
     "lblMediaTNPolLong": "EMPTY, USING OTHER ANS",
     "tableLayoutMediaTNDPTitle": "No Title",
     "lblClassesTNPolLong": "EMPTY, USING OTHER ANS",
-    "tableLayoutClassesTNDPTitle": "No Title",
-    "button1": "TRANSLATION NEEDED"
+    "tableLayoutClassesTNDPTitle": "No Title"
   }
 }
