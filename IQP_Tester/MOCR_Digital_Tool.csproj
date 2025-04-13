@@ -177,6 +177,11 @@
     <Compile Include="CeausescusRise.Designer.cs">
       <DependentUpon>CeausescusRise.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SovietEra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,14 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Oppression.resx">
       <DependentUpon>Oppression.cs</DependentUpon>
     </EmbeddedResource>
@@ -298,35 +298,15 @@
     <EmbeddedResource Include="TitlePage.resx">
       <DependentUpon>TitlePage.cs</DependentUpon>
     </EmbeddedResource>
-    <Content Include="BackgroundOne.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="BackgroundThree.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="BackgroundTwo.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="bibliography.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="CarsNow.png" />
-    <Content Include="CarsThen.png" />
-    <Content Include="Chain.png" />
     <Content Include="citations.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ClassroomsStuffNow.jpeg" />
-    <Content Include="ClassroomsStuffThen.png" />
-    <Content Include="ClothesNow.png" />
-    <Content Include="ClothesThen.png" />
     <Content Include="fancy soap luxury.HEIC">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FreeTimeNow.png" />
-    <Content Include="FreeTimeThen.png" />
-    <Content Include="HandwritingNow.png" />
-    <Content Include="HandwritingThen.png" />
     <Content Include="IQP_Tester_TemporaryKey.pfx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -357,21 +337,21 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MarketNow.jpeg" />
-    <Content Include="MarketThen.jpg" />
-    <Content Include="MediaNow.jpg" />
-    <Content Include="MediaThen.png" />
-    <Content Include="NecessitiesNow.png" />
-    <Content Include="NecessitiesThen.png" />
-    <Content Include="NeighborhoodNow.png" />
-    <Content Include="NeighborhoodThen.png" />
     <Content Include="text_manager.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="ThenAndNow_Pictures\Clothes\ClothesThen.png" />
-    <None Include="ThenAndNow_Pictures\Clothes\ClothesNow.png" />
-    <None Include="ThenAndNow_Pictures\Cars\CarsThen.png" />
-    <None Include="ThenAndNow_Pictures\Cars\CarsNow.png" />
+    <Content Include="ThenAndNow_Pictures\Clothes\ClothesThen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Clothes\ClothesNow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Cars\CarsThen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Cars\CarsNow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="ThenAndNow_Pictures\Food\MarketThen.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -384,18 +364,30 @@
     <Content Include="ThenAndNow_Pictures\Classrooms\ClassroomsStuffNow.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="ThenAndNow_Pictures\Handwriting\HandwritingThen.png" />
-    <None Include="ThenAndNow_Pictures\Handwriting\HandwritingNow.png" />
-    <None Include="ThenAndNow_Pictures\FreeTime\FreeTimeThen.png" />
-    <None Include="ThenAndNow_Pictures\FreeTime\FreeTimeNow.png" />
+    <Content Include="ThenAndNow_Pictures\Handwriting\HandwritingThen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Handwriting\HandwritingNow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\FreeTime\FreeTimeThen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\FreeTime\FreeTimeNow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="ThenAndNow_Pictures\Media\MediaThen.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="ThenAndNow_Pictures\Media\MediaNow.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="ThenAndNow_Pictures\Necessities\NecessitiesThen.png" />
-    <None Include="ThenAndNow_Pictures\Necessities\NecessitiesNow.png" />
+    <Content Include="ThenAndNow_Pictures\Necessities\NecessitiesThen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThenAndNow_Pictures\Necessities\NecessitiesNow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="ThenAndNow_Pictures\Neighborhood\NeighborhoodThen.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -405,7 +397,9 @@
     <Content Include="Timeline_Pictures\Ana.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Timeline_Pictures\Chain.png" />
+    <Content Include="Timeline_Pictures\Chain.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Timeline_Pictures\HousePeople.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -428,9 +422,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Religion.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="School.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Timeline_Pictures\CeausescusRise.png">
@@ -466,10 +457,13 @@
     <Content Include="Timeline_Pictures\RegimeFall\WhereCeausescu.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="TitlePage_Pictures\BackgroundOne.png" />
-    <None Include="TitlePage_Pictures\BackgroundThree.png" />
-    <None Include="TitlePage_Pictures\BackgroundTwo.png" />
-    <Content Include="Warsaw.png">
+    <Content Include="TitlePage_Pictures\BackgroundOne.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TitlePage_Pictures\BackgroundThree.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TitlePage_Pictures\BackgroundTwo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="YouthOrg.png">
@@ -490,70 +484,10 @@
     <Content Include="Black_Line.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Ana.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ButterWhy.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="CeauşescuMail.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ColdHands.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="CutPhoneLines.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Destiny.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="HousePeople.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="JapaneseMachines.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="July.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Kneeling_With_Rifle.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Media.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Nicolae_Ceasescu.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="not sure what to use this one for.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Painting_on_Wall.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="People_Gathering.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="People_in_Square.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="People_in_Square2.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="People_in_Square3.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="People_in_Square_Climbing_Trees.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="People_Marching_Hole_in_Flag.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="People_Marching_Many_Flags_And_Sign.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="People_Reading_From_Balcony.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Police_Against_Wall_With_Grafitti.jpg">
@@ -562,32 +496,11 @@
     <Content Include="Ration.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Romanian_Revolution.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Romania_Flag.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Rumanian_Revolution_Tank.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="text_manager.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Timisoara_Uprising.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SchoolPropaganda.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SoftTomato.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="StolenHorse.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="StopEngineers.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Stories_Pictures\ButterWhy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -626,12 +539,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Stories_Pictures\TeacherBeating.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SwimmerKiller.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TeacherBeating.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="UK_Flag.png">

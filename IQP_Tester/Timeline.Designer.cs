@@ -171,7 +171,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbRegimeFall.Image = global::IQP_Tester.Properties.Resources.RegimeFall;
-            this.pbRegimeFall.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbRegimeFall.InitialImage = global::IQP_Tester.Properties.Resources.RegimeFall;
             this.pbRegimeFall.Location = new System.Drawing.Point(1, 63);
             this.pbRegimeFall.Margin = new System.Windows.Forms.Padding(1);
             this.pbRegimeFall.Name = "pbRegimeFall";
@@ -408,7 +408,7 @@
             // 
             this.pbSoviet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbSoviet.Image = global::IQP_Tester.Properties.Resources.Soviet;
-            this.pbSoviet.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbSoviet.InitialImage = global::IQP_Tester.Properties.Resources.Soviet;
             this.pbSoviet.Location = new System.Drawing.Point(1, 32);
             this.pbSoviet.Margin = new System.Windows.Forms.Padding(1);
             this.pbSoviet.Name = "pbSoviet";
@@ -464,7 +464,7 @@
             // 
             this.pbCeausescusRise.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbCeausescusRise.Image = global::IQP_Tester.Properties.Resources.CeausescusRise;
-            this.pbCeausescusRise.InitialImage = global::IQP_Tester.Properties.Resources.Romanian_Revolution;
+            this.pbCeausescusRise.InitialImage = global::IQP_Tester.Properties.Resources.CeausescusRise;
             this.pbCeausescusRise.Location = new System.Drawing.Point(1, 63);
             this.pbCeausescusRise.Margin = new System.Windows.Forms.Padding(1);
             this.pbCeausescusRise.Name = "pbCeausescusRise";

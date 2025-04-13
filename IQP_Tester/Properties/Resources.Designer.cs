@@ -703,16 +703,6 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Romanian_Revolution {
-            get {
-                object obj = ResourceManager.GetObject("Romanian_Revolution", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap school {
             get {
                 object obj = ResourceManager.GetObject("school", resourceCulture);
@@ -826,26 +816,6 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap TimelineMain {
             get {
                 object obj = ResourceManager.GetObject("TimelineMain", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Timisoara_Uprising {
-            get {
-                object obj = ResourceManager.GetObject("Timisoara_Uprising", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Timisoara_Uprising1 {
-            get {
-                object obj = ResourceManager.GetObject("Timisoara_Uprising1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
