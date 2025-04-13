@@ -285,7 +285,7 @@ namespace IQP_Tester
             {
                 if (dev_Tools == null)
                 {
-                    dev_Tools = new Dev_Tools(textManager);
+                    dev_Tools = new Dev_Tools(textManager, openClose);
                 }
                 openClose.FadeIn(dev_Tools);
                 return true;

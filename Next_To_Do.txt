@@ -1,7 +1,5 @@
 make translation button UK flag and Romanian flag
 
-Perhaps should be centering main titles to the main pictures, but may not be needed since they both get Center_X()
-
 Organize pictures into folders
 
 Add MOCR Icon to all forms

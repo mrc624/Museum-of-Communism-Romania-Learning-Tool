@@ -35,7 +35,9 @@ namespace IQP_Tester
         static uint lastInteraction = 0;
         static uint lastFormOpened = 0;
         public const int TIMER_TICK = 100; // tick 10 times a second
+        public const uint NUM_REAL_SECONDS_IN_SECONDS = 10;
         public static uint seconds = 0; // not actually seconds, 1/10 of a second
+        public static uint interaction_count = 0;
 
         public bool block = false;
 
@@ -50,6 +52,7 @@ namespace IQP_Tester
         public void Interaction()
         {
             lastInteraction = seconds;
+            interaction_count++;
         }
 
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
@@ -59,6 +62,16 @@ namespace IQP_Tester
             {
                 main.Invoke(new VoidDelegate(main.Open_Title_Page));
             }
+        }
+
+        public uint Get_Seconds()
+        {
+            return seconds / NUM_REAL_SECONDS_IN_SECONDS;
+        }
+
+        public uint Get_Interactions()
+        {
+            return interaction_count;
         }
 
         public void CloseAllForms(Form keep_open0 = null, Form keep_open1 = null)
@@ -133,7 +146,6 @@ namespace IQP_Tester
                         block = false;
                     }
                 };
-                Interaction();
                 fadeTimer.Start();
             }
         }

@@ -44,11 +44,19 @@
             this.tableLayoutPanelOpenForms = new System.Windows.Forms.TableLayoutPanel();
             this.lblOpenFormsCountDisp = new System.Windows.Forms.Label();
             this.lblOpenFormsCount = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblGeneralStats = new System.Windows.Forms.Label();
+            this.lblUptimeDisp = new System.Windows.Forms.Label();
+            this.lblUptime = new System.Windows.Forms.Label();
+            this.lblInteractionsDisp = new System.Windows.Forms.Label();
+            this.lblInteractions = new System.Windows.Forms.Label();
+            this.btnRefreshGeneralStats = new System.Windows.Forms.Button();
             this.TabControlDevs.SuspendLayout();
             this.tabText_Edit.SuspendLayout();
             this.tableLayoutDevEditText.SuspendLayout();
             this.TabStastics.SuspendLayout();
             this.panelOpenForms.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControlDevs
@@ -176,6 +184,7 @@
             // 
             // TabStastics
             // 
+            this.TabStastics.Controls.Add(this.panel1);
             this.TabStastics.Controls.Add(this.panelOpenForms);
             this.TabStastics.Location = new System.Drawing.Point(4, 22);
             this.TabStastics.Name = "TabStastics";
@@ -241,6 +250,80 @@
             this.lblOpenFormsCount.TabIndex = 0;
             this.lblOpenFormsCount.Text = "Open Forms Count:";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnRefreshGeneralStats);
+            this.panel1.Controls.Add(this.lblInteractionsDisp);
+            this.panel1.Controls.Add(this.lblInteractions);
+            this.panel1.Controls.Add(this.lblUptimeDisp);
+            this.panel1.Controls.Add(this.lblUptime);
+            this.panel1.Controls.Add(this.lblGeneralStats);
+            this.panel1.Location = new System.Drawing.Point(404, 7);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(364, 237);
+            this.panel1.TabIndex = 1;
+            // 
+            // lblGeneralStats
+            // 
+            this.lblGeneralStats.AutoSize = true;
+            this.lblGeneralStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGeneralStats.Location = new System.Drawing.Point(3, 3);
+            this.lblGeneralStats.Name = "lblGeneralStats";
+            this.lblGeneralStats.Size = new System.Drawing.Size(112, 20);
+            this.lblGeneralStats.TabIndex = 1;
+            this.lblGeneralStats.Text = "General Stats:";
+            // 
+            // lblUptimeDisp
+            // 
+            this.lblUptimeDisp.AutoSize = true;
+            this.lblUptimeDisp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUptimeDisp.Location = new System.Drawing.Point(157, 75);
+            this.lblUptimeDisp.Name = "lblUptimeDisp";
+            this.lblUptimeDisp.Size = new System.Drawing.Size(76, 20);
+            this.lblUptimeDisp.TabIndex = 3;
+            this.lblUptimeDisp.Text = "Unknown";
+            // 
+            // lblUptime
+            // 
+            this.lblUptime.AutoSize = true;
+            this.lblUptime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUptime.Location = new System.Drawing.Point(3, 75);
+            this.lblUptime.Name = "lblUptime";
+            this.lblUptime.Size = new System.Drawing.Size(64, 20);
+            this.lblUptime.TabIndex = 2;
+            this.lblUptime.Text = "Uptime:";
+            // 
+            // lblInteractionsDisp
+            // 
+            this.lblInteractionsDisp.AutoSize = true;
+            this.lblInteractionsDisp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInteractionsDisp.Location = new System.Drawing.Point(157, 95);
+            this.lblInteractionsDisp.Name = "lblInteractionsDisp";
+            this.lblInteractionsDisp.Size = new System.Drawing.Size(76, 20);
+            this.lblInteractionsDisp.TabIndex = 5;
+            this.lblInteractionsDisp.Text = "Unknown";
+            // 
+            // lblInteractions
+            // 
+            this.lblInteractions.AutoSize = true;
+            this.lblInteractions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInteractions.Location = new System.Drawing.Point(3, 95);
+            this.lblInteractions.Name = "lblInteractions";
+            this.lblInteractions.Size = new System.Drawing.Size(97, 20);
+            this.lblInteractions.TabIndex = 4;
+            this.lblInteractions.Text = "Interactions:";
+            // 
+            // btnRefreshGeneralStats
+            // 
+            this.btnRefreshGeneralStats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRefreshGeneralStats.Location = new System.Drawing.Point(286, 211);
+            this.btnRefreshGeneralStats.Name = "btnRefreshGeneralStats";
+            this.btnRefreshGeneralStats.Size = new System.Drawing.Size(75, 23);
+            this.btnRefreshGeneralStats.TabIndex = 6;
+            this.btnRefreshGeneralStats.Text = "Refresh";
+            this.btnRefreshGeneralStats.UseVisualStyleBackColor = false;
+            this.btnRefreshGeneralStats.Click += new System.EventHandler(this.btnRefreshGeneralStats_Click);
+            // 
             // Dev_Tools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,6 +339,8 @@
             this.TabStastics.ResumeLayout(false);
             this.panelOpenForms.ResumeLayout(false);
             this.panelOpenForms.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -278,5 +363,12 @@
         private System.Windows.Forms.Label lblOpenFormsCount;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelOpenForms;
         private System.Windows.Forms.Button btnRefreshOpenForms;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblGeneralStats;
+        private System.Windows.Forms.Button btnRefreshGeneralStats;
+        private System.Windows.Forms.Label lblInteractionsDisp;
+        private System.Windows.Forms.Label lblInteractions;
+        private System.Windows.Forms.Label lblUptimeDisp;
+        private System.Windows.Forms.Label lblUptime;
     }
 }

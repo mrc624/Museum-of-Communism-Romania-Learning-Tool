@@ -19,11 +19,13 @@ namespace IQP_Tester
         TableLayout_Helper tableLayout_Helper = new TableLayout_Helper();
         CSV_Helper csv_Helper;
         CSV text_csv;
+        Open_Close_Helper openClose;
 
-        public Dev_Tools(TextManager textManager)
+        public Dev_Tools(TextManager textManager, Open_Close_Helper openClose)
         {
             InitializeComponent();
             this.textManager = textManager;
+            this.openClose = openClose;
             csv_Helper = new CSV_Helper(textManager);
 
             btnEditTextApply.Enabled = false;
@@ -356,6 +358,17 @@ namespace IQP_Tester
             }
             tableLayoutPanelOpenForms.RowCount = 0;
             Add_Headers();
+        }
+
+        private void Fill_General_Stats()
+        {
+            lblUptimeDisp.Text = openClose.Get_Seconds().ToString();
+            lblInteractionsDisp.Text = openClose.Get_Interactions().ToString();
+        }
+
+        private void btnRefreshGeneralStats_Click(object sender, EventArgs e)
+        {
+            Fill_General_Stats();
         }
     }
 }
