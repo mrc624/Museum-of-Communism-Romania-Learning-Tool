@@ -117,12 +117,6 @@ namespace IQP_Tester
             }
         }
 
-        // MAIN PAGE BEGIN (NOT PANELS)
-
-        // MAIN PAGE END   (NOT PANELS)
-
-        // TITLE PAGE BEGIN
-
         public void Open_Title_Page()
         {
             openClose.Interaction();
@@ -141,10 +135,6 @@ namespace IQP_Tester
             }
         }
 
-        // TITLE PAGE END
-
-        // THEN AND NOW BEGIN
-
         private void panelThenAndNow_Click(object sender, EventArgs e)
         {
             if (!openClose.block)
@@ -157,10 +147,6 @@ namespace IQP_Tester
                 openClose.FadeIn(thenAndNow);
             }
         }
-
-        // THEN AND NOW END
-
-        // OPPRESSION START
 
         private void panelOppression_Click(object sender, EventArgs e)
         {
@@ -175,10 +161,6 @@ namespace IQP_Tester
             }
         }
 
-        // OPPRESSION END
-
-        // LIFE UNDER PANEL BEGIN
-
         private void panelLifeUnder_Click(object sender, EventArgs e)
         {
             if (!openClose.block)
@@ -191,10 +173,6 @@ namespace IQP_Tester
                 openClose.FadeIn(lifeUnder);
             }
         }
-
-        // LIFE PANEL UNDER END
-
-        // STORIES BEGIN
 
         private void panelStories_Click(object sender, EventArgs e)
         {
@@ -209,10 +187,6 @@ namespace IQP_Tester
             }
         }
 
-        // STORIES END
-
-        // TIMELINE BEGIN
-
         private void panelTimeline_Click(object sender, EventArgs e)
         {
             if (!openClose.block)
@@ -226,10 +200,6 @@ namespace IQP_Tester
             }
         }
 
-        // TIMELINE END
-
-        // LANGUAGE MANAGEMENT BEGIN
-
         private void btnLanguage_Click(object sender, EventArgs e)
         {
             textManager.Increment_Language(this);
@@ -241,10 +211,6 @@ namespace IQP_Tester
         {
             Main_Resize(this, new EventArgs());
         }
-
-        // LANGUAGE MANAGEMENT END
-
-        // CREDITS MANAGEMENT BEGIN
 
         private void btnCredits_Click(object sender, EventArgs e)
         {
@@ -259,13 +225,14 @@ namespace IQP_Tester
             }
         }
 
-        // CREDITS MANAGEMENT END
-
-        // HANDLING RESIZE BEGIN
-
         private void Main_Resize(object sender, EventArgs e)
         {
             resize.Resize_Fonts(this);
+        }
+
+        private void Main_Shown(object sender, EventArgs e)
+        {
+            resize.Fullscreen_Form(this);
         }
 
         // key overides
@@ -299,13 +266,6 @@ namespace IQP_Tester
             {
                 return false;
             }
-        }
-
-        // HANDLING RESIZE END
-
-        private void Main_Shown(object sender, EventArgs e)
-        {
-            resize.Fullscreen_Form(this);
         }
     }
 }
