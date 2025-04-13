@@ -18,6 +18,7 @@ namespace IQP_Tester
     public partial class Credits : Form
     {
         TableLayout_Helper tableLayout_Helper = new TableLayout_Helper();
+        Resize_Helper resize = new Resize_Helper();
         Open_Close_Helper openClose;
         Citation_Helper citation_Helper;
 
@@ -112,6 +113,7 @@ namespace IQP_Tester
         private void Credits_Shown(object sender, EventArgs e)
         {
             main.Enabled = false;
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void CreditsTableLayoutPanel_VisibleChanged(object sender, EventArgs e)
@@ -120,6 +122,12 @@ namespace IQP_Tester
             {
                 main.Enabled = false;
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            main.Enabled = true;
+            openClose.Close(this);
         }
     }
 }

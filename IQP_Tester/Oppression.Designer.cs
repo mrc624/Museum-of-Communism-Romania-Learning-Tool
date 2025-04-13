@@ -33,47 +33,36 @@
             this.tableLayoutSecuritate = new System.Windows.Forms.TableLayoutPanel();
             this.lblSecuritateQ = new System.Windows.Forms.Label();
             this.lblSecuritateAns = new System.Windows.Forms.Label();
-            this.pbSecuritate = new System.Windows.Forms.PictureBox();
             this.tableLayoutConsequences = new System.Windows.Forms.TableLayoutPanel();
             this.lblConsequencesQ = new System.Windows.Forms.Label();
             this.lblConsequencesAns = new System.Windows.Forms.Label();
-            this.pbConsequences = new System.Windows.Forms.PictureBox();
             this.tableLayoutPropoganda = new System.Windows.Forms.TableLayoutPanel();
             this.lblPropogandaQ = new System.Windows.Forms.Label();
             this.lblPropogandaAns = new System.Windows.Forms.Label();
-            this.pbPropoganda = new System.Windows.Forms.PictureBox();
             this.tableLayoutLanguage = new System.Windows.Forms.TableLayoutPanel();
             this.lblLanguageQ = new System.Windows.Forms.Label();
             this.lblLanguageAns = new System.Windows.Forms.Label();
-            this.pbLanguage = new System.Windows.Forms.PictureBox();
             this.tableLayoutPossesions = new System.Windows.Forms.TableLayoutPanel();
             this.lblPossesionsQ = new System.Windows.Forms.Label();
             this.lblPossesionsAns = new System.Windows.Forms.Label();
-            this.pbPossesions = new System.Windows.Forms.PictureBox();
             this.tableLayoutInfluence = new System.Windows.Forms.TableLayoutPanel();
             this.lblInfluenceQ = new System.Windows.Forms.Label();
             this.lblInfluenceAns = new System.Windows.Forms.Label();
-            this.pbInfluence = new System.Windows.Forms.PictureBox();
             this.tableLayoutExports = new System.Windows.Forms.TableLayoutPanel();
             this.lblExportsQ = new System.Windows.Forms.Label();
             this.lblExportsAns = new System.Windows.Forms.Label();
-            this.pbExports = new System.Windows.Forms.PictureBox();
             this.tableLayoutReligion = new System.Windows.Forms.TableLayoutPanel();
             this.lblReligionQ = new System.Windows.Forms.Label();
             this.lblReligionAns = new System.Windows.Forms.Label();
-            this.pbReligion = new System.Windows.Forms.PictureBox();
             this.tableLayoutFear = new System.Windows.Forms.TableLayoutPanel();
             this.lblFearQ = new System.Windows.Forms.Label();
             this.lblFearAns = new System.Windows.Forms.Label();
-            this.pbFear = new System.Windows.Forms.PictureBox();
             this.tableLayoutPalace = new System.Windows.Forms.TableLayoutPanel();
             this.lblPalaceQ = new System.Windows.Forms.Label();
             this.lblPalaceAns = new System.Windows.Forms.Label();
-            this.pbPalace = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanelDeportation = new System.Windows.Forms.TableLayoutPanel();
             this.lblDeportationQ = new System.Windows.Forms.Label();
             this.lblDeportationAns = new System.Windows.Forms.Label();
-            this.pbDeportation = new System.Windows.Forms.PictureBox();
             this.tableLayoutSecuritateContainer = new System.Windows.Forms.TableLayoutPanel();
             this.panelSecuritate = new System.Windows.Forms.Panel();
             this.panelConsequences = new System.Windows.Forms.Panel();
@@ -100,28 +89,28 @@
             this.tableLayoutOppressionBottom = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutOppressionMain = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutLanguageOppressionBtnAlign = new System.Windows.Forms.TableLayoutPanel();
+            this.pbExports = new System.Windows.Forms.PictureBox();
+            this.pbReligion = new System.Windows.Forms.PictureBox();
+            this.pbDeportation = new System.Windows.Forms.PictureBox();
+            this.pbFear = new System.Windows.Forms.PictureBox();
+            this.pbPalace = new System.Windows.Forms.PictureBox();
+            this.pbSecuritate = new System.Windows.Forms.PictureBox();
+            this.pbConsequences = new System.Windows.Forms.PictureBox();
+            this.pbPropoganda = new System.Windows.Forms.PictureBox();
+            this.pbLanguage = new System.Windows.Forms.PictureBox();
+            this.pbPossesions = new System.Windows.Forms.PictureBox();
+            this.pbInfluence = new System.Windows.Forms.PictureBox();
             this.tableLayoutSecuritate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSecuritate)).BeginInit();
             this.tableLayoutConsequences.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbConsequences)).BeginInit();
             this.tableLayoutPropoganda.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPropoganda)).BeginInit();
             this.tableLayoutLanguage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLanguage)).BeginInit();
             this.tableLayoutPossesions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPossesions)).BeginInit();
             this.tableLayoutInfluence.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInfluence)).BeginInit();
             this.tableLayoutExports.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExports)).BeginInit();
             this.tableLayoutReligion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbReligion)).BeginInit();
             this.tableLayoutFear.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFear)).BeginInit();
             this.tableLayoutPalace.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPalace)).BeginInit();
             this.tableLayoutPanelDeportation.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDeportation)).BeginInit();
             this.tableLayoutSecuritateContainer.SuspendLayout();
             this.panelSecuritate.SuspendLayout();
             this.panelConsequences.SuspendLayout();
@@ -148,11 +137,23 @@
             this.tableLayoutOppressionBottom.SuspendLayout();
             this.tableLayoutOppressionMain.SuspendLayout();
             this.tableLayoutLanguageOppressionBtnAlign.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExports)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbReligion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDeportation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPalace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSecuritate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbConsequences)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPropoganda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLanguage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPossesions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfluence)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLanguage
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLanguage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLanguage.Location = new System.Drawing.Point(1787, 59);
             this.btnLanguage.Name = "btnLanguage";
@@ -203,20 +204,6 @@
             this.lblSecuritateAns.Text = "Unknown";
             this.lblSecuritateAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbSecuritate
-            // 
-            this.pbSecuritate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSecuritate.Image = global::IQP_Tester.Properties.Resources.Securitate;
-            this.pbSecuritate.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSecuritate.InitialImage")));
-            this.pbSecuritate.Location = new System.Drawing.Point(3, 3);
-            this.pbSecuritate.Name = "pbSecuritate";
-            this.pbSecuritate.Size = new System.Drawing.Size(270, 169);
-            this.pbSecuritate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSecuritate.TabIndex = 0;
-            this.pbSecuritate.TabStop = false;
-            // 
             // tableLayoutConsequences
             // 
             this.tableLayoutConsequences.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -258,20 +245,6 @@
             this.lblConsequencesAns.TabIndex = 7;
             this.lblConsequencesAns.Text = "Unknown";
             this.lblConsequencesAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbConsequences
-            // 
-            this.pbConsequences.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbConsequences.Image = global::IQP_Tester.Properties.Resources.Consequences;
-            this.pbConsequences.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbConsequences.InitialImage")));
-            this.pbConsequences.Location = new System.Drawing.Point(3, 3);
-            this.pbConsequences.Name = "pbConsequences";
-            this.pbConsequences.Size = new System.Drawing.Size(270, 169);
-            this.pbConsequences.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbConsequences.TabIndex = 0;
-            this.pbConsequences.TabStop = false;
             // 
             // tableLayoutPropoganda
             // 
@@ -315,20 +288,6 @@
             this.lblPropogandaAns.Text = "Unknown";
             this.lblPropogandaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbPropoganda
-            // 
-            this.pbPropoganda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPropoganda.Image = global::IQP_Tester.Properties.Resources.Propaganda;
-            this.pbPropoganda.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPropoganda.InitialImage")));
-            this.pbPropoganda.Location = new System.Drawing.Point(3, 3);
-            this.pbPropoganda.Name = "pbPropoganda";
-            this.pbPropoganda.Size = new System.Drawing.Size(270, 169);
-            this.pbPropoganda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPropoganda.TabIndex = 0;
-            this.pbPropoganda.TabStop = false;
-            // 
             // tableLayoutLanguage
             // 
             this.tableLayoutLanguage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -370,20 +329,6 @@
             this.lblLanguageAns.TabIndex = 7;
             this.lblLanguageAns.Text = "Unknown";
             this.lblLanguageAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbLanguage
-            // 
-            this.pbLanguage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbLanguage.Image = global::IQP_Tester.Properties.Resources.Language;
-            this.pbLanguage.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbLanguage.InitialImage")));
-            this.pbLanguage.Location = new System.Drawing.Point(3, 3);
-            this.pbLanguage.Name = "pbLanguage";
-            this.pbLanguage.Size = new System.Drawing.Size(270, 169);
-            this.pbLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLanguage.TabIndex = 0;
-            this.pbLanguage.TabStop = false;
             // 
             // tableLayoutPossesions
             // 
@@ -427,20 +372,6 @@
             this.lblPossesionsAns.Text = "Unknown";
             this.lblPossesionsAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbPossesions
-            // 
-            this.pbPossesions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPossesions.Image = global::IQP_Tester.Properties.Resources.Posessions;
-            this.pbPossesions.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPossesions.InitialImage")));
-            this.pbPossesions.Location = new System.Drawing.Point(3, 3);
-            this.pbPossesions.Name = "pbPossesions";
-            this.pbPossesions.Size = new System.Drawing.Size(270, 169);
-            this.pbPossesions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPossesions.TabIndex = 0;
-            this.pbPossesions.TabStop = false;
-            // 
             // tableLayoutInfluence
             // 
             this.tableLayoutInfluence.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -482,20 +413,6 @@
             this.lblInfluenceAns.TabIndex = 7;
             this.lblInfluenceAns.Text = "Unknown";
             this.lblInfluenceAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbInfluence
-            // 
-            this.pbInfluence.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbInfluence.Image = global::IQP_Tester.Properties.Resources.Influence;
-            this.pbInfluence.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbInfluence.InitialImage")));
-            this.pbInfluence.Location = new System.Drawing.Point(3, 3);
-            this.pbInfluence.Name = "pbInfluence";
-            this.pbInfluence.Size = new System.Drawing.Size(270, 169);
-            this.pbInfluence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbInfluence.TabIndex = 0;
-            this.pbInfluence.TabStop = false;
             // 
             // tableLayoutExports
             // 
@@ -539,20 +456,6 @@
             this.lblExportsAns.Text = "Unknown";
             this.lblExportsAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbExports
-            // 
-            this.pbExports.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbExports.Image = ((System.Drawing.Image)(resources.GetObject("pbExports.Image")));
-            this.pbExports.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbExports.InitialImage")));
-            this.pbExports.Location = new System.Drawing.Point(3, 3);
-            this.pbExports.Name = "pbExports";
-            this.pbExports.Size = new System.Drawing.Size(270, 169);
-            this.pbExports.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbExports.TabIndex = 0;
-            this.pbExports.TabStop = false;
-            // 
             // tableLayoutReligion
             // 
             this.tableLayoutReligion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -594,20 +497,6 @@
             this.lblReligionAns.TabIndex = 7;
             this.lblReligionAns.Text = "Unknown";
             this.lblReligionAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbReligion
-            // 
-            this.pbReligion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbReligion.Image = global::IQP_Tester.Properties.Resources.Religion;
-            this.pbReligion.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbReligion.InitialImage")));
-            this.pbReligion.Location = new System.Drawing.Point(3, 3);
-            this.pbReligion.Name = "pbReligion";
-            this.pbReligion.Size = new System.Drawing.Size(270, 169);
-            this.pbReligion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbReligion.TabIndex = 0;
-            this.pbReligion.TabStop = false;
             // 
             // tableLayoutFear
             // 
@@ -651,20 +540,6 @@
             this.lblFearAns.Text = "Unknown";
             this.lblFearAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbFear
-            // 
-            this.pbFear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFear.Image = global::IQP_Tester.Properties.Resources.Fear;
-            this.pbFear.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFear.InitialImage")));
-            this.pbFear.Location = new System.Drawing.Point(3, 3);
-            this.pbFear.Name = "pbFear";
-            this.pbFear.Size = new System.Drawing.Size(270, 169);
-            this.pbFear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFear.TabIndex = 0;
-            this.pbFear.TabStop = false;
-            // 
             // tableLayoutPalace
             // 
             this.tableLayoutPalace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -707,20 +582,6 @@
             this.lblPalaceAns.Text = "Unknown";
             this.lblPalaceAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbPalace
-            // 
-            this.pbPalace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPalace.Image = global::IQP_Tester.Properties.Resources.Palace;
-            this.pbPalace.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPalace.InitialImage")));
-            this.pbPalace.Location = new System.Drawing.Point(3, 3);
-            this.pbPalace.Name = "pbPalace";
-            this.pbPalace.Size = new System.Drawing.Size(270, 169);
-            this.pbPalace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPalace.TabIndex = 0;
-            this.pbPalace.TabStop = false;
-            // 
             // tableLayoutPanelDeportation
             // 
             this.tableLayoutPanelDeportation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -762,20 +623,6 @@
             this.lblDeportationAns.TabIndex = 7;
             this.lblDeportationAns.Text = "Unknown";
             this.lblDeportationAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbDeportation
-            // 
-            this.pbDeportation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbDeportation.Image = global::IQP_Tester.Properties.Resources.Deportation;
-            this.pbDeportation.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbDeportation.InitialImage")));
-            this.pbDeportation.Location = new System.Drawing.Point(3, 3);
-            this.pbDeportation.Name = "pbDeportation";
-            this.pbDeportation.Size = new System.Drawing.Size(270, 169);
-            this.pbDeportation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbDeportation.TabIndex = 0;
-            this.pbDeportation.TabStop = false;
             // 
             // tableLayoutSecuritateContainer
             // 
@@ -1151,6 +998,160 @@
             this.tableLayoutLanguageOppressionBtnAlign.Size = new System.Drawing.Size(1898, 99);
             this.tableLayoutLanguageOppressionBtnAlign.TabIndex = 32;
             // 
+            // pbExports
+            // 
+            this.pbExports.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbExports.Image = ((System.Drawing.Image)(resources.GetObject("pbExports.Image")));
+            this.pbExports.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbExports.InitialImage")));
+            this.pbExports.Location = new System.Drawing.Point(3, 3);
+            this.pbExports.Name = "pbExports";
+            this.pbExports.Size = new System.Drawing.Size(270, 169);
+            this.pbExports.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbExports.TabIndex = 0;
+            this.pbExports.TabStop = false;
+            // 
+            // pbReligion
+            // 
+            this.pbReligion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbReligion.Image = global::IQP_Tester.Properties.Resources.Religion;
+            this.pbReligion.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbReligion.InitialImage")));
+            this.pbReligion.Location = new System.Drawing.Point(3, 3);
+            this.pbReligion.Name = "pbReligion";
+            this.pbReligion.Size = new System.Drawing.Size(270, 169);
+            this.pbReligion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbReligion.TabIndex = 0;
+            this.pbReligion.TabStop = false;
+            // 
+            // pbDeportation
+            // 
+            this.pbDeportation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbDeportation.Image = global::IQP_Tester.Properties.Resources.Deportation;
+            this.pbDeportation.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbDeportation.InitialImage")));
+            this.pbDeportation.Location = new System.Drawing.Point(3, 3);
+            this.pbDeportation.Name = "pbDeportation";
+            this.pbDeportation.Size = new System.Drawing.Size(270, 169);
+            this.pbDeportation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbDeportation.TabIndex = 0;
+            this.pbDeportation.TabStop = false;
+            // 
+            // pbFear
+            // 
+            this.pbFear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbFear.Image = global::IQP_Tester.Properties.Resources.Fear;
+            this.pbFear.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFear.InitialImage")));
+            this.pbFear.Location = new System.Drawing.Point(3, 3);
+            this.pbFear.Name = "pbFear";
+            this.pbFear.Size = new System.Drawing.Size(270, 169);
+            this.pbFear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFear.TabIndex = 0;
+            this.pbFear.TabStop = false;
+            // 
+            // pbPalace
+            // 
+            this.pbPalace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbPalace.Image = global::IQP_Tester.Properties.Resources.Palace;
+            this.pbPalace.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPalace.InitialImage")));
+            this.pbPalace.Location = new System.Drawing.Point(3, 3);
+            this.pbPalace.Name = "pbPalace";
+            this.pbPalace.Size = new System.Drawing.Size(270, 169);
+            this.pbPalace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPalace.TabIndex = 0;
+            this.pbPalace.TabStop = false;
+            // 
+            // pbSecuritate
+            // 
+            this.pbSecuritate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbSecuritate.Image = global::IQP_Tester.Properties.Resources.Securitate;
+            this.pbSecuritate.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSecuritate.InitialImage")));
+            this.pbSecuritate.Location = new System.Drawing.Point(3, 3);
+            this.pbSecuritate.Name = "pbSecuritate";
+            this.pbSecuritate.Size = new System.Drawing.Size(270, 169);
+            this.pbSecuritate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSecuritate.TabIndex = 0;
+            this.pbSecuritate.TabStop = false;
+            // 
+            // pbConsequences
+            // 
+            this.pbConsequences.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbConsequences.Image = global::IQP_Tester.Properties.Resources.Consequences;
+            this.pbConsequences.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbConsequences.InitialImage")));
+            this.pbConsequences.Location = new System.Drawing.Point(3, 3);
+            this.pbConsequences.Name = "pbConsequences";
+            this.pbConsequences.Size = new System.Drawing.Size(270, 169);
+            this.pbConsequences.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbConsequences.TabIndex = 0;
+            this.pbConsequences.TabStop = false;
+            // 
+            // pbPropoganda
+            // 
+            this.pbPropoganda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbPropoganda.Image = global::IQP_Tester.Properties.Resources.Propaganda;
+            this.pbPropoganda.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPropoganda.InitialImage")));
+            this.pbPropoganda.Location = new System.Drawing.Point(3, 3);
+            this.pbPropoganda.Name = "pbPropoganda";
+            this.pbPropoganda.Size = new System.Drawing.Size(270, 169);
+            this.pbPropoganda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPropoganda.TabIndex = 0;
+            this.pbPropoganda.TabStop = false;
+            // 
+            // pbLanguage
+            // 
+            this.pbLanguage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbLanguage.Image = global::IQP_Tester.Properties.Resources.Language;
+            this.pbLanguage.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbLanguage.InitialImage")));
+            this.pbLanguage.Location = new System.Drawing.Point(3, 3);
+            this.pbLanguage.Name = "pbLanguage";
+            this.pbLanguage.Size = new System.Drawing.Size(270, 169);
+            this.pbLanguage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLanguage.TabIndex = 0;
+            this.pbLanguage.TabStop = false;
+            // 
+            // pbPossesions
+            // 
+            this.pbPossesions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbPossesions.Image = global::IQP_Tester.Properties.Resources.Posessions;
+            this.pbPossesions.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPossesions.InitialImage")));
+            this.pbPossesions.Location = new System.Drawing.Point(3, 3);
+            this.pbPossesions.Name = "pbPossesions";
+            this.pbPossesions.Size = new System.Drawing.Size(270, 169);
+            this.pbPossesions.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPossesions.TabIndex = 0;
+            this.pbPossesions.TabStop = false;
+            // 
+            // pbInfluence
+            // 
+            this.pbInfluence.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbInfluence.Image = global::IQP_Tester.Properties.Resources.Influence;
+            this.pbInfluence.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbInfluence.InitialImage")));
+            this.pbInfluence.Location = new System.Drawing.Point(3, 3);
+            this.pbInfluence.Name = "pbInfluence";
+            this.pbInfluence.Size = new System.Drawing.Size(270, 169);
+            this.pbInfluence.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbInfluence.TabIndex = 0;
+            this.pbInfluence.TabStop = false;
+            // 
             // Oppression
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1164,37 +1165,26 @@
             this.Resize += new System.EventHandler(this.Oppression_Resize);
             this.tableLayoutSecuritate.ResumeLayout(false);
             this.tableLayoutSecuritate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSecuritate)).EndInit();
             this.tableLayoutConsequences.ResumeLayout(false);
             this.tableLayoutConsequences.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbConsequences)).EndInit();
             this.tableLayoutPropoganda.ResumeLayout(false);
             this.tableLayoutPropoganda.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPropoganda)).EndInit();
             this.tableLayoutLanguage.ResumeLayout(false);
             this.tableLayoutLanguage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLanguage)).EndInit();
             this.tableLayoutPossesions.ResumeLayout(false);
             this.tableLayoutPossesions.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPossesions)).EndInit();
             this.tableLayoutInfluence.ResumeLayout(false);
             this.tableLayoutInfluence.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInfluence)).EndInit();
             this.tableLayoutExports.ResumeLayout(false);
             this.tableLayoutExports.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExports)).EndInit();
             this.tableLayoutReligion.ResumeLayout(false);
             this.tableLayoutReligion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbReligion)).EndInit();
             this.tableLayoutFear.ResumeLayout(false);
             this.tableLayoutFear.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFear)).EndInit();
             this.tableLayoutPalace.ResumeLayout(false);
             this.tableLayoutPalace.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPalace)).EndInit();
             this.tableLayoutPanelDeportation.ResumeLayout(false);
             this.tableLayoutPanelDeportation.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDeportation)).EndInit();
             this.tableLayoutSecuritateContainer.ResumeLayout(false);
             this.panelSecuritate.ResumeLayout(false);
             this.panelConsequences.ResumeLayout(false);
@@ -1221,6 +1211,17 @@
             this.tableLayoutOppressionBottom.ResumeLayout(false);
             this.tableLayoutOppressionMain.ResumeLayout(false);
             this.tableLayoutLanguageOppressionBtnAlign.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbExports)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbReligion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDeportation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPalace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSecuritate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbConsequences)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPropoganda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLanguage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPossesions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfluence)).EndInit();
             this.ResumeLayout(false);
 
         }
