@@ -33,15 +33,12 @@
             this.tableLayoutPostWW2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblPostWW2Q = new System.Windows.Forms.Label();
             this.lblPostWW2Ans = new System.Windows.Forms.Label();
-            this.pbPostWW2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanelMarxism = new System.Windows.Forms.TableLayoutPanel();
             this.lblMarxismQ = new System.Windows.Forms.Label();
             this.lblMarxismAns = new System.Windows.Forms.Label();
-            this.pbMarxism = new System.Windows.Forms.PictureBox();
             this.tableLayoutGheorghe = new System.Windows.Forms.TableLayoutPanel();
             this.lblGheorgheQ = new System.Windows.Forms.Label();
             this.lblGheorgheAns = new System.Windows.Forms.Label();
-            this.pbGheorghe = new System.Windows.Forms.PictureBox();
             this.panelPostWW2 = new System.Windows.Forms.Panel();
             this.tableLayoutPostWW2Container = new System.Windows.Forms.TableLayoutPanel();
             this.panelMarxism = new System.Windows.Forms.Panel();
@@ -51,12 +48,12 @@
             this.tableLayoutSovietEraMiddle = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutSovietEraMain = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutLanguageSovietEraBtnAlign = new System.Windows.Forms.TableLayoutPanel();
+            this.pbPostWW2 = new System.Windows.Forms.PictureBox();
+            this.pbGheorghe = new System.Windows.Forms.PictureBox();
+            this.pbMarxism = new System.Windows.Forms.PictureBox();
             this.tableLayoutPostWW2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPostWW2)).BeginInit();
             this.tableLayoutPanelMarxism.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMarxism)).BeginInit();
             this.tableLayoutGheorghe.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGheorghe)).BeginInit();
             this.panelPostWW2.SuspendLayout();
             this.tableLayoutPostWW2Container.SuspendLayout();
             this.panelMarxism.SuspendLayout();
@@ -66,11 +63,15 @@
             this.tableLayoutSovietEraMiddle.SuspendLayout();
             this.tableLayoutSovietEraMain.SuspendLayout();
             this.tableLayoutLanguageSovietEraBtnAlign.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPostWW2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGheorghe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMarxism)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLanguage
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLanguage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLanguage.Location = new System.Drawing.Point(1787, 59);
             this.btnLanguage.Name = "btnLanguage";
@@ -123,20 +124,6 @@
             this.lblPostWW2Ans.Text = "Unknown";
             this.lblPostWW2Ans.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbPostWW2
-            // 
-            this.pbPostWW2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPostWW2.Image = global::IQP_Tester.Properties.Resources.PostWW2;
-            this.pbPostWW2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPostWW2.InitialImage")));
-            this.pbPostWW2.Location = new System.Drawing.Point(3, 3);
-            this.pbPostWW2.Name = "pbPostWW2";
-            this.pbPostWW2.Size = new System.Drawing.Size(270, 169);
-            this.pbPostWW2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPostWW2.TabIndex = 0;
-            this.pbPostWW2.TabStop = false;
-            // 
             // tableLayoutPanelMarxism
             // 
             this.tableLayoutPanelMarxism.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -179,20 +166,6 @@
             this.lblMarxismAns.Text = "Unknown";
             this.lblMarxismAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbMarxism
-            // 
-            this.pbMarxism.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMarxism.Image = global::IQP_Tester.Properties.Resources.Marxism;
-            this.pbMarxism.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbMarxism.InitialImage")));
-            this.pbMarxism.Location = new System.Drawing.Point(3, 3);
-            this.pbMarxism.Name = "pbMarxism";
-            this.pbMarxism.Size = new System.Drawing.Size(270, 169);
-            this.pbMarxism.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMarxism.TabIndex = 0;
-            this.pbMarxism.TabStop = false;
-            // 
             // tableLayoutGheorghe
             // 
             this.tableLayoutGheorghe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -234,20 +207,6 @@
             this.lblGheorgheAns.TabIndex = 7;
             this.lblGheorgheAns.Text = "Unknown";
             this.lblGheorgheAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbGheorghe
-            // 
-            this.pbGheorghe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbGheorghe.Image = global::IQP_Tester.Properties.Resources.Gheorghe;
-            this.pbGheorghe.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbGheorghe.InitialImage")));
-            this.pbGheorghe.Location = new System.Drawing.Point(3, 3);
-            this.pbGheorghe.Name = "pbGheorghe";
-            this.pbGheorghe.Size = new System.Drawing.Size(270, 169);
-            this.pbGheorghe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbGheorghe.TabIndex = 0;
-            this.pbGheorghe.TabStop = false;
             // 
             // panelPostWW2
             // 
@@ -383,6 +342,48 @@
             this.tableLayoutLanguageSovietEraBtnAlign.Size = new System.Drawing.Size(1898, 99);
             this.tableLayoutLanguageSovietEraBtnAlign.TabIndex = 33;
             // 
+            // pbPostWW2
+            // 
+            this.pbPostWW2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbPostWW2.Image = global::IQP_Tester.Properties.Resources.PostWW2;
+            this.pbPostWW2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPostWW2.InitialImage")));
+            this.pbPostWW2.Location = new System.Drawing.Point(3, 3);
+            this.pbPostWW2.Name = "pbPostWW2";
+            this.pbPostWW2.Size = new System.Drawing.Size(270, 169);
+            this.pbPostWW2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPostWW2.TabIndex = 0;
+            this.pbPostWW2.TabStop = false;
+            // 
+            // pbGheorghe
+            // 
+            this.pbGheorghe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbGheorghe.Image = global::IQP_Tester.Properties.Resources.Gheorghe;
+            this.pbGheorghe.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbGheorghe.InitialImage")));
+            this.pbGheorghe.Location = new System.Drawing.Point(3, 3);
+            this.pbGheorghe.Name = "pbGheorghe";
+            this.pbGheorghe.Size = new System.Drawing.Size(270, 169);
+            this.pbGheorghe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbGheorghe.TabIndex = 0;
+            this.pbGheorghe.TabStop = false;
+            // 
+            // pbMarxism
+            // 
+            this.pbMarxism.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMarxism.Image = global::IQP_Tester.Properties.Resources.Marxism;
+            this.pbMarxism.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbMarxism.InitialImage")));
+            this.pbMarxism.Location = new System.Drawing.Point(3, 3);
+            this.pbMarxism.Name = "pbMarxism";
+            this.pbMarxism.Size = new System.Drawing.Size(270, 169);
+            this.pbMarxism.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMarxism.TabIndex = 0;
+            this.pbMarxism.TabStop = false;
+            // 
             // SovietEra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,13 +398,10 @@
             this.Resize += new System.EventHandler(this.Soviet_Era_Resize);
             this.tableLayoutPostWW2.ResumeLayout(false);
             this.tableLayoutPostWW2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPostWW2)).EndInit();
             this.tableLayoutPanelMarxism.ResumeLayout(false);
             this.tableLayoutPanelMarxism.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMarxism)).EndInit();
             this.tableLayoutGheorghe.ResumeLayout(false);
             this.tableLayoutGheorghe.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGheorghe)).EndInit();
             this.panelPostWW2.ResumeLayout(false);
             this.tableLayoutPostWW2Container.ResumeLayout(false);
             this.panelMarxism.ResumeLayout(false);
@@ -413,6 +411,9 @@
             this.tableLayoutSovietEraMiddle.ResumeLayout(false);
             this.tableLayoutSovietEraMain.ResumeLayout(false);
             this.tableLayoutLanguageSovietEraBtnAlign.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbPostWW2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGheorghe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMarxism)).EndInit();
             this.ResumeLayout(false);
 
         }

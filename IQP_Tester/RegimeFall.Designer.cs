@@ -33,15 +33,12 @@
             this.tableLayoutWhatWasRevolution = new System.Windows.Forms.TableLayoutPanel();
             this.lblWhatWasRevolutionQ = new System.Windows.Forms.Label();
             this.lblWhatWasRevolutionAns = new System.Windows.Forms.Label();
-            this.pbWhatWasRevolution = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanelWhyRevolt = new System.Windows.Forms.TableLayoutPanel();
             this.lblWhyRevoltQ = new System.Windows.Forms.Label();
             this.lblWhyRevoltAns = new System.Windows.Forms.Label();
-            this.pbWhyRevolt = new System.Windows.Forms.PictureBox();
             this.tableLayoutWhereCeausescu = new System.Windows.Forms.TableLayoutPanel();
             this.lblWhereCeausescuQ = new System.Windows.Forms.Label();
             this.lblWhereCeausescuAns = new System.Windows.Forms.Label();
-            this.pbWhereCeausescu = new System.Windows.Forms.PictureBox();
             this.panelWhatWasRevolution = new System.Windows.Forms.Panel();
             this.tableLayoutWhatWasRevolutionContainer = new System.Windows.Forms.TableLayoutPanel();
             this.panelWhyRevolt = new System.Windows.Forms.Panel();
@@ -51,12 +48,12 @@
             this.tableLayoutRegimeFallMain = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutLanguageRegimeFallBtnAlign = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutRegimeFallMiddle = new System.Windows.Forms.TableLayoutPanel();
+            this.pbWhatWasRevolution = new System.Windows.Forms.PictureBox();
+            this.pbWhereCeausescu = new System.Windows.Forms.PictureBox();
+            this.pbWhyRevolt = new System.Windows.Forms.PictureBox();
             this.tableLayoutWhatWasRevolution.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWhatWasRevolution)).BeginInit();
             this.tableLayoutPanelWhyRevolt.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWhyRevolt)).BeginInit();
             this.tableLayoutWhereCeausescu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWhereCeausescu)).BeginInit();
             this.panelWhatWasRevolution.SuspendLayout();
             this.tableLayoutWhatWasRevolutionContainer.SuspendLayout();
             this.panelWhyRevolt.SuspendLayout();
@@ -66,11 +63,15 @@
             this.tableLayoutRegimeFallMain.SuspendLayout();
             this.tableLayoutLanguageRegimeFallBtnAlign.SuspendLayout();
             this.tableLayoutRegimeFallMiddle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWhatWasRevolution)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWhereCeausescu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWhyRevolt)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLanguage
             // 
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLanguage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLanguage.Location = new System.Drawing.Point(1787, 59);
             this.btnLanguage.Name = "btnLanguage";
@@ -123,20 +124,6 @@
             this.lblWhatWasRevolutionAns.Text = "Unknown";
             this.lblWhatWasRevolutionAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbWhatWasRevolution
-            // 
-            this.pbWhatWasRevolution.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWhatWasRevolution.Image = global::IQP_Tester.Properties.Resources.WhatWasRevolution;
-            this.pbWhatWasRevolution.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhatWasRevolution.InitialImage")));
-            this.pbWhatWasRevolution.Location = new System.Drawing.Point(3, 3);
-            this.pbWhatWasRevolution.Name = "pbWhatWasRevolution";
-            this.pbWhatWasRevolution.Size = new System.Drawing.Size(270, 169);
-            this.pbWhatWasRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbWhatWasRevolution.TabIndex = 0;
-            this.pbWhatWasRevolution.TabStop = false;
-            // 
             // tableLayoutPanelWhyRevolt
             // 
             this.tableLayoutPanelWhyRevolt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -179,20 +166,6 @@
             this.lblWhyRevoltAns.Text = "Unknown";
             this.lblWhyRevoltAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pbWhyRevolt
-            // 
-            this.pbWhyRevolt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWhyRevolt.Image = global::IQP_Tester.Properties.Resources.WhyRevolt;
-            this.pbWhyRevolt.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhyRevolt.InitialImage")));
-            this.pbWhyRevolt.Location = new System.Drawing.Point(3, 3);
-            this.pbWhyRevolt.Name = "pbWhyRevolt";
-            this.pbWhyRevolt.Size = new System.Drawing.Size(270, 169);
-            this.pbWhyRevolt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbWhyRevolt.TabIndex = 0;
-            this.pbWhyRevolt.TabStop = false;
-            // 
             // tableLayoutWhereCeausescu
             // 
             this.tableLayoutWhereCeausescu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -234,20 +207,6 @@
             this.lblWhereCeausescuAns.TabIndex = 7;
             this.lblWhereCeausescuAns.Text = "Unknown";
             this.lblWhereCeausescuAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // pbWhereCeausescu
-            // 
-            this.pbWhereCeausescu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWhereCeausescu.Image = global::IQP_Tester.Properties.Resources.WhereCeausescu;
-            this.pbWhereCeausescu.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhereCeausescu.InitialImage")));
-            this.pbWhereCeausescu.Location = new System.Drawing.Point(3, 3);
-            this.pbWhereCeausescu.Name = "pbWhereCeausescu";
-            this.pbWhereCeausescu.Size = new System.Drawing.Size(270, 169);
-            this.pbWhereCeausescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbWhereCeausescu.TabIndex = 0;
-            this.pbWhereCeausescu.TabStop = false;
             // 
             // panelWhatWasRevolution
             // 
@@ -383,6 +342,48 @@
             this.tableLayoutRegimeFallMiddle.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutRegimeFallMiddle.TabIndex = 30;
             // 
+            // pbWhatWasRevolution
+            // 
+            this.pbWhatWasRevolution.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbWhatWasRevolution.Image = global::IQP_Tester.Properties.Resources.WhatWasRevolution;
+            this.pbWhatWasRevolution.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhatWasRevolution.InitialImage")));
+            this.pbWhatWasRevolution.Location = new System.Drawing.Point(3, 3);
+            this.pbWhatWasRevolution.Name = "pbWhatWasRevolution";
+            this.pbWhatWasRevolution.Size = new System.Drawing.Size(270, 169);
+            this.pbWhatWasRevolution.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbWhatWasRevolution.TabIndex = 0;
+            this.pbWhatWasRevolution.TabStop = false;
+            // 
+            // pbWhereCeausescu
+            // 
+            this.pbWhereCeausescu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbWhereCeausescu.Image = global::IQP_Tester.Properties.Resources.WhereCeausescu;
+            this.pbWhereCeausescu.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhereCeausescu.InitialImage")));
+            this.pbWhereCeausescu.Location = new System.Drawing.Point(3, 3);
+            this.pbWhereCeausescu.Name = "pbWhereCeausescu";
+            this.pbWhereCeausescu.Size = new System.Drawing.Size(270, 169);
+            this.pbWhereCeausescu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbWhereCeausescu.TabIndex = 0;
+            this.pbWhereCeausescu.TabStop = false;
+            // 
+            // pbWhyRevolt
+            // 
+            this.pbWhyRevolt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbWhyRevolt.Image = global::IQP_Tester.Properties.Resources.WhyRevolt;
+            this.pbWhyRevolt.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhyRevolt.InitialImage")));
+            this.pbWhyRevolt.Location = new System.Drawing.Point(3, 3);
+            this.pbWhyRevolt.Name = "pbWhyRevolt";
+            this.pbWhyRevolt.Size = new System.Drawing.Size(270, 169);
+            this.pbWhyRevolt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbWhyRevolt.TabIndex = 0;
+            this.pbWhyRevolt.TabStop = false;
+            // 
             // RegimeFall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,13 +398,10 @@
             this.Resize += new System.EventHandler(this.RegimeFall_Resize);
             this.tableLayoutWhatWasRevolution.ResumeLayout(false);
             this.tableLayoutWhatWasRevolution.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWhatWasRevolution)).EndInit();
             this.tableLayoutPanelWhyRevolt.ResumeLayout(false);
             this.tableLayoutPanelWhyRevolt.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWhyRevolt)).EndInit();
             this.tableLayoutWhereCeausescu.ResumeLayout(false);
             this.tableLayoutWhereCeausescu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWhereCeausescu)).EndInit();
             this.panelWhatWasRevolution.ResumeLayout(false);
             this.tableLayoutWhatWasRevolutionContainer.ResumeLayout(false);
             this.panelWhyRevolt.ResumeLayout(false);
@@ -413,6 +411,9 @@
             this.tableLayoutRegimeFallMain.ResumeLayout(false);
             this.tableLayoutLanguageRegimeFallBtnAlign.ResumeLayout(false);
             this.tableLayoutRegimeFallMiddle.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbWhatWasRevolution)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWhereCeausescu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWhyRevolt)).EndInit();
             this.ResumeLayout(false);
 
         }
