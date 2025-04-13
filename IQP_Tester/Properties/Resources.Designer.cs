@@ -583,26 +583,6 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Nicolae_Ceasescu {
-            get {
-                object obj = ResourceManager.GetObject("Nicolae_Ceasescu", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Nicolae_Ceasescu1 {
-            get {
-                object obj = ResourceManager.GetObject("Nicolae_Ceasescu1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap not_sure_what_to_use_this_one_for {
             get {
                 object obj = ResourceManager.GetObject("not sure what to use this one for", resourceCulture);

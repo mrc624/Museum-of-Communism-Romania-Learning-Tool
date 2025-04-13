@@ -412,16 +412,10 @@
     <Content Include="Life_Under_Pictures\school.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Food.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Life_Under_Pictures\Food.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Oppression_Pictures\Religion.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Religion.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Timeline_Pictures\CeausescusRise.png">
@@ -466,34 +460,31 @@
     <Content Include="TitlePage_Pictures\BackgroundTwo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="YouthOrg.png">
+    <Content Include="Life_Under_Pictures\YouthOrg.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="University.png">
+    <Content Include="Life_Under_Pictures\University.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Blue_Circle.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Demonstration.png">
+    <Content Include="Life_Under_Pictures\Demonstration.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Childhood.png">
+    <Content Include="Life_Under_Pictures\Childhood.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Black_Line.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Media.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Nicolae_Ceasescu.png">
+    <Content Include="Life_Under_Pictures\Media.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Police_Against_Wall_With_Grafitti.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Ration.png">
+    <Content Include="Life_Under_Pictures\Ration.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Romania_Flag.png">
