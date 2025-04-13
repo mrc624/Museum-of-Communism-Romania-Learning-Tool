@@ -80,5 +80,10 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             TitlePage_Resize(this, new EventArgs());
         }
+
+        private void TitlePage_VisibleChanged(object sender, EventArgs e)
+        {
+            Rotate_Pictures();
+        }
     }
 }

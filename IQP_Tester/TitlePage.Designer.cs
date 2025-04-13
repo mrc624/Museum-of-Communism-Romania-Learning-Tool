@@ -156,6 +156,7 @@
             this.Name = "TitlePage";
             this.Text = "TitlePage";
             this.Shown += new System.EventHandler(this.TitlePage_Shown);
+            this.VisibleChanged += new System.EventHandler(this.TitlePage_VisibleChanged);
             this.Click += new System.EventHandler(this.TitlePage_Click);
             this.Resize += new System.EventHandler(this.TitlePage_Resize);
             this.tableLayoutTitle.ResumeLayout(false);
