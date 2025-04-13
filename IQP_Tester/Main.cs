@@ -125,6 +125,7 @@ namespace IQP_Tester
 
         public void Open_Title_Page()
         {
+            openClose.Interaction();
             if (!openClose.IsOpened(titlePage))
             {
                 if (titlePage == null)
@@ -133,6 +134,10 @@ namespace IQP_Tester
                 }
                 openClose.FadeIn(titlePage);
                 openClose.Hide_All_Forms(this, titlePage);
+            }
+            else
+            {
+                titlePage.Rotate_Pictures();
             }
         }
 

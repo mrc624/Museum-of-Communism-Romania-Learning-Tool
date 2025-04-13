@@ -138,6 +138,9 @@
     "pbFreetimeNow": "NEED",
     "pbFreetimeThen": "NEED",
     "pbCarsNow": "NEED",
-    "pbCarsThen": "NEED"
+    "pbCarsThen": "NEED",
+    "pbBackground3": "NEED",
+    "pbBackground2": "NEED",
+    "pbBackground1": "NEED"
   }
 }

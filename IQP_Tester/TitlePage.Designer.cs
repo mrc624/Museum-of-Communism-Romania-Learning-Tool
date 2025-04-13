@@ -32,8 +32,14 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblSubtitle = new System.Windows.Forms.Label();
             this.tableLayoutTitleMain = new System.Windows.Forms.TableLayoutPanel();
+            this.pbBackground3 = new System.Windows.Forms.PictureBox();
+            this.pbBackground2 = new System.Windows.Forms.PictureBox();
+            this.pbBackground1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutTitle.SuspendLayout();
             this.tableLayoutTitleMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackground3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackground2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackground1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutTitle
@@ -42,7 +48,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutTitle.ColumnCount = 1;
-            this.tableLayoutTitle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1880F));
+            this.tableLayoutTitle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1898F));
             this.tableLayoutTitle.Controls.Add(this.lblTitle, 0, 0);
             this.tableLayoutTitle.Controls.Add(this.lblSubtitle, 0, 1);
             this.tableLayoutTitle.Location = new System.Drawing.Point(3, 293);
@@ -58,7 +64,9 @@
             this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTitle.Location = new System.Drawing.Point(3, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(1892, 55);
@@ -71,7 +79,9 @@
             this.lblSubtitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSubtitle.AutoSize = true;
+            this.lblSubtitle.BackColor = System.Drawing.Color.Transparent;
             this.lblSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblSubtitle.Location = new System.Drawing.Point(3, 55);
             this.lblSubtitle.Name = "lblSubtitle";
             this.lblSubtitle.Size = new System.Drawing.Size(1892, 24);
@@ -81,6 +91,7 @@
             // 
             // tableLayoutTitleMain
             // 
+            this.tableLayoutTitleMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutTitleMain.ColumnCount = 1;
             this.tableLayoutTitleMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutTitleMain.Controls.Add(this.tableLayoutTitle, 0, 1);
@@ -91,14 +102,56 @@
             this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutTitleMain.Size = new System.Drawing.Size(1904, 725);
             this.tableLayoutTitleMain.TabIndex = 12;
+            // 
+            // pbBackground3
+            // 
+            this.pbBackground3.BackColor = System.Drawing.Color.Transparent;
+            this.pbBackground3.Image = global::IQP_Tester.Properties.Resources.BackgroundThree;
+            this.pbBackground3.Location = new System.Drawing.Point(302, 12);
+            this.pbBackground3.Name = "pbBackground3";
+            this.pbBackground3.Size = new System.Drawing.Size(139, 139);
+            this.pbBackground3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbBackground3.TabIndex = 15;
+            this.pbBackground3.TabStop = false;
+            this.pbBackground3.Visible = false;
+            // 
+            // pbBackground2
+            // 
+            this.pbBackground2.BackColor = System.Drawing.Color.Transparent;
+            this.pbBackground2.Image = global::IQP_Tester.Properties.Resources.BackgroundTwo;
+            this.pbBackground2.Location = new System.Drawing.Point(157, 12);
+            this.pbBackground2.Name = "pbBackground2";
+            this.pbBackground2.Size = new System.Drawing.Size(139, 139);
+            this.pbBackground2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbBackground2.TabIndex = 14;
+            this.pbBackground2.TabStop = false;
+            this.pbBackground2.Visible = false;
+            // 
+            // pbBackground1
+            // 
+            this.pbBackground1.BackColor = System.Drawing.Color.Transparent;
+            this.pbBackground1.Image = global::IQP_Tester.Properties.Resources.BackgroundOne;
+            this.pbBackground1.Location = new System.Drawing.Point(12, 12);
+            this.pbBackground1.Name = "pbBackground1";
+            this.pbBackground1.Size = new System.Drawing.Size(139, 139);
+            this.pbBackground1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbBackground1.TabIndex = 13;
+            this.pbBackground1.TabStop = false;
+            this.pbBackground1.Visible = false;
             // 
             // TitlePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1904, 725);
+            this.Controls.Add(this.pbBackground3);
+            this.Controls.Add(this.pbBackground2);
+            this.Controls.Add(this.pbBackground1);
             this.Controls.Add(this.tableLayoutTitleMain);
             this.Name = "TitlePage";
             this.Text = "TitlePage";
@@ -108,6 +161,9 @@
             this.tableLayoutTitle.ResumeLayout(false);
             this.tableLayoutTitle.PerformLayout();
             this.tableLayoutTitleMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackground3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackground2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackground1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -118,5 +174,8 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblSubtitle;
         private System.Windows.Forms.TableLayoutPanel tableLayoutTitleMain;
+        private System.Windows.Forms.PictureBox pbBackground1;
+        private System.Windows.Forms.PictureBox pbBackground2;
+        private System.Windows.Forms.PictureBox pbBackground3;
     }
 }

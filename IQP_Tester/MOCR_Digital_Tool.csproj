@@ -298,6 +298,15 @@
     <EmbeddedResource Include="TitlePage.resx">
       <DependentUpon>TitlePage.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="BackgroundOne.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgroundThree.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BackgroundTwo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bibliography.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -457,6 +466,9 @@
     <Content Include="Timeline_Pictures\RegimeFall\WhereCeausescu.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="TitlePage_Pictures\BackgroundOne.png" />
+    <None Include="TitlePage_Pictures\BackgroundThree.png" />
+    <None Include="TitlePage_Pictures\BackgroundTwo.png" />
     <Content Include="Warsaw.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
