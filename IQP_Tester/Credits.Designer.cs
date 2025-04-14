@@ -45,13 +45,13 @@
             this.CreditsTableLayoutPanel.ColumnCount = 1;
             this.CreditsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.CreditsTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CreditsTableLayoutPanel.Location = new System.Drawing.Point(3, 161);
-            this.CreditsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CreditsTableLayoutPanel.Location = new System.Drawing.Point(1, 67);
+            this.CreditsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.CreditsTableLayoutPanel.Name = "CreditsTableLayoutPanel";
             this.CreditsTableLayoutPanel.RowCount = 1;
             this.CreditsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.14973F));
             this.CreditsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.85027F));
-            this.CreditsTableLayoutPanel.Size = new System.Drawing.Size(2141, 1428);
+            this.CreditsTableLayoutPanel.Size = new System.Drawing.Size(802, 598);
             this.CreditsTableLayoutPanel.TabIndex = 0;
             this.CreditsTableLayoutPanel.VisibleChanged += new System.EventHandler(this.CreditsTableLayoutPanel_VisibleChanged);
             // 
@@ -63,12 +63,11 @@
             this.tableLayoutCreditsMain.Controls.Add(this.tableLayoutLanguageOppressionBtnAlign, 0, 0);
             this.tableLayoutCreditsMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutCreditsMain.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutCreditsMain.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutCreditsMain.Name = "tableLayoutCreditsMain";
             this.tableLayoutCreditsMain.RowCount = 2;
             this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutCreditsMain.Size = new System.Drawing.Size(2147, 1591);
+            this.tableLayoutCreditsMain.Size = new System.Drawing.Size(804, 666);
             this.tableLayoutCreditsMain.TabIndex = 1;
             // 
             // tableLayoutLanguageOppressionBtnAlign
@@ -81,25 +80,23 @@
             this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.65414F));
             this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.tableLayoutLanguageOppressionBtnAlign.Controls.Add(this.btnClose, 1, 1);
-            this.tableLayoutLanguageOppressionBtnAlign.Location = new System.Drawing.Point(8, 7);
-            this.tableLayoutLanguageOppressionBtnAlign.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutLanguageOppressionBtnAlign.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutLanguageOppressionBtnAlign.Name = "tableLayoutLanguageOppressionBtnAlign";
             this.tableLayoutLanguageOppressionBtnAlign.RowCount = 3;
             this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.33333F));
             this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.tableLayoutLanguageOppressionBtnAlign.Size = new System.Drawing.Size(2131, 145);
+            this.tableLayoutLanguageOppressionBtnAlign.Size = new System.Drawing.Size(798, 60);
             this.tableLayoutLanguageOppressionBtnAlign.TabIndex = 33;
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(1874, 26);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnClose.Location = new System.Drawing.Point(701, 11);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(232, 110);
+            this.btnClose.Size = new System.Drawing.Size(87, 45);
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -111,21 +108,19 @@
             this.panelCreditsMain.Controls.Add(this.tableLayoutCreditsMain);
             this.panelCreditsMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCreditsMain.Location = new System.Drawing.Point(0, 0);
-            this.panelCreditsMain.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.panelCreditsMain.Name = "panelCreditsMain";
-            this.panelCreditsMain.Size = new System.Drawing.Size(2149, 1593);
+            this.panelCreditsMain.Size = new System.Drawing.Size(806, 668);
             this.panelCreditsMain.TabIndex = 2;
             // 
             // Credits
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2149, 1593);
+            this.ClientSize = new System.Drawing.Size(806, 668);
             this.ControlBox = false;
             this.Controls.Add(this.panelCreditsMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Credits";
