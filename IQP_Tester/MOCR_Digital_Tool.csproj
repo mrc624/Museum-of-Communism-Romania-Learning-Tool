@@ -511,9 +511,6 @@
     <Content Include="Stories_Pictures\JapaneseMachines.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Stories_Pictures\not sure what to use this one for.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Stories_Pictures\SchoolPropaganda.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
