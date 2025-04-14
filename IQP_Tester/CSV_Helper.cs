@@ -51,9 +51,9 @@ namespace IQP_Tester
         {
             Dictionary<string, Dictionary<string, string>> reformatted = new Dictionary<string, Dictionary<string, string>>();
 
-            for (int i = ADJUST_FOR_HEADER; i < csv.Get_CSV_Line_Count(); i++)
+            for (int i = ADJUST_FOR_HEADER; i < csv.Get_Line_Count(); i++)
             {
-                string[] line = csv.Get_CSV_Line(i);
+                string[] line = csv.Get_Line(i);
                 if (line[CONTROL_POSITION].Length > INVALID_LENGTH && line.Length >= NUM_ITEMS_IN_TEXT_CSV)
                 {
                     reformatted[line[CONTROL_POSITION]] = new Dictionary<string, string>();

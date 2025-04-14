@@ -28,26 +28,17 @@ namespace IQP_Tester
         public const string DOUBLE_QUOTES_UNICODE = "\u0022";
 
         public string file_name;
-        private List<string> text;
-        private List<string[]> csv_text;
+        private List<string[]> text;
 
         public CSV(string name)
         {
             file_name = name;
-            text = new List<string>();
-            csv_text = new List<string[]>();
+            text = new List<string[]>();
         }
 
         public string[] Get_Line(int line_num)
         {
-            string line = text[line_num];
-            string[] words = line.Split(COMMA_CHAR);
-            return words;
-        }
-
-        public string[] Get_CSV_Line(int line_num)
-        {
-            return csv_text[line_num];
+            return text[line_num];
         }
 
         private string[] Remove_Quotes(string[] strs)
@@ -94,11 +85,6 @@ namespace IQP_Tester
             return text.Count;
         }
 
-        public int Get_CSV_Line_Count()
-        {
-            return csv_text.Count;
-        }
-
         public void Add(string[] items)
         {
             text.Add(Format_For_CSV(items));
@@ -121,26 +107,25 @@ namespace IQP_Tester
             text.Insert(row, Format_For_CSV(items));
         }
 
-        private string Format_For_CSV(List<string> items)
+        private string[] Format_For_CSV(List<string> items)
         {
-            string text_add = "";
-            for (int i = 0; i < items.Count; i++)
+            string[] item_add = new string[items.Count];
+            for (int i = 0; i < item_add.Length; i++)
             {
-                text_add += Preserve_Special_Characters(items[i]) + COMMA;
+                item_add[i] = Preserve_Special_Characters(items[i]) + COMMA;
             }
-            text_add += NEWLINE;
-            return text_add;
+            item_add[item_add.Length - 1] += NEWLINE;
+            return item_add;
         }
 
-        private string Format_For_CSV(string[] items)
+        private string[] Format_For_CSV(string[] items)
         {
-            string text_add = "";
             for (int i = 0; i < items.Length; i++)
             {
-                text_add += Preserve_Special_Characters(items[i]) + COMMA;
+                items[i] = Preserve_Special_Characters(items[i]) + COMMA;
             }
-            text_add += NEWLINE;
-            return text_add;
+            items[items.Length - 1] += NEWLINE;
+            return items;
         }
 
         private string Preserve_Special_Characters(string str)
@@ -163,7 +148,10 @@ namespace IQP_Tester
             string text_write = "";
             for (int i = 0; i < text.Count; i++)
             {
-                text_write += text[i];
+                for (int j = 0; j < text[i].Length; j++)
+                {
+                    text_write += text[i][j];
+                }
             }
             try
             {
@@ -188,10 +176,10 @@ namespace IQP_Tester
                     string[] parsed = parse.ReadFields();
                     lines.Add(parsed);
                 }
-                csv_text.Clear();
+                text.Clear();
                 for (int i = 0; i < lines.Count; i++)
                 {
-                    csv_text.Add(lines[i]);
+                    text.Add(lines[i]);
                 }
                 return true;
             }
