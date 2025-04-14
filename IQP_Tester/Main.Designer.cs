@@ -115,7 +115,7 @@
             // 
             // panelOppression
             // 
-            this.panelOppression.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.panelOppression.BackgroundImage = global::IQP_Tester.Properties.Resources.Photo_frames;
             this.panelOppression.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelOppression.Controls.Add(this.tableLayoutOppressionContainer);
             this.panelOppression.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -195,7 +195,7 @@
             // 
             // panelLifeUnder
             // 
-            this.panelLifeUnder.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.panelLifeUnder.BackgroundImage = global::IQP_Tester.Properties.Resources.Photo_frames;
             this.panelLifeUnder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelLifeUnder.Controls.Add(this.tableLayoutLifeUnderContainer);
             this.panelLifeUnder.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -275,7 +275,7 @@
             // 
             // panelTimeline
             // 
-            this.panelTimeline.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.panelTimeline.BackgroundImage = global::IQP_Tester.Properties.Resources.Photo_frames;
             this.panelTimeline.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelTimeline.Controls.Add(this.tableLayoutTimelineContainer);
             this.panelTimeline.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -355,7 +355,7 @@
             // 
             // panelStories
             // 
-            this.panelStories.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.panelStories.BackgroundImage = global::IQP_Tester.Properties.Resources.Photo_frames;
             this.panelStories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelStories.Controls.Add(this.tableLayoutStoriesContainer);
             this.panelStories.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -435,7 +435,7 @@
             // 
             // panelThenAndNow
             // 
-            this.panelThenAndNow.BackgroundImage = global::IQP_Tester.Properties.Resources.Blue_Circle;
+            this.panelThenAndNow.BackgroundImage = global::IQP_Tester.Properties.Resources.Photo_frames;
             this.panelThenAndNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelThenAndNow.Controls.Add(this.tableLayoutThenAndNowContainer);
             this.panelThenAndNow.Dock = System.Windows.Forms.DockStyle.Fill;

@@ -103,26 +103,6 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Black_Line {
-            get {
-                object obj = ResourceManager.GetObject("Black_Line", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Blue_Circle {
-            get {
-                object obj = ResourceManager.GetObject("Blue_Circle", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap ButterWhy {
             get {
                 object obj = ResourceManager.GetObject("ButterWhy", resourceCulture);
@@ -596,6 +576,16 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap Palace {
             get {
                 object obj = ResourceManager.GetObject("Palace", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Photo_frames {
+            get {
+                object obj = ResourceManager.GetObject("Photo frames", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
