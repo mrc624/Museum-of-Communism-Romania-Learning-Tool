@@ -46,9 +46,9 @@ namespace IQP_Tester
             pbDPThen.Click += DoublePolaroid_Click;
             lblDPText.Click += DoublePolaroid_Click;
             lblDPTitle.Click += DoublePolaroid_Click;
-            tableLayoutDPMain.Click -= DoublePolaroid_Click;
-            tableLayoutDPPictures.Click -= DoublePolaroid_Click;
-            tableLayoutLanguageDoublePolaroidZoomBtnAlign.Click -= DoublePolaroid_Click;
+            tableLayoutDPMain.Click += DoublePolaroid_Click;
+            tableLayoutDPPictures.Click += DoublePolaroid_Click;
+            tableLayoutLanguageDoublePolaroidZoomBtnAlign.Click += DoublePolaroid_Click;
         }
 
         private void Update_Controls()
