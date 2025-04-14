@@ -24,10 +24,11 @@ namespace IQP_Tester
         delegate void VoidDelegate();
 
         TextManager textManager = new TextManager();
-        Resize_Helper resize = new Resize_Helper();
+        Resize_Helper resize;
         Open_Close_Helper openClose;
         Click_Helper click_helper = new Click_Helper();
         Citation_Helper citation_Helper = new Citation_Helper();
+        Settings settings = new Settings();
 
         public static List<Form> Forms = new List<Form>();
 
@@ -51,12 +52,14 @@ namespace IQP_Tester
         public Main()
         {
             InitializeComponent();
+            settings.Generate_JSON(Settings.FILE_NAME);
             openClose = new Open_Close_Helper(this);
+            resize = new Resize_Helper(settings);
             Add_Forms();
             resize.CaptureAspectRatios(this);
             textManager.Generate_Text_JSON(TextManager.TEXT_MANAGER_FILE_NAME);
             citation_Helper.Generate_Citation_JSON(Citation_Helper.CITATION_FILE_NAME);
-            credits = new Credits(citation_Helper, openClose, this);
+            credits = new Credits(citation_Helper, openClose, resize, this);
             textManager.Update_One_Form(this);
             Set_Panel_Clicks();
             Main_Resize(this, new EventArgs());
@@ -77,31 +80,31 @@ namespace IQP_Tester
         private void Add_Forms()
         {
             Forms.Add(this);
-            thenAndNow = new ThenAndNow(textManager, openClose);
+            thenAndNow = new ThenAndNow(textManager, openClose, resize);
             openClose.Show_Hide(thenAndNow);
             Forms.Add(thenAndNow);
-            oppression = new Oppression(textManager, openClose);
+            oppression = new Oppression(textManager, openClose, resize);
             openClose.Show_Hide(oppression);
             Forms.Add(oppression);
-            stories = new Stories(textManager, openClose);
+            stories = new Stories(textManager, openClose, resize);
             openClose.Show_Hide(stories);
             Forms.Add(stories);
-            lifeUnder = new LifeUnder(textManager, openClose);
+            lifeUnder = new LifeUnder(textManager, openClose, resize);
             openClose.Show_Hide(lifeUnder);
             Forms.Add(lifeUnder);
-            regimeFall = new RegimeFall(textManager, openClose);
+            regimeFall = new RegimeFall(textManager, openClose, resize);
             openClose.Show_Hide(regimeFall);
             Forms.Add(regimeFall);
-            ceausescusRise = new CeausescusRise(textManager, openClose);
+            ceausescusRise = new CeausescusRise(textManager, openClose, resize);
             openClose.Show_Hide(ceausescusRise);
             Forms.Add(ceausescusRise);
-            sovietEra = new SovietEra(textManager, openClose);
+            sovietEra = new SovietEra(textManager, openClose, resize);
             openClose.Show_Hide(sovietEra);
             Forms.Add(sovietEra);
-            timeline = new Timeline(textManager, openClose, regimeFall, ceausescusRise, sovietEra);
+            timeline = new Timeline(textManager, openClose, resize, regimeFall, ceausescusRise, sovietEra);
             openClose.Show_Hide(timeline);
             Forms.Add(timeline);
-            titlePage = new TitlePage(textManager, openClose);
+            titlePage = new TitlePage(textManager, openClose, resize);
             openClose.Show_Hide(titlePage);
             Forms.Add(titlePage);
         }
@@ -124,7 +127,7 @@ namespace IQP_Tester
             {
                 if (titlePage == null)
                 {
-                    titlePage = new TitlePage(textManager, openClose);
+                    titlePage = new TitlePage(textManager, openClose, resize);
                 }
                 openClose.FadeIn(titlePage);
                 openClose.Hide_All_Forms(this, titlePage);
@@ -141,7 +144,7 @@ namespace IQP_Tester
             {
                 if (thenAndNow == null)
                 {
-                    thenAndNow = new ThenAndNow(textManager, openClose);
+                    thenAndNow = new ThenAndNow(textManager, openClose, resize);
                 }
                 openClose.Interaction();
                 openClose.FadeIn(thenAndNow);
@@ -154,7 +157,7 @@ namespace IQP_Tester
             {
                 if (oppression == null)
                 {
-                    oppression = new Oppression(textManager, openClose);
+                    oppression = new Oppression(textManager, openClose, resize);
                 }
                 openClose.Interaction();
                 openClose.FadeIn(oppression);
@@ -167,7 +170,7 @@ namespace IQP_Tester
             {
                 if (lifeUnder == null)
                 {
-                    lifeUnder = new LifeUnder(textManager, openClose);
+                    lifeUnder = new LifeUnder(textManager, openClose, resize);
                 }
                 openClose.Interaction();
                 openClose.FadeIn(lifeUnder);
@@ -180,7 +183,7 @@ namespace IQP_Tester
             {
                 if (stories == null)
                 {
-                    stories = new Stories(textManager, openClose);
+                    stories = new Stories(textManager, openClose, resize);
                 }
                 openClose.Interaction();
                 openClose.FadeIn(stories);
@@ -193,7 +196,7 @@ namespace IQP_Tester
             {
                 if (timeline == null)
                 {
-                    timeline = new Timeline(textManager, openClose, regimeFall, ceausescusRise, sovietEra);
+                    timeline = new Timeline(textManager, openClose, resize, regimeFall, ceausescusRise, sovietEra);
                 }
                 openClose.Interaction();
                 openClose.FadeIn(timeline);
@@ -218,7 +221,7 @@ namespace IQP_Tester
             {
                 if (credits == null)
                 {
-                    credits = new Credits(citation_Helper, openClose, this);
+                    credits = new Credits(citation_Helper, openClose, resize, this);
                 }
                 openClose.Interaction();
                 openClose.FadeIn(credits);
@@ -257,7 +260,7 @@ namespace IQP_Tester
             {
                 if (dev_Tools == null)
                 {
-                    dev_Tools = new Dev_Tools(textManager, openClose);
+                    dev_Tools = new Dev_Tools(textManager, openClose, settings);
                 }
                 openClose.FadeIn(dev_Tools);
                 return true;

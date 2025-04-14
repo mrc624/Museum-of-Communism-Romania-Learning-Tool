@@ -20,12 +20,14 @@ namespace IQP_Tester
         CSV_Helper csv_Helper;
         CSV text_csv;
         Open_Close_Helper openClose;
+        Settings settings;
 
-        public Dev_Tools(TextManager textManager, Open_Close_Helper openClose)
+        public Dev_Tools(TextManager textManager, Open_Close_Helper openClose, Settings settings)
         {
             InitializeComponent();
             this.textManager = textManager;
             this.openClose = openClose;
+            this.settings = settings;
             csv_Helper = new CSV_Helper(textManager);
 
             btnEditTextApply.Enabled = false;
@@ -33,6 +35,8 @@ namespace IQP_Tester
             btnReadCSV.Enabled = false;
 
             btnEditTextRefresh_Click(this, new EventArgs());
+            btnRefreshGeneralStats_Click(this, new EventArgs());
+            btnRefreshOpenForms_Click(this, new EventArgs());
         }
 
         Dictionary<string, Dictionary<string, string>> Reformatted;
@@ -384,6 +388,43 @@ namespace IQP_Tester
         {
             e.Cancel = true;
             openClose.Close(this);
+        }
+
+        private void Fill_Settings()
+        {
+            settings.Generate_JSON(Settings.FILE_NAME);
+
+            tbFontSizeOffset.Text = settings.Get_Font_Offset().ToString();
+        }
+
+        private void Apply_Settings()
+        {
+            if (tbFontSizeOffset.BackColor != Color.Red)
+            {
+                settings.Change_Font(float.Parse(tbFontSizeOffset.Text));
+            }
+        }
+
+        private void tbFontSizeOffset_TextChanged(object sender, EventArgs e)
+        {
+            if (float.TryParse(tbFontSizeOffset.Text, out float value))
+            {
+                tbFontSizeOffset.BackColor = SystemColors.Control;
+            }
+            else
+            {
+                tbFontSizeOffset.BackColor = Color.Red;
+            }
+        }
+
+        private void btnApplyDevSettings_Click(object sender, EventArgs e)
+        {
+            Apply_Settings();
+        }
+
+        private void btnRefreshDevSettings_Click(object sender, EventArgs e)
+        {
+            Fill_Settings();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace IQP_Tester
     public partial class Polaroid_Zoom : Form
     {
 
-        Resize_Helper resize = new Resize_Helper();
+        Resize_Helper resize;
         TextManager textManager;
         Open_Close_Helper openClose;
         Polaroid_Helper polaroid_Zoom_Helper = new Polaroid_Helper();
@@ -23,11 +23,12 @@ namespace IQP_Tester
         Label lblQ;
         Label lblAns;
 
-        public Polaroid_Zoom(Control polaroid, TextManager textMan, Open_Close_Helper open_close)
+        public Polaroid_Zoom(Control polaroid, TextManager textMan, Open_Close_Helper open_close, Resize_Helper resize)
         {
             InitializeComponent();
             textManager = textMan;
             openClose = open_close;
+            this.resize = resize;
 
             if (polaroid_Zoom_Helper.Is_Polaroid(polaroid))
             {

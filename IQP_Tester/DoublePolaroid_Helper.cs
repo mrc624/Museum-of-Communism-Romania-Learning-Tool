@@ -14,12 +14,14 @@ namespace IQP_Tester
     {
         TextManager textManager;
         Open_Close_Helper openClose;
+        Resize_Helper resize;
         Click_Helper clickHelper = new Click_Helper();
 
-        public DoublePolaroid_Helper(TextManager textMan, Open_Close_Helper open_close)
+        public DoublePolaroid_Helper(TextManager textMan, Open_Close_Helper open_close, Resize_Helper resize)
         {
             textManager = textMan;
             openClose = open_close;
+            this.resize = resize;
         }
 
         public DoublePolaroid_Helper()
@@ -143,7 +145,7 @@ namespace IQP_Tester
 
             if (doublePolaroid == null)
             {
-                doublePolaroid = new DoublePolaroid(openClose, textManager, control);
+                doublePolaroid = new DoublePolaroid(openClose, textManager, resize, control);
             }
             openClose.Interaction();
             doublePolaroid.Update_After_Gen(control);

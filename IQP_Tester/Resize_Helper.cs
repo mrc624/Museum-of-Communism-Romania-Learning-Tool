@@ -11,7 +11,14 @@ namespace IQP_Tester
 {
     public class Resize_Helper
     {
+        
+        Settings settings;
 
+        public Resize_Helper(Settings settings)
+        {
+            this.settings = settings;
+        }
+        
         private Dictionary<Control, (double width_ratio, double height_ratio, double percent_right, double percent_down, float fontRatio)> ratios = new Dictionary<Control, (double width_ratio, double height_ratio, double percent_right, double percent_down, float fontRatio)>();
 
         bool Dictionary_Updated = false;
@@ -258,7 +265,7 @@ namespace IQP_Tester
                 var items = ratios[control];
                 float font_ratio = items.fontRatio;
 
-                float newFontSize = (float)control.Parent.Width * font_ratio;
+                float newFontSize = (float)control.Parent.Width * font_ratio + settings.Get_Font_Offset();
 
                 control.Font = new Font(control.Font.FontFamily, (float)(newFontSize));
             }

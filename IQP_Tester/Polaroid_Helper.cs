@@ -12,7 +12,7 @@ namespace IQP_Tester
     {
         Open_Close_Helper openClose;
         Click_Helper click_helper = new Click_Helper();
-        Resize_Helper resize = new Resize_Helper();
+        Resize_Helper resize;
         TextManager textManager;
 
         public const string LONG_POLAROID_ANS_FLAG = "PolLong";
@@ -54,7 +54,7 @@ namespace IQP_Tester
             }
             if (polaroid_zoom == null)
             {
-                polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose);
+                polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose, resize);
             }
             openClose.Interaction();
             polaroid_zoom.Update_After_Gen(Polaroid);
@@ -72,7 +72,7 @@ namespace IQP_Tester
 
         public const int num_controls = 3;
 
-        public void Assign_Click_Handler_To_Valid(Form form, TextManager textMan, Open_Close_Helper open_close) // maybe this should be looking through children of the form too, in case polaroids are grouped in panels
+        public void Assign_Click_Handler_To_Valid(Form form, TextManager textMan, Resize_Helper resize, Open_Close_Helper open_close) // maybe this should be looking through children of the form too, in case polaroids are grouped in panels
         {
             if (Polaroids.Count == 0)
             {
@@ -81,6 +81,7 @@ namespace IQP_Tester
 
             textManager = textMan;
             openClose = open_close;
+            this.resize = resize;
             
             for (int i = 0; i < Polaroids.Count; i++)
             {

@@ -15,18 +15,19 @@ namespace IQP_Tester
         TextManager textManager;
         Open_Close_Helper openClose;
         Click_Helper clickHelper = new Click_Helper();
-        Resize_Helper resize = new Resize_Helper();
+        Resize_Helper resize;
 
         public const int TABLE_LAYOUT_MAIN_EDGE_MARGIN = 50;
 
         List <PictureBox> pictures = new List<PictureBox>();
         int curr_pic_ind = 0;
 
-        public TitlePage(TextManager textMan, Open_Close_Helper open_close)
+        public TitlePage(TextManager textMan, Open_Close_Helper open_close, Resize_Helper resize)
         {
             InitializeComponent();
             textManager = textMan;
             openClose = open_close;
+            this.resize = resize;
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             Set_Clicks();

@@ -12,7 +12,7 @@ namespace IQP_Tester
 {
     public partial class DoublePolaroid : Form
     {
-        Resize_Helper resize = new Resize_Helper();
+        Resize_Helper resize;
         Click_Helper click = new Click_Helper();
         DoublePolaroid_Helper doublePolaroid_Helper;
         Open_Close_Helper openClose;
@@ -24,12 +24,13 @@ namespace IQP_Tester
 
         Label labelText;
 
-        public DoublePolaroid(Open_Close_Helper open_close, TextManager textMan, Control DP)
+        public DoublePolaroid(Open_Close_Helper open_close, TextManager textMan, Resize_Helper resize, Control DP)
         {
             InitializeComponent();
             openClose = open_close;
             textManager = textMan;
-            doublePolaroid_Helper = new DoublePolaroid_Helper(textMan, open_close);
+            this.resize = resize;
+            doublePolaroid_Helper = new DoublePolaroid_Helper(textMan, open_close, resize);
             doublepolaroid = DP;
             Update_Controls();
             Translate_DoublePolaroid();

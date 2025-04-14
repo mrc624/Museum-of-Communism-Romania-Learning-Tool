@@ -13,18 +13,19 @@ namespace IQP_Tester
     public partial class ThenAndNow : Form
     {
         TextManager textManager;
-        Resize_Helper resize = new Resize_Helper();
+        Resize_Helper resize;
         DoublePolaroid_Helper doublePolaroid_Helper;
         Open_Close_Helper openClose;
 
         public const int TABLE_LAYOUT_MAIN_EDGE_MARGIN = 50;
 
-        public ThenAndNow(TextManager textMan, Open_Close_Helper open_close)
+        public ThenAndNow(TextManager textMan, Open_Close_Helper open_close, Resize_Helper resize)
         {
             InitializeComponent();
             openClose = open_close;
             textManager = textMan;
-            doublePolaroid_Helper = new DoublePolaroid_Helper(textMan, open_close);
+            this.resize = resize;
+            doublePolaroid_Helper = new DoublePolaroid_Helper(textMan, open_close, resize);
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             doublePolaroid_Helper.Find_DoublePolaroids(this);

@@ -18,7 +18,7 @@ namespace IQP_Tester
     public partial class Credits : Form
     {
         TableLayout_Helper tableLayout_Helper = new TableLayout_Helper();
-        Resize_Helper resize = new Resize_Helper();
+        Resize_Helper resize;
         Open_Close_Helper openClose;
         Citation_Helper citation_Helper;
 
@@ -26,11 +26,12 @@ namespace IQP_Tester
 
         Main main;
 
-        public Credits(Citation_Helper citation_helper, Open_Close_Helper openClose, Main main)
+        public Credits(Citation_Helper citation_helper, Open_Close_Helper openClose, Resize_Helper resize, Main main)
         {
             InitializeComponent();
             citation_Helper = citation_helper;
             this.openClose = openClose;
+            this.resize = resize;
             this.main = main;
 
             for (int i = 0; i < (int)Citation_Type.NUM_CITATION_TYPES; i++)
