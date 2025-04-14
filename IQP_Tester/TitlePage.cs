@@ -29,9 +29,18 @@ namespace IQP_Tester
             openClose = open_close;
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
-            clickHelper.Assign_All_Children_To_Same_Click(this, TitlePage_Click);
+            Set_Clicks();
             Add_Pictures(this);
             Rotate_Pictures();
+        }
+
+        private void Set_Clicks()
+        {
+            lblSubtitle.Click += TitlePage_Click;
+            lblTitle.Click += TitlePage_Click;
+            tableLayoutLanguageTitlePageBtnAlign.Click += TitlePage_Click;
+            tableLayoutTitleMain.Click += TitlePage_Click;
+            tableLayoutTitle.Click += TitlePage_Click;
         }
 
         public void Rotate_Pictures()
@@ -84,6 +93,12 @@ namespace IQP_Tester
         private void TitlePage_VisibleChanged(object sender, EventArgs e)
         {
             Rotate_Pictures();
+        }
+
+        private void btnLanguage_Click(object sender, EventArgs e)
+        {
+            openClose.Interaction();
+            textManager.Increment_Language(this);
         }
     }
 }

@@ -35,11 +35,14 @@
             this.pbBackground3 = new System.Windows.Forms.PictureBox();
             this.pbBackground2 = new System.Windows.Forms.PictureBox();
             this.pbBackground1 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutLanguageTitlePageBtnAlign = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLanguage = new System.Windows.Forms.Button();
             this.tableLayoutTitle.SuspendLayout();
             this.tableLayoutTitleMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground1)).BeginInit();
+            this.tableLayoutLanguageTitlePageBtnAlign.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutTitle
@@ -51,12 +54,12 @@
             this.tableLayoutTitle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1898F));
             this.tableLayoutTitle.Controls.Add(this.lblTitle, 0, 0);
             this.tableLayoutTitle.Controls.Add(this.lblSubtitle, 0, 1);
-            this.tableLayoutTitle.Location = new System.Drawing.Point(3, 293);
+            this.tableLayoutTitle.Location = new System.Drawing.Point(3, 419);
             this.tableLayoutTitle.Name = "tableLayoutTitle";
             this.tableLayoutTitle.RowCount = 2;
             this.tableLayoutTitle.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutTitle.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutTitle.Size = new System.Drawing.Size(1898, 139);
+            this.tableLayoutTitle.Size = new System.Drawing.Size(1898, 202);
             this.tableLayoutTitle.TabIndex = 11;
             // 
             // lblTitle
@@ -95,15 +98,16 @@
             this.tableLayoutTitleMain.ColumnCount = 1;
             this.tableLayoutTitleMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutTitleMain.Controls.Add(this.tableLayoutTitle, 0, 1);
+            this.tableLayoutTitleMain.Controls.Add(this.tableLayoutLanguageTitlePageBtnAlign, 0, 3);
             this.tableLayoutTitleMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutTitleMain.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutTitleMain.Name = "tableLayoutTitleMain";
-            this.tableLayoutTitleMain.RowCount = 3;
+            this.tableLayoutTitleMain.RowCount = 4;
             this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutTitleMain.Size = new System.Drawing.Size(1904, 725);
+            this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutTitleMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutTitleMain.Size = new System.Drawing.Size(1904, 1041);
             this.tableLayoutTitleMain.TabIndex = 12;
             // 
             // pbBackground3
@@ -142,13 +146,43 @@
             this.pbBackground1.TabStop = false;
             this.pbBackground1.Visible = false;
             // 
+            // tableLayoutLanguageTitlePageBtnAlign
+            // 
+            this.tableLayoutLanguageTitlePageBtnAlign.ColumnCount = 3;
+            this.tableLayoutLanguageTitlePageBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutLanguageTitlePageBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.tableLayoutLanguageTitlePageBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageTitlePageBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
+            this.tableLayoutLanguageTitlePageBtnAlign.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutLanguageTitlePageBtnAlign.Location = new System.Drawing.Point(3, 939);
+            this.tableLayoutLanguageTitlePageBtnAlign.Name = "tableLayoutLanguageTitlePageBtnAlign";
+            this.tableLayoutLanguageTitlePageBtnAlign.RowCount = 3;
+            this.tableLayoutLanguageTitlePageBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.tableLayoutLanguageTitlePageBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.tableLayoutLanguageTitlePageBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageTitlePageBtnAlign.Size = new System.Drawing.Size(1898, 99);
+            this.tableLayoutLanguageTitlePageBtnAlign.TabIndex = 33;
+            // 
+            // btnLanguage
+            // 
+            this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLanguage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLanguage.Location = new System.Drawing.Point(1787, 59);
+            this.btnLanguage.Name = "btnLanguage";
+            this.btnLanguage.Size = new System.Drawing.Size(93, 35);
+            this.btnLanguage.TabIndex = 8;
+            this.btnLanguage.Text = "English";
+            this.btnLanguage.UseVisualStyleBackColor = false;
+            this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
+            // 
             // TitlePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlText;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1904, 725);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.pbBackground3);
             this.Controls.Add(this.pbBackground2);
             this.Controls.Add(this.pbBackground1);
@@ -165,6 +199,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground1)).EndInit();
+            this.tableLayoutLanguageTitlePageBtnAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -178,5 +213,7 @@
         private System.Windows.Forms.PictureBox pbBackground1;
         private System.Windows.Forms.PictureBox pbBackground2;
         private System.Windows.Forms.PictureBox pbBackground3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageTitlePageBtnAlign;
+        private System.Windows.Forms.Button btnLanguage;
     }
 }
