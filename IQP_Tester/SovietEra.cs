@@ -64,5 +64,11 @@ namespace IQP_Tester
         {
             Soviet_Era_Resize(this, new EventArgs());
         }
+
+        private void SovietEra_VisibleChanged(object sender, EventArgs e)
+        {
+            textManager.Update_One_Form(this);
+            Soviet_Era_Resize(this, new EventArgs());
+        }
     }
 }

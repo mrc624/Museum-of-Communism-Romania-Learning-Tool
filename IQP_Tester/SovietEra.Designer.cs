@@ -394,6 +394,7 @@
             this.Name = "SovietEra";
             this.Text = "Era of Sovietization";
             this.Shown += new System.EventHandler(this.Soviet_Era_Shown);
+            this.VisibleChanged += new System.EventHandler(this.SovietEra_VisibleChanged);
             this.Click += new System.EventHandler(this.Soviet_Era_Click);
             this.Resize += new System.EventHandler(this.Soviet_Era_Resize);
             this.tableLayoutPostWW2.ResumeLayout(false);

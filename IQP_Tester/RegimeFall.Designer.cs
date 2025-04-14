@@ -394,6 +394,7 @@
             this.Name = "RegimeFall";
             this.Text = "Fall of the Regime";
             this.Shown += new System.EventHandler(this.RegimeFall_Shown);
+            this.VisibleChanged += new System.EventHandler(this.RegimeFall_VisibleChanged);
             this.Click += new System.EventHandler(this.RegimeFall_Click);
             this.Resize += new System.EventHandler(this.RegimeFall_Resize);
             this.tableLayoutWhatWasRevolution.ResumeLayout(false);

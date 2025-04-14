@@ -332,6 +332,7 @@
             this.Controls.Add(this.TabControlDevs);
             this.Name = "Dev_Tools";
             this.Text = "Dev_Tools";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dev_Tools_FormClosing);
             this.TabControlDevs.ResumeLayout(false);
             this.tabText_Edit.ResumeLayout(false);
             this.tableLayoutDevEditText.ResumeLayout(false);

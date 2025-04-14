@@ -64,5 +64,11 @@ namespace IQP_Tester
         {
             CeausescusRise_Resize(this, new EventArgs());
         }
+
+        private void CeausescusRise_VisibleChanged(object sender, EventArgs e)
+        {
+            textManager.Update_One_Form(this);
+            CeausescusRise_Resize(this, new EventArgs());
+        }
     }
 }

@@ -1256,6 +1256,7 @@
             this.Name = "Stories";
             this.Text = "Stories";
             this.Shown += new System.EventHandler(this.Stories_Shown);
+            this.VisibleChanged += new System.EventHandler(this.Stories_VisibleChanged);
             this.Click += new System.EventHandler(this.Stories_Click);
             this.Resize += new System.EventHandler(this.Stories_Resize);
             this.tableLayoutStolenHorse.ResumeLayout(false);

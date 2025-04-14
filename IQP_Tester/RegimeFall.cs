@@ -66,5 +66,11 @@ namespace IQP_Tester
         {
             RegimeFall_Resize(this, new EventArgs());
         }
+
+        private void RegimeFall_VisibleChanged(object sender, EventArgs e)
+        {
+            textManager.Update_One_Form(this);
+            RegimeFall_Resize(this, new EventArgs());
+        }
     }
 }

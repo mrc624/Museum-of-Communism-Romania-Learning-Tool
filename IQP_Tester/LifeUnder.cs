@@ -62,5 +62,11 @@ namespace IQP_Tester
         {
             LifeUnder_Resize(this, new EventArgs());
         }
+
+        private void LifeUnder_VisibleChanged(object sender, EventArgs e)
+        {
+            textManager.Update_One_Form(this);
+            LifeUnder_Resize(this, new EventArgs());
+        }
     }
 }

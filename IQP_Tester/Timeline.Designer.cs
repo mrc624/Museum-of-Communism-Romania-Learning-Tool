@@ -68,12 +68,12 @@
             this.tableLayoutSoviet = new System.Windows.Forms.TableLayoutPanel();
             this.panelSoviet = new System.Windows.Forms.Panel();
             this.tableLayoutTimelineMain = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutTimelineTop = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutTimelineBottom = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutLanguageTimelineBtnAlign = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutCeausescusRiseContainer = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutRegimeFallContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutTimelineBottom = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutEraSovietContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutTimelineTop = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutRegimeFallContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutCeausescusRiseContainer = new System.Windows.Forms.TableLayoutPanel();
             this.panelRegimeFall.SuspendLayout();
             this.tableLayoutRegimeFall.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRegimeFall)).BeginInit();
@@ -101,12 +101,12 @@
             this.tableLayoutSoviet.SuspendLayout();
             this.panelSoviet.SuspendLayout();
             this.tableLayoutTimelineMain.SuspendLayout();
-            this.tableLayoutTimelineTop.SuspendLayout();
-            this.tableLayoutTimelineBottom.SuspendLayout();
             this.tableLayoutLanguageTimelineBtnAlign.SuspendLayout();
-            this.tableLayoutCeausescusRiseContainer.SuspendLayout();
-            this.tableLayoutRegimeFallContainer.SuspendLayout();
+            this.tableLayoutTimelineBottom.SuspendLayout();
             this.tableLayoutEraSovietContainer.SuspendLayout();
+            this.tableLayoutTimelineTop.SuspendLayout();
+            this.tableLayoutRegimeFallContainer.SuspendLayout();
+            this.tableLayoutCeausescusRiseContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -650,6 +650,63 @@
             this.tableLayoutTimelineMain.Size = new System.Drawing.Size(1904, 1041);
             this.tableLayoutTimelineMain.TabIndex = 33;
             // 
+            // tableLayoutLanguageTimelineBtnAlign
+            // 
+            this.tableLayoutLanguageTimelineBtnAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutLanguageTimelineBtnAlign.ColumnCount = 3;
+            this.tableLayoutLanguageTimelineBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutLanguageTimelineBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.tableLayoutLanguageTimelineBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageTimelineBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
+            this.tableLayoutLanguageTimelineBtnAlign.Location = new System.Drawing.Point(3, 939);
+            this.tableLayoutLanguageTimelineBtnAlign.Name = "tableLayoutLanguageTimelineBtnAlign";
+            this.tableLayoutLanguageTimelineBtnAlign.RowCount = 3;
+            this.tableLayoutLanguageTimelineBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.tableLayoutLanguageTimelineBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.tableLayoutLanguageTimelineBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageTimelineBtnAlign.Size = new System.Drawing.Size(1898, 99);
+            this.tableLayoutLanguageTimelineBtnAlign.TabIndex = 34;
+            // 
+            // tableLayoutTimelineBottom
+            // 
+            this.tableLayoutTimelineBottom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutTimelineBottom.ColumnCount = 7;
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.5F));
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.5F));
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.5F));
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.5F));
+            this.tableLayoutTimelineBottom.Controls.Add(this.tableLayoutEraSovietContainer, 1, 0);
+            this.tableLayoutTimelineBottom.Controls.Add(this.panelWarsaw, 3, 0);
+            this.tableLayoutTimelineBottom.Controls.Add(this.panelHousePeople, 5, 0);
+            this.tableLayoutTimelineBottom.Location = new System.Drawing.Point(3, 575);
+            this.tableLayoutTimelineBottom.Name = "tableLayoutTimelineBottom";
+            this.tableLayoutTimelineBottom.RowCount = 1;
+            this.tableLayoutTimelineBottom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutTimelineBottom.Size = new System.Drawing.Size(1898, 358);
+            this.tableLayoutTimelineBottom.TabIndex = 34;
+            // 
+            // tableLayoutEraSovietContainer
+            // 
+            this.tableLayoutEraSovietContainer.ColumnCount = 1;
+            this.tableLayoutEraSovietContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutEraSovietContainer.Controls.Add(this.panelSoviet, 0, 1);
+            this.tableLayoutEraSovietContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutEraSovietContainer.Location = new System.Drawing.Point(316, 3);
+            this.tableLayoutEraSovietContainer.Name = "tableLayoutEraSovietContainer";
+            this.tableLayoutEraSovietContainer.RowCount = 3;
+            this.tableLayoutEraSovietContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutEraSovietContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.tableLayoutEraSovietContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutEraSovietContainer.Size = new System.Drawing.Size(278, 352);
+            this.tableLayoutEraSovietContainer.TabIndex = 34;
+            // 
             // tableLayoutTimelineTop
             // 
             this.tableLayoutTimelineTop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -676,47 +733,20 @@
             this.tableLayoutTimelineTop.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutTimelineTop.TabIndex = 34;
             // 
-            // tableLayoutTimelineBottom
+            // tableLayoutRegimeFallContainer
             // 
-            this.tableLayoutTimelineBottom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutTimelineBottom.ColumnCount = 7;
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.5F));
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.5F));
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.5F));
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutTimelineBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.5F));
-            this.tableLayoutTimelineBottom.Controls.Add(this.tableLayoutEraSovietContainer, 1, 0);
-            this.tableLayoutTimelineBottom.Controls.Add(this.panelWarsaw, 3, 0);
-            this.tableLayoutTimelineBottom.Controls.Add(this.panelHousePeople, 5, 0);
-            this.tableLayoutTimelineBottom.Location = new System.Drawing.Point(3, 575);
-            this.tableLayoutTimelineBottom.Name = "tableLayoutTimelineBottom";
-            this.tableLayoutTimelineBottom.RowCount = 1;
-            this.tableLayoutTimelineBottom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutTimelineBottom.Size = new System.Drawing.Size(1898, 358);
-            this.tableLayoutTimelineBottom.TabIndex = 34;
-            // 
-            // tableLayoutLanguageTimelineBtnAlign
-            // 
-            this.tableLayoutLanguageTimelineBtnAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutLanguageTimelineBtnAlign.ColumnCount = 3;
-            this.tableLayoutLanguageTimelineBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
-            this.tableLayoutLanguageTimelineBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
-            this.tableLayoutLanguageTimelineBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.tableLayoutLanguageTimelineBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
-            this.tableLayoutLanguageTimelineBtnAlign.Location = new System.Drawing.Point(3, 939);
-            this.tableLayoutLanguageTimelineBtnAlign.Name = "tableLayoutLanguageTimelineBtnAlign";
-            this.tableLayoutLanguageTimelineBtnAlign.RowCount = 3;
-            this.tableLayoutLanguageTimelineBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
-            this.tableLayoutLanguageTimelineBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
-            this.tableLayoutLanguageTimelineBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.tableLayoutLanguageTimelineBtnAlign.Size = new System.Drawing.Size(1898, 99);
-            this.tableLayoutLanguageTimelineBtnAlign.TabIndex = 34;
+            this.tableLayoutRegimeFallContainer.ColumnCount = 1;
+            this.tableLayoutRegimeFallContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutRegimeFallContainer.Controls.Add(this.panelRegimeFall, 0, 1);
+            this.tableLayoutRegimeFallContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutRegimeFallContainer.Location = new System.Drawing.Point(1650, 3);
+            this.tableLayoutRegimeFallContainer.Name = "tableLayoutRegimeFallContainer";
+            this.tableLayoutRegimeFallContainer.RowCount = 3;
+            this.tableLayoutRegimeFallContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutRegimeFallContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.tableLayoutRegimeFallContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutRegimeFallContainer.Size = new System.Drawing.Size(241, 352);
+            this.tableLayoutRegimeFallContainer.TabIndex = 36;
             // 
             // tableLayoutCeausescusRiseContainer
             // 
@@ -733,36 +763,6 @@
             this.tableLayoutCeausescusRiseContainer.Size = new System.Drawing.Size(241, 352);
             this.tableLayoutCeausescusRiseContainer.TabIndex = 35;
             // 
-            // tableLayoutRegimeFallContainer
-            // 
-            this.tableLayoutRegimeFallContainer.ColumnCount = 1;
-            this.tableLayoutRegimeFallContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutRegimeFallContainer.Controls.Add(this.panelRegimeFall, 0, 1);
-            this.tableLayoutRegimeFallContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutRegimeFallContainer.Location = new System.Drawing.Point(1650, 3);
-            this.tableLayoutRegimeFallContainer.Name = "tableLayoutRegimeFallContainer";
-            this.tableLayoutRegimeFallContainer.RowCount = 3;
-            this.tableLayoutRegimeFallContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutRegimeFallContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutRegimeFallContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutRegimeFallContainer.Size = new System.Drawing.Size(241, 352);
-            this.tableLayoutRegimeFallContainer.TabIndex = 36;
-            // 
-            // tableLayoutEraSovietContainer
-            // 
-            this.tableLayoutEraSovietContainer.ColumnCount = 1;
-            this.tableLayoutEraSovietContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutEraSovietContainer.Controls.Add(this.panelSoviet, 0, 1);
-            this.tableLayoutEraSovietContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutEraSovietContainer.Location = new System.Drawing.Point(316, 3);
-            this.tableLayoutEraSovietContainer.Name = "tableLayoutEraSovietContainer";
-            this.tableLayoutEraSovietContainer.RowCount = 3;
-            this.tableLayoutEraSovietContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutEraSovietContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutEraSovietContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutEraSovietContainer.Size = new System.Drawing.Size(278, 352);
-            this.tableLayoutEraSovietContainer.TabIndex = 34;
-            // 
             // Timeline
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -772,6 +772,7 @@
             this.Name = "Timeline";
             this.Text = "Timeline";
             this.Shown += new System.EventHandler(this.Timeline_Shown);
+            this.VisibleChanged += new System.EventHandler(this.Timeline_VisibleChanged);
             this.Click += new System.EventHandler(this.Timeline_Click);
             this.Resize += new System.EventHandler(this.Timeline_Resize);
             this.panelRegimeFall.ResumeLayout(false);
@@ -808,12 +809,12 @@
             this.tableLayoutSoviet.PerformLayout();
             this.panelSoviet.ResumeLayout(false);
             this.tableLayoutTimelineMain.ResumeLayout(false);
-            this.tableLayoutTimelineTop.ResumeLayout(false);
-            this.tableLayoutTimelineBottom.ResumeLayout(false);
             this.tableLayoutLanguageTimelineBtnAlign.ResumeLayout(false);
-            this.tableLayoutCeausescusRiseContainer.ResumeLayout(false);
-            this.tableLayoutRegimeFallContainer.ResumeLayout(false);
+            this.tableLayoutTimelineBottom.ResumeLayout(false);
             this.tableLayoutEraSovietContainer.ResumeLayout(false);
+            this.tableLayoutTimelineTop.ResumeLayout(false);
+            this.tableLayoutRegimeFallContainer.ResumeLayout(false);
+            this.tableLayoutCeausescusRiseContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -277,13 +277,18 @@ namespace IQP_Tester
                 {
                     File.Copy(text_csv.file_name, save.FileName, true);
                     MessageBox.Show("File Exported!\nFile at " + save.FileName);
+                    load.Close();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error Exporting File\nError:\n" + ex);
+                    load.Close();
                 }
             }
-            load.Close();
+            else if (save.ShowDialog() != DialogResult.None)
+            {
+                load.Close();
+            }
         }
 
         private void btnReadCSV_Click(object sender, EventArgs e)
@@ -322,6 +327,10 @@ namespace IQP_Tester
                     MessageBox.Show("Error Saving File\nError:\n" + ex);
                     load.Close();
                 }
+            }
+            else if (open.ShowDialog() != DialogResult.None)
+            {
+                load.Close();
             }
         }
 
@@ -369,6 +378,12 @@ namespace IQP_Tester
         private void btnRefreshGeneralStats_Click(object sender, EventArgs e)
         {
             Fill_General_Stats();
+        }
+
+        private void Dev_Tools_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            openClose.Close(this);
         }
     }
 }

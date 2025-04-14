@@ -62,5 +62,11 @@ namespace IQP_Tester
         {
             Oppression_Resize(this, new EventArgs());
         }
+
+        private void Oppression_VisibleChanged(object sender, EventArgs e)
+        {
+            textManager.Update_One_Form(this);
+            Oppression_Resize(this, new EventArgs());
+        }
     }
 }

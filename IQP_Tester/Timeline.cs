@@ -543,5 +543,11 @@ namespace IQP_Tester
         {
             Timeline_Click(sender, e);
         }
+
+        private void Timeline_VisibleChanged(object sender, EventArgs e)
+        {
+            textManager.Update_One_Form(this);
+            Timeline_Resize(this, new EventArgs());
+        }
     }
 }

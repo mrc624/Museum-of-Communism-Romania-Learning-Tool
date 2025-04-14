@@ -60,5 +60,11 @@ namespace IQP_Tester
         {
             Stories_Resize(this, new EventArgs());
         }
+
+        private void Stories_VisibleChanged(object sender, EventArgs e)
+        {
+            textManager.Update_One_Form(this);
+            Stories_Resize(this, new EventArgs());
+        }
     }
 }

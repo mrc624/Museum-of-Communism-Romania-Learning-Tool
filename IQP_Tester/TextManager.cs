@@ -161,7 +161,7 @@ namespace IQP_Tester
                 language = Language.English; // if we went past last supported language go back to english
             }
 
-            Update_All_Forms();
+            Update_Shown_Forms();
         }
 
         public void Update_Text()
@@ -183,6 +183,17 @@ namespace IQP_Tester
                     Translate_Form(Forms[i], translated);
                 }
 
+            }
+        }
+
+        public void Update_Shown_Forms()
+        {
+            for (int i = 0; i < Application.OpenForms.Count; i++)
+            {
+                if (Application.OpenForms[i].Visible)
+                {
+                    Update_One_Form(Application.OpenForms[i]);
+                }
             }
         }
 

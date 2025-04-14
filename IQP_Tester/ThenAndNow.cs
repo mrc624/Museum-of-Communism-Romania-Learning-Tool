@@ -68,5 +68,11 @@ namespace IQP_Tester
         {
             ThenAndNow_Resize(this, new EventArgs());
         }
+
+        private void ThenAndNow_VisibleChanged(object sender, EventArgs e)
+        {
+            textManager.Update_One_Form(this);
+            ThenAndNow_Resize(this, new EventArgs());
+        }
     }
 }

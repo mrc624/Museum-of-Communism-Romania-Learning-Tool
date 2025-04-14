@@ -300,6 +300,7 @@
             this.Name = "CeausescusRise";
             this.Text = "Rise of the Ceaușescus";
             this.Shown += new System.EventHandler(this.CeausescusRise_Shown);
+            this.VisibleChanged += new System.EventHandler(this.CeausescusRise_VisibleChanged);
             this.Click += new System.EventHandler(this.CeausescusRise_Click);
             this.Resize += new System.EventHandler(this.CeausescusRise_Resize);
             this.tableLayoutElena.ResumeLayout(false);

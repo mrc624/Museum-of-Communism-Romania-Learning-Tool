@@ -1081,6 +1081,7 @@
             this.Name = "LifeUnder";
             this.Text = "Life Under Communism";
             this.Shown += new System.EventHandler(this.LifeUnder_Shown);
+            this.VisibleChanged += new System.EventHandler(this.LifeUnder_VisibleChanged);
             this.Click += new System.EventHandler(this.LifeUnder_Click);
             this.Resize += new System.EventHandler(this.LifeUnder_Resize);
             this.tableLayoutSchool.ResumeLayout(false);

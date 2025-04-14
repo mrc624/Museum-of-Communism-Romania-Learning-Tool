@@ -1161,6 +1161,7 @@
             this.Name = "Oppression";
             this.Text = "Oppression";
             this.Shown += new System.EventHandler(this.Oppression_Shown);
+            this.VisibleChanged += new System.EventHandler(this.Oppression_VisibleChanged);
             this.Click += new System.EventHandler(this.Oppression_Click);
             this.Resize += new System.EventHandler(this.Oppression_Resize);
             this.tableLayoutSecuritate.ResumeLayout(false);
