@@ -37,6 +37,7 @@ namespace IQP_Tester
             btnEditTextRefresh_Click(this, new EventArgs());
             btnRefreshGeneralStats_Click(this, new EventArgs());
             btnRefreshOpenForms_Click(this, new EventArgs());
+            btnRefreshDevSettings_Click(this, new EventArgs());
         }
 
         Dictionary<string, Dictionary<string, string>> Reformatted;
