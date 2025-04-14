@@ -129,5 +129,17 @@ namespace IQP_Tester
             main.Enabled = true;
             openClose.Close(this);
         }
+
+        private void Credits_VisibleChanged(object sender, EventArgs e)
+        {
+            if (this.Opacity == 0)
+            {
+                main.Enabled = true;
+            }
+            else
+            {
+                main.Enabled = true;
+            }
+        }
     }
 }
