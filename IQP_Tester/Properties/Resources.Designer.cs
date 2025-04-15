@@ -453,16 +453,6 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LifeUnderMain {
-            get {
-                object obj = ResourceManager.GetObject("LifeUnderMain", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap LifeUnderMain1 {
             get {
                 object obj = ResourceManager.GetObject("LifeUnderMain1", resourceCulture);
@@ -576,16 +566,6 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap NeighborhoodThen {
             get {
                 object obj = ResourceManager.GetObject("NeighborhoodThen", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap OpressionMain {
-            get {
-                object obj = ResourceManager.GetObject("OpressionMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -763,16 +743,6 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap StoriesMain {
-            get {
-                object obj = ResourceManager.GetObject("StoriesMain", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap StoriesMain1 {
             get {
                 object obj = ResourceManager.GetObject("StoriesMain1", resourceCulture);
@@ -803,29 +773,9 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ThenNowMain {
-            get {
-                object obj = ResourceManager.GetObject("ThenNowMain", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap ThenNowMain1 {
             get {
                 object obj = ResourceManager.GetObject("ThenNowMain1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap TimelineMain {
-            get {
-                object obj = ResourceManager.GetObject("TimelineMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -846,16 +796,6 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap University {
             get {
                 object obj = ResourceManager.GetObject("University", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WallpaperBackgroundMain {
-            get {
-                object obj = ResourceManager.GetObject("WallpaperBackgroundMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

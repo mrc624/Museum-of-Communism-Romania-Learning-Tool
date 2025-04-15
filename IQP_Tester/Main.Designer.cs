@@ -174,7 +174,7 @@
             this.pbOppression.BackColor = System.Drawing.Color.Transparent;
             this.pbOppression.BackgroundImage = global::IQP_Tester.Properties.Resources.OpressionMain1;
             this.pbOppression.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbOppression.Image = global::IQP_Tester.Properties.Resources.OpressionMain;
+            this.pbOppression.Image = global::IQP_Tester.Properties.Resources.OpressionMain1;
             this.pbOppression.Location = new System.Drawing.Point(8, 85);
             this.pbOppression.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.pbOppression.Name = "pbOppression";
@@ -436,7 +436,7 @@
             this.pbStories.BackColor = System.Drawing.Color.Transparent;
             this.pbStories.BackgroundImage = global::IQP_Tester.Properties.Resources.StoriesMain1;
             this.pbStories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbStories.Image = global::IQP_Tester.Properties.Resources.StoriesMain;
+            this.pbStories.Image = global::IQP_Tester.Properties.Resources.StoriesMain1;
             this.pbStories.Location = new System.Drawing.Point(8, 85);
             this.pbStories.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.pbStories.Name = "pbStories";
