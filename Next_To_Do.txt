@@ -1,3 +1,1 @@
-make translation button UK flag and Romanian flag
-
 Add MOCR Icon to all forms
