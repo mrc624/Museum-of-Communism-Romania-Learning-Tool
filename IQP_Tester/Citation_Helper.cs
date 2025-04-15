@@ -19,6 +19,11 @@ namespace IQP_Tester
     public class Citation_Helper
     {
 
+        public Citation_Helper(TitlePage titlepage)
+        {
+            this.titlepage = titlepage;
+        }
+
         public const string CITATION_FILE_NAME = "citations.json";
         public const string BIBLIOGRAPH_TXT_FILE_NAME = "bibliography.txt";
         public const string INDENT = "\n        ";
@@ -26,6 +31,8 @@ namespace IQP_Tester
         public const char HYPHEN = '-';
         public const int INDENT_EVERY_CHAR = 100;
         public const int INDENT_SEARCH_FOR_SPACE_CHAR_RANGE = 15;
+
+        TitlePage titlepage;
 
         public enum Citation_Type
         {
@@ -134,6 +141,13 @@ namespace IQP_Tester
 
             for (int j = 0; j < Forms.Count; j++)
             {
+                if (Forms[j].BackgroundImage != null && Forms[j] != titlepage) 
+                {
+                    PictureBox copy = new PictureBox();
+                    copy.Image = Forms[j].BackgroundImage;
+                    copy.Name = Forms[j].Name;
+                    Add_Picture(copy);
+                }
                 for (int i = 0; i < Forms[j].Controls.Count; i++)
                 {
                     Add_Picture(Forms[j].Controls[i]);
