@@ -38,24 +38,24 @@
             this.lblNicolaeAns = new System.Windows.Forms.Label();
             this.panelElena = new System.Windows.Forms.Panel();
             this.tableLayoutElenaContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.pbElena = new System.Windows.Forms.PictureBox();
             this.panelNicolae = new System.Windows.Forms.Panel();
             this.tableLayoutNicolaeContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.pbNicolae = new System.Windows.Forms.PictureBox();
             this.tableLayoutCeausescusRiseMain = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutLanguageCeausescusRiseBtnAlign = new System.Windows.Forms.TableLayoutPanel();
-            this.pbElena = new System.Windows.Forms.PictureBox();
-            this.pbNicolae = new System.Windows.Forms.PictureBox();
             this.tableLayoutElena.SuspendLayout();
             this.tableLayoutNicolae.SuspendLayout();
             this.panelElena.SuspendLayout();
             this.tableLayoutElenaContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbElena)).BeginInit();
             this.panelNicolae.SuspendLayout();
             this.tableLayoutNicolaeContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNicolae)).BeginInit();
             this.tableLayoutCeausescusRiseMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutLanguageCeausescusRiseBtnAlign.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbElena)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNicolae)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -168,6 +168,7 @@
             // 
             // tableLayoutElenaContainer
             // 
+            this.tableLayoutElenaContainer.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutElenaContainer.ColumnCount = 1;
             this.tableLayoutElenaContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutElenaContainer.Controls.Add(this.tableLayoutElena, 0, 1);
@@ -181,6 +182,20 @@
             this.tableLayoutElenaContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutElenaContainer.TabIndex = 22;
             // 
+            // pbElena
+            // 
+            this.pbElena.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbElena.Image = global::IQP_Tester.Properties.Resources.Elena;
+            this.pbElena.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbElena.InitialImage")));
+            this.pbElena.Location = new System.Drawing.Point(3, 3);
+            this.pbElena.Name = "pbElena";
+            this.pbElena.Size = new System.Drawing.Size(270, 169);
+            this.pbElena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbElena.TabIndex = 0;
+            this.pbElena.TabStop = false;
+            // 
             // panelNicolae
             // 
             this.panelNicolae.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -193,6 +208,7 @@
             // 
             // tableLayoutNicolaeContainer
             // 
+            this.tableLayoutNicolaeContainer.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutNicolaeContainer.ColumnCount = 1;
             this.tableLayoutNicolaeContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutNicolaeContainer.Controls.Add(this.tableLayoutNicolae, 0, 1);
@@ -205,6 +221,20 @@
             this.tableLayoutNicolaeContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutNicolaeContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutNicolaeContainer.TabIndex = 22;
+            // 
+            // pbNicolae
+            // 
+            this.pbNicolae.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbNicolae.Image = global::IQP_Tester.Properties.Resources.Ceausescu;
+            this.pbNicolae.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbNicolae.InitialImage")));
+            this.pbNicolae.Location = new System.Drawing.Point(3, 3);
+            this.pbNicolae.Name = "pbNicolae";
+            this.pbNicolae.Size = new System.Drawing.Size(270, 169);
+            this.pbNicolae.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNicolae.TabIndex = 0;
+            this.pbNicolae.TabStop = false;
             // 
             // tableLayoutCeausescusRiseMain
             // 
@@ -228,6 +258,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutLanguageCeausescusRiseBtnAlign, 0, 3);
@@ -262,38 +293,12 @@
             this.tableLayoutLanguageCeausescusRiseBtnAlign.Size = new System.Drawing.Size(1898, 99);
             this.tableLayoutLanguageCeausescusRiseBtnAlign.TabIndex = 34;
             // 
-            // pbElena
-            // 
-            this.pbElena.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbElena.Image = global::IQP_Tester.Properties.Resources.Elena;
-            this.pbElena.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbElena.InitialImage")));
-            this.pbElena.Location = new System.Drawing.Point(3, 3);
-            this.pbElena.Name = "pbElena";
-            this.pbElena.Size = new System.Drawing.Size(270, 169);
-            this.pbElena.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbElena.TabIndex = 0;
-            this.pbElena.TabStop = false;
-            // 
-            // pbNicolae
-            // 
-            this.pbNicolae.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNicolae.Image = global::IQP_Tester.Properties.Resources.Ceausescu;
-            this.pbNicolae.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbNicolae.InitialImage")));
-            this.pbNicolae.Location = new System.Drawing.Point(3, 3);
-            this.pbNicolae.Name = "pbNicolae";
-            this.pbNicolae.Size = new System.Drawing.Size(270, 169);
-            this.pbNicolae.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbNicolae.TabIndex = 0;
-            this.pbNicolae.TabStop = false;
-            // 
             // CeausescusRise
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::IQP_Tester.Properties.Resources.TimelineBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(1);
@@ -309,13 +314,13 @@
             this.tableLayoutNicolae.PerformLayout();
             this.panelElena.ResumeLayout(false);
             this.tableLayoutElenaContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbElena)).EndInit();
             this.panelNicolae.ResumeLayout(false);
             this.tableLayoutNicolaeContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbNicolae)).EndInit();
             this.tableLayoutCeausescusRiseMain.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutLanguageCeausescusRiseBtnAlign.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbElena)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNicolae)).EndInit();
             this.ResumeLayout(false);
 
         }

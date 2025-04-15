@@ -583,6 +583,16 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OpressionBackground {
+            get {
+                object obj = ResourceManager.GetObject("OpressionBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OpressionMain1 {
             get {
                 object obj = ResourceManager.GetObject("OpressionMain1", resourceCulture);
@@ -753,6 +763,16 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap StoriesBackground {
+            get {
+                object obj = ResourceManager.GetObject("StoriesBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap StoriesMain1 {
             get {
                 object obj = ResourceManager.GetObject("StoriesMain1", resourceCulture);
@@ -776,6 +796,16 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap TeacherBeating {
             get {
                 object obj = ResourceManager.GetObject("TeacherBeating", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ThenandnowBackground {
+            get {
+                object obj = ResourceManager.GetObject("ThenandnowBackground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

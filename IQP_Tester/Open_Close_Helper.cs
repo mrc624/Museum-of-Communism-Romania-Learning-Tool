@@ -178,7 +178,7 @@ namespace IQP_Tester
                         fadeTimer.Stop(); // stop when invisible
                         form.Hide();
                         block = false;
-                        if (save_pic.BackgroundImage != null)
+                        if (save_pic.Image != null)
                         {
                             form.BackgroundImage = save_pic.Image;
                         }

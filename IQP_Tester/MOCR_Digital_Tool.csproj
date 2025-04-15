@@ -365,9 +365,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Oppression_Pictures\OpressionBackground.jpg" />
     <Content Include="Settings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Stories_Pictures\StoriesBackground.jpg" />
     <Content Include="text_manager.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -425,6 +427,7 @@
     <Content Include="ThenAndNow_Pictures\Neighborhood\NeighborhoodNow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="ThenAndNow_Pictures\ThenandnowBackground.jpg" />
     <Content Include="Timeline_Pictures\Ana.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

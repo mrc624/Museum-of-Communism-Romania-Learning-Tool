@@ -117,6 +117,8 @@ namespace IQP_Tester
             {
                 int year = start_ticks + (i * TICKS_EVERY);
                 Label label = tableLayoutHelper.Get_Label(year.ToString(), YEAR_LABEL_NAME + i.ToString(), TableLayout_Helper.STANDARD_FONT_SIZE, TableLayout_Helper.STANDARD_ANCHOR, TableLayout_Helper.STANDARD_ALIGN);
+                label.ForeColor = Color.White;
+                label.BackColor = Color.Transparent;
                 Year_Labels.Add(label);
                 this.Controls.Add(label);
             }

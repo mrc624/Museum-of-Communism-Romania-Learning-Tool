@@ -195,6 +195,7 @@
             this.tableLayoutFoodTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutFoodTNDP.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutFoodTNDP.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutFoodTNDP.ColumnCount = 1;
             this.tableLayoutFoodTNDP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -240,6 +241,7 @@
             this.tableLayoutUniformTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutUniformTNDP.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutUniformTNDP.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutUniformTNDP.ColumnCount = 1;
             this.tableLayoutUniformTNDP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -315,6 +317,7 @@
             this.tableLayoutNecessitiesTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutNecessitiesTNDP.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutNecessitiesTNDP.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutNecessitiesTNDP.ColumnCount = 1;
             this.tableLayoutNecessitiesTNDP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -390,6 +393,7 @@
             this.tableLayoutNeighborhoodTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutNeighborhoodTNDP.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutNeighborhoodTNDP.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutNeighborhoodTNDP.ColumnCount = 1;
             this.tableLayoutNeighborhoodTNDP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -465,6 +469,7 @@
             this.tableLayoutHandwritingTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutHandwritingTNDP.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutHandwritingTNDP.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutHandwritingTNDP.ColumnCount = 1;
             this.tableLayoutHandwritingTNDP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -541,6 +546,7 @@
             this.tableLayoutFreetimeTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutFreetimeTNDP.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutFreetimeTNDP.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutFreetimeTNDP.ColumnCount = 1;
             this.tableLayoutFreetimeTNDP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -616,6 +622,7 @@
             this.tableLayoutCarsTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutCarsTNDP.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutCarsTNDP.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutCarsTNDP.ColumnCount = 1;
             this.tableLayoutCarsTNDP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -691,6 +698,7 @@
             this.tableLayoutMediaTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutMediaTNDP.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutMediaTNDP.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutMediaTNDP.ColumnCount = 1;
             this.tableLayoutMediaTNDP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -766,6 +774,7 @@
             this.tableLayoutClassesTNDP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutClassesTNDP.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutClassesTNDP.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutClassesTNDP.ColumnCount = 1;
             this.tableLayoutClassesTNDP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -838,6 +847,7 @@
             // 
             // tableLayoutTNMain
             // 
+            this.tableLayoutTNMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutTNMain.ColumnCount = 1;
             this.tableLayoutTNMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutTNMain.Controls.Add(this.tableLayoutTN, 0, 2);
@@ -860,6 +870,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblThenAndNowTitle.AutoSize = true;
             this.lblThenAndNowTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThenAndNowTitle.ForeColor = System.Drawing.SystemColors.Control;
             this.lblThenAndNowTitle.Location = new System.Drawing.Point(3, 26);
             this.lblThenAndNowTitle.Name = "lblThenAndNowTitle";
             this.lblThenAndNowTitle.Size = new System.Drawing.Size(1898, 39);
@@ -890,6 +901,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::IQP_Tester.Properties.Resources.ThenandnowBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutTNMain);
             this.Name = "ThenAndNow";
