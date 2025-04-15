@@ -24,12 +24,14 @@ namespace IQP_Tester
 
         Label labelText;
 
-        public DoublePolaroid(Open_Close_Helper open_close, TextManager textMan, Resize_Helper resize, Control DP)
+        public DoublePolaroid(Open_Close_Helper open_close, TextManager textMan, Resize_Helper resize, Control DP, Form parent)
         {
             InitializeComponent();
             openClose = open_close;
             textManager = textMan;
             this.resize = resize;
+            this.BackgroundImage = parent.BackgroundImage;
+            this.BackgroundImageLayout = parent.BackgroundImageLayout;
             doublePolaroid_Helper = new DoublePolaroid_Helper(textMan, open_close, resize);
             doublepolaroid = DP;
             Update_Controls();

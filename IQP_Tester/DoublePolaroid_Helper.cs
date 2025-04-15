@@ -145,7 +145,7 @@ namespace IQP_Tester
 
             if (doublePolaroid == null)
             {
-                doublePolaroid = new DoublePolaroid(openClose, textManager, resize, control);
+                doublePolaroid = new DoublePolaroid(openClose, textManager, resize, control, Get_Form(control));
             }
             else
             {
@@ -153,6 +153,15 @@ namespace IQP_Tester
             }
             openClose.Interaction();
             openClose.FadeIn(doublePolaroid);
+        }
+
+        private Form Get_Form(Control control)
+        {
+            while (!(control is Form))
+            {
+                control = control.Parent;
+            }
+            return (Form)control;
         }
 
         public string Get_Long_Text_Name(System.Windows.Forms.Label label)
