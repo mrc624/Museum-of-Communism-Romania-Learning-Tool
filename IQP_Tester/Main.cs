@@ -52,9 +52,10 @@ namespace IQP_Tester
         public Main()
         {
             InitializeComponent();
+            openClose = new Open_Close_Helper(this);
+            openClose.Suspend_Layout(this);
             settings.Generate_JSON(Settings.FILE_NAME);
             resize = new Resize_Helper(settings);
-            openClose = new Open_Close_Helper(this);
             Add_Forms();
             citation_Helper = new Citation_Helper(titlePage);
             resize.CaptureAspectRatios(this);
@@ -63,10 +64,10 @@ namespace IQP_Tester
             credits = new Credits(citation_Helper, openClose, resize, this);
             textManager.Update_One_Form(this);
             Set_Panel_Clicks();
-            Main_Resize(this, new EventArgs());
             openClose.Start_Timer();
             this.BringToFront();
             Open_Title_Page();
+            Main_Resize(this, new EventArgs());
         }
 
         private void Set_Panel_Clicks()
@@ -240,6 +241,7 @@ namespace IQP_Tester
         private void Main_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
+            openClose.Resume_Layout(this);
         }
 
         // key overides

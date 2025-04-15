@@ -183,9 +183,41 @@ namespace IQP_Tester
                             form.BackgroundImage = save_pic.Image;
                         }
                     }
-                    
+
                 };
                 fadeTimer.Start();
+            }
+        }
+
+        public void Suspend_Layout(Control control)
+        {
+            control.SuspendLayout();
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                if (control.Controls[i].HasChildren)
+                {
+                    Suspend_Layout(control.Controls[i]);
+                }
+                else
+                {
+                    control.Controls[i].SuspendLayout();
+                }
+            }
+        }
+
+        public void Resume_Layout(Control control)
+        {
+            control.ResumeLayout();
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                if (control.Controls[i].HasChildren)
+                {
+                    Resume_Layout(control.Controls[i]);
+                }
+                else
+                {
+                    control.Controls[i].ResumeLayout();
+                }
             }
         }
 
