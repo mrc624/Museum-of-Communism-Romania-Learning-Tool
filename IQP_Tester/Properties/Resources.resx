@@ -298,9 +298,6 @@
   <data name="NeighborhoodThen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\Neighborhood\NeighborhoodThen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Romania_Flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Romania_Flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="YouthOrg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Life_Under_Pictures\YouthOrg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
