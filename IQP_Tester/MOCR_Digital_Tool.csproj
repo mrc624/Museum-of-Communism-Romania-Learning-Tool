@@ -365,11 +365,48 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Oppression_Pictures\OpressionBackground.jpg" />
+    <Content Include="Life_Under_Pictures\LifeunderBackground.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\OpressionBackground.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Consequences.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Deportation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Exports.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Fear.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Influence.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Language.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Palace.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Posessions.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Propaganda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Oppression_Pictures\Securitate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Settings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Stories_Pictures\StoriesBackground.jpg" />
+    <Content Include="Stories_Pictures\StoriesBackground.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="text_manager.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -427,7 +464,9 @@
     <Content Include="ThenAndNow_Pictures\Neighborhood\NeighborhoodNow.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="ThenAndNow_Pictures\ThenandnowBackground.jpg" />
+    <Content Include="ThenAndNow_Pictures\ThenandnowBackground.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Timeline_Pictures\Ana.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -440,7 +479,9 @@
     <Content Include="Timeline_Pictures\July.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Timeline_Pictures\TimelineBackground.jpg" />
+    <Content Include="Timeline_Pictures\TimelineBackground.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Timeline_Pictures\Warsaw.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
