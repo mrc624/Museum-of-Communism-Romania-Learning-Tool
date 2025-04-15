@@ -102,7 +102,6 @@ namespace IQP_Tester
         private void Credits_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
-            main.Enabled = true;
             openClose.Close(this);
         }
 
@@ -113,34 +112,27 @@ namespace IQP_Tester
 
         private void Credits_Shown(object sender, EventArgs e)
         {
-            main.Enabled = false;
-            this.FormBorderStyle = FormBorderStyle.None;
+            resize.Fullscreen_Form(this);
         }
 
         private void CreditsTableLayoutPanel_VisibleChanged(object sender, EventArgs e)
         {
-            if (main != null)
-            {
-                main.Enabled = false;
-            }
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            main.Enabled = true;
             openClose.Close(this);
         }
 
         private void Credits_VisibleChanged(object sender, EventArgs e)
         {
-            if (this.Opacity == 0)
-            {
-                main.Enabled = true;
-            }
-            else
-            {
-                main.Enabled = true;
-            }
+
+        }
+
+        private void tableLayoutCreditsMain_Click(object sender, EventArgs e)
+        {
+            openClose.Close(this);
         }
     }
 }
