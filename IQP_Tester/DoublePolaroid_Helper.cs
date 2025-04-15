@@ -147,8 +147,11 @@ namespace IQP_Tester
             {
                 doublePolaroid = new DoublePolaroid(openClose, textManager, resize, control);
             }
+            else
+            {
+                doublePolaroid.Update_After_Gen(control);
+            }
             openClose.Interaction();
-            doublePolaroid.Update_After_Gen(control);
             openClose.FadeIn(doublePolaroid);
         }
 

@@ -47,13 +47,11 @@
             // 
             // tableLayoutTitle
             // 
-            this.tableLayoutTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutTitle.ColumnCount = 1;
-            this.tableLayoutTitle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1898F));
+            this.tableLayoutTitle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutTitle.Controls.Add(this.lblTitle, 0, 0);
             this.tableLayoutTitle.Controls.Add(this.lblSubtitle, 0, 1);
+            this.tableLayoutTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutTitle.Location = new System.Drawing.Point(3, 419);
             this.tableLayoutTitle.Name = "tableLayoutTitle";
             this.tableLayoutTitle.RowCount = 2;
@@ -64,10 +62,9 @@
             // 
             // lblTitle
             // 
-            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTitle.Location = new System.Drawing.Point(3, 0);
@@ -75,14 +72,13 @@
             this.lblTitle.Size = new System.Drawing.Size(1892, 55);
             this.lblTitle.TabIndex = 5;
             this.lblTitle.Text = "Unknown";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSubtitle
             // 
-            this.lblSubtitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSubtitle.AutoSize = true;
             this.lblSubtitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubtitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtitle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblSubtitle.Location = new System.Drawing.Point(3, 55);
@@ -90,7 +86,7 @@
             this.lblSubtitle.Size = new System.Drawing.Size(1892, 24);
             this.lblSubtitle.TabIndex = 7;
             this.lblSubtitle.Text = "Unknown";
-            this.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutTitleMain
             // 

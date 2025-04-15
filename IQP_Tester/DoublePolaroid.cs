@@ -36,9 +36,9 @@ namespace IQP_Tester
             Translate_DoublePolaroid();
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
-            DoublePolaroid_Resize(this, new EventArgs());
-            tableLayoutDPMain.Click += DoublePolaroid_Click;
             Set_Clicks();
+            resize.Fullscreen_Form(this);
+            DoublePolaroid_Resize(this, new EventArgs());
         }
 
         private void Set_Clicks()
@@ -65,7 +65,6 @@ namespace IQP_Tester
             doublepolaroid = DP;
             Update_Controls();
             Translate_DoublePolaroid();
-            textManager.Update_One_Form(this);
             DoublePolaroid_Resize(this, new EventArgs());
         }
 
@@ -102,7 +101,10 @@ namespace IQP_Tester
 
         private void DoublePolaroid_Resize(object sender, EventArgs e)
         {
-            resize.Resize_Fonts(this);
+            if (resize != null)
+            {
+                resize.Resize_Fonts(this);
+            }
         }
 
         private void DoublePolaroid_Click(object sender, EventArgs e)
