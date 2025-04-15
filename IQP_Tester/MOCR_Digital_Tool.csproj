@@ -315,6 +315,12 @@
     <Content Include="Flags\RomanianFlag.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Home_Page_Pictures\OpressionMain.jpg" />
+    <None Include="Home_Page_Pictures\ThenNowMain.jpg" />
+    <None Include="Home_Page_Pictures\LifeUnderMain.jpg" />
+    <None Include="Home_Page_Pictures\StoriesMain.jpg" />
+    <None Include="Home_Page_Pictures\TimelineMain.jpg" />
+    <None Include="Home_Page_Pictures\WallpaperBackgroundMain.jpg" />
     <Content Include="Home_Page_Pictures\WallpaperBackgroundMain.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

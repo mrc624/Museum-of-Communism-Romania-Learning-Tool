@@ -121,6 +121,9 @@
   <data name="MediaNow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\Media\MediaNow.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Chain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Timeline_Pictures\Chain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timeline_Pictures\Ana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,9 +196,6 @@
   <data name="StolenHorse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Stories_Pictures\StolenHorse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Propaganda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Oppression_Pictures\Propaganda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Influence" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Oppression_Pictures\Influence.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -238,11 +238,17 @@
   <data name="Consequences" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Oppression_Pictures\Consequences.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="OpressionMain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Home_Page_Pictures\OpressionMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ButterWhy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Stories_Pictures\ButterWhy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ceausescu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timeline_Pictures\CeausescusRise\Ceausescu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YouthOrg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Life_Under_Pictures\YouthOrg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CeauşescuMail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Stories_Pictures\CeauşescuMail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,11 +259,14 @@
   <data name="MediaThen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\Media\MediaThen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LifeUnderMain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Home_Page_Pictures\LifeUnderMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WallpaperBackgroundMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Home_Page_Pictures\WallpaperBackgroundMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FreeTimeNow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\FreeTime\FreeTimeNow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Deportation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Oppression_Pictures\Deportation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Life_Under_Pictures\Food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,8 +280,14 @@
   <data name="NecessitiesThen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\Necessities\NecessitiesThen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TimelineMain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Home_Page_Pictures\TimelineMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ClassroomsStuffNow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\Classrooms\ClassroomsStuffNow.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThenNowMain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Home_Page_Pictures\ThenNowMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Chain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timeline_Pictures\Chain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,8 +316,11 @@
   <data name="NeighborhoodThen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\Neighborhood\NeighborhoodThen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="YouthOrg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Life_Under_Pictures\YouthOrg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="StoriesMain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Home_Page_Pictures\StoriesMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Propaganda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Oppression_Pictures\Propaganda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Religion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Oppression_Pictures\Religion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,8 +349,8 @@
   <data name="MarketThen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\Food\MarketThen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Timeline_Pictures\Chain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Deportation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Oppression_Pictures\Deportation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CeausescusRise" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timeline_Pictures\CeausescusRise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,7 +376,7 @@
   <data name="WhyRevolt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timeline_Pictures\RegimeFall\WhyRevolt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WallpaperBackgroundMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Home_Page_Pictures\WallpaperBackgroundMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WallpaperBackgroundMain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Home_Page_Pictures\WallpaperBackgroundMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

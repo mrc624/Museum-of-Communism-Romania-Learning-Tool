@@ -53,8 +53,8 @@ namespace IQP_Tester
         {
             InitializeComponent();
             settings.Generate_JSON(Settings.FILE_NAME);
-            openClose = new Open_Close_Helper(this);
             resize = new Resize_Helper(settings);
+            openClose = new Open_Close_Helper(this);
             Add_Forms();
             resize.CaptureAspectRatios(this);
             textManager.Generate_Text_JSON(TextManager.TEXT_MANAGER_FILE_NAME);
@@ -230,7 +230,10 @@ namespace IQP_Tester
 
         private void Main_Resize(object sender, EventArgs e)
         {
-            resize.Resize_Fonts(this);
+            if (resize != null)
+            {
+                resize.Resize_Fonts(this);
+            }
         }
 
         private void Main_Shown(object sender, EventArgs e)
