@@ -54,7 +54,7 @@ namespace IQP_Tester
             }
             if (polaroid_zoom == null)
             {
-                polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose, resize);
+                polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose, resize, Get_Form(Polaroid));
             }
             openClose.Interaction();
             polaroid_zoom.Update_After_Gen(Polaroid);

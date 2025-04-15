@@ -23,12 +23,14 @@ namespace IQP_Tester
         Label lblQ;
         Label lblAns;
 
-        public Polaroid_Zoom(Control polaroid, TextManager textMan, Open_Close_Helper open_close, Resize_Helper resize)
+        public Polaroid_Zoom(Control polaroid, TextManager textMan, Open_Close_Helper open_close, Resize_Helper resize, Form parent)
         {
             InitializeComponent();
             textManager = textMan;
             openClose = open_close;
             this.resize = resize;
+            this.BackgroundImage = parent.BackgroundImage;
+            this.BackgroundImageLayout = parent.BackgroundImageLayout;
 
             if (polaroid_Zoom_Helper.Is_Polaroid(polaroid))
             {
@@ -81,7 +83,10 @@ namespace IQP_Tester
 
         private void Polaroid_Zoom_Resize(object sender, EventArgs e)
         {
-            resize.Resize_Fonts(this);
+            if (resize != null)
+            {
+                resize.Resize_Fonts(this);
+            }
         }
 
         private void btnLanguage_Click(object sender, EventArgs e)
