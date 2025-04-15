@@ -243,8 +243,10 @@ namespace IQP_Tester
 
         public void Show_Hide(Form form)
         {
+            form.Opacity = 0;
             form.Show();
             form.Hide();
+            form.Opacity = 1;
         }
     }
 }
