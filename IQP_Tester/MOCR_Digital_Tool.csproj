@@ -437,6 +437,7 @@
     <Content Include="Timeline_Pictures\July.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Timeline_Pictures\TimelineBackground.jpg" />
     <Content Include="Timeline_Pictures\Warsaw.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

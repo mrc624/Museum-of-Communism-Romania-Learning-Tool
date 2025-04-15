@@ -152,6 +152,7 @@
             // 
             // tableLayoutRegimeFall
             // 
+            this.tableLayoutRegimeFall.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutRegimeFall.ColumnCount = 1;
             this.tableLayoutRegimeFall.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutRegimeFall.Controls.Add(this.pbRegimeFall, 0, 1);
@@ -434,6 +435,7 @@
             // 
             // panelCeausescusRise
             // 
+            this.panelCeausescusRise.BackColor = System.Drawing.SystemColors.Control;
             this.panelCeausescusRise.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCeausescusRise.Controls.Add(this.tableLayoutCeausescusRise);
             this.panelCeausescusRise.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -513,6 +515,7 @@
             // 
             // tableLayoutAnaContainer
             // 
+            this.tableLayoutAnaContainer.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutAnaContainer.ColumnCount = 1;
             this.tableLayoutAnaContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutAnaContainer.Controls.Add(this.tableLayoutAna, 0, 1);
@@ -538,6 +541,7 @@
             // 
             // tableLayoutJulyContainer
             // 
+            this.tableLayoutJulyContainer.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutJulyContainer.ColumnCount = 1;
             this.tableLayoutJulyContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutJulyContainer.Controls.Add(this.tableLayoutJuly, 0, 1);
@@ -563,6 +567,7 @@
             // 
             // tableLayoutHousePeopleContainer
             // 
+            this.tableLayoutHousePeopleContainer.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutHousePeopleContainer.ColumnCount = 1;
             this.tableLayoutHousePeopleContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutHousePeopleContainer.Controls.Add(this.tableLayoutHousePeople, 0, 1);
@@ -588,6 +593,7 @@
             // 
             // tableLayoutWarsawContainer
             // 
+            this.tableLayoutWarsawContainer.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutWarsawContainer.ColumnCount = 1;
             this.tableLayoutWarsawContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutWarsawContainer.Controls.Add(this.tableLayoutWarsaw, 0, 1);
@@ -618,6 +624,7 @@
             // 
             // panelSoviet
             // 
+            this.panelSoviet.BackColor = System.Drawing.SystemColors.Control;
             this.panelSoviet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelSoviet.Controls.Add(this.tableLayoutSoviet);
             this.panelSoviet.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -630,6 +637,7 @@
             // 
             // tableLayoutTimelineMain
             // 
+            this.tableLayoutTimelineMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutTimelineMain.ColumnCount = 1;
             this.tableLayoutTimelineMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutTimelineMain.Controls.Add(this.tableLayoutLanguageTimelineBtnAlign, 0, 6);
@@ -767,6 +775,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::IQP_Tester.Properties.Resources.TimelineBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutTimelineMain);
             this.Name = "Timeline";
