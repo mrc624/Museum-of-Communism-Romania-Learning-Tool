@@ -311,6 +311,7 @@
     <None Include="Home_Page_Pictures\Photo frames.png" />
     <None Include="Flags\AmericanFlag.png" />
     <None Include="Flags\RomanianFlag.png" />
+    <None Include="Home_Page_Pictures\WallpaperBackgroundMain.png" />
     <Content Include="IQP_Tester_TemporaryKey.pfx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

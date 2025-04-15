@@ -515,6 +515,7 @@
             // 
             // tableLayoutMain
             // 
+            this.tableLayoutMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutMain.ColumnCount = 1;
             this.tableLayoutMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutMain.Controls.Add(this.tableLayoutMainBottom, 0, 3);
@@ -601,6 +602,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::IQP_Tester.Properties.Resources.WallpaperBackgroundMain;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
             this.Controls.Add(this.tableLayoutMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -121,9 +121,6 @@
   <data name="MediaNow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\Media\MediaNow.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Timeline_Pictures\Chain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Ana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timeline_Pictures\Ana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,9 +238,6 @@
   <data name="Consequences" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Oppression_Pictures\Consequences.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Media" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Life_Under_Pictures\Media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ButterWhy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Stories_Pictures\ButterWhy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -256,8 +250,14 @@
   <data name="Marxism" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timeline_Pictures\SovietEra\Marxism.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MediaThen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ThenAndNow_Pictures\Media\MediaThen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FreeTimeNow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\FreeTime\FreeTimeNow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deportation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Oppression_Pictures\Deportation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Food" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Life_Under_Pictures\Food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,8 +313,11 @@
   <data name="Posessions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Oppression_Pictures\Posessions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MediaThen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ThenAndNow_Pictures\Media\MediaThen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Media" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Life_Under_Pictures\Media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AmericanFlag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Flags\AmericanFlag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="StopEngineers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Stories_Pictures\StopEngineers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,11 +331,14 @@
   <data name="MarketThen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\Food\MarketThen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Deportation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Oppression_Pictures\Deportation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Timeline_Pictures\Chain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CeausescusRise" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timeline_Pictures\CeausescusRise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RomanianFlag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Flags\RomanianFlag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FreeTimeThen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ThenAndNow_Pictures\FreeTime\FreeTimeThen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,10 +358,7 @@
   <data name="WhyRevolt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Timeline_Pictures\RegimeFall\WhyRevolt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AmericanFlag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Flags\AmericanFlag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RomanianFlag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Flags\RomanianFlag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WallpaperBackgroundMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Home_Page_Pictures\WallpaperBackgroundMain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
