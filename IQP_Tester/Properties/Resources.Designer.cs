@@ -593,9 +593,9 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Photo_frames {
+        internal static System.Drawing.Bitmap Photo_frames1 {
             get {
-                object obj = ResourceManager.GetObject("Photo frames", resourceCulture);
+                object obj = ResourceManager.GetObject("Photo frames1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

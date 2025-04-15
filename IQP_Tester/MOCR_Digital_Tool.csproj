@@ -308,7 +308,6 @@
     <Content Include="fancy soap luxury.HEIC">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Home_Page_Pictures\Photo frames.png" />
     <Content Include="Flags\AmericanFlag.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -316,6 +315,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Home_Page_Pictures\OpressionMain.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Home_Page_Pictures\Photo frames.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Home_Page_Pictures\ThenNowMain.jpg">
