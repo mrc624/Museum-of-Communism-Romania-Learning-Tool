@@ -23,7 +23,6 @@ namespace IQP_Tester
             main = _main;
         }
 
-
         //Timeout things
         Main main;
 
@@ -31,12 +30,12 @@ namespace IQP_Tester
 
         public const int DEFAULT_FADE_INTERVAL = 10;
         public const double DEFAULT_FADE_INCREMENT = 0.05;
-        public const uint tabTimeout = 1000; // in 1/10 of seconds, 100 seconds
-        public const uint tab_open_debounce = 5; // in 1/10 of seconds, 0.5 second
         static uint lastInteraction = 0;
         static uint lastFormOpened = 0;
         public const int TIMER_TICK = 100; // tick 10 times a second
-        public const uint NUM_REAL_SECONDS_IN_SECONDS = 10;
+
+        public static uint tabTimeout = Settings.DEFAULT_TAB_TIMEOUT;
+        public static uint tab_open_debounce = Settings.DEFAULT_TAB_DEBOUNCE;
         public static uint seconds = 0; // not actually seconds, 1/10 of a second
         public static uint interaction_count = 0;
 
@@ -67,7 +66,7 @@ namespace IQP_Tester
 
         public uint Get_Seconds()
         {
-            return seconds / NUM_REAL_SECONDS_IN_SECONDS;
+            return seconds / Settings.NUM_TICKS_IN_SECOND;
         }
 
         public uint Get_Interactions()
@@ -247,6 +246,16 @@ namespace IQP_Tester
             form.Show();
             form.Hide();
             form.Opacity = 1;
+        }
+
+        public void Update_Tab_Timeout(uint timeout)
+        {
+            tabTimeout = timeout;
+        }
+
+        public void Update_Tab_Debounce(uint debounce)
+        {
+            tab_open_debounce = debounce;
         }
     }
 }

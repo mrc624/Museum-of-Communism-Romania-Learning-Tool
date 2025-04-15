@@ -34,10 +34,7 @@ namespace IQP_Tester
             btnGenerateTextCSV.Enabled = false;
             btnReadCSV.Enabled = false;
 
-            btnEditTextRefresh_Click(this, new EventArgs());
-            btnRefreshGeneralStats_Click(this, new EventArgs());
-            btnRefreshOpenForms_Click(this, new EventArgs());
-            btnRefreshDevSettings_Click(this, new EventArgs());
+            btnApplyDevSettings.Enabled = false;
         }
 
         Dictionary<string, Dictionary<string, string>> Reformatted;
@@ -393,9 +390,9 @@ namespace IQP_Tester
 
         private void Fill_Settings()
         {
-            settings.Generate_JSON(Settings.FILE_NAME);
-
             tbFontSizeOffset.Text = settings.Get_Font_Offset().ToString();
+            tbTabTimeout.Text = settings.Get_Tab_Timeout().ToString();
+            tbTabDebounce.Text = settings.Get_Tab_Debounce().ToString();
         }
 
         private void Apply_Settings()
@@ -403,6 +400,14 @@ namespace IQP_Tester
             if (tbFontSizeOffset.BackColor != Color.Red)
             {
                 settings.Change_Font(float.Parse(tbFontSizeOffset.Text));
+            }
+            if (tbTabTimeout.BackColor != Color.Red)
+            {
+                settings.Change_Tab_Timeout(uint.Parse(tbTabTimeout.Text));
+            }
+            if (tbTabDebounce.BackColor != Color.Red)
+            {
+                settings.Change_Tab_Debounce(uint.Parse(tbTabDebounce.Text));
             }
         }
 
@@ -418,6 +423,30 @@ namespace IQP_Tester
             }
         }
 
+        private void tbTabTimeout_TextChanged(object sender, EventArgs e)
+        {
+            if (uint.TryParse(tbTabTimeout.Text, out uint value))
+            {   
+                tbTabTimeout.BackColor = SystemColors.Control;
+            }
+            else
+            {
+                tbTabTimeout.BackColor = Color.Red;
+            }
+        }
+
+        private void tbTabDebounce_TextChanged(object sender, EventArgs e)
+        {
+            if (uint.TryParse(tbTabDebounce.Text, out uint value))
+            {
+                tbTabDebounce.BackColor = SystemColors.Control;
+            }
+            else
+            {
+                tbTabDebounce.BackColor = Color.Red;
+            }
+        }
+
         private void btnApplyDevSettings_Click(object sender, EventArgs e)
         {
             Apply_Settings();
@@ -426,6 +455,10 @@ namespace IQP_Tester
         private void btnRefreshDevSettings_Click(object sender, EventArgs e)
         {
             Fill_Settings();
+            if (!btnApplyDevSettings.Enabled)
+            {
+                btnApplyDevSettings.Enabled = true;
+            }
         }
     }
 }

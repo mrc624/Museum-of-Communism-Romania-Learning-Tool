@@ -11,14 +11,6 @@ namespace IQP_Tester
 {
     public class Resize_Helper
     {
-        
-        Settings settings;
-
-        public Resize_Helper(Settings settings)
-        {
-            this.settings = settings;
-        }
-        
         private Dictionary<Control, (double width_ratio, double height_ratio, double percent_right, double percent_down, float fontRatio)> ratios = new Dictionary<Control, (double width_ratio, double height_ratio, double percent_right, double percent_down, float fontRatio)>();
 
         bool Dictionary_Updated = false;
@@ -26,6 +18,8 @@ namespace IQP_Tester
         public const double CENTER = 0.5;
         public const double QUARTER = 0.25;
         public const double THREE_QUARTERS = 0.75;
+
+        public static float Font_Offset = Settings.DEFAULT_FONT_OFFSET;
 
         public void CaptureAspectRatios(Control parent)
         {
@@ -265,7 +259,7 @@ namespace IQP_Tester
                 var items = ratios[control];
                 float font_ratio = items.fontRatio;
 
-                float newFontSize = (float)control.Parent.Width * font_ratio + settings.Get_Font_Offset();
+                float newFontSize = (float)control.Parent.Width * font_ratio + Font_Offset;
 
                 control.Font = new Font(control.Font.FontFamily, (float)(newFontSize));
             }
@@ -356,6 +350,11 @@ namespace IQP_Tester
                 Reposition(panel.Controls[i]);
                 Center_X(panel.Controls[i]);
             }
+        }
+
+        public void Update_Font_Offset(float  offset)
+        {
+            Font_Offset = offset;
         }
     }
 }

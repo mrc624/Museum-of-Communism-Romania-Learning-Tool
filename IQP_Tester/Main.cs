@@ -28,7 +28,7 @@ namespace IQP_Tester
         Open_Close_Helper openClose;
         Click_Helper click_helper = new Click_Helper();
         Citation_Helper citation_Helper;
-        Settings settings = new Settings();
+        Settings settings;
 
         public static List<Form> Forms = new List<Form>();
 
@@ -53,8 +53,9 @@ namespace IQP_Tester
         {
             InitializeComponent();
             openClose = new Open_Close_Helper(this);
+            resize = new Resize_Helper();
+            settings  = new Settings(resize, openClose);
             settings.Generate_JSON(Settings.FILE_NAME);
-            resize = new Resize_Helper(settings);
             Add_Forms();
             citation_Helper = new Citation_Helper(titlePage);
             resize.CaptureAspectRatios(this);
