@@ -62,7 +62,6 @@
             this.tableLayoutPanelQuestionAndAnswer.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelQuestionAndAnswer.Size = new System.Drawing.Size(2515, 1552);
             this.tableLayoutPanelQuestionAndAnswer.TabIndex = 2;
-            this.tableLayoutPanelQuestionAndAnswer.Click += new System.EventHandler(this.tableLayoutPanelQuestionAndAnswer_Click);
             // 
             // lblQuestion
             // 
@@ -80,7 +79,6 @@
             this.lblQuestion.TabIndex = 0;
             this.lblQuestion.Text = "EXAMPLE QUESTION FOR SIZING";
             this.lblQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblQuestion.Click += new System.EventHandler(this.lblQuestion_Click);
             // 
             // lblAnswer
             // 
@@ -98,7 +96,6 @@
             this.lblAnswer.TabIndex = 1;
             this.lblAnswer.Text = "EXAMPLE ANSWER FOR SIZING";
             this.lblAnswer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblAnswer.Click += new System.EventHandler(this.lblAnswer_Click);
             // 
             // btnLanguage
             // 
@@ -145,7 +142,6 @@
             this.pbPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPicture.TabIndex = 0;
             this.pbPicture.TabStop = false;
-            this.pbPicture.Click += new System.EventHandler(this.pbPicture_Click);
             // 
             // tableLayoutPolaroidZoomMain
             // 

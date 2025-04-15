@@ -44,7 +44,24 @@ namespace IQP_Tester
                 resize.CaptureAspectRatios(this);
                 resize.Fullscreen_Form(this);
                 Polaroid_Zoom_Resize(this, new EventArgs());
+                Set_Clicks();
             }
+        }
+
+        private void Set_Clicks()
+        {
+            tableLayoutLanguagePolaroidZoomBtnAlign.Click += Polaroid_Zoom_Click;
+            tableLayoutPanelQuestionAndAnswer.Click += Polaroid_Zoom_Click;
+            tableLayoutPolaroidZoomContainer.Click += Polaroid_Zoom_Click;
+            tableLayoutPolaroidZoomMain.Click += Polaroid_Zoom_Click;
+            pbPicture.Click += Polaroid_Zoom_Click;
+            lblAnswer.Click += Polaroid_Zoom_Click;
+            lblQuestion.Click += Polaroid_Zoom_Click;
+        }
+
+        private void PbPicture_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void Update_Controls(Image image, string question, string answer)
@@ -103,26 +120,6 @@ namespace IQP_Tester
             lblAnswer.Text = textManager.Get_Text(lblAns, textManager.Get_Translated_Dictionary());
             btnLanguage.Text = textManager.Get_Text(btnLanguage, textManager.Get_Translated_Dictionary());
             Handle_Long_Ans();
-        }
-
-        private void pbPicture_Click(object sender, EventArgs e)
-        {
-            Polaroid_Zoom_Click(this, new EventArgs());
-        }
-
-        private void lblQuestion_Click(object sender, EventArgs e)
-        {
-            Polaroid_Zoom_Click(this, new EventArgs());
-        }
-
-        private void lblAnswer_Click(object sender, EventArgs e)
-        {
-            Polaroid_Zoom_Click(this, new EventArgs());
-        }
-
-        private void tableLayoutPanelQuestionAndAnswer_Click(object sender, EventArgs e)
-        {
-            Polaroid_Zoom_Click(this, new EventArgs());
         }
     }
 }
