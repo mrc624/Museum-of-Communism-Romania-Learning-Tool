@@ -333,9 +333,6 @@
     <Content Include="Home_Page_Pictures\WallpaperBackgroundMain.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Home_Page_Pictures\WallpaperBackgroundMain.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="IQP_Tester_TemporaryKey.pfx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
