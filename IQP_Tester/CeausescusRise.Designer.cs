@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CeausescusRise));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutElena = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutElena = new DoubleBufferedTableLayout();
             this.lblElenaQ = new System.Windows.Forms.Label();
             this.lblElenaAns = new System.Windows.Forms.Label();
-            this.tableLayoutNicolae = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutNicolae = new DoubleBufferedTableLayout();
             this.lblNicolaeQ = new System.Windows.Forms.Label();
             this.lblNicolaeAns = new System.Windows.Forms.Label();
             this.panelElena = new System.Windows.Forms.Panel();
-            this.tableLayoutElenaContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutElenaContainer = new DoubleBufferedTableLayout();
             this.pbElena = new System.Windows.Forms.PictureBox();
             this.panelNicolae = new System.Windows.Forms.Panel();
-            this.tableLayoutNicolaeContainer = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutNicolaeContainer = new DoubleBufferedTableLayout();
             this.pbNicolae = new System.Windows.Forms.PictureBox();
-            this.tableLayoutCeausescusRiseMain = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutLanguageCeausescusRiseBtnAlign = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutCeausescusRiseMain = new DoubleBufferedTableLayout();
+            this.tableLayoutPanel1 = new DoubleBufferedTableLayout();
+            this.tableLayoutLanguageCeausescusRiseBtnAlign = new DoubleBufferedTableLayout();
             this.tableLayoutElena.SuspendLayout();
             this.tableLayoutNicolae.SuspendLayout();
             this.panelElena.SuspendLayout();
@@ -326,20 +326,20 @@
 
         #endregion
         private System.Windows.Forms.Button btnLanguage;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutElena;
+        private DoubleBufferedTableLayout tableLayoutElena;
         private System.Windows.Forms.Label lblElenaQ;
         private System.Windows.Forms.Label lblElenaAns;
         private System.Windows.Forms.PictureBox pbElena;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutNicolae;
+        private DoubleBufferedTableLayout tableLayoutNicolae;
         private System.Windows.Forms.Label lblNicolaeQ;
         private System.Windows.Forms.Label lblNicolaeAns;
         private System.Windows.Forms.PictureBox pbNicolae;
         private System.Windows.Forms.Panel panelElena;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutElenaContainer;
+        private DoubleBufferedTableLayout tableLayoutElenaContainer;
         private System.Windows.Forms.Panel panelNicolae;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutNicolaeContainer;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutCeausescusRiseMain;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageCeausescusRiseBtnAlign;
+        private DoubleBufferedTableLayout tableLayoutNicolaeContainer;
+        private DoubleBufferedTableLayout tableLayoutCeausescusRiseMain;
+        private DoubleBufferedTableLayout tableLayoutPanel1;
+        private DoubleBufferedTableLayout tableLayoutLanguageCeausescusRiseBtnAlign;
     }
 }

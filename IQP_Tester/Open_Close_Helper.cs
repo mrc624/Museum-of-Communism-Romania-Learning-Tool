@@ -155,14 +155,6 @@ namespace IQP_Tester
         {
             if (!form.IsDisposed && !block && form.Visible)
             {
-                PictureBox save_pic = new PictureBox();
-                if (form.BackgroundImage != null)
-                {
-                    save_pic.Image = form.BackgroundImage;
-                    form.BackColor = Color.Black;
-                    form.BackgroundImage = null;
-
-                }
                 block = true;
                 System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
                 fadeTimer.Interval = interval; // time in milliseconds between opacity updates
@@ -178,10 +170,6 @@ namespace IQP_Tester
                         fadeTimer.Stop(); // stop when invisible
                         form.Hide();
                         block = false;
-                        if (save_pic.Image != null)
-                        {
-                            form.BackgroundImage = save_pic.Image;
-                        }
                     }
 
                 };

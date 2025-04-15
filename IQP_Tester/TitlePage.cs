@@ -75,7 +75,6 @@ namespace IQP_Tester
         private void TitlePage_Click(object sender, EventArgs e)
         {
             openClose.Interaction();
-            this.BackgroundImage = null;
             openClose.Close(this);
         }
 

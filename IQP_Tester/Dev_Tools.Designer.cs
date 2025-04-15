@@ -39,14 +39,14 @@
             this.lblGeneralStats = new System.Windows.Forms.Label();
             this.panelOpenForms = new System.Windows.Forms.Panel();
             this.btnRefreshOpenForms = new System.Windows.Forms.Button();
-            this.tableLayoutPanelOpenForms = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanelOpenForms = new DoubleBufferedTableLayout();
             this.lblOpenFormsCountDisp = new System.Windows.Forms.Label();
             this.lblOpenFormsCount = new System.Windows.Forms.Label();
             this.tabText_Edit = new System.Windows.Forms.TabPage();
             this.btnReadCSV = new System.Windows.Forms.Button();
             this.btnGenerateTextCSV = new System.Windows.Forms.Button();
             this.btnEditTextApply = new System.Windows.Forms.Button();
-            this.tableLayoutDevEditText = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutDevEditText = new DoubleBufferedTableLayout();
             this.lblEditTextRomanian = new System.Windows.Forms.Label();
             this.lblEditTextEnglish = new System.Windows.Forms.Label();
             this.lblEditTextControlName = new System.Windows.Forms.Label();
@@ -417,7 +417,7 @@
         private System.Windows.Forms.TabControl TabControlDevs;
         private System.Windows.Forms.TabPage tabText_Edit;
         private System.Windows.Forms.TabPage TabStastics;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutDevEditText;
+        private DoubleBufferedTableLayout tableLayoutDevEditText;
         private System.Windows.Forms.Label lblEditTextRomanian;
         private System.Windows.Forms.Label lblEditTextEnglish;
         private System.Windows.Forms.Label lblEditTextControlName;
@@ -428,7 +428,7 @@
         private System.Windows.Forms.Panel panelOpenForms;
         private System.Windows.Forms.Label lblOpenFormsCountDisp;
         private System.Windows.Forms.Label lblOpenFormsCount;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelOpenForms;
+        private DoubleBufferedTableLayout tableLayoutPanelOpenForms;
         private System.Windows.Forms.Button btnRefreshOpenForms;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblGeneralStats;

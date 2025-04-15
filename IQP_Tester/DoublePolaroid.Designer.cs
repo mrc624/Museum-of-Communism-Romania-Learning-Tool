@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutDPPictures = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutDPPictures = new DoubleBufferedTableLayout();
             this.pbDPNow = new System.Windows.Forms.PictureBox();
             this.pbDPThen = new System.Windows.Forms.PictureBox();
-            this.tableLayoutDPMain = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutLanguageDoublePolaroidZoomBtnAlign = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutDPMain = new DoubleBufferedTableLayout();
+            this.tableLayoutLanguageDoublePolaroidZoomBtnAlign = new DoubleBufferedTableLayout();
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblDPText = new System.Windows.Forms.Label();
             this.lblDPTitle = new System.Windows.Forms.Label();
@@ -186,13 +186,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutDPPictures;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutDPMain;
+        private DoubleBufferedTableLayout tableLayoutDPPictures;
+        private DoubleBufferedTableLayout tableLayoutDPMain;
         private System.Windows.Forms.PictureBox pbDPNow;
         private System.Windows.Forms.PictureBox pbDPThen;
         private System.Windows.Forms.Label lblDPText;
         private System.Windows.Forms.Label lblDPTitle;
         private System.Windows.Forms.Button btnLanguage;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageDoublePolaroidZoomBtnAlign;
+        private DoubleBufferedTableLayout tableLayoutLanguageDoublePolaroidZoomBtnAlign;
     }
 }

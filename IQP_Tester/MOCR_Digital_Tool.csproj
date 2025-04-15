@@ -157,6 +157,9 @@
     <Compile Include="Dev_Tools.Designer.cs">
       <DependentUpon>Dev_Tools.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoubleBufferedTableLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DoublePolaroid.cs">
       <SubType>Form</SubType>
     </Compile>

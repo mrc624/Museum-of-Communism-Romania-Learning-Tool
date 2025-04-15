@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutTitle = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutTitle = new DoubleBufferedTableLayout();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblSubtitle = new System.Windows.Forms.Label();
-            this.tableLayoutTitleMain = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutLanguageTitlePageBtnAlign = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutTitleMain = new DoubleBufferedTableLayout();
+            this.tableLayoutLanguageTitlePageBtnAlign = new DoubleBufferedTableLayout();
             this.btnLanguage = new System.Windows.Forms.Button();
             this.pbBackground3 = new System.Windows.Forms.PictureBox();
             this.pbBackground2 = new System.Windows.Forms.PictureBox();
@@ -202,14 +202,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutTitle;
+        private DoubleBufferedTableLayout tableLayoutTitle;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblSubtitle;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutTitleMain;
+        private DoubleBufferedTableLayout tableLayoutTitleMain;
         private System.Windows.Forms.PictureBox pbBackground1;
         private System.Windows.Forms.PictureBox pbBackground2;
         private System.Windows.Forms.PictureBox pbBackground3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguageTitlePageBtnAlign;
+        private DoubleBufferedTableLayout tableLayoutLanguageTitlePageBtnAlign;
         private System.Windows.Forms.Button btnLanguage;
     }
 }

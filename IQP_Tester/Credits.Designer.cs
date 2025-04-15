@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Credits));
-            this.CreditsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutCreditsMain = new System.Windows.Forms.TableLayoutPanel();
+            this.CreditsTableLayoutPanel = new DoubleBufferedTableLayout();
+            this.tableLayoutCreditsMain = new DoubleBufferedTableLayout();
             this.tableLayoutCreditsMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,7 +99,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel CreditsTableLayoutPanel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutCreditsMain;
+        private DoubleBufferedTableLayout CreditsTableLayoutPanel;
+        private DoubleBufferedTableLayout tableLayoutCreditsMain;
     }
 }

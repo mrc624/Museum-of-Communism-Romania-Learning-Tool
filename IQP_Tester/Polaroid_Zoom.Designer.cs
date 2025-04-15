@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanelQuestionAndAnswer = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanelQuestionAndAnswer = new DoubleBufferedTableLayout();
             this.lblQuestion = new System.Windows.Forms.Label();
             this.lblAnswer = new System.Windows.Forms.Label();
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutPolaroidZoomContainer = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPolaroidZoomMain = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutLanguagePolaroidZoomBtnAlign = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPolaroidZoomContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutPolaroidZoomMain = new DoubleBufferedTableLayout();
+            this.tableLayoutLanguagePolaroidZoomBtnAlign = new DoubleBufferedTableLayout();
             this.pbPicture = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanelQuestionAndAnswer.SuspendLayout();
             this.tableLayoutPolaroidZoomContainer.SuspendLayout();
@@ -191,12 +191,12 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pbPicture;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelQuestionAndAnswer;
+        private DoubleBufferedTableLayout tableLayoutPanelQuestionAndAnswer;
         private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.Label lblAnswer;
         private System.Windows.Forms.Button btnLanguage;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPolaroidZoomContainer;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPolaroidZoomMain;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutLanguagePolaroidZoomBtnAlign;
+        private DoubleBufferedTableLayout tableLayoutPolaroidZoomContainer;
+        private DoubleBufferedTableLayout tableLayoutPolaroidZoomMain;
+        private DoubleBufferedTableLayout tableLayoutLanguagePolaroidZoomBtnAlign;
     }
 }
