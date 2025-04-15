@@ -93,6 +93,7 @@ namespace IQP_Tester
 
         private void TitlePage_VisibleChanged(object sender, EventArgs e)
         {
+            textManager.Update_One_Form(this);
             Rotate_Pictures();
         }
 

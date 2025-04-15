@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using static IQP_Tester.Main;
 using System.Windows.Forms;
 using System.IO;
+using System.Drawing;
 
 namespace IQP_Tester
 {
@@ -30,6 +31,7 @@ namespace IQP_Tester
         public Language language = default_language;
 
         public const string TEXT_MANAGER_FILE_NAME = "text_manager.json";
+        public const string LANGUAGE_BUTTON_NAME = "btnLanguage";
 
         public bool JSON_Generated_or_Updated = false;
 
@@ -217,6 +219,29 @@ namespace IQP_Tester
             }
         }
 
+        // untested function
+        private Button Find_Language_Button(Control control)
+        {
+            Button btn = null;
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                if (control.Controls[i].HasChildren)
+                {
+                    btn = Find_Language_Button(control.Controls[i]);
+                }
+                else if (Is_Language_Button(control.Controls[i]))
+                {
+                    return btn;
+                }
+            }
+            return btn;
+        }
+
+        private bool Is_Language_Button(Control control)
+        {
+            return control is Button && control.Name == LANGUAGE_BUTTON_NAME;
+        }
+
 
         private void Translate_Form(Form form, Dictionary<string, string> translated)
         {
@@ -297,6 +322,21 @@ namespace IQP_Tester
                 if (translated.ContainsKey(control.Controls[i].Name))
                 {
                     control.Controls[i].Text = translated[control.Controls[i].Name];
+
+                    if (Is_Language_Button(control.Controls[i]))
+                    {
+                        control.Controls[i].BackgroundImageLayout = ImageLayout.Stretch;
+                        if (language == Language.English)
+                        {
+                            // set US flag
+                            control.Controls[i].BackgroundImage = global::IQP_Tester.Properties.Resources.AmericanFlag;
+                        }
+                        else if (language == Language.Romanian)
+                        {
+                            // set Romanian flag
+                            control.Controls[i].BackgroundImage = global::IQP_Tester.Properties.Resources.RomanianFlag;
+                        }
+                    }
                 }
 
                 if (control.Controls[i].HasChildren)

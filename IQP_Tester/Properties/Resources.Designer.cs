@@ -63,6 +63,16 @@ namespace IQP_Tester.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AmericanFlag {
+            get {
+                object obj = ResourceManager.GetObject("AmericanFlag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ana {
             get {
                 object obj = ResourceManager.GetObject("Ana", resourceCulture);
@@ -646,6 +656,16 @@ namespace IQP_Tester.Properties {
         internal static System.Drawing.Bitmap Religion {
             get {
                 object obj = ResourceManager.GetObject("Religion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RomanianFlag {
+            get {
+                object obj = ResourceManager.GetObject("RomanianFlag", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

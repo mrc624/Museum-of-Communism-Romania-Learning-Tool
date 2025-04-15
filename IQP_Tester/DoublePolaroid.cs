@@ -33,8 +33,8 @@ namespace IQP_Tester
             doublePolaroid_Helper = new DoublePolaroid_Helper(textMan, open_close, resize);
             doublepolaroid = DP;
             Update_Controls();
-            Translate_DoublePolaroid();
             textManager.Update_One_Form(this);
+            Translate_DoublePolaroid();
             resize.CaptureAspectRatios(this);
             Set_Clicks();
             resize.Fullscreen_Form(this);
@@ -64,6 +64,7 @@ namespace IQP_Tester
         {
             doublepolaroid = DP;
             Update_Controls();
+            textManager.Update_One_Form(this);
             Translate_DoublePolaroid();
             DoublePolaroid_Resize(this, new EventArgs());
         }
