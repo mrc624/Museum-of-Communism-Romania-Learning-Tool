@@ -421,7 +421,14 @@ namespace IQP_Tester
         {
             if (float.TryParse(tbFontSizeOffset.Text, out float value))
             {
-                tbFontSizeOffset.BackColor = SystemColors.Control;
+                if (value != settings.Get_Font_Offset())
+                {
+                    tbFontSizeOffset.BackColor = Color.Yellow;
+                }
+                else
+                {
+                    tbFontSizeOffset.BackColor = SystemColors.Control;
+                }
             }
             else
             {
@@ -433,7 +440,14 @@ namespace IQP_Tester
         {
             if (uint.TryParse(tbTabTimeout.Text, out uint value))
             {   
-                tbTabTimeout.BackColor = SystemColors.Control;
+                if (value != settings.Get_Tab_Timeout())
+                {
+                    tbTabTimeout.BackColor = Color.Yellow;
+                }   
+                else
+                {
+                    tbTabTimeout.BackColor = SystemColors.Control;
+                }
             }
             else
             {
@@ -445,7 +459,14 @@ namespace IQP_Tester
         {
             if (uint.TryParse(tbTabDebounce.Text, out uint value))
             {
-                tbTabDebounce.BackColor = SystemColors.Control;
+                if (value != settings.Get_Tab_Debounce())
+                {
+                    tbTabDebounce.BackColor = Color.Yellow;
+                }
+                else
+                {
+                    tbTabDebounce.BackColor = SystemColors.Control;
+                }
             }
             else
             {
@@ -453,9 +474,22 @@ namespace IQP_Tester
             }
         }
 
+        private void cbBtnBackVisible_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (cbBtnBackVisible.Checked != settings.Get_Btn_Back())
+            {
+                cbBtnBackVisible.BackColor = Color.Yellow;
+            }
+            else
+            {
+                cbBtnBackVisible.BackColor= SystemColors.Control;
+            }
+        }
+
         private void btnApplyDevSettings_Click(object sender, EventArgs e)
         {
             Apply_Settings();
+            Fill_Settings();
         }
 
         private void btnRefreshDevSettings_Click(object sender, EventArgs e)

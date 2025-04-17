@@ -2,5 +2,5 @@
   "FontOffset": "0",
   "TabTimeout": "1000",
   "TabDebounce": "5",
-  "btnBack": "True"
+  "btnBack": "False"
 }

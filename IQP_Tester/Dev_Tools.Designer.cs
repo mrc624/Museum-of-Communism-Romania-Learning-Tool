@@ -53,6 +53,8 @@
             this.lblEditTextEnglish = new System.Windows.Forms.Label();
             this.lblEditTextControlName = new System.Windows.Forms.Label();
             this.tabSettings = new System.Windows.Forms.TabPage();
+            this.cbBtnBackVisible = new System.Windows.Forms.CheckBox();
+            this.lblBtnBackVisible = new System.Windows.Forms.Label();
             this.tbTabDebounce = new System.Windows.Forms.TextBox();
             this.lblTabDebounce = new System.Windows.Forms.Label();
             this.tbTabTimeout = new System.Windows.Forms.TextBox();
@@ -61,8 +63,6 @@
             this.btnRefreshDevSettings = new System.Windows.Forms.Button();
             this.tbFontSizeOffset = new System.Windows.Forms.TextBox();
             this.lblFontSizeOffset = new System.Windows.Forms.Label();
-            this.lblBtnBackVisible = new System.Windows.Forms.Label();
-            this.cbBtnBackVisible = new System.Windows.Forms.CheckBox();
             this.TabControlDevs.SuspendLayout();
             this.TabStastics.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -89,7 +89,7 @@
             this.TabStastics.Controls.Add(this.panelOpenForms);
             this.TabStastics.Location = new System.Drawing.Point(4, 22);
             this.TabStastics.Name = "TabStastics";
-            this.TabStastics.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.TabStastics.Padding = new System.Windows.Forms.Padding(3);
             this.TabStastics.Size = new System.Drawing.Size(774, 618);
             this.TabStastics.TabIndex = 1;
             this.TabStastics.Text = "Statistics";
@@ -234,7 +234,7 @@
             this.tabText_Edit.Controls.Add(this.tableLayoutDevEditText);
             this.tabText_Edit.Location = new System.Drawing.Point(4, 22);
             this.tabText_Edit.Name = "tabText_Edit";
-            this.tabText_Edit.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabText_Edit.Padding = new System.Windows.Forms.Padding(3);
             this.tabText_Edit.Size = new System.Drawing.Size(774, 618);
             this.tabText_Edit.TabIndex = 0;
             this.tabText_Edit.Text = "Edit Text";
@@ -351,18 +351,40 @@
             this.tabSettings.Controls.Add(this.tbFontSizeOffset);
             this.tabSettings.Controls.Add(this.lblFontSizeOffset);
             this.tabSettings.Location = new System.Drawing.Point(4, 22);
-            this.tabSettings.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tabSettings.Margin = new System.Windows.Forms.Padding(1);
             this.tabSettings.Name = "tabSettings";
             this.tabSettings.Size = new System.Drawing.Size(774, 618);
             this.tabSettings.TabIndex = 2;
             this.tabSettings.Text = "Settings";
             this.tabSettings.UseVisualStyleBackColor = true;
             // 
+            // cbBtnBackVisible
+            // 
+            this.cbBtnBackVisible.AutoSize = true;
+            this.cbBtnBackVisible.Checked = true;
+            this.cbBtnBackVisible.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.cbBtnBackVisible.Location = new System.Drawing.Point(157, 85);
+            this.cbBtnBackVisible.Name = "cbBtnBackVisible";
+            this.cbBtnBackVisible.Size = new System.Drawing.Size(15, 14);
+            this.cbBtnBackVisible.TabIndex = 13;
+            this.cbBtnBackVisible.UseVisualStyleBackColor = true;
+            this.cbBtnBackVisible.CheckStateChanged += new System.EventHandler(this.cbBtnBackVisible_CheckStateChanged);
+            // 
+            // lblBtnBackVisible
+            // 
+            this.lblBtnBackVisible.AutoSize = true;
+            this.lblBtnBackVisible.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBtnBackVisible.Location = new System.Drawing.Point(3, 80);
+            this.lblBtnBackVisible.Name = "lblBtnBackVisible";
+            this.lblBtnBackVisible.Size = new System.Drawing.Size(97, 20);
+            this.lblBtnBackVisible.TabIndex = 12;
+            this.lblBtnBackVisible.Text = "Back Button";
+            // 
             // tbTabDebounce
             // 
             this.tbTabDebounce.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTabDebounce.Location = new System.Drawing.Point(155, 52);
-            this.tbTabDebounce.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tbTabDebounce.Margin = new System.Windows.Forms.Padding(1);
             this.tbTabDebounce.Name = "tbTabDebounce";
             this.tbTabDebounce.Size = new System.Drawing.Size(73, 24);
             this.tbTabDebounce.TabIndex = 11;
@@ -383,7 +405,7 @@
             // 
             this.tbTabTimeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTabTimeout.Location = new System.Drawing.Point(157, 26);
-            this.tbTabTimeout.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tbTabTimeout.Margin = new System.Windows.Forms.Padding(1);
             this.tbTabTimeout.Name = "tbTabTimeout";
             this.tbTabTimeout.Size = new System.Drawing.Size(73, 24);
             this.tbTabTimeout.TabIndex = 9;
@@ -426,7 +448,7 @@
             // 
             this.tbFontSizeOffset.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFontSizeOffset.Location = new System.Drawing.Point(155, 0);
-            this.tbFontSizeOffset.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tbFontSizeOffset.Margin = new System.Windows.Forms.Padding(1);
             this.tbFontSizeOffset.Name = "tbFontSizeOffset";
             this.tbFontSizeOffset.Size = new System.Drawing.Size(73, 24);
             this.tbFontSizeOffset.TabIndex = 5;
@@ -442,27 +464,6 @@
             this.lblFontSizeOffset.Size = new System.Drawing.Size(129, 20);
             this.lblFontSizeOffset.TabIndex = 4;
             this.lblFontSizeOffset.Text = "Font Size Offset:";
-            // 
-            // lblBtnBackVisible
-            // 
-            this.lblBtnBackVisible.AutoSize = true;
-            this.lblBtnBackVisible.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBtnBackVisible.Location = new System.Drawing.Point(3, 80);
-            this.lblBtnBackVisible.Name = "lblBtnBackVisible";
-            this.lblBtnBackVisible.Size = new System.Drawing.Size(97, 20);
-            this.lblBtnBackVisible.TabIndex = 12;
-            this.lblBtnBackVisible.Text = "Back Button";
-            // 
-            // cbBtnBackVisible
-            // 
-            this.cbBtnBackVisible.AutoSize = true;
-            this.cbBtnBackVisible.Checked = true;
-            this.cbBtnBackVisible.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cbBtnBackVisible.Location = new System.Drawing.Point(157, 85);
-            this.cbBtnBackVisible.Name = "cbBtnBackVisible";
-            this.cbBtnBackVisible.Size = new System.Drawing.Size(15, 14);
-            this.cbBtnBackVisible.TabIndex = 13;
-            this.cbBtnBackVisible.UseVisualStyleBackColor = true;
             // 
             // Dev_Tools
             // 
