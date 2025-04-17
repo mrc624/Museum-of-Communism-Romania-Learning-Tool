@@ -351,10 +351,5 @@ namespace IQP_Tester
                 Center_X(panel.Controls[i]);
             }
         }
-
-        public void Update_Font_Offset(float  offset)
-        {
-            Font_Offset = offset;
-        }
     }
 }

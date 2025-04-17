@@ -28,8 +28,6 @@ namespace IQP_Tester
 
         private System.Timers.Timer Timer;
 
-        public const int DEFAULT_FADE_INTERVAL = 10;
-        public const double DEFAULT_FADE_INCREMENT = 0.05;
         static uint lastInteraction = 0;
         static uint lastFormOpened = 0;
         public const int TIMER_TICK = 100; // tick 10 times a second
@@ -38,6 +36,8 @@ namespace IQP_Tester
         public static uint tab_open_debounce = Settings.DEFAULT_TAB_DEBOUNCE;
         public static uint seconds = 0; // not actually seconds, 1/10 of a second
         public static uint interaction_count = 0;
+        public static int fade_interval = Settings.DEFAULT_FADE_INTERVAL;
+        public static double fade_increment = Settings.DEFAULT_FADE_INTERVAL;
 
         public bool block = false;
 
@@ -123,7 +123,7 @@ namespace IQP_Tester
 
         // General open close things
 
-        public void FadeIn(Form form, int interval = DEFAULT_FADE_INTERVAL, double increment = DEFAULT_FADE_INCREMENT)
+        public void FadeIn(Form form)
         {
             if (form != null && !form.IsDisposed && !block && !form.Visible)
             {
@@ -132,12 +132,12 @@ namespace IQP_Tester
                 form.Show();
                 form.TopMost = true;
                 System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
-                fadeTimer.Interval = interval; // time in milliseconds between opacity updates
+                fadeTimer.Interval = fade_interval; // time in milliseconds between opacity updates
                 fadeTimer.Tick += (s, e) =>
                 {
                     if (form.Opacity < 1.0)
                     {
-                        form.Opacity += increment; // increase opacity gradually
+                        form.Opacity += fade_increment; // increase opacity gradually
                         form.BringToFront();
                     }
                     else
@@ -150,18 +150,18 @@ namespace IQP_Tester
             }
         }
 
-        private void FadeOut(Form form, int interval = DEFAULT_FADE_INTERVAL, double increment = DEFAULT_FADE_INCREMENT)
+        private void FadeOut(Form form)
         {
             if (!form.IsDisposed && !block && form.Visible)
             {
                 block = true;
                 System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
-                fadeTimer.Interval = interval; // time in milliseconds between opacity updates
+                fadeTimer.Interval = fade_interval; // time in milliseconds between opacity updates
                 fadeTimer.Tick += (s, e) =>
                 {
                     if (form.Opacity > 0)
                     {
-                        form.Opacity -= increment;
+                        form.Opacity -= fade_increment;
                         form.BringToFront();
                     }
                     else
@@ -232,7 +232,7 @@ namespace IQP_Tester
         {
             if (form.InvokeRequired)
             {
-                form.Invoke(new FormIntDoubleDelegate(FadeOut), form, DEFAULT_FADE_INTERVAL, DEFAULT_FADE_INCREMENT);
+                form.Invoke(new FormDelegate(FadeOut), form);
             }
             else
             {
@@ -246,16 +246,6 @@ namespace IQP_Tester
             form.Show();
             form.Hide();
             form.Opacity = 1;
-        }
-
-        public void Update_Tab_Timeout(uint timeout)
-        {
-            tabTimeout = timeout;
-        }
-
-        public void Update_Tab_Debounce(uint debounce)
-        {
-            tab_open_debounce = debounce;
         }
     }
 }

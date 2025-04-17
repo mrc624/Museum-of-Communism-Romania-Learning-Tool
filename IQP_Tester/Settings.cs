@@ -28,7 +28,9 @@ namespace IQP_Tester
             FontOffset,
             TabTimeout,
             TabDebounce,
-            btnBack
+            btnBack,
+            fadeInterval,
+            fadeIncrement
         }
 
         public string[] Options_To_String =
@@ -36,7 +38,9 @@ namespace IQP_Tester
             "FontOffset",
             "TabTimeout",
             "TabDebounce",
-            "btnBack"
+            "btnBack",
+            "fadeInterval",
+            "fadeIncrement"
         };
 
         public const string FILE_NAME = "Settings.json";
@@ -45,6 +49,8 @@ namespace IQP_Tester
         public const uint DEFAULT_TAB_DEBOUNCE = 5; // in 1/10 of seconds, 0.5 second
         public const uint NUM_TICKS_IN_SECOND = 10;
         public const bool DEFAULT_BTN_BACK = false;
+        public const int DEFAULT_FADE_INTERVAL = 10;
+        public const double DEFAULT_FADE_INCREMENT = 0.05;
 
         public static bool btn_back_state;
 
@@ -78,7 +84,9 @@ namespace IQP_Tester
                     { Options_To_String[(int)Options.FontOffset], DEFAULT_FONT_OFFSET.ToString() },
                     { Options_To_String[(int)Options.TabTimeout], DEFAULT_TAB_TIMEOUT.ToString() },
                     { Options_To_String[(int)Options.TabDebounce], DEFAULT_TAB_DEBOUNCE.ToString() },
-                    { Options_To_String[(int)Options.btnBack], DEFAULT_BTN_BACK.ToString() }
+                    { Options_To_String[(int)Options.btnBack], DEFAULT_BTN_BACK.ToString() },
+                    { Options_To_String[(int)Options.fadeInterval], DEFAULT_FADE_INTERVAL.ToString() },
+                    { Options_To_String[(int)Options.fadeIncrement], DEFAULT_FADE_INCREMENT.ToString() }
                 };
             }
 
@@ -113,6 +121,29 @@ namespace IQP_Tester
             {
                 settings[Options_To_String[(int)Options.btnBack]] = DEFAULT_BTN_BACK.ToString();
             }
+
+            // fade interval
+            if (!settings.ContainsKey(Options_To_String[(int)Options.fadeInterval]))
+            {
+                settings[Options_To_String[(int)Options.fadeInterval]] = DEFAULT_FADE_INTERVAL.ToString();
+            }
+
+            // fade increment
+            if (!settings.ContainsKey(Options_To_String[(int)Options.fadeIncrement]))
+            {
+                settings[Options_To_String[(int)Options.fadeIncrement]] = DEFAULT_FADE_INCREMENT.ToString();
+            }
+        }
+
+        public void Reset_To_Defaults()
+        {
+            settings[Options_To_String[(int)Options.FontOffset]] = DEFAULT_FONT_OFFSET.ToString();
+            settings[Options_To_String[(int)Options.TabTimeout]] = DEFAULT_TAB_TIMEOUT.ToString();
+            settings[Options_To_String[(int)Options.TabDebounce]] = DEFAULT_TAB_DEBOUNCE.ToString();
+            settings[Options_To_String[(int)Options.btnBack]] = DEFAULT_BTN_BACK.ToString();
+            settings[Options_To_String[(int)Options.fadeInterval]] = DEFAULT_FADE_INTERVAL.ToString();
+            settings[Options_To_String[(int)Options.fadeIncrement]] = DEFAULT_FADE_INCREMENT.ToString();
+            Overwrite_JSON();
         }
 
         public void Overwrite_JSON()
@@ -154,10 +185,12 @@ namespace IQP_Tester
 
         private void Update_All()
         {
-            resize.Update_Font_Offset(Get_Font_Offset());
-            openClose.Update_Tab_Timeout(Get_Tab_Timeout());
-            openClose.Update_Tab_Debounce(Get_Tab_Debounce());
+            Resize_Helper.Font_Offset = Get_Font_Offset();
+            Open_Close_Helper.tabTimeout = Get_Tab_Timeout();
+            Open_Close_Helper.tab_open_debounce = Get_Tab_Debounce();
             Update_Btn_Backs(Get_Btn_Back());
+            Open_Close_Helper.fade_interval = Get_Fade_Interval();
+            Open_Close_Helper.fade_increment = Get_Fade_Increment();
         }
 
         public float Get_Font_Offset()
@@ -168,7 +201,7 @@ namespace IQP_Tester
         public void Change_Font(float new_font)
         {
             settings[Options_To_String[(int)Options.FontOffset]] = new_font.ToString();
-            resize.Update_Font_Offset(new_font);
+            Resize_Helper.Font_Offset = new_font;
         }
 
         public uint Get_Tab_Timeout()
@@ -179,7 +212,7 @@ namespace IQP_Tester
         public void Change_Tab_Timeout(uint timeout)
         {
             settings[Options_To_String[(int)Options.TabTimeout]] = timeout.ToString();
-            openClose.Update_Tab_Timeout(timeout);
+            Open_Close_Helper.tabTimeout = timeout;
         }
 
         public uint Get_Tab_Debounce()
@@ -190,7 +223,7 @@ namespace IQP_Tester
         public void Change_Tab_Debounce(uint debounce)
         {
             settings[Options_To_String[(int)Options.TabDebounce]] = debounce.ToString();
-            openClose.Update_Tab_Debounce(debounce);
+            Open_Close_Helper.tab_open_debounce = debounce;
         }
 
         public bool Get_Btn_Back()
@@ -215,6 +248,28 @@ namespace IQP_Tester
             main.timeline.sovietEra.btnBack.Visible = state;
             main.stories.btnBack.Visible = state;
             main.lifeUnder.btnBack.Visible = state;
+        }
+
+        public int Get_Fade_Interval()
+        {
+            return int.Parse(Get_Option(Options.fadeInterval));
+        }
+
+        public void Change_Fade_Interval(int interval)
+        {
+            settings[Options_To_String[(int)Options.fadeInterval]] = interval.ToString();
+            Open_Close_Helper.fade_interval = interval;
+        }
+
+        public double Get_Fade_Increment()
+        {
+            return double.Parse(Get_Option(Options.fadeIncrement));
+        }
+
+        public void Change_Fade_Increment(double inc)
+        {
+            settings[Options_To_String[(int)Options.fadeIncrement]] = inc.ToString();
+            Open_Close_Helper.fade_increment = inc;
         }
     }
 }

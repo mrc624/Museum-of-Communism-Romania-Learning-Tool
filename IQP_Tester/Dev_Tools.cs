@@ -394,26 +394,43 @@ namespace IQP_Tester
             tbTabTimeout.Text = settings.Get_Tab_Timeout().ToString();
             tbTabDebounce.Text = settings.Get_Tab_Debounce().ToString();
             cbBtnBackVisible.CheckState = settings.Get_Btn_Back() ? CheckState.Checked : CheckState.Unchecked;
+            tbFadeInterval.Text = settings.Get_Fade_Interval().ToString();
+            tbFadeIncrement.Text = settings.Get_Fade_Increment().ToString();
         }
 
         private void Apply_Settings()
         {
-            if (tbFontSizeOffset.BackColor != Color.Red)
+            if (tbFontSizeOffset.BackColor == Color.Yellow)
             {
                 settings.Change_Font(float.Parse(tbFontSizeOffset.Text));
+                tbFontSizeOffset.BackColor = SystemColors.Control;
             }
-            if (tbTabTimeout.BackColor != Color.Red)
+            if (tbTabTimeout.BackColor == Color.Yellow)
             {
                 settings.Change_Tab_Timeout(uint.Parse(tbTabTimeout.Text));
+                tbTabTimeout.BackColor = SystemColors.Control;
             }
-            if (tbTabDebounce.BackColor != Color.Red)
+            if (tbTabDebounce.BackColor == Color.Yellow)
             {
                 settings.Change_Tab_Debounce(uint.Parse(tbTabDebounce.Text));
+                tbTabDebounce.BackColor = SystemColors.Control;
             }
-            if (cbBtnBackVisible.CheckState != CheckState.Indeterminate)
+            if (cbBtnBackVisible.BackColor == Color.Yellow)
             {
                 settings.Change_Btn_Back(cbBtnBackVisible.Checked);
+                cbBtnBackVisible.BackColor = SystemColors.Control;
             }
+            if (tbFadeInterval.BackColor == Color.Yellow)
+            {
+                settings.Change_Fade_Interval(int.Parse(tbFadeInterval.Text));
+                tbFadeInterval.BackColor = SystemColors.Control;
+            }
+            if (tbFadeIncrement.BackColor == Color.Yellow)
+            {
+                settings.Change_Fade_Increment(double.Parse(tbFadeIncrement.Text));
+                tbFadeIncrement.BackColor = SystemColors.Control;
+            }
+
             settings.Overwrite_JSON();
         }
 
@@ -486,6 +503,44 @@ namespace IQP_Tester
             }
         }
 
+        private void tbFadeInterval_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(tbFadeInterval.Text, out int value))
+            {
+                if (value != settings.Get_Fade_Interval())
+                {
+                    tbFadeInterval.BackColor = Color.Yellow;
+                }
+                else
+                {
+                    tbFadeInterval.BackColor = SystemColors.Control;
+                }
+            }
+            else
+            {
+                tbFadeInterval.BackColor = Color.Red;
+            }
+        }
+
+        private void tbFadeIncrement_TextChanged(object sender, EventArgs e)
+        {
+            if (double.TryParse(tbFadeIncrement.Text, out double value))
+            {
+                if (value != settings.Get_Fade_Increment())
+                {
+                    tbFadeIncrement.BackColor = Color.Yellow;
+                }
+                else
+                {
+                    tbFadeIncrement.BackColor = SystemColors.Control;
+                }
+            }
+            else
+            {
+                tbFadeIncrement.BackColor = Color.Red;
+            }
+        }
+
         private void btnApplyDevSettings_Click(object sender, EventArgs e)
         {
             Apply_Settings();
@@ -499,6 +554,12 @@ namespace IQP_Tester
             {
                 btnApplyDevSettings.Enabled = true;
             }
+        }
+
+        private void btnDefault_Click(object sender, EventArgs e)
+        {
+            settings.Reset_To_Defaults();
+            Fill_Settings();
         }
     }
 }
