@@ -32,17 +32,17 @@ namespace IQP_Tester
 
         public static List<Form> Forms = new List<Form>();
 
-        ThenAndNow thenAndNow;
-        Oppression oppression;
-        Stories stories;
-        LifeUnder lifeUnder;
-        Timeline timeline;
+        public ThenAndNow thenAndNow;
+        public Oppression oppression;
+        public Stories stories;
+        public LifeUnder lifeUnder;
+        public Timeline timeline;
 
-        RegimeFall regimeFall;
-        CeausescusRise ceausescusRise;
-        SovietEra sovietEra;
+        public RegimeFall regimeFall;
+        public CeausescusRise ceausescusRise;
+        public SovietEra sovietEra;
 
-        Credits credits;
+        public Credits credits;
         Dev_Tools dev_Tools;
 
         TitlePage titlePage;
@@ -54,9 +54,9 @@ namespace IQP_Tester
             InitializeComponent();
             openClose = new Open_Close_Helper(this);
             resize = new Resize_Helper();
-            settings  = new Settings(resize, openClose);
-            settings.Generate_JSON(Settings.FILE_NAME);
             Add_Forms();
+            settings  = new Settings(resize, openClose, this);
+            settings.Generate_JSON(Settings.FILE_NAME);
             citation_Helper = new Citation_Helper(titlePage);
             resize.CaptureAspectRatios(this);
             textManager.Generate_Text_JSON(TextManager.TEXT_MANAGER_FILE_NAME);

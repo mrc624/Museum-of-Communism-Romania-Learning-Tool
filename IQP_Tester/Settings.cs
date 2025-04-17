@@ -14,25 +14,29 @@ namespace IQP_Tester
     {
         Resize_Helper resize;
         Open_Close_Helper openClose;
+        Main main;
 
-        public Settings(Resize_Helper resize, Open_Close_Helper openClose)
+        public Settings(Resize_Helper resize, Open_Close_Helper openClose, Main main)
         {
             this.resize = resize;
             this.openClose = openClose;
+            this.main = main;
         }
 
         public enum Options
         {
             FontOffset,
             TabTimeout,
-            TabDebounce
+            TabDebounce,
+            btnBack
         }
 
         public string[] Options_To_String =
         {
             "FontOffset",
             "TabTimeout",
-            "TabDebounce"
+            "TabDebounce",
+            "btnBack"
         };
 
         public const string FILE_NAME = "Settings.json";
@@ -40,6 +44,9 @@ namespace IQP_Tester
         public const uint DEFAULT_TAB_TIMEOUT = 1000; // in 1/10 of seconds, 100 seconds
         public const uint DEFAULT_TAB_DEBOUNCE = 5; // in 1/10 of seconds, 0.5 second
         public const uint NUM_TICKS_IN_SECOND = 10;
+        public const bool DEFAULT_BTN_BACK = false;
+
+        public static bool btn_back_state;
 
         Dictionary<string, string> settings;
 
@@ -70,7 +77,8 @@ namespace IQP_Tester
                 {
                     { Options_To_String[(int)Options.FontOffset], DEFAULT_FONT_OFFSET.ToString() },
                     { Options_To_String[(int)Options.TabTimeout], DEFAULT_TAB_TIMEOUT.ToString() },
-                    { Options_To_String[(int)Options.TabDebounce], DEFAULT_TAB_DEBOUNCE.ToString() }
+                    { Options_To_String[(int)Options.TabDebounce], DEFAULT_TAB_DEBOUNCE.ToString() },
+                    { Options_To_String[(int)Options.btnBack], DEFAULT_BTN_BACK.ToString() }
                 };
             }
 
@@ -98,6 +106,12 @@ namespace IQP_Tester
             if (!settings.ContainsKey(Options_To_String[(int)Options.TabDebounce]))
             {
                 settings[Options_To_String[(int)Options.TabDebounce]] = DEFAULT_TAB_DEBOUNCE.ToString();
+            }
+
+            // btn back
+            if (!settings.ContainsKey(Options_To_String[(int)Options.btnBack]))
+            {
+                settings[Options_To_String[(int)Options.btnBack]] = DEFAULT_BTN_BACK.ToString();
             }
         }
 
@@ -143,6 +157,7 @@ namespace IQP_Tester
             resize.Update_Font_Offset(Get_Font_Offset());
             openClose.Update_Tab_Timeout(Get_Tab_Timeout());
             openClose.Update_Tab_Debounce(Get_Tab_Debounce());
+            Update_Btn_Backs(Get_Btn_Back());
         }
 
         public float Get_Font_Offset()
@@ -176,6 +191,30 @@ namespace IQP_Tester
         {
             settings[Options_To_String[(int)Options.TabDebounce]] = debounce.ToString();
             openClose.Update_Tab_Debounce(debounce);
+        }
+
+        public bool Get_Btn_Back()
+        {
+            return bool.Parse(Get_Option(Options.btnBack));
+        }
+
+        public void Change_Btn_Back(bool state)
+        {
+            settings[Options_To_String[(int)Options.btnBack]] = state.ToString();
+            Update_Btn_Backs(state);
+        }
+
+        private void Update_Btn_Backs(bool state)
+        {
+            btn_back_state = state;
+            main.oppression.btnBack.Visible = state;
+            main.thenAndNow.btnBack.Visible = state;
+            main.timeline.btnBack.Visible = state;
+            main.timeline.regimeFall.btnBack.Visible = state;
+            main.timeline.ceausescusRise.btnBack.Visible = state;
+            main.timeline.sovietEra.btnBack.Visible = state;
+            main.stories.btnBack.Visible = state;
+            main.lifeUnder.btnBack.Visible = state;
         }
     }
 }

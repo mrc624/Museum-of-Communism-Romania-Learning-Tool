@@ -141,6 +141,6 @@
         private DoubleBufferedTableLayout CreditsTableLayoutPanel;
         private DoubleBufferedTableLayout tableLayoutCreditsMain;
         private DoubleBufferedTableLayout TableLayoutbtnBackAlignCredits;
-        private System.Windows.Forms.Button btnBack;
+        public System.Windows.Forms.Button btnBack;
     }
 }

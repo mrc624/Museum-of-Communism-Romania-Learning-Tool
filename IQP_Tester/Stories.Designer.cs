@@ -1460,6 +1460,6 @@
         private DoubleBufferedTableLayout tableLayoutStoriesBottom;
         private DoubleBufferedTableLayout tableLayoutLanguageStoriesBtnAlign;
         private DoubleBufferedTableLayout TableLayoutbtnBackAlignStories;
-        private System.Windows.Forms.Button btnBack;
+        public System.Windows.Forms.Button btnBack;
     }
 }

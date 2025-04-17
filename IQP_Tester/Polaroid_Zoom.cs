@@ -31,6 +31,7 @@ namespace IQP_Tester
             this.resize = resize;
             this.BackgroundImage = parent.BackgroundImage;
             this.BackgroundImageLayout = parent.BackgroundImageLayout;
+            btnBack.Visible = Settings.btn_back_state;
 
             if (polaroid_Zoom_Helper.Is_Polaroid(polaroid))
             {
@@ -76,6 +77,7 @@ namespace IQP_Tester
             pb = polaroid_Zoom_Helper.Find_PB(polaroid);
             lblQ = polaroid_Zoom_Helper.Find_Q(polaroid);
             lblAns = polaroid_Zoom_Helper.Find_Ans(polaroid);
+            btnBack.Visible = Settings.btn_back_state;
 
             Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
             textManager.Update_One_Form(this);

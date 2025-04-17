@@ -1,5 +1,6 @@
 ﻿{
   "FontOffset": "0",
   "TabTimeout": "1000",
-  "TabDebounce": "5"
+  "TabDebounce": "5",
+  "btnBack": "False"
 }

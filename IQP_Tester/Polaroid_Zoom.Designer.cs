@@ -243,5 +243,12 @@
         private DoubleBufferedTableLayout tableLayoutLanguagePolaroidZoomBtnAlign;
         private DoubleBufferedTableLayout TableLayoutbtnBackAlign;
         private System.Windows.Forms.Button btnBack;
+
+
+
+
+
+
+
     }
 }

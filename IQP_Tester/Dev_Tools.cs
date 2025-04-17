@@ -393,6 +393,7 @@ namespace IQP_Tester
             tbFontSizeOffset.Text = settings.Get_Font_Offset().ToString();
             tbTabTimeout.Text = settings.Get_Tab_Timeout().ToString();
             tbTabDebounce.Text = settings.Get_Tab_Debounce().ToString();
+            cbBtnBackVisible.CheckState = settings.Get_Btn_Back() ? CheckState.Checked : CheckState.Unchecked;
         }
 
         private void Apply_Settings()
@@ -409,6 +410,11 @@ namespace IQP_Tester
             {
                 settings.Change_Tab_Debounce(uint.Parse(tbTabDebounce.Text));
             }
+            if (cbBtnBackVisible.CheckState != CheckState.Indeterminate)
+            {
+                settings.Change_Btn_Back(cbBtnBackVisible.Checked);
+            }
+            settings.Overwrite_JSON();
         }
 
         private void tbFontSizeOffset_TextChanged(object sender, EventArgs e)

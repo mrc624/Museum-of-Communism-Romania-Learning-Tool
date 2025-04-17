@@ -488,6 +488,6 @@
         private DoubleBufferedTableLayout tableLayoutLanguageRegimeFallBtnAlign;
         private DoubleBufferedTableLayout tableLayoutRegimeFallMiddle;
         private DoubleBufferedTableLayout TableLayoutbtnBackAlignRegimeFall;
-        private System.Windows.Forms.Button btnBack;
+        public System.Windows.Forms.Button btnBack;
     }
 }

@@ -488,6 +488,6 @@
         private DoubleBufferedTableLayout tableLayoutSovietEraMain;
         private DoubleBufferedTableLayout tableLayoutLanguageSovietEraBtnAlign;
         private DoubleBufferedTableLayout TableLayoutbtnBackAlignSovietEra;
-        private System.Windows.Forms.Button btnBack;
+        public System.Windows.Forms.Button btnBack;
     }
 }

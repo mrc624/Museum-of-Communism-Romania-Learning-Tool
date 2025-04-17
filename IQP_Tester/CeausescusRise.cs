@@ -71,5 +71,10 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             CeausescusRise_Resize(this, new EventArgs());
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            CeausescusRise_Click(sender, e);
+        }
     }
 }

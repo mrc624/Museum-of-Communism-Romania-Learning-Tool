@@ -236,6 +236,6 @@
         private System.Windows.Forms.Button btnLanguage;
         private DoubleBufferedTableLayout tableLayoutLanguageDoublePolaroidZoomBtnAlign;
         private DoubleBufferedTableLayout TableLayoutbtnBackAlignDoublePolaroid;
-        private System.Windows.Forms.Button btnBack;
+        public System.Windows.Forms.Button btnBack;
     }
 }

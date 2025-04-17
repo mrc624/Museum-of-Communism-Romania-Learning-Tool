@@ -32,6 +32,7 @@ namespace IQP_Tester
             this.resize = resize;
             this.BackgroundImage = parent.BackgroundImage;
             this.BackgroundImageLayout = parent.BackgroundImageLayout;
+            btnBack.Visible = Settings.btn_back_state;
             doublePolaroid_Helper = new DoublePolaroid_Helper(textMan, open_close, resize);
             doublepolaroid = DP;
             Update_Controls();
@@ -65,6 +66,7 @@ namespace IQP_Tester
         public void Update_After_Gen(Control DP)
         {
             doublepolaroid = DP;
+            btnBack.Visible = Settings.btn_back_state;
             Update_Controls();
             textManager.Update_One_Form(this);
             Translate_DoublePolaroid();

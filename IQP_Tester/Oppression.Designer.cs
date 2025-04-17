@@ -1353,6 +1353,6 @@
         private DoubleBufferedTableLayout tableLayoutOppressionMain;
         private DoubleBufferedTableLayout tableLayoutLanguageOppressionBtnAlign;
         private DoubleBufferedTableLayout TableLayoutbtnBackAlign;
-        private System.Windows.Forms.Button btnBack;
+        public System.Windows.Forms.Button btnBack;
     }
 }

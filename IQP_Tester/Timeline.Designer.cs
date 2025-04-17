@@ -915,6 +915,6 @@
         private DoubleBufferedTableLayout tableLayoutRegimeFallContainer;
         private DoubleBufferedTableLayout tableLayoutEraSovietContainer;
         private DoubleBufferedTableLayout TableLayoutbtnBackAlignTimeline;
-        private System.Windows.Forms.Button btnBack;
+        public System.Windows.Forms.Button btnBack;
     }
 }

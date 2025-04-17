@@ -22,9 +22,9 @@ namespace IQP_Tester
         Click_Helper click_Helper;
         TableLayout_Helper tableLayoutHelper = new TableLayout_Helper();
 
-        RegimeFall regimeFall;
-        CeausescusRise ceausescusRise;
-        SovietEra sovietEra;
+        public RegimeFall regimeFall;
+        public CeausescusRise ceausescusRise;
+        public SovietEra sovietEra;
 
         public const int START_YEAR = 1941;
         public const int END_YEAR = 1989;

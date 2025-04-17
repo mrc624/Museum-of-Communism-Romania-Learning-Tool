@@ -1056,6 +1056,6 @@
         private System.Windows.Forms.Label lblThenAndNowTitle;
         private DoubleBufferedTableLayout tableLayoutLanguageThenAndNowBtnAlign;
         private DoubleBufferedTableLayout TableLayoutbtnBackAlignThenAndNow;
-        private System.Windows.Forms.Button btnBack;
+        public System.Windows.Forms.Button btnBack;
     }
 }

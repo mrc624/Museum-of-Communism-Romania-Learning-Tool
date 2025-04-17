@@ -28,23 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CeausescusRise));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutElena = new DoubleBufferedTableLayout();
+            this.tableLayoutElena = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblElenaQ = new System.Windows.Forms.Label();
             this.lblElenaAns = new System.Windows.Forms.Label();
-            this.tableLayoutNicolae = new DoubleBufferedTableLayout();
+            this.tableLayoutNicolae = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblNicolaeQ = new System.Windows.Forms.Label();
             this.lblNicolaeAns = new System.Windows.Forms.Label();
             this.panelElena = new System.Windows.Forms.Panel();
-            this.tableLayoutElenaContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutElenaContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbElena = new System.Windows.Forms.PictureBox();
             this.panelNicolae = new System.Windows.Forms.Panel();
-            this.tableLayoutNicolaeContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutNicolaeContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbNicolae = new System.Windows.Forms.PictureBox();
-            this.tableLayoutCeausescusRiseMain = new DoubleBufferedTableLayout();
-            this.tableLayoutPanel1 = new DoubleBufferedTableLayout();
-            this.tableLayoutLanguageCeausescusRiseBtnAlign = new DoubleBufferedTableLayout();
+            this.tableLayoutCeausescusRiseMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPanel1 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageCeausescusRiseBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignCeausescusRise = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutElena.SuspendLayout();
             this.tableLayoutNicolae.SuspendLayout();
             this.panelElena.SuspendLayout();
@@ -56,6 +59,7 @@
             this.tableLayoutCeausescusRiseMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutLanguageCeausescusRiseBtnAlign.SuspendLayout();
+            this.TableLayoutbtnBackAlignCeausescusRise.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -261,13 +265,15 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutLanguageCeausescusRiseBtnAlign, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutCeausescusRiseMain, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.TableLayoutbtnBackAlignCeausescusRise, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutLanguageCeausescusRiseBtnAlign, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutCeausescusRiseMain, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.5F));
+            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -292,6 +298,38 @@
             this.tableLayoutLanguageCeausescusRiseBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.tableLayoutLanguageCeausescusRiseBtnAlign.Size = new System.Drawing.Size(1898, 99);
             this.tableLayoutLanguageCeausescusRiseBtnAlign.TabIndex = 34;
+            // 
+            // TableLayoutbtnBackAlignCeausescusRise
+            // 
+            this.TableLayoutbtnBackAlignCeausescusRise.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutbtnBackAlignCeausescusRise.ColumnCount = 3;
+            this.TableLayoutbtnBackAlignCeausescusRise.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.TableLayoutbtnBackAlignCeausescusRise.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.TableLayoutbtnBackAlignCeausescusRise.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignCeausescusRise.Controls.Add(this.btnBack, 1, 1);
+            this.TableLayoutbtnBackAlignCeausescusRise.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutbtnBackAlignCeausescusRise.Name = "TableLayoutbtnBackAlignCeausescusRise";
+            this.TableLayoutbtnBackAlignCeausescusRise.RowCount = 3;
+            this.TableLayoutbtnBackAlignCeausescusRise.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignCeausescusRise.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.TableLayoutbtnBackAlignCeausescusRise.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.TableLayoutbtnBackAlignCeausescusRise.Size = new System.Drawing.Size(1898, 98);
+            this.TableLayoutbtnBackAlignCeausescusRise.TabIndex = 35;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1787, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(93, 35);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // CeausescusRise
             // 
@@ -320,6 +358,7 @@
             this.tableLayoutCeausescusRiseMain.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutLanguageCeausescusRiseBtnAlign.ResumeLayout(false);
+            this.TableLayoutbtnBackAlignCeausescusRise.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -341,5 +380,7 @@
         private DoubleBufferedTableLayout tableLayoutCeausescusRiseMain;
         private DoubleBufferedTableLayout tableLayoutPanel1;
         private DoubleBufferedTableLayout tableLayoutLanguageCeausescusRiseBtnAlign;
+        private DoubleBufferedTableLayout TableLayoutbtnBackAlignCeausescusRise;
+        public System.Windows.Forms.Button btnBack;
     }
 }
