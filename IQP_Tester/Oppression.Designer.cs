@@ -100,9 +100,9 @@
             this.tableLayoutOppressionTop = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.tableLayoutOppressionBottom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.tableLayoutOppressionMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutLanguageOppressionBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.TableLayoutbtnBackAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
+            this.tableLayoutLanguageOppressionBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.tableLayoutSecuritate.SuspendLayout();
             this.tableLayoutConsequences.SuspendLayout();
             this.tableLayoutPropoganda.SuspendLayout();
@@ -150,8 +150,8 @@
             this.tableLayoutOppressionTop.SuspendLayout();
             this.tableLayoutOppressionBottom.SuspendLayout();
             this.tableLayoutOppressionMain.SuspendLayout();
-            this.tableLayoutLanguageOppressionBtnAlign.SuspendLayout();
             this.TableLayoutbtnBackAlign.SuspendLayout();
+            this.tableLayoutLanguageOppressionBtnAlign.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -1150,25 +1150,6 @@
             this.tableLayoutOppressionMain.Size = new System.Drawing.Size(1904, 1041);
             this.tableLayoutOppressionMain.TabIndex = 30;
             // 
-            // tableLayoutLanguageOppressionBtnAlign
-            // 
-            this.tableLayoutLanguageOppressionBtnAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutLanguageOppressionBtnAlign.ColumnCount = 3;
-            this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
-            this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
-            this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.tableLayoutLanguageOppressionBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
-            this.tableLayoutLanguageOppressionBtnAlign.Location = new System.Drawing.Point(3, 939);
-            this.tableLayoutLanguageOppressionBtnAlign.Name = "tableLayoutLanguageOppressionBtnAlign";
-            this.tableLayoutLanguageOppressionBtnAlign.RowCount = 3;
-            this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
-            this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
-            this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.tableLayoutLanguageOppressionBtnAlign.Size = new System.Drawing.Size(1898, 99);
-            this.tableLayoutLanguageOppressionBtnAlign.TabIndex = 32;
-            // 
             // TableLayoutbtnBackAlign
             // 
             this.TableLayoutbtnBackAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1200,6 +1181,25 @@
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // tableLayoutLanguageOppressionBtnAlign
+            // 
+            this.tableLayoutLanguageOppressionBtnAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutLanguageOppressionBtnAlign.ColumnCount = 3;
+            this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.tableLayoutLanguageOppressionBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageOppressionBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
+            this.tableLayoutLanguageOppressionBtnAlign.Location = new System.Drawing.Point(3, 939);
+            this.tableLayoutLanguageOppressionBtnAlign.Name = "tableLayoutLanguageOppressionBtnAlign";
+            this.tableLayoutLanguageOppressionBtnAlign.RowCount = 3;
+            this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.tableLayoutLanguageOppressionBtnAlign.Size = new System.Drawing.Size(1898, 99);
+            this.tableLayoutLanguageOppressionBtnAlign.TabIndex = 32;
             // 
             // Oppression
             // 
@@ -1273,8 +1273,8 @@
             this.tableLayoutOppressionTop.ResumeLayout(false);
             this.tableLayoutOppressionBottom.ResumeLayout(false);
             this.tableLayoutOppressionMain.ResumeLayout(false);
-            this.tableLayoutLanguageOppressionBtnAlign.ResumeLayout(false);
             this.TableLayoutbtnBackAlign.ResumeLayout(false);
+            this.tableLayoutLanguageOppressionBtnAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -883,9 +883,9 @@
             this.TableLayoutbtnBackAlignThenAndNow.Location = new System.Drawing.Point(3, 3);
             this.TableLayoutbtnBackAlignThenAndNow.Name = "TableLayoutbtnBackAlignThenAndNow";
             this.TableLayoutbtnBackAlignThenAndNow.RowCount = 3;
-            this.TableLayoutbtnBackAlignThenAndNow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.33F));
-            this.TableLayoutbtnBackAlignThenAndNow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.33F));
-            this.TableLayoutbtnBackAlignThenAndNow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.34F));
+            this.TableLayoutbtnBackAlignThenAndNow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.03F));
+            this.TableLayoutbtnBackAlignThenAndNow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.28F));
+            this.TableLayoutbtnBackAlignThenAndNow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.69F));
             this.TableLayoutbtnBackAlignThenAndNow.Size = new System.Drawing.Size(1898, 72);
             this.TableLayoutbtnBackAlignThenAndNow.TabIndex = 33;
             // 
@@ -894,9 +894,9 @@
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1786, 9);
+            this.btnBack.Location = new System.Drawing.Point(1786, 3);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(93, 34);
+            this.btnBack.Size = new System.Drawing.Size(93, 35);
             this.btnBack.TabIndex = 8;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -909,7 +909,7 @@
             this.lblThenAndNowTitle.AutoSize = true;
             this.lblThenAndNowTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThenAndNowTitle.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblThenAndNowTitle.Location = new System.Drawing.Point(116, 6);
+            this.lblThenAndNowTitle.Location = new System.Drawing.Point(116, 0);
             this.lblThenAndNowTitle.Name = "lblThenAndNowTitle";
             this.lblThenAndNowTitle.Size = new System.Drawing.Size(1664, 39);
             this.lblThenAndNowTitle.TabIndex = 10;
