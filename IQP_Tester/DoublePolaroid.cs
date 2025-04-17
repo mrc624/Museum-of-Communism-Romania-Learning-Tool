@@ -127,5 +127,10 @@ namespace IQP_Tester
             DoublePolaroid_Resize(this, new EventArgs());
             Translate_DoublePolaroid();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            DoublePolaroid_Click(sender, e);
+        }
     }
 }

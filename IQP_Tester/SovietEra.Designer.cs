@@ -28,29 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SovietEra));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutPostWW2 = new DoubleBufferedTableLayout();
+            this.tableLayoutPostWW2 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblPostWW2Q = new System.Windows.Forms.Label();
             this.lblPostWW2Ans = new System.Windows.Forms.Label();
-            this.tableLayoutPanelMarxism = new DoubleBufferedTableLayout();
+            this.tableLayoutPanelMarxism = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblMarxismQ = new System.Windows.Forms.Label();
             this.lblMarxismAns = new System.Windows.Forms.Label();
-            this.tableLayoutGheorghe = new DoubleBufferedTableLayout();
+            this.tableLayoutGheorghe = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblGheorgheQ = new System.Windows.Forms.Label();
             this.lblGheorgheAns = new System.Windows.Forms.Label();
             this.panelPostWW2 = new System.Windows.Forms.Panel();
-            this.tableLayoutPostWW2Container = new DoubleBufferedTableLayout();
+            this.tableLayoutPostWW2Container = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbPostWW2 = new System.Windows.Forms.PictureBox();
             this.panelMarxism = new System.Windows.Forms.Panel();
-            this.tableLayoutMarxismContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutMarxismContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbMarxism = new System.Windows.Forms.PictureBox();
             this.panelGheorghe = new System.Windows.Forms.Panel();
-            this.tableLayoutGheorgheContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutGheorgheContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbGheorghe = new System.Windows.Forms.PictureBox();
-            this.tableLayoutSovietEraMiddle = new DoubleBufferedTableLayout();
-            this.tableLayoutSovietEraMain = new DoubleBufferedTableLayout();
-            this.tableLayoutLanguageSovietEraBtnAlign = new DoubleBufferedTableLayout();
+            this.tableLayoutSovietEraMiddle = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSovietEraMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageSovietEraBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignSovietEra = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutPostWW2.SuspendLayout();
             this.tableLayoutPanelMarxism.SuspendLayout();
             this.tableLayoutGheorghe.SuspendLayout();
@@ -66,6 +69,7 @@
             this.tableLayoutSovietEraMiddle.SuspendLayout();
             this.tableLayoutSovietEraMain.SuspendLayout();
             this.tableLayoutLanguageSovietEraBtnAlign.SuspendLayout();
+            this.TableLayoutbtnBackAlignSovietEra.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -356,13 +360,15 @@
             this.tableLayoutSovietEraMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutSovietEraMain.ColumnCount = 1;
             this.tableLayoutSovietEraMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutSovietEraMain.Controls.Add(this.tableLayoutLanguageSovietEraBtnAlign, 0, 3);
-            this.tableLayoutSovietEraMain.Controls.Add(this.tableLayoutSovietEraMiddle, 0, 1);
+            this.tableLayoutSovietEraMain.Controls.Add(this.TableLayoutbtnBackAlignSovietEra, 0, 0);
+            this.tableLayoutSovietEraMain.Controls.Add(this.tableLayoutLanguageSovietEraBtnAlign, 0, 4);
+            this.tableLayoutSovietEraMain.Controls.Add(this.tableLayoutSovietEraMiddle, 0, 2);
             this.tableLayoutSovietEraMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutSovietEraMain.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutSovietEraMain.Name = "tableLayoutSovietEraMain";
-            this.tableLayoutSovietEraMain.RowCount = 4;
-            this.tableLayoutSovietEraMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.5F));
+            this.tableLayoutSovietEraMain.RowCount = 5;
+            this.tableLayoutSovietEraMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutSovietEraMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
             this.tableLayoutSovietEraMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutSovietEraMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
             this.tableLayoutSovietEraMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -387,6 +393,38 @@
             this.tableLayoutLanguageSovietEraBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.tableLayoutLanguageSovietEraBtnAlign.Size = new System.Drawing.Size(1898, 99);
             this.tableLayoutLanguageSovietEraBtnAlign.TabIndex = 33;
+            // 
+            // TableLayoutbtnBackAlignSovietEra
+            // 
+            this.TableLayoutbtnBackAlignSovietEra.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutbtnBackAlignSovietEra.ColumnCount = 3;
+            this.TableLayoutbtnBackAlignSovietEra.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.TableLayoutbtnBackAlignSovietEra.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.TableLayoutbtnBackAlignSovietEra.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignSovietEra.Controls.Add(this.btnBack, 1, 1);
+            this.TableLayoutbtnBackAlignSovietEra.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutbtnBackAlignSovietEra.Name = "TableLayoutbtnBackAlignSovietEra";
+            this.TableLayoutbtnBackAlignSovietEra.RowCount = 3;
+            this.TableLayoutbtnBackAlignSovietEra.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignSovietEra.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.TableLayoutbtnBackAlignSovietEra.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.TableLayoutbtnBackAlignSovietEra.Size = new System.Drawing.Size(1898, 98);
+            this.TableLayoutbtnBackAlignSovietEra.TabIndex = 34;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1787, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(93, 35);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // SovietEra
             // 
@@ -421,6 +459,7 @@
             this.tableLayoutSovietEraMiddle.ResumeLayout(false);
             this.tableLayoutSovietEraMain.ResumeLayout(false);
             this.tableLayoutLanguageSovietEraBtnAlign.ResumeLayout(false);
+            this.TableLayoutbtnBackAlignSovietEra.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -448,5 +487,7 @@
         private DoubleBufferedTableLayout tableLayoutSovietEraMiddle;
         private DoubleBufferedTableLayout tableLayoutSovietEraMain;
         private DoubleBufferedTableLayout tableLayoutLanguageSovietEraBtnAlign;
+        private DoubleBufferedTableLayout TableLayoutbtnBackAlignSovietEra;
+        private System.Windows.Forms.Button btnBack;
     }
 }

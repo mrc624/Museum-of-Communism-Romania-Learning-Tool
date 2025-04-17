@@ -69,5 +69,10 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             Oppression_Resize(this, new EventArgs());
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Oppression_Click(sender, e);
+        }
     }
 }

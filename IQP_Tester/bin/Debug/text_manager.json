@@ -180,7 +180,8 @@
     "lblMediaTNPolLong": "If communism came back, you wouldn\u0027t be free to watch your favorite shows or movies from around the world. The government controlled everything on TV, and there were only a few short programs at certain times. Radio, newspapers, and magazines all had to support the party\u0027s ideas, often showing pictures of Ceau\u0219escu and repeating government messages.",
     "tableLayoutMediaTNDPTitle": "Media U\u002B0026 Entertainment",
     "lblClassesTNPolLong": "If communism came back, you would have no individuality and no opportunity to choose interesting electives. In the past, every classroom had a picture of Ceau\u0219escu on the wall, and lessons were based on propaganda and what the party wanted children to learn in order to become communist citizens, which was not always in your best educational interest.",
-    "tableLayoutClassesTNDPTitle": "Classrooms"
+    "tableLayoutClassesTNDPTitle": "Classrooms",
+    "btnBack": "Back"
   },
   "Romanian": {
     "lblOppression": "Represiune",
@@ -363,6 +364,7 @@
     "lblMediaTNPolLong": "Dac\u0103 comunismul s-ar \u00EEntoarce, nu ai fi liber s\u0103 te ui\u021Bi la emisiunile sau filmele tale preferate din \u00EEntreaga lume. Guvernul a controlat totul la TV \u0219i au existat doar c\u00E2teva programe scurte \u00EEn anumite momente. Radioul, ziarele \u015Fi revistele au trebuit s\u0103 sus\u0163in\u0103 ideile partidului, prezent\u00E2nd adesea imagini cu Ceau\u015Fescu \u015Fi repet\u00E2nd mesaje de propagand\u0103.",
     "tableLayoutMediaTNDPTitle": "Divertismentul, televiziunea \u0219i radioul",
     "lblClassesTNPolLong": "Dac\u0103 comunismul s-ar \u00EEntoarce, clasa ta nu ar avea nici un fel de individualitate \u0219i nici oportunitatea de a putea opta pentru materii op\u021Bionale atractive. \u00CEn trecut, fiecare sal\u0103 de clas\u0103 avea tabloul cu Ceau\u015Fescu pe perete, iar lec\u0163iile se bazau pe ceea ce propaganda dorea ca copiii s\u0103 \u00EEnve\u0163e, ca s\u0103 devin\u0103 cet\u0103\u0163eni comuni\u015Fti, ceea ce nu era \u00EEntotdeauna \u00EEn interesul t\u0103u educa\u0163ional.",
-    "tableLayoutClassesTNDPTitle": "\u00CEn clas\u0103"
+    "tableLayoutClassesTNDPTitle": "\u00CEn clas\u0103",
+    "btnBack": "TRANSLATION NEEDED"
   }
 }

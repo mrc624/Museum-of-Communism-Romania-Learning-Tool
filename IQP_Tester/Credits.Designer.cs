@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Credits));
-            this.CreditsTableLayoutPanel = new DoubleBufferedTableLayout();
-            this.tableLayoutCreditsMain = new DoubleBufferedTableLayout();
+            this.CreditsTableLayoutPanel = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutCreditsMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignCredits = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutCreditsMain.SuspendLayout();
+            this.TableLayoutbtnBackAlignCredits.SuspendLayout();
             this.SuspendLayout();
             // 
             // CreditsTableLayoutPanel
@@ -58,17 +62,51 @@
             this.tableLayoutCreditsMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutCreditsMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutCreditsMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutCreditsMain.Controls.Add(this.CreditsTableLayoutPanel, 1, 1);
+            this.tableLayoutCreditsMain.Controls.Add(this.CreditsTableLayoutPanel, 1, 2);
+            this.tableLayoutCreditsMain.Controls.Add(this.TableLayoutbtnBackAlignCredits, 2, 0);
             this.tableLayoutCreditsMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutCreditsMain.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutCreditsMain.Name = "tableLayoutCreditsMain";
-            this.tableLayoutCreditsMain.RowCount = 3;
-            this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutCreditsMain.RowCount = 4;
+            this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutCreditsMain.Size = new System.Drawing.Size(1904, 1041);
             this.tableLayoutCreditsMain.TabIndex = 2;
             this.tableLayoutCreditsMain.Click += new System.EventHandler(this.tableLayoutCreditsMain_Click);
+            // 
+            // TableLayoutbtnBackAlignCredits
+            // 
+            this.TableLayoutbtnBackAlignCredits.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutbtnBackAlignCredits.ColumnCount = 3;
+            this.TableLayoutbtnBackAlignCredits.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76F));
+            this.TableLayoutbtnBackAlignCredits.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
+            this.TableLayoutbtnBackAlignCredits.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.TableLayoutbtnBackAlignCredits.Controls.Add(this.btnBack, 1, 1);
+            this.TableLayoutbtnBackAlignCredits.Location = new System.Drawing.Point(1431, 3);
+            this.TableLayoutbtnBackAlignCredits.Name = "TableLayoutbtnBackAlignCredits";
+            this.TableLayoutbtnBackAlignCredits.RowCount = 3;
+            this.TableLayoutbtnBackAlignCredits.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignCredits.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.TableLayoutbtnBackAlignCredits.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.TableLayoutbtnBackAlignCredits.Size = new System.Drawing.Size(470, 98);
+            this.TableLayoutbtnBackAlignCredits.TabIndex = 35;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(360, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(92, 35);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Credits
             // 
@@ -93,6 +131,7 @@
             this.Shown += new System.EventHandler(this.Credits_Shown);
             this.VisibleChanged += new System.EventHandler(this.Credits_VisibleChanged);
             this.tableLayoutCreditsMain.ResumeLayout(false);
+            this.TableLayoutbtnBackAlignCredits.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -101,5 +140,7 @@
 
         private DoubleBufferedTableLayout CreditsTableLayoutPanel;
         private DoubleBufferedTableLayout tableLayoutCreditsMain;
+        private DoubleBufferedTableLayout TableLayoutbtnBackAlignCredits;
+        private System.Windows.Forms.Button btnBack;
     }
 }

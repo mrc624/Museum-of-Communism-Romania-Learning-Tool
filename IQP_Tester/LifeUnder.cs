@@ -69,5 +69,10 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             LifeUnder_Resize(this, new EventArgs());
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            LifeUnder_Click(sender, e);
+        }
     }
 }

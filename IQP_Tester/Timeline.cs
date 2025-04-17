@@ -552,5 +552,10 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             Timeline_Resize(this, new EventArgs());
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Timeline_Click(sender, e);
+        }
     }
 }

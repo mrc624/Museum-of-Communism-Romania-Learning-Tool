@@ -28,83 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutStolenHorse = new DoubleBufferedTableLayout();
+            this.tableLayoutStolenHorse = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblStolenHorseQ = new System.Windows.Forms.Label();
             this.lblStolenHorseAns = new System.Windows.Forms.Label();
-            this.tableLayoutButterWhy = new DoubleBufferedTableLayout();
+            this.tableLayoutButterWhy = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblButterWhyQ = new System.Windows.Forms.Label();
             this.lblButterWhyAns = new System.Windows.Forms.Label();
-            this.tableLayoutTeacherBeating = new DoubleBufferedTableLayout();
+            this.tableLayoutTeacherBeating = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblTeacherBeatingQ = new System.Windows.Forms.Label();
             this.lblTeacherBeatingAns = new System.Windows.Forms.Label();
-            this.tableLayoutDestiny = new DoubleBufferedTableLayout();
+            this.tableLayoutDestiny = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblDestinyQ = new System.Windows.Forms.Label();
             this.lblDestinyAns = new System.Windows.Forms.Label();
-            this.tableLayoutSoftTomato = new DoubleBufferedTableLayout();
+            this.tableLayoutSoftTomato = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblSoftTomatoQ = new System.Windows.Forms.Label();
             this.lblSoftTomatoAns = new System.Windows.Forms.Label();
-            this.tableLayoutColdHands = new DoubleBufferedTableLayout();
+            this.tableLayoutColdHands = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblColdHandsQ = new System.Windows.Forms.Label();
             this.lblColdHandsAns = new System.Windows.Forms.Label();
-            this.tableLayoutSchoolPropaganda = new DoubleBufferedTableLayout();
+            this.tableLayoutSchoolPropaganda = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblSchoolPropagandaQ = new System.Windows.Forms.Label();
             this.lblSchoolPropagandaAns = new System.Windows.Forms.Label();
-            this.tableLayoutCeausescuMail = new DoubleBufferedTableLayout();
+            this.tableLayoutCeausescuMail = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblCeausescuMailQ = new System.Windows.Forms.Label();
             this.lblCeausescuMailAns = new System.Windows.Forms.Label();
-            this.tableLayoutJapaneseMachines = new DoubleBufferedTableLayout();
+            this.tableLayoutJapaneseMachines = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblJapaneseMachinesQ = new System.Windows.Forms.Label();
             this.lblJapaneseMachinesAns = new System.Windows.Forms.Label();
-            this.tableLayoutSwimmerKiller = new DoubleBufferedTableLayout();
+            this.tableLayoutSwimmerKiller = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblSwimmerKillerQ = new System.Windows.Forms.Label();
             this.lblSwimmerKillerAns = new System.Windows.Forms.Label();
-            this.tableLayoutStopEngineers = new DoubleBufferedTableLayout();
+            this.tableLayoutStopEngineers = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblStopEngineersQ = new System.Windows.Forms.Label();
             this.lblStopEngineersAns = new System.Windows.Forms.Label();
-            this.tableLayoutCutPhoneLines = new DoubleBufferedTableLayout();
+            this.tableLayoutCutPhoneLines = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblCutPhoneLinesQ = new System.Windows.Forms.Label();
             this.lblCutPhoneLinesAns = new System.Windows.Forms.Label();
             this.panelStolenHorse = new System.Windows.Forms.Panel();
-            this.tableLayoutStolenHorseContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutStolenHorseContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbStolenHorse = new System.Windows.Forms.PictureBox();
             this.panelTacherBeating = new System.Windows.Forms.Panel();
-            this.tableLayoutTeacherBeatingContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutTeacherBeatingContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbTeacherBeating = new System.Windows.Forms.PictureBox();
             this.panelSchoolPropaganda = new System.Windows.Forms.Panel();
-            this.tableLayoutSchoolPropagandaContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutSchoolPropagandaContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbSchoolPropaganda = new System.Windows.Forms.PictureBox();
             this.panelCeausescuMail = new System.Windows.Forms.Panel();
-            this.tableLayoutCeausescuMailContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutCeausescuMailContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbCeausescuMail = new System.Windows.Forms.PictureBox();
             this.panelColdHands = new System.Windows.Forms.Panel();
-            this.tableLayoutColdHandsContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutColdHandsContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbColdHands = new System.Windows.Forms.PictureBox();
             this.panelButterWhy = new System.Windows.Forms.Panel();
-            this.tableLayoutButterWhyContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutButterWhyContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbButterWhy = new System.Windows.Forms.PictureBox();
             this.panelSoftTomato = new System.Windows.Forms.Panel();
-            this.tableLayoutSoftTomatoContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutSoftTomatoContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbSoftTomato = new System.Windows.Forms.PictureBox();
             this.panelDestiny = new System.Windows.Forms.Panel();
-            this.tableLayoutDestinyContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutDestinyContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbDestiny = new System.Windows.Forms.PictureBox();
             this.panelJapaneseMachines = new System.Windows.Forms.Panel();
-            this.tableLayoutJapaneseMachinesContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutJapaneseMachinesContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbJapaneseMachines = new System.Windows.Forms.PictureBox();
             this.panelSwimmerKiller = new System.Windows.Forms.Panel();
-            this.tableLayoutSwimmerKillerContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutSwimmerKillerContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbSwimmerKiller = new System.Windows.Forms.PictureBox();
             this.panelCutPhoneLines = new System.Windows.Forms.Panel();
-            this.tableLayoutCutPhoneLinesContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutCutPhoneLinesContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbCutPhoneLines = new System.Windows.Forms.PictureBox();
             this.panelStopEngineers = new System.Windows.Forms.Panel();
-            this.tableLayoutStopEngineersContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutStopEngineersContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbStopEngineers = new System.Windows.Forms.PictureBox();
-            this.tableLayoutStoriesMain = new DoubleBufferedTableLayout();
-            this.tableLayoutLanguageStoriesBtnAlign = new DoubleBufferedTableLayout();
-            this.tableLayoutStoriesBottom = new DoubleBufferedTableLayout();
-            this.tableLayoutStoriesTop = new DoubleBufferedTableLayout();
+            this.tableLayoutStoriesMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageStoriesBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStoriesBottom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStoriesTop = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignStories = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutStolenHorse.SuspendLayout();
             this.tableLayoutButterWhy.SuspendLayout();
             this.tableLayoutTeacherBeating.SuspendLayout();
@@ -157,6 +160,7 @@
             this.tableLayoutLanguageStoriesBtnAlign.SuspendLayout();
             this.tableLayoutStoriesBottom.SuspendLayout();
             this.tableLayoutStoriesTop.SuspendLayout();
+            this.TableLayoutbtnBackAlignStories.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -1162,6 +1166,7 @@
             this.tableLayoutStoriesMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutStoriesMain.ColumnCount = 1;
             this.tableLayoutStoriesMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutStoriesMain.Controls.Add(this.TableLayoutbtnBackAlignStories, 0, 0);
             this.tableLayoutStoriesMain.Controls.Add(this.tableLayoutLanguageStoriesBtnAlign, 0, 4);
             this.tableLayoutStoriesMain.Controls.Add(this.tableLayoutStoriesBottom, 0, 3);
             this.tableLayoutStoriesMain.Controls.Add(this.tableLayoutStoriesTop, 0, 1);
@@ -1260,6 +1265,38 @@
             this.tableLayoutStoriesTop.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutStoriesTop.TabIndex = 33;
             // 
+            // TableLayoutbtnBackAlignStories
+            // 
+            this.TableLayoutbtnBackAlignStories.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutbtnBackAlignStories.ColumnCount = 3;
+            this.TableLayoutbtnBackAlignStories.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.TableLayoutbtnBackAlignStories.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.TableLayoutbtnBackAlignStories.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignStories.Controls.Add(this.btnBack, 1, 1);
+            this.TableLayoutbtnBackAlignStories.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutbtnBackAlignStories.Name = "TableLayoutbtnBackAlignStories";
+            this.TableLayoutbtnBackAlignStories.RowCount = 3;
+            this.TableLayoutbtnBackAlignStories.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignStories.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.TableLayoutbtnBackAlignStories.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.TableLayoutbtnBackAlignStories.Size = new System.Drawing.Size(1898, 98);
+            this.TableLayoutbtnBackAlignStories.TabIndex = 35;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1787, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(93, 35);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Stories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1338,6 +1375,7 @@
             this.tableLayoutLanguageStoriesBtnAlign.ResumeLayout(false);
             this.tableLayoutStoriesBottom.ResumeLayout(false);
             this.tableLayoutStoriesTop.ResumeLayout(false);
+            this.TableLayoutbtnBackAlignStories.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1421,5 +1459,7 @@
         private DoubleBufferedTableLayout tableLayoutStoriesTop;
         private DoubleBufferedTableLayout tableLayoutStoriesBottom;
         private DoubleBufferedTableLayout tableLayoutLanguageStoriesBtnAlign;
+        private DoubleBufferedTableLayout TableLayoutbtnBackAlignStories;
+        private System.Windows.Forms.Button btnBack;
     }
 }

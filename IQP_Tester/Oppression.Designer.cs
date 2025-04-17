@@ -28,78 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Oppression));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutSecuritate = new DoubleBufferedTableLayout();
+            this.tableLayoutSecuritate = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblSecuritateQ = new System.Windows.Forms.Label();
             this.lblSecuritateAns = new System.Windows.Forms.Label();
-            this.tableLayoutConsequences = new DoubleBufferedTableLayout();
+            this.tableLayoutConsequences = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblConsequencesQ = new System.Windows.Forms.Label();
             this.lblConsequencesAns = new System.Windows.Forms.Label();
-            this.tableLayoutPropoganda = new DoubleBufferedTableLayout();
+            this.tableLayoutPropoganda = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblPropogandaQ = new System.Windows.Forms.Label();
             this.lblPropogandaAns = new System.Windows.Forms.Label();
-            this.tableLayoutLanguage = new DoubleBufferedTableLayout();
+            this.tableLayoutLanguage = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblLanguageQ = new System.Windows.Forms.Label();
             this.lblLanguageAns = new System.Windows.Forms.Label();
-            this.tableLayoutPossesions = new DoubleBufferedTableLayout();
+            this.tableLayoutPossesions = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblPossesionsQ = new System.Windows.Forms.Label();
             this.lblPossesionsAns = new System.Windows.Forms.Label();
-            this.tableLayoutInfluence = new DoubleBufferedTableLayout();
+            this.tableLayoutInfluence = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblInfluenceQ = new System.Windows.Forms.Label();
             this.lblInfluenceAns = new System.Windows.Forms.Label();
-            this.tableLayoutExports = new DoubleBufferedTableLayout();
+            this.tableLayoutExports = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblExportsQ = new System.Windows.Forms.Label();
             this.lblExportsAns = new System.Windows.Forms.Label();
-            this.tableLayoutReligion = new DoubleBufferedTableLayout();
+            this.tableLayoutReligion = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblReligionQ = new System.Windows.Forms.Label();
             this.lblReligionAns = new System.Windows.Forms.Label();
-            this.tableLayoutFear = new DoubleBufferedTableLayout();
+            this.tableLayoutFear = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblFearQ = new System.Windows.Forms.Label();
             this.lblFearAns = new System.Windows.Forms.Label();
-            this.tableLayoutPalace = new DoubleBufferedTableLayout();
+            this.tableLayoutPalace = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblPalaceQ = new System.Windows.Forms.Label();
             this.lblPalaceAns = new System.Windows.Forms.Label();
-            this.tableLayoutPanelDeportation = new DoubleBufferedTableLayout();
+            this.tableLayoutPanelDeportation = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblDeportationQ = new System.Windows.Forms.Label();
             this.lblDeportationAns = new System.Windows.Forms.Label();
-            this.tableLayoutSecuritateContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutSecuritateContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbSecuritate = new System.Windows.Forms.PictureBox();
             this.panelSecuritate = new System.Windows.Forms.Panel();
             this.panelConsequences = new System.Windows.Forms.Panel();
-            this.tableLayoutConsequencesContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutConsequencesContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbConsequences = new System.Windows.Forms.PictureBox();
             this.panelPropoganda = new System.Windows.Forms.Panel();
-            this.tableLayoutPropagandaContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutPropagandaContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbPropoganda = new System.Windows.Forms.PictureBox();
             this.panelLanguage = new System.Windows.Forms.Panel();
-            this.tableLayoutLanguageContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutLanguageContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbLanguage = new System.Windows.Forms.PictureBox();
             this.panelPossesions = new System.Windows.Forms.Panel();
-            this.tableLayoutPossesionsContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutPossesionsContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbPossesions = new System.Windows.Forms.PictureBox();
             this.panelInfluence = new System.Windows.Forms.Panel();
-            this.tableLayoutInfluenceContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutInfluenceContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbInfluence = new System.Windows.Forms.PictureBox();
             this.panelExports = new System.Windows.Forms.Panel();
-            this.tableLayoutExportsContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutExportsContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbExports = new System.Windows.Forms.PictureBox();
             this.panelReligion = new System.Windows.Forms.Panel();
-            this.tableLayoutReligionContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutReligionContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbReligion = new System.Windows.Forms.PictureBox();
             this.panelFear = new System.Windows.Forms.Panel();
-            this.tableLayoutFearContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutFearContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbFear = new System.Windows.Forms.PictureBox();
             this.panelPalace = new System.Windows.Forms.Panel();
-            this.tableLayoutPalaceContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutPalaceContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbPalace = new System.Windows.Forms.PictureBox();
             this.panelDeportation = new System.Windows.Forms.Panel();
-            this.tableLayoutDeportationContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutDeportationContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbDeportation = new System.Windows.Forms.PictureBox();
-            this.tableLayoutOppressionTop = new DoubleBufferedTableLayout();
-            this.tableLayoutOppressionBottom = new DoubleBufferedTableLayout();
-            this.tableLayoutOppressionMain = new DoubleBufferedTableLayout();
-            this.tableLayoutLanguageOppressionBtnAlign = new DoubleBufferedTableLayout();
+            this.tableLayoutOppressionTop = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutOppressionBottom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutOppressionMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageOppressionBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutSecuritate.SuspendLayout();
             this.tableLayoutConsequences.SuspendLayout();
             this.tableLayoutPropoganda.SuspendLayout();
@@ -148,6 +151,7 @@
             this.tableLayoutOppressionBottom.SuspendLayout();
             this.tableLayoutOppressionMain.SuspendLayout();
             this.tableLayoutLanguageOppressionBtnAlign.SuspendLayout();
+            this.TableLayoutbtnBackAlign.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -1130,6 +1134,7 @@
             this.tableLayoutOppressionMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutOppressionMain.ColumnCount = 1;
             this.tableLayoutOppressionMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutOppressionMain.Controls.Add(this.TableLayoutbtnBackAlign, 0, 0);
             this.tableLayoutOppressionMain.Controls.Add(this.tableLayoutOppressionBottom, 0, 3);
             this.tableLayoutOppressionMain.Controls.Add(this.tableLayoutOppressionTop, 0, 1);
             this.tableLayoutOppressionMain.Controls.Add(this.tableLayoutLanguageOppressionBtnAlign, 0, 4);
@@ -1163,6 +1168,38 @@
             this.tableLayoutLanguageOppressionBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.tableLayoutLanguageOppressionBtnAlign.Size = new System.Drawing.Size(1898, 99);
             this.tableLayoutLanguageOppressionBtnAlign.TabIndex = 32;
+            // 
+            // TableLayoutbtnBackAlign
+            // 
+            this.TableLayoutbtnBackAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutbtnBackAlign.ColumnCount = 3;
+            this.TableLayoutbtnBackAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.TableLayoutbtnBackAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.TableLayoutbtnBackAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlign.Controls.Add(this.btnBack, 1, 1);
+            this.TableLayoutbtnBackAlign.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutbtnBackAlign.Name = "TableLayoutbtnBackAlign";
+            this.TableLayoutbtnBackAlign.RowCount = 3;
+            this.TableLayoutbtnBackAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.TableLayoutbtnBackAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.TableLayoutbtnBackAlign.Size = new System.Drawing.Size(1898, 98);
+            this.TableLayoutbtnBackAlign.TabIndex = 33;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1787, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(93, 35);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Oppression
             // 
@@ -1237,6 +1274,7 @@
             this.tableLayoutOppressionBottom.ResumeLayout(false);
             this.tableLayoutOppressionMain.ResumeLayout(false);
             this.tableLayoutLanguageOppressionBtnAlign.ResumeLayout(false);
+            this.TableLayoutbtnBackAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1314,5 +1352,7 @@
         private DoubleBufferedTableLayout tableLayoutOppressionBottom;
         private DoubleBufferedTableLayout tableLayoutOppressionMain;
         private DoubleBufferedTableLayout tableLayoutLanguageOppressionBtnAlign;
+        private DoubleBufferedTableLayout TableLayoutbtnBackAlign;
+        private System.Windows.Forms.Button btnBack;
     }
 }

@@ -28,56 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutFoodPbTN = new DoubleBufferedTableLayout();
+            this.tableLayoutFoodPbTN = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbFoodNow = new System.Windows.Forms.PictureBox();
             this.pbFoodThen = new System.Windows.Forms.PictureBox();
             this.lblFoodTN = new System.Windows.Forms.Label();
-            this.tableLayoutFoodTNDP = new DoubleBufferedTableLayout();
-            this.tableLayoutTN = new DoubleBufferedTableLayout();
-            this.tableLayoutUniformTNDP = new DoubleBufferedTableLayout();
+            this.tableLayoutFoodTNDP = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutTN = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutUniformTNDP = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblUniformTN = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new DoubleBufferedTableLayout();
+            this.tableLayoutPanel2 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbUniformNow = new System.Windows.Forms.PictureBox();
             this.pbUniformThen = new System.Windows.Forms.PictureBox();
-            this.tableLayoutNecessitiesTNDP = new DoubleBufferedTableLayout();
+            this.tableLayoutNecessitiesTNDP = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblNecessitiesTN = new System.Windows.Forms.Label();
-            this.tableLayoutPanel11 = new DoubleBufferedTableLayout();
+            this.tableLayoutPanel11 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbNecessitiesNow = new System.Windows.Forms.PictureBox();
             this.pbNecessitiesThen = new System.Windows.Forms.PictureBox();
-            this.tableLayoutNeighborhoodTNDP = new DoubleBufferedTableLayout();
+            this.tableLayoutNeighborhoodTNDP = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblNeighborhoodTN = new System.Windows.Forms.Label();
-            this.tableLayoutPanel7 = new DoubleBufferedTableLayout();
+            this.tableLayoutPanel7 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbNeighborhoodNow = new System.Windows.Forms.PictureBox();
             this.pbNeighborhoodThen = new System.Windows.Forms.PictureBox();
-            this.tableLayoutHandwritingTNDP = new DoubleBufferedTableLayout();
+            this.tableLayoutHandwritingTNDP = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblHandwritingTN = new System.Windows.Forms.Label();
-            this.tableLayoutPanel9 = new DoubleBufferedTableLayout();
+            this.tableLayoutPanel9 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbHandwritingNow = new System.Windows.Forms.PictureBox();
             this.pbHandwritingThen = new System.Windows.Forms.PictureBox();
-            this.tableLayoutFreetimeTNDP = new DoubleBufferedTableLayout();
+            this.tableLayoutFreetimeTNDP = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblFreetimeTN = new System.Windows.Forms.Label();
-            this.tableLayoutPanel5 = new DoubleBufferedTableLayout();
+            this.tableLayoutPanel5 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbFreetimeNow = new System.Windows.Forms.PictureBox();
             this.pbFreetimeThen = new System.Windows.Forms.PictureBox();
-            this.tableLayoutCarsTNDP = new DoubleBufferedTableLayout();
+            this.tableLayoutCarsTNDP = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblCarsTN = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new DoubleBufferedTableLayout();
+            this.tableLayoutPanel3 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbCarsNow = new System.Windows.Forms.PictureBox();
             this.pbCarsThen = new System.Windows.Forms.PictureBox();
-            this.tableLayoutMediaTNDP = new DoubleBufferedTableLayout();
+            this.tableLayoutMediaTNDP = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblMediaTN = new System.Windows.Forms.Label();
-            this.tableLayoutPanel13 = new DoubleBufferedTableLayout();
+            this.tableLayoutPanel13 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbMediaNow = new System.Windows.Forms.PictureBox();
             this.pbMediaThen = new System.Windows.Forms.PictureBox();
-            this.tableLayoutClassesTNDP = new DoubleBufferedTableLayout();
+            this.tableLayoutClassesTNDP = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblClassesTN = new System.Windows.Forms.Label();
-            this.tableLayoutPanel15 = new DoubleBufferedTableLayout();
+            this.tableLayoutPanel15 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbClassesNow = new System.Windows.Forms.PictureBox();
             this.pbClassesThen = new System.Windows.Forms.PictureBox();
-            this.tableLayoutTNMain = new DoubleBufferedTableLayout();
+            this.tableLayoutTNMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignThenAndNow = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.lblThenAndNowTitle = new System.Windows.Forms.Label();
-            this.tableLayoutLanguageThenAndNowBtnAlign = new DoubleBufferedTableLayout();
+            this.tableLayoutLanguageThenAndNowBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.tableLayoutFoodPbTN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoodNow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoodThen)).BeginInit();
@@ -116,6 +119,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbClassesNow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClassesThen)).BeginInit();
             this.tableLayoutTNMain.SuspendLayout();
+            this.TableLayoutbtnBackAlignThenAndNow.SuspendLayout();
             this.tableLayoutLanguageThenAndNowBtnAlign.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -850,19 +854,53 @@
             this.tableLayoutTNMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutTNMain.ColumnCount = 1;
             this.tableLayoutTNMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutTNMain.Controls.Add(this.tableLayoutTN, 0, 2);
-            this.tableLayoutTNMain.Controls.Add(this.lblThenAndNowTitle, 0, 1);
-            this.tableLayoutTNMain.Controls.Add(this.tableLayoutLanguageThenAndNowBtnAlign, 0, 3);
+            this.tableLayoutTNMain.Controls.Add(this.TableLayoutbtnBackAlignThenAndNow, 0, 0);
+            this.tableLayoutTNMain.Controls.Add(this.tableLayoutTN, 0, 1);
+            this.tableLayoutTNMain.Controls.Add(this.tableLayoutLanguageThenAndNowBtnAlign, 0, 2);
             this.tableLayoutTNMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutTNMain.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutTNMain.Name = "tableLayoutTNMain";
-            this.tableLayoutTNMain.RowCount = 4;
-            this.tableLayoutTNMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
-            this.tableLayoutTNMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutTNMain.RowCount = 3;
+            this.tableLayoutTNMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.5F));
             this.tableLayoutTNMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.5F));
             this.tableLayoutTNMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutTNMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutTNMain.Size = new System.Drawing.Size(1904, 1041);
             this.tableLayoutTNMain.TabIndex = 10;
+            // 
+            // TableLayoutbtnBackAlignThenAndNow
+            // 
+            this.TableLayoutbtnBackAlignThenAndNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutbtnBackAlignThenAndNow.ColumnCount = 4;
+            this.TableLayoutbtnBackAlignThenAndNow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.TableLayoutbtnBackAlignThenAndNow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 88F));
+            this.TableLayoutbtnBackAlignThenAndNow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.TableLayoutbtnBackAlignThenAndNow.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignThenAndNow.Controls.Add(this.btnBack, 2, 1);
+            this.TableLayoutbtnBackAlignThenAndNow.Controls.Add(this.lblThenAndNowTitle, 1, 1);
+            this.TableLayoutbtnBackAlignThenAndNow.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutbtnBackAlignThenAndNow.Name = "TableLayoutbtnBackAlignThenAndNow";
+            this.TableLayoutbtnBackAlignThenAndNow.RowCount = 3;
+            this.TableLayoutbtnBackAlignThenAndNow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.33F));
+            this.TableLayoutbtnBackAlignThenAndNow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.33F));
+            this.TableLayoutbtnBackAlignThenAndNow.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.34F));
+            this.TableLayoutbtnBackAlignThenAndNow.Size = new System.Drawing.Size(1898, 72);
+            this.TableLayoutbtnBackAlignThenAndNow.TabIndex = 33;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1786, 9);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(93, 34);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // lblThenAndNowTitle
             // 
@@ -871,9 +909,9 @@
             this.lblThenAndNowTitle.AutoSize = true;
             this.lblThenAndNowTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThenAndNowTitle.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblThenAndNowTitle.Location = new System.Drawing.Point(3, 26);
+            this.lblThenAndNowTitle.Location = new System.Drawing.Point(116, 6);
             this.lblThenAndNowTitle.Name = "lblThenAndNowTitle";
-            this.lblThenAndNowTitle.Size = new System.Drawing.Size(1898, 39);
+            this.lblThenAndNowTitle.Size = new System.Drawing.Size(1664, 39);
             this.lblThenAndNowTitle.TabIndex = 10;
             this.lblThenAndNowTitle.Text = "Unknown";
             this.lblThenAndNowTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -958,7 +996,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbClassesNow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClassesThen)).EndInit();
             this.tableLayoutTNMain.ResumeLayout(false);
-            this.tableLayoutTNMain.PerformLayout();
+            this.TableLayoutbtnBackAlignThenAndNow.ResumeLayout(false);
+            this.TableLayoutbtnBackAlignThenAndNow.PerformLayout();
             this.tableLayoutLanguageThenAndNowBtnAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1016,5 +1055,7 @@
         private System.Windows.Forms.PictureBox pbUniformThen;
         private System.Windows.Forms.Label lblThenAndNowTitle;
         private DoubleBufferedTableLayout tableLayoutLanguageThenAndNowBtnAlign;
+        private DoubleBufferedTableLayout TableLayoutbtnBackAlignThenAndNow;
+        private System.Windows.Forms.Button btnBack;
     }
 }

@@ -121,5 +121,10 @@ namespace IQP_Tester
             btnLanguage.Text = textManager.Get_Text(btnLanguage, textManager.Get_Translated_Dictionary());
             Handle_Long_Ans();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Polaroid_Zoom_Click(sender, e);
+        }
     }
 }

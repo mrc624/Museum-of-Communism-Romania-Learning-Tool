@@ -28,29 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegimeFall));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutWhatWasRevolution = new DoubleBufferedTableLayout();
+            this.tableLayoutWhatWasRevolution = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblWhatWasRevolutionQ = new System.Windows.Forms.Label();
             this.lblWhatWasRevolutionAns = new System.Windows.Forms.Label();
-            this.tableLayoutPanelWhyRevolt = new DoubleBufferedTableLayout();
+            this.tableLayoutPanelWhyRevolt = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblWhyRevoltQ = new System.Windows.Forms.Label();
             this.lblWhyRevoltAns = new System.Windows.Forms.Label();
-            this.tableLayoutWhereCeausescu = new DoubleBufferedTableLayout();
+            this.tableLayoutWhereCeausescu = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblWhereCeausescuQ = new System.Windows.Forms.Label();
             this.lblWhereCeausescuAns = new System.Windows.Forms.Label();
             this.panelWhatWasRevolution = new System.Windows.Forms.Panel();
-            this.tableLayoutWhatWasRevolutionContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutWhatWasRevolutionContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbWhatWasRevolution = new System.Windows.Forms.PictureBox();
             this.panelWhyRevolt = new System.Windows.Forms.Panel();
-            this.tableLayoutWhyRevoltContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutWhyRevoltContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbWhyRevolt = new System.Windows.Forms.PictureBox();
             this.panelWhereCeausescu = new System.Windows.Forms.Panel();
-            this.tableLayoutWhereCeausescuContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutWhereCeausescuContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbWhereCeausescu = new System.Windows.Forms.PictureBox();
-            this.tableLayoutRegimeFallMain = new DoubleBufferedTableLayout();
-            this.tableLayoutLanguageRegimeFallBtnAlign = new DoubleBufferedTableLayout();
-            this.tableLayoutRegimeFallMiddle = new DoubleBufferedTableLayout();
+            this.tableLayoutRegimeFallMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageRegimeFallBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutRegimeFallMiddle = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignRegimeFall = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutWhatWasRevolution.SuspendLayout();
             this.tableLayoutPanelWhyRevolt.SuspendLayout();
             this.tableLayoutWhereCeausescu.SuspendLayout();
@@ -66,6 +69,7 @@
             this.tableLayoutRegimeFallMain.SuspendLayout();
             this.tableLayoutLanguageRegimeFallBtnAlign.SuspendLayout();
             this.tableLayoutRegimeFallMiddle.SuspendLayout();
+            this.TableLayoutbtnBackAlignRegimeFall.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -333,13 +337,15 @@
             this.tableLayoutRegimeFallMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutRegimeFallMain.ColumnCount = 1;
             this.tableLayoutRegimeFallMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutRegimeFallMain.Controls.Add(this.tableLayoutLanguageRegimeFallBtnAlign, 0, 3);
-            this.tableLayoutRegimeFallMain.Controls.Add(this.tableLayoutRegimeFallMiddle, 0, 1);
+            this.tableLayoutRegimeFallMain.Controls.Add(this.TableLayoutbtnBackAlignRegimeFall, 0, 0);
+            this.tableLayoutRegimeFallMain.Controls.Add(this.tableLayoutLanguageRegimeFallBtnAlign, 0, 4);
+            this.tableLayoutRegimeFallMain.Controls.Add(this.tableLayoutRegimeFallMiddle, 0, 2);
             this.tableLayoutRegimeFallMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutRegimeFallMain.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutRegimeFallMain.Name = "tableLayoutRegimeFallMain";
-            this.tableLayoutRegimeFallMain.RowCount = 4;
-            this.tableLayoutRegimeFallMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.5F));
+            this.tableLayoutRegimeFallMain.RowCount = 5;
+            this.tableLayoutRegimeFallMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutRegimeFallMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
             this.tableLayoutRegimeFallMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutRegimeFallMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
             this.tableLayoutRegimeFallMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -388,6 +394,38 @@
             this.tableLayoutRegimeFallMiddle.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutRegimeFallMiddle.TabIndex = 30;
             // 
+            // TableLayoutbtnBackAlignRegimeFall
+            // 
+            this.TableLayoutbtnBackAlignRegimeFall.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutbtnBackAlignRegimeFall.ColumnCount = 3;
+            this.TableLayoutbtnBackAlignRegimeFall.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.TableLayoutbtnBackAlignRegimeFall.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.TableLayoutbtnBackAlignRegimeFall.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignRegimeFall.Controls.Add(this.btnBack, 1, 1);
+            this.TableLayoutbtnBackAlignRegimeFall.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutbtnBackAlignRegimeFall.Name = "TableLayoutbtnBackAlignRegimeFall";
+            this.TableLayoutbtnBackAlignRegimeFall.RowCount = 3;
+            this.TableLayoutbtnBackAlignRegimeFall.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignRegimeFall.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.TableLayoutbtnBackAlignRegimeFall.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.TableLayoutbtnBackAlignRegimeFall.Size = new System.Drawing.Size(1898, 98);
+            this.TableLayoutbtnBackAlignRegimeFall.TabIndex = 34;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1787, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(93, 35);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // RegimeFall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -421,6 +459,7 @@
             this.tableLayoutRegimeFallMain.ResumeLayout(false);
             this.tableLayoutLanguageRegimeFallBtnAlign.ResumeLayout(false);
             this.tableLayoutRegimeFallMiddle.ResumeLayout(false);
+            this.TableLayoutbtnBackAlignRegimeFall.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -448,5 +487,7 @@
         private DoubleBufferedTableLayout tableLayoutRegimeFallMain;
         private DoubleBufferedTableLayout tableLayoutLanguageRegimeFallBtnAlign;
         private DoubleBufferedTableLayout tableLayoutRegimeFallMiddle;
+        private DoubleBufferedTableLayout TableLayoutbtnBackAlignRegimeFall;
+        private System.Windows.Forms.Button btnBack;
     }
 }

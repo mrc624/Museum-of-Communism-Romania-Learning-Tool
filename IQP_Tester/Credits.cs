@@ -134,5 +134,10 @@ namespace IQP_Tester
         {
             openClose.Close(this);
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            tableLayoutCreditsMain_Click(sender, e);
+        }
     }
 }

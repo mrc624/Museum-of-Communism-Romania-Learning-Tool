@@ -28,52 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Timeline));
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblHowDidTheRegimeFall = new System.Windows.Forms.Label();
             this.panelRegimeFall = new System.Windows.Forms.Panel();
-            this.tableLayoutRegimeFall = new DoubleBufferedTableLayout();
+            this.tableLayoutRegimeFall = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbRegimeFall = new System.Windows.Forms.PictureBox();
-            this.tableLayoutAna = new DoubleBufferedTableLayout();
+            this.tableLayoutAna = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblAnaQ = new System.Windows.Forms.Label();
             this.lblAnaAns = new System.Windows.Forms.Label();
             this.pbAna = new System.Windows.Forms.PictureBox();
-            this.tableLayoutWarsaw = new DoubleBufferedTableLayout();
+            this.tableLayoutWarsaw = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblWarsawQ = new System.Windows.Forms.Label();
             this.lblWarsawAns = new System.Windows.Forms.Label();
             this.pbWarsaw = new System.Windows.Forms.PictureBox();
-            this.tableLayoutJuly = new DoubleBufferedTableLayout();
+            this.tableLayoutJuly = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblJulyQ = new System.Windows.Forms.Label();
             this.lblJulyAns = new System.Windows.Forms.Label();
             this.pbJuly = new System.Windows.Forms.PictureBox();
-            this.tableLayoutHousePeople = new DoubleBufferedTableLayout();
+            this.tableLayoutHousePeople = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblHousePeopleQ = new System.Windows.Forms.Label();
             this.lblHousePeopleAns = new System.Windows.Forms.Label();
             this.pbHousePeople = new System.Windows.Forms.PictureBox();
             this.pbSoviet = new System.Windows.Forms.PictureBox();
             this.lblSoviet = new System.Windows.Forms.Label();
             this.panelCeausescusRise = new System.Windows.Forms.Panel();
-            this.tableLayoutCeausescusRise = new DoubleBufferedTableLayout();
+            this.tableLayoutCeausescusRise = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbCeausescusRise = new System.Windows.Forms.PictureBox();
             this.lblCeausescusRise = new System.Windows.Forms.Label();
             this.pbTimeLine = new System.Windows.Forms.PictureBox();
             this.panelAna = new System.Windows.Forms.Panel();
-            this.tableLayoutAnaContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutAnaContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.panelJuly = new System.Windows.Forms.Panel();
-            this.tableLayoutJulyContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutJulyContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.panelHousePeople = new System.Windows.Forms.Panel();
-            this.tableLayoutHousePeopleContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutHousePeopleContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.panelWarsaw = new System.Windows.Forms.Panel();
-            this.tableLayoutWarsawContainer = new DoubleBufferedTableLayout();
-            this.tableLayoutSoviet = new DoubleBufferedTableLayout();
+            this.tableLayoutWarsawContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSoviet = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.panelSoviet = new System.Windows.Forms.Panel();
-            this.tableLayoutTimelineMain = new DoubleBufferedTableLayout();
-            this.tableLayoutLanguageTimelineBtnAlign = new DoubleBufferedTableLayout();
-            this.tableLayoutTimelineBottom = new DoubleBufferedTableLayout();
-            this.tableLayoutEraSovietContainer = new DoubleBufferedTableLayout();
-            this.tableLayoutTimelineTop = new DoubleBufferedTableLayout();
-            this.tableLayoutRegimeFallContainer = new DoubleBufferedTableLayout();
-            this.tableLayoutCeausescusRiseContainer = new DoubleBufferedTableLayout();
+            this.tableLayoutTimelineMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageTimelineBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutTimelineBottom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutEraSovietContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutTimelineTop = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutRegimeFallContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutCeausescusRiseContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignTimeline = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.panelRegimeFall.SuspendLayout();
             this.tableLayoutRegimeFall.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRegimeFall)).BeginInit();
@@ -107,6 +110,7 @@
             this.tableLayoutTimelineTop.SuspendLayout();
             this.tableLayoutRegimeFallContainer.SuspendLayout();
             this.tableLayoutCeausescusRiseContainer.SuspendLayout();
+            this.TableLayoutbtnBackAlignTimeline.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLanguage
@@ -640,6 +644,7 @@
             this.tableLayoutTimelineMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutTimelineMain.ColumnCount = 1;
             this.tableLayoutTimelineMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutTimelineMain.Controls.Add(this.TableLayoutbtnBackAlignTimeline, 0, 0);
             this.tableLayoutTimelineMain.Controls.Add(this.tableLayoutLanguageTimelineBtnAlign, 0, 6);
             this.tableLayoutTimelineMain.Controls.Add(this.tableLayoutTimelineBottom, 0, 5);
             this.tableLayoutTimelineMain.Controls.Add(this.tableLayoutTimelineTop, 0, 1);
@@ -771,6 +776,38 @@
             this.tableLayoutCeausescusRiseContainer.Size = new System.Drawing.Size(241, 352);
             this.tableLayoutCeausescusRiseContainer.TabIndex = 35;
             // 
+            // TableLayoutbtnBackAlignTimeline
+            // 
+            this.TableLayoutbtnBackAlignTimeline.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutbtnBackAlignTimeline.ColumnCount = 3;
+            this.TableLayoutbtnBackAlignTimeline.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.TableLayoutbtnBackAlignTimeline.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.TableLayoutbtnBackAlignTimeline.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignTimeline.Controls.Add(this.btnBack, 1, 1);
+            this.TableLayoutbtnBackAlignTimeline.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutbtnBackAlignTimeline.Name = "TableLayoutbtnBackAlignTimeline";
+            this.TableLayoutbtnBackAlignTimeline.RowCount = 3;
+            this.TableLayoutbtnBackAlignTimeline.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignTimeline.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.TableLayoutbtnBackAlignTimeline.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.TableLayoutbtnBackAlignTimeline.Size = new System.Drawing.Size(1898, 98);
+            this.TableLayoutbtnBackAlignTimeline.TabIndex = 35;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1787, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(93, 35);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // Timeline
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -825,6 +862,7 @@
             this.tableLayoutTimelineTop.ResumeLayout(false);
             this.tableLayoutRegimeFallContainer.ResumeLayout(false);
             this.tableLayoutCeausescusRiseContainer.ResumeLayout(false);
+            this.TableLayoutbtnBackAlignTimeline.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -876,5 +914,7 @@
         private DoubleBufferedTableLayout tableLayoutCeausescusRiseContainer;
         private DoubleBufferedTableLayout tableLayoutRegimeFallContainer;
         private DoubleBufferedTableLayout tableLayoutEraSovietContainer;
+        private DoubleBufferedTableLayout TableLayoutbtnBackAlignTimeline;
+        private System.Windows.Forms.Button btnBack;
     }
 }

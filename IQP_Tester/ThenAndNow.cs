@@ -75,5 +75,10 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             ThenAndNow_Resize(this, new EventArgs());
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            ThenAndNow_Click(sender, e);
+        }
     }
 }

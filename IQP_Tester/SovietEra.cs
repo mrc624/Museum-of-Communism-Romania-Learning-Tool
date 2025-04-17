@@ -71,5 +71,10 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             Soviet_Era_Resize(this, new EventArgs());
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Soviet_Era_Click(sender, e);
+        }
     }
 }
