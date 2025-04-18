@@ -45,13 +45,13 @@
             this.CreditsTableLayoutPanel.ColumnCount = 1;
             this.CreditsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.CreditsTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CreditsTableLayoutPanel.Location = new System.Drawing.Point(477, 261);
+            this.CreditsTableLayoutPanel.Location = new System.Drawing.Point(473, 124);
             this.CreditsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(1);
             this.CreditsTableLayoutPanel.Name = "CreditsTableLayoutPanel";
             this.CreditsTableLayoutPanel.RowCount = 1;
             this.CreditsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.14973F));
             this.CreditsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.85027F));
-            this.CreditsTableLayoutPanel.Size = new System.Drawing.Size(950, 518);
+            this.CreditsTableLayoutPanel.Size = new System.Drawing.Size(942, 742);
             this.CreditsTableLayoutPanel.TabIndex = 0;
             this.CreditsTableLayoutPanel.VisibleChanged += new System.EventHandler(this.CreditsTableLayoutPanel_VisibleChanged);
             // 
@@ -69,10 +69,10 @@
             this.tableLayoutCreditsMain.Name = "tableLayoutCreditsMain";
             this.tableLayoutCreditsMain.RowCount = 4;
             this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutCreditsMain.Size = new System.Drawing.Size(1904, 1041);
+            this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
+            this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
+            this.tableLayoutCreditsMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutCreditsMain.Size = new System.Drawing.Size(1888, 992);
             this.tableLayoutCreditsMain.TabIndex = 2;
             this.tableLayoutCreditsMain.Click += new System.EventHandler(this.tableLayoutCreditsMain_Click);
             // 
@@ -86,13 +86,13 @@
             this.TableLayoutbtnBackAlignCredits.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
             this.TableLayoutbtnBackAlignCredits.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
             this.TableLayoutbtnBackAlignCredits.Controls.Add(this.btnBack, 1, 1);
-            this.TableLayoutbtnBackAlignCredits.Location = new System.Drawing.Point(1431, 3);
+            this.TableLayoutbtnBackAlignCredits.Location = new System.Drawing.Point(1419, 3);
             this.TableLayoutbtnBackAlignCredits.Name = "TableLayoutbtnBackAlignCredits";
             this.TableLayoutbtnBackAlignCredits.RowCount = 3;
             this.TableLayoutbtnBackAlignCredits.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.TableLayoutbtnBackAlignCredits.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
             this.TableLayoutbtnBackAlignCredits.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
-            this.TableLayoutbtnBackAlignCredits.Size = new System.Drawing.Size(470, 98);
+            this.TableLayoutbtnBackAlignCredits.Size = new System.Drawing.Size(466, 93);
             this.TableLayoutbtnBackAlignCredits.TabIndex = 35;
             // 
             // btnBack
@@ -100,9 +100,9 @@
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(360, 3);
+            this.btnBack.Location = new System.Drawing.Point(357, 3);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(92, 35);
+            this.btnBack.Size = new System.Drawing.Size(91, 33);
             this.btnBack.TabIndex = 8;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -115,7 +115,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::IQP_Tester.Properties.Resources.WallpaperBackgroundMain1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1888, 992);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutCreditsMain);
             this.DoubleBuffered = true;
