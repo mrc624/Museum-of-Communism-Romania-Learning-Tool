@@ -20,6 +20,7 @@ namespace IQP_Tester
     {
         Resize_Helper resize;
         Open_Close_Helper openClose;
+        TextManager textManager;
         CSV csv;
 
         public const string FEEDBACK_FILE_NAME = "feedback.csv";
@@ -37,11 +38,14 @@ namespace IQP_Tester
         public const string ANS_YES = "Yes";
         public const int NO_ANSWER_COMBO_BOX_INDEX = 0;
 
-        public Feedback(Open_Close_Helper openClose, Resize_Helper resize)
+        public Feedback(TextManager textManager, Open_Close_Helper openClose, Resize_Helper resize)
         {
             InitializeComponent();
             this.openClose = openClose;
             this.resize = resize;
+            this.textManager = textManager;
+            textManager.Update_One_Form(this);
+            resize.CaptureAspectRatios(this);
             csv = new CSV(FEEDBACK_FILE_NAME);
             if(!csv.Update())
             { // set header
@@ -163,11 +167,13 @@ namespace IQP_Tester
         private void Feedback_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
+            textManager.Update_One_Form(this);
         }
 
         private void Feedback_VisibleChanged(object sender, EventArgs e)
         {
             btnBack.Visible = Settings.btn_back_state;
+            textManager.Update_One_Form(this);
         }
 
         private void Feedback_Click(object sender, EventArgs e)
@@ -206,6 +212,25 @@ namespace IQP_Tester
                 csv.Generate();
                 btnFeedbackClear_Click(sender, e);
             }
+        }
+
+        private void btnLanguage_Click(object sender, EventArgs e)
+        {
+            openClose.Interaction();
+            textManager.Increment_Language(this);
+        }
+
+        private void Feedback_Resize(object sender, EventArgs e)
+        {
+            if (resize != null)
+            {
+                resize.Resize_Fonts(this);
+            }
+        }
+
+        private void btnLanguage_TextChanged(object sender, EventArgs e)
+        {
+            Feedback_Resize(sender, e);
         }
     }
 }

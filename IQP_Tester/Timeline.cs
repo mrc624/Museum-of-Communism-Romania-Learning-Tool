@@ -67,7 +67,6 @@ namespace IQP_Tester
             Make_Assign_Lines(this);
             openClose = open_close;
             textManager = textMan;
-            Capture_Original_Size_Location(this);
             textManager.Update_One_Form(this);
             resize.CaptureAspectRatios(this);
             polaroid_Helper.Find_Polaroids(this);
@@ -462,15 +461,18 @@ namespace IQP_Tester
 
         private void Timeline_Resize(object sender, EventArgs e)
         {
-            resize.Resize_Fonts(this);
-            Reposition_Line_From_Middle_To_Timeline(panelAna, Position.Top);
-            Reposition_Line_From_Middle_To_Timeline(panelCeausescusRise, Position.Top);
-            Reposition_Line_From_Middle_To_Timeline(panelJuly, Position.Top);
-            Reposition_Line_From_Middle_To_Timeline(panelRegimeFall, Position.Top);
-            Reposition_Line_From_Middle_To_Timeline(panelSoviet, Position.Bottom);
-            Reposition_Line_From_Middle_To_Timeline(panelWarsaw, Position.Bottom);
-            Reposition_Line_From_Middle_To_Timeline(panelHousePeople, Position.Bottom);
-            Place_Labels_And_Ticks();
+            if (resize != null)
+            {
+                resize.Resize_Fonts(this);
+                Reposition_Line_From_Middle_To_Timeline(panelAna, Position.Top);
+                Reposition_Line_From_Middle_To_Timeline(panelCeausescusRise, Position.Top);
+                Reposition_Line_From_Middle_To_Timeline(panelJuly, Position.Top);
+                Reposition_Line_From_Middle_To_Timeline(panelRegimeFall, Position.Top);
+                Reposition_Line_From_Middle_To_Timeline(panelSoviet, Position.Bottom);
+                Reposition_Line_From_Middle_To_Timeline(panelWarsaw, Position.Bottom);
+                Reposition_Line_From_Middle_To_Timeline(panelHousePeople, Position.Bottom);
+                Place_Labels_And_Ticks();
+            }
         }
 
         private void Timeline_Click(object sender, EventArgs e)

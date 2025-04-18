@@ -110,8 +110,9 @@ namespace IQP_Tester
             titlePage = new TitlePage(textManager, openClose, resize);
             openClose.Show_Hide(titlePage);
             Forms.Add(titlePage);
-            feedback = new Feedback(openClose, resize);
+            feedback = new Feedback(textManager, openClose, resize);
             openClose.Show_Hide(feedback);
+            Forms.Add(feedback);
         }
 
         private void Clear_Forms()
@@ -239,7 +240,7 @@ namespace IQP_Tester
             {
                 if (feedback == null)
                 {
-                    feedback = new Feedback(openClose, resize);
+                    feedback = new Feedback(textManager, openClose, resize);
                 }
                 openClose.Interaction();
                 openClose.FadeIn(feedback);

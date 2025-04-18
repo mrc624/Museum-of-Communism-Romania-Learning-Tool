@@ -59,6 +59,8 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnFeedbackClear = new System.Windows.Forms.Button();
             this.btnFeedbackSubmit = new System.Windows.Forms.Button();
+            this.TableLayoutbtnLanguageFeedback = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnLanguage = new System.Windows.Forms.Button();
             this.tableLayoutFeedbackMain.SuspendLayout();
             this.TableLayoutbtnBackAlignFeedback.SuspendLayout();
             this.tableLayoutQuestions.SuspendLayout();
@@ -66,6 +68,7 @@
             this.tableLayoutHistorical.SuspendLayout();
             this.tableLayoutNavigatetion.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.TableLayoutbtnLanguageFeedback.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutFeedbackMain
@@ -76,36 +79,37 @@
             this.tableLayoutFeedbackMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutFeedbackMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutFeedbackMain.Controls.Add(this.TableLayoutbtnBackAlignFeedback, 2, 0);
-            this.tableLayoutFeedbackMain.Controls.Add(this.tableLayoutQuestions, 1, 2);
+            this.tableLayoutFeedbackMain.Controls.Add(this.tableLayoutQuestions, 1, 1);
+            this.tableLayoutFeedbackMain.Controls.Add(this.TableLayoutbtnLanguageFeedback, 2, 2);
             this.tableLayoutFeedbackMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutFeedbackMain.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutFeedbackMain.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutFeedbackMain.Name = "tableLayoutFeedbackMain";
-            this.tableLayoutFeedbackMain.RowCount = 4;
+            this.tableLayoutFeedbackMain.RowCount = 3;
             this.tableLayoutFeedbackMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutFeedbackMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.5F));
-            this.tableLayoutFeedbackMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutFeedbackMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutFeedbackMain.Size = new System.Drawing.Size(1888, 992);
+            this.tableLayoutFeedbackMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutFeedbackMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutFeedbackMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutFeedbackMain.Size = new System.Drawing.Size(3844, 2348);
             this.tableLayoutFeedbackMain.TabIndex = 2;
             this.tableLayoutFeedbackMain.Click += new System.EventHandler(this.tableLayoutFeedbackMain_Click);
             // 
             // TableLayoutbtnBackAlignFeedback
             // 
-            this.TableLayoutbtnBackAlignFeedback.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.TableLayoutbtnBackAlignFeedback.ColumnCount = 3;
             this.TableLayoutbtnBackAlignFeedback.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76F));
             this.TableLayoutbtnBackAlignFeedback.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
             this.TableLayoutbtnBackAlignFeedback.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
             this.TableLayoutbtnBackAlignFeedback.Controls.Add(this.btnBack, 1, 1);
-            this.TableLayoutbtnBackAlignFeedback.Location = new System.Drawing.Point(1419, 3);
+            this.TableLayoutbtnBackAlignFeedback.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TableLayoutbtnBackAlignFeedback.Location = new System.Drawing.Point(2891, 7);
+            this.TableLayoutbtnBackAlignFeedback.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.TableLayoutbtnBackAlignFeedback.Name = "TableLayoutbtnBackAlignFeedback";
             this.TableLayoutbtnBackAlignFeedback.RowCount = 3;
             this.TableLayoutbtnBackAlignFeedback.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.TableLayoutbtnBackAlignFeedback.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
             this.TableLayoutbtnBackAlignFeedback.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
-            this.TableLayoutbtnBackAlignFeedback.Size = new System.Drawing.Size(466, 93);
+            this.TableLayoutbtnBackAlignFeedback.Size = new System.Drawing.Size(945, 220);
             this.TableLayoutbtnBackAlignFeedback.TabIndex = 35;
             this.TableLayoutbtnBackAlignFeedback.Click += new System.EventHandler(this.TableLayoutbtnBackAlignFeedback_Click);
             // 
@@ -114,9 +118,10 @@
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(357, 3);
+            this.btnBack.Location = new System.Drawing.Point(726, 8);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(91, 33);
+            this.btnBack.Size = new System.Drawing.Size(182, 78);
             this.btnBack.TabIndex = 8;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -140,7 +145,8 @@
             this.tableLayoutQuestions.Controls.Add(this.lblFeedbackThankYou, 0, 10);
             this.tableLayoutQuestions.Controls.Add(this.tableLayoutPanel2, 0, 9);
             this.tableLayoutQuestions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutQuestions.Location = new System.Drawing.Point(475, 126);
+            this.tableLayoutQuestions.Location = new System.Drawing.Point(969, 241);
+            this.tableLayoutQuestions.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutQuestions.Name = "tableLayoutQuestions";
             this.tableLayoutQuestions.RowCount = 11;
             this.tableLayoutQuestions.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -154,7 +160,7 @@
             this.tableLayoutQuestions.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutQuestions.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutQuestions.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutQuestions.Size = new System.Drawing.Size(938, 738);
+            this.tableLayoutQuestions.Size = new System.Drawing.Size(1906, 1864);
             this.tableLayoutQuestions.TabIndex = 36;
             // 
             // tableLayoutPanel1
@@ -168,20 +174,22 @@
             this.tableLayoutPanel1.Controls.Add(this.rbRecommendNo, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.rbRecommendYes, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 271);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 641);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(932, 52);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1890, 124);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
             // rbRecommendNo
             // 
             this.rbRecommendNo.AutoSize = true;
             this.rbRecommendNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbRecommendNo.Location = new System.Drawing.Point(561, 3);
+            this.rbRecommendNo.Location = new System.Drawing.Point(1142, 7);
+            this.rbRecommendNo.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbRecommendNo.Name = "rbRecommendNo";
-            this.rbRecommendNo.Size = new System.Drawing.Size(180, 46);
+            this.rbRecommendNo.Size = new System.Drawing.Size(362, 110);
             this.rbRecommendNo.TabIndex = 3;
             this.rbRecommendNo.TabStop = true;
             this.rbRecommendNo.Text = "No";
@@ -191,9 +199,10 @@
             // 
             this.rbRecommendYes.AutoSize = true;
             this.rbRecommendYes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbRecommendYes.Location = new System.Drawing.Point(189, 3);
+            this.rbRecommendYes.Location = new System.Drawing.Point(386, 7);
+            this.rbRecommendYes.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbRecommendYes.Name = "rbRecommendYes";
-            this.rbRecommendYes.Size = new System.Drawing.Size(180, 46);
+            this.rbRecommendYes.Size = new System.Drawing.Size(362, 110);
             this.rbRecommendYes.TabIndex = 1;
             this.rbRecommendYes.TabStop = true;
             this.rbRecommendYes.Text = "Yes";
@@ -205,9 +214,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWouldYouRecommend.AutoSize = true;
             this.lblWouldYouRecommend.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWouldYouRecommend.Location = new System.Drawing.Point(3, 243);
+            this.lblWouldYouRecommend.Location = new System.Drawing.Point(8, 573);
+            this.lblWouldYouRecommend.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblWouldYouRecommend.Name = "lblWouldYouRecommend";
-            this.lblWouldYouRecommend.Size = new System.Drawing.Size(932, 25);
+            this.lblWouldYouRecommend.Size = new System.Drawing.Size(1890, 61);
             this.lblWouldYouRecommend.TabIndex = 7;
             this.lblWouldYouRecommend.Text = "Would you recommend the application to others?";
             this.lblWouldYouRecommend.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -226,20 +236,22 @@
             this.tableLayoutHistorical.Controls.Add(this.rbHistorical2, 1, 0);
             this.tableLayoutHistorical.Controls.Add(this.rbHistorical1, 0, 0);
             this.tableLayoutHistorical.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutHistorical.Location = new System.Drawing.Point(3, 188);
+            this.tableLayoutHistorical.Location = new System.Drawing.Point(8, 442);
+            this.tableLayoutHistorical.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutHistorical.Name = "tableLayoutHistorical";
             this.tableLayoutHistorical.RowCount = 1;
             this.tableLayoutHistorical.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutHistorical.Size = new System.Drawing.Size(932, 52);
+            this.tableLayoutHistorical.Size = new System.Drawing.Size(1890, 124);
             this.tableLayoutHistorical.TabIndex = 6;
             // 
             // rbHistorical5
             // 
             this.rbHistorical5.AutoSize = true;
             this.rbHistorical5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbHistorical5.Location = new System.Drawing.Point(747, 3);
+            this.rbHistorical5.Location = new System.Drawing.Point(1520, 7);
+            this.rbHistorical5.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbHistorical5.Name = "rbHistorical5";
-            this.rbHistorical5.Size = new System.Drawing.Size(182, 46);
+            this.rbHistorical5.Size = new System.Drawing.Size(362, 110);
             this.rbHistorical5.TabIndex = 4;
             this.rbHistorical5.TabStop = true;
             this.rbHistorical5.Text = "A Lot";
@@ -249,9 +261,10 @@
             // 
             this.rbHistorical4.AutoSize = true;
             this.rbHistorical4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbHistorical4.Location = new System.Drawing.Point(561, 3);
+            this.rbHistorical4.Location = new System.Drawing.Point(1142, 7);
+            this.rbHistorical4.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbHistorical4.Name = "rbHistorical4";
-            this.rbHistorical4.Size = new System.Drawing.Size(180, 46);
+            this.rbHistorical4.Size = new System.Drawing.Size(362, 110);
             this.rbHistorical4.TabIndex = 3;
             this.rbHistorical4.TabStop = true;
             this.rbHistorical4.Text = "A Good Amount";
@@ -261,9 +274,10 @@
             // 
             this.rbHistorical3.AutoSize = true;
             this.rbHistorical3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbHistorical3.Location = new System.Drawing.Point(375, 3);
+            this.rbHistorical3.Location = new System.Drawing.Point(764, 7);
+            this.rbHistorical3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbHistorical3.Name = "rbHistorical3";
-            this.rbHistorical3.Size = new System.Drawing.Size(180, 46);
+            this.rbHistorical3.Size = new System.Drawing.Size(362, 110);
             this.rbHistorical3.TabIndex = 2;
             this.rbHistorical3.TabStop = true;
             this.rbHistorical3.Text = "Somewhat";
@@ -273,9 +287,10 @@
             // 
             this.rbHistorical2.AutoSize = true;
             this.rbHistorical2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbHistorical2.Location = new System.Drawing.Point(189, 3);
+            this.rbHistorical2.Location = new System.Drawing.Point(386, 7);
+            this.rbHistorical2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbHistorical2.Name = "rbHistorical2";
-            this.rbHistorical2.Size = new System.Drawing.Size(180, 46);
+            this.rbHistorical2.Size = new System.Drawing.Size(362, 110);
             this.rbHistorical2.TabIndex = 1;
             this.rbHistorical2.TabStop = true;
             this.rbHistorical2.Text = "A Small Amount";
@@ -285,9 +300,10 @@
             // 
             this.rbHistorical1.AutoSize = true;
             this.rbHistorical1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbHistorical1.Location = new System.Drawing.Point(3, 3);
+            this.rbHistorical1.Location = new System.Drawing.Point(8, 7);
+            this.rbHistorical1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbHistorical1.Name = "rbHistorical1";
-            this.rbHistorical1.Size = new System.Drawing.Size(180, 46);
+            this.rbHistorical1.Size = new System.Drawing.Size(362, 110);
             this.rbHistorical1.TabIndex = 0;
             this.rbHistorical1.TabStop = true;
             this.rbHistorical1.Text = "Not at All";
@@ -299,9 +315,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblConsent.AutoSize = true;
             this.lblConsent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConsent.Location = new System.Drawing.Point(3, 0);
+            this.lblConsent.Location = new System.Drawing.Point(8, 0);
+            this.lblConsent.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblConsent.Name = "lblConsent";
-            this.lblConsent.Size = new System.Drawing.Size(932, 25);
+            this.lblConsent.Size = new System.Drawing.Size(1890, 61);
             this.lblConsent.TabIndex = 0;
             this.lblConsent.Text = "Unknown";
             this.lblConsent.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -312,9 +329,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWhatIsYourAge.AutoSize = true;
             this.lblWhatIsYourAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhatIsYourAge.Location = new System.Drawing.Point(3, 25);
+            this.lblWhatIsYourAge.Location = new System.Drawing.Point(8, 61);
+            this.lblWhatIsYourAge.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblWhatIsYourAge.Name = "lblWhatIsYourAge";
-            this.lblWhatIsYourAge.Size = new System.Drawing.Size(932, 25);
+            this.lblWhatIsYourAge.Size = new System.Drawing.Size(1890, 61);
             this.lblWhatIsYourAge.TabIndex = 1;
             this.lblWhatIsYourAge.Text = "What is your age?";
             this.lblWhatIsYourAge.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -425,9 +443,10 @@
             "98",
             "99",
             "100+"});
-            this.comboBoxAge.Location = new System.Drawing.Point(377, 53);
+            this.comboBoxAge.Location = new System.Drawing.Point(711, 129);
+            this.comboBoxAge.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.comboBoxAge.Name = "comboBoxAge";
-            this.comboBoxAge.Size = new System.Drawing.Size(184, 21);
+            this.comboBoxAge.Size = new System.Drawing.Size(484, 39);
             this.comboBoxAge.TabIndex = 2;
             // 
             // lblEasyNavigation
@@ -436,9 +455,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEasyNavigation.AutoSize = true;
             this.lblEasyNavigation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEasyNavigation.Location = new System.Drawing.Point(3, 77);
+            this.lblEasyNavigation.Location = new System.Drawing.Point(8, 175);
+            this.lblEasyNavigation.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblEasyNavigation.Name = "lblEasyNavigation";
-            this.lblEasyNavigation.Size = new System.Drawing.Size(932, 25);
+            this.lblEasyNavigation.Size = new System.Drawing.Size(1890, 61);
             this.lblEasyNavigation.TabIndex = 3;
             this.lblEasyNavigation.Text = "How easy was it to navigate the application?";
             this.lblEasyNavigation.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -457,20 +477,22 @@
             this.tableLayoutNavigatetion.Controls.Add(this.rbNavigate2, 1, 0);
             this.tableLayoutNavigatetion.Controls.Add(this.rbNavigate1, 0, 0);
             this.tableLayoutNavigatetion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutNavigatetion.Location = new System.Drawing.Point(3, 105);
+            this.tableLayoutNavigatetion.Location = new System.Drawing.Point(8, 243);
+            this.tableLayoutNavigatetion.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutNavigatetion.Name = "tableLayoutNavigatetion";
             this.tableLayoutNavigatetion.RowCount = 1;
             this.tableLayoutNavigatetion.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutNavigatetion.Size = new System.Drawing.Size(932, 52);
+            this.tableLayoutNavigatetion.Size = new System.Drawing.Size(1890, 124);
             this.tableLayoutNavigatetion.TabIndex = 4;
             // 
             // rbNavigate5
             // 
             this.rbNavigate5.AutoSize = true;
             this.rbNavigate5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbNavigate5.Location = new System.Drawing.Point(747, 3);
+            this.rbNavigate5.Location = new System.Drawing.Point(1520, 7);
+            this.rbNavigate5.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbNavigate5.Name = "rbNavigate5";
-            this.rbNavigate5.Size = new System.Drawing.Size(182, 46);
+            this.rbNavigate5.Size = new System.Drawing.Size(362, 110);
             this.rbNavigate5.TabIndex = 4;
             this.rbNavigate5.TabStop = true;
             this.rbNavigate5.Text = "Easy";
@@ -480,9 +502,10 @@
             // 
             this.rbNavigate4.AutoSize = true;
             this.rbNavigate4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbNavigate4.Location = new System.Drawing.Point(561, 3);
+            this.rbNavigate4.Location = new System.Drawing.Point(1142, 7);
+            this.rbNavigate4.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbNavigate4.Name = "rbNavigate4";
-            this.rbNavigate4.Size = new System.Drawing.Size(180, 46);
+            this.rbNavigate4.Size = new System.Drawing.Size(362, 110);
             this.rbNavigate4.TabIndex = 3;
             this.rbNavigate4.TabStop = true;
             this.rbNavigate4.Text = "Somewhat Easy";
@@ -492,9 +515,10 @@
             // 
             this.rbNavigate3.AutoSize = true;
             this.rbNavigate3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbNavigate3.Location = new System.Drawing.Point(375, 3);
+            this.rbNavigate3.Location = new System.Drawing.Point(764, 7);
+            this.rbNavigate3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbNavigate3.Name = "rbNavigate3";
-            this.rbNavigate3.Size = new System.Drawing.Size(180, 46);
+            this.rbNavigate3.Size = new System.Drawing.Size(362, 110);
             this.rbNavigate3.TabIndex = 2;
             this.rbNavigate3.TabStop = true;
             this.rbNavigate3.Text = "Neutral";
@@ -504,9 +528,10 @@
             // 
             this.rbNavigate2.AutoSize = true;
             this.rbNavigate2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbNavigate2.Location = new System.Drawing.Point(189, 3);
+            this.rbNavigate2.Location = new System.Drawing.Point(386, 7);
+            this.rbNavigate2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbNavigate2.Name = "rbNavigate2";
-            this.rbNavigate2.Size = new System.Drawing.Size(180, 46);
+            this.rbNavigate2.Size = new System.Drawing.Size(362, 110);
             this.rbNavigate2.TabIndex = 1;
             this.rbNavigate2.TabStop = true;
             this.rbNavigate2.Text = "Somewhat Difficult";
@@ -516,9 +541,10 @@
             // 
             this.rbNavigate1.AutoSize = true;
             this.rbNavigate1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbNavigate1.Location = new System.Drawing.Point(3, 3);
+            this.rbNavigate1.Location = new System.Drawing.Point(8, 7);
+            this.rbNavigate1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rbNavigate1.Name = "rbNavigate1";
-            this.rbNavigate1.Size = new System.Drawing.Size(180, 46);
+            this.rbNavigate1.Size = new System.Drawing.Size(362, 110);
             this.rbNavigate1.TabIndex = 0;
             this.rbNavigate1.TabStop = true;
             this.rbNavigate1.Text = "Difficult";
@@ -530,9 +556,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHistoricalNarratives.AutoSize = true;
             this.lblHistoricalNarratives.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHistoricalNarratives.Location = new System.Drawing.Point(3, 160);
+            this.lblHistoricalNarratives.Location = new System.Drawing.Point(8, 374);
+            this.lblHistoricalNarratives.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblHistoricalNarratives.Name = "lblHistoricalNarratives";
-            this.lblHistoricalNarratives.Size = new System.Drawing.Size(932, 25);
+            this.lblHistoricalNarratives.Size = new System.Drawing.Size(1890, 61);
             this.lblHistoricalNarratives.TabIndex = 5;
             this.lblHistoricalNarratives.Text = "Did the questions help you understand historical narratives?";
             this.lblHistoricalNarratives.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -543,9 +570,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFeedbackThankYou.AutoSize = true;
             this.lblFeedbackThankYou.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFeedbackThankYou.Location = new System.Drawing.Point(3, 382);
+            this.lblFeedbackThankYou.Location = new System.Drawing.Point(8, 905);
+            this.lblFeedbackThankYou.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.lblFeedbackThankYou.Name = "lblFeedbackThankYou";
-            this.lblFeedbackThankYou.Size = new System.Drawing.Size(932, 25);
+            this.lblFeedbackThankYou.Size = new System.Drawing.Size(1890, 61);
             this.lblFeedbackThankYou.TabIndex = 9;
             this.lblFeedbackThankYou.Text = "Thank you for your feedback. Please click a button below to submit.";
             this.lblFeedbackThankYou.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -559,11 +587,12 @@
             this.tableLayoutPanel2.Controls.Add(this.btnFeedbackClear, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnFeedbackSubmit, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 329);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(8, 779);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(932, 50);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1890, 119);
             this.tableLayoutPanel2.TabIndex = 10;
             // 
             // btnFeedbackClear
@@ -571,9 +600,10 @@
             this.btnFeedbackClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnFeedbackClear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnFeedbackClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFeedbackClear.Location = new System.Drawing.Point(3, 3);
+            this.btnFeedbackClear.Location = new System.Drawing.Point(8, 7);
+            this.btnFeedbackClear.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnFeedbackClear.Name = "btnFeedbackClear";
-            this.btnFeedbackClear.Size = new System.Drawing.Size(227, 44);
+            this.btnFeedbackClear.Size = new System.Drawing.Size(456, 105);
             this.btnFeedbackClear.TabIndex = 9;
             this.btnFeedbackClear.Text = "Clear";
             this.btnFeedbackClear.UseVisualStyleBackColor = false;
@@ -584,27 +614,62 @@
             this.btnFeedbackSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnFeedbackSubmit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnFeedbackSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFeedbackSubmit.Location = new System.Drawing.Point(702, 3);
+            this.btnFeedbackSubmit.Location = new System.Drawing.Point(1425, 7);
+            this.btnFeedbackSubmit.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnFeedbackSubmit.Name = "btnFeedbackSubmit";
-            this.btnFeedbackSubmit.Size = new System.Drawing.Size(227, 44);
+            this.btnFeedbackSubmit.Size = new System.Drawing.Size(457, 105);
             this.btnFeedbackSubmit.TabIndex = 10;
             this.btnFeedbackSubmit.Text = "Submit";
             this.btnFeedbackSubmit.UseVisualStyleBackColor = false;
             this.btnFeedbackSubmit.Click += new System.EventHandler(this.btnFeedbackSubmit_Click);
             // 
+            // TableLayoutbtnLanguageFeedback
+            // 
+            this.TableLayoutbtnLanguageFeedback.ColumnCount = 3;
+            this.TableLayoutbtnLanguageFeedback.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 76F));
+            this.TableLayoutbtnLanguageFeedback.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21F));
+            this.TableLayoutbtnLanguageFeedback.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.TableLayoutbtnLanguageFeedback.Controls.Add(this.btnLanguage, 1, 1);
+            this.TableLayoutbtnLanguageFeedback.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TableLayoutbtnLanguageFeedback.Location = new System.Drawing.Point(2891, 2119);
+            this.TableLayoutbtnLanguageFeedback.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.TableLayoutbtnLanguageFeedback.Name = "TableLayoutbtnLanguageFeedback";
+            this.TableLayoutbtnLanguageFeedback.RowCount = 3;
+            this.TableLayoutbtnLanguageFeedback.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.TableLayoutbtnLanguageFeedback.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.TableLayoutbtnLanguageFeedback.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnLanguageFeedback.Size = new System.Drawing.Size(945, 222);
+            this.TableLayoutbtnLanguageFeedback.TabIndex = 37;
+            // 
+            // btnLanguage
+            // 
+            this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLanguage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLanguage.Location = new System.Drawing.Point(726, 133);
+            this.btnLanguage.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnLanguage.Name = "btnLanguage";
+            this.btnLanguage.Size = new System.Drawing.Size(182, 79);
+            this.btnLanguage.TabIndex = 8;
+            this.btnLanguage.Text = "English";
+            this.btnLanguage.UseVisualStyleBackColor = false;
+            this.btnLanguage.TextChanged += new System.EventHandler(this.btnLanguage_TextChanged);
+            this.btnLanguage.Click += new System.EventHandler(this.btnLanguage_Click);
+            // 
             // Feedback
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::IQP_Tester.Properties.Resources.WallpaperBackgroundMain1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1888, 992);
+            this.ClientSize = new System.Drawing.Size(3844, 2348);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutFeedbackMain);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Feedback";
@@ -614,6 +679,7 @@
             this.Shown += new System.EventHandler(this.Feedback_Shown);
             this.VisibleChanged += new System.EventHandler(this.Feedback_VisibleChanged);
             this.Click += new System.EventHandler(this.Feedback_Click);
+            this.Resize += new System.EventHandler(this.Feedback_Resize);
             this.tableLayoutFeedbackMain.ResumeLayout(false);
             this.TableLayoutbtnBackAlignFeedback.ResumeLayout(false);
             this.tableLayoutQuestions.ResumeLayout(false);
@@ -625,6 +691,7 @@
             this.tableLayoutNavigatetion.ResumeLayout(false);
             this.tableLayoutNavigatetion.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.TableLayoutbtnLanguageFeedback.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -659,5 +726,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         public System.Windows.Forms.Button btnFeedbackClear;
         public System.Windows.Forms.Button btnFeedbackSubmit;
+        private DoubleBufferedTableLayout TableLayoutbtnLanguageFeedback;
+        public System.Windows.Forms.Button btnLanguage;
     }
 }
