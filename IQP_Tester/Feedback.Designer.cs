@@ -34,27 +34,27 @@
             this.TableLayoutbtnBackAlignFeedback = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutQuestions = new System.Windows.Forms.TableLayoutPanel();
-            this.lblConsent = new System.Windows.Forms.Label();
-            this.lblWhatIsYourAge = new System.Windows.Forms.Label();
-            this.comboBoxAge = new System.Windows.Forms.ComboBox();
-            this.lblEasyNavigation = new System.Windows.Forms.Label();
-            this.tableLayoutNavigatetion = new System.Windows.Forms.TableLayoutPanel();
-            this.rbNavigate1 = new System.Windows.Forms.RadioButton();
-            this.rbNavigate2 = new System.Windows.Forms.RadioButton();
-            this.rbNavigate3 = new System.Windows.Forms.RadioButton();
-            this.rbNavigate4 = new System.Windows.Forms.RadioButton();
-            this.rbNavigate5 = new System.Windows.Forms.RadioButton();
-            this.lblHistoricalNarratives = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.rbRecommendNo = new System.Windows.Forms.RadioButton();
+            this.rbRecommendYes = new System.Windows.Forms.RadioButton();
+            this.lblWouldYouRecommend = new System.Windows.Forms.Label();
             this.tableLayoutHistorical = new System.Windows.Forms.TableLayoutPanel();
             this.rbHistorical5 = new System.Windows.Forms.RadioButton();
             this.rbHistorical4 = new System.Windows.Forms.RadioButton();
             this.rbHistorical3 = new System.Windows.Forms.RadioButton();
             this.rbHistorical2 = new System.Windows.Forms.RadioButton();
             this.rbHistorical1 = new System.Windows.Forms.RadioButton();
-            this.lblWouldYouRecommend = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.rbRecommendNo = new System.Windows.Forms.RadioButton();
-            this.rbRecommendYes = new System.Windows.Forms.RadioButton();
+            this.lblConsent = new System.Windows.Forms.Label();
+            this.lblWhatIsYourAge = new System.Windows.Forms.Label();
+            this.comboBoxAge = new System.Windows.Forms.ComboBox();
+            this.lblEasyNavigation = new System.Windows.Forms.Label();
+            this.tableLayoutNavigatetion = new System.Windows.Forms.TableLayoutPanel();
+            this.rbNavigate5 = new System.Windows.Forms.RadioButton();
+            this.rbNavigate4 = new System.Windows.Forms.RadioButton();
+            this.rbNavigate3 = new System.Windows.Forms.RadioButton();
+            this.rbNavigate2 = new System.Windows.Forms.RadioButton();
+            this.rbNavigate1 = new System.Windows.Forms.RadioButton();
+            this.lblHistoricalNarratives = new System.Windows.Forms.Label();
             this.lblFeedbackThankYou = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnFeedbackClear = new System.Windows.Forms.Button();
@@ -62,9 +62,9 @@
             this.tableLayoutFeedbackMain.SuspendLayout();
             this.TableLayoutbtnBackAlignFeedback.SuspendLayout();
             this.tableLayoutQuestions.SuspendLayout();
-            this.tableLayoutNavigatetion.SuspendLayout();
-            this.tableLayoutHistorical.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutHistorical.SuspendLayout();
+            this.tableLayoutNavigatetion.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -156,6 +156,142 @@
             this.tableLayoutQuestions.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutQuestions.Size = new System.Drawing.Size(938, 738);
             this.tableLayoutQuestions.TabIndex = 36;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.rbRecommendNo, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.rbRecommendYes, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 271);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(932, 52);
+            this.tableLayoutPanel1.TabIndex = 8;
+            // 
+            // rbRecommendNo
+            // 
+            this.rbRecommendNo.AutoSize = true;
+            this.rbRecommendNo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbRecommendNo.Location = new System.Drawing.Point(561, 3);
+            this.rbRecommendNo.Name = "rbRecommendNo";
+            this.rbRecommendNo.Size = new System.Drawing.Size(180, 46);
+            this.rbRecommendNo.TabIndex = 3;
+            this.rbRecommendNo.TabStop = true;
+            this.rbRecommendNo.Text = "No";
+            this.rbRecommendNo.UseVisualStyleBackColor = true;
+            // 
+            // rbRecommendYes
+            // 
+            this.rbRecommendYes.AutoSize = true;
+            this.rbRecommendYes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbRecommendYes.Location = new System.Drawing.Point(189, 3);
+            this.rbRecommendYes.Name = "rbRecommendYes";
+            this.rbRecommendYes.Size = new System.Drawing.Size(180, 46);
+            this.rbRecommendYes.TabIndex = 1;
+            this.rbRecommendYes.TabStop = true;
+            this.rbRecommendYes.Text = "Yes";
+            this.rbRecommendYes.UseVisualStyleBackColor = true;
+            // 
+            // lblWouldYouRecommend
+            // 
+            this.lblWouldYouRecommend.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblWouldYouRecommend.AutoSize = true;
+            this.lblWouldYouRecommend.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWouldYouRecommend.Location = new System.Drawing.Point(3, 243);
+            this.lblWouldYouRecommend.Name = "lblWouldYouRecommend";
+            this.lblWouldYouRecommend.Size = new System.Drawing.Size(932, 25);
+            this.lblWouldYouRecommend.TabIndex = 7;
+            this.lblWouldYouRecommend.Text = "Would you recommend the application to others?";
+            this.lblWouldYouRecommend.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tableLayoutHistorical
+            // 
+            this.tableLayoutHistorical.ColumnCount = 5;
+            this.tableLayoutHistorical.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutHistorical.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutHistorical.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutHistorical.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutHistorical.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutHistorical.Controls.Add(this.rbHistorical5, 4, 0);
+            this.tableLayoutHistorical.Controls.Add(this.rbHistorical4, 3, 0);
+            this.tableLayoutHistorical.Controls.Add(this.rbHistorical3, 2, 0);
+            this.tableLayoutHistorical.Controls.Add(this.rbHistorical2, 1, 0);
+            this.tableLayoutHistorical.Controls.Add(this.rbHistorical1, 0, 0);
+            this.tableLayoutHistorical.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutHistorical.Location = new System.Drawing.Point(3, 188);
+            this.tableLayoutHistorical.Name = "tableLayoutHistorical";
+            this.tableLayoutHistorical.RowCount = 1;
+            this.tableLayoutHistorical.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutHistorical.Size = new System.Drawing.Size(932, 52);
+            this.tableLayoutHistorical.TabIndex = 6;
+            // 
+            // rbHistorical5
+            // 
+            this.rbHistorical5.AutoSize = true;
+            this.rbHistorical5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbHistorical5.Location = new System.Drawing.Point(747, 3);
+            this.rbHistorical5.Name = "rbHistorical5";
+            this.rbHistorical5.Size = new System.Drawing.Size(182, 46);
+            this.rbHistorical5.TabIndex = 4;
+            this.rbHistorical5.TabStop = true;
+            this.rbHistorical5.Text = "A Lot";
+            this.rbHistorical5.UseVisualStyleBackColor = true;
+            // 
+            // rbHistorical4
+            // 
+            this.rbHistorical4.AutoSize = true;
+            this.rbHistorical4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbHistorical4.Location = new System.Drawing.Point(561, 3);
+            this.rbHistorical4.Name = "rbHistorical4";
+            this.rbHistorical4.Size = new System.Drawing.Size(180, 46);
+            this.rbHistorical4.TabIndex = 3;
+            this.rbHistorical4.TabStop = true;
+            this.rbHistorical4.Text = "A Good Amount";
+            this.rbHistorical4.UseVisualStyleBackColor = true;
+            // 
+            // rbHistorical3
+            // 
+            this.rbHistorical3.AutoSize = true;
+            this.rbHistorical3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbHistorical3.Location = new System.Drawing.Point(375, 3);
+            this.rbHistorical3.Name = "rbHistorical3";
+            this.rbHistorical3.Size = new System.Drawing.Size(180, 46);
+            this.rbHistorical3.TabIndex = 2;
+            this.rbHistorical3.TabStop = true;
+            this.rbHistorical3.Text = "Somewhat";
+            this.rbHistorical3.UseVisualStyleBackColor = true;
+            // 
+            // rbHistorical2
+            // 
+            this.rbHistorical2.AutoSize = true;
+            this.rbHistorical2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbHistorical2.Location = new System.Drawing.Point(189, 3);
+            this.rbHistorical2.Name = "rbHistorical2";
+            this.rbHistorical2.Size = new System.Drawing.Size(180, 46);
+            this.rbHistorical2.TabIndex = 1;
+            this.rbHistorical2.TabStop = true;
+            this.rbHistorical2.Text = "A Small Amount";
+            this.rbHistorical2.UseVisualStyleBackColor = true;
+            // 
+            // rbHistorical1
+            // 
+            this.rbHistorical1.AutoSize = true;
+            this.rbHistorical1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbHistorical1.Location = new System.Drawing.Point(3, 3);
+            this.rbHistorical1.Name = "rbHistorical1";
+            this.rbHistorical1.Size = new System.Drawing.Size(180, 46);
+            this.rbHistorical1.TabIndex = 0;
+            this.rbHistorical1.TabStop = true;
+            this.rbHistorical1.Text = "Not at All";
+            this.rbHistorical1.UseVisualStyleBackColor = true;
             // 
             // lblConsent
             // 
@@ -328,41 +464,17 @@
             this.tableLayoutNavigatetion.Size = new System.Drawing.Size(932, 52);
             this.tableLayoutNavigatetion.TabIndex = 4;
             // 
-            // rbNavigate1
+            // rbNavigate5
             // 
-            this.rbNavigate1.AutoSize = true;
-            this.rbNavigate1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbNavigate1.Location = new System.Drawing.Point(3, 3);
-            this.rbNavigate1.Name = "rbNavigate1";
-            this.rbNavigate1.Size = new System.Drawing.Size(180, 46);
-            this.rbNavigate1.TabIndex = 0;
-            this.rbNavigate1.TabStop = true;
-            this.rbNavigate1.Text = "Difficult";
-            this.rbNavigate1.UseVisualStyleBackColor = true;
-            // 
-            // rbNavigate2
-            // 
-            this.rbNavigate2.AutoSize = true;
-            this.rbNavigate2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbNavigate2.Location = new System.Drawing.Point(189, 3);
-            this.rbNavigate2.Name = "rbNavigate2";
-            this.rbNavigate2.Size = new System.Drawing.Size(180, 46);
-            this.rbNavigate2.TabIndex = 1;
-            this.rbNavigate2.TabStop = true;
-            this.rbNavigate2.Text = "Somewhat Difficult";
-            this.rbNavigate2.UseVisualStyleBackColor = true;
-            // 
-            // rbNavigate3
-            // 
-            this.rbNavigate3.AutoSize = true;
-            this.rbNavigate3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbNavigate3.Location = new System.Drawing.Point(375, 3);
-            this.rbNavigate3.Name = "rbNavigate3";
-            this.rbNavigate3.Size = new System.Drawing.Size(180, 46);
-            this.rbNavigate3.TabIndex = 2;
-            this.rbNavigate3.TabStop = true;
-            this.rbNavigate3.Text = "Neutral";
-            this.rbNavigate3.UseVisualStyleBackColor = true;
+            this.rbNavigate5.AutoSize = true;
+            this.rbNavigate5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbNavigate5.Location = new System.Drawing.Point(747, 3);
+            this.rbNavigate5.Name = "rbNavigate5";
+            this.rbNavigate5.Size = new System.Drawing.Size(182, 46);
+            this.rbNavigate5.TabIndex = 4;
+            this.rbNavigate5.TabStop = true;
+            this.rbNavigate5.Text = "Easy";
+            this.rbNavigate5.UseVisualStyleBackColor = true;
             // 
             // rbNavigate4
             // 
@@ -376,17 +488,41 @@
             this.rbNavigate4.Text = "Somewhat Easy";
             this.rbNavigate4.UseVisualStyleBackColor = true;
             // 
-            // rbNavigate5
+            // rbNavigate3
             // 
-            this.rbNavigate5.AutoSize = true;
-            this.rbNavigate5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbNavigate5.Location = new System.Drawing.Point(747, 3);
-            this.rbNavigate5.Name = "rbNavigate5";
-            this.rbNavigate5.Size = new System.Drawing.Size(182, 46);
-            this.rbNavigate5.TabIndex = 4;
-            this.rbNavigate5.TabStop = true;
-            this.rbNavigate5.Text = "Easy";
-            this.rbNavigate5.UseVisualStyleBackColor = true;
+            this.rbNavigate3.AutoSize = true;
+            this.rbNavigate3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbNavigate3.Location = new System.Drawing.Point(375, 3);
+            this.rbNavigate3.Name = "rbNavigate3";
+            this.rbNavigate3.Size = new System.Drawing.Size(180, 46);
+            this.rbNavigate3.TabIndex = 2;
+            this.rbNavigate3.TabStop = true;
+            this.rbNavigate3.Text = "Neutral";
+            this.rbNavigate3.UseVisualStyleBackColor = true;
+            // 
+            // rbNavigate2
+            // 
+            this.rbNavigate2.AutoSize = true;
+            this.rbNavigate2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbNavigate2.Location = new System.Drawing.Point(189, 3);
+            this.rbNavigate2.Name = "rbNavigate2";
+            this.rbNavigate2.Size = new System.Drawing.Size(180, 46);
+            this.rbNavigate2.TabIndex = 1;
+            this.rbNavigate2.TabStop = true;
+            this.rbNavigate2.Text = "Somewhat Difficult";
+            this.rbNavigate2.UseVisualStyleBackColor = true;
+            // 
+            // rbNavigate1
+            // 
+            this.rbNavigate1.AutoSize = true;
+            this.rbNavigate1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rbNavigate1.Location = new System.Drawing.Point(3, 3);
+            this.rbNavigate1.Name = "rbNavigate1";
+            this.rbNavigate1.Size = new System.Drawing.Size(180, 46);
+            this.rbNavigate1.TabIndex = 0;
+            this.rbNavigate1.TabStop = true;
+            this.rbNavigate1.Text = "Difficult";
+            this.rbNavigate1.UseVisualStyleBackColor = true;
             // 
             // lblHistoricalNarratives
             // 
@@ -400,142 +536,6 @@
             this.lblHistoricalNarratives.TabIndex = 5;
             this.lblHistoricalNarratives.Text = "Did the questions help you understand historical narratives?";
             this.lblHistoricalNarratives.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // tableLayoutHistorical
-            // 
-            this.tableLayoutHistorical.ColumnCount = 5;
-            this.tableLayoutHistorical.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutHistorical.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutHistorical.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutHistorical.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutHistorical.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutHistorical.Controls.Add(this.rbHistorical5, 4, 0);
-            this.tableLayoutHistorical.Controls.Add(this.rbHistorical4, 3, 0);
-            this.tableLayoutHistorical.Controls.Add(this.rbHistorical3, 2, 0);
-            this.tableLayoutHistorical.Controls.Add(this.rbHistorical2, 1, 0);
-            this.tableLayoutHistorical.Controls.Add(this.rbHistorical1, 0, 0);
-            this.tableLayoutHistorical.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutHistorical.Location = new System.Drawing.Point(3, 188);
-            this.tableLayoutHistorical.Name = "tableLayoutHistorical";
-            this.tableLayoutHistorical.RowCount = 1;
-            this.tableLayoutHistorical.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutHistorical.Size = new System.Drawing.Size(932, 52);
-            this.tableLayoutHistorical.TabIndex = 6;
-            // 
-            // rbHistorical5
-            // 
-            this.rbHistorical5.AutoSize = true;
-            this.rbHistorical5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbHistorical5.Location = new System.Drawing.Point(747, 3);
-            this.rbHistorical5.Name = "rbHistorical5";
-            this.rbHistorical5.Size = new System.Drawing.Size(182, 46);
-            this.rbHistorical5.TabIndex = 4;
-            this.rbHistorical5.TabStop = true;
-            this.rbHistorical5.Text = "A Lot";
-            this.rbHistorical5.UseVisualStyleBackColor = true;
-            // 
-            // rbHistorical4
-            // 
-            this.rbHistorical4.AutoSize = true;
-            this.rbHistorical4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbHistorical4.Location = new System.Drawing.Point(561, 3);
-            this.rbHistorical4.Name = "rbHistorical4";
-            this.rbHistorical4.Size = new System.Drawing.Size(180, 46);
-            this.rbHistorical4.TabIndex = 3;
-            this.rbHistorical4.TabStop = true;
-            this.rbHistorical4.Text = "A Good Amount";
-            this.rbHistorical4.UseVisualStyleBackColor = true;
-            // 
-            // rbHistorical3
-            // 
-            this.rbHistorical3.AutoSize = true;
-            this.rbHistorical3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbHistorical3.Location = new System.Drawing.Point(375, 3);
-            this.rbHistorical3.Name = "rbHistorical3";
-            this.rbHistorical3.Size = new System.Drawing.Size(180, 46);
-            this.rbHistorical3.TabIndex = 2;
-            this.rbHistorical3.TabStop = true;
-            this.rbHistorical3.Text = "Somewhat";
-            this.rbHistorical3.UseVisualStyleBackColor = true;
-            // 
-            // rbHistorical2
-            // 
-            this.rbHistorical2.AutoSize = true;
-            this.rbHistorical2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbHistorical2.Location = new System.Drawing.Point(189, 3);
-            this.rbHistorical2.Name = "rbHistorical2";
-            this.rbHistorical2.Size = new System.Drawing.Size(180, 46);
-            this.rbHistorical2.TabIndex = 1;
-            this.rbHistorical2.TabStop = true;
-            this.rbHistorical2.Text = "A Small Amount";
-            this.rbHistorical2.UseVisualStyleBackColor = true;
-            // 
-            // rbHistorical1
-            // 
-            this.rbHistorical1.AutoSize = true;
-            this.rbHistorical1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbHistorical1.Location = new System.Drawing.Point(3, 3);
-            this.rbHistorical1.Name = "rbHistorical1";
-            this.rbHistorical1.Size = new System.Drawing.Size(180, 46);
-            this.rbHistorical1.TabIndex = 0;
-            this.rbHistorical1.TabStop = true;
-            this.rbHistorical1.Text = "Not at All";
-            this.rbHistorical1.UseVisualStyleBackColor = true;
-            // 
-            // lblWouldYouRecommend
-            // 
-            this.lblWouldYouRecommend.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblWouldYouRecommend.AutoSize = true;
-            this.lblWouldYouRecommend.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWouldYouRecommend.Location = new System.Drawing.Point(3, 243);
-            this.lblWouldYouRecommend.Name = "lblWouldYouRecommend";
-            this.lblWouldYouRecommend.Size = new System.Drawing.Size(932, 25);
-            this.lblWouldYouRecommend.TabIndex = 7;
-            this.lblWouldYouRecommend.Text = "Would you recommend the application to others?";
-            this.lblWouldYouRecommend.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.rbRecommendNo, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.rbRecommendYes, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 271);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(932, 52);
-            this.tableLayoutPanel1.TabIndex = 8;
-            // 
-            // rbRecommendNo
-            // 
-            this.rbRecommendNo.AutoSize = true;
-            this.rbRecommendNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbRecommendNo.Location = new System.Drawing.Point(561, 3);
-            this.rbRecommendNo.Name = "rbRecommendNo";
-            this.rbRecommendNo.Size = new System.Drawing.Size(180, 46);
-            this.rbRecommendNo.TabIndex = 3;
-            this.rbRecommendNo.TabStop = true;
-            this.rbRecommendNo.Text = "No";
-            this.rbRecommendNo.UseVisualStyleBackColor = true;
-            // 
-            // rbRecommendYes
-            // 
-            this.rbRecommendYes.AutoSize = true;
-            this.rbRecommendYes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rbRecommendYes.Location = new System.Drawing.Point(189, 3);
-            this.rbRecommendYes.Name = "rbRecommendYes";
-            this.rbRecommendYes.Size = new System.Drawing.Size(180, 46);
-            this.rbRecommendYes.TabIndex = 1;
-            this.rbRecommendYes.TabStop = true;
-            this.rbRecommendYes.Text = "Yes";
-            this.rbRecommendYes.UseVisualStyleBackColor = true;
             // 
             // lblFeedbackThankYou
             // 
@@ -577,6 +577,7 @@
             this.btnFeedbackClear.TabIndex = 9;
             this.btnFeedbackClear.Text = "Clear";
             this.btnFeedbackClear.UseVisualStyleBackColor = false;
+            this.btnFeedbackClear.Click += new System.EventHandler(this.btnFeedbackClear_Click);
             // 
             // btnFeedbackSubmit
             // 
@@ -589,6 +590,7 @@
             this.btnFeedbackSubmit.TabIndex = 10;
             this.btnFeedbackSubmit.Text = "Submit";
             this.btnFeedbackSubmit.UseVisualStyleBackColor = false;
+            this.btnFeedbackSubmit.Click += new System.EventHandler(this.btnFeedbackSubmit_Click);
             // 
             // Feedback
             // 
@@ -609,7 +611,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Feedback";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Feedback_FormClosing);
-            this.Load += new System.EventHandler(this.Feedback_Load);
             this.Shown += new System.EventHandler(this.Feedback_Shown);
             this.VisibleChanged += new System.EventHandler(this.Feedback_VisibleChanged);
             this.Click += new System.EventHandler(this.Feedback_Click);
@@ -617,12 +618,12 @@
             this.TableLayoutbtnBackAlignFeedback.ResumeLayout(false);
             this.tableLayoutQuestions.ResumeLayout(false);
             this.tableLayoutQuestions.PerformLayout();
-            this.tableLayoutNavigatetion.ResumeLayout(false);
-            this.tableLayoutNavigatetion.PerformLayout();
-            this.tableLayoutHistorical.ResumeLayout(false);
-            this.tableLayoutHistorical.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutHistorical.ResumeLayout(false);
+            this.tableLayoutHistorical.PerformLayout();
+            this.tableLayoutNavigatetion.ResumeLayout(false);
+            this.tableLayoutNavigatetion.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 

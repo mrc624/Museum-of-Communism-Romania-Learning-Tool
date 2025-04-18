@@ -87,24 +87,22 @@ namespace IQP_Tester
 
         public void Add(string[] items)
         {
-            text.Add(Format_For_CSV(items));
+            text.Add(items);
         }
 
         public void Add(List<string> items)
         {
-            text.Add(Format_For_CSV(items));
+            text.Add(items.ToArray());
         }
-
-        public const int NUM_COPIES = 2;
 
         public void Add(List<string> items, int row)
         {
-            text.Insert(row, Format_For_CSV(items));
+            text.Insert(row, items.ToArray());
         }
 
         public void Add(string[] items, int row)
         {
-            text.Insert(row, Format_For_CSV(items));
+            text.Insert(row, items);
         }
 
         private string[] Format_For_CSV(List<string> items)
@@ -120,12 +118,13 @@ namespace IQP_Tester
 
         private string[] Format_For_CSV(string[] items)
         {
-            for (int i = 0; i < items.Length; i++)
+            string[] new_items = (string[])items.Clone();
+            for (int i = 0; i < new_items.Length; i++)
             {
-                items[i] = Preserve_Special_Characters(items[i]) + COMMA;
+                new_items[i] = Preserve_Special_Characters(new_items[i]) + COMMA;
             }
-            items[items.Length - 1] += NEWLINE;
-            return items;
+            new_items[new_items.Length - 1] += NEWLINE;
+            return new_items;
         }
 
         private string Preserve_Special_Characters(string str)
@@ -148,9 +147,11 @@ namespace IQP_Tester
             string text_write = "";
             for (int i = 0; i < text.Count; i++)
             {
-                for (int j = 0; j < text[i].Length; j++)
+                string[] formatatted = Format_For_CSV(text[i]);
+
+                for (int j = 0; j < formatatted.Length; j++)
                 {
-                    text_write += text[i][j];
+                    text_write += formatatted[j];
                 }
             }
             try
@@ -165,29 +166,33 @@ namespace IQP_Tester
 
         public bool Update()
         {
-            try
+            if (File.Exists(file_name))
             {
-                var parse = new TextFieldParser(file_name, System.Text.Encoding.UTF8);
-                parse.SetDelimiters(COMMA);
-                parse.HasFieldsEnclosedInQuotes = true;
-                List<string[]> lines = new List<string[]>();
-                while (!parse.EndOfData)
+                try
                 {
-                    string[] parsed = parse.ReadFields();
-                    lines.Add(parsed);
+                    var parse = new TextFieldParser(file_name, System.Text.Encoding.UTF8);
+                    parse.SetDelimiters(COMMA);
+                    parse.HasFieldsEnclosedInQuotes = true;
+                    List<string[]> lines = new List<string[]>();
+                    while (!parse.EndOfData)
+                    {
+                        string[] parsed = parse.ReadFields();
+                        lines.Add(parsed);
+                    }
+                    text.Clear();
+                    for (int i = 0; i < lines.Count; i++)
+                    {
+                        text.Add(lines[i]);
+                    }
+                    return true;
                 }
-                text.Clear();
-                for (int i = 0; i < lines.Count; i++)
+                catch (Exception ex)
                 {
-                    text.Add(lines[i]);
+                    MessageBox.Show("Failed Updating Text Manager\nError:\n" + ex);
+                    return false;
                 }
-                return true;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Failed Updating Text Manager\nError:\n" + ex);
-                return false;
-            }
+            return false;
         }
 
         private List<string> Fix_Quotes(string[] parsed)

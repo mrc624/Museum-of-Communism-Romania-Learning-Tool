@@ -7,3 +7,5 @@ videos
 sound
 
 add font choosing to settings
+
+only allow valid CSVs to be imported
