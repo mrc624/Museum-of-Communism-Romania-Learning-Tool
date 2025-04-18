@@ -24,15 +24,12 @@ namespace IQP_Tester
 
         public const uint ROW_VERTICAL_OFFSET = 10;
 
-        Main main;
-
-        public Credits(Citation_Helper citation_helper, Open_Close_Helper openClose, Resize_Helper resize, Main main)
+        public Credits(Citation_Helper citation_helper, Open_Close_Helper openClose, Resize_Helper resize)
         {
             InitializeComponent();
             citation_Helper = citation_helper;
             this.openClose = openClose;
             this.resize = resize;
-            this.main = main;
 
             for (int i = 0; i < (int)Citation_Type.NUM_CITATION_TYPES; i++)
             {
@@ -136,6 +133,11 @@ namespace IQP_Tester
         }
 
         private void btnBack_Click(object sender, EventArgs e)
+        {
+            tableLayoutCreditsMain_Click(sender, e);
+        }
+
+        private void TableLayoutbtnBackAlignCredits_Click(object sender, EventArgs e)
         {
             tableLayoutCreditsMain_Click(sender, e);
         }

@@ -94,6 +94,7 @@
             this.TableLayoutbtnBackAlignCredits.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
             this.TableLayoutbtnBackAlignCredits.Size = new System.Drawing.Size(466, 93);
             this.TableLayoutbtnBackAlignCredits.TabIndex = 35;
+            this.TableLayoutbtnBackAlignCredits.Click += new System.EventHandler(this.TableLayoutbtnBackAlignCredits_Click);
             // 
             // btnBack
             // 

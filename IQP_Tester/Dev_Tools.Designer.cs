@@ -40,6 +40,7 @@
             this.lblGeneralStats = new System.Windows.Forms.Label();
             this.panelOpenForms = new System.Windows.Forms.Panel();
             this.btnRefreshOpenForms = new System.Windows.Forms.Button();
+            this.tableLayoutPanelOpenForms = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblOpenFormsCountDisp = new System.Windows.Forms.Label();
             this.lblOpenFormsCount = new System.Windows.Forms.Label();
             this.tabText_Edit = new System.Windows.Forms.TabPage();
@@ -47,7 +48,18 @@
             this.btnGenerateTextCSV = new System.Windows.Forms.Button();
             this.btnEditTextApply = new System.Windows.Forms.Button();
             this.btnEditTextRefresh = new System.Windows.Forms.Button();
+            this.tableLayoutDevEditText = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.lblEditTextRomanian = new System.Windows.Forms.Label();
+            this.lblEditTextEnglish = new System.Windows.Forms.Label();
+            this.lblEditTextControlName = new System.Windows.Forms.Label();
             this.tabSettings = new System.Windows.Forms.TabPage();
+            this.cbFeedback = new System.Windows.Forms.CheckBox();
+            this.lblFeedback = new System.Windows.Forms.Label();
+            this.btnDefault = new System.Windows.Forms.Button();
+            this.tbFadeIncrement = new System.Windows.Forms.TextBox();
+            this.lblFadeIncrement = new System.Windows.Forms.Label();
+            this.tbFadeInterval = new System.Windows.Forms.TextBox();
+            this.lblFadeInterval = new System.Windows.Forms.Label();
             this.cbBtnBackVisible = new System.Windows.Forms.CheckBox();
             this.lblBtnBackVisible = new System.Windows.Forms.Label();
             this.tbTabDebounce = new System.Windows.Forms.TextBox();
@@ -58,23 +70,13 @@
             this.btnRefreshDevSettings = new System.Windows.Forms.Button();
             this.tbFontSizeOffset = new System.Windows.Forms.TextBox();
             this.lblFontSizeOffset = new System.Windows.Forms.Label();
-            this.tbFadeInterval = new System.Windows.Forms.TextBox();
-            this.lblFadeInterval = new System.Windows.Forms.Label();
-            this.tbFadeIncrement = new System.Windows.Forms.TextBox();
-            this.lblFadeIncrement = new System.Windows.Forms.Label();
-            this.tableLayoutPanelOpenForms = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutDevEditText = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.lblEditTextRomanian = new System.Windows.Forms.Label();
-            this.lblEditTextEnglish = new System.Windows.Forms.Label();
-            this.lblEditTextControlName = new System.Windows.Forms.Label();
-            this.btnDefault = new System.Windows.Forms.Button();
             this.TabControlDevs.SuspendLayout();
             this.TabStastics.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelOpenForms.SuspendLayout();
             this.tabText_Edit.SuspendLayout();
-            this.tabSettings.SuspendLayout();
             this.tableLayoutDevEditText.SuspendLayout();
+            this.tabSettings.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabControlDevs
@@ -196,6 +198,20 @@
             this.btnRefreshOpenForms.UseVisualStyleBackColor = false;
             this.btnRefreshOpenForms.Click += new System.EventHandler(this.btnRefreshOpenForms_Click);
             // 
+            // tableLayoutPanelOpenForms
+            // 
+            this.tableLayoutPanelOpenForms.AutoScroll = true;
+            this.tableLayoutPanelOpenForms.ColumnCount = 1;
+            this.tableLayoutPanelOpenForms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelOpenForms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelOpenForms.Location = new System.Drawing.Point(5, 24);
+            this.tableLayoutPanelOpenForms.Name = "tableLayoutPanelOpenForms";
+            this.tableLayoutPanelOpenForms.RowCount = 1;
+            this.tableLayoutPanelOpenForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46F));
+            this.tableLayoutPanelOpenForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54F));
+            this.tableLayoutPanelOpenForms.Size = new System.Drawing.Size(384, 182);
+            this.tableLayoutPanelOpenForms.TabIndex = 2;
+            // 
             // lblOpenFormsCountDisp
             // 
             this.lblOpenFormsCountDisp.AutoSize = true;
@@ -275,8 +291,64 @@
             this.btnEditTextRefresh.UseVisualStyleBackColor = false;
             this.btnEditTextRefresh.Click += new System.EventHandler(this.btnEditTextRefresh_Click);
             // 
+            // tableLayoutDevEditText
+            // 
+            this.tableLayoutDevEditText.AutoScroll = true;
+            this.tableLayoutDevEditText.ColumnCount = 3;
+            this.tableLayoutDevEditText.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutDevEditText.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutDevEditText.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutDevEditText.Controls.Add(this.lblEditTextRomanian, 2, 0);
+            this.tableLayoutDevEditText.Controls.Add(this.lblEditTextEnglish, 1, 0);
+            this.tableLayoutDevEditText.Controls.Add(this.lblEditTextControlName, 0, 0);
+            this.tableLayoutDevEditText.Location = new System.Drawing.Point(7, 3);
+            this.tableLayoutDevEditText.Name = "tableLayoutDevEditText";
+            this.tableLayoutDevEditText.RowCount = 1;
+            this.tableLayoutDevEditText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.801653F));
+            this.tableLayoutDevEditText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96.19835F));
+            this.tableLayoutDevEditText.Size = new System.Drawing.Size(761, 576);
+            this.tableLayoutDevEditText.TabIndex = 0;
+            // 
+            // lblEditTextRomanian
+            // 
+            this.lblEditTextRomanian.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblEditTextRomanian.AutoSize = true;
+            this.lblEditTextRomanian.Location = new System.Drawing.Point(509, 0);
+            this.lblEditTextRomanian.Name = "lblEditTextRomanian";
+            this.lblEditTextRomanian.Size = new System.Drawing.Size(249, 13);
+            this.lblEditTextRomanian.TabIndex = 2;
+            this.lblEditTextRomanian.Text = "Romanian";
+            this.lblEditTextRomanian.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblEditTextEnglish
+            // 
+            this.lblEditTextEnglish.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblEditTextEnglish.AutoSize = true;
+            this.lblEditTextEnglish.Location = new System.Drawing.Point(256, 0);
+            this.lblEditTextEnglish.Name = "lblEditTextEnglish";
+            this.lblEditTextEnglish.Size = new System.Drawing.Size(247, 13);
+            this.lblEditTextEnglish.TabIndex = 1;
+            this.lblEditTextEnglish.Text = "English";
+            this.lblEditTextEnglish.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblEditTextControlName
+            // 
+            this.lblEditTextControlName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblEditTextControlName.AutoSize = true;
+            this.lblEditTextControlName.Location = new System.Drawing.Point(3, 0);
+            this.lblEditTextControlName.Name = "lblEditTextControlName";
+            this.lblEditTextControlName.Size = new System.Drawing.Size(247, 13);
+            this.lblEditTextControlName.TabIndex = 0;
+            this.lblEditTextControlName.Text = "Control Name";
+            this.lblEditTextControlName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // tabSettings
             // 
+            this.tabSettings.Controls.Add(this.cbFeedback);
+            this.tabSettings.Controls.Add(this.lblFeedback);
             this.tabSettings.Controls.Add(this.btnDefault);
             this.tabSettings.Controls.Add(this.tbFadeIncrement);
             this.tabSettings.Controls.Add(this.lblFadeIncrement);
@@ -299,6 +371,81 @@
             this.tabSettings.TabIndex = 2;
             this.tabSettings.Text = "Settings";
             this.tabSettings.UseVisualStyleBackColor = true;
+            // 
+            // cbFeedback
+            // 
+            this.cbFeedback.AutoSize = true;
+            this.cbFeedback.Checked = true;
+            this.cbFeedback.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.cbFeedback.Location = new System.Drawing.Point(157, 166);
+            this.cbFeedback.Name = "cbFeedback";
+            this.cbFeedback.Size = new System.Drawing.Size(15, 14);
+            this.cbFeedback.TabIndex = 20;
+            this.cbFeedback.UseVisualStyleBackColor = true;
+            this.cbFeedback.CheckStateChanged += new System.EventHandler(this.cbFeedback_CheckStateChanged);
+            // 
+            // lblFeedback
+            // 
+            this.lblFeedback.AutoSize = true;
+            this.lblFeedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFeedback.Location = new System.Drawing.Point(3, 161);
+            this.lblFeedback.Name = "lblFeedback";
+            this.lblFeedback.Size = new System.Drawing.Size(80, 20);
+            this.lblFeedback.TabIndex = 19;
+            this.lblFeedback.Text = "Feedback";
+            // 
+            // btnDefault
+            // 
+            this.btnDefault.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDefault.Location = new System.Drawing.Point(3, 592);
+            this.btnDefault.Name = "btnDefault";
+            this.btnDefault.Size = new System.Drawing.Size(75, 23);
+            this.btnDefault.TabIndex = 18;
+            this.btnDefault.Text = "Defaults";
+            this.btnDefault.UseVisualStyleBackColor = false;
+            this.btnDefault.Click += new System.EventHandler(this.btnDefault_Click);
+            // 
+            // tbFadeIncrement
+            // 
+            this.tbFadeIncrement.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFadeIncrement.Location = new System.Drawing.Point(157, 129);
+            this.tbFadeIncrement.Margin = new System.Windows.Forms.Padding(1);
+            this.tbFadeIncrement.Name = "tbFadeIncrement";
+            this.tbFadeIncrement.Size = new System.Drawing.Size(73, 24);
+            this.tbFadeIncrement.TabIndex = 17;
+            this.tbFadeIncrement.Text = "Unknown";
+            this.tbFadeIncrement.TextChanged += new System.EventHandler(this.tbFadeIncrement_TextChanged);
+            // 
+            // lblFadeIncrement
+            // 
+            this.lblFadeIncrement.AutoSize = true;
+            this.lblFadeIncrement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFadeIncrement.Location = new System.Drawing.Point(3, 131);
+            this.lblFadeIncrement.Name = "lblFadeIncrement";
+            this.lblFadeIncrement.Size = new System.Drawing.Size(122, 20);
+            this.lblFadeIncrement.TabIndex = 16;
+            this.lblFadeIncrement.Text = "Fade Increment";
+            // 
+            // tbFadeInterval
+            // 
+            this.tbFadeInterval.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFadeInterval.Location = new System.Drawing.Point(157, 103);
+            this.tbFadeInterval.Margin = new System.Windows.Forms.Padding(1);
+            this.tbFadeInterval.Name = "tbFadeInterval";
+            this.tbFadeInterval.Size = new System.Drawing.Size(73, 24);
+            this.tbFadeInterval.TabIndex = 15;
+            this.tbFadeInterval.Text = "Unknown";
+            this.tbFadeInterval.TextChanged += new System.EventHandler(this.tbFadeInterval_TextChanged);
+            // 
+            // lblFadeInterval
+            // 
+            this.lblFadeInterval.AutoSize = true;
+            this.lblFadeInterval.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFadeInterval.Location = new System.Drawing.Point(3, 105);
+            this.lblFadeInterval.Name = "lblFadeInterval";
+            this.lblFadeInterval.Size = new System.Drawing.Size(102, 20);
+            this.lblFadeInterval.TabIndex = 14;
+            this.lblFadeInterval.Text = "Fade Interval";
             // 
             // cbBtnBackVisible
             // 
@@ -407,127 +554,6 @@
             this.lblFontSizeOffset.TabIndex = 4;
             this.lblFontSizeOffset.Text = "Font Size Offset";
             // 
-            // tbFadeInterval
-            // 
-            this.tbFadeInterval.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFadeInterval.Location = new System.Drawing.Point(157, 103);
-            this.tbFadeInterval.Margin = new System.Windows.Forms.Padding(1);
-            this.tbFadeInterval.Name = "tbFadeInterval";
-            this.tbFadeInterval.Size = new System.Drawing.Size(73, 24);
-            this.tbFadeInterval.TabIndex = 15;
-            this.tbFadeInterval.Text = "Unknown";
-            this.tbFadeInterval.TextChanged += new System.EventHandler(this.tbFadeInterval_TextChanged);
-            // 
-            // lblFadeInterval
-            // 
-            this.lblFadeInterval.AutoSize = true;
-            this.lblFadeInterval.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFadeInterval.Location = new System.Drawing.Point(3, 105);
-            this.lblFadeInterval.Name = "lblFadeInterval";
-            this.lblFadeInterval.Size = new System.Drawing.Size(102, 20);
-            this.lblFadeInterval.TabIndex = 14;
-            this.lblFadeInterval.Text = "Fade Interval";
-            // 
-            // tbFadeIncrement
-            // 
-            this.tbFadeIncrement.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFadeIncrement.Location = new System.Drawing.Point(157, 129);
-            this.tbFadeIncrement.Margin = new System.Windows.Forms.Padding(1);
-            this.tbFadeIncrement.Name = "tbFadeIncrement";
-            this.tbFadeIncrement.Size = new System.Drawing.Size(73, 24);
-            this.tbFadeIncrement.TabIndex = 17;
-            this.tbFadeIncrement.Text = "Unknown";
-            this.tbFadeIncrement.TextChanged += new System.EventHandler(this.tbFadeIncrement_TextChanged);
-            // 
-            // lblFadeIncrement
-            // 
-            this.lblFadeIncrement.AutoSize = true;
-            this.lblFadeIncrement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFadeIncrement.Location = new System.Drawing.Point(3, 131);
-            this.lblFadeIncrement.Name = "lblFadeIncrement";
-            this.lblFadeIncrement.Size = new System.Drawing.Size(122, 20);
-            this.lblFadeIncrement.TabIndex = 16;
-            this.lblFadeIncrement.Text = "Fade Increment";
-            // 
-            // tableLayoutPanelOpenForms
-            // 
-            this.tableLayoutPanelOpenForms.AutoScroll = true;
-            this.tableLayoutPanelOpenForms.ColumnCount = 1;
-            this.tableLayoutPanelOpenForms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelOpenForms.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelOpenForms.Location = new System.Drawing.Point(5, 24);
-            this.tableLayoutPanelOpenForms.Name = "tableLayoutPanelOpenForms";
-            this.tableLayoutPanelOpenForms.RowCount = 1;
-            this.tableLayoutPanelOpenForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46F));
-            this.tableLayoutPanelOpenForms.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54F));
-            this.tableLayoutPanelOpenForms.Size = new System.Drawing.Size(384, 182);
-            this.tableLayoutPanelOpenForms.TabIndex = 2;
-            // 
-            // tableLayoutDevEditText
-            // 
-            this.tableLayoutDevEditText.AutoScroll = true;
-            this.tableLayoutDevEditText.ColumnCount = 3;
-            this.tableLayoutDevEditText.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutDevEditText.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutDevEditText.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutDevEditText.Controls.Add(this.lblEditTextRomanian, 2, 0);
-            this.tableLayoutDevEditText.Controls.Add(this.lblEditTextEnglish, 1, 0);
-            this.tableLayoutDevEditText.Controls.Add(this.lblEditTextControlName, 0, 0);
-            this.tableLayoutDevEditText.Location = new System.Drawing.Point(7, 3);
-            this.tableLayoutDevEditText.Name = "tableLayoutDevEditText";
-            this.tableLayoutDevEditText.RowCount = 1;
-            this.tableLayoutDevEditText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.801653F));
-            this.tableLayoutDevEditText.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96.19835F));
-            this.tableLayoutDevEditText.Size = new System.Drawing.Size(761, 576);
-            this.tableLayoutDevEditText.TabIndex = 0;
-            // 
-            // lblEditTextRomanian
-            // 
-            this.lblEditTextRomanian.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEditTextRomanian.AutoSize = true;
-            this.lblEditTextRomanian.Location = new System.Drawing.Point(204, 0);
-            this.lblEditTextRomanian.Name = "lblEditTextRomanian";
-            this.lblEditTextRomanian.Size = new System.Drawing.Size(100, 5);
-            this.lblEditTextRomanian.TabIndex = 2;
-            this.lblEditTextRomanian.Text = "Romanian";
-            this.lblEditTextRomanian.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblEditTextEnglish
-            // 
-            this.lblEditTextEnglish.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEditTextEnglish.AutoSize = true;
-            this.lblEditTextEnglish.Location = new System.Drawing.Point(102, 0);
-            this.lblEditTextEnglish.Name = "lblEditTextEnglish";
-            this.lblEditTextEnglish.Size = new System.Drawing.Size(99, 5);
-            this.lblEditTextEnglish.TabIndex = 1;
-            this.lblEditTextEnglish.Text = "English";
-            this.lblEditTextEnglish.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblEditTextControlName
-            // 
-            this.lblEditTextControlName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblEditTextControlName.AutoSize = true;
-            this.lblEditTextControlName.Location = new System.Drawing.Point(1, 0);
-            this.lblEditTextControlName.Name = "lblEditTextControlName";
-            this.lblEditTextControlName.Size = new System.Drawing.Size(99, 5);
-            this.lblEditTextControlName.TabIndex = 0;
-            this.lblEditTextControlName.Text = "Control Name";
-            this.lblEditTextControlName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // btnDefault
-            // 
-            this.btnDefault.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnDefault.Location = new System.Drawing.Point(3, 592);
-            this.btnDefault.Name = "btnDefault";
-            this.btnDefault.Size = new System.Drawing.Size(75, 23);
-            this.btnDefault.TabIndex = 18;
-            this.btnDefault.Text = "Defaults";
-            this.btnDefault.UseVisualStyleBackColor = false;
-            this.btnDefault.Click += new System.EventHandler(this.btnDefault_Click);
-            // 
             // Dev_Tools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -544,10 +570,10 @@
             this.panelOpenForms.ResumeLayout(false);
             this.panelOpenForms.PerformLayout();
             this.tabText_Edit.ResumeLayout(false);
-            this.tabSettings.ResumeLayout(false);
-            this.tabSettings.PerformLayout();
             this.tableLayoutDevEditText.ResumeLayout(false);
             this.tableLayoutDevEditText.PerformLayout();
+            this.tabSettings.ResumeLayout(false);
+            this.tabSettings.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -593,5 +619,7 @@
         private System.Windows.Forms.TextBox tbFadeInterval;
         private System.Windows.Forms.Label lblFadeInterval;
         private System.Windows.Forms.Button btnDefault;
+        private System.Windows.Forms.CheckBox cbFeedback;
+        private System.Windows.Forms.Label lblFeedback;
     }
 }

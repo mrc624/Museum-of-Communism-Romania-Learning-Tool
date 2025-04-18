@@ -43,6 +43,7 @@ namespace IQP_Tester
         public SovietEra sovietEra;
 
         public Credits credits;
+        Feedback feedback;
         Dev_Tools dev_Tools;
 
         TitlePage titlePage;
@@ -61,7 +62,7 @@ namespace IQP_Tester
             resize.CaptureAspectRatios(this);
             textManager.Generate_Text_JSON(TextManager.TEXT_MANAGER_FILE_NAME);
             citation_Helper.Generate_Citation_JSON(Citation_Helper.CITATION_FILE_NAME);
-            credits = new Credits(citation_Helper, openClose, resize, this);
+            credits = new Credits(citation_Helper, openClose, resize);
             textManager.Update_One_Form(this);
             Set_Panel_Clicks();
             openClose.Start_Timer();
@@ -109,6 +110,8 @@ namespace IQP_Tester
             titlePage = new TitlePage(textManager, openClose, resize);
             openClose.Show_Hide(titlePage);
             Forms.Add(titlePage);
+            feedback = new Feedback(openClose, resize);
+            openClose.Show_Hide(feedback);
         }
 
         private void Clear_Forms()
@@ -223,11 +226,29 @@ namespace IQP_Tester
             {
                 if (credits == null)
                 {
-                    credits = new Credits(citation_Helper, openClose, resize, this);
+                    credits = new Credits(citation_Helper, openClose, resize);
                 }
                 openClose.Interaction();
                 openClose.FadeIn(credits);
             }
+        }
+
+        private void btnFeedback_Click(object sender, EventArgs e)
+        {
+            if (!openClose.block)
+            {
+                if (feedback == null)
+                {
+                    feedback = new Feedback(openClose, resize);
+                }
+                openClose.Interaction();
+                openClose.FadeIn(feedback);
+            }
+        }
+
+        public void Update_Feedback_Btn(bool state)
+        {
+            btnFeedback.Visible = state;
         }
 
         private void Main_Resize(object sender, EventArgs e)

@@ -393,9 +393,10 @@ namespace IQP_Tester
             tbFontSizeOffset.Text = settings.Get_Font_Offset().ToString();
             tbTabTimeout.Text = settings.Get_Tab_Timeout().ToString();
             tbTabDebounce.Text = settings.Get_Tab_Debounce().ToString();
-            cbBtnBackVisible.CheckState = settings.Get_Btn_Back() ? CheckState.Checked : CheckState.Unchecked;
+            cbBtnBackVisible.CheckState = Settings.btn_back_state ? CheckState.Checked : CheckState.Unchecked;
             tbFadeInterval.Text = settings.Get_Fade_Interval().ToString();
             tbFadeIncrement.Text = settings.Get_Fade_Increment().ToString();
+            cbFeedback.CheckState = settings.Get_Feedback() ? CheckState.Checked : CheckState.Unchecked;
         }
 
         private void Apply_Settings()
@@ -429,6 +430,11 @@ namespace IQP_Tester
             {
                 settings.Change_Fade_Increment(double.Parse(tbFadeIncrement.Text));
                 tbFadeIncrement.BackColor = SystemColors.Control;
+            }
+            if (cbFeedback.BackColor == Color.Yellow)
+            {
+                settings.Change_Feedback(cbFeedback.Checked);
+                cbFeedback.BackColor = SystemColors.Control;
             }
 
             settings.Overwrite_JSON();
@@ -493,7 +499,7 @@ namespace IQP_Tester
 
         private void cbBtnBackVisible_CheckStateChanged(object sender, EventArgs e)
         {
-            if (cbBtnBackVisible.Checked != settings.Get_Btn_Back())
+            if (cbBtnBackVisible.Checked != Settings.btn_back_state)
             {
                 cbBtnBackVisible.BackColor = Color.Yellow;
             }
@@ -538,6 +544,18 @@ namespace IQP_Tester
             else
             {
                 tbFadeIncrement.BackColor = Color.Red;
+            }
+        }
+
+        private void cbFeedback_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (cbFeedback.Checked != settings.Get_Feedback())
+            {
+                cbFeedback.BackColor = Color.Yellow;
+            }
+            else
+            {
+                cbFeedback.BackColor = SystemColors.Control;
             }
         }
 
