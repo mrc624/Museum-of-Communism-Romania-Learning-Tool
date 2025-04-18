@@ -68,6 +68,7 @@ namespace IQP_Tester
         private void Fill_EditText_Table()
         {
             tableLayoutDevEditText.Visible = false;
+            tableLayoutDevEditText.SuspendLayout();
             Dictionary<string, Dictionary<string, string>>  reformatted = Get_Reformatted_Dictionary();
             Update_Global_Reformatted(reformatted);
 
@@ -75,28 +76,35 @@ namespace IQP_Tester
 
             tableLayoutDevEditText.CellBorderStyle = LOADING;
 
+            string english_key = textManager.language_to_string[(int)TextManager.Language.English];
+            string romanian_key = textManager.language_to_string[(int)TextManager.Language.Romanian];
+            int eng_width = tableLayoutDevEditText.GetColumnWidths()[ENGLISH_COLUMN];
+            int rom_width = tableLayoutDevEditText.GetColumnWidths()[ROMANIAN_COLUMN];
+            string control_name = null;
+            string english_text = null;
+            string romanian_text = null;
+
             for (int i = 0; i < controls.Count; i++)
             {
                 tableLayoutDevEditText.RowCount++;
                 int row = i + ROWS_TO_SKIP;
-                string control_name = controls[i];
+                control_name = controls[i];
                 Label control = tableLayout_Helper.Get_Standard_Label(control_name, control_name);
                 tableLayoutDevEditText.Controls.Add(control, CONTROL_NAME_COLUMN, row);
                 
-                string english_text = reformatted[control_name][textManager.language_to_string[(int)TextManager.Language.English]];
-                int eng_width = tableLayoutDevEditText.GetColumnWidths()[ENGLISH_COLUMN];
+                english_text = reformatted[control_name][english_key];
                 TextBox english = tableLayout_Helper.Get_Textbox(english_text, ENGLISH_NAME + i.ToString(), eng_width, AUTO_SIZE);
                 tableLayoutDevEditText.Controls.Add(english, ENGLISH_COLUMN, row);
                 english.TextChanged += EditText_TextChanged;
 
-                string romanian_text = reformatted[control_name][textManager.language_to_string[(int)TextManager.Language.Romanian]];
-                int rom_width = tableLayoutDevEditText.GetColumnWidths()[ROMANIAN_COLUMN];
+                romanian_text = reformatted[control_name][romanian_key];
                 TextBox romanian = tableLayout_Helper.Get_Textbox(romanian_text, ROMANIAN_NAME + i.ToString(), rom_width, AUTO_SIZE);
                 tableLayoutDevEditText.Controls.Add(romanian, ROMANIAN_COLUMN, row);
                 romanian.TextChanged += EditText_TextChanged;
                 
             }
             tableLayout_Helper.Set_Row_Heights(tableLayoutDevEditText);
+            tableLayoutDevEditText.ResumeLayout();
             tableLayoutDevEditText.CellBorderStyle = LOADED;
             tableLayoutDevEditText.Visible = true;
         }
