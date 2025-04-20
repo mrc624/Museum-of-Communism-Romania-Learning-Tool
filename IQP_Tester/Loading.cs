@@ -16,6 +16,8 @@ namespace IQP_Tester
         {
             InitializeComponent();
             this.Show();
+            this.TopMost = true;
+            this.BringToFront();
         }
 
         public Loading(string text)
@@ -23,6 +25,8 @@ namespace IQP_Tester
             InitializeComponent();
             lblLoading.Text = text;
             this.Show();
+            this.TopMost = true;
+            this.BringToFront();
         }
 
         public void Update_Text(string text)

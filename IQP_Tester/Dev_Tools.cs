@@ -151,6 +151,7 @@ namespace IQP_Tester
         private void Empty_EditText_Table()
         {
             tableLayoutDevEditText.Visible = false;
+            tableLayoutDevEditText.SuspendLayout();
             tableLayoutDevEditText.CellBorderStyle = LOADING;
             while (tableLayoutDevEditText.Controls.Count > 0)
             {
@@ -158,6 +159,7 @@ namespace IQP_Tester
             }
             tableLayoutDevEditText.RowCount = 0;
             Add_Headers();
+            tableLayoutDevEditText.ResumeLayout();
         }
 
         private void Add_Headers()
@@ -257,10 +259,13 @@ namespace IQP_Tester
 
         private void btnEditTextRefresh_Click(object sender, EventArgs e)
         {
-            Loading load = new Loading("Refreshing Edit Text Table");
+            Loading load = new Loading("Refreshing Text Manager");
             textManager.Update_Text();
+            load.Update_Text("Emptying Text Table");
             Empty_EditText_Table();
+            load.Update_Text("Filling Text Table");
             Fill_EditText_Table();
+            load.Update_Text("Enabling Buttons");
             btnEditTextApply.Enabled = true;
             btnGenerateTextCSV.Enabled = true;
             btnReadCSV.Enabled = true;
