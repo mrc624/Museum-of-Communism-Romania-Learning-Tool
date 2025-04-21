@@ -592,5 +592,34 @@ namespace IQP_Tester
             settings.Reset_To_Defaults();
             Fill_Settings();
         }
+
+        private void btnExportFeedback_Click(object sender, EventArgs e)
+        {
+            Loading load = new Loading("Generating CSV File");
+            SaveFileDialog save = new SaveFileDialog();
+            save.Title = "Export Feedback";
+            save.Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*";
+            save.DefaultExt = "csv";
+            save.FileName = "feedback.csv";
+            load.Update_Text("Exporing to Location");
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    File.Copy(Feedback.FEEDBACK_FILE_NAME, save.FileName, true);
+                    MessageBox.Show("File Exported!\nFile at " + save.FileName);
+                    load.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error Exporting File\nError:\n" + ex);
+                    load.Close();
+                }
+            }
+            else if (save.ShowDialog() != DialogResult.None)
+            {
+                load.Close();
+            }
+        }
     }
 }
