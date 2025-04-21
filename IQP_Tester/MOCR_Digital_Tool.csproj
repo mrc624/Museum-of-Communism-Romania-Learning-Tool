@@ -563,9 +563,6 @@
     <Content Include="Life_Under_Pictures\Media.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Police_Against_Wall_With_Grafitti.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Life_Under_Pictures\Ration.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
