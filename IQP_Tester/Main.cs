@@ -69,6 +69,8 @@ namespace IQP_Tester
             this.BringToFront();
             Open_Title_Page();
             Main_Resize(this, new EventArgs());
+
+            openClose.Update_Ram_Saver(true);
         }
 
         private void Set_Panel_Clicks()

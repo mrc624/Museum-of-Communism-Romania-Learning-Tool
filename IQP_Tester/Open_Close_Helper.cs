@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Drawing;
+using System.Drawing.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,8 @@ namespace IQP_Tester
         //Timeout things
         Main main;
 
+        private Dictionary<string, Image> Pictures;
+
         private System.Timers.Timer Timer;
 
         static uint lastInteraction = 0;
@@ -40,6 +43,7 @@ namespace IQP_Tester
         public static double fade_increment = Settings.DEFAULT_FADE_INTERVAL;
 
         public bool block = false;
+        private static bool Ram_Saver = false;
 
         public void Start_Timer()
         {
@@ -129,6 +133,10 @@ namespace IQP_Tester
             {
                 block = true;
                 form.Opacity = 0; // start fully transparent
+                if (Ram_Saver)
+                {
+                    Impose_Images(form);
+                }
                 form.Show();
                 form.TopMost = true;
                 System.Windows.Forms.Timer fadeTimer = new System.Windows.Forms.Timer();
@@ -168,6 +176,10 @@ namespace IQP_Tester
                     {
                         fadeTimer.Stop(); // stop when invisible
                         form.Hide();
+                        if (Ram_Saver)
+                        {
+                            Dispose_Images(form);
+                        }
                         block = false;
                     }
 
@@ -208,6 +220,72 @@ namespace IQP_Tester
             }
         }
 
+        public void Update_Ram_Saver(bool enable)
+        {
+            Ram_Saver = enable;
+            if (enable)
+            {
+                if (Pictures == null)
+                {
+                    Pictures = new Dictionary<string, Image>();
+                }
+                Add_Pictures();
+            }
+            else
+            {
+                if (Pictures != null || Pictures.Count >= 0)
+                {
+                    Pictures.Clear();
+                }
+            }
+        }
+
+        private void Add_Pictures()
+        {
+            for (int i = 0; i < Main.Forms.Count; i++)
+            {
+                Add_Form_Pictures(Main.Forms[i]);
+                //Dispose_Images(Main.Forms[i]);
+            }
+        }
+
+        private void Add_Form_Pictures(Control control)
+        {
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                if (control.Controls[i] is PictureBox)
+                {
+                    PictureBox pb = (PictureBox)control.Controls[i];
+                    Pictures[pb.Name] = new Bitmap(pb.Image);
+                    if(pb.IsDisposed)
+                    {
+
+                    }
+                    if (pb.Image == null)
+                    {
+
+                    }
+                }
+                else if (control.Controls[i].HasChildren)
+                {
+                    Add_Form_Pictures(control.Controls[i]);
+                }    
+            }
+        }
+
+        private PictureBox Clone_Picturebox(PictureBox pb_old)
+        {
+            PictureBox new_pb = new PictureBox();
+
+            new_pb.Size = pb_old.Size;
+            new_pb.Name = pb_old.Name;
+            new_pb.Location = pb_old.Location;
+            new_pb.SizeMode = pb_old.SizeMode;
+            new_pb.Image = pb_old.Image;
+
+            return new_pb;
+        }
+
         public void Dispose_Images(Control control)
         {
             for (int i = 0; i < control.Controls.Count; i++)
@@ -224,6 +302,38 @@ namespace IQP_Tester
                 else if (control.Controls[i].HasChildren)
                 {
                     Dispose_Images(control.Controls[i]);
+                }
+            }
+        }
+
+        private void Impose_Images(Control control)
+        {
+            for (int i = 0; i < control.Controls.Count; i++)
+            {
+                if (control.Controls[i] is PictureBox)
+                {
+                    PictureBox pb = (PictureBox)control.Controls[i];
+
+                    if (Pictures.ContainsKey(pb.Name))
+                    {
+                        if (Pictures[pb.Name] != null)
+                        {
+                            pb.Image = Pictures[pb.Name];
+                            //System.Drawing.Imaging.ImageFormat format = image.RawFormat;
+                        }
+                        else
+                        {
+                            pb.Image = null;
+                        }
+                    }
+
+
+
+                    //pb.Image = Pictureboxes[control.Controls[i].Name].Image;
+                }
+                else if (control.Controls[i].HasChildren)
+                {
+                    Impose_Images(control.Controls[i]);
                 }
             }
         }
