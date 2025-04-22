@@ -2,7 +2,7 @@
   "FontOffset": "0",
   "TabTimeout": "1000",
   "TabDebounce": "5",
-  "btnBack": "False",
+  "btnBack": "True",
   "fadeInterval": "5",
   "fadeIncrement": "0.05",
   "feedback": "True"

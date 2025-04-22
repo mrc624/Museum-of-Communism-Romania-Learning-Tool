@@ -46,8 +46,6 @@ namespace IQP_Tester
 
         private void Set_Clicks()
         {
-            pbDPNow.Click += DoublePolaroid_Click;
-            pbDPThen.Click += DoublePolaroid_Click;
             lblDPText.Click += DoublePolaroid_Click;
             lblDPTitle.Click += DoublePolaroid_Click;
             tableLayoutDPMain.Click += DoublePolaroid_Click;
@@ -133,6 +131,40 @@ namespace IQP_Tester
         private void btnBack_Click(object sender, EventArgs e)
         {
             DoublePolaroid_Click(sender, e);
+        }
+
+        private void pbDPThen_Click(object sender, EventArgs e)
+        {
+            if (!openClose.block)
+            {
+                if (Main.picture_Zoom == null)
+                {
+                    Main.picture_Zoom = new Picture_Zoom(openClose, resize, textManager, pbDPThen);
+                }
+                else
+                {
+                    Main.picture_Zoom.Update_After_Gen(pbDPThen);
+                }
+                openClose.Interaction();
+                openClose.FadeIn(Main.picture_Zoom);
+            }
+        }
+
+        private void pbDPNow_Click(object sender, EventArgs e)
+        {
+            if (!openClose.block)
+            {
+                if (Main.picture_Zoom == null)
+                {
+                    Main.picture_Zoom = new Picture_Zoom(openClose, resize, textManager, pbDPNow);
+                }
+                else
+                {
+                    Main.picture_Zoom.Update_After_Gen(pbDPNow);
+                }
+                openClose.Interaction();
+                openClose.FadeIn(Main.picture_Zoom);
+            }
         }
     }
 }

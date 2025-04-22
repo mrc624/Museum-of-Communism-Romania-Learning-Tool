@@ -192,6 +192,12 @@
     <Compile Include="CeausescusRise.Designer.cs">
       <DependentUpon>CeausescusRise.cs</DependentUpon>
     </Compile>
+    <Compile Include="Picture_Zoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Picture_Zoom.Designer.cs">
+      <DependentUpon>Picture_Zoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -278,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Picture_Zoom.resx">
+      <DependentUpon>Picture_Zoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SovietEra.resx">
       <DependentUpon>SovietEra.cs</DependentUpon>

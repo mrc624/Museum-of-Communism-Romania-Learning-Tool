@@ -33,18 +33,18 @@
             this.pbDPNow = new System.Windows.Forms.PictureBox();
             this.pbDPThen = new System.Windows.Forms.PictureBox();
             this.tableLayoutDPMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignDoublePolaroid = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutLanguageDoublePolaroidZoomBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblDPText = new System.Windows.Forms.Label();
             this.lblDPTitle = new System.Windows.Forms.Label();
-            this.TableLayoutbtnBackAlignDoublePolaroid = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutDPPictures.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDPNow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDPThen)).BeginInit();
             this.tableLayoutDPMain.SuspendLayout();
-            this.tableLayoutLanguageDoublePolaroidZoomBtnAlign.SuspendLayout();
             this.TableLayoutbtnBackAlignDoublePolaroid.SuspendLayout();
+            this.tableLayoutLanguageDoublePolaroidZoomBtnAlign.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutDPPictures
@@ -76,6 +76,7 @@
             this.pbDPNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDPNow.TabIndex = 1;
             this.pbDPNow.TabStop = false;
+            this.pbDPNow.Click += new System.EventHandler(this.pbDPNow_Click);
             // 
             // pbDPThen
             // 
@@ -88,6 +89,7 @@
             this.pbDPThen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbDPThen.TabIndex = 0;
             this.pbDPThen.TabStop = false;
+            this.pbDPThen.Click += new System.EventHandler(this.pbDPThen_Click);
             // 
             // tableLayoutDPMain
             // 
@@ -110,6 +112,38 @@
             this.tableLayoutDPMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutDPMain.Size = new System.Drawing.Size(1904, 1041);
             this.tableLayoutDPMain.TabIndex = 1;
+            // 
+            // TableLayoutbtnBackAlignDoublePolaroid
+            // 
+            this.TableLayoutbtnBackAlignDoublePolaroid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutbtnBackAlignDoublePolaroid.ColumnCount = 3;
+            this.TableLayoutbtnBackAlignDoublePolaroid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.TableLayoutbtnBackAlignDoublePolaroid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.TableLayoutbtnBackAlignDoublePolaroid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignDoublePolaroid.Controls.Add(this.btnBack, 1, 1);
+            this.TableLayoutbtnBackAlignDoublePolaroid.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutbtnBackAlignDoublePolaroid.Name = "TableLayoutbtnBackAlignDoublePolaroid";
+            this.TableLayoutbtnBackAlignDoublePolaroid.RowCount = 3;
+            this.TableLayoutbtnBackAlignDoublePolaroid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignDoublePolaroid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.TableLayoutbtnBackAlignDoublePolaroid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.TableLayoutbtnBackAlignDoublePolaroid.Size = new System.Drawing.Size(1898, 98);
+            this.TableLayoutbtnBackAlignDoublePolaroid.TabIndex = 35;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1787, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(93, 35);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // tableLayoutLanguageDoublePolaroidZoomBtnAlign
             // 
@@ -171,38 +205,6 @@
             this.lblDPTitle.Text = "Unknown";
             this.lblDPTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // TableLayoutbtnBackAlignDoublePolaroid
-            // 
-            this.TableLayoutbtnBackAlignDoublePolaroid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TableLayoutbtnBackAlignDoublePolaroid.ColumnCount = 3;
-            this.TableLayoutbtnBackAlignDoublePolaroid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
-            this.TableLayoutbtnBackAlignDoublePolaroid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
-            this.TableLayoutbtnBackAlignDoublePolaroid.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.TableLayoutbtnBackAlignDoublePolaroid.Controls.Add(this.btnBack, 1, 1);
-            this.TableLayoutbtnBackAlignDoublePolaroid.Location = new System.Drawing.Point(3, 3);
-            this.TableLayoutbtnBackAlignDoublePolaroid.Name = "TableLayoutbtnBackAlignDoublePolaroid";
-            this.TableLayoutbtnBackAlignDoublePolaroid.RowCount = 3;
-            this.TableLayoutbtnBackAlignDoublePolaroid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.TableLayoutbtnBackAlignDoublePolaroid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
-            this.TableLayoutbtnBackAlignDoublePolaroid.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
-            this.TableLayoutbtnBackAlignDoublePolaroid.Size = new System.Drawing.Size(1898, 98);
-            this.TableLayoutbtnBackAlignDoublePolaroid.TabIndex = 35;
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1787, 3);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(93, 35);
-            this.btnBack.TabIndex = 8;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // DoublePolaroid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,8 +221,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbDPThen)).EndInit();
             this.tableLayoutDPMain.ResumeLayout(false);
             this.tableLayoutDPMain.PerformLayout();
-            this.tableLayoutLanguageDoublePolaroidZoomBtnAlign.ResumeLayout(false);
             this.TableLayoutbtnBackAlignDoublePolaroid.ResumeLayout(false);
+            this.tableLayoutLanguageDoublePolaroidZoomBtnAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

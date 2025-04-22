@@ -32,6 +32,8 @@ namespace IQP_Tester
 
         public static List<Form> Forms = new List<Form>();
 
+        public static Picture_Zoom picture_Zoom;
+
         public ThenAndNow thenAndNow;
         public Oppression oppression;
         public Stories stories;

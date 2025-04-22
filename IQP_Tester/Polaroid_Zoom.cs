@@ -22,6 +22,7 @@ namespace IQP_Tester
         PictureBox pb;
         Label lblQ;
         Label lblAns;
+        Form parent;
 
         public Polaroid_Zoom(Control polaroid, TextManager textMan, Open_Close_Helper open_close, Resize_Helper resize, Form parent)
         {
@@ -31,6 +32,8 @@ namespace IQP_Tester
             this.resize = resize;
             this.BackgroundImage = parent.BackgroundImage;
             this.BackgroundImageLayout = parent.BackgroundImageLayout;
+            this.parent = parent;
+            
             btnBack.Visible = Settings.btn_back_state;
 
             if (polaroid_Zoom_Helper.Is_Polaroid(polaroid))
@@ -52,17 +55,29 @@ namespace IQP_Tester
         private void Set_Clicks()
         {
             tableLayoutLanguagePolaroidZoomBtnAlign.Click += Polaroid_Zoom_Click;
+            TableLayoutbtnBackAlignPolaroidZoom.Click += Polaroid_Zoom_Click;
             tableLayoutPanelQuestionAndAnswer.Click += Polaroid_Zoom_Click;
             tableLayoutPolaroidZoomContainer.Click += Polaroid_Zoom_Click;
             tableLayoutPolaroidZoomMain.Click += Polaroid_Zoom_Click;
-            pbPicture.Click += Polaroid_Zoom_Click;
             lblAnswer.Click += Polaroid_Zoom_Click;
             lblQuestion.Click += Polaroid_Zoom_Click;
         }
 
-        private void PbPicture_Click(object sender, EventArgs e)
+        private void pbPicture_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            if (!openClose.block)
+            {
+                if (Main.picture_Zoom == null)
+                {
+                    Main.picture_Zoom = new Picture_Zoom(openClose, resize, textManager, pbPicture);
+                }
+                else
+                {
+                    Main.picture_Zoom.Update_After_Gen(pbPicture);
+                }
+                openClose.Interaction();
+                openClose.FadeIn(Main.picture_Zoom);
+            }
         }
 
         private void Update_Controls(Image image, string question, string answer)
@@ -81,6 +96,7 @@ namespace IQP_Tester
             Form parent = Get_Form(polaroid);
             this.BackgroundImage = parent.BackgroundImage;
             this.BackgroundImageLayout = parent.BackgroundImageLayout;
+            this.parent = parent;
 
             Update_Controls(pb.Image, lblQ.Text, lblAns.Text);
             textManager.Update_One_Form(this);

@@ -36,15 +36,15 @@
             this.tableLayoutPolaroidZoomContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.pbPicture = new System.Windows.Forms.PictureBox();
             this.tableLayoutPolaroidZoomMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutLanguagePolaroidZoomBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignPolaroidZoom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
+            this.tableLayoutLanguagePolaroidZoomBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.tableLayoutPanelQuestionAndAnswer.SuspendLayout();
             this.tableLayoutPolaroidZoomContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();
             this.tableLayoutPolaroidZoomMain.SuspendLayout();
+            this.TableLayoutbtnBackAlignPolaroidZoom.SuspendLayout();
             this.tableLayoutLanguagePolaroidZoomBtnAlign.SuspendLayout();
-            this.TableLayoutbtnBackAlign.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanelQuestionAndAnswer
@@ -139,13 +139,14 @@
             this.pbPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPicture.TabIndex = 0;
             this.pbPicture.TabStop = false;
+            this.pbPicture.Click += new System.EventHandler(this.pbPicture_Click);
             // 
             // tableLayoutPolaroidZoomMain
             // 
             this.tableLayoutPolaroidZoomMain.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPolaroidZoomMain.ColumnCount = 1;
             this.tableLayoutPolaroidZoomMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPolaroidZoomMain.Controls.Add(this.TableLayoutbtnBackAlign, 0, 0);
+            this.tableLayoutPolaroidZoomMain.Controls.Add(this.TableLayoutbtnBackAlignPolaroidZoom, 0, 0);
             this.tableLayoutPolaroidZoomMain.Controls.Add(this.tableLayoutLanguagePolaroidZoomBtnAlign, 0, 2);
             this.tableLayoutPolaroidZoomMain.Controls.Add(this.tableLayoutPolaroidZoomContainer, 0, 1);
             this.tableLayoutPolaroidZoomMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -157,6 +158,38 @@
             this.tableLayoutPolaroidZoomMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPolaroidZoomMain.Size = new System.Drawing.Size(1904, 1041);
             this.tableLayoutPolaroidZoomMain.TabIndex = 10;
+            // 
+            // TableLayoutbtnBackAlignPolaroidZoom
+            // 
+            this.TableLayoutbtnBackAlignPolaroidZoom.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TableLayoutbtnBackAlignPolaroidZoom.ColumnCount = 3;
+            this.TableLayoutbtnBackAlignPolaroidZoom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
+            this.TableLayoutbtnBackAlignPolaroidZoom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
+            this.TableLayoutbtnBackAlignPolaroidZoom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignPolaroidZoom.Controls.Add(this.btnBack, 1, 1);
+            this.TableLayoutbtnBackAlignPolaroidZoom.Location = new System.Drawing.Point(3, 3);
+            this.TableLayoutbtnBackAlignPolaroidZoom.Name = "TableLayoutbtnBackAlignPolaroidZoom";
+            this.TableLayoutbtnBackAlignPolaroidZoom.RowCount = 3;
+            this.TableLayoutbtnBackAlignPolaroidZoom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
+            this.TableLayoutbtnBackAlignPolaroidZoom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
+            this.TableLayoutbtnBackAlignPolaroidZoom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
+            this.TableLayoutbtnBackAlignPolaroidZoom.Size = new System.Drawing.Size(1898, 98);
+            this.TableLayoutbtnBackAlignPolaroidZoom.TabIndex = 34;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(1787, 3);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(93, 35);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // tableLayoutLanguagePolaroidZoomBtnAlign
             // 
@@ -177,38 +210,6 @@
             this.tableLayoutLanguagePolaroidZoomBtnAlign.Size = new System.Drawing.Size(1898, 99);
             this.tableLayoutLanguagePolaroidZoomBtnAlign.TabIndex = 32;
             // 
-            // TableLayoutbtnBackAlign
-            // 
-            this.TableLayoutbtnBackAlign.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TableLayoutbtnBackAlign.ColumnCount = 3;
-            this.TableLayoutbtnBackAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94F));
-            this.TableLayoutbtnBackAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
-            this.TableLayoutbtnBackAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.TableLayoutbtnBackAlign.Controls.Add(this.btnBack, 1, 1);
-            this.TableLayoutbtnBackAlign.Location = new System.Drawing.Point(3, 3);
-            this.TableLayoutbtnBackAlign.Name = "TableLayoutbtnBackAlign";
-            this.TableLayoutbtnBackAlign.RowCount = 3;
-            this.TableLayoutbtnBackAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.TableLayoutbtnBackAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
-            this.TableLayoutbtnBackAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
-            this.TableLayoutbtnBackAlign.Size = new System.Drawing.Size(1898, 98);
-            this.TableLayoutbtnBackAlign.TabIndex = 34;
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1787, 3);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(93, 35);
-            this.btnBack.TabIndex = 8;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // Polaroid_Zoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,8 +226,8 @@
             this.tableLayoutPolaroidZoomContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).EndInit();
             this.tableLayoutPolaroidZoomMain.ResumeLayout(false);
+            this.TableLayoutbtnBackAlignPolaroidZoom.ResumeLayout(false);
             this.tableLayoutLanguagePolaroidZoomBtnAlign.ResumeLayout(false);
-            this.TableLayoutbtnBackAlign.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -241,7 +242,7 @@
         private DoubleBufferedTableLayout tableLayoutPolaroidZoomContainer;
         private DoubleBufferedTableLayout tableLayoutPolaroidZoomMain;
         private DoubleBufferedTableLayout tableLayoutLanguagePolaroidZoomBtnAlign;
-        private DoubleBufferedTableLayout TableLayoutbtnBackAlign;
+        private DoubleBufferedTableLayout TableLayoutbtnBackAlignPolaroidZoom;
         private System.Windows.Forms.Button btnBack;
 
 
