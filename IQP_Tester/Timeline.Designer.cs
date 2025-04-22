@@ -118,10 +118,9 @@
             this.btnLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnLanguage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLanguage.Location = new System.Drawing.Point(3606, 134);
-            this.btnLanguage.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnLanguage.Location = new System.Drawing.Point(1787, 59);
             this.btnLanguage.Name = "btnLanguage";
-            this.btnLanguage.Size = new System.Drawing.Size(184, 80);
+            this.btnLanguage.Size = new System.Drawing.Size(93, 35);
             this.btnLanguage.TabIndex = 8;
             this.btnLanguage.Text = "English";
             this.btnLanguage.UseVisualStyleBackColor = false;
@@ -135,9 +134,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHowDidTheRegimeFall.AutoSize = true;
             this.lblHowDidTheRegimeFall.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHowDidTheRegimeFall.Location = new System.Drawing.Point(3, 0);
+            this.lblHowDidTheRegimeFall.Location = new System.Drawing.Point(1, 0);
+            this.lblHowDidTheRegimeFall.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblHowDidTheRegimeFall.Name = "lblHowDidTheRegimeFall";
-            this.lblHowDidTheRegimeFall.Size = new System.Drawing.Size(469, 156);
+            this.lblHowDidTheRegimeFall.Size = new System.Drawing.Size(235, 62);
             this.lblHowDidTheRegimeFall.TabIndex = 0;
             this.lblHowDidTheRegimeFall.Text = "How did the Regime fall?";
             this.lblHowDidTheRegimeFall.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -147,10 +147,10 @@
             this.panelRegimeFall.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelRegimeFall.Controls.Add(this.tableLayoutRegimeFall);
             this.panelRegimeFall.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRegimeFall.Location = new System.Drawing.Point(3, 101);
-            this.panelRegimeFall.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelRegimeFall.Location = new System.Drawing.Point(1, 45);
+            this.panelRegimeFall.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.panelRegimeFall.Name = "panelRegimeFall";
-            this.panelRegimeFall.Size = new System.Drawing.Size(477, 590);
+            this.panelRegimeFall.Size = new System.Drawing.Size(239, 262);
             this.panelRegimeFall.TabIndex = 12;
             this.panelRegimeFall.Click += new System.EventHandler(this.panelRegimeFall_Click);
             // 
@@ -163,12 +163,11 @@
             this.tableLayoutRegimeFall.Controls.Add(this.lblHowDidTheRegimeFall, 0, 0);
             this.tableLayoutRegimeFall.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutRegimeFall.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutRegimeFall.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutRegimeFall.Name = "tableLayoutRegimeFall";
             this.tableLayoutRegimeFall.RowCount = 2;
             this.tableLayoutRegimeFall.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutRegimeFall.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutRegimeFall.Size = new System.Drawing.Size(475, 588);
+            this.tableLayoutRegimeFall.Size = new System.Drawing.Size(237, 260);
             this.tableLayoutRegimeFall.TabIndex = 35;
             // 
             // pbRegimeFall
@@ -178,10 +177,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbRegimeFall.Image = global::IQP_Tester.Properties.Resources.RegimeFall;
             this.pbRegimeFall.InitialImage = global::IQP_Tester.Properties.Resources.RegimeFall;
-            this.pbRegimeFall.Location = new System.Drawing.Point(3, 158);
-            this.pbRegimeFall.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbRegimeFall.Location = new System.Drawing.Point(1, 63);
+            this.pbRegimeFall.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pbRegimeFall.Name = "pbRegimeFall";
-            this.pbRegimeFall.Size = new System.Drawing.Size(469, 541);
+            this.pbRegimeFall.Size = new System.Drawing.Size(235, 232);
             this.pbRegimeFall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbRegimeFall.TabIndex = 2;
             this.pbRegimeFall.TabStop = false;
@@ -195,13 +194,12 @@
             this.tableLayoutAna.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutAna.Controls.Add(this.lblAnaQ, 0, 0);
             this.tableLayoutAna.Controls.Add(this.lblAnaAns, 0, 1);
-            this.tableLayoutAna.Location = new System.Drawing.Point(8, 402);
-            this.tableLayoutAna.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutAna.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutAna.Name = "tableLayoutAna";
             this.tableLayoutAna.RowCount = 2;
             this.tableLayoutAna.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutAna.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutAna.Size = new System.Drawing.Size(465, 382);
+            this.tableLayoutAna.Size = new System.Drawing.Size(233, 169);
             this.tableLayoutAna.TabIndex = 9;
             // 
             // lblAnaQ
@@ -210,10 +208,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAnaQ.AutoSize = true;
             this.lblAnaQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnaQ.Location = new System.Drawing.Point(8, 0);
-            this.lblAnaQ.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblAnaQ.Location = new System.Drawing.Point(3, 0);
             this.lblAnaQ.Name = "lblAnaQ";
-            this.lblAnaQ.Size = new System.Drawing.Size(449, 61);
+            this.lblAnaQ.Size = new System.Drawing.Size(227, 25);
             this.lblAnaQ.TabIndex = 5;
             this.lblAnaQ.Text = "Unknown";
             this.lblAnaQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -223,10 +220,9 @@
             this.lblAnaAns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAnaAns.AutoSize = true;
-            this.lblAnaAns.Location = new System.Drawing.Point(8, 61);
-            this.lblAnaAns.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblAnaAns.Location = new System.Drawing.Point(3, 25);
             this.lblAnaAns.Name = "lblAnaAns";
-            this.lblAnaAns.Size = new System.Drawing.Size(449, 32);
+            this.lblAnaAns.Size = new System.Drawing.Size(227, 13);
             this.lblAnaAns.TabIndex = 7;
             this.lblAnaAns.Text = "Unknown";
             this.lblAnaAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -238,10 +234,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbAna.Image = global::IQP_Tester.Properties.Resources.Ana;
             this.pbAna.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbAna.InitialImage")));
-            this.pbAna.Location = new System.Drawing.Point(8, 7);
-            this.pbAna.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.pbAna.Location = new System.Drawing.Point(3, 3);
             this.pbAna.Name = "pbAna";
-            this.pbAna.Size = new System.Drawing.Size(465, 381);
+            this.pbAna.Size = new System.Drawing.Size(233, 169);
             this.pbAna.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbAna.TabIndex = 0;
             this.pbAna.TabStop = false;
@@ -255,13 +250,12 @@
             this.tableLayoutWarsaw.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutWarsaw.Controls.Add(this.lblWarsawQ, 0, 0);
             this.tableLayoutWarsaw.Controls.Add(this.lblWarsawAns, 0, 1);
-            this.tableLayoutWarsaw.Location = new System.Drawing.Point(8, 402);
-            this.tableLayoutWarsaw.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutWarsaw.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutWarsaw.Name = "tableLayoutWarsaw";
             this.tableLayoutWarsaw.RowCount = 2;
             this.tableLayoutWarsaw.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutWarsaw.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutWarsaw.Size = new System.Drawing.Size(540, 382);
+            this.tableLayoutWarsaw.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutWarsaw.TabIndex = 9;
             // 
             // lblWarsawQ
@@ -270,10 +264,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWarsawQ.AutoSize = true;
             this.lblWarsawQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWarsawQ.Location = new System.Drawing.Point(8, 0);
-            this.lblWarsawQ.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblWarsawQ.Location = new System.Drawing.Point(3, 0);
             this.lblWarsawQ.Name = "lblWarsawQ";
-            this.lblWarsawQ.Size = new System.Drawing.Size(524, 61);
+            this.lblWarsawQ.Size = new System.Drawing.Size(264, 25);
             this.lblWarsawQ.TabIndex = 5;
             this.lblWarsawQ.Text = "Unknown";
             this.lblWarsawQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -283,10 +276,9 @@
             this.lblWarsawAns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWarsawAns.AutoSize = true;
-            this.lblWarsawAns.Location = new System.Drawing.Point(8, 61);
-            this.lblWarsawAns.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblWarsawAns.Location = new System.Drawing.Point(3, 25);
             this.lblWarsawAns.Name = "lblWarsawAns";
-            this.lblWarsawAns.Size = new System.Drawing.Size(524, 32);
+            this.lblWarsawAns.Size = new System.Drawing.Size(264, 13);
             this.lblWarsawAns.TabIndex = 7;
             this.lblWarsawAns.Text = "Unknown";
             this.lblWarsawAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -298,10 +290,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbWarsaw.Image = global::IQP_Tester.Properties.Resources.Warsaw;
             this.pbWarsaw.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWarsaw.InitialImage")));
-            this.pbWarsaw.Location = new System.Drawing.Point(8, 7);
-            this.pbWarsaw.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.pbWarsaw.Location = new System.Drawing.Point(3, 3);
             this.pbWarsaw.Name = "pbWarsaw";
-            this.pbWarsaw.Size = new System.Drawing.Size(540, 381);
+            this.pbWarsaw.Size = new System.Drawing.Size(270, 169);
             this.pbWarsaw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbWarsaw.TabIndex = 0;
             this.pbWarsaw.TabStop = false;
@@ -315,13 +306,12 @@
             this.tableLayoutJuly.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutJuly.Controls.Add(this.lblJulyQ, 0, 0);
             this.tableLayoutJuly.Controls.Add(this.lblJulyAns, 0, 1);
-            this.tableLayoutJuly.Location = new System.Drawing.Point(8, 402);
-            this.tableLayoutJuly.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutJuly.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutJuly.Name = "tableLayoutJuly";
             this.tableLayoutJuly.RowCount = 2;
             this.tableLayoutJuly.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutJuly.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutJuly.Size = new System.Drawing.Size(465, 382);
+            this.tableLayoutJuly.Size = new System.Drawing.Size(233, 169);
             this.tableLayoutJuly.TabIndex = 9;
             // 
             // lblJulyQ
@@ -330,10 +320,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblJulyQ.AutoSize = true;
             this.lblJulyQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJulyQ.Location = new System.Drawing.Point(8, 0);
-            this.lblJulyQ.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblJulyQ.Location = new System.Drawing.Point(3, 0);
             this.lblJulyQ.Name = "lblJulyQ";
-            this.lblJulyQ.Size = new System.Drawing.Size(449, 61);
+            this.lblJulyQ.Size = new System.Drawing.Size(227, 25);
             this.lblJulyQ.TabIndex = 5;
             this.lblJulyQ.Text = "Unknown";
             this.lblJulyQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -343,10 +332,9 @@
             this.lblJulyAns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblJulyAns.AutoSize = true;
-            this.lblJulyAns.Location = new System.Drawing.Point(8, 61);
-            this.lblJulyAns.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblJulyAns.Location = new System.Drawing.Point(3, 25);
             this.lblJulyAns.Name = "lblJulyAns";
-            this.lblJulyAns.Size = new System.Drawing.Size(449, 32);
+            this.lblJulyAns.Size = new System.Drawing.Size(227, 13);
             this.lblJulyAns.TabIndex = 7;
             this.lblJulyAns.Text = "Unknown";
             this.lblJulyAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -358,10 +346,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbJuly.Image = global::IQP_Tester.Properties.Resources.July;
             this.pbJuly.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbJuly.InitialImage")));
-            this.pbJuly.Location = new System.Drawing.Point(8, 7);
-            this.pbJuly.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.pbJuly.Location = new System.Drawing.Point(3, 3);
             this.pbJuly.Name = "pbJuly";
-            this.pbJuly.Size = new System.Drawing.Size(465, 381);
+            this.pbJuly.Size = new System.Drawing.Size(233, 169);
             this.pbJuly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbJuly.TabIndex = 0;
             this.pbJuly.TabStop = false;
@@ -375,13 +362,12 @@
             this.tableLayoutHousePeople.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutHousePeople.Controls.Add(this.lblHousePeopleQ, 0, 0);
             this.tableLayoutHousePeople.Controls.Add(this.lblHousePeopleAns, 0, 1);
-            this.tableLayoutHousePeople.Location = new System.Drawing.Point(8, 402);
-            this.tableLayoutHousePeople.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutHousePeople.Location = new System.Drawing.Point(3, 178);
             this.tableLayoutHousePeople.Name = "tableLayoutHousePeople";
             this.tableLayoutHousePeople.RowCount = 2;
             this.tableLayoutHousePeople.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutHousePeople.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutHousePeople.Size = new System.Drawing.Size(540, 382);
+            this.tableLayoutHousePeople.Size = new System.Drawing.Size(270, 169);
             this.tableLayoutHousePeople.TabIndex = 9;
             // 
             // lblHousePeopleQ
@@ -390,10 +376,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHousePeopleQ.AutoSize = true;
             this.lblHousePeopleQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHousePeopleQ.Location = new System.Drawing.Point(8, 0);
-            this.lblHousePeopleQ.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblHousePeopleQ.Location = new System.Drawing.Point(3, 0);
             this.lblHousePeopleQ.Name = "lblHousePeopleQ";
-            this.lblHousePeopleQ.Size = new System.Drawing.Size(524, 61);
+            this.lblHousePeopleQ.Size = new System.Drawing.Size(264, 25);
             this.lblHousePeopleQ.TabIndex = 5;
             this.lblHousePeopleQ.Text = "Unknown";
             this.lblHousePeopleQ.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -403,10 +388,9 @@
             this.lblHousePeopleAns.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHousePeopleAns.AutoSize = true;
-            this.lblHousePeopleAns.Location = new System.Drawing.Point(8, 61);
-            this.lblHousePeopleAns.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblHousePeopleAns.Location = new System.Drawing.Point(3, 25);
             this.lblHousePeopleAns.Name = "lblHousePeopleAns";
-            this.lblHousePeopleAns.Size = new System.Drawing.Size(524, 32);
+            this.lblHousePeopleAns.Size = new System.Drawing.Size(264, 13);
             this.lblHousePeopleAns.TabIndex = 7;
             this.lblHousePeopleAns.Text = "Unknown";
             this.lblHousePeopleAns.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -418,10 +402,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbHousePeople.Image = global::IQP_Tester.Properties.Resources.HousePeople;
             this.pbHousePeople.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbHousePeople.InitialImage")));
-            this.pbHousePeople.Location = new System.Drawing.Point(8, 7);
-            this.pbHousePeople.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.pbHousePeople.Location = new System.Drawing.Point(3, 3);
             this.pbHousePeople.Name = "pbHousePeople";
-            this.pbHousePeople.Size = new System.Drawing.Size(540, 381);
+            this.pbHousePeople.Size = new System.Drawing.Size(270, 169);
             this.pbHousePeople.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbHousePeople.TabIndex = 0;
             this.pbHousePeople.TabStop = false;
@@ -431,10 +414,10 @@
             this.pbSoviet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbSoviet.Image = global::IQP_Tester.Properties.Resources.Soviet;
             this.pbSoviet.InitialImage = global::IQP_Tester.Properties.Resources.Soviet;
-            this.pbSoviet.Location = new System.Drawing.Point(3, 158);
-            this.pbSoviet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbSoviet.Location = new System.Drawing.Point(1, 32);
+            this.pbSoviet.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pbSoviet.Name = "pbSoviet";
-            this.pbSoviet.Size = new System.Drawing.Size(544, 541);
+            this.pbSoviet.Size = new System.Drawing.Size(272, 232);
             this.pbSoviet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSoviet.TabIndex = 2;
             this.pbSoviet.TabStop = false;
@@ -446,9 +429,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSoviet.AutoSize = true;
             this.lblSoviet.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoviet.Location = new System.Drawing.Point(3, 0);
+            this.lblSoviet.Location = new System.Drawing.Point(1, 0);
+            this.lblSoviet.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblSoviet.Name = "lblSoviet";
-            this.lblSoviet.Size = new System.Drawing.Size(544, 156);
+            this.lblSoviet.Size = new System.Drawing.Size(272, 31);
             this.lblSoviet.TabIndex = 0;
             this.lblSoviet.Text = "Era of Sovietization";
             this.lblSoviet.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -459,10 +443,10 @@
             this.panelCeausescusRise.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelCeausescusRise.Controls.Add(this.tableLayoutCeausescusRise);
             this.panelCeausescusRise.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCeausescusRise.Location = new System.Drawing.Point(3, 101);
-            this.panelCeausescusRise.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelCeausescusRise.Location = new System.Drawing.Point(1, 45);
+            this.panelCeausescusRise.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.panelCeausescusRise.Name = "panelCeausescusRise";
-            this.panelCeausescusRise.Size = new System.Drawing.Size(477, 590);
+            this.panelCeausescusRise.Size = new System.Drawing.Size(239, 262);
             this.panelCeausescusRise.TabIndex = 25;
             this.panelCeausescusRise.Click += new System.EventHandler(this.panelCeausescusRise_Click);
             // 
@@ -474,13 +458,12 @@
             this.tableLayoutCeausescusRise.Controls.Add(this.lblCeausescusRise, 0, 0);
             this.tableLayoutCeausescusRise.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutCeausescusRise.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutCeausescusRise.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutCeausescusRise.Name = "tableLayoutCeausescusRise";
             this.tableLayoutCeausescusRise.RowCount = 2;
             this.tableLayoutCeausescusRise.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutCeausescusRise.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutCeausescusRise.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutCeausescusRise.Size = new System.Drawing.Size(475, 588);
+            this.tableLayoutCeausescusRise.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutCeausescusRise.Size = new System.Drawing.Size(237, 260);
             this.tableLayoutCeausescusRise.TabIndex = 34;
             // 
             // pbCeausescusRise
@@ -488,10 +471,10 @@
             this.pbCeausescusRise.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbCeausescusRise.Image = global::IQP_Tester.Properties.Resources.CeausescusRise;
             this.pbCeausescusRise.InitialImage = global::IQP_Tester.Properties.Resources.CeausescusRise;
-            this.pbCeausescusRise.Location = new System.Drawing.Point(3, 158);
-            this.pbCeausescusRise.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbCeausescusRise.Location = new System.Drawing.Point(1, 63);
+            this.pbCeausescusRise.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pbCeausescusRise.Name = "pbCeausescusRise";
-            this.pbCeausescusRise.Size = new System.Drawing.Size(469, 503);
+            this.pbCeausescusRise.Size = new System.Drawing.Size(235, 232);
             this.pbCeausescusRise.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCeausescusRise.TabIndex = 2;
             this.pbCeausescusRise.TabStop = false;
@@ -503,9 +486,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCeausescusRise.AutoSize = true;
             this.lblCeausescusRise.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCeausescusRise.Location = new System.Drawing.Point(3, 0);
+            this.lblCeausescusRise.Location = new System.Drawing.Point(1, 0);
+            this.lblCeausescusRise.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblCeausescusRise.Name = "lblCeausescusRise";
-            this.lblCeausescusRise.Size = new System.Drawing.Size(469, 156);
+            this.lblCeausescusRise.Size = new System.Drawing.Size(235, 62);
             this.lblCeausescusRise.TabIndex = 0;
             this.lblCeausescusRise.Text = "Rise of Ceausescus";
             this.lblCeausescusRise.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -515,10 +499,9 @@
             this.pbTimeLine.BackColor = System.Drawing.Color.Transparent;
             this.pbTimeLine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbTimeLine.Image = global::IQP_Tester.Properties.Resources.Chain;
-            this.pbTimeLine.Location = new System.Drawing.Point(8, 1062);
-            this.pbTimeLine.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.pbTimeLine.Location = new System.Drawing.Point(3, 471);
             this.pbTimeLine.Name = "pbTimeLine";
-            this.pbTimeLine.Size = new System.Drawing.Size(3828, 220);
+            this.pbTimeLine.Size = new System.Drawing.Size(1898, 98);
             this.pbTimeLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbTimeLine.TabIndex = 9;
             this.pbTimeLine.TabStop = false;
@@ -529,10 +512,9 @@
             this.panelAna.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelAna.Controls.Add(this.tableLayoutAnaContainer);
             this.panelAna.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelAna.Location = new System.Drawing.Point(224, 7);
-            this.panelAna.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.panelAna.Location = new System.Drawing.Point(110, 3);
             this.panelAna.Name = "panelAna";
-            this.panelAna.Size = new System.Drawing.Size(483, 793);
+            this.panelAna.Size = new System.Drawing.Size(241, 352);
             this.panelAna.TabIndex = 30;
             // 
             // tableLayoutAnaContainer
@@ -544,12 +526,11 @@
             this.tableLayoutAnaContainer.Controls.Add(this.pbAna, 0, 0);
             this.tableLayoutAnaContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutAnaContainer.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutAnaContainer.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutAnaContainer.Name = "tableLayoutAnaContainer";
             this.tableLayoutAnaContainer.RowCount = 2;
             this.tableLayoutAnaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutAnaContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutAnaContainer.Size = new System.Drawing.Size(481, 791);
+            this.tableLayoutAnaContainer.Size = new System.Drawing.Size(239, 350);
             this.tableLayoutAnaContainer.TabIndex = 22;
             // 
             // panelJuly
@@ -557,10 +538,9 @@
             this.panelJuly.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelJuly.Controls.Add(this.tableLayoutJulyContainer);
             this.panelJuly.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelJuly.Location = new System.Drawing.Point(1787, 7);
-            this.panelJuly.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.panelJuly.Location = new System.Drawing.Point(884, 3);
             this.panelJuly.Name = "panelJuly";
-            this.panelJuly.Size = new System.Drawing.Size(483, 793);
+            this.panelJuly.Size = new System.Drawing.Size(241, 352);
             this.panelJuly.TabIndex = 31;
             // 
             // tableLayoutJulyContainer
@@ -572,12 +552,11 @@
             this.tableLayoutJulyContainer.Controls.Add(this.pbJuly, 0, 0);
             this.tableLayoutJulyContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutJulyContainer.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutJulyContainer.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutJulyContainer.Name = "tableLayoutJulyContainer";
             this.tableLayoutJulyContainer.RowCount = 2;
             this.tableLayoutJulyContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutJulyContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutJulyContainer.Size = new System.Drawing.Size(481, 791);
+            this.tableLayoutJulyContainer.Size = new System.Drawing.Size(239, 350);
             this.tableLayoutJulyContainer.TabIndex = 22;
             // 
             // panelHousePeople
@@ -585,10 +564,9 @@
             this.panelHousePeople.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelHousePeople.Controls.Add(this.tableLayoutHousePeopleContainer);
             this.panelHousePeople.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHousePeople.Location = new System.Drawing.Point(3088, 7);
-            this.panelHousePeople.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.panelHousePeople.Location = new System.Drawing.Point(1529, 3);
             this.panelHousePeople.Name = "panelHousePeople";
-            this.panelHousePeople.Size = new System.Drawing.Size(558, 793);
+            this.panelHousePeople.Size = new System.Drawing.Size(278, 352);
             this.panelHousePeople.TabIndex = 32;
             // 
             // tableLayoutHousePeopleContainer
@@ -600,12 +578,11 @@
             this.tableLayoutHousePeopleContainer.Controls.Add(this.pbHousePeople, 0, 0);
             this.tableLayoutHousePeopleContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutHousePeopleContainer.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutHousePeopleContainer.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutHousePeopleContainer.Name = "tableLayoutHousePeopleContainer";
             this.tableLayoutHousePeopleContainer.RowCount = 2;
             this.tableLayoutHousePeopleContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutHousePeopleContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutHousePeopleContainer.Size = new System.Drawing.Size(556, 791);
+            this.tableLayoutHousePeopleContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutHousePeopleContainer.TabIndex = 22;
             // 
             // panelWarsaw
@@ -613,10 +590,9 @@
             this.panelWarsaw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelWarsaw.Controls.Add(this.tableLayoutWarsawContainer);
             this.panelWarsaw.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelWarsaw.Location = new System.Drawing.Point(1959, 7);
-            this.panelWarsaw.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.panelWarsaw.Location = new System.Drawing.Point(970, 3);
             this.panelWarsaw.Name = "panelWarsaw";
-            this.panelWarsaw.Size = new System.Drawing.Size(558, 793);
+            this.panelWarsaw.Size = new System.Drawing.Size(278, 352);
             this.panelWarsaw.TabIndex = 31;
             // 
             // tableLayoutWarsawContainer
@@ -628,12 +604,11 @@
             this.tableLayoutWarsawContainer.Controls.Add(this.pbWarsaw, 0, 0);
             this.tableLayoutWarsawContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutWarsawContainer.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutWarsawContainer.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutWarsawContainer.Name = "tableLayoutWarsawContainer";
             this.tableLayoutWarsawContainer.RowCount = 2;
             this.tableLayoutWarsawContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutWarsawContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutWarsawContainer.Size = new System.Drawing.Size(556, 791);
+            this.tableLayoutWarsawContainer.Size = new System.Drawing.Size(276, 350);
             this.tableLayoutWarsawContainer.TabIndex = 22;
             // 
             // tableLayoutSoviet
@@ -644,12 +619,11 @@
             this.tableLayoutSoviet.Controls.Add(this.lblSoviet, 0, 0);
             this.tableLayoutSoviet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutSoviet.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutSoviet.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutSoviet.Name = "tableLayoutSoviet";
             this.tableLayoutSoviet.RowCount = 2;
             this.tableLayoutSoviet.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutSoviet.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutSoviet.Size = new System.Drawing.Size(550, 588);
+            this.tableLayoutSoviet.Size = new System.Drawing.Size(274, 260);
             this.tableLayoutSoviet.TabIndex = 33;
             // 
             // panelSoviet
@@ -658,10 +632,10 @@
             this.panelSoviet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelSoviet.Controls.Add(this.tableLayoutSoviet);
             this.panelSoviet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSoviet.Location = new System.Drawing.Point(3, 101);
-            this.panelSoviet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelSoviet.Location = new System.Drawing.Point(1, 45);
+            this.panelSoviet.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.panelSoviet.Name = "panelSoviet";
-            this.panelSoviet.Size = new System.Drawing.Size(552, 590);
+            this.panelSoviet.Size = new System.Drawing.Size(276, 262);
             this.panelSoviet.TabIndex = 24;
             this.panelSoviet.Click += new System.EventHandler(this.panelSoviet_Click);
             // 
@@ -677,7 +651,6 @@
             this.tableLayoutTimelineMain.Controls.Add(this.pbTimeLine, 0, 3);
             this.tableLayoutTimelineMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutTimelineMain.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutTimelineMain.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tableLayoutTimelineMain.Name = "tableLayoutTimelineMain";
             this.tableLayoutTimelineMain.RowCount = 7;
             this.tableLayoutTimelineMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -687,7 +660,7 @@
             this.tableLayoutTimelineMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0F));
             this.tableLayoutTimelineMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutTimelineMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutTimelineMain.Size = new System.Drawing.Size(3844, 2348);
+            this.tableLayoutTimelineMain.Size = new System.Drawing.Size(1904, 1041);
             this.tableLayoutTimelineMain.TabIndex = 33;
             // 
             // TableLayoutbtnBackAlignTimeline
@@ -700,14 +673,13 @@
             this.TableLayoutbtnBackAlignTimeline.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
             this.TableLayoutbtnBackAlignTimeline.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.TableLayoutbtnBackAlignTimeline.Controls.Add(this.btnBack, 1, 1);
-            this.TableLayoutbtnBackAlignTimeline.Location = new System.Drawing.Point(8, 7);
-            this.TableLayoutbtnBackAlignTimeline.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.TableLayoutbtnBackAlignTimeline.Location = new System.Drawing.Point(3, 3);
             this.TableLayoutbtnBackAlignTimeline.Name = "TableLayoutbtnBackAlignTimeline";
             this.TableLayoutbtnBackAlignTimeline.RowCount = 3;
             this.TableLayoutbtnBackAlignTimeline.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.TableLayoutbtnBackAlignTimeline.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
             this.TableLayoutbtnBackAlignTimeline.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
-            this.TableLayoutbtnBackAlignTimeline.Size = new System.Drawing.Size(3828, 220);
+            this.TableLayoutbtnBackAlignTimeline.Size = new System.Drawing.Size(1898, 98);
             this.TableLayoutbtnBackAlignTimeline.TabIndex = 35;
             // 
             // btnBack
@@ -715,10 +687,9 @@
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(3606, 8);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnBack.Location = new System.Drawing.Point(1787, 3);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(184, 78);
+            this.btnBack.Size = new System.Drawing.Size(93, 35);
             this.btnBack.TabIndex = 8;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -734,14 +705,13 @@
             this.tableLayoutLanguageTimelineBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.25F));
             this.tableLayoutLanguageTimelineBtnAlign.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
             this.tableLayoutLanguageTimelineBtnAlign.Controls.Add(this.btnLanguage, 1, 1);
-            this.tableLayoutLanguageTimelineBtnAlign.Location = new System.Drawing.Point(8, 2117);
-            this.tableLayoutLanguageTimelineBtnAlign.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutLanguageTimelineBtnAlign.Location = new System.Drawing.Point(3, 939);
             this.tableLayoutLanguageTimelineBtnAlign.Name = "tableLayoutLanguageTimelineBtnAlign";
             this.tableLayoutLanguageTimelineBtnAlign.RowCount = 3;
             this.tableLayoutLanguageTimelineBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57F));
             this.tableLayoutLanguageTimelineBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.25F));
             this.tableLayoutLanguageTimelineBtnAlign.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.75F));
-            this.tableLayoutLanguageTimelineBtnAlign.Size = new System.Drawing.Size(3828, 224);
+            this.tableLayoutLanguageTimelineBtnAlign.Size = new System.Drawing.Size(1898, 99);
             this.tableLayoutLanguageTimelineBtnAlign.TabIndex = 34;
             // 
             // tableLayoutTimelineBottom
@@ -760,12 +730,11 @@
             this.tableLayoutTimelineBottom.Controls.Add(this.tableLayoutEraSovietContainer, 1, 0);
             this.tableLayoutTimelineBottom.Controls.Add(this.panelWarsaw, 3, 0);
             this.tableLayoutTimelineBottom.Controls.Add(this.panelHousePeople, 5, 0);
-            this.tableLayoutTimelineBottom.Location = new System.Drawing.Point(8, 1296);
-            this.tableLayoutTimelineBottom.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutTimelineBottom.Location = new System.Drawing.Point(3, 575);
             this.tableLayoutTimelineBottom.Name = "tableLayoutTimelineBottom";
             this.tableLayoutTimelineBottom.RowCount = 1;
             this.tableLayoutTimelineBottom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutTimelineBottom.Size = new System.Drawing.Size(3828, 807);
+            this.tableLayoutTimelineBottom.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutTimelineBottom.TabIndex = 34;
             // 
             // tableLayoutEraSovietContainer
@@ -774,14 +743,13 @@
             this.tableLayoutEraSovietContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutEraSovietContainer.Controls.Add(this.panelSoviet, 0, 1);
             this.tableLayoutEraSovietContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutEraSovietContainer.Location = new System.Drawing.Point(639, 7);
-            this.tableLayoutEraSovietContainer.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutEraSovietContainer.Location = new System.Drawing.Point(316, 3);
             this.tableLayoutEraSovietContainer.Name = "tableLayoutEraSovietContainer";
             this.tableLayoutEraSovietContainer.RowCount = 3;
             this.tableLayoutEraSovietContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutEraSovietContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.tableLayoutEraSovietContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutEraSovietContainer.Size = new System.Drawing.Size(558, 793);
+            this.tableLayoutEraSovietContainer.Size = new System.Drawing.Size(278, 352);
             this.tableLayoutEraSovietContainer.TabIndex = 34;
             // 
             // tableLayoutTimelineTop
@@ -803,12 +771,11 @@
             this.tableLayoutTimelineTop.Controls.Add(this.panelJuly, 5, 0);
             this.tableLayoutTimelineTop.Controls.Add(this.tableLayoutRegimeFallContainer, 7, 0);
             this.tableLayoutTimelineTop.Controls.Add(this.tableLayoutCeausescusRiseContainer, 3, 0);
-            this.tableLayoutTimelineTop.Location = new System.Drawing.Point(8, 241);
-            this.tableLayoutTimelineTop.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutTimelineTop.Location = new System.Drawing.Point(3, 107);
             this.tableLayoutTimelineTop.Name = "tableLayoutTimelineTop";
             this.tableLayoutTimelineTop.RowCount = 1;
             this.tableLayoutTimelineTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutTimelineTop.Size = new System.Drawing.Size(3828, 807);
+            this.tableLayoutTimelineTop.Size = new System.Drawing.Size(1898, 358);
             this.tableLayoutTimelineTop.TabIndex = 34;
             // 
             // tableLayoutRegimeFallContainer
@@ -817,14 +784,13 @@
             this.tableLayoutRegimeFallContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutRegimeFallContainer.Controls.Add(this.panelRegimeFall, 0, 1);
             this.tableLayoutRegimeFallContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutRegimeFallContainer.Location = new System.Drawing.Point(3334, 7);
-            this.tableLayoutRegimeFallContainer.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutRegimeFallContainer.Location = new System.Drawing.Point(1650, 3);
             this.tableLayoutRegimeFallContainer.Name = "tableLayoutRegimeFallContainer";
             this.tableLayoutRegimeFallContainer.RowCount = 3;
             this.tableLayoutRegimeFallContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutRegimeFallContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.tableLayoutRegimeFallContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutRegimeFallContainer.Size = new System.Drawing.Size(483, 793);
+            this.tableLayoutRegimeFallContainer.Size = new System.Drawing.Size(241, 352);
             this.tableLayoutRegimeFallContainer.TabIndex = 36;
             // 
             // tableLayoutCeausescusRiseContainer
@@ -833,25 +799,23 @@
             this.tableLayoutCeausescusRiseContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutCeausescusRiseContainer.Controls.Add(this.panelCeausescusRise, 0, 1);
             this.tableLayoutCeausescusRiseContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutCeausescusRiseContainer.Location = new System.Drawing.Point(1288, 7);
-            this.tableLayoutCeausescusRiseContainer.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tableLayoutCeausescusRiseContainer.Location = new System.Drawing.Point(637, 3);
             this.tableLayoutCeausescusRiseContainer.Name = "tableLayoutCeausescusRiseContainer";
             this.tableLayoutCeausescusRiseContainer.RowCount = 3;
             this.tableLayoutCeausescusRiseContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutCeausescusRiseContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75F));
             this.tableLayoutCeausescusRiseContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutCeausescusRiseContainer.Size = new System.Drawing.Size(483, 793);
+            this.tableLayoutCeausescusRiseContainer.Size = new System.Drawing.Size(241, 352);
             this.tableLayoutCeausescusRiseContainer.TabIndex = 35;
             // 
             // Timeline
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IQP_Tester.Properties.Resources.TimelineBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(3844, 2348);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutTimelineMain);
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Timeline";
             this.Text = "Timeline";
             this.Shown += new System.EventHandler(this.Timeline_Shown);

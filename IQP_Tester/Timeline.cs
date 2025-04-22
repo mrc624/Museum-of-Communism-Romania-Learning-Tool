@@ -40,7 +40,7 @@ namespace IQP_Tester
         private static readonly Color Line_Color = Color.Black;
 
         Dictionary<Control, Panel> Lines_Assignments = new Dictionary<Control, Panel>();
-        Dictionary<Control, Rectangle> Originals = new Dictionary<Control, Rectangle>();
+        Dictionary<Control, Rectangle> Originals;
         List<Label> Year_Labels = new List<Label>();
 
         public enum Position
