@@ -30,7 +30,7 @@ namespace IQP_Tester
         public const int NUM_PB = 1;
 
         public List<Control> Polaroids = new List<Control>();
-        Polaroid_Zoom polaroid_zoom;
+        static Polaroid_Zoom polaroid_zoom;
 
         public void Polaroid_Zoom_Click_Handler(object sender, EventArgs e)
         {
