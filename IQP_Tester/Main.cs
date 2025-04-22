@@ -48,8 +48,6 @@ namespace IQP_Tester
 
         TitlePage titlePage;
 
-        public const int TABLE_LAYOUT_MAIN_EDGE_MARGIN = 50;
-
         public Main()
         {
             InitializeComponent();
