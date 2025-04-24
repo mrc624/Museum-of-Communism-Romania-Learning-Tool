@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using static IQP_Tester.Main;
 using System.Windows.Forms;
 using System.IO;
-using static IQP_Tester.TextManager;
 using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms.VisualStyles;
@@ -90,7 +89,6 @@ namespace IQP_Tester
 
         public void Generate_Citation_JSON(string file_name)
         {
-
             if (File.Exists(file_name))
             {
                 string json = File.ReadAllText(file_name);
