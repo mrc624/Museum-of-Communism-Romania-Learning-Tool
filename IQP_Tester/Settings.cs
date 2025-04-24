@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using static IQP_Tester.TextManager;
 using System.Windows.Forms;
 using System.IO;
+using System.Net.NetworkInformation;
+using System.Drawing;
 
 namespace IQP_Tester
 {
@@ -31,7 +33,8 @@ namespace IQP_Tester
             btnBack,
             fadeInterval,
             fadeIncrement,
-            feedback
+            feedback,
+            fontFamily
         }
 
         public string[] Options_To_String =
@@ -42,7 +45,8 @@ namespace IQP_Tester
             "btnBack",
             "fadeInterval",
             "fadeIncrement",
-            "feedback"
+            "feedback",
+            "fontFamily"
         };
 
         public const string FILE_NAME = "Settings.json";
@@ -54,8 +58,11 @@ namespace IQP_Tester
         public const int DEFAULT_FADE_INTERVAL = 10;
         public const double DEFAULT_FADE_INCREMENT = 0.05;
         public const bool DEFAULT_FEEDBACK_BTN = true;
+        public static FontFamily DEFAULT_FONT_FAMILY { get; protected set; } = new FontFamily("Microsoft Sans Serif");
 
-        public static bool btn_back_state;
+        public static bool btn_back_state = DEFAULT_BTN_BACK;
+        public static float Font_Offset = DEFAULT_FONT_OFFSET;
+        public static FontFamily Font_Family = DEFAULT_FONT_FAMILY;
 
         Dictionary<string, string> settings;
 
@@ -90,7 +97,8 @@ namespace IQP_Tester
                     { Options_To_String[(int)Options.btnBack], DEFAULT_BTN_BACK.ToString() },
                     { Options_To_String[(int)Options.fadeInterval], DEFAULT_FADE_INTERVAL.ToString() },
                     { Options_To_String[(int)Options.fadeIncrement], DEFAULT_FADE_INCREMENT.ToString() },
-                    { Options_To_String[(int)Options.feedback], DEFAULT_FEEDBACK_BTN.ToString() }
+                    { Options_To_String[(int)Options.feedback], DEFAULT_FEEDBACK_BTN.ToString() },
+                    { Options_To_String[(int)Options.fontFamily], DEFAULT_FONT_FAMILY.ToString() }
                 };
             }
 
@@ -143,6 +151,12 @@ namespace IQP_Tester
             {
                 settings[Options_To_String[(int)Options.feedback]] = DEFAULT_FEEDBACK_BTN.ToString();
             }
+
+            // font family
+            if (!settings.ContainsKey(Options_To_String[(int)Options.fontFamily]))
+            {
+                settings[Options_To_String[(int)Options.fontFamily]] = DEFAULT_FONT_FAMILY.ToString();
+            }
         }
 
         public void Reset_To_Defaults()
@@ -154,6 +168,7 @@ namespace IQP_Tester
             settings[Options_To_String[(int)Options.fadeInterval]] = DEFAULT_FADE_INTERVAL.ToString();
             settings[Options_To_String[(int)Options.fadeIncrement]] = DEFAULT_FADE_INCREMENT.ToString();
             settings[Options_To_String[(int)Options.feedback]] = DEFAULT_FEEDBACK_BTN.ToString();
+            settings[Options_To_String[(int)Options.fontFamily]] = DEFAULT_FONT_FAMILY.ToString();
             Overwrite_JSON();
         }
 
@@ -161,6 +176,7 @@ namespace IQP_Tester
         {
             string updated = JsonSerializer.Serialize(settings, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(FILE_NAME, updated, Encoding.UTF8);
+            Update_All();
         }
 
         private void Update_Settings(Dictionary<string, string> settings_new)
@@ -196,13 +212,14 @@ namespace IQP_Tester
 
         private void Update_All()
         {
-            Resize_Helper.Font_Offset = Get_Font_Offset();
+            Font_Offset = Get_Font_Offset();
             Open_Close_Helper.tabTimeout = Get_Tab_Timeout();
             Open_Close_Helper.tab_open_debounce = Get_Tab_Debounce();
             Update_Btn_Backs(Get_Btn_Back());
             Open_Close_Helper.fade_interval = Get_Fade_Interval();
             Open_Close_Helper.fade_increment = Get_Fade_Increment();
             main.Update_Feedback_Btn(Get_Feedback());
+            Font_Family = Get_Font_Family();
         }
 
         public float Get_Font_Offset()
@@ -213,7 +230,7 @@ namespace IQP_Tester
         public void Change_Font(float new_font)
         {
             settings[Options_To_String[(int)Options.FontOffset]] = new_font.ToString();
-            Resize_Helper.Font_Offset = new_font;
+            Font_Offset = new_font;
         }
 
         public uint Get_Tab_Timeout()
@@ -293,6 +310,28 @@ namespace IQP_Tester
         {
             settings[Options_To_String[(int)Options.feedback]] = state.ToString();
             main.Update_Feedback_Btn(state);
+        }
+
+        public FontFamily Get_Font_Family()
+        {
+            bool found = false;
+            int ind = 0;
+            string stored_font_name = settings[Options_To_String[(int)Options.fontFamily]];
+            while (!found && ind < FontFamily.Families.Count())
+            {
+                if (FontFamily.Families[ind].ToString() == stored_font_name)
+                {
+                    return FontFamily.Families[ind];
+                }
+                ind++;
+            }
+            return null;
+        }
+
+        public void Change_Font_Family(FontFamily new_font_family)
+        {
+            settings[Options_To_String[(int)Options.fontFamily]] = new_font_family.ToString();
+            Font_Family = new_font_family;
         }
     }
 }

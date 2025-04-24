@@ -2,8 +2,9 @@
   "FontOffset": "0",
   "TabTimeout": "1000",
   "TabDebounce": "5",
-  "btnBack": "True",
-  "fadeInterval": "5",
+  "btnBack": "False",
+  "fadeInterval": "10",
   "fadeIncrement": "0.05",
-  "feedback": "True"
+  "feedback": "True",
+  "fontFamily": "[FontFamily: Name=Microsoft Sans Serif]"
 }

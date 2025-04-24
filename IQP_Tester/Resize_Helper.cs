@@ -19,8 +19,6 @@ namespace IQP_Tester
         public const double QUARTER = 0.25;
         public const double THREE_QUARTERS = 0.75;
 
-        public static float Font_Offset = Settings.DEFAULT_FONT_OFFSET;
-
         public void CaptureAspectRatios(Control parent)
         {
             for (int i = 0; i < parent.Controls.Count; i++)
@@ -259,9 +257,9 @@ namespace IQP_Tester
                 var items = ratios[control];
                 float font_ratio = items.fontRatio;
 
-                float newFontSize = (float)control.Parent.Width * font_ratio + Font_Offset;
+                float newFontSize = (float)control.Parent.Width * font_ratio + Settings.Font_Offset;
 
-                control.Font = new Font(control.Font.FontFamily, (float)(newFontSize));
+                control.Font = new Font(Settings.Font_Family, (float)(newFontSize));
             }
         }
 

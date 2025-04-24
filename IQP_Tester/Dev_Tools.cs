@@ -410,6 +410,12 @@ namespace IQP_Tester
             tbFadeInterval.Text = settings.Get_Fade_Interval().ToString();
             tbFadeIncrement.Text = settings.Get_Fade_Increment().ToString();
             cbFeedback.CheckState = settings.Get_Feedback() ? CheckState.Checked : CheckState.Unchecked;
+            cbFontFamily.Items.Clear();
+            for (int i = 0; i < FontFamily.Families.Count(); i++)
+            {
+                cbFontFamily.Items.Add(FontFamily.Families[i].Name);
+            }
+            cbFontFamily.SelectedIndex = cbFontFamily.Items.IndexOf(Settings.Font_Family.Name);
         }
 
         private void Apply_Settings()
@@ -448,6 +454,11 @@ namespace IQP_Tester
             {
                 settings.Change_Feedback(cbFeedback.Checked);
                 cbFeedback.BackColor = SystemColors.Control;
+            }
+            if (cbFontFamily.BackColor == Color.Yellow)
+            {
+                settings.Change_Font_Family(FontFamily.Families[cbFontFamily.SelectedIndex]);
+                cbFontFamily.BackColor = SystemColors.Control;
             }
 
             settings.Overwrite_JSON();
@@ -619,6 +630,19 @@ namespace IQP_Tester
             else if (save.ShowDialog() != DialogResult.None)
             {
                 load.Close();
+            }
+        }
+
+        private void cbFontFamily_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FontFamily font = FontFamily.Families[cbFontFamily.SelectedIndex];
+            if (FontFamily.Families[cbFontFamily.SelectedIndex].Name == Settings.Font_Family.Name)
+            {
+                cbFontFamily.BackColor = SystemColors.Control;
+            }
+            else
+            {
+                cbFontFamily.BackColor = Color.Yellow;
             }
         }
     }
