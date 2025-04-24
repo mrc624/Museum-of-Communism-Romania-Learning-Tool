@@ -18,6 +18,7 @@ namespace IQP_Tester
         TextManager textManager;
         Open_Close_Helper openClose;
         Polaroid_Helper polaroid_Zoom_Helper = new Polaroid_Helper();
+        Seconday_Form_Helper secondary_Helper = new Seconday_Form_Helper();
 
         PictureBox pb;
         Label lblQ;
@@ -93,7 +94,7 @@ namespace IQP_Tester
             lblQ = polaroid_Zoom_Helper.Find_Q(polaroid);
             lblAns = polaroid_Zoom_Helper.Find_Ans(polaroid);
             btnBack.Visible = Settings.btn_back_state;
-            Form parent = Get_Form(polaroid);
+            Form parent = secondary_Helper.Get_Form(polaroid);
             this.BackgroundImage = parent.BackgroundImage;
             this.BackgroundImageLayout = parent.BackgroundImageLayout;
             this.parent = parent;
@@ -102,15 +103,6 @@ namespace IQP_Tester
             textManager.Update_One_Form(this);
             Translate_Polaroid();
             Polaroid_Zoom_Resize(this, new EventArgs());
-        }
-
-        private Form Get_Form(Control control)
-        {
-            while (!(control is Form))
-            {
-                control = control.Parent;
-            }
-            return (Form)control;
         }
 
         private void Handle_Long_Ans()

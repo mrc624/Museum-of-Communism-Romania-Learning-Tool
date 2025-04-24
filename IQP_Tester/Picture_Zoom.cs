@@ -15,6 +15,7 @@ namespace IQP_Tester
         Open_Close_Helper openClose;
         Resize_Helper resize;
         TextManager textManager;
+        Seconday_Form_Helper secondary_Helper = new Seconday_Form_Helper();
 
         public Picture_Zoom(Open_Close_Helper openClose, Resize_Helper resize, TextManager textManager, PictureBox picture)
         {
@@ -25,20 +26,11 @@ namespace IQP_Tester
             Update_After_Gen(picture);
         }
 
-        private Form Get_Form(Control control)
-        {
-            while (!(control is Form))
-            {
-                control = control.Parent;
-            }
-            return (Form)control;
-        }
-
         public void Update_After_Gen(PictureBox picture)
         {
             pbPictureZoom.Image = picture.Image;
             pbPictureZoom.SizeMode = picture.SizeMode;
-            Form parent = Get_Form(picture);
+            Form parent = secondary_Helper.Get_Form(picture);
             this.BackgroundImage = parent.BackgroundImage;
             this.BackgroundImageLayout = parent.BackgroundImageLayout;
             btnBack.Visible = Settings.btn_back_state;

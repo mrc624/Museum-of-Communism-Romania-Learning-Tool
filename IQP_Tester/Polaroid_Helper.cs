@@ -14,6 +14,7 @@ namespace IQP_Tester
         Click_Helper click_helper = new Click_Helper();
         Resize_Helper resize;
         TextManager textManager;
+        Seconday_Form_Helper secondary_Helper = new Seconday_Form_Helper();
 
         public const string LONG_POLAROID_ANS_FLAG = "PolLong";
         public const int NUM_CONTROLS_IN_POLAROID = 3;
@@ -54,23 +55,12 @@ namespace IQP_Tester
             }
             if (polaroid_zoom == null)
             {
-                polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose, resize, Get_Form(Polaroid));
+                polaroid_zoom = new Polaroid_Zoom(Polaroid, textManager, openClose, resize, secondary_Helper.Get_Form(Polaroid));
             }
             openClose.Interaction();
             polaroid_zoom.Update_After_Gen(Polaroid);
             openClose.FadeIn(polaroid_zoom);
         }
-
-        private Form Get_Form(Control control)
-        {
-            while(!(control is Form))
-            {
-                control = control.Parent;
-            }
-            return (Form)control;
-        }
-
-        public const int num_controls = 3;
 
         public void Assign_Click_Handler_To_Valid(Form form, TextManager textMan, Resize_Helper resize, Open_Close_Helper open_close) // maybe this should be looking through children of the form too, in case polaroids are grouped in panels
         {

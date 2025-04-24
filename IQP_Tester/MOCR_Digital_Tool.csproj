@@ -203,6 +203,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Seconday_Form_Helper.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="SovietEra.cs">
       <SubType>Form</SubType>
