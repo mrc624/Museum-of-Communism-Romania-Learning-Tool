@@ -48,6 +48,8 @@
             this.btnEditTextApply = new System.Windows.Forms.Button();
             this.btnEditTextRefresh = new System.Windows.Forms.Button();
             this.tabSettings = new System.Windows.Forms.TabPage();
+            this.cbFontFamily = new System.Windows.Forms.ComboBox();
+            this.lblFontFamily = new System.Windows.Forms.Label();
             this.btnExportFeedback = new System.Windows.Forms.Button();
             this.cbFeedback = new System.Windows.Forms.CheckBox();
             this.lblFeedback = new System.Windows.Forms.Label();
@@ -66,19 +68,21 @@
             this.btnRefreshDevSettings = new System.Windows.Forms.Button();
             this.tbFontSizeOffset = new System.Windows.Forms.TextBox();
             this.lblFontSizeOffset = new System.Windows.Forms.Label();
-            this.lblFontFamily = new System.Windows.Forms.Label();
-            this.cbFontFamily = new System.Windows.Forms.ComboBox();
+            this.tabPictureManagement = new System.Windows.Forms.TabPage();
+            this.btnRefreshImageManagement = new System.Windows.Forms.Button();
             this.tableLayoutPanelOpenForms = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.tableLayoutDevEditText = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.lblEditTextRomanian = new System.Windows.Forms.Label();
             this.lblEditTextEnglish = new System.Windows.Forms.Label();
             this.lblEditTextControlName = new System.Windows.Forms.Label();
+            this.tableLayoutImageManagement = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.TabControlDevs.SuspendLayout();
             this.TabStastics.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelOpenForms.SuspendLayout();
             this.tabText_Edit.SuspendLayout();
             this.tabSettings.SuspendLayout();
+            this.tabPictureManagement.SuspendLayout();
             this.tableLayoutDevEditText.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,6 +91,7 @@
             this.TabControlDevs.Controls.Add(this.TabStastics);
             this.TabControlDevs.Controls.Add(this.tabText_Edit);
             this.TabControlDevs.Controls.Add(this.tabSettings);
+            this.TabControlDevs.Controls.Add(this.tabPictureManagement);
             this.TabControlDevs.Location = new System.Drawing.Point(32, 29);
             this.TabControlDevs.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.TabControlDevs.Name = "TabControlDevs";
@@ -328,6 +333,26 @@
             this.tabSettings.Text = "Settings";
             this.tabSettings.UseVisualStyleBackColor = true;
             // 
+            // cbFontFamily
+            // 
+            this.cbFontFamily.FormattingEnabled = true;
+            this.cbFontFamily.Location = new System.Drawing.Point(413, 449);
+            this.cbFontFamily.Name = "cbFontFamily";
+            this.cbFontFamily.Size = new System.Drawing.Size(601, 39);
+            this.cbFontFamily.TabIndex = 23;
+            this.cbFontFamily.SelectedIndexChanged += new System.EventHandler(this.cbFontFamily_SelectedIndexChanged);
+            // 
+            // lblFontFamily
+            // 
+            this.lblFontFamily.AutoSize = true;
+            this.lblFontFamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFontFamily.Location = new System.Drawing.Point(2, 452);
+            this.lblFontFamily.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.lblFontFamily.Name = "lblFontFamily";
+            this.lblFontFamily.Size = new System.Drawing.Size(228, 46);
+            this.lblFontFamily.TabIndex = 22;
+            this.lblFontFamily.Text = "Font Family";
+            // 
             // btnExportFeedback
             // 
             this.btnExportFeedback.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -534,25 +559,28 @@
             this.lblFontSizeOffset.TabIndex = 4;
             this.lblFontSizeOffset.Text = "Font Size Offset";
             // 
-            // lblFontFamily
+            // tabPictureManagement
             // 
-            this.lblFontFamily.AutoSize = true;
-            this.lblFontFamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFontFamily.Location = new System.Drawing.Point(2, 452);
-            this.lblFontFamily.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.lblFontFamily.Name = "lblFontFamily";
-            this.lblFontFamily.Size = new System.Drawing.Size(228, 46);
-            this.lblFontFamily.TabIndex = 22;
-            this.lblFontFamily.Text = "Font Family";
+            this.tabPictureManagement.Controls.Add(this.btnRefreshImageManagement);
+            this.tabPictureManagement.Controls.Add(this.tableLayoutImageManagement);
+            this.tabPictureManagement.Location = new System.Drawing.Point(10, 48);
+            this.tabPictureManagement.Name = "tabPictureManagement";
+            this.tabPictureManagement.Size = new System.Drawing.Size(2065, 1478);
+            this.tabPictureManagement.TabIndex = 3;
+            this.tabPictureManagement.Text = "Picture Management";
+            this.tabPictureManagement.UseVisualStyleBackColor = true;
             // 
-            // cbFontFamily
+            // btnRefreshImageManagement
             // 
-            this.cbFontFamily.FormattingEnabled = true;
-            this.cbFontFamily.Location = new System.Drawing.Point(413, 449);
-            this.cbFontFamily.Name = "cbFontFamily";
-            this.cbFontFamily.Size = new System.Drawing.Size(601, 39);
-            this.cbFontFamily.TabIndex = 23;
-            this.cbFontFamily.SelectedIndexChanged += new System.EventHandler(this.cbFontFamily_SelectedIndexChanged);
+            this.btnRefreshImageManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnRefreshImageManagement.Location = new System.Drawing.Point(1857, 1416);
+            this.btnRefreshImageManagement.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnRefreshImageManagement.Name = "btnRefreshImageManagement";
+            this.btnRefreshImageManagement.Size = new System.Drawing.Size(200, 55);
+            this.btnRefreshImageManagement.TabIndex = 2;
+            this.btnRefreshImageManagement.Text = "Refresh";
+            this.btnRefreshImageManagement.UseVisualStyleBackColor = false;
+            this.btnRefreshImageManagement.Click += new System.EventHandler(this.btnRefreshImageManagement_Click);
             // 
             // tableLayoutPanelOpenForms
             // 
@@ -627,6 +655,22 @@
             this.lblEditTextControlName.Text = "Control Name";
             this.lblEditTextControlName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // tableLayoutImageManagement
+            // 
+            this.tableLayoutImageManagement.AutoScroll = true;
+            this.tableLayoutImageManagement.ColumnCount = 4;
+            this.tableLayoutImageManagement.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutImageManagement.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutImageManagement.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutImageManagement.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutImageManagement.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutImageManagement.Name = "tableLayoutImageManagement";
+            this.tableLayoutImageManagement.RowCount = 2;
+            this.tableLayoutImageManagement.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutImageManagement.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutImageManagement.Size = new System.Drawing.Size(2059, 1403);
+            this.tableLayoutImageManagement.TabIndex = 0;
+            // 
             // Dev_Tools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -635,7 +679,7 @@
             this.Controls.Add(this.TabControlDevs);
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Dev_Tools";
-            this.Text = "Dev_Tools";
+            this.Text = "Tools";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dev_Tools_FormClosing);
             this.TabControlDevs.ResumeLayout(false);
             this.TabStastics.ResumeLayout(false);
@@ -646,6 +690,7 @@
             this.tabText_Edit.ResumeLayout(false);
             this.tabSettings.ResumeLayout(false);
             this.tabSettings.PerformLayout();
+            this.tabPictureManagement.ResumeLayout(false);
             this.tableLayoutDevEditText.ResumeLayout(false);
             this.tableLayoutDevEditText.PerformLayout();
             this.ResumeLayout(false);
@@ -698,5 +743,8 @@
         private System.Windows.Forms.Button btnExportFeedback;
         private System.Windows.Forms.Label lblFontFamily;
         private System.Windows.Forms.ComboBox cbFontFamily;
+        private System.Windows.Forms.TabPage tabPictureManagement;
+        private DoubleBufferedTableLayout tableLayoutImageManagement;
+        private System.Windows.Forms.Button btnRefreshImageManagement;
     }
 }

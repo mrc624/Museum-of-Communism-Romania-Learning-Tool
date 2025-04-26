@@ -14,7 +14,7 @@ namespace IQP_Tester
 
         public const string PICTURES_JSON_FILE_NAME = "pictures.json";
 
-        private Dictionary<string, string> Images = new Dictionary<string, string>();
+        public Dictionary<string, string> Images { get; protected set; } = new Dictionary<string, string>();
 
         private void Generate_Pictures_JSON()
         {

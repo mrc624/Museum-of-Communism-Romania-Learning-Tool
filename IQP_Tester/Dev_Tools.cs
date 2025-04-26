@@ -57,6 +57,22 @@ namespace IQP_Tester
         public TableLayoutPanelCellBorderStyle LOADING = TableLayoutPanelCellBorderStyle.None;
         public TableLayoutPanelCellBorderStyle LOADED = TableLayoutPanelCellBorderStyle.Single;
 
+        public const int PICTURE_NAME_COLUMN = 0;
+        public const int PICTURE_IMAGE_COLUMN = 1;
+        public const int PICTURE_PATH_COLUMN = 2;
+        public const int PICTURE_IMPORT_COLUMN = 3;
+
+        public const string PICTURE_NAME_HEADER = "Picture Box Name";
+        public const string PICTURE_IMAGE_HEADER = "Image";
+        public const string PICTURE_PATH_HEADER = "Image File Path";
+        public const string PICTURE_IMPORT_HEADER = "Import Picture";
+
+        public const string PICTURE_NO_IMAGE = "NO IMAGE FOUND";
+        public const string IMAGE_FLAG = "img";
+        public const string PATH_FLAG = "path";
+
+        // Edit Text Tab
+
         private void Update_Global_Reformatted(Dictionary<string, Dictionary<string, string>> reformatted)
         {
             if (reformatted != null)
@@ -158,20 +174,18 @@ namespace IQP_Tester
                 tableLayoutDevEditText.Controls[0].Dispose();
             }
             tableLayoutDevEditText.RowCount = 0;
-            Add_Headers();
+            Add_EditText_Headers();
             tableLayoutDevEditText.ResumeLayout();
         }
 
-        private void Add_Headers()
+        private void Add_EditText_Headers()
         {
             Label control = tableLayout_Helper.Get_Title_Label(HEADER_CONTROL_TEXT, HEADER_CONTROL_TEXT);
             tableLayoutDevEditText.Controls.Add(control, CONTROL_NAME_COLUMN, HEADER_ROW);
 
-            int eng_width = tableLayoutDevEditText.GetColumnWidths()[ENGLISH_COLUMN];
             Label english = tableLayout_Helper.Get_Title_Label(HEADER_ENGLISH_TEXT, HEADER_ENGLISH_TEXT);
             tableLayoutDevEditText.Controls.Add(english, ENGLISH_COLUMN, HEADER_ROW);
 
-            int rom_width = tableLayoutDevEditText.GetColumnWidths()[ROMANIAN_COLUMN];
             Label romanian = tableLayout_Helper.Get_Title_Label(HEADER_ROMANIAN_TEXT, HEADER_ROMANIAN_TEXT);
             tableLayoutDevEditText.Controls.Add(romanian, ROMANIAN_COLUMN, HEADER_ROW);
         }
@@ -349,6 +363,8 @@ namespace IQP_Tester
             }
         }
 
+        // Stats Tab
+
         private void btnRefreshOpenForms_Click(object sender, EventArgs e)
         {
             lblOpenFormsCountDisp.Text = System.Windows.Forms.Application.OpenForms.Count.ToString();
@@ -381,7 +397,6 @@ namespace IQP_Tester
                 tableLayoutPanelOpenForms.Controls[0].Dispose();
             }
             tableLayoutPanelOpenForms.RowCount = 0;
-            Add_Headers();
         }
 
         private void Fill_General_Stats()
@@ -395,11 +410,7 @@ namespace IQP_Tester
             Fill_General_Stats();
         }
 
-        private void Dev_Tools_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            e.Cancel = true;
-            openClose.Close(this);
-        }
+        // Settings Tab
 
         private void Fill_Settings()
         {
@@ -644,6 +655,141 @@ namespace IQP_Tester
             {
                 cbFontFamily.BackColor = Color.Yellow;
             }
+        }
+
+        // Picture Management Tab
+
+        private void btnRefreshImageManagement_Click(object sender, EventArgs e)
+        {
+            Loading load = new Loading("Refreshing Picture Table");
+
+            load.Update_Text("Emptying Image Table");
+            Empty_Image_Management_Table();
+            tableLayoutImageManagement.Visible = true;
+            load.Update_Text("Filling Image Table");
+            Fill_Image_Management_Table();
+            load.Update_Text("Enabling Buttons");
+            btnEditTextApply.Enabled = true;
+            btnGenerateTextCSV.Enabled = true;
+            btnReadCSV.Enabled = true;
+            load.Close();
+        }
+
+        private void Empty_Image_Management_Table()
+        {
+            tableLayoutImageManagement.Visible = false;
+            tableLayoutImageManagement.SuspendLayout();
+            tableLayoutImageManagement.CellBorderStyle = LOADING;
+            while (tableLayoutImageManagement.Controls.Count > 0)
+            {
+                tableLayoutImageManagement.Controls[0].Dispose();
+            }
+            tableLayoutImageManagement.RowCount = 0;
+            Add_Image_Management_Headers();
+            tableLayoutImageManagement.ResumeLayout();
+        }
+
+        private void Add_Image_Management_Headers()
+        {
+            Label pb_name = tableLayout_Helper.Get_Title_Label(PICTURE_NAME_HEADER, PICTURE_NAME_HEADER);
+            tableLayoutImageManagement.Controls.Add(pb_name, PICTURE_NAME_COLUMN, HEADER_ROW);
+            
+            Label image = tableLayout_Helper.Get_Title_Label(PICTURE_IMAGE_HEADER, PICTURE_IMAGE_HEADER);
+            tableLayoutImageManagement.Controls.Add(image, PICTURE_IMAGE_COLUMN, HEADER_ROW);
+
+            Label path = tableLayout_Helper.Get_Title_Label(PICTURE_PATH_HEADER, PICTURE_PATH_HEADER);
+            tableLayoutImageManagement.Controls.Add(path, PICTURE_PATH_COLUMN, HEADER_ROW);
+
+            Label import = tableLayout_Helper.Get_Title_Label(PICTURE_IMPORT_HEADER, PICTURE_IMPORT_HEADER);
+            tableLayoutImageManagement.Controls.Add(import, PICTURE_IMPORT_COLUMN, HEADER_ROW);
+        }
+
+
+        private void Fill_Image_Management_Table()
+        {
+            tableLayoutImageManagement.Visible = false;
+            tableLayoutImageManagement.SuspendLayout();
+
+            List<string> pb_names = Main.image_Manager.Images.Keys.ToList();
+
+            tableLayoutImageManagement.CellBorderStyle = LOADING;
+
+            string pb_name = null;
+            int path_width = tableLayoutImageManagement.GetColumnWidths()[PICTURE_PATH_COLUMN];
+            Label name;
+            PictureBox pb;
+            TextBox path;
+            Label no_image;
+
+            for (int i = 0; i < pb_names.Count; i++)
+            {
+                tableLayoutImageManagement.RowCount++;
+                int row = i + ROWS_TO_SKIP;
+
+                pb_name = pb_names[i];
+                name = tableLayout_Helper.Get_Standard_Label(pb_name, pb_name);
+                tableLayoutImageManagement.Controls.Add(name, PICTURE_NAME_COLUMN, row);
+
+                if (File.Exists(Main.image_Manager.Images[pb_name]))
+                {
+                    System.Drawing.Image image = System.Drawing.Image.FromFile(Main.image_Manager.Images[pb_name]);
+                    pb = tableLayout_Helper.Get_PictureBox(image, IMAGE_FLAG + pb_names[i]);
+                    tableLayoutImageManagement.Controls.Add(pb, PICTURE_IMAGE_COLUMN, row);
+
+                    path = tableLayout_Helper.Get_Textbox(Main.image_Manager.Images[pb_name], PATH_FLAG + pb_names[i], path_width, AUTO_SIZE);
+                    path.TextChanged += Image_Management_Path_TextChanged;
+                    path.BackColor = SystemColors.Window;
+                    tableLayoutImageManagement.Controls.Add(path, PICTURE_PATH_COLUMN, row);
+                }
+                else
+                {
+                    no_image = tableLayout_Helper.Get_Standard_Label(PICTURE_NO_IMAGE, PICTURE_NO_IMAGE);
+                    tableLayoutImageManagement.Controls.Add(no_image, PICTURE_IMAGE_COLUMN, row);
+
+                    path = tableLayout_Helper.Get_Textbox(PICTURE_NO_IMAGE, PATH_FLAG + pb_names[i], path_width, AUTO_SIZE);
+                    path.TextChanged += Image_Management_Path_TextChanged;
+                    path.BackColor = Color.Red;
+                    tableLayoutImageManagement.Controls.Add(path, PICTURE_PATH_COLUMN, row);
+                }
+            }
+            tableLayout_Helper.Set_Row_Heights(tableLayoutImageManagement);
+            tableLayoutImageManagement.ResumeLayout();
+            tableLayoutImageManagement.CellBorderStyle = LOADED;
+            tableLayoutImageManagement.Visible = true;
+        }
+
+        private void Image_Management_Path_TextChanged(object sender, EventArgs e)
+        {
+            if (sender is TextBox)
+            {
+                TextBox tb = (TextBox)sender;
+
+                if (File.Exists(tb.Text) && System.Drawing.Image.FromFile(tb.Text) != null)
+                {
+                    string name = tableLayoutImageManagement.GetControlFromPosition(PICTURE_NAME_COLUMN, tableLayoutImageManagement.GetCellPosition(tb).Row).Text;
+
+                    if (Main.image_Manager.Images[name] != tb.Text)
+                    {
+                        tb.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        tb.BackColor = SystemColors.Window;
+                    }
+                }
+                else
+                {
+                    tb.BackColor = Color.Red;
+                }
+            }
+        }
+
+        // General Page Things
+
+        private void Dev_Tools_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            openClose.Close(this);
         }
     }
 }

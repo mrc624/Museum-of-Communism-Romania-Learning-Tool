@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IQP_Tester.Properties;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -29,6 +30,22 @@ namespace IQP_Tester
         public System.Windows.Forms.Label Get_Standard_Label(string text, string name)
         {
             return Get_Label(text, name, STANDARD_FONT_SIZE, STANDARD_ANCHOR, STANDARD_ALIGN);
+        }
+
+        public System.Windows.Forms.PictureBox Get_PictureBox(Image image, string name)
+        {
+            PictureBox pb = new PictureBox();
+
+            pb.Dock = DockStyle.Fill;
+            pb.Location = new System.Drawing.Point(3, 3);
+            pb.Name = name;
+            pb.Size = new System.Drawing.Size(270, 169);
+            pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pb.TabIndex = 0;
+            pb.TabStop = false;
+            pb.Image = image;
+
+            return pb;
         }
 
         public System.Windows.Forms.Label Get_Label(string text, string name, float font, AnchorStyles anchor, ContentAlignment align)
