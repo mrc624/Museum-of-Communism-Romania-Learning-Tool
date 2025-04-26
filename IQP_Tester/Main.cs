@@ -33,6 +33,7 @@ namespace IQP_Tester
         public static List<Form> Forms = new List<Form>();
 
         public static Picture_Zoom picture_Zoom;
+        public static Image_Manager image_Manager = new Image_Manager();
 
         public ThenAndNow thenAndNow;
         public Oppression oppression;
@@ -70,7 +71,7 @@ namespace IQP_Tester
             Open_Title_Page();
             Main_Resize(this, new EventArgs());
 
-            openClose.Update_Ram_Saver(true);
+            image_Manager.Update_Ram_Saver();
         }
 
         private void Set_Panel_Clicks()

@@ -173,6 +173,7 @@
       <DependentUpon>DoublePolaroid.cs</DependentUpon>
     </Compile>
     <Compile Include="DoublePolaroid_Helper.cs" />
+    <Compile Include="Image_Manager.cs" />
     <Compile Include="Loading.cs">
       <SubType>Form</SubType>
     </Compile>

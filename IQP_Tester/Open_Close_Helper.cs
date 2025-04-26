@@ -9,7 +9,6 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
-using System.IO;
 
 namespace IQP_Tester
 {
@@ -29,8 +28,6 @@ namespace IQP_Tester
         //Timeout things
         Main main;
 
-        private Dictionary<string, string> Pictures;
-
         private System.Timers.Timer Timer;
 
         static uint lastInteraction = 0;
@@ -45,9 +42,6 @@ namespace IQP_Tester
         public static double fade_increment = Settings.DEFAULT_FADE_INTERVAL;
 
         public bool block = false;
-        private static bool Ram_Saver = false;
-
-        public const string PICTURES_JSON_FILE_NAME = "pictures.json";
 
         public void Start_Timer()
         {
@@ -111,7 +105,7 @@ namespace IQP_Tester
             {
                 if (!Application.OpenForms[i].Visible)
                 {
-                    Dispose_Images(Application.OpenForms[i]);
+                    Main.image_Manager.Dispose_Images(Application.OpenForms[i]);
                     Application.OpenForms[i].Close();
                 }
             }
@@ -137,9 +131,9 @@ namespace IQP_Tester
             {
                 block = true;
                 form.Opacity = 0; // start fully transparent
-                if (Ram_Saver)
+                if (Settings.Ram_Saver)
                 {
-                    Impose_Images(form);
+                    Main.image_Manager.Impose_Images(form);
                 }
                 form.Show();
                 form.TopMost = true;
@@ -180,9 +174,9 @@ namespace IQP_Tester
                     {
                         fadeTimer.Stop(); // stop when invisible
                         form.Hide();
-                        if (Ram_Saver)
+                        if (Settings.Ram_Saver)
                         {
-                            Dispose_Images(form);
+                            Main.image_Manager.Dispose_Images(form);
                         }
                         block = false;
                     }
@@ -220,140 +214,6 @@ namespace IQP_Tester
                 else
                 {
                     control.Controls[i].ResumeLayout();
-                }
-            }
-        }
-
-        private void Generate_Pictures_JSON()
-        {
-            if (File.Exists(PICTURES_JSON_FILE_NAME))
-            {
-                string json = File.ReadAllText(PICTURES_JSON_FILE_NAME);
-                try
-                {
-                    Pictures = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
-                }
-                catch (Exception ex)
-                {
-                    DialogResult ans = MessageBox.Show("Invalid Pictures JSON FIle:\n" + ex);
-
-                    if (ans != DialogResult.None)
-                    {
-                        System.Windows.Forms.Application.Exit();
-                    }
-
-                    Pictures = null;
-                }
-            }
-            else
-            {
-                Pictures = new Dictionary<string, string>();
-            }
-
-            Add_Pictures();
-            Check_Pictures();
-            string updated = JsonSerializer.Serialize(Pictures, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(PICTURES_JSON_FILE_NAME, updated, Encoding.UTF8);
-        }
-
-        private void Check_Pictures()
-        {
-            List<string> names = Pictures.Keys.ToList();
-            for (int i = 0; i < names.Count; i++)
-            {
-                if (!File.Exists(Pictures[names[i]]))
-                {
-                    Pictures[names[i]] = "";
-                }
-            }
-        }
-
-        public void Update_Ram_Saver(bool enable)
-        {
-            Ram_Saver = enable;
-            if (enable)
-            {
-                Generate_Pictures_JSON();
-            }
-            else
-            {
-                if (Pictures != null || Pictures.Count >= 0)
-                {
-                    Pictures.Clear();
-                }
-            }
-        }
-
-        private void Add_Pictures()
-        {
-            Pictures.Clear();
-            for (int i = 0; i < Main.Forms.Count; i++)
-            {
-                Add_Form_Pictures(Main.Forms[i]);
-            }
-        }
-
-        private void Add_Form_Pictures(Control control)
-        {
-            for (int i = 0; i < control.Controls.Count; i++)
-            {
-                if (control.Controls[i] is PictureBox pb)
-                {
-                    if (!Pictures.ContainsKey(pb.Name))
-                    {
-                        Pictures[pb.Name] = "";
-                    }
-                }
-                else if (control.Controls[i].HasChildren)
-                {
-                    Add_Form_Pictures(control.Controls[i]);
-                }
-            }
-        }
-
-        public void Dispose_Images(Control control)
-        {
-            for (int i = 0; i < control.Controls.Count; i++)
-            {
-                if (control.Controls[i] is PictureBox)
-                {
-                    PictureBox pb = (PictureBox)control.Controls[i];
-                    if (pb.Image != null)
-                    {
-                        pb.Image.Dispose();
-                        pb.Image = null;
-                    }
-                }
-                else if (control.Controls[i].HasChildren)
-                {
-                    Dispose_Images(control.Controls[i]);
-                }
-            }
-        }
-
-        private void Impose_Images(Control control)
-        {
-            for (int i = 0; i < control.Controls.Count; i++)
-            {
-                if (control.Controls[i] is PictureBox)
-                {
-                    PictureBox pb = (PictureBox)control.Controls[i];
-
-                    if (Pictures.ContainsKey(pb.Name))
-                    {
-                        if (Pictures[pb.Name].Length > 0)
-                        {
-                            pb.Image = Image.FromFile(Pictures[pb.Name]);
-                        }
-                        else
-                        {
-                            pb.Image = null;
-                        }
-                    }
-                }
-                else if (control.Controls[i].HasChildren)
-                {
-                    Impose_Images(control.Controls[i]);
                 }
             }
         }

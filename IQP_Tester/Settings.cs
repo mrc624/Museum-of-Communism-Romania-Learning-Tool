@@ -59,10 +59,12 @@ namespace IQP_Tester
         public const double DEFAULT_FADE_INCREMENT = 0.05;
         public const bool DEFAULT_FEEDBACK_BTN = true;
         public static FontFamily DEFAULT_FONT_FAMILY { get; protected set; } = new FontFamily("Microsoft Sans Serif");
+        public const bool DEFAULT_RAM_SAVER = true;
 
         public static bool btn_back_state = DEFAULT_BTN_BACK;
         public static float Font_Offset = DEFAULT_FONT_OFFSET;
         public static FontFamily Font_Family = DEFAULT_FONT_FAMILY;
+        public static bool Ram_Saver = DEFAULT_RAM_SAVER;
 
         Dictionary<string, string> settings;
 
