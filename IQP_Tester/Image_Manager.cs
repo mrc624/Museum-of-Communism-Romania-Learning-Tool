@@ -44,6 +44,13 @@ namespace IQP_Tester
             File.WriteAllText(PICTURES_JSON_FILE_NAME, updated, Encoding.UTF8);
         }
 
+        public void Overwrite_Images(Dictionary<string, string> new_images)
+        {
+            Images = new_images;
+            string updated = JsonSerializer.Serialize(new_images, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(PICTURES_JSON_FILE_NAME, updated, Encoding.UTF8);
+        }
+
         private void Check_Pictures()
         {
             List<string> names = Images.Keys.ToList();

@@ -76,6 +76,7 @@
             this.lblEditTextEnglish = new System.Windows.Forms.Label();
             this.lblEditTextControlName = new System.Windows.Forms.Label();
             this.tableLayoutImageManagement = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.btnApplyImageManagement = new System.Windows.Forms.Button();
             this.TabControlDevs.SuspendLayout();
             this.TabStastics.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -561,6 +562,7 @@
             // 
             // tabPictureManagement
             // 
+            this.tabPictureManagement.Controls.Add(this.btnApplyImageManagement);
             this.tabPictureManagement.Controls.Add(this.btnRefreshImageManagement);
             this.tabPictureManagement.Controls.Add(this.tableLayoutImageManagement);
             this.tabPictureManagement.Location = new System.Drawing.Point(10, 48);
@@ -671,6 +673,18 @@
             this.tableLayoutImageManagement.Size = new System.Drawing.Size(2059, 1403);
             this.tableLayoutImageManagement.TabIndex = 0;
             // 
+            // btnApplyImageManagement
+            // 
+            this.btnApplyImageManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnApplyImageManagement.Location = new System.Drawing.Point(1641, 1416);
+            this.btnApplyImageManagement.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnApplyImageManagement.Name = "btnApplyImageManagement";
+            this.btnApplyImageManagement.Size = new System.Drawing.Size(200, 55);
+            this.btnApplyImageManagement.TabIndex = 3;
+            this.btnApplyImageManagement.Text = "Apply";
+            this.btnApplyImageManagement.UseVisualStyleBackColor = false;
+            this.btnApplyImageManagement.Click += new System.EventHandler(this.btnApplyImageManagement_Click);
+            // 
             // Dev_Tools
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -746,5 +760,6 @@
         private System.Windows.Forms.TabPage tabPictureManagement;
         private DoubleBufferedTableLayout tableLayoutImageManagement;
         private System.Windows.Forms.Button btnRefreshImageManagement;
+        private System.Windows.Forms.Button btnApplyImageManagement;
     }
 }

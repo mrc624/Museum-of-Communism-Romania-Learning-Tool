@@ -675,6 +675,30 @@ namespace IQP_Tester
             load.Close();
         }
 
+        private void btnApplyImageManagement_Click(object sender, EventArgs e)
+        {
+            Dictionary < string, string> New_Images = Main.image_Manager.Images;
+            for (int i = ROWS_TO_SKIP; i < tableLayoutImageManagement.RowCount; i++)
+            {
+                Control control = tableLayoutImageManagement.GetControlFromPosition(PICTURE_PATH_COLUMN, i);
+                if (control is TextBox)
+                { 
+                    if (control.BackColor == Color.Yellow)
+                    {
+                        TextBox tb = (TextBox)control;
+                        string name = tableLayoutImageManagement.GetControlFromPosition(PICTURE_NAME_COLUMN, i).Text;
+                        New_Images[name] = tb.Text;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Error: TextBox Expected\nNo Textbox at Row " + i + "\nIn Image Management Table");
+                }
+            }
+            Main.image_Manager.Overwrite_Images(New_Images);
+            btnRefreshImageManagement_Click(sender, e);
+        }
+
         private void Empty_Image_Management_Table()
         {
             tableLayoutImageManagement.Visible = false;
