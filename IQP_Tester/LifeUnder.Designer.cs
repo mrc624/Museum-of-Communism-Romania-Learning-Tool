@@ -611,7 +611,7 @@
             this.pbSchool.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSchool.Image = global::IQP_Tester.Properties.Resources.school;
+            this.pbSchool.Image = null;
             this.pbSchool.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSchool.InitialImage")));
             this.pbSchool.Location = new System.Drawing.Point(3, 3);
             this.pbSchool.Name = "pbSchool";
@@ -651,7 +651,7 @@
             this.pbFood.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFood.Image = global::IQP_Tester.Properties.Resources.Food;
+            this.pbFood.Image = null;
             this.pbFood.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFood.InitialImage")));
             this.pbFood.Location = new System.Drawing.Point(3, 3);
             this.pbFood.Name = "pbFood";
@@ -691,7 +691,7 @@
             this.pbWork.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWork.Image = global::IQP_Tester.Properties.Resources.Work;
+            this.pbWork.Image = null;
             this.pbWork.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWork.InitialImage")));
             this.pbWork.Location = new System.Drawing.Point(3, 3);
             this.pbWork.Name = "pbWork";
@@ -731,7 +731,7 @@
             this.pbDemonstation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbDemonstation.Image = global::IQP_Tester.Properties.Resources.Demonstration;
+            this.pbDemonstation.Image = null;
             this.pbDemonstation.Location = new System.Drawing.Point(3, 3);
             this.pbDemonstation.Name = "pbDemonstation";
             this.pbDemonstation.Size = new System.Drawing.Size(270, 169);
@@ -770,7 +770,7 @@
             this.pbChildhood.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbChildhood.Image = global::IQP_Tester.Properties.Resources.Childhood;
+            this.pbChildhood.Image = null;
             this.pbChildhood.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbChildhood.InitialImage")));
             this.pbChildhood.Location = new System.Drawing.Point(3, 3);
             this.pbChildhood.Name = "pbChildhood";
@@ -810,7 +810,7 @@
             this.pbUniversity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbUniversity.Image = global::IQP_Tester.Properties.Resources.University;
+            this.pbUniversity.Image = null;
             this.pbUniversity.Location = new System.Drawing.Point(3, 3);
             this.pbUniversity.Name = "pbUniversity";
             this.pbUniversity.Size = new System.Drawing.Size(270, 169);
@@ -849,7 +849,7 @@
             this.pbMedia.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMedia.Image = global::IQP_Tester.Properties.Resources.Media;
+            this.pbMedia.Image = null;
             this.pbMedia.InitialImage = global::IQP_Tester.Properties.Resources.Media;
             this.pbMedia.Location = new System.Drawing.Point(3, 3);
             this.pbMedia.Name = "pbMedia";
@@ -889,7 +889,7 @@
             this.pbEmigration.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbEmigration.Image = global::IQP_Tester.Properties.Resources.Emigration;
+            this.pbEmigration.Image = null;
             this.pbEmigration.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbEmigration.InitialImage")));
             this.pbEmigration.Location = new System.Drawing.Point(3, 3);
             this.pbEmigration.Name = "pbEmigration";
@@ -929,7 +929,7 @@
             this.pbYouthOrg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbYouthOrg.Image = global::IQP_Tester.Properties.Resources.YouthOrg;
+            this.pbYouthOrg.Image = null;
             this.pbYouthOrg.Location = new System.Drawing.Point(3, 3);
             this.pbYouthOrg.Name = "pbYouthOrg";
             this.pbYouthOrg.Size = new System.Drawing.Size(270, 169);
@@ -968,7 +968,7 @@
             this.pbRation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbRation.Image = global::IQP_Tester.Properties.Resources.Ration;
+            this.pbRation.Image = null;
             this.pbRation.Location = new System.Drawing.Point(3, 3);
             this.pbRation.Name = "pbRation";
             this.pbRation.Size = new System.Drawing.Size(270, 169);

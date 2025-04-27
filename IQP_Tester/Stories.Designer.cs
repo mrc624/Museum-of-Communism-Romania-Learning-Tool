@@ -712,7 +712,7 @@
             this.pbStolenHorse.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbStolenHorse.Image = global::IQP_Tester.Properties.Resources.StolenHorse;
+            this.pbStolenHorse.Image = null;
             this.pbStolenHorse.InitialImage = null;
             this.pbStolenHorse.Location = new System.Drawing.Point(3, 3);
             this.pbStolenHorse.Name = "pbStolenHorse";
@@ -752,7 +752,7 @@
             this.pbTeacherBeating.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbTeacherBeating.Image = global::IQP_Tester.Properties.Resources.TeacherBeating;
+            this.pbTeacherBeating.Image = null;
             this.pbTeacherBeating.InitialImage = null;
             this.pbTeacherBeating.Location = new System.Drawing.Point(3, 3);
             this.pbTeacherBeating.Name = "pbTeacherBeating";
@@ -792,7 +792,7 @@
             this.pbSchoolPropaganda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSchoolPropaganda.Image = global::IQP_Tester.Properties.Resources.SchoolPropaganda;
+            this.pbSchoolPropaganda.Image = null;
             this.pbSchoolPropaganda.InitialImage = null;
             this.pbSchoolPropaganda.Location = new System.Drawing.Point(3, 3);
             this.pbSchoolPropaganda.Name = "pbSchoolPropaganda";
@@ -832,7 +832,7 @@
             this.pbCeausescuMail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbCeausescuMail.Image = global::IQP_Tester.Properties.Resources.CeauşescuMail;
+            this.pbCeausescuMail.Image = null;
             this.pbCeausescuMail.InitialImage = null;
             this.pbCeausescuMail.Location = new System.Drawing.Point(3, 3);
             this.pbCeausescuMail.Name = "pbCeausescuMail";
@@ -872,7 +872,7 @@
             this.pbColdHands.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbColdHands.Image = global::IQP_Tester.Properties.Resources.ColdHands;
+            this.pbColdHands.Image = null;
             this.pbColdHands.InitialImage = null;
             this.pbColdHands.Location = new System.Drawing.Point(3, 3);
             this.pbColdHands.Name = "pbColdHands";
@@ -912,7 +912,7 @@
             this.pbButterWhy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbButterWhy.Image = global::IQP_Tester.Properties.Resources.ButterWhy;
+            this.pbButterWhy.Image = null;
             this.pbButterWhy.InitialImage = null;
             this.pbButterWhy.Location = new System.Drawing.Point(3, 3);
             this.pbButterWhy.Name = "pbButterWhy";
@@ -952,7 +952,7 @@
             this.pbSoftTomato.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSoftTomato.Image = global::IQP_Tester.Properties.Resources.SoftTomato;
+            this.pbSoftTomato.Image = null;
             this.pbSoftTomato.InitialImage = null;
             this.pbSoftTomato.Location = new System.Drawing.Point(3, 3);
             this.pbSoftTomato.Name = "pbSoftTomato";
@@ -992,7 +992,7 @@
             this.pbDestiny.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbDestiny.Image = global::IQP_Tester.Properties.Resources.Destiny;
+            this.pbDestiny.Image = null;
             this.pbDestiny.InitialImage = null;
             this.pbDestiny.Location = new System.Drawing.Point(3, 3);
             this.pbDestiny.Name = "pbDestiny";
@@ -1032,7 +1032,7 @@
             this.pbJapaneseMachines.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbJapaneseMachines.Image = global::IQP_Tester.Properties.Resources.JapaneseMachines;
+            this.pbJapaneseMachines.Image = null;
             this.pbJapaneseMachines.InitialImage = null;
             this.pbJapaneseMachines.Location = new System.Drawing.Point(3, 3);
             this.pbJapaneseMachines.Name = "pbJapaneseMachines";
@@ -1072,7 +1072,7 @@
             this.pbSwimmerKiller.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSwimmerKiller.Image = global::IQP_Tester.Properties.Resources.SwimmerKiller;
+            this.pbSwimmerKiller.Image = null;
             this.pbSwimmerKiller.InitialImage = null;
             this.pbSwimmerKiller.Location = new System.Drawing.Point(3, 3);
             this.pbSwimmerKiller.Name = "pbSwimmerKiller";
@@ -1112,7 +1112,7 @@
             this.pbCutPhoneLines.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbCutPhoneLines.Image = global::IQP_Tester.Properties.Resources.CutPhoneLines;
+            this.pbCutPhoneLines.Image = null;
             this.pbCutPhoneLines.InitialImage = null;
             this.pbCutPhoneLines.Location = new System.Drawing.Point(3, 3);
             this.pbCutPhoneLines.Name = "pbCutPhoneLines";
@@ -1152,7 +1152,7 @@
             this.pbStopEngineers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbStopEngineers.Image = global::IQP_Tester.Properties.Resources.StopEngineers;
+            this.pbStopEngineers.Image = null;
             this.pbStopEngineers.InitialImage = null;
             this.pbStopEngineers.Location = new System.Drawing.Point(3, 3);
             this.pbStopEngineers.Name = "pbStopEngineers";

@@ -160,7 +160,7 @@
             this.pbFoodNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFoodNow.Image = global::IQP_Tester.Properties.Resources.MarketNow;
+            this.pbFoodNow.Image = null;
             this.pbFoodNow.Location = new System.Drawing.Point(312, 3);
             this.pbFoodNow.Name = "pbFoodNow";
             this.pbFoodNow.Size = new System.Drawing.Size(303, 207);
@@ -173,7 +173,7 @@
             this.pbFoodThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFoodThen.Image = global::IQP_Tester.Properties.Resources.MarketThen;
+            this.pbFoodThen.Image = null;
             this.pbFoodThen.Location = new System.Drawing.Point(3, 3);
             this.pbFoodThen.Name = "pbFoodThen";
             this.pbFoodThen.Size = new System.Drawing.Size(303, 207);
@@ -295,7 +295,7 @@
             this.pbUniformNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbUniformNow.Image = global::IQP_Tester.Properties.Resources.ClothesNow;
+            this.pbUniformNow.Image = null;
             this.pbUniformNow.Location = new System.Drawing.Point(312, 3);
             this.pbUniformNow.Name = "pbUniformNow";
             this.pbUniformNow.Size = new System.Drawing.Size(303, 207);
@@ -308,7 +308,7 @@
             this.pbUniformThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbUniformThen.Image = global::IQP_Tester.Properties.Resources.ClothesThen;
+            this.pbUniformThen.Image = null;
             this.pbUniformThen.Location = new System.Drawing.Point(3, 3);
             this.pbUniformThen.Name = "pbUniformThen";
             this.pbUniformThen.Size = new System.Drawing.Size(303, 207);
@@ -371,7 +371,7 @@
             this.pbNecessitiesNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNecessitiesNow.Image = global::IQP_Tester.Properties.Resources.NecessitiesNow;
+            this.pbNecessitiesNow.Image = null;
             this.pbNecessitiesNow.Location = new System.Drawing.Point(313, 3);
             this.pbNecessitiesNow.Name = "pbNecessitiesNow";
             this.pbNecessitiesNow.Size = new System.Drawing.Size(304, 207);
@@ -384,7 +384,7 @@
             this.pbNecessitiesThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNecessitiesThen.Image = global::IQP_Tester.Properties.Resources.NecessitiesThen;
+            this.pbNecessitiesThen.Image = null;
             this.pbNecessitiesThen.Location = new System.Drawing.Point(3, 3);
             this.pbNecessitiesThen.Name = "pbNecessitiesThen";
             this.pbNecessitiesThen.Size = new System.Drawing.Size(304, 207);
@@ -447,7 +447,7 @@
             this.pbNeighborhoodNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNeighborhoodNow.Image = global::IQP_Tester.Properties.Resources.NeighborhoodNow;
+            this.pbNeighborhoodNow.Image = null;
             this.pbNeighborhoodNow.Location = new System.Drawing.Point(313, 3);
             this.pbNeighborhoodNow.Name = "pbNeighborhoodNow";
             this.pbNeighborhoodNow.Size = new System.Drawing.Size(304, 207);
@@ -460,7 +460,7 @@
             this.pbNeighborhoodThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNeighborhoodThen.Image = global::IQP_Tester.Properties.Resources.NeighborhoodThen;
+            this.pbNeighborhoodThen.Image = null;
             this.pbNeighborhoodThen.Location = new System.Drawing.Point(3, 3);
             this.pbNeighborhoodThen.Name = "pbNeighborhoodThen";
             this.pbNeighborhoodThen.Size = new System.Drawing.Size(304, 207);
@@ -524,7 +524,7 @@
             this.pbHandwritingNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbHandwritingNow.Image = global::IQP_Tester.Properties.Resources.HandwritingNow;
+            this.pbHandwritingNow.Image = null;
             this.pbHandwritingNow.Location = new System.Drawing.Point(313, 3);
             this.pbHandwritingNow.Name = "pbHandwritingNow";
             this.pbHandwritingNow.Size = new System.Drawing.Size(304, 207);
@@ -537,7 +537,7 @@
             this.pbHandwritingThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbHandwritingThen.Image = global::IQP_Tester.Properties.Resources.HandwritingThen;
+            this.pbHandwritingThen.Image = null;
             this.pbHandwritingThen.Location = new System.Drawing.Point(3, 3);
             this.pbHandwritingThen.Name = "pbHandwritingThen";
             this.pbHandwritingThen.Size = new System.Drawing.Size(304, 207);
@@ -600,7 +600,7 @@
             this.pbFreetimeNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFreetimeNow.Image = global::IQP_Tester.Properties.Resources.FreeTimeNow;
+            this.pbFreetimeNow.Image = null;
             this.pbFreetimeNow.Location = new System.Drawing.Point(312, 3);
             this.pbFreetimeNow.Name = "pbFreetimeNow";
             this.pbFreetimeNow.Size = new System.Drawing.Size(303, 207);
@@ -613,7 +613,7 @@
             this.pbFreetimeThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFreetimeThen.Image = global::IQP_Tester.Properties.Resources.FreeTimeThen;
+            this.pbFreetimeThen.Image = null;
             this.pbFreetimeThen.Location = new System.Drawing.Point(3, 3);
             this.pbFreetimeThen.Name = "pbFreetimeThen";
             this.pbFreetimeThen.Size = new System.Drawing.Size(303, 207);
@@ -676,7 +676,7 @@
             this.pbCarsNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbCarsNow.Image = global::IQP_Tester.Properties.Resources.CarsNow;
+            this.pbCarsNow.Image = null;
             this.pbCarsNow.Location = new System.Drawing.Point(312, 3);
             this.pbCarsNow.Name = "pbCarsNow";
             this.pbCarsNow.Size = new System.Drawing.Size(303, 207);
@@ -689,7 +689,7 @@
             this.pbCarsThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbCarsThen.Image = global::IQP_Tester.Properties.Resources.CarsThen;
+            this.pbCarsThen.Image = null;
             this.pbCarsThen.Location = new System.Drawing.Point(3, 3);
             this.pbCarsThen.Name = "pbCarsThen";
             this.pbCarsThen.Size = new System.Drawing.Size(303, 207);
@@ -752,7 +752,7 @@
             this.pbMediaNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMediaNow.Image = global::IQP_Tester.Properties.Resources.MediaNow;
+            this.pbMediaNow.Image = null;
             this.pbMediaNow.Location = new System.Drawing.Point(312, 3);
             this.pbMediaNow.Name = "pbMediaNow";
             this.pbMediaNow.Size = new System.Drawing.Size(303, 207);
@@ -765,7 +765,7 @@
             this.pbMediaThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMediaThen.Image = global::IQP_Tester.Properties.Resources.MediaThen;
+            this.pbMediaThen.Image = null;
             this.pbMediaThen.Location = new System.Drawing.Point(3, 3);
             this.pbMediaThen.Name = "pbMediaThen";
             this.pbMediaThen.Size = new System.Drawing.Size(303, 207);
@@ -828,7 +828,7 @@
             this.pbClassesNow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbClassesNow.Image = global::IQP_Tester.Properties.Resources.ClassroomsStuffNow;
+            this.pbClassesNow.Image = null;
             this.pbClassesNow.Location = new System.Drawing.Point(312, 3);
             this.pbClassesNow.Name = "pbClassesNow";
             this.pbClassesNow.Size = new System.Drawing.Size(303, 207);
@@ -841,7 +841,7 @@
             this.pbClassesThen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbClassesThen.Image = global::IQP_Tester.Properties.Resources.ClassroomsStuffThen;
+            this.pbClassesThen.Image = null;
             this.pbClassesThen.Location = new System.Drawing.Point(3, 3);
             this.pbClassesThen.Name = "pbClassesThen";
             this.pbClassesThen.Size = new System.Drawing.Size(303, 207);

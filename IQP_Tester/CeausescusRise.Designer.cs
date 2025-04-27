@@ -191,7 +191,7 @@
             this.pbElena.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbElena.Image = global::IQP_Tester.Properties.Resources.Elena;
+            this.pbElena.Image = null;
             this.pbElena.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbElena.InitialImage")));
             this.pbElena.Location = new System.Drawing.Point(3, 3);
             this.pbElena.Name = "pbElena";
@@ -231,7 +231,7 @@
             this.pbNicolae.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNicolae.Image = global::IQP_Tester.Properties.Resources.Ceausescu;
+            this.pbNicolae.Image = null;
             this.pbNicolae.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbNicolae.InitialImage")));
             this.pbNicolae.Location = new System.Drawing.Point(3, 3);
             this.pbNicolae.Name = "pbNicolae";

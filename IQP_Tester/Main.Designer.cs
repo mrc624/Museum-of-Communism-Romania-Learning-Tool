@@ -170,9 +170,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbOppression.BackColor = System.Drawing.Color.Transparent;
-            this.pbOppression.BackgroundImage = global::IQP_Tester.Properties.Resources.OpressionMain1;
-            this.pbOppression.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbOppression.Image = global::IQP_Tester.Properties.Resources.OpressionMain1;
+            this.pbOppression.Image = null;
             this.pbOppression.Location = new System.Drawing.Point(3, 34);
             this.pbOppression.Name = "pbOppression";
             this.pbOppression.Size = new System.Drawing.Size(389, 206);
@@ -252,7 +250,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbLifeUnder.BackColor = System.Drawing.Color.Transparent;
             this.pbLifeUnder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbLifeUnder.Image = global::IQP_Tester.Properties.Resources.LifeUnderMain1;
+            this.pbLifeUnder.Image = null;
             this.pbLifeUnder.Location = new System.Drawing.Point(3, 34);
             this.pbLifeUnder.Name = "pbLifeUnder";
             this.pbLifeUnder.Size = new System.Drawing.Size(389, 206);
@@ -332,7 +330,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbCommunistTimeline.BackColor = System.Drawing.Color.Transparent;
             this.pbCommunistTimeline.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbCommunistTimeline.Image = global::IQP_Tester.Properties.Resources.TimelineMain1;
+            this.pbCommunistTimeline.Image = null;
             this.pbCommunistTimeline.Location = new System.Drawing.Point(3, 34);
             this.pbCommunistTimeline.Name = "pbCommunistTimeline";
             this.pbCommunistTimeline.Size = new System.Drawing.Size(399, 206);
@@ -427,9 +425,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbStories.BackColor = System.Drawing.Color.Transparent;
-            this.pbStories.BackgroundImage = global::IQP_Tester.Properties.Resources.StoriesMain1;
-            this.pbStories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbStories.Image = global::IQP_Tester.Properties.Resources.StoriesMain1;
+            this.pbStories.Image = null;
             this.pbStories.Location = new System.Drawing.Point(3, 34);
             this.pbStories.Name = "pbStories";
             this.pbStories.Size = new System.Drawing.Size(399, 206);
@@ -509,7 +505,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbThenAndNow.BackColor = System.Drawing.Color.Transparent;
             this.pbThenAndNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbThenAndNow.Image = global::IQP_Tester.Properties.Resources.ThenNowMain1;
+            this.pbThenAndNow.Image = null;
             this.pbThenAndNow.Location = new System.Drawing.Point(3, 34);
             this.pbThenAndNow.Name = "pbThenAndNow";
             this.pbThenAndNow.Size = new System.Drawing.Size(389, 206);

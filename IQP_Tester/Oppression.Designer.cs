@@ -649,7 +649,7 @@
             this.pbSecuritate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSecuritate.Image = global::IQP_Tester.Properties.Resources.Securitate;
+            this.pbSecuritate.Image = null;
             this.pbSecuritate.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSecuritate.InitialImage")));
             this.pbSecuritate.Location = new System.Drawing.Point(3, 3);
             this.pbSecuritate.Name = "pbSecuritate";
@@ -699,7 +699,7 @@
             this.pbConsequences.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbConsequences.Image = global::IQP_Tester.Properties.Resources.Consequences;
+            this.pbConsequences.Image = null;
             this.pbConsequences.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbConsequences.InitialImage")));
             this.pbConsequences.Location = new System.Drawing.Point(3, 3);
             this.pbConsequences.Name = "pbConsequences";
@@ -739,7 +739,7 @@
             this.pbPropoganda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPropoganda.Image = global::IQP_Tester.Properties.Resources.Propaganda;
+            this.pbPropoganda.Image = null;
             this.pbPropoganda.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPropoganda.InitialImage")));
             this.pbPropoganda.Location = new System.Drawing.Point(3, 3);
             this.pbPropoganda.Name = "pbPropoganda";
@@ -779,7 +779,7 @@
             this.pbLanguage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbLanguage.Image = global::IQP_Tester.Properties.Resources.Language;
+            this.pbLanguage.Image = null;
             this.pbLanguage.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbLanguage.InitialImage")));
             this.pbLanguage.Location = new System.Drawing.Point(3, 3);
             this.pbLanguage.Name = "pbLanguage";
@@ -819,7 +819,7 @@
             this.pbPossesions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPossesions.Image = global::IQP_Tester.Properties.Resources.Posessions;
+            this.pbPossesions.Image = null;
             this.pbPossesions.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPossesions.InitialImage")));
             this.pbPossesions.Location = new System.Drawing.Point(3, 3);
             this.pbPossesions.Name = "pbPossesions";
@@ -859,7 +859,7 @@
             this.pbInfluence.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbInfluence.Image = global::IQP_Tester.Properties.Resources.Influence;
+            this.pbInfluence.Image = null;
             this.pbInfluence.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbInfluence.InitialImage")));
             this.pbInfluence.Location = new System.Drawing.Point(3, 3);
             this.pbInfluence.Name = "pbInfluence";
@@ -939,7 +939,7 @@
             this.pbReligion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbReligion.Image = global::IQP_Tester.Properties.Resources.Religion;
+            this.pbReligion.Image = null;
             this.pbReligion.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbReligion.InitialImage")));
             this.pbReligion.Location = new System.Drawing.Point(3, 3);
             this.pbReligion.Name = "pbReligion";
@@ -979,7 +979,7 @@
             this.pbFear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFear.Image = global::IQP_Tester.Properties.Resources.Fear;
+            this.pbFear.Image = null;
             this.pbFear.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFear.InitialImage")));
             this.pbFear.Location = new System.Drawing.Point(3, 3);
             this.pbFear.Name = "pbFear";
@@ -1019,7 +1019,7 @@
             this.pbPalace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPalace.Image = global::IQP_Tester.Properties.Resources.Palace;
+            this.pbPalace.Image = null;
             this.pbPalace.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPalace.InitialImage")));
             this.pbPalace.Location = new System.Drawing.Point(3, 3);
             this.pbPalace.Name = "pbPalace";
@@ -1059,7 +1059,7 @@
             this.pbDeportation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbDeportation.Image = global::IQP_Tester.Properties.Resources.Deportation;
+            this.pbDeportation.Image = null;
             this.pbDeportation.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbDeportation.InitialImage")));
             this.pbDeportation.Location = new System.Drawing.Point(3, 3);
             this.pbDeportation.Name = "pbDeportation";

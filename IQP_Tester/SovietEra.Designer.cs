@@ -243,7 +243,7 @@
             this.pbPostWW2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPostWW2.Image = global::IQP_Tester.Properties.Resources.PostWW2;
+            this.pbPostWW2.Image = null;
             this.pbPostWW2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPostWW2.InitialImage")));
             this.pbPostWW2.Location = new System.Drawing.Point(3, 3);
             this.pbPostWW2.Name = "pbPostWW2";
@@ -283,7 +283,7 @@
             this.pbMarxism.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMarxism.Image = global::IQP_Tester.Properties.Resources.Marxism;
+            this.pbMarxism.Image = null;
             this.pbMarxism.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbMarxism.InitialImage")));
             this.pbMarxism.Location = new System.Drawing.Point(3, 3);
             this.pbMarxism.Name = "pbMarxism";
@@ -323,7 +323,7 @@
             this.pbGheorghe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbGheorghe.Image = global::IQP_Tester.Properties.Resources.Gheorghe;
+            this.pbGheorghe.Image = null;
             this.pbGheorghe.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbGheorghe.InitialImage")));
             this.pbGheorghe.Location = new System.Drawing.Point(3, 3);
             this.pbGheorghe.Name = "pbGheorghe";

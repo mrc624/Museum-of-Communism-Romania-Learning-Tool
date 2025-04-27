@@ -243,7 +243,7 @@
             this.pbWhatWasRevolution.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWhatWasRevolution.Image = global::IQP_Tester.Properties.Resources.WhatWasRevolution;
+            this.pbWhatWasRevolution.Image = null;
             this.pbWhatWasRevolution.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhatWasRevolution.InitialImage")));
             this.pbWhatWasRevolution.Location = new System.Drawing.Point(3, 3);
             this.pbWhatWasRevolution.Name = "pbWhatWasRevolution";
@@ -283,7 +283,7 @@
             this.pbWhyRevolt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWhyRevolt.Image = global::IQP_Tester.Properties.Resources.WhyRevolt;
+            this.pbWhyRevolt.Image = null;
             this.pbWhyRevolt.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhyRevolt.InitialImage")));
             this.pbWhyRevolt.Location = new System.Drawing.Point(3, 3);
             this.pbWhyRevolt.Name = "pbWhyRevolt";
@@ -323,7 +323,7 @@
             this.pbWhereCeausescu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWhereCeausescu.Image = global::IQP_Tester.Properties.Resources.WhereCeausescu;
+            this.pbWhereCeausescu.Image = null;
             this.pbWhereCeausescu.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhereCeausescu.InitialImage")));
             this.pbWhereCeausescu.Location = new System.Drawing.Point(3, 3);
             this.pbWhereCeausescu.Name = "pbWhereCeausescu";

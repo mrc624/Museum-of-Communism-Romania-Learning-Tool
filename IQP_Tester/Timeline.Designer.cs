@@ -175,7 +175,7 @@
             this.pbRegimeFall.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbRegimeFall.Image = global::IQP_Tester.Properties.Resources.RegimeFall;
+            this.pbRegimeFall.Image = null;
             this.pbRegimeFall.InitialImage = global::IQP_Tester.Properties.Resources.RegimeFall;
             this.pbRegimeFall.Location = new System.Drawing.Point(1, 63);
             this.pbRegimeFall.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
@@ -232,7 +232,7 @@
             this.pbAna.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbAna.Image = global::IQP_Tester.Properties.Resources.Ana;
+            this.pbAna.Image = null;
             this.pbAna.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbAna.InitialImage")));
             this.pbAna.Location = new System.Drawing.Point(3, 3);
             this.pbAna.Name = "pbAna";
@@ -288,7 +288,7 @@
             this.pbWarsaw.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWarsaw.Image = global::IQP_Tester.Properties.Resources.Warsaw;
+            this.pbWarsaw.Image = null;
             this.pbWarsaw.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWarsaw.InitialImage")));
             this.pbWarsaw.Location = new System.Drawing.Point(3, 3);
             this.pbWarsaw.Name = "pbWarsaw";
@@ -344,7 +344,7 @@
             this.pbJuly.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbJuly.Image = global::IQP_Tester.Properties.Resources.July;
+            this.pbJuly.Image = null;
             this.pbJuly.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbJuly.InitialImage")));
             this.pbJuly.Location = new System.Drawing.Point(3, 3);
             this.pbJuly.Name = "pbJuly";
@@ -400,7 +400,7 @@
             this.pbHousePeople.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbHousePeople.Image = global::IQP_Tester.Properties.Resources.HousePeople;
+            this.pbHousePeople.Image = null;
             this.pbHousePeople.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbHousePeople.InitialImage")));
             this.pbHousePeople.Location = new System.Drawing.Point(3, 3);
             this.pbHousePeople.Name = "pbHousePeople";
@@ -412,7 +412,7 @@
             // pbSoviet
             // 
             this.pbSoviet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbSoviet.Image = global::IQP_Tester.Properties.Resources.Soviet;
+            this.pbSoviet.Image = null;
             this.pbSoviet.InitialImage = global::IQP_Tester.Properties.Resources.Soviet;
             this.pbSoviet.Location = new System.Drawing.Point(1, 32);
             this.pbSoviet.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
@@ -469,7 +469,7 @@
             // pbCeausescusRise
             // 
             this.pbCeausescusRise.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbCeausescusRise.Image = global::IQP_Tester.Properties.Resources.CeausescusRise;
+            this.pbCeausescusRise.Image = null;
             this.pbCeausescusRise.InitialImage = global::IQP_Tester.Properties.Resources.CeausescusRise;
             this.pbCeausescusRise.Location = new System.Drawing.Point(1, 63);
             this.pbCeausescusRise.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
@@ -498,7 +498,7 @@
             // 
             this.pbTimeLine.BackColor = System.Drawing.Color.Transparent;
             this.pbTimeLine.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbTimeLine.Image = global::IQP_Tester.Properties.Resources.Chain;
+            this.pbTimeLine.Image = null;
             this.pbTimeLine.Location = new System.Drawing.Point(3, 471);
             this.pbTimeLine.Name = "pbTimeLine";
             this.pbTimeLine.Size = new System.Drawing.Size(1898, 98);
