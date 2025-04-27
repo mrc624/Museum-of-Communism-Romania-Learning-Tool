@@ -706,6 +706,11 @@ namespace IQP_Tester
             tableLayoutImageManagement.CellBorderStyle = LOADING;
             while (tableLayoutImageManagement.Controls.Count > 0)
             {
+                if (tableLayoutImageManagement.Controls[0] is PictureBox pb)
+                {
+                    pb.Image.Dispose();
+                    pb.Image = null;
+                }
                 tableLayoutImageManagement.Controls[0].Dispose();
             }
             tableLayoutImageManagement.RowCount = 0;
