@@ -33,12 +33,12 @@
             this.tableLayoutFeedbackMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.TableLayoutbtnBackAlignFeedback = new IQP_Tester.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
-            this.tableLayoutQuestions = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutQuestions = new DoubleBufferedTableLayout();
+            this.tableLayoutPanel1 = new DoubleBufferedTableLayout();
             this.rbRecommendNo = new System.Windows.Forms.RadioButton();
             this.rbRecommendYes = new System.Windows.Forms.RadioButton();
             this.lblWouldYouRecommend = new System.Windows.Forms.Label();
-            this.tableLayoutHistorical = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutHistorical = new DoubleBufferedTableLayout();
             this.rbHistorical5 = new System.Windows.Forms.RadioButton();
             this.rbHistorical4 = new System.Windows.Forms.RadioButton();
             this.rbHistorical3 = new System.Windows.Forms.RadioButton();
@@ -48,7 +48,7 @@
             this.lblWhatIsYourAge = new System.Windows.Forms.Label();
             this.comboBoxAge = new System.Windows.Forms.ComboBox();
             this.lblEasyNavigation = new System.Windows.Forms.Label();
-            this.tableLayoutNavigatetion = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutNavigatetion = new DoubleBufferedTableLayout();
             this.rbNavigate5 = new System.Windows.Forms.RadioButton();
             this.rbNavigate4 = new System.Windows.Forms.RadioButton();
             this.rbNavigate3 = new System.Windows.Forms.RadioButton();
@@ -56,7 +56,7 @@
             this.rbNavigate1 = new System.Windows.Forms.RadioButton();
             this.lblHistoricalNarratives = new System.Windows.Forms.Label();
             this.lblFeedbackThankYou = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new DoubleBufferedTableLayout();
             this.btnFeedbackClear = new System.Windows.Forms.Button();
             this.btnFeedbackSubmit = new System.Windows.Forms.Button();
             this.TableLayoutbtnLanguageFeedback = new IQP_Tester.DoubleBufferedTableLayout(this.components);

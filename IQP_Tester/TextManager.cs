@@ -188,6 +188,22 @@ namespace IQP_Tester
             }
         }
 
+        private void Translate_Form(Form form, Dictionary<string, string> translated)
+        {
+            for (int i = 0; i < form.Controls.Count; i++)
+            {
+                if (translated.ContainsKey(form.Controls[i].Name))
+                {
+                    form.Controls[i].Text = translated[form.Controls[i].Name];
+                }
+
+                if (form.Controls[i].HasChildren)
+                {
+                    Translate_Control(form.Controls[i], translated);
+                }
+            }
+        }
+
         public void Update_Shown_Forms()
         {
             for (int i = 0; i < Application.OpenForms.Count; i++)
@@ -240,23 +256,6 @@ namespace IQP_Tester
         private bool Is_Language_Button(Control control)
         {
             return control is Button && control.Name == LANGUAGE_BUTTON_NAME;
-        }
-
-
-        private void Translate_Form(Form form, Dictionary<string, string> translated)
-        {
-            for (int i = 0; i < form.Controls.Count; i++)
-            {
-                if (translated.ContainsKey(form.Controls[i].Name))
-                {
-                    form.Controls[i].Text = translated[form.Controls[i].Name];
-                }
-
-                if (form.Controls[i].HasChildren)
-                {
-                    Translate_Control(form.Controls[i], translated);
-                }
-            }
         }
 
         public string Get_Text(Control control, Dictionary<string, string> translated)
