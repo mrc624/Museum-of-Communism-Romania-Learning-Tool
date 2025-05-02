@@ -35,7 +35,10 @@ namespace MOCR
 
         private void Stories_Resize(object sender, EventArgs e)
         {
-            resize.Resize_Fonts(this);
+            if (resize != null)
+            {
+                resize.Resize_Fonts(this);
+            }
         }
 
         private void Stories_Click(object sender, EventArgs e)

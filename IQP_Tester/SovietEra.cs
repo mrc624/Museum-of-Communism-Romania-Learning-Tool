@@ -52,7 +52,10 @@ namespace MOCR
         
         private void Soviet_Era_Resize(object sender, EventArgs e)
         {
-            resize.Resize_Fonts(this);
+            if (resize != null)
+            {
+                resize.Resize_Fonts(this);
+            }
         }
 
         private void btnLanguage_Click(object sender, EventArgs e)

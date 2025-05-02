@@ -43,7 +43,10 @@ namespace MOCR
 
         private void ThenAndNow_Resize(object sender, EventArgs e)
         {
-            resize.Resize_Fonts(this);
+            if (resize != null)
+            {
+                resize.Resize_Fonts(this);
+            }
         }
 
         private void ThenAndNow_Click(object sender, EventArgs e)

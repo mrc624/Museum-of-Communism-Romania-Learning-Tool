@@ -37,7 +37,10 @@ namespace MOCR
 
         private void LifeUnder_Resize(object sender, EventArgs e)
         {
-            resize.Resize_Fonts(this);
+            if (resize != null)
+            {
+                resize.Resize_Fonts(this);
+            }
         }
 
         private void LifeUnder_Click(object sender, EventArgs e)
