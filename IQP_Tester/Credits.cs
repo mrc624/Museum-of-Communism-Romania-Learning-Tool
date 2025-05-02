@@ -38,6 +38,7 @@ namespace IQP_Tester
             Load_Citations_Pictures();
             tableLayout_Helper.Set_Row_Heights(CreditsTableLayoutPanel);
 
+            btnBack.Visible = Settings.btn_back_state;
         }
 
         private void Load_Citations_Pictures()
@@ -124,7 +125,7 @@ namespace IQP_Tester
 
         private void Credits_VisibleChanged(object sender, EventArgs e)
         {
-
+            btnBack.Visible = Settings.btn_back_state;
         }
 
         private void tableLayoutCreditsMain_Click(object sender, EventArgs e)

@@ -283,25 +283,25 @@ lblMediaTNPolLong,"If communism came back, you wouldn't be free to watch your fa
 tableLayoutMediaTNDPTitle,Media U+0026 Entertainment,"Divertismentul, televiziunea și radioul"
 lblClassesTNPolLong,"If communism came back, you would have no individuality and no opportunity to choose interesting electives. In the past, every classroom had a picture of Ceaușescu on the wall, and lessons were based on propaganda and what the party wanted children to learn in order to become communist citizens, which was not always in your best educational interest.","Dacă comunismul s-ar întoarce, clasa ta nu ar avea nici un fel de individualitate și nici oportunitatea de a putea opta pentru materii opționale atractive. În trecut, fiecare sală de clasă avea tabloul cu Ceauşescu pe perete, iar lecţiile se bazau pe ceea ce propaganda dorea ca copiii să înveţe, ca să devină cetăţeni comunişti, ceea ce nu era întotdeauna în interesul tău educaţional."
 tableLayoutClassesTNDPTitle,Classrooms,În clasă
-btnBack,Back,TRANSLATION NEEDED
-btnFeedback,Review,TRANSLATION NEEDED
-rbRecommendNo,No,TRANSLATION NEEDED
-rbRecommendYes,Yes,TRANSLATION NEEDED
-lblWouldYouRecommend,Would you recommend the application to others?,TRANSLATION NEEDED
-rbHistorical5,A Lot,TRANSLATION NEEDED
-rbHistorical4,A Good Amount,TRANSLATION NEEDED
-rbHistorical3,Somewhat,TRANSLATION NEEDED
-rbHistorical2,A Small Amount,TRANSLATION NEEDED
-rbHistorical1,Not at All,TRANSLATION NEEDED
-lblConsent,Unknown,TRANSLATION NEEDED
-lblWhatIsYourAge,What is your age?,TRANSLATION NEEDED
-lblEasyNavigation,How easy was it to navigate the application?,TRANSLATION NEEDED
-rbNavigate5,Easy,TRANSLATION NEEDED
-rbNavigate4,Somewhat Easy,TRANSLATION NEEDED
-rbNavigate3,Neutral,TRANSLATION NEEDED
-rbNavigate2,Somewhat Difficult,TRANSLATION NEEDED
-rbNavigate1,Difficult,TRANSLATION NEEDED
-lblHistoricalNarratives,Did the questions help you understand historical narratives?,TRANSLATION NEEDED
-lblFeedbackThankYou,Thank you for your feedback. Please click a button below to submit.,TRANSLATION NEEDED
-btnFeedbackClear,Clear,TRANSLATION NEEDED
-btnFeedbackSubmit,Submit,TRANSLATION NEEDED
+btnBack,Back,
+btnFeedback,Review,
+rbRecommendNo,No,
+rbRecommendYes,Yes,
+lblWouldYouRecommend,Would you recommend the application to others?,
+rbHistorical5,A Lot,
+rbHistorical4,A Good Amount,
+rbHistorical3,Somewhat,
+rbHistorical2,A Small Amount,
+rbHistorical1,Not at All,
+lblConsent,"The information collected through this survey will assess the effectiveness of this application in conveying historical narratives, as well as engagement, ease of navigation, and user friendliness. Your participation is completely voluntary — you may choose not to participate or can stop at any time without any consequences. No names or personal identifying details will be recorded or published. ",
+lblWhatIsYourAge,What is your age?,
+lblEasyNavigation,How easy was it to navigate the application?,
+rbNavigate5,Easy,
+rbNavigate4,Somewhat Easy,
+rbNavigate3,Neutral,
+rbNavigate2,Somewhat Difficult,
+rbNavigate1,Difficult,
+lblHistoricalNarratives,Did the questions help you understand historical narratives?,
+lblFeedbackThankYou,Thank you for your feedback. Please click a button below to submit.,
+btnFeedbackClear,Clear,
+btnFeedbackSubmit,Submit,

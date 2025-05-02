@@ -44,7 +44,7 @@ namespace IQP_Tester
         public CeausescusRise ceausescusRise;
         public SovietEra sovietEra;
 
-        public Credits credits;
+        Credits credits;
         Feedback feedback;
         Dev_Tools dev_Tools;
 
