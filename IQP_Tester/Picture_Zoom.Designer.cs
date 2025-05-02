@@ -47,7 +47,7 @@
             this.TableLayoutPictureZoomMain.Controls.Add(this.pbPictureZoom, 0, 1);
             this.TableLayoutPictureZoomMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPictureZoomMain.Location = new System.Drawing.Point(0, 0);
-            this.TableLayoutPictureZoomMain.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.TableLayoutPictureZoomMain.Margin = new System.Windows.Forms.Padding(1);
             this.TableLayoutPictureZoomMain.Name = "TableLayoutPictureZoomMain";
             this.TableLayoutPictureZoomMain.RowCount = 3;
             this.TableLayoutPictureZoomMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -94,7 +94,7 @@
             // 
             this.pbPictureZoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbPictureZoom.Location = new System.Drawing.Point(1, 105);
-            this.pbPictureZoom.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pbPictureZoom.Margin = new System.Windows.Forms.Padding(1);
             this.pbPictureZoom.Name = "pbPictureZoom";
             this.pbPictureZoom.Size = new System.Drawing.Size(1902, 830);
             this.pbPictureZoom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -108,11 +108,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.TableLayoutPictureZoomMain);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "Picture_Zoom";
             this.Text = "Picture_Zoom";
             this.Shown += new System.EventHandler(this.Picture_Zoom_Shown);
+            this.VisibleChanged += new System.EventHandler(this.Picture_Zoom_VisibleChanged);
             this.Click += new System.EventHandler(this.Picture_Zoom_Click);
+            this.Resize += new System.EventHandler(this.Picture_Zoom_Resize);
             this.TableLayoutPictureZoomMain.ResumeLayout(false);
             this.TableLayoutbtnBackAlignPictureZoom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbPictureZoom)).EndInit();

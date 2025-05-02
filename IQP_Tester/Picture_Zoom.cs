@@ -23,7 +23,15 @@ namespace MOCR
             this.openClose = openClose;
             this.resize = resize;
             this.textManager = textManager;
-            Update_After_Gen(picture);
+            pbPictureZoom.Image = picture.Image;
+            pbPictureZoom.SizeMode = picture.SizeMode;
+            Form parent = secondary_Helper.Get_Form(picture);
+            this.BackgroundImage = parent.BackgroundImage;
+            this.BackgroundImageLayout = parent.BackgroundImageLayout;
+            textManager.Update_One_Form(this);
+            resize.CaptureAspectRatios(this);
+            btnBack.Visible = Settings.btn_back_state;
+            Picture_Zoom_Resize(this, new EventArgs());
         }
 
         public void Update_After_Gen(PictureBox picture)
@@ -35,10 +43,7 @@ namespace MOCR
             this.BackgroundImageLayout = parent.BackgroundImageLayout;
             btnBack.Visible = Settings.btn_back_state;
             textManager.Update_One_Form(this);
-            if (resize != null)
-            {
-                resize.Resize_Fonts(btnBack);
-            }
+            Picture_Zoom_Resize(this, new EventArgs());
         }
 
 
@@ -70,6 +75,19 @@ namespace MOCR
         private void Picture_Zoom_Shown(object sender, EventArgs e)
         {
             resize.Fullscreen_Form(this);
+        }
+
+        private void Picture_Zoom_VisibleChanged(object sender, EventArgs e)
+        {
+            Picture_Zoom_Resize(sender, e);
+        }
+
+        private void Picture_Zoom_Resize(object sender, EventArgs e)
+        {
+            if (resize != null)
+            {
+                resize.Resize_Fonts(this);
+            }
         }
     }
 }
