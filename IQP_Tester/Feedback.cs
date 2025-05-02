@@ -174,6 +174,7 @@ namespace MOCR
         {
             btnBack.Visible = Settings.btn_back_state;
             textManager.Update_One_Form(this);
+            Feedback_Resize(sender, e);
         }
 
         private void Feedback_Click(object sender, EventArgs e)
@@ -218,6 +219,7 @@ namespace MOCR
         {
             openClose.Interaction();
             textManager.Increment_Language(this);
+            Feedback_Resize(sender, e);
         }
 
         private void Feedback_Resize(object sender, EventArgs e)

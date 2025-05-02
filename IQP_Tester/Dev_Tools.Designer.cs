@@ -599,7 +599,7 @@
             this.Controls.Add(this.TabControlDevs);
             this.MinimumSize = new System.Drawing.Size(821, 708);
             this.Name = "Dev_Tools";
-            this.Text = "Dev_Tools";
+            this.Text = "Dev Tools";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dev_Tools_FormClosing);
             this.TabControlDevs.ResumeLayout(false);
             this.TabStastics.ResumeLayout(false);
