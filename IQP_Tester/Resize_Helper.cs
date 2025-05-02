@@ -259,6 +259,11 @@ namespace MOCR
 
                 float newFontSize = (float)control.Parent.Width * font_ratio + Settings.Font_Offset;
 
+                if (newFontSize < Settings.MIN_FONT_SIZE)
+                {
+                    newFontSize = Settings.MIN_FONT_SIZE;
+                }
+
                 control.Font = new Font(Settings.Font_Family, (float)(newFontSize));
             }
         }

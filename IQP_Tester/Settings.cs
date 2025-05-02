@@ -51,6 +51,7 @@ namespace MOCR
 
         public const string FILE_NAME = "Settings.json";
         public const float DEFAULT_FONT_OFFSET = 0;
+        public const float MIN_FONT_SIZE = 1f;
         public const uint DEFAULT_TAB_TIMEOUT = 1000; // in 1/10 of seconds, 100 seconds
         public const uint DEFAULT_TAB_DEBOUNCE = 5; // in 1/10 of seconds, 0.5 second
         public const uint NUM_TICKS_IN_SECOND = 10;
