@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class Credits
     {
@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Credits));
-            this.CreditsTableLayoutPanel = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutCreditsMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignCredits = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.CreditsTableLayoutPanel = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutCreditsMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignCredits = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutCreditsMain.SuspendLayout();
             this.TableLayoutbtnBackAlignCredits.SuspendLayout();
@@ -114,7 +114,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::IQP_Tester.Properties.Resources.WallpaperBackgroundMain1;
+            this.BackgroundImage = global::MOCR.Properties.Resources.WallpaperBackgroundMain1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1888, 992);
             this.ControlBox = false;

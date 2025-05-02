@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class DoublePolaroid
     {
@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.tableLayoutDPPictures = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutDPPictures = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbDPNow = new System.Windows.Forms.PictureBox();
             this.pbDPThen = new System.Windows.Forms.PictureBox();
-            this.tableLayoutDPMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignDoublePolaroid = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutDPMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignDoublePolaroid = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
-            this.tableLayoutLanguageDoublePolaroidZoomBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageDoublePolaroidZoomBtnAlign = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblDPText = new System.Windows.Forms.Label();
             this.lblDPTitle = new System.Windows.Forms.Label();

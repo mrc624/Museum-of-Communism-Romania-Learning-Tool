@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class CeausescusRise
     {
@@ -31,22 +31,22 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CeausescusRise));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutElena = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutElena = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblElenaQ = new System.Windows.Forms.Label();
             this.lblElenaAns = new System.Windows.Forms.Label();
-            this.tableLayoutNicolae = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutNicolae = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblNicolaeQ = new System.Windows.Forms.Label();
             this.lblNicolaeAns = new System.Windows.Forms.Label();
             this.panelElena = new System.Windows.Forms.Panel();
-            this.tableLayoutElenaContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutElenaContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbElena = new System.Windows.Forms.PictureBox();
             this.panelNicolae = new System.Windows.Forms.Panel();
-            this.tableLayoutNicolaeContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutNicolaeContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbNicolae = new System.Windows.Forms.PictureBox();
-            this.tableLayoutCeausescusRiseMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutPanel1 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutLanguageCeausescusRiseBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignCeausescusRise = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutCeausescusRiseMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPanel1 = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageCeausescusRiseBtnAlign = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignCeausescusRise = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutElena.SuspendLayout();
             this.tableLayoutNicolae.SuspendLayout();
@@ -191,7 +191,7 @@
             this.pbElena.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbElena.Image = global::IQP_Tester.Properties.Resources.Elena;
+            this.pbElena.Image = global::MOCR.Properties.Resources.Elena;
             this.pbElena.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbElena.InitialImage")));
             this.pbElena.Location = new System.Drawing.Point(3, 3);
             this.pbElena.Name = "pbElena";
@@ -231,7 +231,7 @@
             this.pbNicolae.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbNicolae.Image = global::IQP_Tester.Properties.Resources.Ceausescu;
+            this.pbNicolae.Image = global::MOCR.Properties.Resources.Ceausescu;
             this.pbNicolae.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbNicolae.InitialImage")));
             this.pbNicolae.Location = new System.Drawing.Point(3, 3);
             this.pbNicolae.Name = "pbNicolae";
@@ -335,7 +335,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IQP_Tester.Properties.Resources.TimelineBackground;
+            this.BackgroundImage = global::MOCR.Properties.Resources.TimelineBackground;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(1);

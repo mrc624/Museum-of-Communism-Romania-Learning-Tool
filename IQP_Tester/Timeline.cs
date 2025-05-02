@@ -9,9 +9,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static IQP_Tester.Timeline;
+using static MOCR.Timeline;
 
-namespace IQP_Tester
+namespace MOCR
 {
     public partial class Timeline : Form
     {

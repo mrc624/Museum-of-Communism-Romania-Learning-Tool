@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using static IQP_Tester.Main;
+using static MOCR.Main;
 using System.Windows.Forms;
 using System.IO;
-using static IQP_Tester.TextManager;
+using static MOCR.TextManager;
 using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms.VisualStyles;
 using System.Security.Policy;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace IQP_Tester
+namespace MOCR
 {
     public class Citation_Helper
     {

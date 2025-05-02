@@ -10,7 +10,7 @@ using System.Runtime.CompilerServices;
 using Microsoft.VisualBasic.FileIO;
 using System.Linq.Expressions;
 
-namespace IQP_Tester
+namespace MOCR
 {
     public class CSV
     {

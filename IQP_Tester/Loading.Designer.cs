@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class Loading
     {

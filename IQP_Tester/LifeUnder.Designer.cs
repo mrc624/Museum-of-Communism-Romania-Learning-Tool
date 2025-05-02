@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class LifeUnder
     {
@@ -30,74 +30,74 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LifeUnder));
-            this.tableLayoutSchool = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSchool = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblSchoolQ = new System.Windows.Forms.Label();
             this.lblSchoolAns = new System.Windows.Forms.Label();
-            this.tableLayoutFood = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutFood = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblFoodQ = new System.Windows.Forms.Label();
             this.lblFoodAns = new System.Windows.Forms.Label();
-            this.tableLayoutChildhood = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutChildhood = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblChildhoodQ = new System.Windows.Forms.Label();
             this.lblChildhoodAns = new System.Windows.Forms.Label();
-            this.tableLayoutWork = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutWork = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblWorkQ = new System.Windows.Forms.Label();
             this.lblWorkAns = new System.Windows.Forms.Label();
-            this.tableLayoutUniversity = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutUniversity = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblUniversityQ = new System.Windows.Forms.Label();
             this.lblUniversityAns = new System.Windows.Forms.Label();
-            this.tableLayoutEmigration = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutEmigration = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblEmigrationQ = new System.Windows.Forms.Label();
             this.lblEmigrationAns = new System.Windows.Forms.Label();
-            this.tableLayoutYouthOrg = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutYouthOrg = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblYouthOrgQ = new System.Windows.Forms.Label();
             this.lblYouthOrgAns = new System.Windows.Forms.Label();
-            this.tableLayoutDemonstration = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutDemonstration = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblDemonstrationQ = new System.Windows.Forms.Label();
             this.lblDemonstrationAns = new System.Windows.Forms.Label();
-            this.tableLayoutMedia = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutMedia = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblMediaQ = new System.Windows.Forms.Label();
             this.lblMediaAns = new System.Windows.Forms.Label();
-            this.tableLayoutRation = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutRation = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblRationQ = new System.Windows.Forms.Label();
             this.lblRationAns = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelSchool = new System.Windows.Forms.Panel();
-            this.tableLayoutSchoolContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSchoolContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbSchool = new System.Windows.Forms.PictureBox();
             this.panelFood = new System.Windows.Forms.Panel();
-            this.tableLayoutFoodContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutFoodContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbFood = new System.Windows.Forms.PictureBox();
             this.panelWork = new System.Windows.Forms.Panel();
-            this.tableLayoutWorkContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutWorkContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbWork = new System.Windows.Forms.PictureBox();
             this.panelDemonstration = new System.Windows.Forms.Panel();
-            this.tableLayoutDemonstrationContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutDemonstrationContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbDemonstation = new System.Windows.Forms.PictureBox();
             this.panelChildhood = new System.Windows.Forms.Panel();
-            this.tableLayoutChildhoodContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutChildhoodContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbChildhood = new System.Windows.Forms.PictureBox();
             this.panelUniversity = new System.Windows.Forms.Panel();
-            this.tableLayoutUniversityContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutUniversityContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbUniversity = new System.Windows.Forms.PictureBox();
             this.panelMedia = new System.Windows.Forms.Panel();
-            this.tableLayoutMediaContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutMediaContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbMedia = new System.Windows.Forms.PictureBox();
             this.panelEmigration = new System.Windows.Forms.Panel();
-            this.tableLayoutEmigrationContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutEmigrationContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbEmigration = new System.Windows.Forms.PictureBox();
             this.panelYouthOrg = new System.Windows.Forms.Panel();
-            this.tableLayoutYouthOrgContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutYouthOrgContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbYouthOrg = new System.Windows.Forms.PictureBox();
             this.panelRation = new System.Windows.Forms.Panel();
-            this.tableLayoutRationContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutRationContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbRation = new System.Windows.Forms.PictureBox();
-            this.tableLayoutLifeUnderTop = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutLifeUnderBottom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutLifeUnderMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignLifeUnder = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLifeUnderTop = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLifeUnderBottom = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLifeUnderMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignLifeUnder = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
-            this.tableLayoutLanguageLifeUnderBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageLifeUnderBtnAlign = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnLanguage = new System.Windows.Forms.Button();
             this.tableLayoutSchool.SuspendLayout();
             this.tableLayoutFood.SuspendLayout();
@@ -611,7 +611,7 @@
             this.pbSchool.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSchool.Image = global::IQP_Tester.Properties.Resources.school;
+            this.pbSchool.Image = global::MOCR.Properties.Resources.school;
             this.pbSchool.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSchool.InitialImage")));
             this.pbSchool.Location = new System.Drawing.Point(3, 3);
             this.pbSchool.Name = "pbSchool";
@@ -651,7 +651,7 @@
             this.pbFood.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFood.Image = global::IQP_Tester.Properties.Resources.Food;
+            this.pbFood.Image = global::MOCR.Properties.Resources.Food;
             this.pbFood.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFood.InitialImage")));
             this.pbFood.Location = new System.Drawing.Point(3, 3);
             this.pbFood.Name = "pbFood";
@@ -691,7 +691,7 @@
             this.pbWork.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWork.Image = global::IQP_Tester.Properties.Resources.Work;
+            this.pbWork.Image = global::MOCR.Properties.Resources.Work;
             this.pbWork.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWork.InitialImage")));
             this.pbWork.Location = new System.Drawing.Point(3, 3);
             this.pbWork.Name = "pbWork";
@@ -731,7 +731,7 @@
             this.pbDemonstation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbDemonstation.Image = global::IQP_Tester.Properties.Resources.Demonstration;
+            this.pbDemonstation.Image = global::MOCR.Properties.Resources.Demonstration;
             this.pbDemonstation.Location = new System.Drawing.Point(3, 3);
             this.pbDemonstation.Name = "pbDemonstation";
             this.pbDemonstation.Size = new System.Drawing.Size(270, 169);
@@ -770,7 +770,7 @@
             this.pbChildhood.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbChildhood.Image = global::IQP_Tester.Properties.Resources.Childhood;
+            this.pbChildhood.Image = global::MOCR.Properties.Resources.Childhood;
             this.pbChildhood.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbChildhood.InitialImage")));
             this.pbChildhood.Location = new System.Drawing.Point(3, 3);
             this.pbChildhood.Name = "pbChildhood";
@@ -810,7 +810,7 @@
             this.pbUniversity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbUniversity.Image = global::IQP_Tester.Properties.Resources.University;
+            this.pbUniversity.Image = global::MOCR.Properties.Resources.University;
             this.pbUniversity.Location = new System.Drawing.Point(3, 3);
             this.pbUniversity.Name = "pbUniversity";
             this.pbUniversity.Size = new System.Drawing.Size(270, 169);
@@ -849,8 +849,8 @@
             this.pbMedia.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMedia.Image = global::IQP_Tester.Properties.Resources.Media;
-            this.pbMedia.InitialImage = global::IQP_Tester.Properties.Resources.Media;
+            this.pbMedia.Image = global::MOCR.Properties.Resources.Media;
+            this.pbMedia.InitialImage = global::MOCR.Properties.Resources.Media;
             this.pbMedia.Location = new System.Drawing.Point(3, 3);
             this.pbMedia.Name = "pbMedia";
             this.pbMedia.Size = new System.Drawing.Size(270, 169);
@@ -889,7 +889,7 @@
             this.pbEmigration.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbEmigration.Image = global::IQP_Tester.Properties.Resources.Emigration;
+            this.pbEmigration.Image = global::MOCR.Properties.Resources.Emigration;
             this.pbEmigration.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbEmigration.InitialImage")));
             this.pbEmigration.Location = new System.Drawing.Point(3, 3);
             this.pbEmigration.Name = "pbEmigration";
@@ -929,7 +929,7 @@
             this.pbYouthOrg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbYouthOrg.Image = global::IQP_Tester.Properties.Resources.YouthOrg;
+            this.pbYouthOrg.Image = global::MOCR.Properties.Resources.YouthOrg;
             this.pbYouthOrg.Location = new System.Drawing.Point(3, 3);
             this.pbYouthOrg.Name = "pbYouthOrg";
             this.pbYouthOrg.Size = new System.Drawing.Size(270, 169);
@@ -968,7 +968,7 @@
             this.pbRation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbRation.Image = global::IQP_Tester.Properties.Resources.Ration;
+            this.pbRation.Image = global::MOCR.Properties.Resources.Ration;
             this.pbRation.Location = new System.Drawing.Point(3, 3);
             this.pbRation.Name = "pbRation";
             this.pbRation.Size = new System.Drawing.Size(270, 169);
@@ -1124,7 +1124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IQP_Tester.Properties.Resources.LifeunderBackground;
+            this.BackgroundImage = global::MOCR.Properties.Resources.LifeunderBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutLifeUnderMain);

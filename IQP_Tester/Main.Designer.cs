@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class Main
     {
@@ -33,34 +33,34 @@
             this.btnLanguage = new System.Windows.Forms.Button();
             this.btnCredits = new System.Windows.Forms.Button();
             this.panelOppression = new System.Windows.Forms.Panel();
-            this.tableLayoutOppressionContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutOppression = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutOppressionContainer = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutOppression = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbOppression = new System.Windows.Forms.PictureBox();
             this.lblOppression = new System.Windows.Forms.Label();
             this.panelLifeUnder = new System.Windows.Forms.Panel();
-            this.tableLayoutLifeUnderContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutLifeUnder = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLifeUnderContainer = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLifeUnder = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbLifeUnder = new System.Windows.Forms.PictureBox();
             this.lblLifeUnder = new System.Windows.Forms.Label();
             this.panelTimeline = new System.Windows.Forms.Panel();
-            this.tableLayoutTimelineContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutTimeline = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutTimelineContainer = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutTimeline = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbCommunistTimeline = new System.Windows.Forms.PictureBox();
             this.lblCommunistTimeline = new System.Windows.Forms.Label();
             this.panelStories = new System.Windows.Forms.Panel();
-            this.tableLayoutStoriesContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutStories = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStoriesContainer = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStories = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblStories = new System.Windows.Forms.Label();
             this.pbStories = new System.Windows.Forms.PictureBox();
             this.panelThenAndNow = new System.Windows.Forms.Panel();
-            this.tableLayoutThenAndNowContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutThenAndNow = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutThenAndNowContainer = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutThenAndNow = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblThenAndNow = new System.Windows.Forms.Label();
             this.pbThenAndNow = new System.Windows.Forms.PictureBox();
-            this.tableLayoutMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutMainBottom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutMainTop = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutLanguageMainBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutMainBottom = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutMainTop = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageMainBtnAlign = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnFeedback = new System.Windows.Forms.Button();
             this.panelOppression.SuspendLayout();
             this.tableLayoutOppressionContainer.SuspendLayout();
@@ -117,7 +117,7 @@
             // 
             // panelOppression
             // 
-            this.panelOppression.BackgroundImage = global::IQP_Tester.Properties.Resources.Photo_frames1;
+            this.panelOppression.BackgroundImage = global::MOCR.Properties.Resources.Photo_frames1;
             this.panelOppression.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelOppression.Controls.Add(this.tableLayoutOppressionContainer);
             this.panelOppression.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -170,9 +170,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbOppression.BackColor = System.Drawing.Color.Transparent;
-            this.pbOppression.BackgroundImage = global::IQP_Tester.Properties.Resources.OpressionMain1;
+            this.pbOppression.BackgroundImage = global::MOCR.Properties.Resources.OpressionMain1;
             this.pbOppression.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbOppression.Image = global::IQP_Tester.Properties.Resources.OpressionMain1;
+            this.pbOppression.Image = global::MOCR.Properties.Resources.OpressionMain1;
             this.pbOppression.Location = new System.Drawing.Point(3, 34);
             this.pbOppression.Name = "pbOppression";
             this.pbOppression.Size = new System.Drawing.Size(389, 206);
@@ -198,7 +198,7 @@
             // 
             // panelLifeUnder
             // 
-            this.panelLifeUnder.BackgroundImage = global::IQP_Tester.Properties.Resources.Photo_frames1;
+            this.panelLifeUnder.BackgroundImage = global::MOCR.Properties.Resources.Photo_frames1;
             this.panelLifeUnder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelLifeUnder.Controls.Add(this.tableLayoutLifeUnderContainer);
             this.panelLifeUnder.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -252,7 +252,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbLifeUnder.BackColor = System.Drawing.Color.Transparent;
             this.pbLifeUnder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbLifeUnder.Image = global::IQP_Tester.Properties.Resources.LifeUnderMain1;
+            this.pbLifeUnder.Image = global::MOCR.Properties.Resources.LifeUnderMain1;
             this.pbLifeUnder.Location = new System.Drawing.Point(3, 34);
             this.pbLifeUnder.Name = "pbLifeUnder";
             this.pbLifeUnder.Size = new System.Drawing.Size(389, 206);
@@ -278,7 +278,7 @@
             // 
             // panelTimeline
             // 
-            this.panelTimeline.BackgroundImage = global::IQP_Tester.Properties.Resources.Photo_frames1;
+            this.panelTimeline.BackgroundImage = global::MOCR.Properties.Resources.Photo_frames1;
             this.panelTimeline.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelTimeline.Controls.Add(this.tableLayoutTimelineContainer);
             this.panelTimeline.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -332,7 +332,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbCommunistTimeline.BackColor = System.Drawing.Color.Transparent;
             this.pbCommunistTimeline.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbCommunistTimeline.Image = global::IQP_Tester.Properties.Resources.TimelineMain1;
+            this.pbCommunistTimeline.Image = global::MOCR.Properties.Resources.TimelineMain1;
             this.pbCommunistTimeline.Location = new System.Drawing.Point(3, 34);
             this.pbCommunistTimeline.Name = "pbCommunistTimeline";
             this.pbCommunistTimeline.Size = new System.Drawing.Size(399, 206);
@@ -358,7 +358,7 @@
             // 
             // panelStories
             // 
-            this.panelStories.BackgroundImage = global::IQP_Tester.Properties.Resources.Photo_frames1;
+            this.panelStories.BackgroundImage = global::MOCR.Properties.Resources.Photo_frames1;
             this.panelStories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelStories.Controls.Add(this.tableLayoutStoriesContainer);
             this.panelStories.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -427,9 +427,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbStories.BackColor = System.Drawing.Color.Transparent;
-            this.pbStories.BackgroundImage = global::IQP_Tester.Properties.Resources.StoriesMain1;
+            this.pbStories.BackgroundImage = global::MOCR.Properties.Resources.StoriesMain1;
             this.pbStories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbStories.Image = global::IQP_Tester.Properties.Resources.StoriesMain1;
+            this.pbStories.Image = global::MOCR.Properties.Resources.StoriesMain1;
             this.pbStories.Location = new System.Drawing.Point(3, 34);
             this.pbStories.Name = "pbStories";
             this.pbStories.Size = new System.Drawing.Size(399, 206);
@@ -439,7 +439,7 @@
             // 
             // panelThenAndNow
             // 
-            this.panelThenAndNow.BackgroundImage = global::IQP_Tester.Properties.Resources.Photo_frames1;
+            this.panelThenAndNow.BackgroundImage = global::MOCR.Properties.Resources.Photo_frames1;
             this.panelThenAndNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelThenAndNow.Controls.Add(this.tableLayoutThenAndNowContainer);
             this.panelThenAndNow.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -509,7 +509,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbThenAndNow.BackColor = System.Drawing.Color.Transparent;
             this.pbThenAndNow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbThenAndNow.Image = global::IQP_Tester.Properties.Resources.ThenNowMain1;
+            this.pbThenAndNow.Image = global::MOCR.Properties.Resources.ThenNowMain1;
             this.pbThenAndNow.Location = new System.Drawing.Point(3, 34);
             this.pbThenAndNow.Name = "pbThenAndNow";
             this.pbThenAndNow.Size = new System.Drawing.Size(389, 206);
@@ -621,7 +621,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::IQP_Tester.Properties.Resources.WallpaperBackgroundMain1;
+            this.BackgroundImage = global::MOCR.Properties.Resources.WallpaperBackgroundMain1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1041);
             this.Controls.Add(this.tableLayoutMain);

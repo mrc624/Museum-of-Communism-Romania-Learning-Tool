@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IQP_Tester
+namespace MOCR
 {
     public class CSV_Helper
     {

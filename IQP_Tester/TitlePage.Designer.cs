@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class TitlePage
     {
@@ -139,7 +139,7 @@
             // pbBackground3
             // 
             this.pbBackground3.BackColor = System.Drawing.Color.Transparent;
-            this.pbBackground3.Image = global::IQP_Tester.Properties.Resources.BackgroundThree;
+            this.pbBackground3.Image = global::MOCR.Properties.Resources.BackgroundThree;
             this.pbBackground3.Location = new System.Drawing.Point(302, 12);
             this.pbBackground3.Name = "pbBackground3";
             this.pbBackground3.Size = new System.Drawing.Size(139, 139);
@@ -151,7 +151,7 @@
             // pbBackground2
             // 
             this.pbBackground2.BackColor = System.Drawing.Color.Transparent;
-            this.pbBackground2.Image = global::IQP_Tester.Properties.Resources.BackgroundTwo;
+            this.pbBackground2.Image = global::MOCR.Properties.Resources.BackgroundTwo;
             this.pbBackground2.Location = new System.Drawing.Point(157, 12);
             this.pbBackground2.Name = "pbBackground2";
             this.pbBackground2.Size = new System.Drawing.Size(139, 139);
@@ -163,7 +163,7 @@
             // pbBackground1
             // 
             this.pbBackground1.BackColor = System.Drawing.Color.Transparent;
-            this.pbBackground1.Image = global::IQP_Tester.Properties.Resources.BackgroundOne;
+            this.pbBackground1.Image = global::MOCR.Properties.Resources.BackgroundOne;
             this.pbBackground1.Location = new System.Drawing.Point(12, 12);
             this.pbBackground1.Name = "pbBackground1";
             this.pbBackground1.Size = new System.Drawing.Size(139, 139);

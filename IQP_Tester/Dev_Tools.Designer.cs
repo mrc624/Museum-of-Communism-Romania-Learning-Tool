@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class Dev_Tools
     {
@@ -68,8 +68,8 @@
             this.lblFontSizeOffset = new System.Windows.Forms.Label();
             this.lblFontFamily = new System.Windows.Forms.Label();
             this.cbFontFamily = new System.Windows.Forms.ComboBox();
-            this.tableLayoutPanelOpenForms = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutDevEditText = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPanelOpenForms = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutDevEditText = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblEditTextRomanian = new System.Windows.Forms.Label();
             this.lblEditTextEnglish = new System.Windows.Forms.Label();
             this.lblEditTextControlName = new System.Windows.Forms.Label();

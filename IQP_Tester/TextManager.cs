@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using static IQP_Tester.Main;
+using static MOCR.Main;
 using System.Windows.Forms;
 using System.IO;
 using System.Drawing;
 
-namespace IQP_Tester
+namespace MOCR
 {
     public class TextManager
     {
@@ -328,12 +328,12 @@ namespace IQP_Tester
                         if (language == Language.English)
                         {
                             // set US flag
-                            control.Controls[i].BackgroundImage = global::IQP_Tester.Properties.Resources.AmericanFlag;
+                            control.Controls[i].BackgroundImage = global::MOCR.Properties.Resources.AmericanFlag;
                         }
                         else if (language == Language.Romanian)
                         {
                             // set Romanian flag
-                            control.Controls[i].BackgroundImage = global::IQP_Tester.Properties.Resources.RomanianFlag;
+                            control.Controls[i].BackgroundImage = global::MOCR.Properties.Resources.RomanianFlag;
                         }
                     }
                 }

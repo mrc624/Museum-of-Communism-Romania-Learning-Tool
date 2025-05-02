@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
 
-namespace IQP_Tester
+namespace MOCR
 {
     public class Open_Close_Helper
     {

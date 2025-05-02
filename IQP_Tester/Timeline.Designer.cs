@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class Timeline
     {
@@ -33,50 +33,50 @@
             this.btnLanguage = new System.Windows.Forms.Button();
             this.lblHowDidTheRegimeFall = new System.Windows.Forms.Label();
             this.panelRegimeFall = new System.Windows.Forms.Panel();
-            this.tableLayoutRegimeFall = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutRegimeFall = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbRegimeFall = new System.Windows.Forms.PictureBox();
-            this.tableLayoutAna = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutAna = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblAnaQ = new System.Windows.Forms.Label();
             this.lblAnaAns = new System.Windows.Forms.Label();
             this.pbAna = new System.Windows.Forms.PictureBox();
-            this.tableLayoutWarsaw = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutWarsaw = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblWarsawQ = new System.Windows.Forms.Label();
             this.lblWarsawAns = new System.Windows.Forms.Label();
             this.pbWarsaw = new System.Windows.Forms.PictureBox();
-            this.tableLayoutJuly = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutJuly = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblJulyQ = new System.Windows.Forms.Label();
             this.lblJulyAns = new System.Windows.Forms.Label();
             this.pbJuly = new System.Windows.Forms.PictureBox();
-            this.tableLayoutHousePeople = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutHousePeople = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblHousePeopleQ = new System.Windows.Forms.Label();
             this.lblHousePeopleAns = new System.Windows.Forms.Label();
             this.pbHousePeople = new System.Windows.Forms.PictureBox();
             this.pbSoviet = new System.Windows.Forms.PictureBox();
             this.lblSoviet = new System.Windows.Forms.Label();
             this.panelCeausescusRise = new System.Windows.Forms.Panel();
-            this.tableLayoutCeausescusRise = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutCeausescusRise = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbCeausescusRise = new System.Windows.Forms.PictureBox();
             this.lblCeausescusRise = new System.Windows.Forms.Label();
             this.pbTimeLine = new System.Windows.Forms.PictureBox();
             this.panelAna = new System.Windows.Forms.Panel();
-            this.tableLayoutAnaContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutAnaContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.panelJuly = new System.Windows.Forms.Panel();
-            this.tableLayoutJulyContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutJulyContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.panelHousePeople = new System.Windows.Forms.Panel();
-            this.tableLayoutHousePeopleContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutHousePeopleContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.panelWarsaw = new System.Windows.Forms.Panel();
-            this.tableLayoutWarsawContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutSoviet = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutWarsawContainer = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSoviet = new MOCR.DoubleBufferedTableLayout(this.components);
             this.panelSoviet = new System.Windows.Forms.Panel();
-            this.tableLayoutTimelineMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignTimeline = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutTimelineMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignTimeline = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
-            this.tableLayoutLanguageTimelineBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutTimelineBottom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutEraSovietContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutTimelineTop = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutRegimeFallContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutCeausescusRiseContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageTimelineBtnAlign = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutTimelineBottom = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutEraSovietContainer = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutTimelineTop = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutRegimeFallContainer = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutCeausescusRiseContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.panelRegimeFall.SuspendLayout();
             this.tableLayoutRegimeFall.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRegimeFall)).BeginInit();
@@ -175,8 +175,8 @@
             this.pbRegimeFall.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbRegimeFall.Image = global::IQP_Tester.Properties.Resources.RegimeFall;
-            this.pbRegimeFall.InitialImage = global::IQP_Tester.Properties.Resources.RegimeFall;
+            this.pbRegimeFall.Image = global::MOCR.Properties.Resources.RegimeFall;
+            this.pbRegimeFall.InitialImage = global::MOCR.Properties.Resources.RegimeFall;
             this.pbRegimeFall.Location = new System.Drawing.Point(1, 63);
             this.pbRegimeFall.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pbRegimeFall.Name = "pbRegimeFall";
@@ -232,7 +232,7 @@
             this.pbAna.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbAna.Image = global::IQP_Tester.Properties.Resources.Ana;
+            this.pbAna.Image = global::MOCR.Properties.Resources.Ana;
             this.pbAna.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbAna.InitialImage")));
             this.pbAna.Location = new System.Drawing.Point(3, 3);
             this.pbAna.Name = "pbAna";
@@ -288,7 +288,7 @@
             this.pbWarsaw.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWarsaw.Image = global::IQP_Tester.Properties.Resources.Warsaw;
+            this.pbWarsaw.Image = global::MOCR.Properties.Resources.Warsaw;
             this.pbWarsaw.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWarsaw.InitialImage")));
             this.pbWarsaw.Location = new System.Drawing.Point(3, 3);
             this.pbWarsaw.Name = "pbWarsaw";
@@ -344,7 +344,7 @@
             this.pbJuly.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbJuly.Image = global::IQP_Tester.Properties.Resources.July;
+            this.pbJuly.Image = global::MOCR.Properties.Resources.July;
             this.pbJuly.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbJuly.InitialImage")));
             this.pbJuly.Location = new System.Drawing.Point(3, 3);
             this.pbJuly.Name = "pbJuly";
@@ -400,7 +400,7 @@
             this.pbHousePeople.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbHousePeople.Image = global::IQP_Tester.Properties.Resources.HousePeople;
+            this.pbHousePeople.Image = global::MOCR.Properties.Resources.HousePeople;
             this.pbHousePeople.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbHousePeople.InitialImage")));
             this.pbHousePeople.Location = new System.Drawing.Point(3, 3);
             this.pbHousePeople.Name = "pbHousePeople";
@@ -412,8 +412,8 @@
             // pbSoviet
             // 
             this.pbSoviet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbSoviet.Image = global::IQP_Tester.Properties.Resources.Soviet;
-            this.pbSoviet.InitialImage = global::IQP_Tester.Properties.Resources.Soviet;
+            this.pbSoviet.Image = global::MOCR.Properties.Resources.Soviet;
+            this.pbSoviet.InitialImage = global::MOCR.Properties.Resources.Soviet;
             this.pbSoviet.Location = new System.Drawing.Point(1, 32);
             this.pbSoviet.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pbSoviet.Name = "pbSoviet";
@@ -469,8 +469,8 @@
             // pbCeausescusRise
             // 
             this.pbCeausescusRise.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbCeausescusRise.Image = global::IQP_Tester.Properties.Resources.CeausescusRise;
-            this.pbCeausescusRise.InitialImage = global::IQP_Tester.Properties.Resources.CeausescusRise;
+            this.pbCeausescusRise.Image = global::MOCR.Properties.Resources.CeausescusRise;
+            this.pbCeausescusRise.InitialImage = global::MOCR.Properties.Resources.CeausescusRise;
             this.pbCeausescusRise.Location = new System.Drawing.Point(1, 63);
             this.pbCeausescusRise.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pbCeausescusRise.Name = "pbCeausescusRise";
@@ -498,7 +498,7 @@
             // 
             this.pbTimeLine.BackColor = System.Drawing.Color.Transparent;
             this.pbTimeLine.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbTimeLine.Image = global::IQP_Tester.Properties.Resources.Chain;
+            this.pbTimeLine.Image = global::MOCR.Properties.Resources.Chain;
             this.pbTimeLine.Location = new System.Drawing.Point(3, 471);
             this.pbTimeLine.Name = "pbTimeLine";
             this.pbTimeLine.Size = new System.Drawing.Size(1898, 98);
@@ -812,7 +812,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IQP_Tester.Properties.Resources.TimelineBackground;
+            this.BackgroundImage = global::MOCR.Properties.Resources.TimelineBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutTimelineMain);

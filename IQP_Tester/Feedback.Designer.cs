@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class Feedback
     {
@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Feedback));
-            this.tableLayoutFeedbackMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignFeedback = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutFeedbackMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignFeedback = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutQuestions = new DoubleBufferedTableLayout();
             this.tableLayoutPanel1 = new DoubleBufferedTableLayout();
@@ -59,7 +59,7 @@
             this.tableLayoutPanel2 = new DoubleBufferedTableLayout();
             this.btnFeedbackClear = new System.Windows.Forms.Button();
             this.btnFeedbackSubmit = new System.Windows.Forms.Button();
-            this.TableLayoutbtnLanguageFeedback = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnLanguageFeedback = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnLanguage = new System.Windows.Forms.Button();
             this.tableLayoutFeedbackMain.SuspendLayout();
             this.TableLayoutbtnBackAlignFeedback.SuspendLayout();
@@ -661,7 +661,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::IQP_Tester.Properties.Resources.WallpaperBackgroundMain1;
+            this.BackgroundImage = global::MOCR.Properties.Resources.WallpaperBackgroundMain1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(3844, 2348);
             this.ControlBox = false;

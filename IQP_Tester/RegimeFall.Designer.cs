@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class RegimeFall
     {
@@ -31,28 +31,28 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegimeFall));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutWhatWasRevolution = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutWhatWasRevolution = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblWhatWasRevolutionQ = new System.Windows.Forms.Label();
             this.lblWhatWasRevolutionAns = new System.Windows.Forms.Label();
-            this.tableLayoutPanelWhyRevolt = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPanelWhyRevolt = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblWhyRevoltQ = new System.Windows.Forms.Label();
             this.lblWhyRevoltAns = new System.Windows.Forms.Label();
-            this.tableLayoutWhereCeausescu = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutWhereCeausescu = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblWhereCeausescuQ = new System.Windows.Forms.Label();
             this.lblWhereCeausescuAns = new System.Windows.Forms.Label();
             this.panelWhatWasRevolution = new System.Windows.Forms.Panel();
-            this.tableLayoutWhatWasRevolutionContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutWhatWasRevolutionContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbWhatWasRevolution = new System.Windows.Forms.PictureBox();
             this.panelWhyRevolt = new System.Windows.Forms.Panel();
-            this.tableLayoutWhyRevoltContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutWhyRevoltContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbWhyRevolt = new System.Windows.Forms.PictureBox();
             this.panelWhereCeausescu = new System.Windows.Forms.Panel();
-            this.tableLayoutWhereCeausescuContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutWhereCeausescuContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbWhereCeausescu = new System.Windows.Forms.PictureBox();
-            this.tableLayoutRegimeFallMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutLanguageRegimeFallBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutRegimeFallMiddle = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignRegimeFall = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutRegimeFallMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageRegimeFallBtnAlign = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutRegimeFallMiddle = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignRegimeFall = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutWhatWasRevolution.SuspendLayout();
             this.tableLayoutPanelWhyRevolt.SuspendLayout();
@@ -243,7 +243,7 @@
             this.pbWhatWasRevolution.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWhatWasRevolution.Image = global::IQP_Tester.Properties.Resources.WhatWasRevolution;
+            this.pbWhatWasRevolution.Image = global::MOCR.Properties.Resources.WhatWasRevolution;
             this.pbWhatWasRevolution.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhatWasRevolution.InitialImage")));
             this.pbWhatWasRevolution.Location = new System.Drawing.Point(3, 3);
             this.pbWhatWasRevolution.Name = "pbWhatWasRevolution";
@@ -283,7 +283,7 @@
             this.pbWhyRevolt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWhyRevolt.Image = global::IQP_Tester.Properties.Resources.WhyRevolt;
+            this.pbWhyRevolt.Image = global::MOCR.Properties.Resources.WhyRevolt;
             this.pbWhyRevolt.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhyRevolt.InitialImage")));
             this.pbWhyRevolt.Location = new System.Drawing.Point(3, 3);
             this.pbWhyRevolt.Name = "pbWhyRevolt";
@@ -323,7 +323,7 @@
             this.pbWhereCeausescu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbWhereCeausescu.Image = global::IQP_Tester.Properties.Resources.WhereCeausescu;
+            this.pbWhereCeausescu.Image = global::MOCR.Properties.Resources.WhereCeausescu;
             this.pbWhereCeausescu.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbWhereCeausescu.InitialImage")));
             this.pbWhereCeausescu.Location = new System.Drawing.Point(3, 3);
             this.pbWhereCeausescu.Name = "pbWhereCeausescu";
@@ -430,7 +430,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IQP_Tester.Properties.Resources.TimelineBackground;
+            this.BackgroundImage = global::MOCR.Properties.Resources.TimelineBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutRegimeFallMain);

@@ -11,10 +11,10 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static IQP_Tester.Citation_Helper;
+using static MOCR.Citation_Helper;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace IQP_Tester
+namespace MOCR
 {
     public partial class Feedback : Form
     {

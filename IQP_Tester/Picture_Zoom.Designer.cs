@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class Picture_Zoom
     {
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.TableLayoutPictureZoomMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignPictureZoom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutPictureZoomMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignPictureZoom = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
             this.pbPictureZoom = new System.Windows.Forms.PictureBox();
             this.TableLayoutPictureZoomMain.SuspendLayout();

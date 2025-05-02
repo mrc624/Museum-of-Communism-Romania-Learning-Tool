@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using static IQP_Tester.TextManager;
+using static MOCR.TextManager;
 using System.Windows.Forms;
 using System.IO;
 using System.Net.NetworkInformation;
 using System.Drawing;
 
-namespace IQP_Tester
+namespace MOCR
 {
     public class Settings
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IQP_Tester
+namespace MOCR
 {
     public class Seconday_Form_Helper
     {

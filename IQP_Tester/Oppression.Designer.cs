@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class Oppression
     {
@@ -31,78 +31,78 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Oppression));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutSecuritate = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSecuritate = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblSecuritateQ = new System.Windows.Forms.Label();
             this.lblSecuritateAns = new System.Windows.Forms.Label();
-            this.tableLayoutConsequences = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutConsequences = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblConsequencesQ = new System.Windows.Forms.Label();
             this.lblConsequencesAns = new System.Windows.Forms.Label();
-            this.tableLayoutPropoganda = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPropoganda = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblPropogandaQ = new System.Windows.Forms.Label();
             this.lblPropogandaAns = new System.Windows.Forms.Label();
-            this.tableLayoutLanguage = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguage = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblLanguageQ = new System.Windows.Forms.Label();
             this.lblLanguageAns = new System.Windows.Forms.Label();
-            this.tableLayoutPossesions = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPossesions = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblPossesionsQ = new System.Windows.Forms.Label();
             this.lblPossesionsAns = new System.Windows.Forms.Label();
-            this.tableLayoutInfluence = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutInfluence = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblInfluenceQ = new System.Windows.Forms.Label();
             this.lblInfluenceAns = new System.Windows.Forms.Label();
-            this.tableLayoutExports = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutExports = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblExportsQ = new System.Windows.Forms.Label();
             this.lblExportsAns = new System.Windows.Forms.Label();
-            this.tableLayoutReligion = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutReligion = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblReligionQ = new System.Windows.Forms.Label();
             this.lblReligionAns = new System.Windows.Forms.Label();
-            this.tableLayoutFear = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutFear = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblFearQ = new System.Windows.Forms.Label();
             this.lblFearAns = new System.Windows.Forms.Label();
-            this.tableLayoutPalace = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPalace = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblPalaceQ = new System.Windows.Forms.Label();
             this.lblPalaceAns = new System.Windows.Forms.Label();
-            this.tableLayoutPanelDeportation = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPanelDeportation = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblDeportationQ = new System.Windows.Forms.Label();
             this.lblDeportationAns = new System.Windows.Forms.Label();
-            this.tableLayoutSecuritateContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSecuritateContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbSecuritate = new System.Windows.Forms.PictureBox();
             this.panelSecuritate = new System.Windows.Forms.Panel();
             this.panelConsequences = new System.Windows.Forms.Panel();
-            this.tableLayoutConsequencesContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutConsequencesContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbConsequences = new System.Windows.Forms.PictureBox();
             this.panelPropoganda = new System.Windows.Forms.Panel();
-            this.tableLayoutPropagandaContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPropagandaContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbPropoganda = new System.Windows.Forms.PictureBox();
             this.panelLanguage = new System.Windows.Forms.Panel();
-            this.tableLayoutLanguageContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbLanguage = new System.Windows.Forms.PictureBox();
             this.panelPossesions = new System.Windows.Forms.Panel();
-            this.tableLayoutPossesionsContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPossesionsContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbPossesions = new System.Windows.Forms.PictureBox();
             this.panelInfluence = new System.Windows.Forms.Panel();
-            this.tableLayoutInfluenceContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutInfluenceContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbInfluence = new System.Windows.Forms.PictureBox();
             this.panelExports = new System.Windows.Forms.Panel();
-            this.tableLayoutExportsContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutExportsContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbExports = new System.Windows.Forms.PictureBox();
             this.panelReligion = new System.Windows.Forms.Panel();
-            this.tableLayoutReligionContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutReligionContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbReligion = new System.Windows.Forms.PictureBox();
             this.panelFear = new System.Windows.Forms.Panel();
-            this.tableLayoutFearContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutFearContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbFear = new System.Windows.Forms.PictureBox();
             this.panelPalace = new System.Windows.Forms.Panel();
-            this.tableLayoutPalaceContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPalaceContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbPalace = new System.Windows.Forms.PictureBox();
             this.panelDeportation = new System.Windows.Forms.Panel();
-            this.tableLayoutDeportationContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutDeportationContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbDeportation = new System.Windows.Forms.PictureBox();
-            this.tableLayoutOppressionTop = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutOppressionBottom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutOppressionMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutOppressionTop = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutOppressionBottom = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutOppressionMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlign = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
-            this.tableLayoutLanguageOppressionBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageOppressionBtnAlign = new MOCR.DoubleBufferedTableLayout(this.components);
             this.tableLayoutSecuritate.SuspendLayout();
             this.tableLayoutConsequences.SuspendLayout();
             this.tableLayoutPropoganda.SuspendLayout();
@@ -649,7 +649,7 @@
             this.pbSecuritate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSecuritate.Image = global::IQP_Tester.Properties.Resources.Securitate;
+            this.pbSecuritate.Image = global::MOCR.Properties.Resources.Securitate;
             this.pbSecuritate.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbSecuritate.InitialImage")));
             this.pbSecuritate.Location = new System.Drawing.Point(3, 3);
             this.pbSecuritate.Name = "pbSecuritate";
@@ -699,7 +699,7 @@
             this.pbConsequences.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbConsequences.Image = global::IQP_Tester.Properties.Resources.Consequences;
+            this.pbConsequences.Image = global::MOCR.Properties.Resources.Consequences;
             this.pbConsequences.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbConsequences.InitialImage")));
             this.pbConsequences.Location = new System.Drawing.Point(3, 3);
             this.pbConsequences.Name = "pbConsequences";
@@ -739,7 +739,7 @@
             this.pbPropoganda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPropoganda.Image = global::IQP_Tester.Properties.Resources.Propaganda;
+            this.pbPropoganda.Image = global::MOCR.Properties.Resources.Propaganda;
             this.pbPropoganda.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPropoganda.InitialImage")));
             this.pbPropoganda.Location = new System.Drawing.Point(3, 3);
             this.pbPropoganda.Name = "pbPropoganda";
@@ -779,7 +779,7 @@
             this.pbLanguage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbLanguage.Image = global::IQP_Tester.Properties.Resources.Language;
+            this.pbLanguage.Image = global::MOCR.Properties.Resources.Language;
             this.pbLanguage.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbLanguage.InitialImage")));
             this.pbLanguage.Location = new System.Drawing.Point(3, 3);
             this.pbLanguage.Name = "pbLanguage";
@@ -819,7 +819,7 @@
             this.pbPossesions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPossesions.Image = global::IQP_Tester.Properties.Resources.Posessions;
+            this.pbPossesions.Image = global::MOCR.Properties.Resources.Posessions;
             this.pbPossesions.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPossesions.InitialImage")));
             this.pbPossesions.Location = new System.Drawing.Point(3, 3);
             this.pbPossesions.Name = "pbPossesions";
@@ -859,7 +859,7 @@
             this.pbInfluence.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbInfluence.Image = global::IQP_Tester.Properties.Resources.Influence;
+            this.pbInfluence.Image = global::MOCR.Properties.Resources.Influence;
             this.pbInfluence.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbInfluence.InitialImage")));
             this.pbInfluence.Location = new System.Drawing.Point(3, 3);
             this.pbInfluence.Name = "pbInfluence";
@@ -939,7 +939,7 @@
             this.pbReligion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbReligion.Image = global::IQP_Tester.Properties.Resources.Religion;
+            this.pbReligion.Image = global::MOCR.Properties.Resources.Religion;
             this.pbReligion.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbReligion.InitialImage")));
             this.pbReligion.Location = new System.Drawing.Point(3, 3);
             this.pbReligion.Name = "pbReligion";
@@ -979,7 +979,7 @@
             this.pbFear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFear.Image = global::IQP_Tester.Properties.Resources.Fear;
+            this.pbFear.Image = global::MOCR.Properties.Resources.Fear;
             this.pbFear.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFear.InitialImage")));
             this.pbFear.Location = new System.Drawing.Point(3, 3);
             this.pbFear.Name = "pbFear";
@@ -1019,7 +1019,7 @@
             this.pbPalace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPalace.Image = global::IQP_Tester.Properties.Resources.Palace;
+            this.pbPalace.Image = global::MOCR.Properties.Resources.Palace;
             this.pbPalace.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPalace.InitialImage")));
             this.pbPalace.Location = new System.Drawing.Point(3, 3);
             this.pbPalace.Name = "pbPalace";
@@ -1059,7 +1059,7 @@
             this.pbDeportation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbDeportation.Image = global::IQP_Tester.Properties.Resources.Deportation;
+            this.pbDeportation.Image = global::MOCR.Properties.Resources.Deportation;
             this.pbDeportation.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbDeportation.InitialImage")));
             this.pbDeportation.Location = new System.Drawing.Point(3, 3);
             this.pbDeportation.Name = "pbDeportation";
@@ -1205,7 +1205,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IQP_Tester.Properties.Resources.OpressionBackground;
+            this.BackgroundImage = global::MOCR.Properties.Resources.OpressionBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutOppressionMain);

@@ -17,7 +17,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 
-namespace IQP_Tester
+namespace MOCR
 {
     public partial class Main : Form
     {

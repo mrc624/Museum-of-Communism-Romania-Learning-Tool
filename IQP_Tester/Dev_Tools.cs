@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static IQP_Tester.TextManager;
+using static MOCR.TextManager;
 using static System.Net.Mime.MediaTypeNames;
 using System.IO;
 
-namespace IQP_Tester
+namespace MOCR
 {
     public partial class Dev_Tools : Form
     {

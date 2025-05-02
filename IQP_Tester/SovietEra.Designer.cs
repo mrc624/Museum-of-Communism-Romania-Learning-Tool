@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class SovietEra
     {
@@ -31,28 +31,28 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SovietEra));
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutPostWW2 = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPostWW2 = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblPostWW2Q = new System.Windows.Forms.Label();
             this.lblPostWW2Ans = new System.Windows.Forms.Label();
-            this.tableLayoutPanelMarxism = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPanelMarxism = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblMarxismQ = new System.Windows.Forms.Label();
             this.lblMarxismAns = new System.Windows.Forms.Label();
-            this.tableLayoutGheorghe = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutGheorghe = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblGheorgheQ = new System.Windows.Forms.Label();
             this.lblGheorgheAns = new System.Windows.Forms.Label();
             this.panelPostWW2 = new System.Windows.Forms.Panel();
-            this.tableLayoutPostWW2Container = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPostWW2Container = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbPostWW2 = new System.Windows.Forms.PictureBox();
             this.panelMarxism = new System.Windows.Forms.Panel();
-            this.tableLayoutMarxismContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutMarxismContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbMarxism = new System.Windows.Forms.PictureBox();
             this.panelGheorghe = new System.Windows.Forms.Panel();
-            this.tableLayoutGheorgheContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutGheorgheContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbGheorghe = new System.Windows.Forms.PictureBox();
-            this.tableLayoutSovietEraMiddle = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutSovietEraMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutLanguageSovietEraBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignSovietEra = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSovietEraMiddle = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSovietEraMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageSovietEraBtnAlign = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignSovietEra = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutPostWW2.SuspendLayout();
             this.tableLayoutPanelMarxism.SuspendLayout();
@@ -243,7 +243,7 @@
             this.pbPostWW2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbPostWW2.Image = global::IQP_Tester.Properties.Resources.PostWW2;
+            this.pbPostWW2.Image = global::MOCR.Properties.Resources.PostWW2;
             this.pbPostWW2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbPostWW2.InitialImage")));
             this.pbPostWW2.Location = new System.Drawing.Point(3, 3);
             this.pbPostWW2.Name = "pbPostWW2";
@@ -283,7 +283,7 @@
             this.pbMarxism.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMarxism.Image = global::IQP_Tester.Properties.Resources.Marxism;
+            this.pbMarxism.Image = global::MOCR.Properties.Resources.Marxism;
             this.pbMarxism.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbMarxism.InitialImage")));
             this.pbMarxism.Location = new System.Drawing.Point(3, 3);
             this.pbMarxism.Name = "pbMarxism";
@@ -323,7 +323,7 @@
             this.pbGheorghe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbGheorghe.Image = global::IQP_Tester.Properties.Resources.Gheorghe;
+            this.pbGheorghe.Image = global::MOCR.Properties.Resources.Gheorghe;
             this.pbGheorghe.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbGheorghe.InitialImage")));
             this.pbGheorghe.Location = new System.Drawing.Point(3, 3);
             this.pbGheorghe.Name = "pbGheorghe";
@@ -430,7 +430,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IQP_Tester.Properties.Resources.TimelineBackground;
+            this.BackgroundImage = global::MOCR.Properties.Resources.TimelineBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutSovietEraMain);

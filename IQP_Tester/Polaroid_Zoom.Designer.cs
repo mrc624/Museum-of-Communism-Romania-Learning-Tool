@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class Polaroid_Zoom
     {
@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.tableLayoutPanelQuestionAndAnswer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPanelQuestionAndAnswer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblQuestion = new System.Windows.Forms.Label();
             this.lblAnswer = new System.Windows.Forms.Label();
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutPolaroidZoomContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPolaroidZoomContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbPicture = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPolaroidZoomMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignPolaroidZoom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutPolaroidZoomMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignPolaroidZoom = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
-            this.tableLayoutLanguagePolaroidZoomBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguagePolaroidZoomBtnAlign = new MOCR.DoubleBufferedTableLayout(this.components);
             this.tableLayoutPanelQuestionAndAnswer.SuspendLayout();
             this.tableLayoutPolaroidZoomContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPicture)).BeginInit();

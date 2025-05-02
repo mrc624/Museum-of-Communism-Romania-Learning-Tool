@@ -1,4 +1,4 @@
-﻿namespace IQP_Tester
+﻿namespace MOCR
 {
     partial class Stories
     {
@@ -30,83 +30,83 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnLanguage = new System.Windows.Forms.Button();
-            this.tableLayoutStolenHorse = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStolenHorse = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblStolenHorseQ = new System.Windows.Forms.Label();
             this.lblStolenHorseAns = new System.Windows.Forms.Label();
-            this.tableLayoutButterWhy = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutButterWhy = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblButterWhyQ = new System.Windows.Forms.Label();
             this.lblButterWhyAns = new System.Windows.Forms.Label();
-            this.tableLayoutTeacherBeating = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutTeacherBeating = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblTeacherBeatingQ = new System.Windows.Forms.Label();
             this.lblTeacherBeatingAns = new System.Windows.Forms.Label();
-            this.tableLayoutDestiny = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutDestiny = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblDestinyQ = new System.Windows.Forms.Label();
             this.lblDestinyAns = new System.Windows.Forms.Label();
-            this.tableLayoutSoftTomato = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSoftTomato = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblSoftTomatoQ = new System.Windows.Forms.Label();
             this.lblSoftTomatoAns = new System.Windows.Forms.Label();
-            this.tableLayoutColdHands = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutColdHands = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblColdHandsQ = new System.Windows.Forms.Label();
             this.lblColdHandsAns = new System.Windows.Forms.Label();
-            this.tableLayoutSchoolPropaganda = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSchoolPropaganda = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblSchoolPropagandaQ = new System.Windows.Forms.Label();
             this.lblSchoolPropagandaAns = new System.Windows.Forms.Label();
-            this.tableLayoutCeausescuMail = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutCeausescuMail = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblCeausescuMailQ = new System.Windows.Forms.Label();
             this.lblCeausescuMailAns = new System.Windows.Forms.Label();
-            this.tableLayoutJapaneseMachines = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutJapaneseMachines = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblJapaneseMachinesQ = new System.Windows.Forms.Label();
             this.lblJapaneseMachinesAns = new System.Windows.Forms.Label();
-            this.tableLayoutSwimmerKiller = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSwimmerKiller = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblSwimmerKillerQ = new System.Windows.Forms.Label();
             this.lblSwimmerKillerAns = new System.Windows.Forms.Label();
-            this.tableLayoutStopEngineers = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStopEngineers = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblStopEngineersQ = new System.Windows.Forms.Label();
             this.lblStopEngineersAns = new System.Windows.Forms.Label();
-            this.tableLayoutCutPhoneLines = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutCutPhoneLines = new MOCR.DoubleBufferedTableLayout(this.components);
             this.lblCutPhoneLinesQ = new System.Windows.Forms.Label();
             this.lblCutPhoneLinesAns = new System.Windows.Forms.Label();
             this.panelStolenHorse = new System.Windows.Forms.Panel();
-            this.tableLayoutStolenHorseContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStolenHorseContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbStolenHorse = new System.Windows.Forms.PictureBox();
             this.panelTacherBeating = new System.Windows.Forms.Panel();
-            this.tableLayoutTeacherBeatingContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutTeacherBeatingContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbTeacherBeating = new System.Windows.Forms.PictureBox();
             this.panelSchoolPropaganda = new System.Windows.Forms.Panel();
-            this.tableLayoutSchoolPropagandaContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSchoolPropagandaContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbSchoolPropaganda = new System.Windows.Forms.PictureBox();
             this.panelCeausescuMail = new System.Windows.Forms.Panel();
-            this.tableLayoutCeausescuMailContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutCeausescuMailContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbCeausescuMail = new System.Windows.Forms.PictureBox();
             this.panelColdHands = new System.Windows.Forms.Panel();
-            this.tableLayoutColdHandsContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutColdHandsContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbColdHands = new System.Windows.Forms.PictureBox();
             this.panelButterWhy = new System.Windows.Forms.Panel();
-            this.tableLayoutButterWhyContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutButterWhyContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbButterWhy = new System.Windows.Forms.PictureBox();
             this.panelSoftTomato = new System.Windows.Forms.Panel();
-            this.tableLayoutSoftTomatoContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSoftTomatoContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbSoftTomato = new System.Windows.Forms.PictureBox();
             this.panelDestiny = new System.Windows.Forms.Panel();
-            this.tableLayoutDestinyContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutDestinyContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbDestiny = new System.Windows.Forms.PictureBox();
             this.panelJapaneseMachines = new System.Windows.Forms.Panel();
-            this.tableLayoutJapaneseMachinesContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutJapaneseMachinesContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbJapaneseMachines = new System.Windows.Forms.PictureBox();
             this.panelSwimmerKiller = new System.Windows.Forms.Panel();
-            this.tableLayoutSwimmerKillerContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutSwimmerKillerContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbSwimmerKiller = new System.Windows.Forms.PictureBox();
             this.panelCutPhoneLines = new System.Windows.Forms.Panel();
-            this.tableLayoutCutPhoneLinesContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutCutPhoneLinesContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbCutPhoneLines = new System.Windows.Forms.PictureBox();
             this.panelStopEngineers = new System.Windows.Forms.Panel();
-            this.tableLayoutStopEngineersContainer = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStopEngineersContainer = new MOCR.DoubleBufferedTableLayout(this.components);
             this.pbStopEngineers = new System.Windows.Forms.PictureBox();
-            this.tableLayoutStoriesMain = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutLanguageStoriesBtnAlign = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutStoriesBottom = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.tableLayoutStoriesTop = new IQP_Tester.DoubleBufferedTableLayout(this.components);
-            this.TableLayoutbtnBackAlignStories = new IQP_Tester.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStoriesMain = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutLanguageStoriesBtnAlign = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStoriesBottom = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.tableLayoutStoriesTop = new MOCR.DoubleBufferedTableLayout(this.components);
+            this.TableLayoutbtnBackAlignStories = new MOCR.DoubleBufferedTableLayout(this.components);
             this.btnBack = new System.Windows.Forms.Button();
             this.tableLayoutStolenHorse.SuspendLayout();
             this.tableLayoutButterWhy.SuspendLayout();
@@ -712,7 +712,7 @@
             this.pbStolenHorse.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbStolenHorse.Image = global::IQP_Tester.Properties.Resources.StolenHorse;
+            this.pbStolenHorse.Image = global::MOCR.Properties.Resources.StolenHorse;
             this.pbStolenHorse.InitialImage = null;
             this.pbStolenHorse.Location = new System.Drawing.Point(3, 3);
             this.pbStolenHorse.Name = "pbStolenHorse";
@@ -752,7 +752,7 @@
             this.pbTeacherBeating.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbTeacherBeating.Image = global::IQP_Tester.Properties.Resources.TeacherBeating;
+            this.pbTeacherBeating.Image = global::MOCR.Properties.Resources.TeacherBeating;
             this.pbTeacherBeating.InitialImage = null;
             this.pbTeacherBeating.Location = new System.Drawing.Point(3, 3);
             this.pbTeacherBeating.Name = "pbTeacherBeating";
@@ -792,7 +792,7 @@
             this.pbSchoolPropaganda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSchoolPropaganda.Image = global::IQP_Tester.Properties.Resources.SchoolPropaganda;
+            this.pbSchoolPropaganda.Image = global::MOCR.Properties.Resources.SchoolPropaganda;
             this.pbSchoolPropaganda.InitialImage = null;
             this.pbSchoolPropaganda.Location = new System.Drawing.Point(3, 3);
             this.pbSchoolPropaganda.Name = "pbSchoolPropaganda";
@@ -832,7 +832,7 @@
             this.pbCeausescuMail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbCeausescuMail.Image = global::IQP_Tester.Properties.Resources.CeauşescuMail;
+            this.pbCeausescuMail.Image = global::MOCR.Properties.Resources.CeauşescuMail;
             this.pbCeausescuMail.InitialImage = null;
             this.pbCeausescuMail.Location = new System.Drawing.Point(3, 3);
             this.pbCeausescuMail.Name = "pbCeausescuMail";
@@ -872,7 +872,7 @@
             this.pbColdHands.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbColdHands.Image = global::IQP_Tester.Properties.Resources.ColdHands;
+            this.pbColdHands.Image = global::MOCR.Properties.Resources.ColdHands;
             this.pbColdHands.InitialImage = null;
             this.pbColdHands.Location = new System.Drawing.Point(3, 3);
             this.pbColdHands.Name = "pbColdHands";
@@ -912,7 +912,7 @@
             this.pbButterWhy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbButterWhy.Image = global::IQP_Tester.Properties.Resources.ButterWhy;
+            this.pbButterWhy.Image = global::MOCR.Properties.Resources.ButterWhy;
             this.pbButterWhy.InitialImage = null;
             this.pbButterWhy.Location = new System.Drawing.Point(3, 3);
             this.pbButterWhy.Name = "pbButterWhy";
@@ -952,7 +952,7 @@
             this.pbSoftTomato.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSoftTomato.Image = global::IQP_Tester.Properties.Resources.SoftTomato;
+            this.pbSoftTomato.Image = global::MOCR.Properties.Resources.SoftTomato;
             this.pbSoftTomato.InitialImage = null;
             this.pbSoftTomato.Location = new System.Drawing.Point(3, 3);
             this.pbSoftTomato.Name = "pbSoftTomato";
@@ -992,7 +992,7 @@
             this.pbDestiny.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbDestiny.Image = global::IQP_Tester.Properties.Resources.Destiny;
+            this.pbDestiny.Image = global::MOCR.Properties.Resources.Destiny;
             this.pbDestiny.InitialImage = null;
             this.pbDestiny.Location = new System.Drawing.Point(3, 3);
             this.pbDestiny.Name = "pbDestiny";
@@ -1032,7 +1032,7 @@
             this.pbJapaneseMachines.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbJapaneseMachines.Image = global::IQP_Tester.Properties.Resources.JapaneseMachines;
+            this.pbJapaneseMachines.Image = global::MOCR.Properties.Resources.JapaneseMachines;
             this.pbJapaneseMachines.InitialImage = null;
             this.pbJapaneseMachines.Location = new System.Drawing.Point(3, 3);
             this.pbJapaneseMachines.Name = "pbJapaneseMachines";
@@ -1072,7 +1072,7 @@
             this.pbSwimmerKiller.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSwimmerKiller.Image = global::IQP_Tester.Properties.Resources.SwimmerKiller;
+            this.pbSwimmerKiller.Image = global::MOCR.Properties.Resources.SwimmerKiller;
             this.pbSwimmerKiller.InitialImage = null;
             this.pbSwimmerKiller.Location = new System.Drawing.Point(3, 3);
             this.pbSwimmerKiller.Name = "pbSwimmerKiller";
@@ -1112,7 +1112,7 @@
             this.pbCutPhoneLines.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbCutPhoneLines.Image = global::IQP_Tester.Properties.Resources.CutPhoneLines;
+            this.pbCutPhoneLines.Image = global::MOCR.Properties.Resources.CutPhoneLines;
             this.pbCutPhoneLines.InitialImage = null;
             this.pbCutPhoneLines.Location = new System.Drawing.Point(3, 3);
             this.pbCutPhoneLines.Name = "pbCutPhoneLines";
@@ -1152,7 +1152,7 @@
             this.pbStopEngineers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbStopEngineers.Image = global::IQP_Tester.Properties.Resources.StopEngineers;
+            this.pbStopEngineers.Image = global::MOCR.Properties.Resources.StopEngineers;
             this.pbStopEngineers.InitialImage = null;
             this.pbStopEngineers.Location = new System.Drawing.Point(3, 3);
             this.pbStopEngineers.Name = "pbStopEngineers";
@@ -1301,7 +1301,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IQP_Tester.Properties.Resources.StoriesBackground;
+            this.BackgroundImage = global::MOCR.Properties.Resources.StoriesBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.tableLayoutStoriesMain);
