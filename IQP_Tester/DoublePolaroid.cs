@@ -50,7 +50,7 @@ namespace MOCR
             lblDPTitle.Click += DoublePolaroid_Click;
             tableLayoutDPMain.Click += DoublePolaroid_Click;
             tableLayoutDPPictures.Click += DoublePolaroid_Click;
-            tableLayoutLanguageDoublePolaroidZoomBtnAlign.Click += DoublePolaroid_Click;
+            TableLayoutbtnBackAlignDoublePolaroid.Click += DoublePolaroid_Click;
         }
 
         private void Update_Controls()
